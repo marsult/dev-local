@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://soa.btn.co.id/pln" xmlns:tns="http://soa.btn.co.id/pln" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+      <xsd:include schemaLocation="PlnManualAdvice.xsd"/>
+      <xsd:element name="manualAdvice">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="adviceRequest" nillable="true" type="tns:PlnManualAdvice"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="manualAdviceResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="adviceResponse" nillable="true" type="tns:PlnManualAdvice"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>

@@ -1,0 +1,46 @@
+<db-config>
+	<url>jdbc:db2://btnmdwdata:50000/mwconfig</url>
+	<driver-class>com.ibm.db2.jcc.DB2Driver</driver-class>
+	<username>db2inst1</username>
+	<password>wajFMo2HsNWsRQcLal8Y47jzNMHI+oAu8ywJwIfL9cA=</password>
+	<schema>mwconfig</schema>
+	<c3p0 id="jdbc:db2:">
+		<param id="minPoolSize">5</param>
+		<param id="maxPoolSize">50</param>
+		<param id="timeout">60</param>
+		<param id="idleConnectionTestPeriod">300</param>
+		<param id="maxIdleTime">300</param>
+		<param id="maxIdleTimeExcessConnections">180</param>
+		<param id="preferredTestQuery">select 1 from sysibm.sysdummy1</param>
+	</c3p0>
+	<config-pattern>
+		<path id="config/clients/client">
+		</path>
+		<path id="config/codex">
+		</path>
+		<path id="config/db">
+				<include>\[mwlog\]</include>
+		</path>
+		<path id="config/dbquery">
+		</path>
+		<path id="config/dtree-map">
+		</path>
+		<path id="config/host" />
+		<path id="config/mapping">
+				<include>\[.*\]\{.*\[rest\].*\}</include>
+		</path>
+		<path id="config/param-map">
+				<include>\[currency-code\|.*\]</include>
+				<include>\[coa-sms\|.*\]</include>
+				<include>\[account-type\|.*\]</include>
+				<include>\[sms\|.*\]</include>
+		</path>
+		<path id="config/parser">
+		</path>
+		<path id="config/ports/port">
+		</path>
+		<path id="config/routing">
+		</path>
+		<path id="config/rpg-call" />
+	</config-pattern>
+</db-config>

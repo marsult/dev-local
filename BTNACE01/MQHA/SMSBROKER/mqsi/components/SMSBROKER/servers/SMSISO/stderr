@@ -1,0 +1,609 @@
+
+2024-08-07 01:02:54.056755 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-08-07 01:03:07.225611 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-08-07 01:06:47.000656 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-08-07 03:56:52.971117 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-08-07 04:11:53.485331 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-08-07 14:35:08.975346 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-08-07 15:05:37.189566 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-08-10 00:35:11.975274 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-08-10 00:36:38.895535 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+JVMDUMP034I User requested Heap dump using '/var/mqsi/common/errors/heapdump.SMSBROKER.SMSISO.20240810.003700.11432.0001.phd' through com.ibm.jvm.Dump.HeapDump
+JVMDUMP010I Heap dump written to /var/mqsi/common/errors/heapdump.SMSBROKER.SMSISO.20240810.003700.11432.0001.phd
+2024-08-10 00:37:00.751     53 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-10 00:37:00.752     49 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-10 00:37:00.752     64 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-10 00:37:00.753     64 log4j:WARN Please initialize the log4j system properly.
+2024-08-10 00:37:00.753     66 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-10 00:37:00.754     66 log4j:WARN Please initialize the log4j system properly.
+2024-08-10 00:37:00.754     62 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-10 00:37:00.755     62 log4j:WARN Please initialize the log4j system properly.
+2024-08-10 00:37:00.755     58 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-10 00:37:00.756     58 log4j:WARN Please initialize the log4j system properly.
+2024-08-10 00:37:00.757     60 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-10 00:37:00.757     60 log4j:WARN Please initialize the log4j system properly.
+2024-08-10 00:37:00.757     49 log4j:WARN Please initialize the log4j system properly.
+2024-08-10 00:37:00.758     78 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-10 00:37:00.759     78 log4j:WARN Please initialize the log4j system properly.
+2024-08-10 00:37:00.759     52 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-10 00:37:00.760     52 log4j:WARN Please initialize the log4j system properly.
+2024-08-10 00:37:00.761     53 log4j:WARN Please initialize the log4j system properly.
+2024-08-10 00:37:00.761     56 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-10 00:37:00.762     56 log4j:WARN Please initialize the log4j system properly.
+2024-08-10 00:37:00.762     68 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-10 00:37:00.763     68 log4j:WARN Please initialize the log4j system properly.
+
+2024-08-10 12:38:57.021992 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-08-10 12:46:48.004217 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-08-10 12:51:18.057157 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-08-10 13:13:55.641042 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-08-10 13:44:03.057318 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-08-10 14:52:30.080721 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-08-11 00:55:16.264987 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-08-11 01:18:08.039304 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-08-11 01:31:46.952627 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-08-11 02:42:35.527642 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-08-11 12:04:30.166082 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-08-11 12:29:32.004396 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-08-11 13:08:51.274336 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-08-11 13:28:47.625994 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-08-11 13:55:43.741553 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-08-11 14:00:52.141524 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-08-11 14:08:38.352749 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-08-11 14:11:23.589326 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-08-11 14:24:57.181541 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-08-11 14:29:43.578273 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-08-11 14:33:36.394407 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-08-11 15:53:22.445952 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-08-11 16:17:03.964407 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+JVMDUMP034I User requested Heap dump using '/var/mqsi/common/errors/heapdump.SMSBROKER.SMSISO.20240811.162433.6741.0001.phd' through com.ibm.jvm.Dump.HeapDump
+JVMDUMP010I Heap dump written to /var/mqsi/common/errors/heapdump.SMSBROKER.SMSISO.20240811.162433.6741.0001.phd
+2024-08-11 16:24:33.613     61 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:24:33.613     62 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:24:33.614     62 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:24:33.614      1 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:24:33.614      1 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:24:33.614     66 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:24:33.615     66 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:24:33.615     73 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:24:33.616     73 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:24:33.616     63 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:24:33.617     63 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:24:33.617     64 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:24:33.617     64 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:24:33.618     61 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:24:33.618     75 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:24:33.619     75 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:24:33.619     65 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:24:33.619     65 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:24:33.620     70 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:24:33.620     70 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:24:33.621     68 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:24:33.621     68 log4j:WARN Please initialize the log4j system properly.
+node.js process.on('exit') event emitted with exitCode of 0
+
+2024-08-11 16:26:26.646263 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+JVMDUMP034I User requested Heap dump using '/var/mqsi/common/errors/heapdump.SMSBROKER.SMSISO.20240811.162828.9012.0001.phd' through com.ibm.jvm.Dump.HeapDump
+JVMDUMP010I Heap dump written to /var/mqsi/common/errors/heapdump.SMSBROKER.SMSISO.20240811.162828.9012.0001.phd
+2024-08-11 16:28:29.046     52 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:28:29.047     66 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:28:29.048     66 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:28:29.048     68 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:28:29.049     68 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:28:29.050     54 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:28:29.050     54 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:28:29.051     61 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:28:29.052     61 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:28:29.052     64 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:28:29.053     64 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:28:29.054     52 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:28:29.054      1 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:28:29.055      1 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:28:29.056     62 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:28:29.056     62 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:28:29.057     70 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:28:29.058     70 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:28:29.058     56 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:28:29.059     56 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:28:29.060     53 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:28:29.060     53 log4j:WARN Please initialize the log4j system properly.
+node.js process.on('exit') event emitted with exitCode of 0
+
+2024-08-11 16:30:04.013976 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+JVMDUMP034I User requested Heap dump using '/var/mqsi/common/errors/heapdump.SMSBROKER.SMSISO.20240811.163150.10316.0001.phd' through com.ibm.jvm.Dump.HeapDump
+JVMDUMP010I Heap dump written to /var/mqsi/common/errors/heapdump.SMSBROKER.SMSISO.20240811.163150.10316.0001.phd
+2024-08-11 16:31:50.417     53 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:31:50.418     66 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:31:50.418     53 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:31:50.419     66 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:31:50.420     58 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:31:50.420     58 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:31:50.421     70 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:31:50.422     70 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:31:50.422     64 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:31:50.423     64 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:31:50.423      1 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:31:50.424      1 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:31:50.424     54 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:31:50.425     54 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:31:50.426     52 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:31:50.426     52 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:31:50.427     55 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:31:50.428     55 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:31:50.428     68 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:31:50.429     68 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:31:50.429     61 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:31:50.430     61 log4j:WARN Please initialize the log4j system properly.
+node.js process.on('exit') event emitted with exitCode of 0
+
+2024-08-11 16:32:33.232908 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+JVMDUMP034I User requested Heap dump using '/var/mqsi/common/errors/heapdump.SMSBROKER.SMSISO.20240811.163353.11610.0001.phd' through com.ibm.jvm.Dump.HeapDump
+JVMDUMP010I Heap dump written to /var/mqsi/common/errors/heapdump.SMSBROKER.SMSISO.20240811.163353.11610.0001.phd
+2024-08-11 16:33:53.549     52 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:33:53.550     66 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:33:53.550     52 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:33:53.551     66 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:33:53.551     71 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:33:53.552     71 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:33:53.552     64 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:33:53.553     64 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:33:53.554     55 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:33:53.554     55 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:33:53.555     69 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:33:53.555     69 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:33:53.556      1 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:33:53.556      1 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:33:53.557     51 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:33:53.557     51 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:33:53.558     62 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:33:53.558     62 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:33:53.559     67 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:33:53.559     67 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:33:53.560     60 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:33:53.561     60 log4j:WARN Please initialize the log4j system properly.
+node.js process.on('exit') event emitted with exitCode of 0
+
+2024-08-11 16:35:12.379789 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+JVMDUMP034I User requested Heap dump using '/var/mqsi/common/errors/heapdump.SMSBROKER.SMSISO.20240811.163613.13036.0001.phd' through com.ibm.jvm.Dump.HeapDump
+JVMDUMP010I Heap dump written to /var/mqsi/common/errors/heapdump.SMSBROKER.SMSISO.20240811.163613.13036.0001.phd
+2024-08-11 16:36:13.662     50 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:36:13.663     62 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:36:13.664     62 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:36:13.665      1 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:36:13.665      1 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:36:13.665     66 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:36:13.666     66 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:36:13.667     51 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:36:13.667     51 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:36:13.668     70 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:36:13.669     70 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:36:13.669     50 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:36:13.670     57 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:36:13.671     57 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:36:13.671     64 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:36:13.672     64 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:36:13.672     68 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:36:13.672     68 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:36:13.673     60 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:36:13.674     60 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:36:13.674     53 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:36:13.674     53 log4j:WARN Please initialize the log4j system properly.
+node.js process.on('exit') event emitted with exitCode of 0
+
+2024-08-11 16:38:02.489513 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-08-11 21:05:00.494555 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-08-11 21:21:53.692290 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-08-11 21:25:16.050756 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-08-11 21:36:43.726906 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-08-11 21:43:59.491553 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-08-12 00:31:04.397175 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-08-12 01:25:05.416568 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-08-12 01:39:40.754504 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-08-12 01:45:08.341197 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-08-12 01:48:35.713623 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-08-12 02:09:01.723718 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-08-12 04:03:57.349637 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-08-12 22:28:47.252382 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-08-17 23:50:13.397468 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+JVMDUMP034I User requested Heap dump using '/var/mqsi/common/errors/heapdump.SMSBROKER.SMSISO.20240817.235047.5688.0001.phd' through com.ibm.jvm.Dump.HeapDump
+JVMDUMP010I Heap dump written to /var/mqsi/common/errors/heapdump.SMSBROKER.SMSISO.20240817.235047.5688.0001.phd
+2024-08-17 23:50:47.699     57 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-17 23:50:47.700     65 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-17 23:50:47.700     65 log4j:WARN Please initialize the log4j system properly.
+2024-08-17 23:50:47.701     56 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-17 23:50:47.701     56 log4j:WARN Please initialize the log4j system properly.
+2024-08-17 23:50:47.702     60 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-17 23:50:47.703     60 log4j:WARN Please initialize the log4j system properly.
+2024-08-17 23:50:47.703     54 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-17 23:50:47.704     54 log4j:WARN Please initialize the log4j system properly.
+2024-08-17 23:50:47.704     62 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-17 23:50:47.705     62 log4j:WARN Please initialize the log4j system properly.
+2024-08-17 23:50:47.705     57 log4j:WARN Please initialize the log4j system properly.
+2024-08-17 23:50:47.706     67 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-17 23:50:47.706     67 log4j:WARN Please initialize the log4j system properly.
+2024-08-17 23:50:47.707     69 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-17 23:50:47.707     69 log4j:WARN Please initialize the log4j system properly.
+2024-08-17 23:50:47.708      1 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-17 23:50:47.709      1 log4j:WARN Please initialize the log4j system properly.
+2024-08-17 23:50:47.709     52 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-17 23:50:47.710     52 log4j:WARN Please initialize the log4j system properly.
+2024-08-17 23:50:47.710     71 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-17 23:50:47.711     71 log4j:WARN Please initialize the log4j system properly.
+node.js process.on('exit') event emitted with exitCode of 0
+
+2024-08-17 23:53:16.826590 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+JVMDUMP034I User requested Heap dump using '/var/mqsi/common/errors/heapdump.SMSBROKER.SMSISO.20240818.000826.4976.0001.phd' through com.ibm.jvm.Dump.HeapDump
+JVMDUMP010I Heap dump written to /var/mqsi/common/errors/heapdump.SMSBROKER.SMSISO.20240818.000826.4976.0001.phd
+2024-08-18 00:08:26.948     52 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-18 00:08:26.949     67 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-18 00:08:26.949     54 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-18 00:08:26.950     67 log4j:WARN Please initialize the log4j system properly.
+2024-08-18 00:08:26.950     52 log4j:WARN Please initialize the log4j system properly.
+2024-08-18 00:08:26.951     54 log4j:WARN Please initialize the log4j system properly.
+2024-08-18 00:08:26.951     61 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-18 00:08:26.952     61 log4j:WARN Please initialize the log4j system properly.
+2024-08-18 00:08:26.952     59 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-18 00:08:26.952     59 log4j:WARN Please initialize the log4j system properly.
+2024-08-18 00:08:26.953     69 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-18 00:08:26.953     69 log4j:WARN Please initialize the log4j system properly.
+2024-08-18 00:08:26.954     56 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-18 00:08:26.954     56 log4j:WARN Please initialize the log4j system properly.
+2024-08-18 00:08:26.955     51 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-18 00:08:26.955     51 log4j:WARN Please initialize the log4j system properly.
+2024-08-18 00:08:26.956     65 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-18 00:08:26.956     65 log4j:WARN Please initialize the log4j system properly.
+2024-08-18 00:08:26.956      1 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-18 00:08:26.957      1 log4j:WARN Please initialize the log4j system properly.
+2024-08-18 00:08:26.957     63 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-18 00:08:26.958     63 log4j:WARN Please initialize the log4j system properly.
+node.js process.on('exit') event emitted with exitCode of 0
+
+2024-08-20 11:23:38.637301 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-08-20 14:43:21.942032 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-08-22 02:07:56.344901 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-08-22 22:46:30.855122 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-08-23 06:25:55.097444 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-08-23 06:27:53.827909 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-08-25 11:19:10.400784 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-08-25 12:00:53.427537 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-08-25 12:13:26.722481 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-08-25 12:21:45.941472 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-08-25 12:26:36.878238 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-08-27 11:04:30.694745 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-08-31 14:57:26.626396 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-01 19:52:31.964157 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-03 02:56:31.944547 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-03 19:56:55.322784 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-09 10:37:45.820242 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-09 11:09:16.177181 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-11 12:14:00.643845 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-11 12:17:26.880925 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-11 14:03:52.190046 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-11 14:17:06.203967 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-11 14:30:36.260975 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-11 15:05:03.018457 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-11 15:10:14.884412 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-11 15:36:10.621005 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-11 15:58:06.581741 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-11 16:43:16.710333 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-11 16:48:05.076532 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-11 16:53:14.978463 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-11 16:58:16.883382 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-11 16:59:52.010437 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-11 17:17:43.029390 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-11 17:22:25.373331 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-11 17:24:46.052273 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-11 17:31:25.580301 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-12 00:54:08.475175 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-12 01:24:21.503031 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-12 14:12:14.759467 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-12 14:20:16.421575 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-12 14:21:30.516435 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-12 14:25:42.588752 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-12 14:31:45.053433 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-12 14:35:28.825731 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-12 19:04:36.618599 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-13 10:46:28.904870 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-13 10:52:29.626254 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-13 10:57:10.124146 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-13 11:02:38.258943 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-13 11:08:49.544412 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-13 11:11:41.885707 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-13 12:10:34.833659 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-13 13:42:24.480295 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-13 13:59:39.310454 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-13 14:03:02.629234 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-13 14:05:23.964645 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-13 14:09:04.366201 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-13 14:21:42.674678 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-13 14:23:53.368871 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-13 14:27:52.196948 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-13 14:31:14.472355 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-13 14:34:38.257553 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-13 14:41:49.343510 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-13 14:49:57.641004 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-13 14:53:25.395816 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-13 14:57:00.168651 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-13 15:13:00.924552 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-13 15:16:34.203813 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-13 15:19:59.487893 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-13 15:54:50.419844 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-13 15:57:29.660169 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-13 16:04:04.720721 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-13 16:06:21.938822 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-13 16:46:35.327302 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-13 20:39:37.382776 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-13 20:41:48.646734 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-13 20:43:25.325532 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-13 20:52:03.205392 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-13 21:00:41.603425 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-13 21:09:20.007434 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-13 21:11:23.234760 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-13 21:22:54.487107 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-13 21:25:21.765414 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-13 21:31:16.463954 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-13 21:32:50.163875 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-13 21:38:17.738837 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-15 16:17:19.918753 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-15 16:35:58.535346 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-15 16:41:36.528996 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-15 16:57:25.182032 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-15 19:58:36.782488 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-16 00:04:13.561733 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-16 00:07:05.333980 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-16 02:01:30.951175 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-16 02:14:03.166596 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-16 02:16:23.876897 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-16 02:17:24.459920 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-16 02:18:40.085468 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-16 02:21:19.810887 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-16 02:29:56.055377 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-16 02:31:09.178241 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-16 02:33:31.795564 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-16 02:34:42.944708 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-16 02:56:24.411481 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-16 02:58:02.559221 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-16 16:46:44.117294 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-16 16:47:40.701274 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-16 16:48:41.289559 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-16 16:49:49.897337 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-16 17:09:21.043601 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-16 17:19:00.024496 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-16 17:24:53.661313 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-16 17:32:24.861949 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-16 17:36:41.218020 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-16 17:40:33.559592 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-16 17:41:42.673097 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-16 20:15:16.628494 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-16 20:16:04.513304 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-16 20:17:07.606349 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-16 20:18:36.226926 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-19 13:47:50.365461 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-20 00:13:05.429377 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-21 06:03:16.287125 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-22 23:44:29.192190 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-26 15:16:43.529617 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-26 22:53:35.912834 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-26 22:58:02.281382 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-27 11:26:28.119048 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-27 11:51:54.159311 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-27 13:28:29.284059 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-27 13:38:00.516753 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-27 13:46:29.181144 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-27 14:22:29.137605 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-28 12:31:54.425574 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-28 15:21:32.366902 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-30 04:26:10.887396 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-30 04:38:09.266670 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-09-30 19:59:12.774250 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-10-04 00:06:36.636202 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-10-04 20:10:46.840786 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-10-05 17:49:17.269436 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-10-06 19:37:15.290640 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-10-07 19:39:33.180208 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-10-08 15:32:13.655042 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-10-10 04:10:54.909192 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-10-10 12:59:16.811355 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-10-10 16:05:17.675081 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-10-12 12:56:45.614592 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-10-13 15:56:40.713930 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-10-15 15:44:54.354272 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-10-19 16:59:00.581355 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-10-21 02:42:09.004892 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER
+
+2024-10-21 02:50:11.534010 Integration server started. Label is: 'SMSISO'. Integration node is: SMSBROKER

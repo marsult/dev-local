@@ -1,0 +1,464 @@
+INSERT INTO MWCONFIG.DTREE (GROUP, PATH, VALUE, MODIFIED_BY, TIMESTAMP, MODULE) VALUES 
+('CMS-CODE', '0221', '0221.${msg.processingCode?.padLeft(6, "0")}', CURRENT USER, CURRENT TIMESTAMP, '[cms]'),
+('CMS-CODE', '0231', '0231.${msg.processingCode?.padLeft(6, "0")}', CURRENT USER, CURRENT TIMESTAMP, '[cms]'),
+('CMS-CODE', '0200', '0200.${msg.processingCode?.padLeft(6, "0")}', CURRENT USER, CURRENT TIMESTAMP, '[cms]'),
+('CMS-CODE', '0400', '0400.${msg.processingCode?.padLeft(6, "0")}', CURRENT USER, CURRENT TIMESTAMP, '[cms]'),
+('CMS-CODE', '0401', '0401.${msg.processingCode?.padLeft(6, "0")}', CURRENT USER, CURRENT TIMESTAMP, '[cms]'),
+('CMS-CODE', '0800', '0800.${msg.networkManagementInformationCode?.padLeft(6, "0")}', CURRENT USER, CURRENT TIMESTAMP, '[cms]'),
+('CMS-CODE', '0210', '0210.${msg.processingCode?.padLeft(6, "0")}', CURRENT USER, CURRENT TIMESTAMP, '[cms]'),
+('CMS-CODE', '0410', '0410.${msg.processingCode?.padLeft(6, "0")}', CURRENT USER, CURRENT TIMESTAMP, '[cms]'),
+('CMS-CODE', '0411', '0411.${msg.processingCode?.padLeft(6, "0")}', CURRENT USER, CURRENT TIMESTAMP, '[cms]'),
+('CMS-CODE', '0810', '0810.${msg.networkManagementInformationCode?.padLeft(6, "0")}', CURRENT USER, CURRENT TIMESTAMP, '[cms]'),
+('CMS-CODE', '0220', '0220.${msg.processingCode?.padLeft(6, "0")}', CURRENT USER, CURRENT TIMESTAMP, '[cms]'),
+('CMS-CODE', '0230', '0230.${msg.processingCode?.padLeft(6, "0")}', CURRENT USER, CURRENT TIMESTAMP, '[cms]'),
+('CMS-CODE', '0420', '0420.${msg.processingCode?.padLeft(6, "0")}', CURRENT USER, CURRENT TIMESTAMP, '[cms]'),
+('CMS-CODE', '0430', '0430.${msg.processingCode?.padLeft(6, "0")}', CURRENT USER, CURRENT TIMESTAMP, '[cms]');
+
+
+INSERT INTO MWCONFIG.DTREE (GROUP, PATH, VALUE, MODIFIED_BY, TIMESTAMP, MODULE) VALUES
+    ('CMS-CODE', '0200.350000', '0200.350000.${msg.reservedPrivate2.substring(0,9)}', CURRENT USER, CURRENT TIMESTAMP, '[cms][cmsmd]'),
+    ('CMS-CODE', '0200.351000', '0200.351000.${msg.reservedPrivate2.substring(0, 9)}', CURRENT USER, CURRENT TIMESTAMP, '[cbimd]'),
+    ('CMS-CODE', '0200.351000.001001BIF', '0200.350000.001001BIF', CURRENT USER, CURRENT TIMESTAMP, '[cbimd]'),
+    ('CMS-CODE', '0200.351000.002001BIF', '0200.350000.002001BIF', CURRENT USER, CURRENT TIMESTAMP, '[cbimd]'),
+    ('CMS-CODE', '0200.351010', '0200.351010.${msg.reservedPrivate2.substring(0, 9)}', CURRENT USER, CURRENT TIMESTAMP, '[cbimd]'),
+    ('CMS-CODE', '0200.351010.001001BIF', '0200.350000.001001BIF', CURRENT USER, CURRENT TIMESTAMP, '[cbimd]'),
+    ('CMS-CODE', '0200.351010.002001BIF', '0200.350000.002001BIF', CURRENT USER, CURRENT TIMESTAMP, '[cbimd]'),
+    ('CMS-CODE', '0200.351020', '0200.351020.${msg.reservedPrivate2.substring(0, 9)}', CURRENT USER, CURRENT TIMESTAMP, '[cbimd]'),
+    ('CMS-CODE', '0200.351020.001001BIF', '0200.350000.001001BIF', CURRENT USER, CURRENT TIMESTAMP, '[cbimd]'),
+    ('CMS-CODE', '0200.351020.002001BIF', '0200.350000.002001BIF', CURRENT USER, CURRENT TIMESTAMP, '[cbimd]'),
+    ('CMS-CODE', '0200.351030', '0200.351030.${msg.reservedPrivate2.substring(0, 9)}', CURRENT USER, CURRENT TIMESTAMP, '[cbimd]'),
+    ('CMS-CODE', '0200.351030.001001BIF', '0200.350000.001001BIF', CURRENT USER, CURRENT TIMESTAMP, '[cbimd]'),
+    ('CMS-CODE', '0200.351030.002001BIF', '0200.350000.002001BIF', CURRENT USER, CURRENT TIMESTAMP, '[cbimd]'),
+    ('CMS-CODE', '0200.351040', '0200.351030.${msg.reservedPrivate2.substring(0, 9)}', CURRENT USER, CURRENT TIMESTAMP, '[cbimd]'),
+    ('CMS-CODE', '0200.351040.001001BIF', '0200.350000.001001BIF', CURRENT USER, CURRENT TIMESTAMP, '[cbimd]'),
+    ('CMS-CODE', '0200.351040.002001BIF', '0200.350000.002001BIF', CURRENT USER, CURRENT TIMESTAMP, '[cbimd]'),
+    ('CMS-CODE', '0200.351050', '0200.351050.${msg.reservedPrivate2.substring(0, 9)}', CURRENT USER, CURRENT TIMESTAMP, '[cbimd]'),
+    ('CMS-CODE', '0200.351050.001001BIF', '0200.350000.001001BIF', CURRENT USER, CURRENT TIMESTAMP, '[cbimd]'),
+    ('CMS-CODE', '0200.351050.002001BIF', '0200.350000.002001BIF', CURRENT USER, CURRENT TIMESTAMP, '[cbimd]'),
+    ('CMS-CODE', '0200.352000', '0200.352000.${msg.reservedPrivate2.substring(0, 9)}', CURRENT USER, CURRENT TIMESTAMP, '[cbimd]'),
+    ('CMS-CODE', '0200.352000.001001BIF', '0200.350000.001001BIF', CURRENT USER, CURRENT TIMESTAMP, '[cbimd]'),
+    ('CMS-CODE', '0200.352000.002001BIF', '0200.350000.002001BIF', CURRENT USER, CURRENT TIMESTAMP, '[cbimd]'),
+    ('CMS-CODE', '0200.352010', '0200.352000.${msg.reservedPrivate2.substring(0, 9)}', CURRENT USER, CURRENT TIMESTAMP, '[cbimd]'),
+    ('CMS-CODE', '0200.352010.001001BIF', '0200.350000.001001BIF', CURRENT USER, CURRENT TIMESTAMP, '[cbimd]'),
+    ('CMS-CODE', '0200.352010.002001BIF', '0200.350000.002001BIF', CURRENT USER, CURRENT TIMESTAMP, '[cbimd]'),
+    ('CMS-CODE', '0200.352020', '0200.352000.${msg.reservedPrivate2.substring(0, 9)}', CURRENT USER, CURRENT TIMESTAMP, '[cbimd]'),
+    ('CMS-CODE', '0200.352020.001001BIF', '0200.350000.001001BIF', CURRENT USER, CURRENT TIMESTAMP, '[cbimd]'),
+    ('CMS-CODE', '0200.352020.002001BIF', '0200.350000.002001BIF', CURRENT USER, CURRENT TIMESTAMP, '[cbimd]'),
+    ('CMS-CODE', '0200.352030', '0200.352030.${msg.reservedPrivate2.substring(0, 9)}', CURRENT USER, CURRENT TIMESTAMP, '[cbimd]'),
+    ('CMS-CODE', '0200.352030.001001BIF', '0200.350000.001001BIF', CURRENT USER, CURRENT TIMESTAMP, '[cbimd]'),
+    ('CMS-CODE', '0200.352030.002001BIF', '0200.350000.002001BIF', CURRENT USER, CURRENT TIMESTAMP, '[cbimd]'),
+    ('CMS-CODE', '0200.352040', '0200.352040.${msg.reservedPrivate2.substring(0, 9)}', CURRENT USER, CURRENT TIMESTAMP, '[cbimd]'),
+    ('CMS-CODE', '0200.352040.001001BIF', '0200.350000.001001BIF', CURRENT USER, CURRENT TIMESTAMP, '[cbimd]'),
+    ('CMS-CODE', '0200.352040.002001BIF', '0200.350000.002001BIF', CURRENT USER, CURRENT TIMESTAMP, '[cbimd]'),
+    ('CMS-CODE', '0200.352050', '0200.352050.${msg.reservedPrivate2.substring(0, 9)}', CURRENT USER, CURRENT TIMESTAMP, '[cbimd]'),
+    ('CMS-CODE', '0200.352050.001001BIF', '0200.350000.001001BIF', CURRENT USER, CURRENT TIMESTAMP, '[cbimd]'),
+    ('CMS-CODE', '0200.352050.002001BIF', '0200.350000.002001BIF', CURRENT USER, CURRENT TIMESTAMP, '[cbimd]'),
+    ('CMS-CODE', '0210.350000', '0210.350000.${msg.reservedPrivate2.substring(0,9)}', CURRENT USER, CURRENT TIMESTAMP, '[cms][cmsmd]'),
+    ('CMS-CODE', '0210.351000', '0210.351000.${msg.reservedPrivate2.substring(0, 9)}', CURRENT USER, CURRENT TIMESTAMP, '[cbimd]'),
+    ('CMS-CODE', '0210.351000.001001BIF', '0210.350000.001001BIF', CURRENT USER, CURRENT TIMESTAMP, '[cbimd]'),
+    ('CMS-CODE', '0210.351000.002001BIF', '0210.350000.002001BIF', CURRENT USER, CURRENT TIMESTAMP, '[cbimd]'),
+    ('CMS-CODE', '0210.351010', '0210.351010.${msg.reservedPrivate2.substring(0, 9)}', CURRENT USER, CURRENT TIMESTAMP, '[cbimd]'),
+    ('CMS-CODE', '0210.351010.001001BIF', '0210.350000.001001BIF', CURRENT USER, CURRENT TIMESTAMP, '[cbimd]'),
+    ('CMS-CODE', '0210.351010.002001BIF', '0210.350000.002001BIF', CURRENT USER, CURRENT TIMESTAMP, '[cbimd]'),
+    ('CMS-CODE', '0210.351020', '0210.351020.${msg.reservedPrivate2.substring(0, 9)}', CURRENT USER, CURRENT TIMESTAMP, '[cbimd]'),
+    ('CMS-CODE', '0210.351020.001001BIF', '0210.350000.001001BIF', CURRENT USER, CURRENT TIMESTAMP, '[cbimd]'),
+    ('CMS-CODE', '0210.351020.002001BIF', '0210.350000.002001BIF', CURRENT USER, CURRENT TIMESTAMP, '[cbimd]'),
+    ('CMS-CODE', '0210.351030', '0210.351030.${msg.reservedPrivate2.substring(0, 9)}', CURRENT USER, CURRENT TIMESTAMP, '[cbimd]'),
+    ('CMS-CODE', '0210.351030.001001BIF', '0210.350000.001001BIF', CURRENT USER, CURRENT TIMESTAMP, '[cbimd]'),
+    ('CMS-CODE', '0210.351030.002001BIF', '0210.350000.002001BIF', CURRENT USER, CURRENT TIMESTAMP, '[cbimd]'),
+    ('CMS-CODE', '0210.351040', '0210.351030.${msg.reservedPrivate2.substring(0, 9)}', CURRENT USER, CURRENT TIMESTAMP, '[cbimd]'),
+    ('CMS-CODE', '0210.351040.001001BIF', '0210.350000.001001BIF', CURRENT USER, CURRENT TIMESTAMP, '[cbimd]'),
+    ('CMS-CODE', '0210.351040.002001BIF', '0210.350000.002001BIF', CURRENT USER, CURRENT TIMESTAMP, '[cbimd]'),
+    ('CMS-CODE', '0210.351050', '0210.351050.${msg.reservedPrivate2.substring(0, 9)}', CURRENT USER, CURRENT TIMESTAMP, '[cbimd]'),
+    ('CMS-CODE', '0210.351050.001001BIF', '0210.350000.001001BIF', CURRENT USER, CURRENT TIMESTAMP, '[cbimd]'),
+    ('CMS-CODE', '0210.351050.002001BIF', '0210.350000.002001BIF', CURRENT USER, CURRENT TIMESTAMP, '[cbimd]'),
+    ('CMS-CODE', '0210.352000', '0210.352000.${msg.reservedPrivate2.substring(0, 9)}', CURRENT USER, CURRENT TIMESTAMP, '[cbimd]'),
+    ('CMS-CODE', '0210.352000.001001BIF', '0210.350000.001001BIF', CURRENT USER, CURRENT TIMESTAMP, '[cbimd]'),
+    ('CMS-CODE', '0210.352000.002001BIF', '0210.350000.002001BIF', CURRENT USER, CURRENT TIMESTAMP, '[cbimd]'),
+    ('CMS-CODE', '0210.352010', '0210.352010.${msg.reservedPrivate2.substring(0, 9)}', CURRENT USER, CURRENT TIMESTAMP, '[cbimd]'),
+    ('CMS-CODE', '0210.352010.001001BIF', '0210.350000.001001BIF', CURRENT USER, CURRENT TIMESTAMP, '[cbimd]'),
+    ('CMS-CODE', '0210.352010.002001BIF', '0210.350000.002001BIF', CURRENT USER, CURRENT TIMESTAMP, '[cbimd]'),
+    ('CMS-CODE', '0210.352020', '0210.352020.${msg.reservedPrivate2.substring(0, 9)}', CURRENT USER, CURRENT TIMESTAMP, '[cbimd]'),
+    ('CMS-CODE', '0210.352020.001001BIF', '0210.350000.001001BIF', CURRENT USER, CURRENT TIMESTAMP, '[cbimd]'),
+    ('CMS-CODE', '0210.352020.002001BIF', '0210.350000.002001BIF', CURRENT USER, CURRENT TIMESTAMP, '[cbimd]'),
+    ('CMS-CODE', '0210.352030', '0210.352030.${msg.reservedPrivate2.substring(0, 9)}', CURRENT USER, CURRENT TIMESTAMP, '[cbimd]'),
+    ('CMS-CODE', '0210.352030.001001BIF', '0210.350000.001001BIF', CURRENT USER, CURRENT TIMESTAMP, '[cbimd]'),
+    ('CMS-CODE', '0210.352030.002001BIF', '0210.350000.002001BIF', CURRENT USER, CURRENT TIMESTAMP, '[cbimd]'),
+    ('CMS-CODE', '0210.352040', '0210.352040.${msg.reservedPrivate2.substring(0, 9)}', CURRENT USER, CURRENT TIMESTAMP, '[cbimd]'),
+    ('CMS-CODE', '0210.352040.001001BIF', '0210.350000.001001BIF', CURRENT USER, CURRENT TIMESTAMP, '[cbimd]'),
+    ('CMS-CODE', '0210.352040.002001BIF', '0210.350000.002001BIF', CURRENT USER, CURRENT TIMESTAMP, '[cbimd]'),
+    ('CMS-CODE', '0210.352050', '0210.352050.${msg.reservedPrivate2.substring(0, 9)}', CURRENT USER, CURRENT TIMESTAMP, '[cbimd]'),
+    ('CMS-CODE', '0210.352050.001001BIF', '0210.350000.001001BIF', CURRENT USER, CURRENT TIMESTAMP, '[cbimd]'),
+    ('CMS-CODE', '0210.352050.002001BIF', '0210.350000.002001BIF', CURRENT USER, CURRENT TIMESTAMP, '[cbimd]');
+
+INSERT INTO MWCONFIG.DTREE (GROUP, PATH, VALUE, MODIFIED_BY, TIMESTAMP, MODULE) VALUES
+    ('CHARGES', 'cvd', 'cvd|${msg.processingCode."!value".substring(0,2)}', CURRENT USER, CURRENT TIMESTAMP, '[cms][pay][izzp][omkzz]'),
+    ('CHARGES', 'cvd|15', 'cvd|15|${msg.reservedPrivate2."!value".substring(0,9)}', CURRENT USER, CURRENT TIMESTAMP, '[cms][cvdmd]'),
+    ('CHARGES', 'cvd|15|VAD001BIF', 'bifast-konven', CURRENT USER, CURRENT TIMESTAMP, '[cms][cvdmd]'),
+    ('CHARGES', 'cvd|30', 'cms|${msg.processingCode}', CURRENT USER, CURRENT TIMESTAMP, '[cms][pay][izzp][omkzz]'),
+    ('CHARGES', 'cvd|36', 'cvd|36|${msg.reservedPrivate2."!value".substring(0,9)}', CURRENT USER, CURRENT TIMESTAMP, '[cms][cvdmd]'),
+    ('CHARGES', 'cvd|36|VAD001BIF', 'bifast-konven', CURRENT USER, CURRENT TIMESTAMP, '[smsmd][cms][cvdmd]');
+
+
+INSERT INTO MWCONFIG.ROUTING_TABLE (CODE_START, CODE_END, CHANNEL, START_DATE, END_DATE, QUEUE, CREATE_BY, CREATE_DATE, MODIFIED_BY, MODIFIED_DATE, STATUS, SUBCODEX, ADDITIONAL, REPLY_TO, REPLY_TO_QMGR) VALUES 
+	('*', '*', 'cvd', CURRENT TIMESTAMP, NULL, 'MDW_IN', CURRENT USER, CURRENT TIMESTAMP, NULL, NULL, 'ACTIVE', NULL, NULL, 'ROUTER_OUT', 'CMSBROKER.QM');
+
+
+INSERT INTO MWCONFIG.ADAPTOR (ID, DESCRIPTION, ASYNCHRONOUS, MODIFIED_BY, TIMESTAMP) VALUES 
+	('cms-10370', 'connector channel core', 1, CURRENT TIMESTAMP, CURRENT TIMESTAMP),
+	('cms-16002', NULL, 1, CURRENT TIMESTAMP, CURRENT TIMESTAMP),
+	('cms-16003', 'connector channel cms', 1, CURRENT TIMESTAMP, CURRENT TIMESTAMP),
+	('cms-16004', 'connector channel cms', 1, CURRENT TIMESTAMP, CURRENT TIMESTAMP),
+	('cms-16010', 'connector channel cms', 1, CURRENT TIMESTAMP, CURRENT TIMESTAMP),
+	('cms-16015', 'connector channel cms-AA', 1, CURRENT TIMESTAMP, CURRENT TIMESTAMP),
+	('cms-16016', 'connector channel cms-NY', 1, CURRENT TIMESTAMP, CURRENT TIMESTAMP);
+
+INSERT INTO MWCONFIG.ADAPTOR_CODEX (ADAPTOR_ID, ID, CODEX_ID) VALUES 
+	('cms-10370', 'incoming', 'iso-8583-cms'),
+	('cms-10370', 'outgoing', 'iso-8583-cms'),
+	('cms-16002', 'incoming', 'iso-8583-cms'),
+	('cms-16002', 'outgoing', 'iso-8583-cms'),
+	('cms-16003', 'incoming', 'iso-8583-cms'),
+	('cms-16003', 'outgoing', 'iso-8583-cms'),
+	('cms-16004', 'incoming', 'iso-8583-cms'),
+	('cms-16004', 'outgoing', 'iso-8583-cms'),
+	('cms-16010', 'incoming', 'iso-8583-cms'),
+	('cms-16010', 'outgoing', 'iso-8583-cms'),
+	('cms-16015', 'incoming', 'iso-8583-cms'),
+	('cms-16015', 'outgoing', 'iso-8583-cms'),
+	('cms-16016', 'incoming', 'iso-8583-cms'),
+	('cms-16016', 'outgoing', 'iso-8583-cms');
+
+INSERT INTO MWCONFIG.ADAPTOR_PARAM (ADAPTOR_ID, NAME, VALUE) VALUES 
+	('cms-10370', 'maxConnection', '1'),
+	('cms-16002', 'maxConnection', '1'),
+	('cms-16003', 'maxConnection', '1'),
+	('cms-16004', 'maxConnection', '1'),
+	('cms-16010', 'maxConnection', '1'),
+	('cms-16015', 'maxConnection', '1'),
+	('cms-16016', 'maxConnection', '1');
+
+INSERT INTO MWCONFIG.SERVER_PORT (ADAPTOR_ID, PORT, SERVER, GROUP) VALUES 
+	('cms-10370', 10370, 'server-1', 'cms'),
+	('cms-16002', 16002, 'server-1', 'cms'),
+	('cms-16003', 16003, 'server-1', 'cms'),
+	('cms-16004', 16004, 'server-1', 'cms'),
+	('cms-16010', 16010, 'server-1', 'cms'),
+	('cms-16015', 16015, 'server-1', '16015'),
+	('cms-16016', 16016, 'server-1', '16016');
+
+INSERT INTO MWCONFIG.PARAM_MAP("GROUP", NAME, "VALUE", SEQ, MODIFIED_BY, TIMESTAMP, DESCRIPTION) VALUES 
+	('cms', 'VaDebit', 'http://DUMMY:7080/vaccount/btn', null, CURRENT USER, CURRENT TIMESTAMP, null);
+
+
+INSERT INTO MWCONFIG.ADAPTOR (ID, DESCRIPTION, ASYNCHRONOUS, MODIFIED_BY, TIMESTAMP) VALUES 
+	('bi-conn-konven', 'BI Fast Connector', 1, CURRENT USER, CURRENT TIMESTAMP);
+
+INSERT INTO MWCONFIG.ADAPTOR_CODEX (ADAPTOR_ID, ID, CODEX_ID) VALUES 
+	('bi-conn-konven', 'incoming', 'iso-8583-bi-conn'),
+	('bi-conn-konven', 'outgoing', 'iso-8583-bi-conn');
+
+INSERT INTO MWCONFIG.ADAPTOR_PARAM (ADAPTOR_ID, NAME, VALUE) VALUES 
+	('bi-conn-konven', 'echo', '3600000'),
+	('bi-conn-konven', 'needSignOn', 'true'),
+	('bi-conn-konven', 'timeout', '60000');
+
+INSERT INTO MWCONFIG.CLIENT (ADAPTOR_ID, IDLE_WAIT, TIMEOUT, CLOSE_QUEUE, CONTROL_QUEUE, KEEP_CONN, REUSE_DELAY, NODE) VALUES 
+	('bi-conn-konven', null, null, null, null, 1, null, 'backend-iso');
+
+INSERT INTO MWCONFIG.CLIENT_TARGET (CLIENT_ID, ID, HOST, WEIGHT, SEQ) VALUES 
+	('bi-conn-konven', 'bi-conn-konven', 'DUMMY:8538', 0, 1);
+
+INSERT INTO MWCONFIG.MAPPING (ID, MODULE, MODIFIED_BY, TIMESTAMP) VALUES ('bi-conn-konven.SIGN-ON', '', CURRENT USER, CURRENT TIMESTAMP);
+INSERT INTO MWCONFIG.MAPPING_GROUP (MAPPING_ID, ID, SOURCE, TARGET, INCLUDE_MAPPING_ID, INCLUDE_ID) VALUES ('bi-conn-konven.SIGN-ON', 1, '/data', '/data/body', NULL, NULL);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES ('bi-conn-konven.SIGN-ON', 1, '@', 'copyMessage();', 5);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES ('bi-conn-konven.SIGN-ON', 1, 'systemsTraceAuditNumber', '${counter("bi-conn-konven", 5, 1, "ddMMyy")}', 10);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES ('bi-conn-konven.SIGN-ON', 1, 'transmissionDateTime', '${getTimeZoneFormat("MMddHHmmss","GMT")}', 10);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES ('bi-conn-konven.SIGN-ON', 1, '!mid', '${tar.transmissionDateTime."!value"+"."+tar.systemsTraceAuditNumber."!value"}', 20);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES ('bi-conn-konven.SIGN-ON', 1, '!sid', '${getUID(tar.transmissionDateTime."!value"+"."+tar.systemsTraceAuditNumber."!value")}', 20);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES ('bi-conn-konven.SIGN-ON', 1, '!destination', 'bi-conn-konven', null);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES ('bi-conn-konven.SIGN-ON', 1, '!nosignon', 'true', null);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES ('bi-conn-konven.SIGN-ON', 1, 'messageType', '0800', null);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES ('bi-conn-konven.SIGN-ON', 1, 'networkManagementInformationCode', '001', null);
+
+INSERT INTO MWCONFIG.MAPPING (ID, MODULE, MODIFIED_BY, TIMESTAMP) VALUES ('bi-conn-konven.ECHO-TEST', '', CURRENT USER, CURRENT TIMESTAMP);
+INSERT INTO MWCONFIG.MAPPING_GROUP (MAPPING_ID, ID, SOURCE, TARGET, INCLUDE_MAPPING_ID, INCLUDE_ID) VALUES ('bi-conn-konven.ECHO-TEST', 1, '/data', '/data/body', 'bi-conn-konven.SIGN-ON', '1');
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES ('bi-conn-konven.ECHO-TEST', 1, 'networkManagementInformationCode', '301', null);
+
+INSERT INTO MWCONFIG.MAPPING (ID, MODULE, MODIFIED_BY, TIMESTAMP) VALUES
+    ('res-core.cms', '[cms][cvdmd][cvsmd]', CURRENT USER, CURRENT TIMESTAMP);
+INSERT INTO MWCONFIG.MAPPING_GROUP (MAPPING_ID, ID, SOURCE, TARGET, INCLUDE_MAPPING_ID, INCLUDE_ID) VALUES
+    ('res-core.cms', 1, '/data/body', '/data/body', NULL, NULL);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES
+    ('res-core.cms', 1, '!CorrelId', '${head.CorrelId}', 20),
+    ('res-core.cms', 1, '!connid', '${head.connid}', 20),
+    ('res-core.cms', 1, '!group', '${head.request.data.group}', 20),
+    ('res-core.cms', 1, '!mid', '${head.request.data.mid}', 20),
+    ('res-core.cms', 1, '!reqtimestamp', '${head.reqtimestamp}', 20),
+    ('res-core.cms', 1, '!sid', '${head.sid}', 20),
+    ('res-core.cms', 1, '!source', '${head.request.data.source}', 20),
+    ('res-core.cms', 1, '!timestamp', '${head.timestamp}', 20),
+    ('res-core.cms', 1, '@', 'copyMessage("../body", "request/data/body/original")', 20),
+    ('res-core.cms', 1, 'acquiringInstitutionIdentificationCode', '${head.request.data.body.original.acquiringInstitutionIdentificationCode}', 20),
+    ('res-core.cms', 1, 'additionalDataPrivate', '${head.request.data.body.original.additionalDataPrivate}', 20),
+    ('res-core.cms', 1, 'amountCardholderBilling', '${head.request.data.body.original.amountCardholderBilling}', 20),
+    ('res-core.cms', 1, 'amountTransaction', '${head.request.data.body.original.amountTransaction}', 20),
+    ('res-core.cms', 1, 'amountTransactionFee', '${head.request.data.body.original.amountTransactionFee}', 20),
+    ('res-core.cms', 1, 'cardAcceptorIdentificationCode', '${head.request.data.body.original.cardAcceptorIdentificationCode}', 20),
+    ('res-core.cms', 1, 'cardAcceptorName', '${head.request.data.body.original.cardAcceptorName}', 20),
+    ('res-core.cms', 1, 'cardAcceptorTerminalIdentification', '${head.request.data.body.original.cardAcceptorTerminalIdentification}', 20),
+    ('res-core.cms', 1, 'conversionRateCardholderBilling', '${head.request.data.body.original.conversionRateCardholderBilling}', 20),
+    ('res-core.cms', 1, 'currencyCodeTransaction', '${head.request.data.body.original.currencyCodeTransaction}', 20),
+    ('res-core.cms', 1, 'dateCapture', '${head.request.data.body.original.dateCapture}', 20),
+    ('res-core.cms', 1, 'dateLocalTransaction', '${head.request.data.body.original.dateLocalTransaction}', 20),
+    ('res-core.cms', 1, 'forwardingInstitutionIdentificationCode', '${head.request.data.body.original.forwardingInstitutionIdentificationCode}', 20),
+    ('res-core.cms', 1, 'fromAccount', '${head.request.data.body.original.fromAccount}', 20),
+    ('res-core.cms', 1, 'merchantType', '${head.request.data.body.original.merchantType}', 20),
+    ('res-core.cms', 1, 'networkManagementInformation', '${head.request.data.body.original.networkManagementInformation}', 20),
+    ('res-core.cms', 1, 'primaryAccountNumber', '${head.request.data.body.original.primaryAccountNumber}', 20),
+    ('res-core.cms', 1, 'processingCode', '${head.request.data.body.original.processingCode}', 20),
+    ('res-core.cms', 1, 'reasonCode', '${head.request.data.body.original.reasonCode}', 20),
+    ('res-core.cms', 1, 'receivingInstitutionIdentificationCode', '${head.request.data.body.original.receivingInstitutionIdentificationCode}', 20),
+    ('res-core.cms', 1, 'reservedForPrivateUse', '${head.request.data.body.original.reservedForPrivateUse}', 20),
+    ('res-core.cms', 1, 'reservedForPrivateUse1', '${head.request.data.body.original.toAccount}', 20),
+    ('res-core.cms', 1, 'reservedForPrivateUse2', '${head.request.data.body.original.reservedForPrivateUse2}', 20),
+    ('res-core.cms', 1, 'reservedPrivate1', '${head.request.data.body.original.reservedPrivate1}', 20),
+    ('res-core.cms', 1, 'reservedPrivate2', '${head.request.data.body.original.reservedPrivate2}', 20),
+    ('res-core.cms', 1, 'reservedPrivate3', '${head.request.data.body.original.reservedPrivate3}', 20),
+    ('res-core.cms', 1, 'responseCode', '00', 20),
+    ('res-core.cms', 1, 'retrievalReferenceNumber', '${head.request.data.body.original.retrievalReferenceNumber}', 20),
+    ('res-core.cms', 1, 'systemsTraceAuditNumber', '${head.request.data.body.original.systemsTraceAuditNumber}', 20),
+    ('res-core.cms', 1, 'timeLocalTransaction', '${head.request.data.body.original.timeLocalTransaction}', 20),
+    ('res-core.cms', 1, 'toAccount', '${head.request.data.body.original.toAccount}', 20),
+    ('res-core.cms', 1, 'track2Data', '${head.request.data.body.original.track2Data}', 20),
+    ('res-core.cms', 1, 'transmissionDateTime', '${head.request.data.body.original.transmissionDateTime}', 20);
+
+INSERT INTO MWCONFIG.MAPPING (ID, MODULE, MODIFIED_BY, TIMESTAMP) VALUES ('res-core.cvd.0200', '[cms][cvdmd]', CURRENT USER, CURRENT TIMESTAMP);
+INSERT INTO MWCONFIG.MAPPING_GROUP (MAPPING_ID, ID, SOURCE, TARGET, INCLUDE_MAPPING_ID, INCLUDE_ID) VALUES ('res-core.cvd.0200', 1, '/data/body', '/data/body', 'res-core.cms', '1');
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES ('res-core.cvd.0200', 1, 'messageType', '0210', 10);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES ('res-core.cvd.0200', 1, '!code', '${tar.messageType."!value"+"."+tar.processingCode."!value"}', 20);
+
+INSERT INTO MWCONFIG.MAPPING (ID, MODULE, MODIFIED_BY, TIMESTAMP) VALUES
+    ('bifast-conn-req.master', '[zzzmd][sbimd][cvsmd][cbimd]', CURRENT USER, CURRENT TIMESTAMP);
+INSERT INTO MWCONFIG.MAPPING_GROUP (MAPPING_ID, ID, SOURCE, TARGET, INCLUDE_MAPPING_ID, INCLUDE_ID) VALUES
+    ('bifast-conn-req.master', 1, '/data/body', '/data/body', 'dsp', '1');
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES
+    ('bifast-conn-req.master', 1, '@', 'copyMessageToChild("original");', 10),
+    ('bifast-conn-req.master', 1, '!ReplyToQ', 'MDW_CORE_REPLY.SMS', null),
+    ('bifast-conn-req.master', 1, '!ReplyToQMgr', 'ISOBROKER.QM', null),
+    ('bifast-conn-req.master', 1, '!destination', 'bi-conn-konven', null),
+    ('bifast-conn-req.master', 1, '!mappingCode', '${head.code}', null),
+    ('bifast-conn-req.master', 1, '!queueName', 'BACKEND_ISO_IN.SMS', null),
+    ('bifast-conn-req.master', 1, '!raw', '${head.raw}', null),
+    ('bifast-conn-req.master', 1, '!type', 'iso-8583-bi-conn', null),
+    ('bifast-conn-req.master', 1, 'CorrelId', '${head.CorrelId} ', null),
+    ('bifast-conn-req.master', 1, 'acquiringInstitutionIdentificationCode', '${msg.acquiringInstitutionIdentificationCode}', null),
+    ('bifast-conn-req.master', 1, 'additionalDataPrivate', '${msg.additionalDataPrivate}', null),
+    ('bifast-conn-req.master', 1, 'amountTransaction', '${msg.additionalDataPrivate."!value".substring(86,101)}', null),
+    ('bifast-conn-req.master', 1, 'currencyCodeTransaction', '${msg.currencyCodeTransaction}', null),
+    ('bifast-conn-req.master', 1, 'dateLocalTransaction', '${msg.dateLocalTransaction}', null),
+    ('bifast-conn-req.master', 1, 'fullReverse', 'false', null),
+    ('bifast-conn-req.master', 1, 'isMultipleRequest', '${null}', null),
+    ('bifast-conn-req.master', 1, 'merchantType', '5411', null),
+    ('bifast-conn-req.master', 1, 'messageType', '${msg.messageType}', null),
+    ('bifast-conn-req.master', 1, 'processingCode', '${msg.processingCode}', null),
+    ('bifast-conn-req.master', 1, 'reservedPrivate2', '${msg.reservedPrivate2}', null),
+    ('bifast-conn-req.master', 1, 'retrievalReferenceNumber', '${msg.retrievalReferenceNumber}', null),
+    ('bifast-conn-req.master', 1, 'systemsTraceAuditNumber', '${msg.systemsTraceAuditNumber}', null),
+    ('bifast-conn-req.master', 1, 'timeLocalTransaction', '${msg.timeLocalTransaction}', null),
+    ('bifast-conn-req.master', 1, 'toAccount', '${msg.toAccount}', null),
+    ('bifast-conn-req.master', 1, 'transmissionDateTime', '${msg.transmissionDateTime}', null);
+
+INSERT INTO MWCONFIG.MAPPING (ID, MODULE, MODIFIED_BY, TIMESTAMP) VALUES
+    ('req-core.cvd.0200.341000.VAD001BIF', '[cvdmd]', CURRENT USER, CURRENT TIMESTAMP);
+INSERT INTO MWCONFIG.MAPPING_GROUP (MAPPING_ID, ID, SOURCE, TARGET, INCLUDE_MAPPING_ID, INCLUDE_ID) VALUES
+    ('req-core.cvd.0200.341000.VAD001BIF', 1, '/data/body', '/data/body', 'dsp', '1');
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES
+    ('req-core.cvd.0200.341000.VAD001BIF', 1, '@', 'copyMessageToChild("original");dtree("CHARGES","!groupTemp")', 5),
+    ('req-core.cvd.0200.341000.VAD001BIF', 1, '!ReplyToQ', 'MDW_CORE_REPLY.CMS', 10),
+    ('req-core.cvd.0200.341000.VAD001BIF', 1, '!ReplyToQMgr', 'PAYBROKER.QM', 10),
+    ('req-core.cvd.0200.341000.VAD001BIF', 1, '!RequestURL', '${getParamValue("cms","VaDebit","http://localhost:8094")}/service', 10),
+    ('req-core.cvd.0200.341000.VAD001BIF', 1, '!body/original/messageType', 'vadebit', 10),
+    ('req-core.cvd.0200.341000.VAD001BIF', 1, '!destination', 'VaDebit', 10),
+    ('req-core.cvd.0200.341000.VAD001BIF', 1, '!dir', 'O', 10),
+    ('req-core.cvd.0200.341000.VAD001BIF', 1, '!errorCodePath', 'body.response.data.Item.errCode', 10),
+    ('req-core.cvd.0200.341000.VAD001BIF', 1, '!group', '${head.group}', 10),
+    ('req-core.cvd.0200.341000.VAD001BIF', 1, '!mappingCode', '${head.code}', 10),
+    ('req-core.cvd.0200.341000.VAD001BIF', 1, '!queueName', 'BACKEND_REST_IN', 10),
+    ('req-core.cvd.0200.341000.VAD001BIF', 1, 'accNoFrom', '${msg.fromAccount."!value"}', 20),
+    ('req-core.cvd.0200.341000.VAD001BIF', 1, 'bic', '${null}', 20),
+    ('req-core.cvd.0200.341000.VAD001BIF', 1, 'cnl', 'CMS', 20),
+    ('req-core.cvd.0200.341000.VAD001BIF', 1, 'feeAmount', '${getCharge(1)?getCharge(1).toBigDecimal():0}', 20),
+    ('req-core.cvd.0200.341000.VAD001BIF', 1, 'iat', '${new java.text.SimpleDateFormat("yyyy").format(new Date())}${msg.transmissionDateTime}', 20),
+    ('req-core.cvd.0200.341000.VAD001BIF', 1, 'jti', '${msg.systemsTraceAuditNumber}${msg.retrievalReferenceNumber."!value".trim().padLeft(12,"0").substring(8,12)}', 20),
+    ('req-core.cvd.0200.341000.VAD001BIF', 1, 'mid', '${msg.merchantType."!value"}', 20),
+    ('req-core.cvd.0200.341000.VAD001BIF', 1, 'narative', '${null}', 20),
+    ('req-core.cvd.0200.341000.VAD001BIF', 1, 'narativeExt', '${null}', 20),
+    ('req-core.cvd.0200.341000.VAD001BIF', 1, 'proCode', '${head.code}', 20),
+    ('req-core.cvd.0200.341000.VAD001BIF', 1, 'tid', '${msg.cardAcceptorTerminalIdentification."!value"}', 20),
+    ('req-core.cvd.0200.341000.VAD001BIF', 1, 'tno', '4444443', 20),
+    ('req-core.cvd.0200.341000.VAD001BIF', 1, 'trxAmount', '${msg.amountTransaction?."!value"==null?"0": decimalFormat("0", msg.amountTransaction."!value".toBigDecimal()/100)}', 20),
+    ('req-core.cvd.0200.341000.VAD001BIF', 1, 'isMultipleRequest', 'true', 30),
+    ('req-core.cvd.0200.341000.VAD001BIF', 1, 'mappingCodeMultiple', 'bif', 30);
+
+INSERT INTO MWCONFIG.MAPPING (ID, MODULE, MODIFIED_BY, TIMESTAMP) VALUES
+    ('req-core.cvd.0200.341000.VAD001BIF.bif', '[cvdmd]', CURRENT USER, CURRENT TIMESTAMP);
+INSERT INTO MWCONFIG.MAPPING_GROUP (MAPPING_ID, ID, SOURCE, TARGET, INCLUDE_MAPPING_ID, INCLUDE_ID) VALUES
+    ('req-core.cvd.0200.341000.VAD001BIF.bif', 1, '/data/body', '/data/body', 'dsp', '1');
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES
+    ('req-core.cvd.0200.341000.VAD001BIF.bif', 1, '@', 'copyMessage("original", "request/data/body/original");', 5),
+    ('req-core.cvd.0200.341000.VAD001BIF.bif', 1, '!CorrelId', '${head.request.data.CorrelId}', 10),
+    ('req-core.cvd.0200.341000.VAD001BIF.bif', 1, '!ReplyToQ', 'MDW_CORE_REPLY.CMS', 10),
+    ('req-core.cvd.0200.341000.VAD001BIF.bif', 1, '!ReplyToQMgr', 'PAYBROKER.QM', 10),
+    ('req-core.cvd.0200.341000.VAD001BIF.bif', 1, '!RequestURL', '${getParamValue("cms-api-core","BIFast-inqAcc","http://localhost:8094")}', 10),
+    ('req-core.cvd.0200.341000.VAD001BIF.bif', 1, '!code', '${head.request.data.code}', 10),
+    ('req-core.cvd.0200.341000.VAD001BIF.bif', 1, '!connid', '${head.request.data.connid}', 10),
+    ('req-core.cvd.0200.341000.VAD001BIF.bif', 1, '!destination', 'BIFast', 10),
+    ('req-core.cvd.0200.341000.VAD001BIF.bif', 1, '!dir', 'O', 10),
+    ('req-core.cvd.0200.341000.VAD001BIF.bif', 1, '!group', '${head.request.data.group}', 10),
+    ('req-core.cvd.0200.341000.VAD001BIF.bif', 1, '!mid', '${head.request.data.mid}', 10),
+    ('req-core.cvd.0200.341000.VAD001BIF.bif', 1, '!newgroup', '${head.request.data.newgroup}', 10),
+    ('req-core.cvd.0200.341000.VAD001BIF.bif', 1, '!queueName', 'BACKEND_REST_IN', 10),
+    ('req-core.cvd.0200.341000.VAD001BIF.bif', 1, '!remaining', '${head.request.data.remaining}', 10),
+    ('req-core.cvd.0200.341000.VAD001BIF.bif', 1, '!remainingPos', '${head.request.data.remainingPos}', 10),
+    ('req-core.cvd.0200.341000.VAD001BIF.bif', 1, '!reqtimestamp', '${head.request.data.reqtimestamp}', 10),
+    ('req-core.cvd.0200.341000.VAD001BIF.bif', 1, '!sid', '${head.request.data.sid}', 10),
+    ('req-core.cvd.0200.341000.VAD001BIF.bif', 1, '!source', '${head.request.data.source}', 10),
+    ('req-core.cvd.0200.341000.VAD001BIF.bif', 1, '!timestamp', '${head.request.data.timestamp}', 10),
+    ('req-core.cvd.0200.341000.VAD001BIF.bif', 1, '!type', '${head.request.data.type}', 10),
+    ('req-core.cvd.0200.341000.VAD001BIF.bif', 1, 'mappingCode', '${head.request.data.mappingCode}', 10),
+    ('req-core.cvd.0200.341000.VAD001BIF.bif', 1, 'account', '${msg.response.data.accPoolingFrom == null || msg.response.data.accPoolingFrom."!value" == null ? "".padRight(18," ") : msg.response.data.accPoolingFrom."!value"}', 20),
+    ('req-core.cvd.0200.341000.VAD001BIF.bif', 1, 'dorc', 'db', 20),
+    ('req-core.cvd.0200.341000.VAD001BIF.bif', 1, 'fee', '0', 20),
+    ('req-core.cvd.0200.341000.VAD001BIF.bif', 1, 'wsid', 'MIDDLE', 20),
+    ('req-core.cvd.0200.341000.VAD001BIF.bif', 1, 'wsref', '${head.request.data.body.original.retrievalReferenceNumber."!value"}', 20);
+
+INSERT INTO MWCONFIG.MAPPING (ID, MODULE, MODIFIED_BY, TIMESTAMP) VALUES
+    ('res-core.cvd.0200.341000.VAD001BIF', '[cvdmd]', CURRENT USER, CURRENT TIMESTAMP);
+INSERT INTO MWCONFIG.MAPPING_GROUP (MAPPING_ID, ID, SOURCE, TARGET, INCLUDE_MAPPING_ID, INCLUDE_ID) VALUES
+    ('res-core.cvd.0200.341000.VAD001BIF', 1, '/data/body', '/data/body', 'res-core.cvd.0200', '1');
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES
+    ('res-core.cvd.0200.341000.VAD001BIF', 1, '!CorrelId', '${head.request.data.CorrelId}', null),
+    ('res-core.cvd.0200.341000.VAD001BIF', 1, '!code', '${head.request.data.group}', null),
+    ('res-core.cvd.0200.341000.VAD001BIF', 1, '!connid', '${head.request.data.connid}', null),
+    ('res-core.cvd.0200.341000.VAD001BIF', 1, '!source', '${head.request.data.source}', null),
+    ('res-core.cvd.0200.341000.VAD001BIF', 1, 'additionalDataPrivate', '${msg.name==null||msg.name."!value"==null||msg.name."!value"==""?" ".padRight(40," "):msg.name."!value".padRight(40," ")}${msg.id==null||msg.id."!value"==null||msg.id."!value"==""?" ".padRight(35," "):msg.id."!value".padRight(35," ")}${head.request.data.body.original.fromAccount."!value".padRight(34," ")}${msg.idType==null||msg.idType."!value"==null||msg.idType."!value"==""?" ".padRight(2," "):msg.idType."!value".padRight(2," ")}${msg.residentStatus==null||msg.residentStatus."!value"==null||msg.residentStatus."!value"==""?" ".padRight(2," "):msg.residentStatus."!value"=="Y"?"01":"02"}${msg.townName==null||msg.townName."!value"==null||msg.townName."!value"==""?" ".padRight(4," "):msg.townName."!value".padRight(4," ")}${" ".padRight(140," ")}${head.request.data.body.fee."!value".padLeft(12,"0")}', null);
+
+INSERT INTO MWCONFIG.MAPPING (ID, MODULE, MODIFIED_BY, TIMESTAMP) VALUES 
+	('req-core.cvd.0200.342000.VAD001BIF', '[cvdmd]', CURRENT USER, CURRENT TIMESTAMP);
+INSERT INTO MWCONFIG.MAPPING_GROUP (MAPPING_ID, ID, SOURCE, TARGET, INCLUDE_MAPPING_ID, INCLUDE_ID) VALUES 
+	('req-core.cvd.0200.342000.VAD001BIF', 1, '/data/body', '/data/body', 'req-core.cvd.0200.341000.VAD001BIF', '1');
+
+INSERT INTO MWCONFIG.MAPPING (ID, MODULE, MODIFIED_BY, TIMESTAMP) VALUES
+    ('req-core.cvd.0200.342000.VAD001BIF.bif', '[cvdmd]', CURRENT USER, CURRENT TIMESTAMP);
+INSERT INTO MWCONFIG.MAPPING_GROUP (MAPPING_ID, ID, SOURCE, TARGET, INCLUDE_MAPPING_ID, INCLUDE_ID) VALUES
+    ('req-core.cvd.0200.342000.VAD001BIF.bif', 1, '/data/body', '/data/body', 'req-core.cvd.0200.341000.VAD001BIF.bif', '1');
+
+INSERT INTO MWCONFIG.MAPPING (ID, MODULE, MODIFIED_BY, TIMESTAMP) VALUES
+    ('res-core.cvd.0200.342000.VAD001BIF', '[cvdmd]', CURRENT USER, CURRENT TIMESTAMP);
+INSERT INTO MWCONFIG.MAPPING_GROUP (MAPPING_ID, ID, SOURCE, TARGET, INCLUDE_MAPPING_ID, INCLUDE_ID) VALUES
+    ('res-core.cvd.0200.342000.VAD001BIF', 1, '/data/body', '/data/body', 'res-core.cvd.0200.341000.VAD001BIF', '1');
+
+INSERT INTO MWCONFIG.MAPPING (ID, MODULE, MODIFIED_BY, TIMESTAMP) VALUES
+    ('req-core.cvd.0200.351000.VAD001BIF', '[cvdmd]', CURRENT USER, CURRENT TIMESTAMP);
+INSERT INTO MWCONFIG.MAPPING_GROUP (MAPPING_ID, ID, SOURCE, TARGET, INCLUDE_MAPPING_ID, INCLUDE_ID) VALUES
+    ('req-core.cvd.0200.351000.VAD001BIF', 1, '/data/body', '/data/body', 'req-core.cvd.0200.341000.VAD001BIF', '1');
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES
+    ('req-core.cvd.0200.351000.VAD001BIF', 1, 'bic', '${msg.additionalDataPrivate."!value".substring(101,109)}', 20);
+
+INSERT INTO MWCONFIG.MAPPING (ID, MODULE, MODIFIED_BY, TIMESTAMP) VALUES
+    ('req-core.cvd.0200.352000.VAD001BIF', '[cvdmd]', CURRENT USER, CURRENT TIMESTAMP);
+INSERT INTO MWCONFIG.MAPPING_GROUP (MAPPING_ID, ID, SOURCE, TARGET, INCLUDE_MAPPING_ID, INCLUDE_ID) VALUES
+    ('req-core.cvd.0200.352000.VAD001BIF', 1, '/data/body', '/data/body', 'req-core.cvd.0200.351000.VAD001BIF', '1');
+
+INSERT INTO MWCONFIG.MAPPING (ID, MODULE, MODIFIED_BY, TIMESTAMP) VALUES
+    ('req-core.cvd.0200.351000.VAD001BIF.bif', '[cvdmd]', CURRENT USER, CURRENT TIMESTAMP);
+INSERT INTO MWCONFIG.MAPPING_GROUP (MAPPING_ID, ID, SOURCE, TARGET, INCLUDE_MAPPING_ID, INCLUDE_ID) VALUES
+    ('req-core.cvd.0200.351000.VAD001BIF.bif', 1, '/data/request/data/body/original', '/data/body', 'bifast-conn-req.master', '1');
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES
+    ('req-core.cvd.0200.351000.VAD001BIF.bif', 1, '@', 'copyMessage("../reqVaDebit","../data/request/data");', 10),
+    ('req-core.cvd.0200.351000.VAD001BIF.bif', 1, '!ReplyToQ', 'MDW_CORE_REPLY.CMS', null),
+    ('req-core.cvd.0200.351000.VAD001BIF.bif', 1, '!body/original/messageType', 'vad-bifast', null),
+    ('req-core.cvd.0200.351000.VAD001BIF.bif', 1, '!group', '${head.request.data.group}', null),
+    ('req-core.cvd.0200.351000.VAD001BIF.bif', 1, '!mappingCode', '${head.request.data.mappingCode}', null),
+    ('req-core.cvd.0200.351000.VAD001BIF.bif', 1, '!queueName', 'BACKEND_ISO_IN.CMS', null),
+    ('req-core.cvd.0200.351000.VAD001BIF.bif', 1, 'additionalDataPrivate', '${msg.additionalDataPrivate."!value".substring(0,109)}', null),
+    ('req-core.cvd.0200.351000.VAD001BIF.bif', 1, 'amountTransaction', '${msg.amountTransaction."!value"}', null),
+    ('req-core.cvd.0200.351000.VAD001BIF.bif', 1, 'fullReverse', 'true', null),
+    ('req-core.cvd.0200.351000.VAD001BIF.bif', 1, 'messageType', '0200', null),
+    ('req-core.cvd.0200.351000.VAD001BIF.bif', 1, 'processingCode', '31${msg.processingCode."!value".substring(2,6)}', null),
+    ('req-core.cvd.0200.351000.VAD001BIF.bif', 1, 'reservedPrivate2', '001001BIF', null),
+    ('req-core.cvd.0200.351000.VAD001BIF.bif', 1, 'toAccount', '${msg.toAccount?."!value" != null ? msg.toAccount."!value".trim():null}', null);
+
+INSERT INTO MWCONFIG.MAPPING (ID, MODULE, MODIFIED_BY, TIMESTAMP) VALUES 
+	('req-core.cvd.0200.352000.VAD001BIF.bif', '[cvdmd]', CURRENT USER, CURRENT TIMESTAMP);
+INSERT INTO MWCONFIG.MAPPING_GROUP (MAPPING_ID, ID, SOURCE, TARGET, INCLUDE_MAPPING_ID, INCLUDE_ID) VALUES 
+	('req-core.cvd.0200.352000.VAD001BIF.bif', 1, '/data/request/data/body/original', '/data/body', 'req-core.cvd.0200.351000.VAD001BIF.bif', '1');
+
+INSERT INTO MWCONFIG.MAPPING (ID, MODULE, MODIFIED_BY, TIMESTAMP) VALUES
+    ('res-core.cvd.0200.351000.VAD001BIF', '[cvdmd]', CURRENT USER, CURRENT TIMESTAMP);
+INSERT INTO MWCONFIG.MAPPING_GROUP (MAPPING_ID, ID, SOURCE, TARGET, INCLUDE_MAPPING_ID, INCLUDE_ID) VALUES
+    ('res-core.cvd.0200.351000.VAD001BIF', 1, '/data/request/data/body/original', '/data/body', NULL, NULL),
+    ('res-core.cvd.0200.351000.VAD001BIF', 2, '/data/request/data/reqVaDebit', '/data/body', NULL, NULL);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES
+    ('res-core.cvd.0200.351000.VAD001BIF', 1, '@', 'copyMessage();', 10),
+    ('res-core.cvd.0200.351000.VAD001BIF', 1, 'additionalDataPrivate', '${head.request.data.body.original.additionalDataPrivate."!value".substring(0,101)}${head.request.data.body.original.additionalDataPrivate."!value".substring(8,16)}${head.request.data.body.original.additionalDataPrivate."!value".substring(101,226)}${head.body.additionalDataPrivate."!value".substring(84,124)}${head.request.data.body.original.toAccount."!value".padRight(34," ")}${" ".padRight(62," ")}${head.body.additionalDataPrivate."!value".substring(140,142)}${head.body.additionalDataPrivate."!value".substring(142,144)}${head.body.additionalDataPrivate."!value".substring(144,179)}${head.request.data.body.original.additionalDataPrivate."!value".substring(226,366)}${head.body.additionalDataPrivate."!value".substring(27,57)}${head.body.additionalDataPrivate."!value".substring(124,140)}${head.body.additionalDataPrivate."!value".substring(183,191)}${"A".padRight(25," ")}${head.request.data.body.original.additionalDataPrivate."!value".substring(366,378)}', 20),
+    ('res-core.cvd.0200.351000.VAD001BIF', 1, 'messageType', '0210', 20),
+    ('res-core.cvd.0200.351000.VAD001BIF', 1, 'processingCode', '${msg.processingCode."!value".substring(0,4)}${head.body.processingCode."!value"=="311000"?"10":head.body.processingCode."!value".substring(4,6)}', 20),
+    ('res-core.cvd.0200.351000.VAD001BIF', 1, 'responseCode', '00', 20),
+    ('res-core.cvd.0200.351000.VAD001BIF', 2, '!CorrelId', '${msg.CorrelId}', 20),
+    ('res-core.cvd.0200.351000.VAD001BIF', 2, '!ReplyToQ', 'ROUTER_OUT', 20),
+    ('res-core.cvd.0200.351000.VAD001BIF', 2, '!code', '${head.request.data.mappingCode}', 20),
+    ('res-core.cvd.0200.351000.VAD001BIF', 2, '!connid', '${msg.connid}', 20),
+    ('res-core.cvd.0200.351000.VAD001BIF', 2, '!group', '${msg.group}', 20),
+    ('res-core.cvd.0200.351000.VAD001BIF', 2, '!mid', '${msg.mid}', 20),
+    ('res-core.cvd.0200.351000.VAD001BIF', 2, '!reqtimestamp', '${msg.reqtimestamp}', 20),
+    ('res-core.cvd.0200.351000.VAD001BIF', 2, '!source', '${msg.source}', 20);
+
+INSERT INTO MWCONFIG.MAPPING (ID, MODULE, MODIFIED_BY, TIMESTAMP) VALUES
+    ('res-core.cvd.0200.352000.VAD001BIF', '[cvdmd]', CURRENT USER, CURRENT TIMESTAMP);
+INSERT INTO MWCONFIG.MAPPING_GROUP (MAPPING_ID, ID, SOURCE, TARGET, INCLUDE_MAPPING_ID, INCLUDE_ID) VALUES
+    ('res-core.cvd.0200.352000.VAD001BIF', 1, '/data/request/data/body/original', '/data/body', 'res-core.cvd.0200.351000.VAD001BIF', '1'),
+    ('res-core.cvd.0200.352000.VAD001BIF', 2, '/data/request/data/reqVaDebit', '/data/body', 'res-core.cvd.0200.351000.VAD001BIF', '2');
+
+INSERT INTO MWCONFIG.MAPPING (ID, MODULE, MODIFIED_BY, TIMESTAMP) VALUES
+    ('req-core.cvd.0200.351000.VAD001BIF.res-reverse', '[cvdmd]', CURRENT USER, CURRENT TIMESTAMP);
+INSERT INTO MWCONFIG.MAPPING_GROUP (MAPPING_ID, ID, SOURCE, TARGET, INCLUDE_MAPPING_ID, INCLUDE_ID) VALUES
+    ('req-core.cvd.0200.351000.VAD001BIF.res-reverse', 1, '/data/request/data/reqVaDebit/body', '/data/body', NULL, NULL);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES
+    ('req-core.cvd.0200.351000.VAD001BIF.res-reverse', 1, '@', 'copyMessage();', 10),
+    ('req-core.cvd.0200.351000.VAD001BIF.res-reverse', 1, '!queueName', 'BACKEND_REST_IN', 20),
+    ('req-core.cvd.0200.351000.VAD001BIF.res-reverse', 1, 'proCode', '${tar.proCode."!value".replace("0200","0400")}', 20),
+    ('req-core.cvd.0200.351000.VAD001BIF.res-reverse', 1, 'isMultipleRequest', 'false', 30),
+    ('req-core.cvd.0200.351000.VAD001BIF.res-reverse', 1, 'isNoNeedReply', 'false', 30),
+    ('req-core.cvd.0200.351000.VAD001BIF.res-reverse', 1, '!log', '${null}', 40),
+    ('req-core.cvd.0200.351000.VAD001BIF.res-reverse', 1, 'original', '${null}', 40);
+
+INSERT INTO MWCONFIG.MAPPING (ID, MODULE, MODIFIED_BY, TIMESTAMP) VALUES 
+	('req-core.cvd.0200.352000.VAD001BIF.res-reverse', '[cvdmd]', CURRENT USER, CURRENT TIMESTAMP);
+INSERT INTO MWCONFIG.MAPPING_GROUP (MAPPING_ID, ID, SOURCE, TARGET, INCLUDE_MAPPING_ID, INCLUDE_ID) VALUES 
+	('req-core.cvd.0200.352000.VAD001BIF.res-reverse', 1, '/data/request/data/reqVaDebit/body', '/data/body', 'req-core.cvd.0200.351000.VAD001BIF.res-reverse', '1');
+
+INSERT INTO MWCONFIG.MAPPING (ID, MODULE, MODIFIED_BY, TIMESTAMP) VALUES
+    ('res-core.cvd.vadebit.error', '[cvdmd]', CURRENT USER, CURRENT TIMESTAMP);
+INSERT INTO MWCONFIG.MAPPING_GROUP (MAPPING_ID, ID, SOURCE, TARGET, INCLUDE_MAPPING_ID, INCLUDE_ID) VALUES
+    ('res-core.cvd.vadebit.error', 1, '/data/request/data/body/original', '/data/body', NULL, NULL);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES
+    ('res-core.cvd.vadebit.error', 1, '@', 'copyMessage();', 5),
+    ('res-core.cvd.vadebit.error', 1, '!CorrelId', '${head.request.data.CorrelId}', 10),
+    ('res-core.cvd.vadebit.error', 1, '!ReplyToQ', 'ROUTER_OUT', 10),
+    ('res-core.cvd.vadebit.error', 1, '!ReplyToQMgr', 'CMSBROKER.QM', 10),
+    ('res-core.cvd.vadebit.error', 1, '!code', '${head.request.data.code}', 10),
+    ('res-core.cvd.vadebit.error', 1, '!connid', '${head.request.data.connid}', 10),
+    ('res-core.cvd.vadebit.error', 1, '!dir', '${head.request.data.dir}', 10),
+    ('res-core.cvd.vadebit.error', 1, '!group', '${head.request.data.group}', 10),
+    ('res-core.cvd.vadebit.error', 1, '!mid', '${head.request.data.mid}', 10),
+    ('res-core.cvd.vadebit.error', 1, '!remaining', '${head.request.data.remaining}', 10),
+    ('res-core.cvd.vadebit.error', 1, '!remainingPos', '${head.request.data.remainingPos}', 10),
+    ('res-core.cvd.vadebit.error', 1, '!reqtimestamp', '${head.request.data.reqtimestamp}', 10),
+    ('res-core.cvd.vadebit.error', 1, '!sid', '${head.request.data.sid}', 10),
+    ('res-core.cvd.vadebit.error', 1, '!source', '${head.request.data.source}', 10),
+    ('res-core.cvd.vadebit.error', 1, '!timestamp', '${head.request.data.timestamp}', 10),
+    ('res-core.cvd.vadebit.error', 1, '!type', '${head.request.data.type}', 10),
+    ('res-core.cvd.vadebit.error', 1, 'messageType', '0210', null),
+    ('res-core.cvd.vadebit.error', 1, 'responseCode', '${getParamValue("error_map|VaDebit", head.body.response.data.Item.errCode."!value","99")}', null);

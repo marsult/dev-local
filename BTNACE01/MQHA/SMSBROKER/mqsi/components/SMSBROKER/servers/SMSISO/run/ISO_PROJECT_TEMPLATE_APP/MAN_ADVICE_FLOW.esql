@@ -1,0 +1,225 @@
+
+
+CREATE COMPUTE MODULE MAN_ADVICE_FLOW_CHECK_RESPONSE
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot = InputRoot;
+		IF InputLocalEnvironment.payresp.MESSAGETYPE IS NOT NULL OR InputLocalEnvironment.payresp.RESPONSECODE = '00' THEN
+			SET OutputLocalEnvironment.payResponse.messageType = InputLocalEnvironment.payresp.MESSAGETYPE;
+			SET OutputLocalEnvironment.payResponse.primaryAccountNumber = InputLocalEnvironment.payresp.PRIMARYACCOUNTNUMBER;
+			SET OutputLocalEnvironment.payResponse.processingCode = InputLocalEnvironment.payresp.PROCESSINGCODE;
+			SET OutputLocalEnvironment.payResponse.amountTransaction = InputLocalEnvironment.payresp.AMOUNTTRANSACTION;
+			SET OutputLocalEnvironment.payResponse.transmissionDateTime = InputLocalEnvironment.payresp.TRANSMISSIONDATETIME;
+			SET OutputLocalEnvironment.payResponse.systemsTraceAuditNumber = InputLocalEnvironment.payresp.SYSTEMSTRACEAUDITNUMBER;
+			SET OutputLocalEnvironment.payResponse.timeLocalTransaction = InputLocalEnvironment.payresp.TIMELOCALTRANSACTION;
+			SET OutputLocalEnvironment.payResponse.dateLocalTransaction = InputLocalEnvironment.payresp.DATELOCALTRANSACTION;
+			SET OutputLocalEnvironment.payResponse.dateExpiration = InputLocalEnvironment.payresp.DATEEXPIRATION;
+			SET OutputLocalEnvironment.payResponse.dateSettlement = InputLocalEnvironment.payresp.DATESETTLEMENT;
+			SET OutputLocalEnvironment.payResponse.merchantType = InputLocalEnvironment.payresp.MERCHANTTYPE;
+			SET OutputLocalEnvironment.payResponse.acquiringInstitutionIdentificationCode = InputLocalEnvironment.payresp.ACQUIRINGINSTITUTIONIDENTIFICATIONCODE;
+			SET OutputLocalEnvironment.payResponse.retrievalReferenceNumber = InputLocalEnvironment.payresp.RETRIEVALREFERENCENUMBER;
+			SET OutputLocalEnvironment.payResponse.responseCode = InputLocalEnvironment.payresp.RESPONSECODE;
+			SET OutputLocalEnvironment.payResponse.cardAcceptorTerminalIdentification = InputLocalEnvironment.payresp.CARDACCEPTORTERMINALIDENTIFICATION;
+			SET OutputLocalEnvironment.payResponse.currencyCodeTransaction = InputLocalEnvironment.payresp.CURRENCYCODETRANSACTION;
+			SET OutputLocalEnvironment.payResponse.reservedPrivate3 = InputLocalEnvironment.payresp.RESERVEDPRIVATE3;
+			SET OutputLocalEnvironment.payResponse.fromAccount = InputLocalEnvironment.payresp.FROMACCOUNT;
+			SET OutputLocalEnvironment.payResponse.toAccount = InputLocalEnvironment.payresp.TOACCOUNT;
+			SET OutputLocalEnvironment.payResponse.additionalDataPrivate = InputLocalEnvironment.payresp.ADDITIONALDATAPRIVATE;
+			SET OutputLocalEnvironment.payResponse.reservedPrivate2 = InputLocalEnvironment.payresp.RESERVEDPRIVATE2;
+			RETURN TRUE;
+		ELSE
+			SET OutputRoot.XMLNSC.data.payRequest.messageType = InputLocalEnvironment.payreq.MESSAGETYPE;
+			SET OutputRoot.XMLNSC.data.payRequest.primaryAccountNumber = InputLocalEnvironment.payreq.PRIMARYACCOUNTNUMBER;
+			SET OutputRoot.XMLNSC.data.payRequest.processingCode = InputLocalEnvironment.payreq.PROCESSINGCODE;
+			SET OutputRoot.XMLNSC.data.payRequest.amountTransaction = InputLocalEnvironment.payreq.AMOUNTTRANSACTION;
+			SET OutputRoot.XMLNSC.data.payRequest.transmissionDateTime = InputLocalEnvironment.payreq.TRANSMISSIONDATETIME;
+			SET OutputRoot.XMLNSC.data.payRequest.systemsTraceAuditNumber = InputLocalEnvironment.payreq.SYSTEMSTRACEAUDITNUMBER;
+			SET OutputRoot.XMLNSC.data.payRequest.timeLocalTransaction = InputLocalEnvironment.payreq.TIMELOCALTRANSACTION;
+			SET OutputRoot.XMLNSC.data.payRequest.dateLocalTransaction = InputLocalEnvironment.payreq.DATELOCALTRANSACTION;
+			SET OutputRoot.XMLNSC.data.payRequest.dateExpiration = InputLocalEnvironment.payreq.DATEEXPIRATION;
+			SET OutputRoot.XMLNSC.data.payRequest.dateSettlement = InputLocalEnvironment.payreq.DATESETTLEMENT;
+			SET OutputRoot.XMLNSC.data.payRequest.merchantType = InputLocalEnvironment.payreq.MERCHANTTYPE;
+			SET OutputRoot.XMLNSC.data.payRequest.acquiringInstitutionIdentificationCode = InputLocalEnvironment.payreq.ACQUIRINGINSTITUTIONIDENTIFICATIONCODE;
+			SET OutputRoot.XMLNSC.data.payRequest.retrievalReferenceNumber = InputLocalEnvironment.payreq.RETRIEVALREFERENCENUMBER;
+			SET OutputRoot.XMLNSC.data.payRequest.responseCode = InputLocalEnvironment.payreq.RESPONSECODE;
+			SET OutputRoot.XMLNSC.data.payRequest.cardAcceptorTerminalIdentification = InputLocalEnvironment.payreq.CARDACCEPTORTERMINALIDENTIFICATION;
+			SET OutputRoot.XMLNSC.data.payRequest.currencyCodeTransaction = InputLocalEnvironment.payreq.CURRENCYCODETRANSACTION;
+			SET OutputRoot.XMLNSC.data.payRequest.reservedPrivate3 = InputLocalEnvironment.payreq.RESERVEDPRIVATE3;
+			SET OutputRoot.XMLNSC.data.payRequest.fromAccount = InputLocalEnvironment.payreq.FROMACCOUNT;
+			SET OutputRoot.XMLNSC.data.payRequest.toAccount = InputLocalEnvironment.payreq.TOACCOUNT;
+			SET OutputRoot.XMLNSC.data.payRequest.additionalDataPrivate = InputLocalEnvironment.payreq.ADDITIONALDATAPRIVATE;
+			SET OutputRoot.XMLNSC.data.payRequest.reservedPrivate2 = InputLocalEnvironment.payreq.RESERVEDPRIVATE2;
+			PROPAGATE TO TERMINAL 'out1';
+			RETURN FALSE;
+		END IF;
+	END;
+
+	CREATE PROCEDURE CopyMessageHeaders() BEGIN
+		DECLARE I INTEGER 1;
+		DECLARE J INTEGER;
+		SET J = CARDINALITY(InputRoot.*[]);
+		WHILE I < J DO
+			SET OutputRoot.*[I] = InputRoot.*[I];
+			SET I = I + 1;
+		END WHILE;
+	END;
+
+	CREATE PROCEDURE CopyEntireMessage() BEGIN
+		SET OutputRoot = InputRoot;
+	END;
+END MODULE;
+
+
+CREATE COMPUTE MODULE MAN_ADVICE_FLOW_MOVE_RESP_TOLENV
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot =InputRoot;
+		SET OutputLocalEnvironment = InputLocalEnvironment;
+		SET OutputLocalEnvironment.XMLNSC = InputRoot.XMLNSC;
+		RETURN TRUE;
+	END;
+
+	CREATE PROCEDURE CopyMessageHeaders() BEGIN
+		DECLARE I INTEGER 1;
+		DECLARE J INTEGER;
+		SET J = CARDINALITY(InputRoot.*[]);
+		WHILE I < J DO
+			SET OutputRoot.*[I] = InputRoot.*[I];
+			SET I = I + 1;
+		END WHILE;
+	END;
+
+	CREATE PROCEDURE CopyEntireMessage() BEGIN
+		SET OutputRoot = InputRoot;
+	END;
+END MODULE;
+
+
+CREATE COMPUTE MODULE MAN_ADVICE_FLOW_FORMAT_MSG4MAPPING
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot = InputRoot;
+		SET OutputRoot.XMLNSC.data.response = InputLocalEnvironment.XMLNSC.data;
+		RETURN TRUE;
+	END;
+
+	CREATE PROCEDURE CopyMessageHeaders() BEGIN
+		DECLARE I INTEGER 1;
+		DECLARE J INTEGER;
+		SET J = CARDINALITY(InputRoot.*[]);
+		WHILE I < J DO
+			SET OutputRoot.*[I] = InputRoot.*[I];
+			SET I = I + 1;
+		END WHILE;
+	END;
+
+	CREATE PROCEDURE CopyEntireMessage() BEGIN
+		SET OutputRoot = InputRoot;
+	END;
+END MODULE;
+
+
+CREATE COMPUTE MODULE MAN_ADVICE_FLOW_FORMAT_MSG
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot = InputRoot;
+		SET OutputRoot.XMLNSC.data.payResponse = InputLocalEnvironment.payResponse;
+		RETURN TRUE;
+	END;
+
+	CREATE PROCEDURE CopyMessageHeaders() BEGIN
+		DECLARE I INTEGER 1;
+		DECLARE J INTEGER;
+		SET J = CARDINALITY(InputRoot.*[]);
+		WHILE I < J DO
+			SET OutputRoot.*[I] = InputRoot.*[I];
+			SET I = I + 1;
+		END WHILE;
+	END;
+
+	CREATE PROCEDURE CopyEntireMessage() BEGIN
+		SET OutputRoot = InputRoot;
+	END;
+END MODULE;
+
+
+CREATE COMPUTE MODULE MAN_ADVICE_FLOW_CHECK_MSGREQ
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot = InputRoot;
+		SET OutputLocalEnvironment = InputLocalEnvironment;
+		IF InputLocalEnvironment.payreq.CORELLATIONID IS NOT NULL THEN
+			RETURN TRUE;
+		ELSE
+			PROPAGATE TO TERMINAL 'out1';
+			RETURN FALSE;
+		END IF;
+	END;
+
+	CREATE PROCEDURE CopyMessageHeaders() BEGIN
+		DECLARE I INTEGER 1;
+		DECLARE J INTEGER;
+		SET J = CARDINALITY(InputRoot.*[]);
+		WHILE I < J DO
+			SET OutputRoot.*[I] = InputRoot.*[I];
+			SET I = I + 1;
+		END WHILE;
+	END;
+
+	CREATE PROCEDURE CopyEntireMessage() BEGIN
+		SET OutputRoot = InputRoot;
+	END;
+END MODULE;
+
+
+CREATE COMPUTE MODULE MAN_ADVICE_FLOW_SET_RESP_PAYNOTFOUND
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot = InputRoot;
+		SET OutputRoot.XMLNSC.data.body.responseCode = '48';
+		RETURN TRUE;
+	END;
+
+	CREATE PROCEDURE CopyMessageHeaders() BEGIN
+		DECLARE I INTEGER 1;
+		DECLARE J INTEGER;
+		SET J = CARDINALITY(InputRoot.*[]);
+		WHILE I < J DO
+			SET OutputRoot.*[I] = InputRoot.*[I];
+			SET I = I + 1;
+		END WHILE;
+	END;
+
+	CREATE PROCEDURE CopyEntireMessage() BEGIN
+		SET OutputRoot = InputRoot;
+	END;
+END MODULE;
+
+
+CREATE COMPUTE MODULE MAN_ADVICE_FLOW_SET_QRY
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot = InputRoot;
+		SET OutputLocalEnvironment.qry.code = '0200.'||InputRoot.XMLNSC.data.body.processingCode;
+		SET OutputLocalEnvironment.qry.type = InputRoot.XMLNSC.data.type;
+		SET OutputLocalEnvironment.qry.meterNum = '%'||SUBSTRING(InputRoot.XMLNSC.data.body.additionalDataPrivate FROM 1 FOR 20)||'%';
+		SET OutputLocalEnvironment.qry.mlpoReff = '%'||SUBSTRING(InputRoot.XMLNSC.data.body.additionalDataPrivate FROM 21)||'%';
+		-- SET OutputLocalEnvironment.qry.meterNum = InputRoot.XMLNSC.data.meterNum;
+		-- SET OutputLocalEnvironment.qry.mlpoReff = InputRoot.XMLNSC.data.mlpoReff;
+		RETURN TRUE;
+	END;
+
+	CREATE PROCEDURE CopyMessageHeaders() BEGIN
+		DECLARE I INTEGER 1;
+		DECLARE J INTEGER;
+		SET J = CARDINALITY(InputRoot.*[]);
+		WHILE I < J DO
+			SET OutputRoot.*[I] = InputRoot.*[I];
+			SET I = I + 1;
+		END WHILE;
+	END;
+
+	CREATE PROCEDURE CopyEntireMessage() BEGIN
+		SET OutputRoot = InputRoot;
+	END;
+END MODULE;

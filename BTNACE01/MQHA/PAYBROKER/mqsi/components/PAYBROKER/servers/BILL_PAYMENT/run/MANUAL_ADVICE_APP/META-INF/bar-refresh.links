@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy:Deploy xmlns:deploy="http://www.ibm.com/xmlns/prod/wmb/deploy/6.0.0" overrideConfigurableProperties="true" includeESQL="false">
+  <deployables>
+    <deployable deployed="true" barResourceTimeStamp="1635731946861" workspaceResource="/MANUAL_ADVICE_APP/MANUAL_ADVICE_FLOW.esql">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file MANUAL_ADVICE_APP\MANUAL_ADVICE_FLOW.esql.&#xA;Successfully added file MANUAL_ADVICE_APP\MANUAL_ADVICE_FLOW.esql to BAR file.&#xA;" severity="0"/>
+      <barEntry name="MANUAL_ADVICE_FLOW.esql"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1642346482420" workspaceResource="/MANUAL_ADVICE_APP/WS_MAN_ADVICE_FLOW.msgflow">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file MANUAL_ADVICE_APP\WS_MAN_ADVICE_FLOW.msgflow.&#xA;Successfully added file MANUAL_ADVICE_APP\WS_MAN_ADVICE_FLOW.msgflow to BAR file.&#xA;" severity="0"/>
+      <barEntry name="WS_MAN_ADVICE_FLOW.msgflow"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1642087548900" workspaceResource="/MANUAL_ADVICE_APP/application.descriptor">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file MANUAL_ADVICE_APP\application.descriptor.&#xA;Successfully added file MANUAL_ADVICE_APP\application.descriptor to BAR file.&#xA;Elapsed time: 0.001 second(s).&#xA;&#xA;Successfully added file MANUAL_ADVICE_APP\application.descriptor to BAR file.&#xA;" severity="0"/>
+      <barEntry name="application.descriptor"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1642087417171" workspaceResource="/MANUAL_ADVICE_APP/gen/MANUAL_ADVICE_FLOW.subflow">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file MANUAL_ADVICE_APP\gen\MANUAL_ADVICE_FLOW.subflow.&#xA;Successfully added file MANUAL_ADVICE_APP\gen\MANUAL_ADVICE_FLOW.subflow to BAR file.&#xA;" severity="0"/>
+      <barEntry name="gen\MANUAL_ADVICE_FLOW.subflow"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1642087444180" workspaceResource="/MANUAL_ADVICE_APP/gen/MANUAL_ADVICE_SUB_FLOW.subflow">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file MANUAL_ADVICE_APP\gen\MANUAL_ADVICE_SUB_FLOW.subflow.&#xA;Successfully added file MANUAL_ADVICE_APP\gen\MANUAL_ADVICE_SUB_FLOW.subflow to BAR file.&#xA;" severity="0"/>
+      <barEntry name="gen\MANUAL_ADVICE_SUB_FLOW.subflow"/>
+    </deployable>
+    <deployable workspaceResource="/PLN_MA_SET_PROJECT/PLN_MA_SET/id/co/btn/soa/pln/PlnManualAdviceServiceInterface.wsdl"/>
+    <deployable workspaceResource="/PLN_MA_SET_PROJECT/PLN_MA_SET/id/co/btn/soa/pln/PlnManualAdviceWSExport.wsdl"/>
+    <deployable deployed="true" barResourceTimeStamp="1629862624755" workspaceResource="/PLN_MA_SET_PROJECT/PLN_MA_SET/messageSet.mset">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="Generating .xsdzip file for message set &quot;PLN_MA_SET&quot; &#xA;&#xD;&#xA;Generating schema for no XML Wire format&#xD;&#xA;Generating schema using the lax option&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;Processing File : &quot;/PLN_MA_SET_PROJECT/PLN_MA_SET/id/co/btn/soa/pln/PlnManualAdvice.mxsd&quot;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;Processing File : &quot;/PLN_MA_SET_PROJECT/PLN_MA_SET/id/co/btn/soa/pln/PlnManualAdviceServiceInterface_InlineSchema1.mxsd&quot;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;Processing File : &quot;/PLN_MA_SET_PROJECT/PLN_MA_SET/id/co/btn/soa/pln/PlnManualAdviceWSExport.mxsd&quot;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;Processing File : &quot;/PLN_MA_SET_PROJECT/PLN_MA_SET/org/xmlsoap/schemas/soap/envelope/soapenv11.mxsd&quot;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;Processing File : &quot;/PLN_MA_SET_PROJECT/PLN_MA_SET/soap.mxsd&quot;&#xD;&#xA;&#xD;&#xA;Saving File : &quot;/PLN_MA_SET_PROJECT/.GeneratedSchemas/id/co/btn/soa/pln/PlnManualAdvice.xsd&quot; &#xA;&#xD;&#xA;Saving File : &quot;/PLN_MA_SET_PROJECT/.GeneratedSchemas/id/co/btn/soa/pln/PlnManualAdviceServiceInterface_InlineSchema1.xsd&quot; &#xA;&#xD;&#xA;Saving File : &quot;/PLN_MA_SET_PROJECT/.GeneratedSchemas/id/co/btn/soa/pln/PlnManualAdviceWSExport.xsd&quot; &#xA;&#xD;&#xA;Saving File : &quot;/PLN_MA_SET_PROJECT/.GeneratedSchemas/org/xmlsoap/schemas/soap/envelope/soapenv11.xsd&quot; &#xA;&#xD;&#xA;Saving File : &quot;/PLN_MA_SET_PROJECT/.GeneratedSchemas/soap.xsd&quot; &#xA;&#xD;&#xA;Processing file &quot;/PLN_MA_SET_PROJECT/PLN_MA_SET/id/co/btn/soa/pln/PlnManualAdviceServiceInterface.wsdl&quot; &#xA;&#xD;&#xA;Saving file &quot;/PLN_MA_SET_PROJECT/.ModifiedWSDLs/id/co/btn/soa/pln/PlnManualAdviceServiceInterface.wsdl&quot; &#xA;&#xD;&#xA;Processing file &quot;/PLN_MA_SET_PROJECT/PLN_MA_SET/id/co/btn/soa/pln/PlnManualAdviceWSExport.wsdl&quot; &#xA;&#xD;&#xA;Saving file &quot;/PLN_MA_SET_PROJECT/.ModifiedWSDLs/id/co/btn/soa/pln/PlnManualAdviceWSExport.wsdl&quot; &#xA;&#xD;&#xA;Saving file &quot;/PLN_MA_SET_PROJECT/.KeywordsFile/meta-inf/keywords.txt&quot; &#xA;&#xD;&#xA;Saving file &quot;/PLN_MA_SET_PROJECT/PLN_MA_SET/messageSet.mset&quot; &#xA;&#xD;&#xA;&#xD;&#xA;Elapsed time: 0.069 seconds&#xD;&#xA;Warnings: 0&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;Operation complete&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;" severity="0"/>
+      <barEntry name="PLN_MA_SET.xsdzip"/>
+    </deployable>
+  </deployables>
+</deploy:Deploy>

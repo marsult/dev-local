@@ -1,0 +1,137 @@
+<db-config>
+	<url>jdbc:db2://btnmdwdata:50000/mwconfig</url>
+	<driver-class>com.ibm.db2.jcc.DB2Driver</driver-class>
+	<username>db2inst1</username>
+	<password>wajFMo2HsNWsRQcLal8Y47jzNMHI+oAu8ywJwIfL9cA=</password>
+	<schema>mwconfig</schema>
+	<c3p0 id="jdbc:db2:">
+		<param id="minPoolSize">5</param>
+		<param id="maxPoolSize">50</param>
+		<param id="timeout">60</param>
+		<param id="idleConnectionTestPeriod">300</param>
+		<param id="maxIdleTime">300</param>
+		<param id="maxIdleTimeExcessConnections">180</param>
+		<param id="preferredTestQuery">select 1 from sysibm.sysdummy1</param>
+	</c3p0>
+	<config-pattern>
+		<!-- If path is not specify, will be included to config -->
+		<!-- If path is specify, only using <include> will be included to config -->
+		<path id="config/clients/client">
+			<include>\[infinet-cws-conn\]</include>
+		</path>
+		<path id="config/codex" />
+		<path id="config/db">
+			<include>\[mwlog\]</include>
+		</path>
+		<path id="config/dbquery">
+			<include>\[itm-request-original.*\]</include>
+		</path>
+		<path id="config/dtree-map">
+			<include>\[.*\]\{.*\[itm\].*\}</include>
+			<include>\[.*\]\{.*\[i..it\].*\}</include>
+			<include>\[.*\]\{.*\[itmit\].*\}</include>
+			<include>\[.*\]\{.*\[iwswc\].*\}</include>
+			<!-- NETWORK ALTO -->
+			<include>\[.*\]\{.*\[iali\].*\}</include>
+			<include>\[.*\]\{.*\[ialii\].*\}</include>
+			<!-- NETWORK BERSAMA -->
+			<include>\[.*\]\{.*\[ibeii\].*\}</include>
+			<!-- NETWORK LINK -->
+			<include>\[.*\]\{.*\[ilii\].*\}</include>
+			<!-- NETWORK AMP -->
+			<include>\[.*\]\{.*\[impi\].*\}</include>
+			
+			<!-- NETWORK PRIMA -->
+			<include>\[.*\]\{.*\[ipri\].*\}</include>
+			<include>\[.*\]\{.*\[iprii\].*\}</include>
+			<!-- NETWORK VISA  -->
+			<include>\[.*\]\{.*\[iviit\].*\}</include>
+			<!-- MASTERCARD -->
+			<include>\[.*\]\{.*\[imai\].*\}</include>
+			<!-- BY CODE-->			
+			<include>\[CHARGES\|itm\](\{.*\}|)</include>
+			<include>\[ITM-CODE\|\d{4}\](\{.*\}|)</include>
+			<include>\[ITM-CODE\|.*\](\{.*\}|)</include>
+		</path>
+		<path id="config/host" />
+		<path id="config/mapping">
+			<include>\[.*\]\{.*\[itm\].*\}</include>
+			<include>\[.*\]\{.*\[i..it\].*\}</include>
+			<include>\[.*\]\{.*\[itmit\].*\}</include>
+            <include>\[.*\]\{.*\[ivait\].*\}</include>
+			<!-- NETWORK ALTO -->
+			<include>\[.*\]\{.*\[iali\].*\}</include>
+			<include>\[.*\]\{.*\[ialii\].*\}</include>
+			<!-- NETWORK BERSAMA --> 
+			<include>\[.*\]\{.*\[ibeii\].*\}</include>
+			<!-- NETWORK AMP 
+			<include>\[.*\]\{.*\[impi\].*\}</include>
+			-->
+			<!-- NETWORK PRIMA -->
+			<include>\[.*\]\{.*\[ipri\].*\}</include>
+			<include>\[.*\]\{.*\[iprii\].*\}</include>
+			<!-- NETWORK VISA  -->
+			<include>\[.*\]\{.*\[iviit\].*\}</include>
+			<!-- MASTERCARD -->
+			<include>\[.*\]\{.*\[imai\].*\}</include>
+			<!-- SMS REGISTER -->
+			<include>\[.*\]\{.*\[itmi\].*\}</include>
+			<!-- BY CODE -->
+			<include>\[req-core.itm\](\{.*\}|)</include>
+			<include>\[dsp\](\{.*\}|)</include>
+		</path>
+		<path id="config/param-map">
+			<include>\[ITM-VA-INST\|.*\]</include>
+			<include>\[ITM-VA-ONUS\|.*\]</include>
+			<include>\[account-type\|\d{2}\]</include>
+			<include>\[account-type\|.*\]</include>
+			<include>\[acquire-group-bersama\|\d{11}\]</include>
+			<include>\[bank-name\|.*\]</include>
+            <include>\[bds-konven-code\|.*\]</include>
+			<include>\[coa-edc\|.*\]</include>
+			<include>\[coa-pay\|.*\]</include>
+			<include>\[coa-syariah\|.*\]</include>
+			<include>\[request-url\|.*\]</include>
+			<include>\[coa\|.*\]</include>
+			<include>\[itm\|.*\]</include>
+			<include>\[device_teller_map\|.*\]</include>
+			<include>\[Ayopop\|.*\]</include>
+            <include>\[error_map\|ist-syariah-conn\|.*\]</include>
+			<include>\[error_map\|H2HERRLINKPAY\|.*\]</include>
+			<include>\[error_map\|api-error-code\|.*\]</include>
+			<include>\[error_map\|VaDebit.*\]</include>
+			<include>\[error_map\|VaDebitAtm.*\]</include>
+			<include>\[error_map\|core-itm\|.*\]</include>
+			<include>\[error_map\|core-syariah-itm\|.*\]</include>
+			<include>\[error_map\|dsp-conn\|.*\]</include>
+			<include>\[error_map\|eWallet\|.*\]</include>
+			<include>\[error_map\|infinet-cws-conn\|.*\]</include>
+			<include>\[error_map\|VaTokped.*\]</include>
+            <include>\[error_map\|ist-conn\|.*\]</include>
+			<include>\[error_map\|ActiveCardAndRegisMB.*\]</include>
+			<include>\[error_map\|VaIsaku.*\]</include>
+			<include>\[error_map\|api-bis-conn.*\]</include>
+			<include>\[itm-konven-code\|.*\]</include>
+			<include>\[itm-api-core\|.*\]</include> 
+			<include>\[itm-konven-code\|0\d{3}\.\d{6}.*\]</include>
+			<include>\[itm-syariah-code\|0\d{3}\.\d{6}.*\]</include>
+			<include>\[itm\|VaDebit.*\]</include>
+			<include>\[itm\|eWallet.*\]</include>
+			<include>\[itm\|mLinkAja.*\]</include>
+            <include>\[bds\|VaDebitSyariah.*\]</include>
+			<include>\[syariah-ack\|.*\]</include>
+            <include>\[check.res-core.*\]</include>
+			
+			<!-- pindahan dari BDSMDW1  -->
+			<include>\[error_map\|SIPATUH.*\]</include>
+			<include>\[syariah-siskohat\|SIPATUH.*\]</include>
+			
+		</path>
+		<path id="config/parser">
+			<include>\[parser-1\]</include>
+		</path>
+		<path id="config/ports/port" />
+		<path id="config/routing" />
+		<path id="config/rpg-call" />
+	</config-pattern>
+</db-config>

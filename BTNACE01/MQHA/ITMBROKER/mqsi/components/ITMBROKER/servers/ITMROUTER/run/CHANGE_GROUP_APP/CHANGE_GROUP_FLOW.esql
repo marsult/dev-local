@@ -1,0 +1,161 @@
+CREATE COMPUTE MODULE CHANGE_GROUP_FLOW_BACKUP_REQUEST
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot = InputRoot;
+		SET OutputRoot.XMLNSC.data.frontOriginal = InputRoot.XMLNSC.data;
+		SET OutputRoot.XMLNSC.data.frontReplyToQ = InputRoot.MQMD.ReplyToQ;
+		DELETE FIELD OutputRoot.XMLNSC.data.body;
+		DELETE FIELD OutputRoot.XMLNSC.data.frontOriginal.log;
+
+		RETURN TRUE;
+	END;
+END MODULE;
+
+CREATE COMPUTE MODULE CHANGE_GROUP_FLOW_SET_DESTINATION_LIST
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputLocalEnvironment = InputLocalEnvironment;
+		SET OutputLocalEnvironment.Destination.MQDestinationList.DestinationData.queueName = InputRoot.XMLNSC.data.queueName;
+
+		RETURN TRUE;
+	END;
+END MODULE;
+
+CREATE COMPUTE MODULE CHANGE_GROUP_FLOW_RESTORE_REQUEST
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot.Properties = InputRoot.Properties;
+		SET OutputRoot.MQMD = InputRoot.MQMD;
+		SET OutputRoot.XMLNSC.data = InputRoot.XMLNSC.data.request.data.frontOriginal;
+		SET OutputRoot.XMLNSC.data.frontReplyToQ = InputRoot.XMLNSC.data.request.data.frontReplyToQ;
+		SET OutputRoot.XMLNSC.data.coreResponse = InputRoot.XMLNSC.data.body;
+		SET OutputLocalEnvironment.coreRequest = InputRoot.XMLNSC.data.body.request;
+		SET OutputRoot.XMLNSC.data.log = InputRoot.XMLNSC.data.log;
+
+		IF (InputRoot.XMLNSC.data.body.responseCode = '00') THEN
+			IF (InputRoot.XMLNSC.data.request.data.RouteToCore = 'false') THEN
+				SET OutputRoot.XMLNSC.data.code = REPLACE(InputRoot.XMLNSC.data.request.data.frontOriginal.code, '0200.', '0210.');
+				IF InputRoot.XMLNSC.data.request.data.frontOriginal.body.messageType = '0200' THEN
+					SET OutputRoot.XMLNSC.data.body.messageType = '0210';
+				ELSEIF InputRoot.XMLNSC.data.request.data.frontOriginal.body.messageType = '0400' THEN
+					SET OutputRoot.XMLNSC.data.body.messageType = '0410';
+				END IF;
+
+				SET OutputRoot.XMLNSC.data.body.responseCode = InputRoot.XMLNSC.data.body.responseCode;
+
+				PROPAGATE TO TERMINAL 'out2';
+				RETURN FALSE;
+			ELSE
+				RETURN TRUE;
+			END IF;
+		ELSE
+			PROPAGATE TO TERMINAL 'out1';
+			RETURN FALSE;
+		END IF;
+	END;
+END MODULE;
+
+CREATE COMPUTE MODULE CHANGE_GROUP_FLOW_CLEANUP_REQUEST
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot = InputRoot;
+		SET OutputRoot.XMLNSC.data.group = InputRoot.XMLNSC.data.oldgroup;
+		SET OutputRoot.XMLNSC.data.newgroup = InputRoot.XMLNSC.data.group;
+		DELETE FIELD OutputRoot.XMLNSC.data.coreResponse;
+
+		RETURN TRUE;
+	END;
+END MODULE;
+
+CREATE COMPUTE MODULE CHANGE_GROUP_FLOW_BACKUP_RESPONSE
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputLocalEnvironment.message = InputRoot.XMLNSC;
+
+		SET OutputRoot = InputRoot;
+		SET OutputRoot.MQMD.CorrelId = CAST(SUBSTRING(InputRoot.XMLNSC.data.group || '.' || InputRoot.XMLNSC.data.CorrelId || '                        ' FROM 1 FOR 24) AS BLOB CCSID 1208);
+
+		RETURN TRUE;
+	END;
+END MODULE;
+
+CREATE COMPUTE MODULE CHANGE_GROUP_FLOW_RESTORE_RESPONSE
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot.Properties = InputRoot.Properties;
+		SET OutputRoot.MQMD = InputRoot.MQMD;
+		SET OutputRoot.MQMD.MsgId = CAST(SUBSTRING(InputLocalEnvironment.message.data.CorrelId || '                        ' FROM 1 FOR 24) AS BLOB CCSID 1208);
+		SET OutputRoot.MQMD.CorrelId = OutputRoot.MQMD.MsgId;
+		SET OutputRoot.MQMD.ReplyToQ = 'ROUTER_OUT';
+		SET OutputRoot.MQMD.ReplyToQMgr = 'ITMBROKER.QM';
+		SET OutputRoot.XMLNSC = InputLocalEnvironment.message;
+		SET OutputRoot.XMLNSC.data.backup = InputRoot.XMLNSC.data;
+		SET OutputRoot.XMLNSC.data.nolog = 'true';
+
+		DELETE FIELD OutputRoot.XMLNSC.data.nolog;
+
+		IF (InputLocalEnvironment.message.data.body.responseCode <> '00') THEN
+			PROPAGATE TO TERMINAL 'out1' DELETE NONE;
+		END IF;
+
+		RETURN TRUE;
+	END;
+END MODULE;
+
+CREATE COMPUTE MODULE CHANGE_GROUP_FLOW_CLEANUP_RESPONSE_ERROR
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot = InputRoot;
+		SET OutputRoot.MQMD.ReplyToQ = InputRoot.XMLNSC.data.frontReplyToQ;
+		SET OutputRoot.MQMD.MsgId = InputRoot.MQMD.CorrelId;
+		SET OutputRoot.XMLNSC.data.group = InputRoot.XMLNSC.data.oldgroup;
+		SET OutputRoot.XMLNSC.data.newgroup = InputRoot.XMLNSC.data.group;
+		DELETE FIELD OutputRoot.XMLNSC.data.coreResponse;
+		SET OutputRoot.MQMD.ReplyToQMgr = 'ITMBROKER.QM';
+		SET OutputRoot.MQMD.ReplyToQ = 'ROUTER_OUT';
+		RETURN TRUE;
+	END;
+END MODULE;
+
+
+
+CREATE COMPUTE MODULE CHANGE_GROUP_FLOW_SET_DESTINATION_REVERSAL
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot = InputRoot;
+		SET OutputRoot.MQMD.ReplyToQ = 'GROUP_CHANGE_AUTOREV_REPLY';
+
+		RETURN TRUE;
+	END;
+END MODULE;
+
+CREATE COMPUTE MODULE CHANGE_GROUP_FLOW_SET_REVERSAL_REQUEST
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot = InputRoot;
+		SET OutputRoot.XMLNSC.data.frontOriginal = InputRoot.XMLNSC.data;
+		SET OutputRoot.XMLNSC.data.group = InputRoot.XMLNSC.data.backup.newgroup;
+		SET OutputRoot.XMLNSC.data.oldgroup = InputRoot.XMLNSC.data.group;
+		SET OutputRoot.XMLNSC.data.code = InputRoot.XMLNSC.data.mappingCode;
+		SET OutputRoot.XMLNSC.data.body.messageType = '0200';
+
+		DELETE FIELD OutputRoot.XMLNSC.data.frontOriginal.log;
+		RETURN TRUE;
+	END;
+END MODULE;
+
+CREATE COMPUTE MODULE CHANGE_GROUP_FLOW_SET_REVERSAL_DETINATION
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot = InputRoot;
+		SET OutputLocalEnvironment = InputLocalEnvironment;
+		
+		SET OutputRoot.MQMD.MsgId = InputRoot.MQMD.CorrelId;
+		SET OutputRoot.MQMD.ReplyToQ = InputRoot.XMLNSC.data.queueName;
+		SET OutputRoot.MQMD.ReplyToQMgr = null;
+		
+		SET OutputLocalEnvironment.Destination.MQDestinationList.DestinationData.queueName = InputRoot.XMLNSC.data.queueName;
+
+		RETURN TRUE;
+	END;
+END MODULE;

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy:Deploy xmlns:deploy="http://www.ibm.com/xmlns/prod/wmb/deploy/6.0.0" overrideConfigurableProperties="true" includeESQL="false">
+  <deployables>
+    <deployable deployed="true" barResourceTimeStamp="1681200427983" workspaceResource="/LOG_DB_JSON_APP/LOG_DB_JSON_FLOW.esql">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file LOG_DB_JSON_APP\LOG_DB_JSON_FLOW.esql.&#xA;Successfully added file LOG_DB_JSON_APP\LOG_DB_JSON_FLOW.esql to BAR file.&#xA;" severity="0"/>
+      <barEntry name="LOG_DB_JSON_FLOW.esql"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1681199671746" workspaceResource="/LOG_DB_JSON_APP/LOG_DB_JSON_FLOW.msgflow">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file LOG_DB_JSON_APP\LOG_DB_JSON_FLOW.msgflow.&#xA;Successfully added file LOG_DB_JSON_APP\LOG_DB_JSON_FLOW.msgflow to BAR file.&#xA;" severity="0"/>
+      <barEntry name="LOG_DB_JSON_FLOW.msgflow"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1635825690002" workspaceResource="/LOG_DB_JSON_APP/application.descriptor">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file LOG_DB_JSON_APP\application.descriptor.&#xA;Successfully added file LOG_DB_JSON_APP\application.descriptor to BAR file.&#xA;Elapsed time: 0 second(s).&#xA;&#xA;Successfully added file LOG_DB_JSON_APP\application.descriptor to BAR file.&#xA;" severity="0"/>
+      <barEntry name="application.descriptor"/>
+    </deployable>
+  </deployables>
+</deploy:Deploy>

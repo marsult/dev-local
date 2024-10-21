@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy:Deploy xmlns:deploy="http://www.ibm.com/xmlns/prod/wmb/deploy/6.0.0" overrideConfigurableProperties="true" includeESQL="false">
+  <deployables>
+    <deployable deployed="true" barResourceTimeStamp="1642157830000" workspaceResource="/UB_APP/PARSER_DB_ABCS_REQ_FLOW.esql">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file UB_APP\PARSER_DB_ABCS_REQ_FLOW.esql.&#xA;Successfully added file UB_APP\PARSER_DB_ABCS_REQ_FLOW.esql to BAR file.&#xA;" severity="0"/>
+      <barEntry name="PARSER_DB_ABCS_REQ_FLOW.esql"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1642157830000" workspaceResource="/UB_APP/PARSER_DB_ABCS_REQ_FLOW.subflow">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file UB_APP\PARSER_DB_ABCS_REQ_FLOW.subflow.&#xA;Successfully added file UB_APP\PARSER_DB_ABCS_REQ_FLOW.subflow to BAR file.&#xA;" severity="0"/>
+      <barEntry name="PARSER_DB_ABCS_REQ_FLOW.subflow"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1642157830000" workspaceResource="/UB_APP/UB_CLIENT.esql">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file UB_APP\UB_CLIENT.esql.&#xA;Successfully added file UB_APP\UB_CLIENT.esql to BAR file.&#xA;" severity="0"/>
+      <barEntry name="UB_CLIENT.esql"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1642157830000" workspaceResource="/UB_APP/UB_CLIENT_FLOW.esql">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file UB_APP\UB_CLIENT_FLOW.esql.&#xA;Successfully added file UB_APP\UB_CLIENT_FLOW.esql to BAR file.&#xA;" severity="0"/>
+      <barEntry name="UB_CLIENT_FLOW.esql"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1642160724082" workspaceResource="/UB_APP/UB_CLIENT_FLOW.msgflow">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file UB_APP\UB_CLIENT_FLOW.msgflow.&#xA;Successfully added file UB_APP\UB_CLIENT_FLOW.msgflow to BAR file.&#xA;" severity="0"/>
+      <barEntry name="UB_CLIENT_FLOW.msgflow"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1642157970563" workspaceResource="/UB_APP/application.descriptor">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file UB_APP\application.descriptor.&#xA;Successfully added file UB_APP\application.descriptor to BAR file.&#xA;Elapsed time: 0 second(s).&#xA;&#xA;Successfully added file UB_APP\application.descriptor to BAR file.&#xA;" severity="0"/>
+      <barEntry name="application.descriptor"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1642157830000" workspaceResource="/UB_APP/gen/subflow/ECHOTEST.subflow">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file UB_APP\gen\subflow\ECHOTEST.subflow.&#xA;Successfully added file UB_APP\gen\subflow\ECHOTEST.subflow to BAR file.&#xA;" severity="0"/>
+      <barEntry name="gen\subflow\ECHOTEST.subflow"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1642157830000" workspaceResource="/UB_APP/gen/subflow/INQUIRY.esql">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file UB_APP\gen\subflow\INQUIRY.esql.&#xA;Dependent ESQL file gen/subflow/REVERSAL.esql is added to the BAR file.&#xA;&#xA;Successfully added file UB_APP\gen\subflow\INQUIRY.esql to BAR file.&#xA;" severity="0"/>
+      <barEntry name="gen\subflow\INQUIRY.esql"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1642157830000" workspaceResource="/UB_APP/gen/subflow/INQUIRY.subflow">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file UB_APP\gen\subflow\INQUIRY.subflow.&#xA;Successfully added file UB_APP\gen\subflow\INQUIRY.subflow to BAR file.&#xA;" severity="0"/>
+      <barEntry name="gen\subflow\INQUIRY.subflow"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1642157830000" workspaceResource="/UB_APP/gen/subflow/PAYMENT.esql">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file UB_APP\gen\subflow\PAYMENT.esql.&#xA;Dependent ESQL file gen/subflow/INQUIRY.esql is added to the BAR file.&#xA;&#xA;Dependent ESQL file gen/subflow/REVERSAL.esql is added to the BAR file.&#xA;&#xA;Successfully added file UB_APP\gen\subflow\PAYMENT.esql to BAR file.&#xA;" severity="0"/>
+      <barEntry name="gen\subflow\PAYMENT.esql"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1642157830000" workspaceResource="/UB_APP/gen/subflow/PAYMENT.subflow">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file UB_APP\gen\subflow\PAYMENT.subflow.&#xA;Successfully added file UB_APP\gen\subflow\PAYMENT.subflow to BAR file.&#xA;" severity="0"/>
+      <barEntry name="gen\subflow\PAYMENT.subflow"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1642157830000" workspaceResource="/UB_APP/gen/subflow/REVERSAL.esql">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file UB_APP\gen\subflow\REVERSAL.esql.&#xA;Dependent ESQL file gen/subflow/INQUIRY.esql is added to the BAR file.&#xA;&#xA;Successfully added file UB_APP\gen\subflow\REVERSAL.esql to BAR file.&#xA;" severity="0"/>
+      <barEntry name="gen\subflow\REVERSAL.esql"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1642157830000" workspaceResource="/UB_APP/gen/subflow/REVERSAL.subflow">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file UB_APP\gen\subflow\REVERSAL.subflow.&#xA;Successfully added file UB_APP\gen\subflow\REVERSAL.subflow to BAR file.&#xA;" severity="0"/>
+      <barEntry name="gen\subflow\REVERSAL.subflow"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1642157830000" workspaceResource="/UB_APP/subflow/SOAP_PROCESS_SUBFLOW.esql">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file UB_APP\subflow\SOAP_PROCESS_SUBFLOW.esql.&#xA;Successfully added file UB_APP\subflow\SOAP_PROCESS_SUBFLOW.esql to BAR file.&#xA;" severity="0"/>
+      <barEntry name="subflow\SOAP_PROCESS_SUBFLOW.esql"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1642157830000" workspaceResource="/UB_APP/subflow/SOAP_PROCESS_SUBFLOW.subflow">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file UB_APP\subflow\SOAP_PROCESS_SUBFLOW.subflow.&#xA;Successfully added file UB_APP\subflow\SOAP_PROCESS_SUBFLOW.subflow to BAR file.&#xA;" severity="0"/>
+      <barEntry name="subflow\SOAP_PROCESS_SUBFLOW.subflow"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1642157830000" workspaceResource="/UB_SET_PROJECT/UB_SET/messageSet.mset">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="Generating .xsdzip file for message set &quot;UB_SET&quot; &#xA;&#xD;&#xA;Generating schema for no XML Wire format&#xD;&#xA;Generating schema using the lax option&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;Processing File : &quot;/UB_SET_PROJECT/UB_SET/org/xmlsoap/schemas/soap/envelope/soapenv11.mxsd&quot;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;Processing File : &quot;/UB_SET_PROJECT/UB_SET/soap.mxsd&quot;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;Processing File : &quot;/UB_SET_PROJECT/UB_SET/ws/billpayment/h2h/univbrawijaya/develunbra_.mxsd&quot;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;Processing File : &quot;/UB_SET_PROJECT/UB_SET/ws/billpayment/h2h/univbrawijaya/develunbra__InlineSchema1.mxsd&quot;&#xD;&#xA;&#xD;&#xA;Saving File : &quot;/UB_SET_PROJECT/.GeneratedSchemas/org/xmlsoap/schemas/soap/envelope/soapenv11.xsd&quot; &#xA;&#xD;&#xA;Saving File : &quot;/UB_SET_PROJECT/.GeneratedSchemas/soap.xsd&quot; &#xA;&#xD;&#xA;Saving File : &quot;/UB_SET_PROJECT/.GeneratedSchemas/ws/billpayment/h2h/univbrawijaya/develunbra_.xsd&quot; &#xA;&#xD;&#xA;Saving File : &quot;/UB_SET_PROJECT/.GeneratedSchemas/ws/billpayment/h2h/univbrawijaya/develunbra__InlineSchema1.xsd&quot; &#xA;&#xD;&#xA;Processing file &quot;/UB_SET_PROJECT/UB_SET/ws/billpayment/h2h/univbrawijaya/develunbra_.wsdl&quot; &#xA;&#xD;&#xA;Saving file &quot;/UB_SET_PROJECT/.ModifiedWSDLs/ws/billpayment/h2h/univbrawijaya/develunbra_.wsdl&quot; &#xA;&#xD;&#xA;Saving file &quot;/UB_SET_PROJECT/.KeywordsFile/meta-inf/keywords.txt&quot; &#xA;&#xD;&#xA;Saving file &quot;/UB_SET_PROJECT/UB_SET/messageSet.mset&quot; &#xA;&#xD;&#xA;&#xD;&#xA;Elapsed time: 0.127 seconds&#xD;&#xA;Warnings: 0&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;Operation complete&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;" severity="0"/>
+      <barEntry name="UB_SET.xsdzip"/>
+    </deployable>
+    <deployable workspaceResource="/UB_SET_PROJECT/UB_SET/ws/billpayment/h2h/univbrawijaya/develunbra_.wsdl"/>
+  </deployables>
+</deploy:Deploy>

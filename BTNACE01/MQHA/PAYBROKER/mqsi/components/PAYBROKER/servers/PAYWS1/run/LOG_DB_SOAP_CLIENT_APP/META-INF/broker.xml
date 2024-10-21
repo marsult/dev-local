@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Broker deployBarfile="/opt/mdw/bar/PAYBROKER/PAYWS1/LOG_DB_SOAP_CLIENT.bar" deployTimestamp="2024-08-08 15:33:03">
+  <CompiledApplication>
+    <ConfigurableProperty uri="startMode">
+    </ConfigurableProperty>
+  </CompiledApplication>
+  <CompiledMessageFlow name="LOG_DB_SOAP_CLIENT_FLOW" deployBarfile="/opt/mdw/bar/PAYBROKER/PAYWS1/LOG_DB_SOAP_CLIENT.bar" deployTimestamp="2024-08-08 15:33:03">
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#DB_LOG_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#DB_LOG_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#DB_LOG_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#DB_LOG_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#DB_LOG_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#DB_LOG_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#DB_LOG_SOAP.logType" override="log">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#LOG_DB_SOAP_CLIENT_IN.SSLCertificateLabel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#LOG_DB_SOAP_CLIENT_IN.SSLCipherSpec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#LOG_DB_SOAP_CLIENT_IN.SSLPeerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#LOG_DB_SOAP_CLIENT_IN.additionalInstances">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#LOG_DB_SOAP_CLIENT_IN.channelName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#LOG_DB_SOAP_CLIENT_IN.componentLevel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#LOG_DB_SOAP_CLIENT_IN.connection">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#LOG_DB_SOAP_CLIENT_IN.destinationQueueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#LOG_DB_SOAP_CLIENT_IN.listenerPortNumber">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#LOG_DB_SOAP_CLIENT_IN.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#LOG_DB_SOAP_CLIENT_IN.queueManagerHostname">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#LOG_DB_SOAP_CLIENT_IN.queueName" override="LOG_DB_SOAP_CLIENT">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#LOG_DB_SOAP_CLIENT_IN.resetBrowseTimeout">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#LOG_DB_SOAP_CLIENT_IN.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#LOG_DB_SOAP_CLIENT_IN.securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#LOG_DB_SOAP_CLIENT_IN.serializationToken">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#LOG_DB_SOAP_CLIENT_IN.topicProperty">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#LOG_DB_SOAP_CLIENT_IN.useSSL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#LOG_DB_SOAP_CLIENT_IN.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#LOG_DB_SOAP_CLIENT_IN_LOG_CATCH.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#LOG_DB_SOAP_CLIENT_IN_LOG_CATCH.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#LOG_DB_SOAP_CLIENT_IN_LOG_CATCH.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#LOG_DB_SOAP_CLIENT_IN_LOG_CATCH.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#LOG_DB_SOAP_CLIENT_IN_LOG_CATCH.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#LOG_DB_SOAP_CLIENT_IN_LOG_CATCH.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#LOG_DB_SOAP_CLIENT_IN_LOG_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#LOG_DB_SOAP_CLIENT_IN_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#LOG_DB_SOAP_CLIENT_IN_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#LOG_DB_SOAP_CLIENT_IN_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#LOG_DB_SOAP_CLIENT_IN_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#LOG_DB_SOAP_CLIENT_IN_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#LOG_DB_SOAP_CLIENT_IN_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#LOG_DB_SOAP_CLIENT_IN_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#LOG_DB_SOAP_CLIENT_IN_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#LOG_DB_SOAP_CLIENT_IN_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#LOG_DB_SOAP_CLIENT_IN_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#LOG_DB_SOAP_CLIENT_IN_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#SET_LOCALENV_HEADER.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#SET_LOCALENV_HEADER.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#SET_LOCALENV_HEADER.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#SET_LOCALENV_HEADER_LOG_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#SET_LOCALENV_HEADER_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#SET_LOCALENV_HEADER_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#SET_LOCALENV_HEADER_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#SET_LOCALENV_HEADER_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#SET_LOCALENV_HEADER_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#SET_LOCALENV_HEADER_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#SET_LOCALENV_HEADER_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#SET_LOCALENV_HEADER_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#SET_LOCALENV_HEADER_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#SET_LOCALENV_HEADER_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#SET_LOCALENV_HEADER_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#additionalInstances" override="50">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#commitCount">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#commitInterval">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#consumerPolicySet">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#consumerPolicySetBindings">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#coordinatedTransaction">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#maximumRateMsgsPerSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#monitoringProfile">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#notificationThresholdMsgsPerSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#processingTimeoutAction">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#processingTimeoutSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#providerPolicySet">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#providerPolicySetBindings">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#startInstancesWhenFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#startMode">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_CLIENT_FLOW#wlmPolicy">
+    </ConfigurableProperty>
+  </CompiledMessageFlow>
+</Broker>

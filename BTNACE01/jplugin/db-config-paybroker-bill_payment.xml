@@ -1,0 +1,547 @@
+<db-config>
+	<url>jdbc:db2://btnmdwdata:50000/mwconfig</url>
+	<driver-class>com.ibm.db2.jcc.DB2Driver</driver-class>
+	<username>db2inst1</username>
+	<password>wajFMo2HsNWsRQcLal8Y47jzNMHI+oAu8ywJwIfL9cA=</password>
+	<schema>mwconfig</schema>
+	<c3p0 id="jdbc:db2:">
+		<param id="minPoolSize">5</param>
+		<param id="maxPoolSize">50</param>
+		<param id="timeout">60</param>
+		<param id="idleConnectionTestPeriod">300</param>
+		<param id="maxIdleTime">300</param>
+		<param id="maxIdleTimeExcessConnections">180</param>
+		<param id="preferredTestQuery">select 1 from sysibm.sysdummy1</param>
+	</c3p0>
+	<config-pattern>
+		<path id="config/clients/client"/>
+		<path id="config/codex">
+		
+			<include>\[iso-8583-itm-instid\]</include>
+			<include>\[dsp\]</include>
+			<include>\[dsp-abcs.*\]</include>
+			<include>\[dsp-response\]</include>
+			<include>\[iso-8583-cms\]</include>
+			<include>\[iso-8583-itm\]</include>
+			<include>\[iso-8583-itm-billerid\]</include>
+			<include>\[iso-8583-ibb\]</include>
+            <include>\[iso-8583-sms\]</include>
+            <include>\[iso-8583-sms-instid\]</include>
+            <include>\[iso-8583-sms-syariah\]</include>
+		</path>
+		<path id="config/db">
+			<include>\[CORE_KONVEN_DSP\]</include>
+			<include>\[mwconfig\]</include>
+			<include>\[mwlog\]</include>
+		</path>
+		<path id="config/dbquery">
+			<include>\[get-request.*\]</include>
+			<include>\[itm.*\]</include>
+		</path>
+		<path id="config/dtree-map">
+			<!-- BDS-WS -->
+			<include>\[.*\]\{.*\[bwswc\].*\}</include>
+			<!-- BDS-FORTUNA -->
+			<include>\[.*\]\{.*\[bfoim\].*\}</include>
+			<include>\[.*\]\{.*\[bfoip\].*\}</include>
+			<!-- BDS-MKM -->
+			<include>\[.*\]\{.*\[bsyv\].*\}</include>
+			<include>\[.*\]\{.*\[bsyi\].*\}</include>
+			<include>\[.*\]\{.*\[bsym\].*\}</include>
+			<include>\[.*\]\{.*\[bsyp\].*\}</include>
+			<!-- BDS-SYB -->
+			<include>\[.*\]\{.*\[bsyim\].*\}</include>
+			<include>\[.*\]\{.*\[bsyip\].*\}</include>
+			<include>\[.*\]\{.*\[ebbr\].*\}</include> 
+
+			<!-- VaDebit Payment -->
+			<include>\[.*\]\{.*\[cvdpay\].*\}</include>
+			<!-- EVA-FNT -->
+			<include>\[.*\]\{.*\[efii\].*\}</include>
+			<include>\[.*\]\{.*\[efim\].*\}</include>
+			<include>\[.*\]\{.*\[efip\].*\}</include>
+			<include>\[.*\]\{.*\[efit\].*\}</include>
+ 			<include>\[.*\]\{.*\[efiii\].*\}</include>
+			<include>\[.*\]\{.*\[efiim\].*\}</include>
+			<include>\[.*\]\{.*\[efiip\].*\}</include>
+			<include>\[.*\]\{.*\[efird\].*\}</include>
+			<!-- EVA-AJ -->
+ 			<include>\[.*\]\{.*\[eajii\].*\}</include>
+			<include>\[.*\]\{.*\[eajim\].*\}</include>
+			<include>\[.*\]\{.*\[eajip\].*\}</include>
+			<include>\[.*\]\{.*\[eajrd\].*\}</include>
+			<!-- EVA-BPJS -->
+			<include>\[.*\]\{.*\[ebpwc\].*\}</include>
+			<include>\[.*\]\{.*\[ebpwp\].*\}</include>
+
+			<!-- EVA-GENERAL -->
+			<include>\[.*\]\{.*\[ezzp\].*\}</include>
+			<include>\[.*\]\{.*\[ezzip\].*\}</include>
+			<include>\[.*\]\{.*\[ezzz\].*\}</include>
+			<include>\[.*\]\{.*\[ezzzz\].*\}</include>
+
+			<!-- ITM-AJ -->
+			<include>\[.*\]\{.*\[iajp\].*\}</include>
+			<include>\[.*\]\{.*\[iajip\].*\}</include>	
+			<!-- ITM-FORTUNA -->
+			<include>\[.*\]\{.*\[ifoii\].*\}</include>
+			<include>\[.*\]\{.*\[ifoim\].*\}</include>
+			<include>\[.*\]\{.*\[ifoip\].*\}</include>
+			<!-- ITM-FINNET -->
+			<include>\[.*\]\{.*\[ifii\].*\}</include>
+			<include>\[.*\]\{.*\[ifim\].*\}</include>
+			<include>\[.*\]\{.*\[ifiim\].*\}</include>
+			<include>\[.*\]\{.*\[ifip\].*\}</include>
+			<include>\[.*\]\{.*\[ifiip\].*\}</include>
+			<!-- ITM-MITRACOM -->
+			<include>\[.*\]\{.*\[imii\].*\}</include>
+			<include>\[.*\]\{.*\[imip\].*\}</include>
+			<include>\[.*\]\{.*\[imiii\].*\}</include>
+			<include>\[.*\]\{.*\[imiip\].*\}</include>
+			<include>\[.*\]\{.*\[zzzii\].*\}</include>
+			<include>\[.*\]\{.*\[zzzip\].*\}</include>
+			<!-- ITM-MERAH PUTIH -->
+			<include>\[.*\]\{.*\[impr\].*\}</include>
+			<include>\[.*\]\{.*\[impi\].*\}</include>
+			<!-- ITM-MPN -->
+			<include>\[.*\]\{.*\[ipjwc\].*\}</include>
+			<include>\[.*\]\{.*\[zpjwc\].*\}</include>
+			<include>\[.*\]\{.*\[zpjwp\].*\}</include>
+			<!-- ITM-SYB -->
+			<include>\[.*\]\{.*\[isyi\].*\}</include>
+			<include>\[.*\]\{.*\[isyp\].*\}</include>
+			<include>\[.*\]\{.*\[isyii\].*\}</include>
+			<include>\[.*\]\{.*\[isyip\].*\}</include>
+			<include>\[.*\]\{.*\[isyim\].*\}</include>
+			<!-- ITM-SYB -->
+			<include>\[.*\]\{.*\[iwswc\].*\}</include>
+			<!-- ITM-GENERAL -->
+			<include>\[.*\]\{.*\[izzi\].*\}</include>
+			<include>\[.*\]\{.*\[izzp\].*\}</include>
+			<include>\[.*\]\{.*\[izzv\].*\}</include>
+			<include>\[.*\]\{.*\[isyip\].*\}</include>
+			<include>\[.*\]\{.*\[izzzz\].*\}</include>
+			<include>\[.*\]\{.*\[mbkro\].*\}</include>
+			<!-- SMS-FINNET -->			
+			<include>\[.*\]\{.*\[sfiip\].*\}</include>
+			<include>\[.*\]\{.*\[sfiim\].*\}</include>
+
+			<include>\[.*\]\{.*\[iwsc\].*\}</include>
+			<include>\[.*\]\{.*\[iwsp\].*\}</include>
+			<include>\[.*\]\{.*\[pwsc\].*\}</include>
+			<include>\[.*\]\{.*\[pwsp\].*\}</include>
+
+			<include>\[.*\]\{.*\[swsip\].*\}</include>
+
+			<include>\[.*\]\{.*\[smsro\].*\}</include>
+			<include>\[.*\]\{.*\[tibro\].*\}</include>
+
+			<include>\[.*\]\{.*\[mzzip\].*\}</include>
+			<include>\[.*\]\{.*\[tzzip\].*\}</include>
+			<include>\[.*\]\{.*\[szzip\].*\}</include>
+
+			<include>\[.*\]\{.*\[core\].*\}</include>
+			<include>\[.*\]\{.*\[itl\].*\}</include>
+			<include>\[.*\]\{.*\[ivr\].*\}</include>
+			<include>\[.*\]\{.*\[pay\].*\}</include>
+			<include>\[.*\]\{.*\[bzzp\].*\}</include>
+			<include>\[.*\]\{.*\[szzp\].*\}</include>
+			<include>\[.*\]\{.*\[szzi\].*\}</include>
+			<!-- GET BY ID -->
+			<include>\[CHARGES\|bds\](\{.*\}|)</include>
+			<include>\[CHARGES\|itm\](\{.*\}|)</include>
+			<include>\[CHARGES\|bds\|\d{4}\](\{.*\}|)</include>
+			<include>\[CHARGES\|wb\](\{.*\}|)</include>
+			<include>\[CHARGES\|eva\](\{.*\}|)</include> 
+			<include>\[CMS-CODE\|\d{4}.10\d{4}\](\{.*\}|)</include>
+			<include>\[CMS-CODE\|\d{4}.30\d{4}\](\{.*\}|)</include>
+			<include>\[CMS-CODE\|\d{4}\](\{.*\}|)</include>
+			<include>\[CORE-SYARIAH-CODE\|\d{4}\](\{.*\}|)</include>
+			<include>\[EVA-CODE\|\d{4}\](\{.*\}|)</include> 
+			<include>\[EVA-CODE\|\d{4}.10\d{4}\](\{.*\}|)</include>
+			<include>\[EVA-CODE\|\d{4}.30\d{4}\](\{.*\}|)</include>
+			<include>\[ITM-CODE\|\d{4}\](\{.*\}|)</include>
+			<include>\[ITM-CODE\|\d{4}.10\d{4}\](\{.*\}|)</include>
+			<include>\[ITM-CODE\|\d{4}.30\d{4}\](\{.*\}|)</include>
+			<include>\[SMS-CODE\|\d{4}.10\d{4}\](\{.*\}|)</include>
+			<include>\[SMS-CODE\|\d{4}.30\d{4}\](\{.*\}|)</include>
+			<include>\[SMS-CODE\|\d{4}\](\{.*\}|)</include>
+			<include>\[WB-CODE\|.*\](\{.*\}|)</include>
+			<include>\[WB-CODE\|\](\{.*\}|)</include>
+		</path>
+		<path id="config/host" />
+		<path id="config/mapping">
+			<include>\[.*\]\{.*\[bsii\].*\}</include> 
+			<include>\[.*\]\{.*\[bsim\].*\}</include> 
+			<include>\[.*\]\{.*\[bsip\].*\}</include> 
+			<include>\[.*\]\{.*\[bsiv\].*\}</include> 
+			<include>\[.*\]\{.*\[bsyim\].*\}</include> 
+			<include>\[.*\]\{.*\[core\].*\}</include>
+			<!-- BDS-WS -->
+			<include>\[.*\]\{.*\[bwswc\].*\}</include>
+			<!-- BDS-FORTUNA -->
+			<include>\[.*\]\{.*\[bfoii\].*\}</include>
+			<include>\[.*\]\{.*\[bfoim\].*\}</include>
+			<include>\[.*\]\{.*\[bfoip\].*\}</include>
+			<!-- BDS-MKM -->
+			<include>\[.*\]\{.*\[bsyv\].*\}</include>
+			<include>\[.*\]\{.*\[bsyi\].*\}</include>
+			<include>\[.*\]\{.*\[bsym\].*\}</include>
+			<include>\[.*\]\{.*\[bsyp\].*\}</include>
+			<!-- BDS-SYB -->
+			<include>\[.*\]\{.*\[bsyii\].*\}</include>
+			<include>\[.*\]\{.*\[bsyim\].*\}</include>
+			<include>\[.*\]\{.*\[bsyip\].*\}</include>
+			<include>\[.*\]\{.*\[zsyic\].*\}</include>
+			<!-- EVA-AJ -->
+			<include>\[.*\]\{.*\[eaji\].*\}</include>
+			<include>\[.*\]\{.*\[eajm\].*\}</include>
+			<include>\[.*\]\{.*\[eajp\].*\}</include>
+			<include>\[.*\]\{.*\[eajv\].*\}</include>
+
+ 			<include>\[.*\]\{.*\[eajii\].*\}</include>
+			<include>\[.*\]\{.*\[eajim\].*\}</include>
+			<include>\[.*\]\{.*\[eajip\].*\}</include>
+			<include>\[.*\]\{.*\[eajiv\].*\}</include>
+			<include>\[.*\]\{.*\[eajrd\].*\}</include>
+			
+			<!-- EVA-FNT -->
+			<include>\[.*\]\{.*\[swsip\].*\}</include>
+			<include>\[.*\]\{.*\[efii\].*\}</include>
+			<include>\[.*\]\{.*\[efim\].*\}</include>
+			<include>\[.*\]\{.*\[efip\].*\}</include>
+			<include>\[.*\]\{.*\[efit\].*\}</include>
+			<include>\[.*\]\{.*\[efiv\].*\}</include>
+ 			<include>\[.*\]\{.*\[efiii\].*\}</include>
+			<include>\[.*\]\{.*\[efiim\].*\}</include>
+			<include>\[.*\]\{.*\[efiip\].*\}</include>
+			<include>\[.*\]\{.*\[efiiv\].*\}</include>
+			<include>\[.*\]\{.*\[efird\].*\}</include>
+			<!-- EVA-GENERAL -->
+			<include>\[.*\]\{.*\[ezzii\].*\}</include>	
+			<include>\[.*\]\{.*\[ezzip\].*\}</include>   
+			<!-- ITM-AJ -->
+			<include>\[.*\]\{.*\[iaji\].*\}</include>
+			<include>\[.*\]\{.*\[iajm\].*\}</include>
+			<include>\[.*\]\{.*\[iajp\].*\}</include>	
+			<include>\[.*\]\{.*\[iajip\].*\}</include>	
+			<include>\[.*\]\{.*\[iajim\].*\}</include>	
+			<include>\[.*\]\{.*\[iajiv\].*\}</include>	
+			<include>\[.*\]\{.*\[iajv\].*\}</include>
+			<!-- ITM-FORTUNA -->
+			<include>\[.*\]\{.*\[ifoii\].*\}</include>
+			<include>\[.*\]\{.*\[ifoim\].*\}</include>
+			<include>\[.*\]\{.*\[ifoip\].*\}</include>
+			<include>\[.*\]\{.*\[ifoiv\].*\}</include>
+			<!-- ITM-FINNET -->		
+			<include>\[.*\]\{.*\[ifird\].*\}</include>
+			<include>\[.*\]\{.*\[ifii\].*\}</include>
+			<include>\[.*\]\{.*\[ifim\].*\}</include>
+			<include>\[.*\]\{.*\[ifip\].*\}</include>
+			<include>\[.*\]\{.*\[ifiv\].*\}</include>
+			<include>\[.*\]\{.*\[ifiii\].*\}</include>
+			<include>\[.*\]\{.*\[ifiim\].*\}</include>
+			<include>\[.*\]\{.*\[ifiip\].*\}</include>
+			<include>\[.*\]\{.*\[ifiiv\].*\}</include>
+			<!-- ITM-MITRACOM -->
+			<include>\[.*\]\{.*\[imii\].*\}</include>
+			<include>\[.*\]\{.*\[imim\].*\}</include>
+			<include>\[.*\]\{.*\[imip\].*\}</include>
+			<include>\[.*\]\{.*\[imiv\].*\}</include>
+			<include>\[.*\]\{.*\[imiii\].*\}</include>
+			<include>\[.*\]\{.*\[imiim\].*\}</include>
+			<include>\[.*\]\{.*\[imiip\].*\}</include>
+			<include>\[.*\]\{.*\[zmiim\].*\}</include>
+			<!-- ITM-MKM -->
+			<include>\[.*\]\{.*\[imkip\].*\}</include>
+			<include>\[.*\]\{.*\[imkim\].*\}</include>
+			<!-- ITM-MPN -->
+			<include>\[.*\]\{.*\[izzip\].*\}</include>
+			<include>\[.*\]\{.*\[ipjwc\].*\}</include>
+			<include>\[.*\]\{.*\[ipjwp\].*\}</include>
+			<include>\[.*\]\{.*\[zpjwc\].*\}</include>
+			<include>\[.*\]\{.*\[zpjwp\].*\}</include>
+			<!-- ITM SYB -->
+			<include>\[.*\]\{.*\[isyi\].*\}</include>
+			<include>\[.*\]\{.*\[isym\].*\}</include>
+			<include>\[.*\]\{.*\[isyp\].*\}</include>
+			<include>\[.*\]\{.*\[isyv\].*\}</include>
+			<!-- 5 karakter-->
+			<include>\[.*\]\{.*\[isyim\].*\}</include>
+			<include>\[.*\]\{.*\[isymi\].*\}</include>
+			<include>\[.*\]\{.*\[isyii\].*\}</include>
+			<include>\[.*\]\{.*\[isyip\].*\}</include>
+			<include>\[.*\]\{.*\[isyiv\].*\}</include>
+			<!-- 		 -->
+			<include>\[.*\]\{.*\[iwsc\].*\}</include>
+			<include>\[.*\]\{.*\[iwsp\].*\}</include>
+			<include>\[.*\]\{.*\[iwsv\].*\}</include>
+			<include>\[.*\]\{.*\[pay\].*\}</include>
+			<!-- ITM WS -->
+			<include>\[.*\]\{.*\[iwswc\].*\}</include>
+			<!-- ITM-GENERAL -->
+			<include>\[.*\]\{.*\[izzm\].*\}</include>
+			<include>\[.*\]\{.*\[izzp\].*\}</include>
+			<!-- ITM-INQUIRY KK -->
+			<include>\[.*\]\{.*\[ikki\].*\}</include>
+			<!-- MBK -->
+			<include>\[.*\]\{.*\[mfiii\].*\}</include>
+			<include>\[.*\]\{.*\[mfiim\].*\}</include>
+			<include>\[.*\]\{.*\[mfiip\].*\}</include>
+			<include>\[.*\]\{.*\[mfiiv\].*\}</include>
+			<include>\[.*\]\{.*\[mzzip\].*\}</include>
+			<!-- SMS-AJ -->
+			<include>\[.*\]\{.*\[sajii\].*\}</include>
+			<include>\[.*\]\{.*\[sajip\].*\}</include>
+			<include>\[.*\]\{.*\[sajrd\].*\}</include>
+			<include>\[.*\]\{.*\[sajim\].*\}</include>	
+			<!-- SMS -->
+			<include>\[.*\]\{.*\[sfiii\].*\}</include>
+			<include>\[.*\]\{.*\[sfiim\].*\}</include>
+			<include>\[.*\]\{.*\[sfiip\].*\}</include>
+			<include>\[.*\]\{.*\[szzip\].*\}</include>
+			<include>\[.*\]\{.*\[slaii\].*\}</include>
+			<include>\[.*\]\{.*\[slaip\].*\}</include>
+			<!-- SMS GOPAY -->
+			<include>\[.*\]\{.*\[sgpwi\].*\}</include>
+			<include>\[.*\]\{.*\[sgpwp\].*\}</include>
+			<!-- SMS mkm-->
+			<include>\[.*\]\{.*\[ssym\].*\}</include>
+			<include>\[.*\]\{.*\[ssyp\].*\}</include>
+			<!-- IBK -->
+			<include>\[.*\]\{.*\[tfiii\].*\}</include>
+			<include>\[.*\]\{.*\[tfiim\].*\}</include>
+			<include>\[.*\]\{.*\[tfiip\].*\}</include>
+			<include>\[.*\]\{.*\[tfiiv\].*\}</include>
+			<include>\[.*\]\{.*\[tzzip\].*\}</include>
+			<!-- INQUIRY KK -->
+			<include>\[.*\]\{.*\[ikki\].*\}</include>
+			<!-- WB-SYB  -->
+			<include>\[.*\]\{.*\[wsyii\].*\}</include>
+			<include>\[.*\]\{.*\[wsyim\].*\}</include>
+			<include>\[.*\]\{.*\[wsyip\].*\}</include>
+			<include>\[.*\]\{.*\[wsyiv\].*\}</include>
+			<!-- WB GENERAL -->
+			<include>\[.*\]\{.*\[wzzii\].*\}</include>
+			<include>\[.*\]\{.*\[wzzim\].*\}</include>
+			<include>\[.*\]\{.*\[wzzip\].*\}</include>
+			<include>\[.*\]\{.*\[wzzzz\].*\}</include>
+			<!-- GENERAL-FORTUNA -->
+			<include>\[.*\]\{.*\[zfoim\].*\}</include>
+			<include>\[.*\]\{.*\[zfoii\].*\}</include>
+			<include>\[.*\]\{.*\[zfoip\].*\}</include>
+			<!-- ANY CHANNEL -->
+			
+			<include>\[.*\]\{.*\[zfiii\].*\}</include>
+			<include>\[.*\]\{.*\[zfiim\].*\}</include>
+			<include>\[.*\]\{.*\[zfiip\].*\}</include>
+			<include>\[.*\]\{.*\[zfiiv\].*\}</include>
+			<include>\[.*\]\{.*\[zfird\].*\}</include>
+			<include>\[.*\]\{.*\[izzip\].*\}</include>
+			<include>\[.*\]\{.*\[zwswc\].*\}</include>
+			<include>\[.*\]\{.*\[zmiii\].*\}</include>
+			<include>\[.*\]\{.*\[zmiim\].*\}</include>
+			<include>\[.*\]\{.*\[zmiip\].*\}</include>
+			<include>\[.*\]\{.*\[zzzii\].*\}</include>
+			<include>\[.*\]\{.*\[zzzim\].*\}</include>
+			<include>\[.*\]\{.*\[zzzip\].*\}</include>
+			<include>\[.*\]\{.*\[ebpwc\].*\}</include>
+			<!-- ANY-AJ -->
+			<include>\[.*\]\{.*\[zajii\].*\}</include> 
+			<include>\[.*\]\{.*\[zajip\].*\}</include> 
+			<include>\[.*\]\{.*\[zajim\].*\}</include> 
+			<include>\[.*\]\{.*\[zajmd\].*\}</include> 
+			<include>\[.*\]\{.*\[zajm\].*\}</include> 
+			<include>\[.*\]\{.*\[zajiv\].*\}</include> 
+			<include>\[.*\]\{.*\[zajrd\].*\}</include> 
+			<!-- ANY-SYB -->
+			<include>\[.*\]\{.*\[zsyi\].*\}</include>
+			<include>\[.*\]\{.*\[zsym\].*\}</include>
+			<include>\[.*\]\{.*\[zsyii\].*\}</include>
+			<include>\[.*\]\{.*\[zsyim\].*\}</include>
+			<include>\[.*\]\{.*\[zsyip\].*\}</include>
+			<include>\[.*\]\{.*\[zsyiv\].*\}</include>
+			<include>\[.*\]\{.*\[ssyi\].*\}</include>
+			<include>\[.*\]\{.*\[ssyip\].*\}</include>
+			<include>\[.*\]\{.*\[ssyim\].*\}</include>
+			<include>\[.*\]\{.*\[stifarm\].*\}</include>
+			
+			<include>\[checkBillerResp\](\{.*\}|)</include>
+			<include>\[mdw\](\{.*\}|)</include>
+			<include>\[.*\]\{.*\[pwsc\].*\}</include>
+			<include>\[.*\]\{.*\[pwsi\].*\}</include>
+			<include>\[.*\]\{.*\[pwsp\].*\}</include>
+			<include>\[.*\]\{.*\[zsim\].*\}</include>
+			<include>\[passthrough.master\](\{.*\}|)</include>
+			<include>\[passthrough.siskohat-master\](\{.*\}|)</include>
+			<include>\[bds.failed\](\{.*\}|)</include>
+			<include>\[req-core.master\](\{.*\}|)</include>
+			<include>\[fnt-conn.master\](\{.*\}|)</include>
+			<include>\[core-reverse.core-wb\](\{.*\}|)</include>
+			<include>\[dsp-resp-F2\](\{.*\}|)</include>
+			<include>\[dsp\](\{.*\}|)</include>
+			<include>\[wb.abcs-err-to-iso\](\{.*\}|)</include>
+			<include>\[resp-ln.sms\](\{.*\}|)</include>
+			<include>\[resp-sp.sms\](\{.*\}|)</include>
+
+			<!-- Vadebit Payment -->
+			<include>\[.*\]\{.*\[cvdpay\].*\}</include>
+		</path>
+		<path id="config/param-map">
+			<include>\[bds-PTYPE\|.*\]</include>
+			<include>\[bds-REK\|.*\]</include>
+			<include>\[bds-TTYPE\|.*\]</include>
+			<include>\[bds.AXISSYSTEMSDNBHD.*\|.*\]</include>
+			<include>\[bds\|.*\]</include>
+			<include>\[sms\|.*\]</include>
+			<include>\[biller.rc.toReverse\|.*\]</include>
+			<include>\[cms\|.*\]</include>
+			<include>\[coa\|.*\]</include>
+			<include>\[coa-eva\|.*\]</include> 
+			<include>\[coa-pay\|.*\]</include>
+			<include>\[coa-pay-ws\|.*\]</include>
+			<include>\[core.core-sms\|.*\]</include>
+			<include>\[core-bds\|.*\]</include>
+			<include>\[core-response-ok\|AXISSYSTEMSDNBHD\..*\]</include>
+			<include>\[device_teller_map\|.*\]</include>
+			<include>\[dsp-scenario-req-codex\|AXISSYSTEMSDNBHD\]</include>
+			<include>\[dsp-scenario-resp-codex\|AXISSYSTEMSDNBHD\]</include>
+			<include>\[error-f2\|.*\]</include>
+			<include>\[error_map\|aj-conn.*\]</include>
+			<include>\[error_map\|aj-energi-conn.*\]</include>
+			<include>\[error_map\|aj-fnt-conn.*\]</include>
+			<include>\[error_map\|aj-ui-conn.*\]</include>
+			<include>\[error_map\|aj-ppob-conn.*\]</include>	
+			<include>\[error_map\|core-itm.*\]</include>
+			<include>\[error_map\|core-sms.*\]</include>
+			<include>\[error_map\|core-cms.*\]</include>
+			<include>\[error_map\|core-eva.*\]</include> 
+			<include>\[error_map\|core-wb.*\]</include>
+			<include>\[error_map\|cash-sya-conn.*\]</include>
+			<include>\[error_map\|dsp-conn.*\]</include>
+			<include>\[error_map\|djp-conn.*\]</include>	
+			<include>\[error_map\|fnt-conn.*\]</include>
+			<include>\[error_map\|fortuna-conn.*\]</include>
+			<include>\[error_map\|mba-conn.*\]</include>
+			<include>\[error_map\|mitracom-conn.*\]</include>
+			<include>\[error_map\|pemko-cimahi-conn.*\]</include>
+			<include>\[error_map\|pemko-depok-conn.*\]</include>
+			<include>\[error_map\|pemko-padang-conn.*\]</include>
+			<include>\[error_map\|pemko-bogor-conn.*\]</include>
+			<include>\[error_map\|pegadaian-conn.*\]</include>
+			<include>\[error_map\|rintis-conn.*\]</include>
+			<include>\[error_map\|pdam-padang-conn.*\]</include>
+			<include>\[error_map\|Stifarm.*\]</include>
+			<include>\[error_map\|syb-conn.*\]</include>
+			<include>\[error_map\|syb-2-conn\|.*\]</include>
+			<include>\[error_map\|siskohat-client.*\]</include>
+			<include>\[error_map\|altopay-conn.*\]</include>
+			<include>\[error_map\|syb-connector.*\]</include>
+			<include>\[error_map\|pkb-jatim-conn.*\]</include>
+			<include>\[error_map\|ub.*\]</include>
+			<include>\[error_map\|ugm.*\]</include>
+			<include>\[error_map\|uin\|.*\]</include>
+			<include>\[error_map\|um.*\]</include>
+			<include>\[error_map\|unpad.*\]</include>
+			<include>\[error_map\|unpam.*\]</include>
+			<include>\[error_map\|uns.*\]</include>
+			<include>\[error_map\|unsyiah.*\]</include>
+			<include>\[error_map\|ut.*\]</include>
+			<include>\[error_map\|UNY.*\]</include>
+			<include>\[error_map\|UNIVRIAU.*\]</include>
+			<include>\[error_map\|H2HERRBPJSKES.*\]</include>
+			<include>\[error_map\|gojek.*\]</include>
+			<include>\[error_map\|syb-conn.*\]</include>
+			<include>\[error_map\|mkm-syb-conn.*\]</include>
+			<include>\[error_map\|pkb-dki-conn.*\]</include>
+			<include>\[error_map_detail\|aj-energi-conn.*\]</include>
+			<include>\[error_map_detail\|aj-ppob-conn.*\]</include>
+			<include>\[error_map_detail\|aj-ui-conn.*\]</include>
+			<include>\[error_map_detail\|cash-sya-conn.*\]</include>
+			<include>\[error_map_detail\|djp-conn.*\]</include>
+			<include>\[error_map_detail\|fortuna-conn.*\]</include>
+			<include>\[error_map_detail\|mba-conn.*\]</include>
+			<include>\[error_map_detail\|mitracom-conn.*\]</include>
+			<include>\[error_map_detail\|pemko-cimahi-conn.*\]</include>
+			<include>\[error_map_detail\|pemko-depok-conn.*\]</include>
+			<include>\[error_map_detail\|pemko-padang-conn.*\]</include>
+			<include>\[error_map_detail\|pemko-bogor-conn.*\]</include>
+			<include>\[error_map_detail\|siskohat-client.*\]</include>
+			<include>\[error_map_detail\|Stifarm.*\]</include>
+			<include>\[error_map_detail\|syb-conn.*\]</include>
+			<include>\[error_map_detail\|syb-2-conn.*\]</include>
+			<include>\[error_map_detail\|mkm-syb-conn.*\]</include>
+			<include>\[error_map_detail\|syb-connector.*\]</include>
+			<include>\[error_map_detail\|pkb-jatim-conn.*\]</include>
+			<include>\[error_map_detail\|pkb-dki-conn.*\]</include>
+			<include>\[error_map\|.*pos\|.*]</include>
+			<include>\[error_map_detail\|pdam-padang-conn.*\]</include>
+			<include>\[error_map_detail\|H2HERRBPJSKES.*\]</include>
+			<include>\[error_map_detail\|H2HERR.*\]</include>
+			<include>\[error_map_detail\|gojek.*\]</include>
+			<include>\[error_map_detail\|uin.*\]</include>
+			<include>\[error_map\|H2HERR.*\]</include>
+			<include>\[error_map\|kls-conn.*\]</include>
+			<include>\[error_map\|dukcapil\|.*\]</include>
+			<include>\[error_map_detail\|kls-conn.*\]</include>
+			<include>\[error_map\|Ayopop.*\]</include>
+			<include>\[isRepeat.aj-conn\|.*\]</include>
+			<include>\[isRepeat.aj-ppob-conn\|.*\]</include>
+			<include>\[isRepeat.fnt-conn\|.*\]</include>
+			<include>\[eva-payment-code\|.*\]</include> 
+			<include>\[ibk-payment-code\|.*\]</include>
+			<include>\[indomrt\|.*\]</include>
+			<include>\[ibk\|.*\]</include>
+			<include>\[itl\|.*\]</include>
+			<include>\[itm\|.*\]</include>
+			<include>\[itm-REK\|.*\]</include>
+			<include>\[itm-payment-code\|.*\]</include>
+			<include>\[mbk-payment-code\|.*\]</include>
+			<include>\[sms-payment-code\|.*\]</include>
+			<include>\[kpos\|.*\]</include>
+			<include>\[pos\|.*\]</include>
+			<include>\[parser-type\|.*\]</include>
+			<include>\[payment-type-stifarm\|.*\]</include>
+			<include>\[payment-type-uin\|.*\]</include>
+			<include>\[payment-type-unesa\|.*\]</include>
+			<include>\[pertamina.material\|.*\]</include>
+			<include>\[time-check\|.*\]</include>
+			<include>\[ITM-VA-INST\|.*\]</include>
+			<include>\[ITM-VA-ONUS\|.*\]</include>
+			<include>\[SMS-VA-ONUS\|.*\]</include>
+			<include>\[acquire-group-bersama\|\d{11}\]</include>
+			<include>\[coa\|.*\]</include>
+			<include>\[error_map\|pslpay-conn.*\]</include>
+			<include>\[REFFLABEL\|.*\]</include>
+			<include>\[IDLABEL\|.*\]</include> 
+			<include>\[ppo\|.*\]</include> 
+			<include>\[product-code\|.*\]</include>
+			<include>\[FooterLine.*\|.*\]</include>
+			<include>\[request-url\|.*\]</include>
+			<include>\[H2HERRBPJSTKINDV\|.*\]</include>
+			<include>\[wb-payment-code\|.*\]</include>
+			<include>\[wb\|.*\]</include>
+            <include>\[mbk\|.*\]</include>
+			<include>\[tokped\|.*\]</include>
+			<include>\[payment-type-ummi\|.*\]</include>
+			<!-- STAGGING PLN -->
+			<include>\[biller-101100\|.*\]</include>
+			<include>\[biller-101101\|.*\]</include>
+			<include>\[biller-bds-nontaglist\|.*\]</include>
+			<include>\[cha-core-dest\|.*\]</include> 
+			<include>\[cha-core-id\|.*\]</include>
+		</path>
+		<path id="config/parser">
+			<include>\[abcs-request\]</include>
+			<include>\[iso\]</include>
+			<include>\[parser-1\]</include>
+			<include>\[payment-parser\]</include>
+			<include>\[wb-parser\]</include>
+		</path>
+		<path id="config/ports/port">
+			<include>\[monitor-.*\]</include>
+		</path>
+		<path id="config/routing" />
+		<path id="config/rpg-call" />
+	</config-pattern>
+</db-config>

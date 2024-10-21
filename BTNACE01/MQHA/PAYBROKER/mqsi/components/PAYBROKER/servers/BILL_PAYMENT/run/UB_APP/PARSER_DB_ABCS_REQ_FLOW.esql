@@ -1,0 +1,12 @@
+CREATE COMPUTE MODULE PARSER_DB_ABCS_REQ_FLOW_SET_TYPE_PARSER
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot = InputRoot;
+		-- OLD PAR
+		-- SET OutputRoot.XMLNSC.data.type = 'dsp-abcs-request';
+		-- NEW PAR
+		SET OutputRoot.XMLNSC.data.type = 'dsp';
+
+		RETURN TRUE;
+	END;
+END MODULE;

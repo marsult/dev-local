@@ -1,0 +1,2159 @@
+08/06/2024 10:50:30 PM - Process(1850.3) User(admmdw) Program(amqzmuc0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:30.507Z)
+                    CommentInsert1(Linux 6.8.0-39-generic (MQ Linux (x86-64 platform) 64-bit))
+                    CommentInsert2(/opt/mqm (Installation1))
+                    CommentInsert3(9.2.0.0 (p920-L200709))
+                   
+AMQ6287I: IBM MQ V9.2.0.0 (p920-L200709).
+
+EXPLANATION:
+IBM MQ system information: 
+Host Info         :- Linux 6.8.0-39-generic (MQ Linux (x86-64 platform) 64-bit)
+
+Installation      :- /opt/mqm (Installation1) 
+Version           :- 9.2.0.0 (p920-L200709)
+ACTION:
+None.
+----- amqxeida.c : 6604 -------------------------------------------------------
+08/06/2024 10:50:30 PM - Process(1850.3) User(admmdw) Program(amqzmuc0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:30.507Z)
+                    ArithInsert2(1)
+                    CommentInsert1(LOGGER-IO)
+                   
+AMQ5051I: The queue manager task 'LOGGER-IO' has started.
+
+EXPLANATION:
+The critical utility task manager has started the LOGGER-IO task. This task has
+now started 1 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 10:50:30 PM - Process(1850.4) User(admmdw) Program(amqzmuc0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:30.513Z)
+                    ArithInsert2(1)
+                    CommentInsert1(CHECKPOINT)
+                   
+AMQ5051I: The queue manager task 'CHECKPOINT' has started.
+
+EXPLANATION:
+The critical utility task manager has started the CHECKPOINT task. This task
+has now started 1 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 10:50:30 PM - Process(1850.1) User(admmdw) Program(amqzmuc0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:30.515Z)
+                    CommentInsert1(CHECKPOINT)
+                   
+AMQ5041I: The queue manager task 'CHECKPOINT' has ended.
+
+EXPLANATION:
+The queue manager task CHECKPOINT has ended.
+ACTION:
+None.
+----- amqzmut0.c : 3908 -------------------------------------------------------
+08/06/2024 10:50:30 PM - Process(1850.1) User(admmdw) Program(amqzmuc0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:30.517Z)
+                    CommentInsert1(LOGGER-IO)
+                   
+AMQ5041I: The queue manager task 'LOGGER-IO' has ended.
+
+EXPLANATION:
+The queue manager task LOGGER-IO has ended.
+ACTION:
+None.
+----- amqzmut0.c : 3751 -------------------------------------------------------
+08/06/2024 10:50:30 PM - Process(1869.4) User(admmdw) Program(amqzmuc0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:30.587Z)
+                    ArithInsert2(1)
+                    CommentInsert1(LOGGER-IO)
+                   
+AMQ5051I: The queue manager task 'LOGGER-IO' has started.
+
+EXPLANATION:
+The critical utility task manager has started the LOGGER-IO task. This task has
+now started 1 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 10:50:30 PM - Process(1855.1) User(admmdw) Program(amqzxma0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:30.591Z)
+                    ArithInsert1(4)
+                    CommentInsert1(SMSBROKER.QM)
+                   
+AMQ7229I: 4 log records accessed on queue manager 'SMSBROKER.QM' during the log
+replay phase.
+
+EXPLANATION:
+4 log records have been accessed so far on queue manager SMSBROKER.QM during
+the log replay phase in order to bring the queue manager back to a previously
+known state.
+ACTION:
+None.
+----- amqalms0.c : 1202 -------------------------------------------------------
+08/06/2024 10:50:30 PM - Process(1855.1) User(admmdw) Program(amqzxma0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:30.591Z)
+                    ArithInsert1(4)
+                    CommentInsert1(SMSBROKER.QM)
+                   
+AMQ7230I: Log replay for queue manager 'SMSBROKER.QM' complete.
+
+EXPLANATION:
+The log replay phase of the queue manager restart process has been completed
+for queue manager SMSBROKER.QM.
+ACTION:
+None.
+----- amqalms0.c : 1207 -------------------------------------------------------
+08/06/2024 10:50:30 PM - Process(1869.5) User(admmdw) Program(amqzmuc0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:30.592Z)
+                    ArithInsert2(1)
+                    CommentInsert1(CHECKPOINT)
+                   
+AMQ5051I: The queue manager task 'CHECKPOINT' has started.
+
+EXPLANATION:
+The critical utility task manager has started the CHECKPOINT task. This task
+has now started 1 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 10:50:30 PM - Process(1855.1) User(admmdw) Program(amqzxma0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:30.593Z)
+                    CommentInsert1(SMSBROKER.QM)
+                   
+AMQ7231I: 0 log records accessed on queue manager 'SMSBROKER.QM' during the
+recovery phase.
+
+EXPLANATION:
+0 log records have been accessed so far on queue manager SMSBROKER.QM during
+the recovery phase of the transactions manager state.
+ACTION:
+None.
+----- amqatmra.c : 693 --------------------------------------------------------
+08/06/2024 10:50:30 PM - Process(1855.1) User(admmdw) Program(amqzxma0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:30.593Z)
+                    CommentInsert1(SMSBROKER.QM)
+                   
+AMQ7232I: Transaction manager state recovered for queue manager 'SMSBROKER.QM'.
+
+EXPLANATION:
+The state of transactions at the time the queue manager ended has been
+recovered for queue manager SMSBROKER.QM.
+ACTION:
+None.
+----- amqatmra.c : 1024 -------------------------------------------------------
+08/06/2024 10:50:30 PM - Process(1855.1) User(admmdw) Program(amqzxma0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:30.595Z)
+                    CommentInsert1(SMSBROKER.QM)
+                   
+AMQ7233I: 0 out of 0 in-flight transactions resolved for queue manager
+'SMSBROKER.QM'.
+
+EXPLANATION:
+0 transactions out of 0 in-flight at the time queue manager SMSBROKER.QM ended
+have been resolved.
+ACTION:
+None.
+----- amqatmra.c : 1607 -------------------------------------------------------
+08/06/2024 10:50:30 PM - Process(1875.7) User(admmdw) Program(amqzmur0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:30.606Z)
+                    ArithInsert2(3)
+                    CommentInsert1(APP-SIGNAL)
+                   
+AMQ5037I: The queue manager task 'APP-SIGNAL' has started.
+
+EXPLANATION:
+The restartable utility task manager has started the APP-SIGNAL task. This task
+has now started 3 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 10:50:30 PM - Process(1875.11) User(admmdw) Program(amqzmur0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:30.606Z)
+                    ArithInsert2(5)
+                    CommentInsert1(APP-SIGNAL)
+                   
+AMQ5037I: The queue manager task 'APP-SIGNAL' has started.
+
+EXPLANATION:
+The restartable utility task manager has started the APP-SIGNAL task. This task
+has now started 5 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 10:50:30 PM - Process(1875.6) User(admmdw) Program(amqzmur0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:30.606Z)
+                    ArithInsert2(2)
+                    CommentInsert1(APP-SIGNAL)
+                   
+AMQ5037I: The queue manager task 'APP-SIGNAL' has started.
+
+EXPLANATION:
+The restartable utility task manager has started the APP-SIGNAL task. This task
+has now started 2 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 10:50:30 PM - Process(1875.4) User(admmdw) Program(amqzmur0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:30.606Z)
+                    ArithInsert2(1)
+                    CommentInsert1(ERROR-LOG)
+                   
+AMQ5037I: The queue manager task 'ERROR-LOG' has started.
+
+EXPLANATION:
+The restartable utility task manager has started the ERROR-LOG task. This task
+has now started 1 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 10:50:30 PM - Process(1875.9) User(admmdw) Program(amqzmur0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:30.606Z)
+                    ArithInsert2(4)
+                    CommentInsert1(APP-SIGNAL)
+                   
+AMQ5037I: The queue manager task 'APP-SIGNAL' has started.
+
+EXPLANATION:
+The restartable utility task manager has started the APP-SIGNAL task. This task
+has now started 4 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 10:50:30 PM - Process(1875.5) User(admmdw) Program(amqzmur0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:30.606Z)
+                    ArithInsert2(1)
+                    CommentInsert1(APP-SIGNAL)
+                   
+AMQ5037I: The queue manager task 'APP-SIGNAL' has started.
+
+EXPLANATION:
+The restartable utility task manager has started the APP-SIGNAL task. This task
+has now started 1 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 10:50:30 PM - Process(1875.8) User(admmdw) Program(amqzmur0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:30.607Z)
+                    ArithInsert2(6)
+                    CommentInsert1(APP-SIGNAL)
+                   
+AMQ5037I: The queue manager task 'APP-SIGNAL' has started.
+
+EXPLANATION:
+The restartable utility task manager has started the APP-SIGNAL task. This task
+has now started 6 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 10:50:30 PM - Process(1875.12) User(admmdw) Program(amqzmur0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:30.607Z)
+                    ArithInsert2(7)
+                    CommentInsert1(APP-SIGNAL)
+                   
+AMQ5037I: The queue manager task 'APP-SIGNAL' has started.
+
+EXPLANATION:
+The restartable utility task manager has started the APP-SIGNAL task. This task
+has now started 7 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 10:50:30 PM - Process(1875.10) User(admmdw) Program(amqzmur0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:30.607Z)
+                    ArithInsert2(8)
+                    CommentInsert1(APP-SIGNAL)
+                   
+AMQ5037I: The queue manager task 'APP-SIGNAL' has started.
+
+EXPLANATION:
+The restartable utility task manager has started the APP-SIGNAL task. This task
+has now started 8 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 10:50:30 PM - Process(1855.1) User(admmdw) Program(amqzxma0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:30.907Z)
+                    ArithInsert1(83)
+                    CommentInsert1(0)
+                   
+AMQ8048I: Default objects statistics : 83 created. 0 replaced. 0 failed.
+
+EXPLANATION:
+Information on the number of objects created or replaced successfully as well
+as any failures that occurred while creating the default objects.
+ACTION:
+None.
+----- amqzcdo0.c : 6480 -------------------------------------------------------
+08/06/2024 10:50:30 PM - Process(1855.1) User(admmdw) Program(amqzxma0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:30.908Z)
+                    CommentInsert1(9.2.0.0)
+                    CommentInsert3(SMSBROKER.QM)
+                   
+AMQ8003I: IBM MQ queue manager 'SMSBROKER.QM' started using V9.2.0.0.
+
+EXPLANATION:
+IBM MQ queue manager 'SMSBROKER.QM' started using V9.2.0.0.
+ACTION:
+None.
+----- amqzxma0.c : 5560 -------------------------------------------------------
+08/06/2024 10:50:30 PM - Process(1875.1) User(admmdw) Program(amqzmur0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:30.912Z)
+                    CommentInsert1(APP-SIGNAL)
+                   
+AMQ5041I: The queue manager task 'APP-SIGNAL' has ended.
+
+EXPLANATION:
+The queue manager task APP-SIGNAL has ended.
+ACTION:
+None.
+----- amqzmut0.c : 3751 -------------------------------------------------------
+08/06/2024 10:50:30 PM - Process(1875.1) User(admmdw) Program(amqzmur0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:30.923Z)
+                    CommentInsert1(APP-SIGNAL)
+                   
+AMQ5041I: The queue manager task 'APP-SIGNAL' has ended.
+
+EXPLANATION:
+The queue manager task APP-SIGNAL has ended.
+ACTION:
+None.
+----- amqzmut0.c : 3908 -------------------------------------------------------
+08/06/2024 10:50:30 PM - Process(1875.1) User(admmdw) Program(amqzmur0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:30.925Z)
+                    CommentInsert1(ERROR-LOG)
+                   
+AMQ5041I: The queue manager task 'ERROR-LOG' has ended.
+
+EXPLANATION:
+The queue manager task ERROR-LOG has ended.
+ACTION:
+None.
+----- amqzmut0.c : 3751 -------------------------------------------------------
+08/06/2024 10:50:30 PM - Process(1869.1) User(admmdw) Program(amqzmuc0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:30.937Z)
+                    CommentInsert1(CHECKPOINT)
+                   
+AMQ5041I: The queue manager task 'CHECKPOINT' has ended.
+
+EXPLANATION:
+The queue manager task CHECKPOINT has ended.
+ACTION:
+None.
+----- amqzmut0.c : 3908 -------------------------------------------------------
+08/06/2024 10:50:30 PM - Process(1869.1) User(admmdw) Program(amqzmuc0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:30.942Z)
+                    CommentInsert1(LOGGER-IO)
+                   
+AMQ5041I: The queue manager task 'LOGGER-IO' has ended.
+
+EXPLANATION:
+The queue manager task LOGGER-IO has ended.
+ACTION:
+None.
+----- amqzmut0.c : 3751 -------------------------------------------------------
+08/06/2024 10:50:30 PM - Process(1855.1) User(admmdw) Program(amqzxma0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:30.945Z)
+                    CommentInsert3(SMSBROKER.QM)
+                   
+AMQ8004I: IBM MQ queue manager 'SMSBROKER.QM' ended.
+
+EXPLANATION:
+IBM MQ queue manager 'SMSBROKER.QM' ended.
+ACTION:
+None.
+----- amqzxma0.c : 2066 -------------------------------------------------------
+08/06/2024 10:50:31 PM - Process(1916.4) User(admmdw) Program(amqzmuc0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:31.176Z)
+                    ArithInsert2(1)
+                    CommentInsert1(LOGGER-IO)
+                   
+AMQ5051I: The queue manager task 'LOGGER-IO' has started.
+
+EXPLANATION:
+The critical utility task manager has started the LOGGER-IO task. This task has
+now started 1 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 10:50:31 PM - Process(1899.1) User(admmdw) Program(amqzxma0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:31.183Z)
+                    ArithInsert1(5)
+                    CommentInsert1(SMSBROKER.QM)
+                   
+AMQ7229I: 5 log records accessed on queue manager 'SMSBROKER.QM' during the log
+replay phase.
+
+EXPLANATION:
+5 log records have been accessed so far on queue manager SMSBROKER.QM during
+the log replay phase in order to bring the queue manager back to a previously
+known state.
+ACTION:
+None.
+----- amqalms0.c : 1202 -------------------------------------------------------
+08/06/2024 10:50:31 PM - Process(1899.1) User(admmdw) Program(amqzxma0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:31.183Z)
+                    ArithInsert1(5)
+                    CommentInsert1(SMSBROKER.QM)
+                   
+AMQ7230I: Log replay for queue manager 'SMSBROKER.QM' complete.
+
+EXPLANATION:
+The log replay phase of the queue manager restart process has been completed
+for queue manager SMSBROKER.QM.
+ACTION:
+None.
+----- amqalms0.c : 1207 -------------------------------------------------------
+08/06/2024 10:50:31 PM - Process(1916.9) User(admmdw) Program(amqzmuc0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:31.184Z)
+                    ArithInsert2(1)
+                    CommentInsert1(CHECKPOINT)
+                   
+AMQ5051I: The queue manager task 'CHECKPOINT' has started.
+
+EXPLANATION:
+The critical utility task manager has started the CHECKPOINT task. This task
+has now started 1 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 10:50:31 PM - Process(1899.1) User(admmdw) Program(amqzxma0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:31.185Z)
+                    CommentInsert1(SMSBROKER.QM)
+                   
+AMQ7231I: 0 log records accessed on queue manager 'SMSBROKER.QM' during the
+recovery phase.
+
+EXPLANATION:
+0 log records have been accessed so far on queue manager SMSBROKER.QM during
+the recovery phase of the transactions manager state.
+ACTION:
+None.
+----- amqatmra.c : 693 --------------------------------------------------------
+08/06/2024 10:50:31 PM - Process(1899.1) User(admmdw) Program(amqzxma0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:31.185Z)
+                    CommentInsert1(SMSBROKER.QM)
+                   
+AMQ7232I: Transaction manager state recovered for queue manager 'SMSBROKER.QM'.
+
+EXPLANATION:
+The state of transactions at the time the queue manager ended has been
+recovered for queue manager SMSBROKER.QM.
+ACTION:
+None.
+----- amqatmra.c : 1024 -------------------------------------------------------
+08/06/2024 10:50:31 PM - Process(1899.1) User(admmdw) Program(amqzxma0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:31.187Z)
+                    CommentInsert1(SMSBROKER.QM)
+                   
+AMQ7233I: 0 out of 0 in-flight transactions resolved for queue manager
+'SMSBROKER.QM'.
+
+EXPLANATION:
+0 transactions out of 0 in-flight at the time queue manager SMSBROKER.QM ended
+have been resolved.
+ACTION:
+None.
+----- amqatmra.c : 1607 -------------------------------------------------------
+08/06/2024 10:50:31 PM - Process(1941.7) User(admmdw) Program(amqzmur0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:31.204Z)
+                    ArithInsert2(1)
+                    CommentInsert1(APP-SIGNAL)
+                   
+AMQ5037I: The queue manager task 'APP-SIGNAL' has started.
+
+EXPLANATION:
+The restartable utility task manager has started the APP-SIGNAL task. This task
+has now started 1 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 10:50:31 PM - Process(1941.5) User(admmdw) Program(amqzmur0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:31.204Z)
+                    ArithInsert2(2)
+                    CommentInsert1(APP-SIGNAL)
+                   
+AMQ5037I: The queue manager task 'APP-SIGNAL' has started.
+
+EXPLANATION:
+The restartable utility task manager has started the APP-SIGNAL task. This task
+has now started 2 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 10:50:31 PM - Process(1941.6) User(admmdw) Program(amqzmur0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:31.204Z)
+                    ArithInsert2(3)
+                    CommentInsert1(APP-SIGNAL)
+                   
+AMQ5037I: The queue manager task 'APP-SIGNAL' has started.
+
+EXPLANATION:
+The restartable utility task manager has started the APP-SIGNAL task. This task
+has now started 3 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 10:50:31 PM - Process(1941.8) User(admmdw) Program(amqzmur0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:31.204Z)
+                    ArithInsert2(4)
+                    CommentInsert1(APP-SIGNAL)
+                   
+AMQ5037I: The queue manager task 'APP-SIGNAL' has started.
+
+EXPLANATION:
+The restartable utility task manager has started the APP-SIGNAL task. This task
+has now started 4 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 10:50:31 PM - Process(1941.4) User(admmdw) Program(amqzmur0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:31.204Z)
+                    ArithInsert2(1)
+                    CommentInsert1(ERROR-LOG)
+                   
+AMQ5037I: The queue manager task 'ERROR-LOG' has started.
+
+EXPLANATION:
+The restartable utility task manager has started the ERROR-LOG task. This task
+has now started 1 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 10:50:31 PM - Process(1941.9) User(admmdw) Program(amqzmur0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:31.204Z)
+                    ArithInsert2(5)
+                    CommentInsert1(APP-SIGNAL)
+                   
+AMQ5037I: The queue manager task 'APP-SIGNAL' has started.
+
+EXPLANATION:
+The restartable utility task manager has started the APP-SIGNAL task. This task
+has now started 5 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 10:50:31 PM - Process(1941.12) User(admmdw) Program(amqzmur0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:31.204Z)
+                    ArithInsert2(6)
+                    CommentInsert1(APP-SIGNAL)
+                   
+AMQ5037I: The queue manager task 'APP-SIGNAL' has started.
+
+EXPLANATION:
+The restartable utility task manager has started the APP-SIGNAL task. This task
+has now started 6 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 10:50:31 PM - Process(1941.11) User(admmdw) Program(amqzmur0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:31.204Z)
+                    ArithInsert2(7)
+                    CommentInsert1(APP-SIGNAL)
+                   
+AMQ5037I: The queue manager task 'APP-SIGNAL' has started.
+
+EXPLANATION:
+The restartable utility task manager has started the APP-SIGNAL task. This task
+has now started 7 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 10:50:31 PM - Process(1941.10) User(admmdw) Program(amqzmur0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:31.204Z)
+                    ArithInsert2(8)
+                    CommentInsert1(APP-SIGNAL)
+                   
+AMQ5037I: The queue manager task 'APP-SIGNAL' has started.
+
+EXPLANATION:
+The restartable utility task manager has started the APP-SIGNAL task. This task
+has now started 8 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 10:50:31 PM - Process(1899.1) User(admmdw) Program(amqzxma0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:31.224Z)
+                    CommentInsert1(9.2.0.0)
+                    CommentInsert3(SMSBROKER.QM)
+                   
+AMQ8003I: IBM MQ queue manager 'SMSBROKER.QM' started using V9.2.0.0.
+
+EXPLANATION:
+IBM MQ queue manager 'SMSBROKER.QM' started using V9.2.0.0.
+ACTION:
+None.
+----- amqzxma0.c : 5560 -------------------------------------------------------
+08/06/2024 10:50:31 PM - Process(1941.14) User(admmdw) Program(amqzmur0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:31.224Z)
+                    ArithInsert2(1)
+                    CommentInsert1(DEFERRED_DELIVERY)
+                   
+AMQ5037I: The queue manager task 'DEFERRED_DELIVERY' has started.
+
+EXPLANATION:
+The restartable utility task manager has started the DEFERRED_DELIVERY task.
+This task has now started 1 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 10:50:31 PM - Process(1941.15) User(admmdw) Program(amqzmur0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:31.237Z)
+                    ArithInsert2(1)
+                    CommentInsert1(DEFERRED-MSG)
+                   
+AMQ5037I: The queue manager task 'DEFERRED-MSG' has started.
+
+EXPLANATION:
+The restartable utility task manager has started the DEFERRED-MSG task. This
+task has now started 1 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 10:50:31 PM - Process(1960.1) User(admmdw) Program(amqrrmfa)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:31.237Z)
+                   
+AMQ9410I: Repository manager started.
+
+EXPLANATION:
+The repository manager started successfully.
+ACTION:
+None.
+----- amqrrmfa.c : 2104 -------------------------------------------------------
+08/06/2024 10:50:31 PM - Process(1941.16) User(admmdw) Program(amqzmur0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:31.237Z)
+                    ArithInsert2(1)
+                    CommentInsert1(STATISTICS)
+                   
+AMQ5037I: The queue manager task 'STATISTICS' has started.
+
+EXPLANATION:
+The restartable utility task manager has started the STATISTICS task. This task
+has now started 1 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 10:50:31 PM - Process(1916.26) User(admmdw) Program(amqzmuc0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:31.237Z)
+                    ArithInsert2(1)
+                    CommentInsert1(ACTVTRC)
+                   
+AMQ5051I: The queue manager task 'ACTVTRC' has started.
+
+EXPLANATION:
+The critical utility task manager has started the ACTVTRC task. This task has
+now started 1 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 10:50:31 PM - Process(1916.27) User(admmdw) Program(amqzmuc0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:31.237Z)
+                    ArithInsert2(1)
+                    CommentInsert1(ASYNCQ)
+                   
+AMQ5051I: The queue manager task 'ASYNCQ' has started.
+
+EXPLANATION:
+The critical utility task manager has started the ASYNCQ task. This task has
+now started 1 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 10:50:31 PM - Process(1916.28) User(admmdw) Program(amqzmuc0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:31.237Z)
+                    ArithInsert2(1)
+                    CommentInsert1(EXPIRER)
+                   
+AMQ5051I: The queue manager task 'EXPIRER' has started.
+
+EXPLANATION:
+The critical utility task manager has started the EXPIRER task. This task has
+now started 1 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 10:50:31 PM - Process(1916.29) User(admmdw) Program(amqzmuc0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:31.237Z)
+                    ArithInsert2(1)
+                    CommentInsert1(DUR-SUBS-MGR)
+                   
+AMQ5051I: The queue manager task 'DUR-SUBS-MGR' has started.
+
+EXPLANATION:
+The critical utility task manager has started the DUR-SUBS-MGR task. This task
+has now started 1 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 10:50:31 PM - Process(1941.17) User(admmdw) Program(amqzmur0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:31.239Z)
+                    ArithInsert2(1)
+                    CommentInsert1(MARKINTSCAN)
+                   
+AMQ5037I: The queue manager task 'MARKINTSCAN' has started.
+
+EXPLANATION:
+The restartable utility task manager has started the MARKINTSCAN task. This
+task has now started 1 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 10:50:31 PM - Process(1955.4) User(admmdw) Program(amqzmuf0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:31.240Z)
+                    ArithInsert2(1)
+                    CommentInsert1(QPUBSUB-CTRLR)
+                   
+AMQ5052I: The queue manager task 'QPUBSUB-CTRLR' has started.
+
+EXPLANATION:
+The publish/subscribe utility task manager has started the QPUBSUB-CTRLR task.
+This task has now started 1 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 10:50:31 PM - Process(1955.5) User(admmdw) Program(amqzmuf0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:31.240Z)
+                    ArithInsert2(1)
+                    CommentInsert1(QPUBSUB-QUEUE-NLCACHE)
+                   
+AMQ5052I: The queue manager task 'QPUBSUB-QUEUE-NLCACHE' has started.
+
+EXPLANATION:
+The publish/subscribe utility task manager has started the
+QPUBSUB-QUEUE-NLCACHE task. This task has now started 1 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 10:50:31 PM - Process(1916.31) User(admmdw) Program(amqzmuc0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:31.240Z)
+                    ArithInsert2(1)
+                    CommentInsert1(RESOURCE_MONITOR)
+                   
+AMQ5051I: The queue manager task 'RESOURCE_MONITOR' has started.
+
+EXPLANATION:
+The critical utility task manager has started the RESOURCE_MONITOR task. This
+task has now started 1 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 10:50:31 PM - Process(1916.30) User(admmdw) Program(amqzmuc0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:31.240Z)
+                    ArithInsert2(1)
+                    CommentInsert1(TOPIC-TREE)
+                   
+AMQ5051I: The queue manager task 'TOPIC-TREE' has started.
+
+EXPLANATION:
+The critical utility task manager has started the TOPIC-TREE task. This task
+has now started 1 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 10:50:31 PM - Process(1916.32) User(admmdw) Program(amqzmuc0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:31.240Z)
+                    ArithInsert2(1)
+                    CommentInsert1(Q-DELETION)
+                   
+AMQ5051I: The queue manager task 'Q-DELETION' has started.
+
+EXPLANATION:
+The critical utility task manager has started the Q-DELETION task. This task
+has now started 1 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 10:50:31 PM - Process(1916.33) User(admmdw) Program(amqzmuc0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:31.240Z)
+                    ArithInsert2(1)
+                    CommentInsert1(PRESERVED-Q)
+                   
+AMQ5051I: The queue manager task 'PRESERVED-Q' has started.
+
+EXPLANATION:
+The critical utility task manager has started the PRESERVED-Q task. This task
+has now started 1 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 10:50:31 PM - Process(1955.7) User(admmdw) Program(amqzmuf0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:31.240Z)
+                    ArithInsert2(1)
+                    CommentInsert1(PUBSUB-DAEMON)
+                   
+AMQ5052I: The queue manager task 'PUBSUB-DAEMON' has started.
+
+EXPLANATION:
+The publish/subscribe utility task manager has started the PUBSUB-DAEMON task.
+This task has now started 1 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 10:50:31 PM - Process(1955.7) User(admmdw) Program(amqzmuf0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:31.240Z)
+                    CommentInsert1(IBM MQ Distributed Pub/Sub Controller)
+                   
+AMQ5975I: 'IBM MQ Distributed Pub/Sub Controller' has started.
+
+EXPLANATION:
+'IBM MQ Distributed Pub/Sub Controller' has started.
+ACTION:
+None.
+----- cmqxzmup.c : 3957 -------------------------------------------------------
+08/06/2024 10:50:31 PM - Process(1955.6) User(admmdw) Program(amqzmuf0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:31.240Z)
+                    ArithInsert2(1)
+                    CommentInsert1(QPUBSUB-SUBPT-NLCACHE)
+                   
+AMQ5052I: The queue manager task 'QPUBSUB-SUBPT-NLCACHE' has started.
+
+EXPLANATION:
+The publish/subscribe utility task manager has started the
+QPUBSUB-SUBPT-NLCACHE task. This task has now started 1 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 10:50:31 PM - Process(1916.34) User(admmdw) Program(amqzmuc0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:31.240Z)
+                    ArithInsert2(1)
+                    CommentInsert1(MULTICAST)
+                   
+AMQ5051I: The queue manager task 'MULTICAST' has started.
+
+EXPLANATION:
+The critical utility task manager has started the MULTICAST task. This task has
+now started 1 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 10:50:31 PM - Process(1913.1) User(admmdw) Program(amqzmgr0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:31.241Z)
+                    ArithInsert1(1981)
+                    CommentInsert1(SYSTEM.CHANNEL.INITQ)
+                   
+AMQ5022I: The channel initiator has started. ProcessId(1981).
+
+EXPLANATION:
+The channel initiator process has started.
+ACTION:
+None.
+----- amqzmgr0.c : 2982 -------------------------------------------------------
+08/06/2024 10:50:31 PM - Process(1955.8) User(admmdw) Program(amqzmuf0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:31.242Z)
+                    CommentInsert1(IBM MQ Distributed Pub/Sub Fan Out Task)
+                   
+AMQ5975I: 'IBM MQ Distributed Pub/Sub Fan Out Task' has started.
+
+EXPLANATION:
+'IBM MQ Distributed Pub/Sub Fan Out Task' has started.
+ACTION:
+None.
+----- cmqxzmup.c : 386 --------------------------------------------------------
+08/06/2024 10:50:31 PM - Process(1955.9) User(admmdw) Program(amqzmuf0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:31.242Z)
+                    CommentInsert1(IBM MQ Distributed Pub/Sub Command Task)
+                   
+AMQ5975I: 'IBM MQ Distributed Pub/Sub Command Task' has started.
+
+EXPLANATION:
+'IBM MQ Distributed Pub/Sub Command Task' has started.
+ACTION:
+None.
+----- cmqxzmup.c : 386 --------------------------------------------------------
+08/06/2024 10:50:31 PM - Process(1955.10) User(admmdw) Program(amqzmuf0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:31.242Z)
+                    CommentInsert1(IBM MQ Distributed Pub/Sub Publish Task)
+                   
+AMQ5975I: 'IBM MQ Distributed Pub/Sub Publish Task' has started.
+
+EXPLANATION:
+'IBM MQ Distributed Pub/Sub Publish Task' has started.
+ACTION:
+None.
+----- cmqxzmup.c : 386 --------------------------------------------------------
+08/06/2024 10:50:31 PM - Process(1913.1) User(admmdw) Program(amqzmgr0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:31.242Z)
+                    ArithInsert1(1986)
+                    CommentInsert1(SYSTEM.CMDSERVER.1)
+                   
+AMQ5024I: The command server has started. ProcessId(1986).
+
+EXPLANATION:
+The command server process has started.
+ACTION:
+None.
+----- amqzmgr0.c : 2991 -------------------------------------------------------
+08/06/2024 10:50:31 PM - Process(1916.35) User(admmdw) Program(amqzmuc0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:31.243Z)
+                    ArithInsert2(1)
+                    CommentInsert1(IQM-COMMS-MANAGER)
+                   
+AMQ5051I: The queue manager task 'IQM-COMMS-MANAGER' has started.
+
+EXPLANATION:
+The critical utility task manager has started the IQM-COMMS-MANAGER task. This
+task has now started 1 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 10:50:31 PM - Process(1913.1) User(admmdw) Program(amqzmgr0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:31.244Z)
+                    ArithInsert1(1989)
+                    CommentInsert1(SYSTEM.AMQP.SERVICE)
+                   
+AMQ5028I: The Server 'SYSTEM.AMQP.SERVICE' has started. ProcessId(1989).
+
+EXPLANATION:
+The Server process has started.
+ACTION:
+None.
+----- amqzmgr0.c : 3007 -------------------------------------------------------
+08/06/2024 10:50:31 PM - Process(1981.1) User(admmdw) Program(runmqchi)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:31.257Z)
+                    CommentInsert1(SYSTEM.CHANNEL.INITQ)
+                   
+AMQ8024I: IBM MQ channel initiator started.
+
+EXPLANATION:
+The channel initiator for queue SYSTEM.CHANNEL.INITQ has been started.
+ACTION:
+None.
+----- amqrimna.c : 917 --------------------------------------------------------
+08/06/2024 10:50:31 PM - Process(1982.1) User(admmdw) Program(amqfqpub)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:31.265Z)
+                    CommentInsert1(SMSBROKER.QM)
+                   
+AMQ5806I: Queued Publish/Subscribe Daemon started for queue manager
+SMSBROKER.QM.
+
+EXPLANATION:
+Queued Publish/Subscribe Daemon started for queue manager SMSBROKER.QM.
+ACTION:
+None.
+----- cmqxfcxc.c : 1401 -------------------------------------------------------
+08/06/2024 10:50:31 PM - Process(1913.1) User(admmdw) Program(amqzmgr0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:31.326Z)
+                    ArithInsert1(2088)
+                    CommentInsert1(SMSBROKER.QM.QM)
+                   
+AMQ5026I: The listener 'SMSBROKER.QM.QM' has started. ProcessId(2088).
+
+EXPLANATION:
+The listener process has started.
+ACTION:
+None.
+----- amqzmgr0.c : 2999 -------------------------------------------------------
+08/06/2024 10:50:31 PM - Process(2149.1) User(admmdw) Program(runmqchl)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:31.704Z)
+                    CommentInsert1(SMS.IVR)
+                   
+AMQ9002I: Channel 'SMS.IVR' is starting.
+
+EXPLANATION:
+Channel 'SMS.IVR' is starting.
+ACTION:
+None.
+----- amqrccca.c : 469 --------------------------------------------------------
+08/06/2024 10:50:31 PM - Process(2149.1) User(admmdw) Program(runmqchl)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:31.710Z)
+                    ArithInsert1(111) ArithInsert2(111)
+                    CommentInsert1(localhost (127.0.0.1) (1514))
+                    CommentInsert2(TCP/IP)
+                    CommentInsert3(SMS.IVR)
+                   
+AMQ9202E: Remote host not available, retry later.
+
+EXPLANATION:
+The attempt to allocate a conversation using TCP/IP to host 'localhost
+(127.0.0.1) (1514)' for channel SMS.IVR was not successful. However the error
+may be a transitory one and it may be possible to successfully allocate a
+TCP/IP conversation later. 
+
+In some cases the remote host cannot be determined and so is shown as '????'.
+ACTION:
+Try the connection again later. If the failure persists, record the error
+values and contact your systems administrator. The return code from TCP/IP is
+111 (X'6F'). The reason for the failure may be that this host cannot reach the
+destination host. It may also be possible that the listening program at host
+'localhost (127.0.0.1) (1514)' was not running.  If this is the case, perform
+the relevant operations to start the TCP/IP listening program, and try again.
+----- amqccita.c : 1201 -------------------------------------------------------
+08/06/2024 10:50:31 PM - Process(2149.1) User(admmdw) Program(runmqchl)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:31.710Z)
+                    CommentInsert1(SMS.IVR)
+                    CommentInsert2(2149)
+                    CommentInsert3(localhost(1514))
+                   
+AMQ9999E: Channel 'SMS.IVR' to host 'localhost(1514)' ended abnormally.
+
+EXPLANATION:
+The channel program running under process ID 2149 for channel 'SMS.IVR' ended
+abnormally. The host name is 'localhost(1514)'; in some cases the host name
+cannot be determined and so is shown as '????'.
+ACTION:
+Look at previous error messages for the channel program in the error logs to
+determine the cause of the failure. Note that this message can be excluded
+completely or suppressed by tuning the "ExcludeMessage" or "SuppressMessage"
+attributes under the "QMErrorLog" stanza in qm.ini. Further information can be
+found in the System Administration Guide.
+----- amqrccca.c : 1121 -------------------------------------------------------
+08/06/2024 10:50:31 PM - Process(2153.1) User(admmdw) Program(runmqchl)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:31.720Z)
+                    CommentInsert1(SMS.IVR)
+                   
+AMQ9002I: Channel 'SMS.IVR' is starting.
+
+EXPLANATION:
+Channel 'SMS.IVR' is starting.
+ACTION:
+None.
+----- amqrccca.c : 469 --------------------------------------------------------
+08/06/2024 10:50:31 PM - Process(2153.1) User(admmdw) Program(runmqchl)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:31.726Z)
+                    ArithInsert1(111) ArithInsert2(111)
+                    CommentInsert1(localhost (127.0.0.1) (1514))
+                    CommentInsert2(TCP/IP)
+                    CommentInsert3(SMS.IVR)
+                   
+AMQ9202E: Remote host not available, retry later.
+
+EXPLANATION:
+The attempt to allocate a conversation using TCP/IP to host 'localhost
+(127.0.0.1) (1514)' for channel SMS.IVR was not successful. However the error
+may be a transitory one and it may be possible to successfully allocate a
+TCP/IP conversation later. 
+
+In some cases the remote host cannot be determined and so is shown as '????'.
+ACTION:
+Try the connection again later. If the failure persists, record the error
+values and contact your systems administrator. The return code from TCP/IP is
+111 (X'6F'). The reason for the failure may be that this host cannot reach the
+destination host. It may also be possible that the listening program at host
+'localhost (127.0.0.1) (1514)' was not running.  If this is the case, perform
+the relevant operations to start the TCP/IP listening program, and try again.
+----- amqccita.c : 1201 -------------------------------------------------------
+08/06/2024 10:50:31 PM - Process(2153.1) User(admmdw) Program(runmqchl)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:31.726Z)
+                    CommentInsert1(SMS.IVR)
+                    CommentInsert2(2153)
+                    CommentInsert3(localhost(1514))
+                   
+AMQ9999E: Channel 'SMS.IVR' to host 'localhost(1514)' ended abnormally.
+
+EXPLANATION:
+The channel program running under process ID 2153 for channel 'SMS.IVR' ended
+abnormally. The host name is 'localhost(1514)'; in some cases the host name
+cannot be determined and so is shown as '????'.
+ACTION:
+Look at previous error messages for the channel program in the error logs to
+determine the cause of the failure. Note that this message can be excluded
+completely or suppressed by tuning the "ExcludeMessage" or "SuppressMessage"
+attributes under the "QMErrorLog" stanza in qm.ini. Further information can be
+found in the System Administration Guide.
+----- amqrccca.c : 1121 -------------------------------------------------------
+08/06/2024 10:50:31 PM - Process(2158.1) User(admmdw) Program(runmqchl)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:31.730Z)
+                    CommentInsert1(SMS.PAY)
+                   
+AMQ9002I: Channel 'SMS.PAY' is starting.
+
+EXPLANATION:
+Channel 'SMS.PAY' is starting.
+ACTION:
+None.
+----- amqrccca.c : 469 --------------------------------------------------------
+08/06/2024 10:50:31 PM - Process(2158.1) User(admmdw) Program(runmqchl)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:31.745Z)
+                    CommentInsert1(SMS.PAY)
+                   
+AMQ9299I: Channel 'SMS.PAY' has started.
+
+EXPLANATION:
+The channel 'SMS.PAY' has finished starting.
+ACTION:
+No action required.
+----- amqrccca.c : 969 --------------------------------------------------------
+08/06/2024 10:50:31 PM - Process(2169.1) User(admmdw) Program(runmqchl)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:31.758Z)
+                    CommentInsert1(SMS.ISO)
+                   
+AMQ9002I: Channel 'SMS.ISO' is starting.
+
+EXPLANATION:
+Channel 'SMS.ISO' is starting.
+ACTION:
+None.
+----- amqrccca.c : 469 --------------------------------------------------------
+08/06/2024 10:50:31 PM - Process(2169.1) User(admmdw) Program(runmqchl)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:50:31.762Z)
+                    CommentInsert1(SMS.ISO)
+                   
+AMQ9299I: Channel 'SMS.ISO' has started.
+
+EXPLANATION:
+The channel 'SMS.ISO' has finished starting.
+ACTION:
+No action required.
+----- amqrccca.c : 969 --------------------------------------------------------
+08/06/2024 10:51:26 PM - Process(6299.4) User(admmdw) Program(amqrmppa)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:51:26.918Z)
+                    CommentInsert1(ISO.SMS)
+                   
+AMQ9002I: Channel 'ISO.SMS' is starting.
+
+EXPLANATION:
+Channel 'ISO.SMS' is starting.
+ACTION:
+None.
+----- amqrmrsa.c : 285 --------------------------------------------------------
+08/06/2024 10:51:26 PM - Process(6299.4) User(admmdw) Program(amqrmppa)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:51:26.918Z)
+                    CommentInsert1(ISO.SMS)
+                   
+AMQ9299I: Channel 'ISO.SMS' has started.
+
+EXPLANATION:
+The channel 'ISO.SMS' has finished starting.
+ACTION:
+No action required.
+----- amqrmrsa.c : 649 --------------------------------------------------------
+08/06/2024 10:51:28 PM - Process(6299.5) User(admmdw) Program(amqrmppa)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:51:28.100Z)
+                    CommentInsert1(PAY.SMS)
+                   
+AMQ9002I: Channel 'PAY.SMS' is starting.
+
+EXPLANATION:
+Channel 'PAY.SMS' is starting.
+ACTION:
+None.
+----- amqrmrsa.c : 285 --------------------------------------------------------
+08/06/2024 10:51:28 PM - Process(6299.5) User(admmdw) Program(amqrmppa)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:51:28.100Z)
+                    CommentInsert1(PAY.SMS)
+                   
+AMQ9299I: Channel 'PAY.SMS' has started.
+
+EXPLANATION:
+The channel 'PAY.SMS' has finished starting.
+ACTION:
+No action required.
+----- amqrmrsa.c : 649 --------------------------------------------------------
+08/06/2024 10:51:31 PM - Process(6339.1) User(admmdw) Program(runmqchl)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:51:31.720Z)
+                    CommentInsert1(SMS.IVR)
+                   
+AMQ9002I: Channel 'SMS.IVR' is starting.
+
+EXPLANATION:
+Channel 'SMS.IVR' is starting.
+ACTION:
+None.
+----- amqrccca.c : 469 --------------------------------------------------------
+08/06/2024 10:51:31 PM - Process(6339.1) User(admmdw) Program(runmqchl)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:51:31.735Z)
+                    ArithInsert1(111) ArithInsert2(111)
+                    CommentInsert1(localhost (127.0.0.1) (1514))
+                    CommentInsert2(TCP/IP)
+                    CommentInsert3(SMS.IVR)
+                   
+AMQ9202E: Remote host not available, retry later.
+
+EXPLANATION:
+The attempt to allocate a conversation using TCP/IP to host 'localhost
+(127.0.0.1) (1514)' for channel SMS.IVR was not successful. However the error
+may be a transitory one and it may be possible to successfully allocate a
+TCP/IP conversation later. 
+
+In some cases the remote host cannot be determined and so is shown as '????'.
+ACTION:
+Try the connection again later. If the failure persists, record the error
+values and contact your systems administrator. The return code from TCP/IP is
+111 (X'6F'). The reason for the failure may be that this host cannot reach the
+destination host. It may also be possible that the listening program at host
+'localhost (127.0.0.1) (1514)' was not running.  If this is the case, perform
+the relevant operations to start the TCP/IP listening program, and try again.
+----- amqccita.c : 1201 -------------------------------------------------------
+08/06/2024 10:51:31 PM - Process(6339.1) User(admmdw) Program(runmqchl)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:51:31.736Z)
+                    CommentInsert1(SMS.IVR)
+                    CommentInsert2(6339)
+                    CommentInsert3(localhost(1514))
+                   
+AMQ9999E: Channel 'SMS.IVR' to host 'localhost(1514)' ended abnormally.
+
+EXPLANATION:
+The channel program running under process ID 6339 for channel 'SMS.IVR' ended
+abnormally. The host name is 'localhost(1514)'; in some cases the host name
+cannot be determined and so is shown as '????'.
+ACTION:
+Look at previous error messages for the channel program in the error logs to
+determine the cause of the failure. Note that this message can be excluded
+completely or suppressed by tuning the "ExcludeMessage" or "SuppressMessage"
+attributes under the "QMErrorLog" stanza in qm.ini. Further information can be
+found in the System Administration Guide.
+----- amqrccca.c : 1121 -------------------------------------------------------
+08/06/2024 10:52:31 PM - Process(6396.1) User(admmdw) Program(runmqchl)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:52:31.723Z)
+                    CommentInsert1(SMS.IVR)
+                   
+AMQ9002I: Channel 'SMS.IVR' is starting.
+
+EXPLANATION:
+Channel 'SMS.IVR' is starting.
+ACTION:
+None.
+----- amqrccca.c : 469 --------------------------------------------------------
+08/06/2024 10:52:31 PM - Process(6396.1) User(admmdw) Program(runmqchl)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:52:31.738Z)
+                    ArithInsert1(111) ArithInsert2(111)
+                    CommentInsert1(localhost (127.0.0.1) (1514))
+                    CommentInsert2(TCP/IP)
+                    CommentInsert3(SMS.IVR)
+                   
+AMQ9202E: Remote host not available, retry later.
+
+EXPLANATION:
+The attempt to allocate a conversation using TCP/IP to host 'localhost
+(127.0.0.1) (1514)' for channel SMS.IVR was not successful. However the error
+may be a transitory one and it may be possible to successfully allocate a
+TCP/IP conversation later. 
+
+In some cases the remote host cannot be determined and so is shown as '????'.
+ACTION:
+Try the connection again later. If the failure persists, record the error
+values and contact your systems administrator. The return code from TCP/IP is
+111 (X'6F'). The reason for the failure may be that this host cannot reach the
+destination host. It may also be possible that the listening program at host
+'localhost (127.0.0.1) (1514)' was not running.  If this is the case, perform
+the relevant operations to start the TCP/IP listening program, and try again.
+----- amqccita.c : 1201 -------------------------------------------------------
+08/06/2024 10:52:31 PM - Process(6396.1) User(admmdw) Program(runmqchl)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:52:31.738Z)
+                    CommentInsert1(SMS.IVR)
+                    CommentInsert2(6396)
+                    CommentInsert3(localhost(1514))
+                   
+AMQ9999E: Channel 'SMS.IVR' to host 'localhost(1514)' ended abnormally.
+
+EXPLANATION:
+The channel program running under process ID 6396 for channel 'SMS.IVR' ended
+abnormally. The host name is 'localhost(1514)'; in some cases the host name
+cannot be determined and so is shown as '????'.
+ACTION:
+Look at previous error messages for the channel program in the error logs to
+determine the cause of the failure. Note that this message can be excluded
+completely or suppressed by tuning the "ExcludeMessage" or "SuppressMessage"
+attributes under the "QMErrorLog" stanza in qm.ini. Further information can be
+found in the System Administration Guide.
+----- amqrccca.c : 1121 -------------------------------------------------------
+08/06/2024 10:53:31 PM - Process(6453.1) User(admmdw) Program(runmqchl)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:53:31.724Z)
+                    CommentInsert1(SMS.IVR)
+                   
+AMQ9002I: Channel 'SMS.IVR' is starting.
+
+EXPLANATION:
+Channel 'SMS.IVR' is starting.
+ACTION:
+None.
+----- amqrccca.c : 469 --------------------------------------------------------
+08/06/2024 10:53:31 PM - Process(6453.1) User(admmdw) Program(runmqchl)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:53:31.741Z)
+                    ArithInsert1(111) ArithInsert2(111)
+                    CommentInsert1(localhost (127.0.0.1) (1514))
+                    CommentInsert2(TCP/IP)
+                    CommentInsert3(SMS.IVR)
+                   
+AMQ9202E: Remote host not available, retry later.
+
+EXPLANATION:
+The attempt to allocate a conversation using TCP/IP to host 'localhost
+(127.0.0.1) (1514)' for channel SMS.IVR was not successful. However the error
+may be a transitory one and it may be possible to successfully allocate a
+TCP/IP conversation later. 
+
+In some cases the remote host cannot be determined and so is shown as '????'.
+ACTION:
+Try the connection again later. If the failure persists, record the error
+values and contact your systems administrator. The return code from TCP/IP is
+111 (X'6F'). The reason for the failure may be that this host cannot reach the
+destination host. It may also be possible that the listening program at host
+'localhost (127.0.0.1) (1514)' was not running.  If this is the case, perform
+the relevant operations to start the TCP/IP listening program, and try again.
+----- amqccita.c : 1201 -------------------------------------------------------
+08/06/2024 10:53:31 PM - Process(6453.1) User(admmdw) Program(runmqchl)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:53:31.741Z)
+                    CommentInsert1(SMS.IVR)
+                    CommentInsert2(6453)
+                    CommentInsert3(localhost(1514))
+                   
+AMQ9999E: Channel 'SMS.IVR' to host 'localhost(1514)' ended abnormally.
+
+EXPLANATION:
+The channel program running under process ID 6453 for channel 'SMS.IVR' ended
+abnormally. The host name is 'localhost(1514)'; in some cases the host name
+cannot be determined and so is shown as '????'.
+ACTION:
+Look at previous error messages for the channel program in the error logs to
+determine the cause of the failure. Note that this message can be excluded
+completely or suppressed by tuning the "ExcludeMessage" or "SuppressMessage"
+attributes under the "QMErrorLog" stanza in qm.ini. Further information can be
+found in the System Administration Guide.
+----- amqrccca.c : 1121 -------------------------------------------------------
+08/06/2024 10:54:31 PM - Process(6510.1) User(admmdw) Program(runmqchl)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:54:31.723Z)
+                    CommentInsert1(SMS.IVR)
+                   
+AMQ9002I: Channel 'SMS.IVR' is starting.
+
+EXPLANATION:
+Channel 'SMS.IVR' is starting.
+ACTION:
+None.
+----- amqrccca.c : 469 --------------------------------------------------------
+08/06/2024 10:54:31 PM - Process(6510.1) User(admmdw) Program(runmqchl)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:54:31.738Z)
+                    ArithInsert1(111) ArithInsert2(111)
+                    CommentInsert1(localhost (127.0.0.1) (1514))
+                    CommentInsert2(TCP/IP)
+                    CommentInsert3(SMS.IVR)
+                   
+AMQ9202E: Remote host not available, retry later.
+
+EXPLANATION:
+The attempt to allocate a conversation using TCP/IP to host 'localhost
+(127.0.0.1) (1514)' for channel SMS.IVR was not successful. However the error
+may be a transitory one and it may be possible to successfully allocate a
+TCP/IP conversation later. 
+
+In some cases the remote host cannot be determined and so is shown as '????'.
+ACTION:
+Try the connection again later. If the failure persists, record the error
+values and contact your systems administrator. The return code from TCP/IP is
+111 (X'6F'). The reason for the failure may be that this host cannot reach the
+destination host. It may also be possible that the listening program at host
+'localhost (127.0.0.1) (1514)' was not running.  If this is the case, perform
+the relevant operations to start the TCP/IP listening program, and try again.
+----- amqccita.c : 1201 -------------------------------------------------------
+08/06/2024 10:54:31 PM - Process(6510.1) User(admmdw) Program(runmqchl)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:54:31.738Z)
+                    CommentInsert1(SMS.IVR)
+                    CommentInsert2(6510)
+                    CommentInsert3(localhost(1514))
+                   
+AMQ9999E: Channel 'SMS.IVR' to host 'localhost(1514)' ended abnormally.
+
+EXPLANATION:
+The channel program running under process ID 6510 for channel 'SMS.IVR' ended
+abnormally. The host name is 'localhost(1514)'; in some cases the host name
+cannot be determined and so is shown as '????'.
+ACTION:
+Look at previous error messages for the channel program in the error logs to
+determine the cause of the failure. Note that this message can be excluded
+completely or suppressed by tuning the "ExcludeMessage" or "SuppressMessage"
+attributes under the "QMErrorLog" stanza in qm.ini. Further information can be
+found in the System Administration Guide.
+----- amqrccca.c : 1121 -------------------------------------------------------
+08/06/2024 10:55:31 PM - Process(6567.1) User(admmdw) Program(runmqchl)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:55:31.726Z)
+                    CommentInsert1(SMS.IVR)
+                   
+AMQ9002I: Channel 'SMS.IVR' is starting.
+
+EXPLANATION:
+Channel 'SMS.IVR' is starting.
+ACTION:
+None.
+----- amqrccca.c : 469 --------------------------------------------------------
+08/06/2024 10:55:31 PM - Process(6567.1) User(admmdw) Program(runmqchl)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:55:31.742Z)
+                    ArithInsert1(111) ArithInsert2(111)
+                    CommentInsert1(localhost (127.0.0.1) (1514))
+                    CommentInsert2(TCP/IP)
+                    CommentInsert3(SMS.IVR)
+                   
+AMQ9202E: Remote host not available, retry later.
+
+EXPLANATION:
+The attempt to allocate a conversation using TCP/IP to host 'localhost
+(127.0.0.1) (1514)' for channel SMS.IVR was not successful. However the error
+may be a transitory one and it may be possible to successfully allocate a
+TCP/IP conversation later. 
+
+In some cases the remote host cannot be determined and so is shown as '????'.
+ACTION:
+Try the connection again later. If the failure persists, record the error
+values and contact your systems administrator. The return code from TCP/IP is
+111 (X'6F'). The reason for the failure may be that this host cannot reach the
+destination host. It may also be possible that the listening program at host
+'localhost (127.0.0.1) (1514)' was not running.  If this is the case, perform
+the relevant operations to start the TCP/IP listening program, and try again.
+----- amqccita.c : 1201 -------------------------------------------------------
+08/06/2024 10:55:31 PM - Process(6567.1) User(admmdw) Program(runmqchl)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:55:31.742Z)
+                    CommentInsert1(SMS.IVR)
+                    CommentInsert2(6567)
+                    CommentInsert3(localhost(1514))
+                   
+AMQ9999E: Channel 'SMS.IVR' to host 'localhost(1514)' ended abnormally.
+
+EXPLANATION:
+The channel program running under process ID 6567 for channel 'SMS.IVR' ended
+abnormally. The host name is 'localhost(1514)'; in some cases the host name
+cannot be determined and so is shown as '????'.
+ACTION:
+Look at previous error messages for the channel program in the error logs to
+determine the cause of the failure. Note that this message can be excluded
+completely or suppressed by tuning the "ExcludeMessage" or "SuppressMessage"
+attributes under the "QMErrorLog" stanza in qm.ini. Further information can be
+found in the System Administration Guide.
+----- amqrccca.c : 1121 -------------------------------------------------------
+08/06/2024 10:56:31 PM - Process(6624.1) User(admmdw) Program(runmqchl)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:56:31.731Z)
+                    CommentInsert1(SMS.IVR)
+                   
+AMQ9002I: Channel 'SMS.IVR' is starting.
+
+EXPLANATION:
+Channel 'SMS.IVR' is starting.
+ACTION:
+None.
+----- amqrccca.c : 469 --------------------------------------------------------
+08/06/2024 10:56:31 PM - Process(6624.1) User(admmdw) Program(runmqchl)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:56:31.750Z)
+                    ArithInsert1(111) ArithInsert2(111)
+                    CommentInsert1(localhost (127.0.0.1) (1514))
+                    CommentInsert2(TCP/IP)
+                    CommentInsert3(SMS.IVR)
+                   
+AMQ9202E: Remote host not available, retry later.
+
+EXPLANATION:
+The attempt to allocate a conversation using TCP/IP to host 'localhost
+(127.0.0.1) (1514)' for channel SMS.IVR was not successful. However the error
+may be a transitory one and it may be possible to successfully allocate a
+TCP/IP conversation later. 
+
+In some cases the remote host cannot be determined and so is shown as '????'.
+ACTION:
+Try the connection again later. If the failure persists, record the error
+values and contact your systems administrator. The return code from TCP/IP is
+111 (X'6F'). The reason for the failure may be that this host cannot reach the
+destination host. It may also be possible that the listening program at host
+'localhost (127.0.0.1) (1514)' was not running.  If this is the case, perform
+the relevant operations to start the TCP/IP listening program, and try again.
+----- amqccita.c : 1201 -------------------------------------------------------
+08/06/2024 10:56:31 PM - Process(6624.1) User(admmdw) Program(runmqchl)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:56:31.750Z)
+                    CommentInsert1(SMS.IVR)
+                    CommentInsert2(6624)
+                    CommentInsert3(localhost(1514))
+                   
+AMQ9999E: Channel 'SMS.IVR' to host 'localhost(1514)' ended abnormally.
+
+EXPLANATION:
+The channel program running under process ID 6624 for channel 'SMS.IVR' ended
+abnormally. The host name is 'localhost(1514)'; in some cases the host name
+cannot be determined and so is shown as '????'.
+ACTION:
+Look at previous error messages for the channel program in the error logs to
+determine the cause of the failure. Note that this message can be excluded
+completely or suppressed by tuning the "ExcludeMessage" or "SuppressMessage"
+attributes under the "QMErrorLog" stanza in qm.ini. Further information can be
+found in the System Administration Guide.
+----- amqrccca.c : 1121 -------------------------------------------------------
+08/06/2024 10:57:31 PM - Process(6681.1) User(admmdw) Program(runmqchl)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:57:31.732Z)
+                    CommentInsert1(SMS.IVR)
+                   
+AMQ9002I: Channel 'SMS.IVR' is starting.
+
+EXPLANATION:
+Channel 'SMS.IVR' is starting.
+ACTION:
+None.
+----- amqrccca.c : 469 --------------------------------------------------------
+08/06/2024 10:57:31 PM - Process(6681.1) User(admmdw) Program(runmqchl)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:57:31.751Z)
+                    ArithInsert1(111) ArithInsert2(111)
+                    CommentInsert1(localhost (127.0.0.1) (1514))
+                    CommentInsert2(TCP/IP)
+                    CommentInsert3(SMS.IVR)
+                   
+AMQ9202E: Remote host not available, retry later.
+
+EXPLANATION:
+The attempt to allocate a conversation using TCP/IP to host 'localhost
+(127.0.0.1) (1514)' for channel SMS.IVR was not successful. However the error
+may be a transitory one and it may be possible to successfully allocate a
+TCP/IP conversation later. 
+
+In some cases the remote host cannot be determined and so is shown as '????'.
+ACTION:
+Try the connection again later. If the failure persists, record the error
+values and contact your systems administrator. The return code from TCP/IP is
+111 (X'6F'). The reason for the failure may be that this host cannot reach the
+destination host. It may also be possible that the listening program at host
+'localhost (127.0.0.1) (1514)' was not running.  If this is the case, perform
+the relevant operations to start the TCP/IP listening program, and try again.
+----- amqccita.c : 1201 -------------------------------------------------------
+08/06/2024 10:57:31 PM - Process(6681.1) User(admmdw) Program(runmqchl)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:57:31.751Z)
+                    CommentInsert1(SMS.IVR)
+                    CommentInsert2(6681)
+                    CommentInsert3(localhost(1514))
+                   
+AMQ9999E: Channel 'SMS.IVR' to host 'localhost(1514)' ended abnormally.
+
+EXPLANATION:
+The channel program running under process ID 6681 for channel 'SMS.IVR' ended
+abnormally. The host name is 'localhost(1514)'; in some cases the host name
+cannot be determined and so is shown as '????'.
+ACTION:
+Look at previous error messages for the channel program in the error logs to
+determine the cause of the failure. Note that this message can be excluded
+completely or suppressed by tuning the "ExcludeMessage" or "SuppressMessage"
+attributes under the "QMErrorLog" stanza in qm.ini. Further information can be
+found in the System Administration Guide.
+----- amqrccca.c : 1121 -------------------------------------------------------
+08/06/2024 10:58:31 PM - Process(6738.1) User(admmdw) Program(runmqchl)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:58:31.734Z)
+                    CommentInsert1(SMS.IVR)
+                   
+AMQ9002I: Channel 'SMS.IVR' is starting.
+
+EXPLANATION:
+Channel 'SMS.IVR' is starting.
+ACTION:
+None.
+----- amqrccca.c : 469 --------------------------------------------------------
+08/06/2024 10:58:31 PM - Process(6738.1) User(admmdw) Program(runmqchl)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:58:31.751Z)
+                    ArithInsert1(111) ArithInsert2(111)
+                    CommentInsert1(localhost (127.0.0.1) (1514))
+                    CommentInsert2(TCP/IP)
+                    CommentInsert3(SMS.IVR)
+                   
+AMQ9202E: Remote host not available, retry later.
+
+EXPLANATION:
+The attempt to allocate a conversation using TCP/IP to host 'localhost
+(127.0.0.1) (1514)' for channel SMS.IVR was not successful. However the error
+may be a transitory one and it may be possible to successfully allocate a
+TCP/IP conversation later. 
+
+In some cases the remote host cannot be determined and so is shown as '????'.
+ACTION:
+Try the connection again later. If the failure persists, record the error
+values and contact your systems administrator. The return code from TCP/IP is
+111 (X'6F'). The reason for the failure may be that this host cannot reach the
+destination host. It may also be possible that the listening program at host
+'localhost (127.0.0.1) (1514)' was not running.  If this is the case, perform
+the relevant operations to start the TCP/IP listening program, and try again.
+----- amqccita.c : 1201 -------------------------------------------------------
+08/06/2024 10:58:31 PM - Process(6738.1) User(admmdw) Program(runmqchl)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:58:31.751Z)
+                    CommentInsert1(SMS.IVR)
+                    CommentInsert2(6738)
+                    CommentInsert3(localhost(1514))
+                   
+AMQ9999E: Channel 'SMS.IVR' to host 'localhost(1514)' ended abnormally.
+
+EXPLANATION:
+The channel program running under process ID 6738 for channel 'SMS.IVR' ended
+abnormally. The host name is 'localhost(1514)'; in some cases the host name
+cannot be determined and so is shown as '????'.
+ACTION:
+Look at previous error messages for the channel program in the error logs to
+determine the cause of the failure. Note that this message can be excluded
+completely or suppressed by tuning the "ExcludeMessage" or "SuppressMessage"
+attributes under the "QMErrorLog" stanza in qm.ini. Further information can be
+found in the System Administration Guide.
+----- amqrccca.c : 1121 -------------------------------------------------------
+08/06/2024 10:59:31 PM - Process(6795.1) User(admmdw) Program(runmqchl)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:59:31.734Z)
+                    CommentInsert1(SMS.IVR)
+                   
+AMQ9002I: Channel 'SMS.IVR' is starting.
+
+EXPLANATION:
+Channel 'SMS.IVR' is starting.
+ACTION:
+None.
+----- amqrccca.c : 469 --------------------------------------------------------
+08/06/2024 10:59:31 PM - Process(6795.1) User(admmdw) Program(runmqchl)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:59:31.753Z)
+                    ArithInsert1(111) ArithInsert2(111)
+                    CommentInsert1(localhost (127.0.0.1) (1514))
+                    CommentInsert2(TCP/IP)
+                    CommentInsert3(SMS.IVR)
+                   
+AMQ9202E: Remote host not available, retry later.
+
+EXPLANATION:
+The attempt to allocate a conversation using TCP/IP to host 'localhost
+(127.0.0.1) (1514)' for channel SMS.IVR was not successful. However the error
+may be a transitory one and it may be possible to successfully allocate a
+TCP/IP conversation later. 
+
+In some cases the remote host cannot be determined and so is shown as '????'.
+ACTION:
+Try the connection again later. If the failure persists, record the error
+values and contact your systems administrator. The return code from TCP/IP is
+111 (X'6F'). The reason for the failure may be that this host cannot reach the
+destination host. It may also be possible that the listening program at host
+'localhost (127.0.0.1) (1514)' was not running.  If this is the case, perform
+the relevant operations to start the TCP/IP listening program, and try again.
+----- amqccita.c : 1201 -------------------------------------------------------
+08/06/2024 10:59:31 PM - Process(6795.1) User(admmdw) Program(runmqchl)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T15:59:31.753Z)
+                    CommentInsert1(SMS.IVR)
+                    CommentInsert2(6795)
+                    CommentInsert3(localhost(1514))
+                   
+AMQ9999E: Channel 'SMS.IVR' to host 'localhost(1514)' ended abnormally.
+
+EXPLANATION:
+The channel program running under process ID 6795 for channel 'SMS.IVR' ended
+abnormally. The host name is 'localhost(1514)'; in some cases the host name
+cannot be determined and so is shown as '????'.
+ACTION:
+Look at previous error messages for the channel program in the error logs to
+determine the cause of the failure. Note that this message can be excluded
+completely or suppressed by tuning the "ExcludeMessage" or "SuppressMessage"
+attributes under the "QMErrorLog" stanza in qm.ini. Further information can be
+found in the System Administration Guide.
+----- amqrccca.c : 1121 -------------------------------------------------------
+08/06/2024 11:19:31 PM - Process(6852.1) User(admmdw) Program(runmqchl)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T16:19:31.737Z)
+                    CommentInsert1(SMS.IVR)
+                   
+AMQ9002I: Channel 'SMS.IVR' is starting.
+
+EXPLANATION:
+Channel 'SMS.IVR' is starting.
+ACTION:
+None.
+----- amqrccca.c : 469 --------------------------------------------------------
+08/06/2024 11:19:31 PM - Process(6852.1) User(admmdw) Program(runmqchl)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T16:19:31.745Z)
+                    ArithInsert1(111) ArithInsert2(111)
+                    CommentInsert1(localhost (127.0.0.1) (1514))
+                    CommentInsert2(TCP/IP)
+                    CommentInsert3(SMS.IVR)
+                   
+AMQ9202E: Remote host not available, retry later.
+
+EXPLANATION:
+The attempt to allocate a conversation using TCP/IP to host 'localhost
+(127.0.0.1) (1514)' for channel SMS.IVR was not successful. However the error
+may be a transitory one and it may be possible to successfully allocate a
+TCP/IP conversation later. 
+
+In some cases the remote host cannot be determined and so is shown as '????'.
+ACTION:
+Try the connection again later. If the failure persists, record the error
+values and contact your systems administrator. The return code from TCP/IP is
+111 (X'6F'). The reason for the failure may be that this host cannot reach the
+destination host. It may also be possible that the listening program at host
+'localhost (127.0.0.1) (1514)' was not running.  If this is the case, perform
+the relevant operations to start the TCP/IP listening program, and try again.
+----- amqccita.c : 1201 -------------------------------------------------------
+08/06/2024 11:19:31 PM - Process(6852.1) User(admmdw) Program(runmqchl)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T16:19:31.745Z)
+                    CommentInsert1(SMS.IVR)
+                    CommentInsert2(6852)
+                    CommentInsert3(localhost(1514))
+                   
+AMQ9999E: Channel 'SMS.IVR' to host 'localhost(1514)' ended abnormally.
+
+EXPLANATION:
+The channel program running under process ID 6852 for channel 'SMS.IVR' ended
+abnormally. The host name is 'localhost(1514)'; in some cases the host name
+cannot be determined and so is shown as '????'.
+ACTION:
+Look at previous error messages for the channel program in the error logs to
+determine the cause of the failure. Note that this message can be excluded
+completely or suppressed by tuning the "ExcludeMessage" or "SuppressMessage"
+attributes under the "QMErrorLog" stanza in qm.ini. Further information can be
+found in the System Administration Guide.
+----- amqrccca.c : 1121 -------------------------------------------------------
+08/06/2024 11:39:31 PM - Process(6909.1) User(admmdw) Program(runmqchl)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T16:39:31.739Z)
+                    CommentInsert1(SMS.IVR)
+                   
+AMQ9002I: Channel 'SMS.IVR' is starting.
+
+EXPLANATION:
+Channel 'SMS.IVR' is starting.
+ACTION:
+None.
+----- amqrccca.c : 469 --------------------------------------------------------
+08/06/2024 11:39:31 PM - Process(6909.1) User(admmdw) Program(runmqchl)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T16:39:31.747Z)
+                    ArithInsert1(111) ArithInsert2(111)
+                    CommentInsert1(localhost (127.0.0.1) (1514))
+                    CommentInsert2(TCP/IP)
+                    CommentInsert3(SMS.IVR)
+                   
+AMQ9202E: Remote host not available, retry later.
+
+EXPLANATION:
+The attempt to allocate a conversation using TCP/IP to host 'localhost
+(127.0.0.1) (1514)' for channel SMS.IVR was not successful. However the error
+may be a transitory one and it may be possible to successfully allocate a
+TCP/IP conversation later. 
+
+In some cases the remote host cannot be determined and so is shown as '????'.
+ACTION:
+Try the connection again later. If the failure persists, record the error
+values and contact your systems administrator. The return code from TCP/IP is
+111 (X'6F'). The reason for the failure may be that this host cannot reach the
+destination host. It may also be possible that the listening program at host
+'localhost (127.0.0.1) (1514)' was not running.  If this is the case, perform
+the relevant operations to start the TCP/IP listening program, and try again.
+----- amqccita.c : 1201 -------------------------------------------------------
+08/06/2024 11:39:31 PM - Process(6909.1) User(admmdw) Program(runmqchl)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T16:39:31.748Z)
+                    CommentInsert1(SMS.IVR)
+                    CommentInsert2(6909)
+                    CommentInsert3(localhost(1514))
+                   
+AMQ9999E: Channel 'SMS.IVR' to host 'localhost(1514)' ended abnormally.
+
+EXPLANATION:
+The channel program running under process ID 6909 for channel 'SMS.IVR' ended
+abnormally. The host name is 'localhost(1514)'; in some cases the host name
+cannot be determined and so is shown as '????'.
+ACTION:
+Look at previous error messages for the channel program in the error logs to
+determine the cause of the failure. Note that this message can be excluded
+completely or suppressed by tuning the "ExcludeMessage" or "SuppressMessage"
+attributes under the "QMErrorLog" stanza in qm.ini. Further information can be
+found in the System Administration Guide.
+----- amqrccca.c : 1121 -------------------------------------------------------
+08/06/2024 11:59:31 PM - Process(6966.1) User(admmdw) Program(runmqchl)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T16:59:31.742Z)
+                    CommentInsert1(SMS.IVR)
+                   
+AMQ9002I: Channel 'SMS.IVR' is starting.
+
+EXPLANATION:
+Channel 'SMS.IVR' is starting.
+ACTION:
+None.
+----- amqrccca.c : 469 --------------------------------------------------------
+08/06/2024 11:59:31 PM - Process(6966.1) User(admmdw) Program(runmqchl)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T16:59:31.760Z)
+                    ArithInsert1(111) ArithInsert2(111)
+                    CommentInsert1(localhost (127.0.0.1) (1514))
+                    CommentInsert2(TCP/IP)
+                    CommentInsert3(SMS.IVR)
+                   
+AMQ9202E: Remote host not available, retry later.
+
+EXPLANATION:
+The attempt to allocate a conversation using TCP/IP to host 'localhost
+(127.0.0.1) (1514)' for channel SMS.IVR was not successful. However the error
+may be a transitory one and it may be possible to successfully allocate a
+TCP/IP conversation later. 
+
+In some cases the remote host cannot be determined and so is shown as '????'.
+ACTION:
+Try the connection again later. If the failure persists, record the error
+values and contact your systems administrator. The return code from TCP/IP is
+111 (X'6F'). The reason for the failure may be that this host cannot reach the
+destination host. It may also be possible that the listening program at host
+'localhost (127.0.0.1) (1514)' was not running.  If this is the case, perform
+the relevant operations to start the TCP/IP listening program, and try again.
+----- amqccita.c : 1201 -------------------------------------------------------
+08/06/2024 11:59:31 PM - Process(6966.1) User(admmdw) Program(runmqchl)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T16:59:31.760Z)
+                    CommentInsert1(SMS.IVR)
+                    CommentInsert2(6966)
+                    CommentInsert3(localhost(1514))
+                   
+AMQ9999E: Channel 'SMS.IVR' to host 'localhost(1514)' ended abnormally.
+
+EXPLANATION:
+The channel program running under process ID 6966 for channel 'SMS.IVR' ended
+abnormally. The host name is 'localhost(1514)'; in some cases the host name
+cannot be determined and so is shown as '????'.
+ACTION:
+Look at previous error messages for the channel program in the error logs to
+determine the cause of the failure. Note that this message can be excluded
+completely or suppressed by tuning the "ExcludeMessage" or "SuppressMessage"
+attributes under the "QMErrorLog" stanza in qm.ini. Further information can be
+found in the System Administration Guide.
+----- amqrccca.c : 1121 -------------------------------------------------------
+08/07/2024 12:19:31 AM - Process(7023.1) User(admmdw) Program(runmqchl)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T17:19:31.742Z)
+                    CommentInsert1(SMS.IVR)
+                   
+AMQ9002I: Channel 'SMS.IVR' is starting.
+
+EXPLANATION:
+Channel 'SMS.IVR' is starting.
+ACTION:
+None.
+----- amqrccca.c : 469 --------------------------------------------------------
+08/07/2024 12:19:31 AM - Process(7023.1) User(admmdw) Program(runmqchl)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T17:19:31.760Z)
+                    ArithInsert1(111) ArithInsert2(111)
+                    CommentInsert1(localhost (127.0.0.1) (1514))
+                    CommentInsert2(TCP/IP)
+                    CommentInsert3(SMS.IVR)
+                   
+AMQ9202E: Remote host not available, retry later.
+
+EXPLANATION:
+The attempt to allocate a conversation using TCP/IP to host 'localhost
+(127.0.0.1) (1514)' for channel SMS.IVR was not successful. However the error
+may be a transitory one and it may be possible to successfully allocate a
+TCP/IP conversation later. 
+
+In some cases the remote host cannot be determined and so is shown as '????'.
+ACTION:
+Try the connection again later. If the failure persists, record the error
+values and contact your systems administrator. The return code from TCP/IP is
+111 (X'6F'). The reason for the failure may be that this host cannot reach the
+destination host. It may also be possible that the listening program at host
+'localhost (127.0.0.1) (1514)' was not running.  If this is the case, perform
+the relevant operations to start the TCP/IP listening program, and try again.
+----- amqccita.c : 1201 -------------------------------------------------------
+08/07/2024 12:19:31 AM - Process(7023.1) User(admmdw) Program(runmqchl)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T17:19:31.761Z)
+                    CommentInsert1(SMS.IVR)
+                    CommentInsert2(7023)
+                    CommentInsert3(localhost(1514))
+                   
+AMQ9999E: Channel 'SMS.IVR' to host 'localhost(1514)' ended abnormally.
+
+EXPLANATION:
+The channel program running under process ID 7023 for channel 'SMS.IVR' ended
+abnormally. The host name is 'localhost(1514)'; in some cases the host name
+cannot be determined and so is shown as '????'.
+ACTION:
+Look at previous error messages for the channel program in the error logs to
+determine the cause of the failure. Note that this message can be excluded
+completely or suppressed by tuning the "ExcludeMessage" or "SuppressMessage"
+attributes under the "QMErrorLog" stanza in qm.ini. Further information can be
+found in the System Administration Guide.
+----- amqrccca.c : 1121 -------------------------------------------------------
+08/07/2024 12:39:31 AM - Process(7080.1) User(admmdw) Program(runmqchl)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T17:39:31.746Z)
+                    CommentInsert1(SMS.IVR)
+                   
+AMQ9002I: Channel 'SMS.IVR' is starting.
+
+EXPLANATION:
+Channel 'SMS.IVR' is starting.
+ACTION:
+None.
+----- amqrccca.c : 469 --------------------------------------------------------
+08/07/2024 12:39:31 AM - Process(7080.1) User(admmdw) Program(runmqchl)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T17:39:31.764Z)
+                    ArithInsert1(111) ArithInsert2(111)
+                    CommentInsert1(localhost (127.0.0.1) (1514))
+                    CommentInsert2(TCP/IP)
+                    CommentInsert3(SMS.IVR)
+                   
+AMQ9202E: Remote host not available, retry later.
+
+EXPLANATION:
+The attempt to allocate a conversation using TCP/IP to host 'localhost
+(127.0.0.1) (1514)' for channel SMS.IVR was not successful. However the error
+may be a transitory one and it may be possible to successfully allocate a
+TCP/IP conversation later. 
+
+In some cases the remote host cannot be determined and so is shown as '????'.
+ACTION:
+Try the connection again later. If the failure persists, record the error
+values and contact your systems administrator. The return code from TCP/IP is
+111 (X'6F'). The reason for the failure may be that this host cannot reach the
+destination host. It may also be possible that the listening program at host
+'localhost (127.0.0.1) (1514)' was not running.  If this is the case, perform
+the relevant operations to start the TCP/IP listening program, and try again.
+----- amqccita.c : 1201 -------------------------------------------------------
+08/07/2024 12:39:31 AM - Process(7080.1) User(admmdw) Program(runmqchl)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(SMSBROKER.QM)
+                    Time(2024-08-06T17:39:31.764Z)
+                    CommentInsert1(SMS.IVR)
+                    CommentInsert2(7080)
+                    CommentInsert3(localhost(1514))
+                   
+AMQ9999E: Channel 'SMS.IVR' to host 'localhost(1514)' ended abnormally.
+
+EXPLANATION:
+The channel program running under process ID 7080 for channel 'SMS.IVR' ended
+abnormally. The host name is 'localhost(1514)'; in some cases the host name
+cannot be determined and so is shown as '????'.
+ACTION:
+Look at previous error messages for the channel program in the error logs to
+determine the cause of the failure. Note that this message can be excluded
+completely or suppressed by tuning the "ExcludeMessage" or "SuppressMessage"
+attributes under the "QMErrorLog" stanza in qm.ini. Further information can be
+found in the System Administration Guide.
+----- amqrccca.c : 1121 -------------------------------------------------------

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" 
+xmlns:xmi="http://www.omg.org/XMI" xmlns:HanomanLogger.msgnode="HanomanLogger.msgnode" xmlns:ComIbmCompute.msgnode="ComIbmCompute.msgnode" xmlns:ComIbmMQHeader.msgnode="ComIbmMQHeader.msgnode" xmlns:ComIbmMQOutput.msgnode="ComIbmMQOutput.msgnode" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:eflow="http://www.ibm.com/wbi/2005/eflow" 
+xmlns:utility="http://www.ibm.com/wbi/2005/eflow_utility" nsURI="LOG_DB_REST_CLIENT.subflow" 
+nsPrefix="LOG_DB_REST_CLIENT.subflow">
+<eClassifiers xmi:type="eflow:FCMComposite" name="FCMComposite_1" useDefaults="true" udpSupport="true">
+<eSuperTypes href="http://www.ibm.com/wbi/2005/eflow#//FCMBlock"/>
+<translation xmi:type="utility:TranslatableString" key="LOG_DB_REST_CLIENT" bundleName="LOG_DB_REST_CLIENT" pluginId="flowAPIgenerated"/>
+<colorGraphic16 xmi:type="utility:GIFFileGraphic" resourceName="platform:/plugin/flowAPIgenerated/icons/full/obj16/LOG_DB_REST_CLIENT.gif"/>
+<colorGraphic32 xmi:type="utility:GIFFileGraphic" resourceName="platform:/plugin/flowAPIgenerated/icons/full/obj30/LOG_DB_REST_CLIENT.gif"/>
+<composition>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_1" location="2517,475" level="Debug" type="All">
+<translation xmi:type="utility:ConstantString" string="RESTORE_TO_HEADER_LOG_OUT"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_2" location="910,202" level="Debug" type="All">
+<translation xmi:type="utility:ConstantString" string="BACKUP_TO_BODY_LOG_OUT"/>
+</nodes>
+<nodes xmi:type="ComIbmCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_3" location="2287,384" computeExpression="esql://routine/#LOG_DB_REST_CLIENT_RESTORE_TO_HEADER.Main">
+<translation xmi:type="utility:ConstantString" string="RESTORE_TO_HEADER"/>
+</nodes>
+<nodes xmi:type="eflow:FCMSink" xmi:id="OutTerminal.OUT" location="2829,475">
+<translation xmi:type="utility:TranslatableString" key="OutTerminal.OUT" bundleName="LOG_DB_REST_CLIENT" pluginId="flowAPIgenerated"/>
+</nodes>
+<nodes xmi:type="ComIbmCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_4" location="707,111" computeExpression="esql://routine/#LOG_DB_REST_CLIENT_BACKUP_TO_BODY.Main">
+<translation xmi:type="utility:ConstantString" string="BACKUP_TO_BODY"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_5" location="1405,293" level="Debug" type="All">
+<translation xmi:type="utility:ConstantString" string="LOG_DB_JSON_OUT_LOG_OUT"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_6" location="1390,202" level="Error" type="All">
+<translation xmi:type="utility:ConstantString" string="LOG_DB_JSON_OUT_LOG_FAILURE"/>
+</nodes>
+<nodes xmi:type="ComIbmMQHeader.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_7" location="93,20" mqmdAAAOptions="Modify header" mqmdCodedCharSetId="Inherit" mqmdFormat="Inherit" mqmdMsgType="Inherit" mqmdExpiry="MQEI_UNLIMITED" mqmdFeedback="Inherit" mqmdMsgId="$LocalEnvironment/MQMD/MsgId" mqmdCorrelId="$LocalEnvironment/MQMD/CorrelId" mqmdReplyToQ="Inherit" mqmdReplyToQMgr="Inherit">
+<translation xmi:type="utility:ConstantString" string="ADD_MQHEADER_BEFORE"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_8" location="1951,384" level="Debug" type="Root">
+<translation xmi:type="utility:ConstantString" string="ADD_MQHEADER_AFTER_LOG_OUT"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_9" location="359,111" level="Debug" type="Root">
+<translation xmi:type="utility:ConstantString" string="ADD_MQHEADER_BEFORE_LOG_OUT"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_10" location="344,20" level="Error" type="All">
+<translation xmi:type="utility:ConstantString" string="ADD_MQHEADER_BEFORE_LOG_FAILURE"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_11" location="895,111" level="Error" type="All">
+<translation xmi:type="utility:ConstantString" string="BACKUP_TO_BODY_LOG_FAILURE"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_12" location="1936,293" level="Error" type="All">
+<translation xmi:type="utility:ConstantString" string="ADD_MQHEADER_AFTER_LOG_FAILURE"/>
+</nodes>
+<nodes xmi:type="ComIbmMQOutput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_13" location="1195,202" queueName="LOG_DB_JSON">
+<translation xmi:type="utility:ConstantString" string="LOG_DB_JSON_OUT"/>
+</nodes>
+<nodes xmi:type="ComIbmMQHeader.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_14" location="1697,293" mqmdAAAOptions="Modify header" mqmdCodedCharSetId="Inherit" mqmdFormat="Inherit" mqmdMsgType="Inherit" mqmdExpiry="36000" mqmdFeedback="Inherit" mqmdMsgId="Inherit" mqmdCorrelId="Inherit" mqmdReplyToQ="Inherit" mqmdReplyToQMgr="Inherit">
+<translation xmi:type="utility:ConstantString" string="ADD_MQHEADER_AFTER"/>
+</nodes>
+<nodes xmi:type="eflow:FCMSource" xmi:id="InTerminal.IN" location="10,20">
+<translation xmi:type="utility:TranslatableString" key="InTerminal.IN" bundleName="LOG_DB_REST_CLIENT" pluginId="flowAPIgenerated"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_15" location="2502,384" level="Error" type="All">
+<translation xmi:type="utility:ConstantString" string="RESTORE_TO_HEADER_LOG_FAILURE"/>
+</nodes>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_1" targetNode="FCMComposite_1_3" sourceNode="FCMComposite_1_8" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_2" targetNode="FCMComposite_1_14" sourceNode="FCMComposite_1_5" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_3" targetNode="FCMComposite_1_15" sourceNode="FCMComposite_1_3" sourceTerminalName="OutTerminal.failure" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_4" targetNode="FCMComposite_1_4" sourceNode="FCMComposite_1_9" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_5" targetNode="FCMComposite_1_2" sourceNode="FCMComposite_1_4" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_6" targetNode="FCMComposite_1_1" sourceNode="FCMComposite_1_3" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_7" targetNode="FCMComposite_1_10" sourceNode="FCMComposite_1_7" sourceTerminalName="OutTerminal.failure" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_8" targetNode="FCMComposite_1_13" sourceNode="FCMComposite_1_2" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_9" targetNode="FCMComposite_1_5" sourceNode="FCMComposite_1_13" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_10" targetNode="FCMComposite_1_8" sourceNode="FCMComposite_1_14" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_11" targetNode="OutTerminal.OUT" sourceNode="FCMComposite_1_1" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_12" targetNode="FCMComposite_1_7" sourceNode="InTerminal.IN" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_13" targetNode="FCMComposite_1_6" sourceNode="FCMComposite_1_13" sourceTerminalName="OutTerminal.failure" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_14" targetNode="FCMComposite_1_11" sourceNode="FCMComposite_1_4" sourceTerminalName="OutTerminal.failure" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_15" targetNode="FCMComposite_1_9" sourceNode="FCMComposite_1_7" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_16" targetNode="FCMComposite_1_12" sourceNode="FCMComposite_1_14" sourceTerminalName="OutTerminal.failure" targetTerminalName="InTerminal.in"/>
+</composition>
+<propertyOrganizer>
+</propertyOrganizer>
+<stickyBoard/>
+</eClassifiers>
+</ecore:EPackage>

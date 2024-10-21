@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy:Deploy xmlns:deploy="http://www.ibm.com/xmlns/prod/wmb/deploy/6.0.0" overrideConfigurableProperties="true" includeESQL="false">
+  <deployables>
+    <deployable deployed="true" barResourceTimeStamp="1635342126000" workspaceResource="/WS_CLIENT_ADAPTER_APP/SOAP_PROCESS_SUBFLOW.subflow">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file WS_CLIENT_ADAPTER_APP\SOAP_PROCESS_SUBFLOW.subflow.&#xA;Successfully added file WS_CLIENT_ADAPTER_APP\SOAP_PROCESS_SUBFLOW.subflow to BAR file.&#xA;" severity="0"/>
+      <barEntry name="SOAP_PROCESS_SUBFLOW.subflow"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1641357890750" workspaceResource="/WS_CLIENT_ADAPTER_APP/SOAP_REQUEST.subflow">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file WS_CLIENT_ADAPTER_APP\SOAP_REQUEST.subflow.&#xA;Successfully added file WS_CLIENT_ADAPTER_APP\SOAP_REQUEST.subflow to BAR file.&#xA;" severity="0"/>
+      <barEntry name="SOAP_REQUEST.subflow"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1635342126000" workspaceResource="/WS_CLIENT_ADAPTER_APP/STORE_PAY_WS_BILLER_REQ.esql">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file WS_CLIENT_ADAPTER_APP\STORE_PAY_WS_BILLER_REQ.esql.&#xA;Successfully added file WS_CLIENT_ADAPTER_APP\STORE_PAY_WS_BILLER_REQ.esql to BAR file.&#xA;" severity="0"/>
+      <barEntry name="STORE_PAY_WS_BILLER_REQ.esql"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1635342126000" workspaceResource="/WS_CLIENT_ADAPTER_APP/STORE_PAY_WS_BILLER_REQ.subflow">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file WS_CLIENT_ADAPTER_APP\STORE_PAY_WS_BILLER_REQ.subflow.&#xA;Successfully added file WS_CLIENT_ADAPTER_APP\STORE_PAY_WS_BILLER_REQ.subflow to BAR file.&#xA;" severity="0"/>
+      <barEntry name="STORE_PAY_WS_BILLER_REQ.subflow"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1635342126000" workspaceResource="/WS_CLIENT_ADAPTER_APP/WS_CLIENT_ADAPTER_FLOW.esql">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file WS_CLIENT_ADAPTER_APP\WS_CLIENT_ADAPTER_FLOW.esql.&#xA;Successfully added file WS_CLIENT_ADAPTER_APP\WS_CLIENT_ADAPTER_FLOW.esql to BAR file.&#xA;" severity="0"/>
+      <barEntry name="WS_CLIENT_ADAPTER_FLOW.esql"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1642353235865" workspaceResource="/WS_CLIENT_ADAPTER_APP/WS_CLIENT_ADAPTER_FLOW.msgflow">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file WS_CLIENT_ADAPTER_APP\WS_CLIENT_ADAPTER_FLOW.msgflow.&#xA;Successfully added file WS_CLIENT_ADAPTER_APP\WS_CLIENT_ADAPTER_FLOW.msgflow to BAR file.&#xA;" severity="0"/>
+      <barEntry name="WS_CLIENT_ADAPTER_FLOW.msgflow"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1635342147836" workspaceResource="/WS_CLIENT_ADAPTER_APP/application.descriptor">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file WS_CLIENT_ADAPTER_APP\application.descriptor.&#xA;Successfully added file WS_CLIENT_ADAPTER_APP\application.descriptor to BAR file.&#xA;Elapsed time: 0 second(s).&#xA;&#xA;Successfully added file WS_CLIENT_ADAPTER_APP\application.descriptor to BAR file.&#xA;" severity="0"/>
+      <barEntry name="application.descriptor"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1635342126000" workspaceResource="/WS_CLIENT_ADAPTER_APP/subflow/SOAP_PROCESS_SUBFLOW.esql">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file WS_CLIENT_ADAPTER_APP\subflow\SOAP_PROCESS_SUBFLOW.esql.&#xA;Successfully added file WS_CLIENT_ADAPTER_APP\subflow\SOAP_PROCESS_SUBFLOW.esql to BAR file.&#xA;" severity="0"/>
+      <barEntry name="subflow\SOAP_PROCESS_SUBFLOW.esql"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1635342126000" workspaceResource="/WS_CLIENT_ADAPTER_APP/subflow/SOAP_REQUEST.esql">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file WS_CLIENT_ADAPTER_APP\subflow\SOAP_REQUEST.esql.&#xA;Successfully added file WS_CLIENT_ADAPTER_APP\subflow\SOAP_REQUEST.esql to BAR file.&#xA;" severity="0"/>
+      <barEntry name="subflow\SOAP_REQUEST.esql"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1642305280000" workspaceResource="/SUBFLOW_LOGDB_LIB/.project">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file SUBFLOW_LOGDB_LIB.&#xA;Library file SUBFLOW_LOGDB_LIB.libzip successfully added to the BAR.&#xA;Library compiled contents:&#xA;    &#xA;    Processing file SUBFLOW_LOGDB_LIB\LOG_DB_SOAP_SUBFLOW.esql.&#xA;    Successfully added file SUBFLOW_LOGDB_LIB\LOG_DB_SOAP_SUBFLOW.esql to BAR file.&#xA;    &#xA;    &#xA;    Processing file SUBFLOW_LOGDB_LIB\LOG_DB_SOAP.subflow.&#xA;    Successfully added file SUBFLOW_LOGDB_LIB\LOG_DB_SOAP.subflow to BAR file.&#xA;    &#xA;    &#xA;    Processing file SUBFLOW_LOGDB_LIB\LOG_DB_REST_CLIENT_SUBFLOW.esql.&#xA;    Successfully added file SUBFLOW_LOGDB_LIB\LOG_DB_REST_CLIENT_SUBFLOW.esql to BAR file.&#xA;    &#xA;    &#xA;    Processing file SUBFLOW_LOGDB_LIB\LOG_DB_SOAP_CLIENT.subflow.&#xA;    Successfully added file SUBFLOW_LOGDB_LIB\LOG_DB_SOAP_CLIENT.subflow to BAR file.&#xA;    &#xA;    &#xA;    Processing file SUBFLOW_LOGDB_LIB\library.descriptor.&#xA;    Successfully added file SUBFLOW_LOGDB_LIB\library.descriptor to BAR file.&#xA;    Elapsed time: 0 second(s).&#xA;    &#xA;    Successfully added file SUBFLOW_LOGDB_LIB\library.descriptor to BAR file.&#xA;    &#xA;    &#xA;    Processing file SUBFLOW_LOGDB_LIB\LOG_DB_REST_CLIENT.subflow.&#xA;    Successfully added file SUBFLOW_LOGDB_LIB\LOG_DB_REST_CLIENT.subflow to BAR file.&#xA;    &#xA;    &#xA;    Processing file SUBFLOW_LOGDB_LIB\LOG_DB_SUBFLOW.subflow.&#xA;    Successfully added file SUBFLOW_LOGDB_LIB\LOG_DB_SUBFLOW.subflow to BAR file.&#xA;    &#xA;    &#xA;    Processing file SUBFLOW_LOGDB_LIB\LOG_DB_ERROR_SUBFLOW.subflow.&#xA;    Successfully added file SUBFLOW_LOGDB_LIB\LOG_DB_ERROR_SUBFLOW.subflow to BAR file.&#xA;    &#xA;    &#xA;    Processing file SUBFLOW_LOGDB_LIB\LOG_DB_SOAP_CLIENT_SUBFLOW.esql.&#xA;    Successfully added file SUBFLOW_LOGDB_LIB\LOG_DB_SOAP_CLIENT_SUBFLOW.esql to BAR file.&#xA;    &#xA;&#xA;Elapsed time: 0.23 second(s).&#xA;" severity="0"/>
+      <barEntry name="SUBFLOW_LOGDB_LIB.libzip"/>
+    </deployable>
+  </deployables>
+</deploy:Deploy>

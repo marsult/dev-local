@@ -1,0 +1,83 @@
+<db-config>
+	<url>jdbc:db2://btnmdwdata:50000/mwconfig</url>
+	<driver-class>com.ibm.db2.jcc.DB2Driver</driver-class>
+	<username>db2inst1</username>
+	<password>wajFMo2HsNWsRQcLal8Y47jzNMHI+oAu8ywJwIfL9cA=</password>
+	<schema>mwconfig</schema>
+	<c3p0 id="jdbc:db2:">
+		<param id="minPoolSize">5</param>
+		<param id="maxPoolSize">50</param>
+		<param id="timeout">60</param>
+		<param id="idleConnectionTestPeriod">300</param>
+		<param id="maxIdleTime">300</param>
+		<param id="maxIdleTimeExcessConnections">180</param>
+		<param id="preferredTestQuery">select 1 from sysibm.sysdummy1</param>
+	</c3p0>
+	<config-pattern>
+		<!-- If path is not specify, will be included to config -->
+		<!-- If path is specify, only using <include> will be included to config -->
+		<path id="config/clients/client">
+			<include>\[core-bds-.*\]</include>
+			<include>\[core-bds\]</include>
+		</path>
+		<path id="config/codex">
+			<include>\[dsp.*\]</include>
+		</path>
+		<path id="config/db">
+			<include>\[CORE_KONVEN_DSP\]</include>
+			<include>\[mwlog\]</include>
+		</path>
+		<path id="config/dbquery" />
+		<path id="config/dtree-map">
+			<include>\[.*\]\{.*\[core\].*\}</include>
+		</path>
+		<path id="config/host" />
+		<path id="config/mapping">
+			<include>\[.*\]\{.*\[core\].*\}</include>
+		</path>
+		<path id="config/param-map">
+			<include>\[core-response-ok\|AXISSYSTEMSDNBHD\.0000004738\]</include>
+			<include>\[core-response-ok\|AXISSYSTEMSDNBHD\.0000009058\]</include>
+			<include>\[core-response-ok\|AXISSYSTEMSDNBHD\.0000009059\]</include>
+			<include>\[core-response-ok\|AXISSYSTEMSDNBHD\.0000009060\]</include>
+
+			<!-- VA-DEBIT -->
+			<include>\[core-response-ok\|AXISSYSTEMSDNBHD\.0000001000\]</include>
+			<include>\[core-response-ok\|AXISSYSTEMSDNBHD\.0000009074\]</include>
+			<include>\[core-response-ok\|AXISSYSTEMSDNBHD\.0000009075\]</include>
+			<include>\[core-response-ok\|AXISSYSTEMSDNBHD\.0000009076\]</include>
+			<include>\[core-response-ok\|AXISSYSTEMSDNBHD\.0000009077\]</include>
+			<include>\[core-response-ok\|AXISSYSTEMSDNBHD\.0000009078\]</include>
+			<include>\[core-response-ok\|AXISSYSTEMSDNBHD\.0000009079\]</include>
+
+			<!-- BI-Fast -->
+			<include>\[core-response-ok\|AXISSYSTEMSDNBHD\.0000004749\]</include>
+			<include>\[core-response-ok\|AXISSYSTEMSDNBHD\.0000004750\]</include>
+			<include>\[core-response-ok\|AXISSYSTEMSDNBHD\.0000004751\]</include>
+			<include>\[core-response-ok\|AXISSYSTEMSDNBHD\.0000004752\]</include>			
+			
+			<!-- WIC -->
+			<include>\[core-response-ok\|AXISSYSTEMSDNBHD\.0000004601\]</include>
+			<include>\[core-response-ok\|AXISSYSTEMSDNBHD\.0000004609\]</include>
+			<include>\[core-response-ok\|AXISSYSTEMSDNBHD\.0000004541\]</include>
+			
+			<!-- VB -->
+			<include>\[core-response-ok\|AXISSYSTEMSDNBHD\.0000002111\]</include>
+			<include>\[core-response-ok\|AXISSYSTEMSDNBHD\.0000002101\]</include>
+			<include>\[core-response-ok\|AXISSYSTEMSDNBHD\.0000002301\]</include>
+            <include>\[core-response-ok\|AXISSYSTEMSDNBHD\.0000004501\]</include>
+
+			<!-- BGOV -->
+			<include>\[core-response-ok\|AXISSYSTEMSDNBHD\.0000009072\]</include>			
+
+			<include>\[dsp-scenario-req-codex\|.*\]</include>
+			<include>\[dsp-scenario-resp-codex\|.*\]</include>
+			<include>\[error-f2\|.*\]</include>
+			<include>\[time-check\|.*\]</include>
+		</path>
+		<path id="config/parser" />
+		<path id="config/ports/port" />
+		<path id="config/routing" />
+		<path id="config/rpg-call" />
+	</config-pattern>
+</db-config>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" 
+xmlns:xmi="http://www.omg.org/XMI" xmlns:ComIbmMQOutput.msgnode="ComIbmMQOutput.msgnode" xmlns:HanomanLogger.msgnode="HanomanLogger.msgnode" xmlns:ComIbmCompute.msgnode="ComIbmCompute.msgnode" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:eflow="http://www.ibm.com/wbi/2005/eflow" 
+xmlns:utility="http://www.ibm.com/wbi/2005/eflow_utility" nsURI="LOG_DB_SOAP_REPLY_SUBFLOW.subflow" 
+nsPrefix="LOG_DB_SOAP_REPLY_SUBFLOW.subflow">
+<eClassifiers xmi:type="eflow:FCMComposite" name="FCMComposite_1">
+<eSuperTypes href="http://www.ibm.com/wbi/2005/eflow#//FCMBlock"/>
+<translation xmi:type="utility:TranslatableString" key="LOG_DB_SOAP_REPLY_SUBFLOW" bundleName="LOG_DB_SOAP_REPLY_SUBFLOW" pluginId="flowAPIgenerated"/>
+<colorGraphic16 xmi:type="utility:GIFFileGraphic" resourceName="platform:/plugin/flowAPIgenerated/icons/full/obj16/LOG_DB_SOAP_REPLY_SUBFLOW.gif"/>
+<colorGraphic32 xmi:type="utility:GIFFileGraphic" resourceName="platform:/plugin/flowAPIgenerated/icons/full/obj30/LOG_DB_SOAP_REPLY_SUBFLOW.gif"/>
+<composition>
+<nodes xmi:type="eflow:FCMSource" xmi:id="InTerminal.Input" location="10,20">
+<translation xmi:type="utility:TranslatableString" key="InTerminal.IN" bundleName="LOG_DB_SOAP_REPLY_SUBFLOW" pluginId="flowAPIgenerated"/>
+</nodes>
+<nodes xmi:type="eflow:FCMSink" xmi:id="OutTerminal.Output" location="701,182">
+<translation xmi:type="utility:TranslatableString" key="OutTerminal.OUT" bundleName="LOG_DB_SOAP_REPLY_SUBFLOW" pluginId="flowAPIgenerated"/>
+</nodes>
+<nodes xmi:type="ComIbmMQOutput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_4" location="93,20" queueName="LOG_DB_SOAP_REPLY">
+<translation xmi:type="utility:ConstantString" string="LOG_DB_SOAP_REPLY"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_5" location="249,20" level="Error" type="All">
+<translation xmi:type="utility:ConstantString" string="LOG_DB_SOAP_REPLY_LOG_FAILURE"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_6" location="259,101" level="Info" type="All">
+<translation xmi:type="utility:ConstantString" string="LOG_DB_SOAP_REPLY_LOG_OUT"/>
+</nodes>
+<nodes xmi:type="ComIbmCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_7" location="482,101" computeExpression="esql://routine/#CLEAR_LENV_FAULT.Main">
+<translation xmi:type="utility:ConstantString" string="CLEAR_LENV_FAULT"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_8" location="630,101" level="Error" type="All">
+<translation xmi:type="utility:ConstantString" string="CLEAR_LENV_FAULT_LOG_FAILURE"/>
+</nodes>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_1" targetNode="FCMComposite_1_5" sourceNode="FCMComposite_1_4" sourceTerminalName="OutTerminal.failure" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_2" targetNode="FCMComposite_1_6" sourceNode="FCMComposite_1_4" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_3" targetNode="FCMComposite_1_4" sourceNode="InTerminal.Input" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_4" targetNode="FCMComposite_1_7" sourceNode="FCMComposite_1_6" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_5" targetNode="FCMComposite_1_8" sourceNode="FCMComposite_1_7" sourceTerminalName="OutTerminal.failure" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_6" targetNode="OutTerminal.Output" sourceNode="FCMComposite_1_7" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+</composition>
+<propertyOrganizer>
+</propertyOrganizer>
+<stickyBoard/>
+</eClassifiers>
+</ecore:EPackage>

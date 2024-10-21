@@ -1,0 +1,3 @@
+listener 11884 localhost
+allow_anonymous true
+user root

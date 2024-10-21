@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" 
+xmlns:xmi="http://www.omg.org/XMI" xmlns:ComIbmRoute.msgnode="ComIbmRoute.msgnode" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:eflow="http://www.ibm.com/wbi/2005/eflow" 
+xmlns:utility="http://www.ibm.com/wbi/2005/eflow_utility" nsURI="ISO_NETWORK_MANAGEMENT_SUBFLOW.subflow" 
+nsPrefix="ISO_NETWORK_MANAGEMENT_SUBFLOW.subflow">
+<eClassifiers xmi:type="eflow:FCMComposite" name="FCMComposite_1">
+<eSuperTypes href="http://www.ibm.com/wbi/2005/eflow#//FCMBlock"/>
+<translation xmi:type="utility:TranslatableString" key="ISO_NETWORK_MANAGEMENT_SUBFLOW" bundleName="ISO_NETWORK_MANAGEMENT_SUBFLOW" pluginId="flowAPIgenerated"/>
+<colorGraphic16 xmi:type="utility:GIFFileGraphic" resourceName="platform:/plugin/flowAPIgenerated/icons/full/obj16/ISO_NETWORK_MANAGEMENT_SUBFLOW.gif"/>
+<colorGraphic32 xmi:type="utility:GIFFileGraphic" resourceName="platform:/plugin/flowAPIgenerated/icons/full/obj30/ISO_NETWORK_MANAGEMENT_SUBFLOW.gif"/>
+<composition>
+<nodes xmi:type="eflow:FCMSource" xmi:id="InTerminal.Input" location="10,20">
+<translation xmi:type="utility:TranslatableString" key="InTerminal.in" bundleName="ISO_NETWORK_MANAGEMENT_SUBFLOW" pluginId="flowAPIgenerated"/>
+</nodes>
+<nodes xmi:type="eflow:FCMSink" xmi:id="OutTerminal.Output" location="187,178">
+<translation xmi:type="utility:TranslatableString" key="OutTerminal.signon" bundleName="ISO_NETWORK_MANAGEMENT_SUBFLOW" pluginId="flowAPIgenerated"/>
+</nodes>
+<nodes xmi:type="eflow:FCMSink" xmi:id="OutTerminal.Output1" location="187,257">
+<translation xmi:type="utility:TranslatableString" key="OutTerminal.signoff" bundleName="ISO_NETWORK_MANAGEMENT_SUBFLOW" pluginId="flowAPIgenerated"/>
+</nodes>
+<nodes xmi:type="eflow:FCMSink" xmi:id="OutTerminal.Output2" location="187,336">
+<translation xmi:type="utility:TranslatableString" key="OutTerminal.cutoff" bundleName="ISO_NETWORK_MANAGEMENT_SUBFLOW" pluginId="flowAPIgenerated"/>
+</nodes>
+<nodes xmi:type="eflow:FCMSink" xmi:id="OutTerminal.Output3" location="187,415">
+<translation xmi:type="utility:TranslatableString" key="OutTerminal.echo" bundleName="ISO_NETWORK_MANAGEMENT_SUBFLOW" pluginId="flowAPIgenerated"/>
+</nodes>
+<nodes xmi:type="ComIbmRoute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_12" location="93,20">
+<outTerminals terminalNodeID="signon" dynamic="true" label="signon" />
+<outTerminals terminalNodeID="signoff" dynamic="true" label="signoff" />
+<outTerminals terminalNodeID="cutoff" dynamic="true" label="cutoff" />
+<outTerminals terminalNodeID="echo" dynamic="true" label="echo" />
+<translation xmi:type="utility:ConstantString" string="Route"/>
+<filterTable filterPattern="$Root/XMLNSC/data/body/networkManagementInformationCode=&apos;001&apos;" routingOutputTerminal="signon"/>
+<filterTable filterPattern="$Root/XMLNSC/data/body/networkManagementInformationCode=&apos;002&apos;" routingOutputTerminal="signoff"/>
+<filterTable filterPattern="$Root/XMLNSC/data/body/networkManagementInformationCode=&apos;201&apos;" routingOutputTerminal="cutoff"/>
+<filterTable filterPattern="$Root/XMLNSC/data/body/networkManagementInformationCode=&apos;301&apos;" routingOutputTerminal="echo"/>
+</nodes>
+<nodes xmi:type="eflow:FCMSink" xmi:id="OutTerminal.Output4" location="187,99">
+<translation xmi:type="utility:TranslatableString" key="OutTerminal.unknown" bundleName="ISO_NETWORK_MANAGEMENT_SUBFLOW" pluginId="flowAPIgenerated"/>
+</nodes>
+<nodes xmi:type="eflow:FCMSink" xmi:id="OutTerminal.Output5" location="187,20">
+<translation xmi:type="utility:TranslatableString" key="OutTerminal.failure" bundleName="ISO_NETWORK_MANAGEMENT_SUBFLOW" pluginId="flowAPIgenerated"/>
+</nodes>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_1" targetNode="FCMComposite_1_12" sourceNode="InTerminal.Input" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_2" targetNode="OutTerminal.Output5" sourceNode="FCMComposite_1_12" sourceTerminalName="OutTerminal.failure" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_3" targetNode="OutTerminal.Output4" sourceNode="FCMComposite_1_12" sourceTerminalName="OutTerminal.default" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_4" targetNode="OutTerminal.Output" sourceNode="FCMComposite_1_12" sourceTerminalName="signon" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_5" targetNode="OutTerminal.Output1" sourceNode="FCMComposite_1_12" sourceTerminalName="signoff" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_6" targetNode="OutTerminal.Output2" sourceNode="FCMComposite_1_12" sourceTerminalName="cutoff" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_7" targetNode="OutTerminal.Output3" sourceNode="FCMComposite_1_12" sourceTerminalName="echo" targetTerminalName="InTerminal.in"/>
+</composition>
+<propertyOrganizer>
+</propertyOrganizer>
+<stickyBoard/>
+</eClassifiers>
+</ecore:EPackage>

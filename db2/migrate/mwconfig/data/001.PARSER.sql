@@ -1,0 +1,15 @@
+INSERT INTO MWCONFIG.PARSER(ID, MODIFIED_BY, TIMESTAMP) VALUES ('abcs-request', CURRENT USER, CURRENT TIMESTAMP);
+INSERT INTO MWCONFIG.PARSER(ID, MODIFIED_BY, TIMESTAMP) VALUES ('abcs-response', CURRENT USER, CURRENT TIMESTAMP);
+INSERT INTO MWCONFIG.PARSER_CODEX(PARSER_ID, ID, CODEX_ID) VALUES ('abcs-request', '*', 'dsp-abcs-request');
+INSERT INTO MWCONFIG.PARSER_CODEX(PARSER_ID, ID, CODEX_ID) VALUES ('abcs-request', 'dsp-abcs-instcode', 'dsp-abcs-instcode');
+INSERT INTO MWCONFIG.PARSER_CODEX(PARSER_ID, ID, CODEX_ID) VALUES ('abcs-response', '*', 'dsp-abcs-response');
+INSERT INTO MWCONFIG.PARSER_CODEX(PARSER_ID, ID, CODEX_ID) VALUES ('abcs-response', 'dsp-abcs-subresponse', 'dsp-abcs-subresponse');
+
+
+INSERT INTO MWCONFIG.PARSER(ID, MODIFIED_BY, TIMESTAMP) VALUES ('payment-parser', CURRENT USER, CURRENT TIMESTAMP);
+INSERT INTO MWCONFIG.PARSER_CODEX(PARSER_ID, ID, CODEX_ID) VALUES ('payment-parser', 'dsp', 'dsp');
+INSERT INTO MWCONFIG.PARSER_CODEX(PARSER_ID, ID, CODEX_ID) VALUES ('payment-parser', 'dsp-abcs-request', 'dsp-abcs-request');
+INSERT INTO MWCONFIG.PARSER_CODEX(PARSER_ID, ID, CODEX_ID) VALUES ('payment-parser', 'iso-8583-itm', 'iso-8583-itm');
+INSERT INTO MWCONFIG.PARSER_CODEX(PARSER_ID, ID, CODEX_ID) VALUES ('payment-parser', 'iso-8583-itm-instid', 'iso-8583-itm-instid');
+INSERT INTO MWCONFIG.PARSER_CODEX(PARSER_ID, ID, CODEX_ID) VALUES ('payment-parser', 'iso-8583-kpos-instid', 'iso-8583-kpos-instid');
+INSERT INTO MWCONFIG.PARSER_CODEX(PARSER_ID, ID, CODEX_ID) VALUES ('payment-parser', 'iso-8583-sms-payment', 'iso-8583-sms-payment');

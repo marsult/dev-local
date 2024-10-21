@@ -1,0 +1,23 @@
+CREATE OR REPLACE PROCEDURE MWCONFIG.INSERT_CLIENT_TARGET (
+    IN CLIENT_ID VARCHAR(256),
+    IN ID VARCHAR(256),
+    IN HOST VARCHAR(256),
+    IN WEIGHT INTEGER,
+    IN SEQ INTEGER
+)
+BEGIN
+    DECLARE SQL_STMT VARCHAR(500);
+
+    SET SQL_STMT = 'MERGE INTO MWCONFIG.CLIENT_TARGET AS T ' ||
+                     'USING (VALUES (''' || CLIENT_ID || ''', ''' || ID || ''', ''' || HOST || ''', ' ||
+                     CASE WHEN WEIGHT IS NULL THEN 'NULL' ELSE WEIGHT END || ', ' || SEQ || ')) ' ||
+                     'AS S (CLIENT_ID, ID, HOST, WEIGHT, SEQ) ' ||
+                     'ON (T.CLIENT_ID = S.CLIENT_ID AND T.ID = S.ID AND T.SEQ = S.SEQ) ' ||
+                     'WHEN NOT MATCHED THEN ' ||
+                     'INSERT (CLIENT_ID, ID, HOST, WEIGHT, SEQ) ' ||
+                     'VALUES (S.CLIENT_ID, S.ID, S.HOST, S.WEIGHT, S.SEQ)';
+
+    PREPARE STMT FROM SQL_STMT;
+    EXECUTE STMT;
+END
+@

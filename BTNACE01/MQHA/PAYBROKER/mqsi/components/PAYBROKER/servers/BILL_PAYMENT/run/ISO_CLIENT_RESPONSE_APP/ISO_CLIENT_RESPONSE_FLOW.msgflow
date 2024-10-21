@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" 
+xmlns:xmi="http://www.omg.org/XMI" xmlns:ComIbmMQOutput.msgnode="ComIbmMQOutput.msgnode" xmlns:HanomanLogger.msgnode="HanomanLogger.msgnode" xmlns:ComIbmRouteToLabel.msgnode="ComIbmRouteToLabel.msgnode" xmlns:LOG_DB_ERROR_SUBFLOW.subflow="LOG_DB_ERROR_SUBFLOW.subflow" xmlns:HanomanMapping.msgnode="HanomanMapping.msgnode" xmlns:ComIbmMQReply.msgnode="ComIbmMQReply.msgnode" xmlns:ComIbmCompute.msgnode="ComIbmCompute.msgnode" xmlns:ComIbmLabel.msgnode="ComIbmLabel.msgnode" xmlns:ComIbmMQHeader.msgnode="ComIbmMQHeader.msgnode" xmlns:LOG_DB_SUBFLOW.subflow="LOG_DB_SUBFLOW.subflow" xmlns:ComIbmFilter.msgnode="ComIbmFilter.msgnode" xmlns:ComIbmFlowOrder.msgnode="ComIbmFlowOrder.msgnode" xmlns:ComIbmMQInput.msgnode="ComIbmMQInput.msgnode" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:eflow="http://www.ibm.com/wbi/2005/eflow" 
+xmlns:utility="http://www.ibm.com/wbi/2005/eflow_utility" nsURI="ISO_CLIENT_RESPONSE_FLOW.msgflow" 
+nsPrefix="ISO_CLIENT_RESPONSE_FLOW.msgflow">
+<eClassifiers xmi:type="eflow:FCMComposite" name="FCMComposite_1">
+<eSuperTypes href="http://www.ibm.com/wbi/2005/eflow#//FCMBlock"/>
+<translation xmi:type="utility:TranslatableString" key="ISO_CLIENT_RESPONSE_FLOW" bundleName="ISO_CLIENT_RESPONSE_FLOW" pluginId="flowAPIgenerated"/>
+<colorGraphic16 xmi:type="utility:GIFFileGraphic" resourceName="platform:/plugin/flowAPIgenerated/icons/full/obj16/ISO_CLIENT_RESPONSE_FLOW.gif"/>
+<colorGraphic32 xmi:type="utility:GIFFileGraphic" resourceName="platform:/plugin/flowAPIgenerated/icons/full/obj30/ISO_CLIENT_RESPONSE_FLOW.gif"/>
+<composition>
+<nodes xmi:type="ComIbmMQOutput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_108" location="-1790,-1197" queueName="ISO.SAF">
+<translation xmi:type="utility:ConstantString" string="MQ_PUT_SAF"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_109" location="-378,-206" level="Info" type="All">
+<translation xmi:type="utility:ConstantString" string="AFTER_REPLY"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_110" location="-1787,876" level="Debug" type="All">
+<translation xmi:type="utility:ConstantString" string="MAP_REV_FAILED"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_111" location="91,1958" level="Info" type="All">
+<translation xmi:type="utility:ConstantString" string="PUT_SAF_OK"/>
+</nodes>
+<nodes xmi:type="ComIbmMQOutput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_112" location="-62,1867" queueName="ISO.SAF">
+<translation xmi:type="utility:ConstantString" string="PUT_SAF"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_113" location="-1795,-742" level="Debug" type="All">
+<translation xmi:type="utility:ConstantString" string="NET_MSG_FAIL"/>
+</nodes>
+<nodes xmi:type="ComIbmRouteToLabel.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_114" location="-1403,340">
+<translation xmi:type="utility:ConstantString" string="ROUTE_TO_REPEAT"/>
+</nodes>
+<nodes xmi:type="LOG_DB_ERROR_SUBFLOW.subflow:FCMComposite_1" xmi:id="FCMComposite_1_115" location="241,1321">
+<translation xmi:type="utility:ConstantString" string="LOG_DB_ERROR_MAP_TO_RESP_SUBFLOW"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_116" location="-1977,2049" level="Debug" type="All">
+<translation xmi:type="utility:ConstantString" string="PAYMENT"/>
+</nodes>
+<nodes xmi:type="HanomanMapping.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_117" location="-1795,2049" config="db://##timeout.${msg.data.destination}.${msg.data.code}">
+<translation xmi:type="utility:ConstantString" string="TO_MAPPING"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_118" location="-1409,-24" level="Debug" type="All">
+<translation xmi:type="utility:ConstantString" string="BEF_MAP_CORE_REV"/>
+</nodes>
+<nodes xmi:type="ComIbmMQReply.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_119" location="614,1139">
+<translation xmi:type="utility:ConstantString" string="MQReply1"/>
+</nodes>
+<nodes xmi:type="ComIbmMQReply.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_120" location="-608,-297">
+<translation xmi:type="utility:ConstantString" string="MQ_REPLY_SUCCESS"/>
+</nodes>
+<nodes xmi:type="LOG_DB_ERROR_SUBFLOW.subflow:FCMComposite_1" xmi:id="FCMComposite_1_121" location="207,-24">
+<translation xmi:type="utility:ConstantString" string="LOG_DB_ERROR_MODIFY_HEADER_FAILURE_SUBFLOW"/>
+</nodes>
+<nodes xmi:type="HanomanMapping.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_122" location="-2142,-475" config="db://##checkRepeat">
+<translation xmi:type="utility:ConstantString" string="CHECK_RESP"/>
+</nodes>
+<nodes xmi:type="ComIbmCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_123" location="-1996,-742" computeExpression="esql://routine/#ISO_CLIENT_ADAPTER_FLOW_NET_MSG_FAILED.Main">
+<translation xmi:type="utility:ConstantString" string="NET_MSG_FAILED"/>
+</nodes>
+<nodes xmi:type="HanomanMapping.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_124" location="-1814,1503" config="db://##timeout-repeat.${msg.data.destination}.${msg.data.code}.${msg.data.TimeOutCounter}">
+<translation xmi:type="utility:ConstantString" string="MAP_REPEAT_REQ"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_125" location="345,67" level="Debug" type="All">
+<translation xmi:type="utility:ConstantString" string="PUT_CORE_FAILURE"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_126" location="366,158" level="Info" type="All">
+<translation xmi:type="utility:ConstantString" string="PUT_CORE_OK"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_127" location="-2468,1139" level="Debug" type="All">
+<translation xmi:type="utility:ConstantString" string="ISO.RESP.TO_IN_LOG_OUT"/>
+</nodes>
+<nodes xmi:type="ComIbmLabel.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_128" location="-2610,1503" labelName="repeat">
+<translation xmi:type="utility:ConstantString" string="repeat"/>
+</nodes>
+<nodes xmi:type="ComIbmMQHeader.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_129" location="-1762,694" mqmdAAAOptions="Modify header" mqmdCodedCharSetId="Inherit" mqmdFormat="Inherit" mqmdMsgType="Inherit" mqmdExpiry="Inherit" mqmdFeedback="Inherit" mqmdMsgId="Inherit" mqmdCorrelId="Inherit" mqmdReplyToQ="LATE_REVERSE_IN" mqmdReplyToQMgr="Inherit">
+<translation xmi:type="utility:ConstantString" string="MQHeader"/>
+</nodes>
+<nodes xmi:type="ComIbmMQHeader.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_130" location="-397,-24" mqmdAAAOptions="Modify header" mqmdCodedCharSetId="Inherit" mqmdFormat="Inherit" mqmdMsgType="Inherit" mqmdExpiry="Inherit" mqmdFeedback="Inherit" mqmdMsgId="$Root/MQMD/CorrelId" mqmdCorrelId="$Root/MQMD/CorrelId" mqmdReplyToQ="SMS_IBFT_REV_COREREPLY" mqmdReplyToQMgr=" ">
+<translation xmi:type="utility:ConstantString" string="MODIFY_HEADER"/>
+</nodes>
+<nodes xmi:type="HanomanMapping.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_131" location="-1166,-297" config="db://##${msg.data.mappingId}">
+<translation xmi:type="utility:ConstantString" string="MAPPING_OK"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_132" location="-730,1503" level="Debug" type="All">
+<translation xmi:type="utility:ConstantString" string="PUT_REVERSAL_FAIL"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_133" location="-1611,-1197" level="Debug" type="All">
+<translation xmi:type="utility:ConstantString" string="PUT_SAF_FAIL"/>
+</nodes>
+<nodes xmi:type="HanomanMapping.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_134" location="-1175,-24" config="db://##${msg.data.mappingId}">
+<translation xmi:type="utility:ConstantString" string="MAP_CORE_REV"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_135" location="-404,-297" level="Debug" type="All">
+<translation xmi:type="utility:ConstantString" string="MQ_REPLY_FAILURE"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_136" location="-2018,-1197" level="Debug" type="All">
+<translation xmi:type="utility:ConstantString" string="BEFORE_PUT_SAF_MSG"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_137" location="-2022,1503" level="Debug" type="All">
+<translation xmi:type="utility:ConstantString" string="BEF_TO_REPEAT_MAP"/>
+</nodes>
+<nodes xmi:type="HanomanMapping.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_138" location="-1942,694" config="db://##late-reverse.${msg.data.source}.${msg.data.code}">
+<translation xmi:type="utility:ConstantString" string="MAP_REVERSE"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_139" location="-1557,2231" level="Debug" type="All">
+<translation xmi:type="utility:ConstantString" string="CREATE_REVERSAL_FAILURE"/>
+</nodes>
+<nodes xmi:type="ComIbmCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_140" location="-1770,1139" computeExpression="esql://routine/#ISO_CLIENT_ADAPTER_FLOW_SET_TO.Main" computeMode="destinationAndMessage">
+<translation xmi:type="utility:ConstantString" string="SET_TO"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_141" location="-1842,2494" level="Debug" type="Body">
+<translation xmi:type="utility:ConstantString" string="REPLY_OK"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_142" location="82,1867" level="Debug" type="All">
+<translation xmi:type="utility:ConstantString" string="PUT_SAF_FAIL1"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_143" location="-1514,694" level="Debug" type="All">
+<translation xmi:type="utility:ConstantString" string="MQ_HEADER_FAILED"/>
+</nodes>
+<nodes xmi:type="ComIbmCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_144" location="-396,1867" computeExpression="esql://routine/#ISO_CLIENT_ADAPTER_FLOW_CHECK_COUNTER.Main">
+<translation xmi:type="utility:ConstantString" string="CHECK_COUNTER"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_145" location="-872,-297" level="Debug" type="All">
+<translation xmi:type="utility:ConstantString" string="MAPPING_OK1"/>
+</nodes>
+<nodes xmi:type="LOG_DB_ERROR_SUBFLOW.subflow:FCMComposite_1" xmi:id="FCMComposite_1_146" location="-208,-297">
+<translation xmi:type="utility:ConstantString" string="LOG_DB_ERROR_MQ_REPLY_FAILURE_SUBFLOW"/>
+</nodes>
+<nodes xmi:type="LOG_DB_ERROR_SUBFLOW.subflow:FCMComposite_1" xmi:id="FCMComposite_1_147" location="945,1230">
+<translation xmi:type="utility:ConstantString" string="LOG_DB_ERROR_REV/ADV_REPLY_FAIL_FAILURE_SUBFLOW"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_148" location="-1639,-1015" level="Debug" type="All">
+<translation xmi:type="utility:ConstantString" string="SEND_LN_RESPONSE"/>
+</nodes>
+<nodes xmi:type="LOG_DB_ERROR_SUBFLOW.subflow:FCMComposite_1" xmi:id="FCMComposite_1_149" location="-976,-115">
+<translation xmi:type="utility:ConstantString" string="LOG_DB_ERROR_MAPPING_OK_SUBFLOW"/>
+</nodes>
+<nodes xmi:type="ComIbmMQOutput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_150" location="-81,67" destinationMode="list">
+<translation xmi:type="utility:ConstantString" string="MQ_PUT_CORE"/>
+</nodes>
+<nodes xmi:type="HanomanMapping.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_151" location="84,1139" config="db://##${msg.data.mappingId}">
+<translation xmi:type="utility:ConstantString" string="MAP_TO_RESP"/>
+</nodes>
+<nodes xmi:type="LOG_DB_SUBFLOW.subflow:FCMComposite_1" xmi:id="FCMComposite_1_152" location="-954,249">
+<translation xmi:type="utility:ConstantString" string="LOG_DB_MAP_CORE_REV_SUBFLOW"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_153" location="-2425,2403" level="Debug" type="All">
+<translation xmi:type="utility:ConstantString" string="ISO.RESP.FAILURE_IN_LOG_OUT"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_154" location="-1978,-1015" level="Debug" type="All">
+<translation xmi:type="utility:ConstantString" string="SET_LN_RESP"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_155" location="-97,1139" level="Debug" type="All">
+<translation xmi:type="utility:ConstantString" string="BEF_MAP_TO_RES"/>
+</nodes>
+<nodes xmi:type="ComIbmCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_156" location="-1586,-479" computeExpression="esql://routine/#ISO_CLIENT_ADAPTER_FLOW_CHECK_MSGTYPE.Main">
+<translation xmi:type="utility:ConstantString" string="CHECK_MSGTYPE"/>
+</nodes>
+<nodes xmi:type="ComIbmCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_157" location="-2207,1139" computeExpression="esql://routine/#ISO_CLIENT_ADAPTER_FLOW_VERIFY_MSG_TYPE.Main" computeMode="destinationAndMessage">
+<translation xmi:type="utility:ConstantString" string="VERIFY_MSG_TYPE"/>
+</nodes>
+<nodes xmi:type="ComIbmMQReply.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_158" location="-1990,2403">
+<translation xmi:type="utility:ConstantString" string="MQReply2"/>
+</nodes>
+<nodes xmi:type="LOG_DB_ERROR_SUBFLOW.subflow:FCMComposite_1" xmi:id="FCMComposite_1_159" location="-2040,431">
+<translation xmi:type="utility:ConstantString" string="LOG_DB_ERROR_CHECK_RESP_SUBFLOW"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_160" location="-127,-24" level="Debug" type="All">
+<translation xmi:type="utility:ConstantString" string="MODIFY_HEADER_FAILURE"/>
+</nodes>
+<nodes xmi:type="ComIbmCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_161" location="-2113,-1197" computeExpression="esql://routine/#ISO_CLIENT_ADAPTER_FLOW_ROUTE.Main" computeMode="destinationAndMessage">
+<translation xmi:type="utility:ConstantString" string="ROUTE"/>
+</nodes>
+<nodes xmi:type="ComIbmCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_162" location="-1633,-1106" computeExpression="esql://routine/#ISO_CLIENT_ADAPTER_FLOW_SET_SUSPECT_RESP.Main">
+<translation xmi:type="utility:ConstantString" string="SET_SUSPECT_RESP"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_163" location="327,1139" level="Debug" type="All">
+<translation xmi:type="utility:ConstantString" string="AFTER_MAP_TO_RES"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_164" location="-581,249" level="Debug" type="All">
+<translation xmi:type="utility:ConstantString" string="MAP_FAILURE"/>
+</nodes>
+<nodes xmi:type="ComIbmCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_165" location="-1795,-1015" computeExpression="esql://routine/#ISO_CLIENT_ADAPTER_FLOW_SET_FAILED_IN.Main">
+<translation xmi:type="utility:ConstantString" string="SET_FAILED_IN"/>
+</nodes>
+<nodes xmi:type="ComIbmMQOutput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_166" location="-1084,2049" queueName="ISO.REVERSAL.IN">
+<translation xmi:type="utility:ConstantString" string="MQ_PUT_REVERSAL"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_167" location="-1495,2049" level="Debug" type="All">
+<translation xmi:type="utility:ConstantString" string="AFTER_MAP"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_168" location="-2421,-1197" level="Debug" type="All">
+<translation xmi:type="utility:ConstantString" string="ISO.RESP.TCP_FAIL_IN_LOG_OUT"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_169" location="-1518,1503" level="Debug" type="All">
+<translation xmi:type="utility:ConstantString" string="AFT_REPEAT_MAP"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_170" location="737,1139" level="Debug" type="All">
+<translation xmi:type="utility:ConstantString" string="REV/ADV_REPLY_FAIL"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_171" location="-590,-1015" level="Debug" type="All">
+<translation xmi:type="utility:ConstantString" string="REPLY_FAILURE"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_172" location="-1052,1685" level="Debug" type="All">
+<translation xmi:type="utility:ConstantString" string="NO_REPEAT"/>
+</nodes>
+<nodes xmi:type="ComIbmMQOutput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_173" location="-585,-479" queueName="CUTOFF_MQIN">
+<translation xmi:type="utility:ConstantString" string="CUTOFF_MQIN"/>
+</nodes>
+<nodes xmi:type="ComIbmFilter.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_174" location="-1680,-479" filterExpression="esql://routine/#ISO_CLIENT_ADAPTER_FLOW_Filter.Main">
+<translation xmi:type="utility:ConstantString" string="Filter"/>
+</nodes>
+<nodes xmi:type="LOG_DB_ERROR_SUBFLOW.subflow:FCMComposite_1" xmi:id="FCMComposite_1_175" location="-515,1503">
+<translation xmi:type="utility:ConstantString" string="LOG_DB_ERROR_PUT_REVERSAL_FAIL_SUBFLOW"/>
+</nodes>
+<nodes xmi:type="LOG_DB_ERROR_SUBFLOW.subflow:FCMComposite_1" xmi:id="FCMComposite_1_176" location="-1629,1685">
+<translation xmi:type="utility:ConstantString" string="LOG_DB_ERROR_MAP_REPEAT_REQ_SUBFLOW"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_177" location="-2405,694" level="Debug" type="All">
+<translation xmi:type="utility:ConstantString" string="ISO.RESP.LATE_RESP_IN_LOG_OUT"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_178" location="-1867,2403" level="Debug" type="Body">
+<translation xmi:type="utility:ConstantString" string="REPLY_FAILURE1"/>
+</nodes>
+<nodes xmi:type="LOG_DB_ERROR_SUBFLOW.subflow:FCMComposite_1" xmi:id="FCMComposite_1_179" location="-1225,2231">
+<translation xmi:type="utility:ConstantString" string="LOG_DB_ERROR_CREATE_REVERSAL_FAILURE_SUBFLOW"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_180" location="-386,-479" level="Debug" type="All">
+<translation xmi:type="utility:ConstantString" string="CUTT_OFF_FAIL"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_181" location="-1990,1139" level="Debug" type="All">
+<translation xmi:type="utility:ConstantString" string="SET_TO_RESP"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_182" location="-1378,-479" level="Debug" type="All">
+<translation xmi:type="utility:ConstantString" string="NM_RECEIVE"/>
+</nodes>
+<nodes xmi:type="ComIbmCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_183" location="-379,1776" computeExpression="esql://routine/#ISO_CLIENT_ADAPTER_FLOW_SET_SUSPECT.Main" computeMode="destinationAndMessage">
+<translation xmi:type="utility:ConstantString" string="SET_SUSPECT"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_184" location="741,1230" level="Info" type="All">
+<translation xmi:type="utility:ConstantString" string="REV/ADV_REPLY_OK"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_185" location="-848,-479" level="Debug" type="All">
+<translation xmi:type="utility:ConstantString" string="CUT_OFF"/>
+</nodes>
+<nodes xmi:type="ComIbmRouteToLabel.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_186" location="-1212,785">
+<translation xmi:type="utility:ConstantString" string="ROUTE_TO_LATE_REVERSE"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_187" location="-367,-388" level="Info" type="All">
+<translation xmi:type="utility:ConstantString" string="CUT_OFF1"/>
+</nodes>
+<nodes xmi:type="LOG_DB_ERROR_SUBFLOW.subflow:FCMComposite_1" xmi:id="FCMComposite_1_188" location="-1075,-833">
+<translation xmi:type="utility:ConstantString" string="LOG_DB_ERROR_MAP_LN_RESP_SUBFLOW"/>
+</nodes>
+<nodes xmi:type="ComIbmCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_189" location="-1559,340" computeExpression="esql://routine/#ISO_CLIENT_ADAPTER_FLOW_SET_LABEL.Main">
+<translation xmi:type="utility:ConstantString" string="SET_LABEL"/>
+</nodes>
+<nodes xmi:type="ComIbmLabel.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_190" location="-2613,2049" labelName="resp-reverse">
+<translation xmi:type="utility:ConstantString" string="reverse"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_191" location="-1433,-1106" level="Debug" type="Body">
+<translation xmi:type="utility:ConstantString" string="SEND_SP_RESPONSE"/>
+</nodes>
+<nodes xmi:type="ComIbmCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_192" location="-2081,694" computeExpression="esql://routine/#ISO_CLIENT_ADAPTER_FLOW_CHECK_MSG.Main" computeMode="destinationAndMessage">
+<translation xmi:type="utility:ConstantString" string="CHECK_MSG"/>
+</nodes>
+<nodes xmi:type="ComIbmFlowOrder.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_193" location="-692,1685">
+<translation xmi:type="utility:ConstantString" string="FlowOrder"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_194" location="-701,1594" level="Info" type="All">
+<translation xmi:type="utility:ConstantString" string="PUT_REV_OK"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_195" location="-1206,340" level="Debug" type="All">
+<translation xmi:type="utility:ConstantString" string="ROUTE_TO_REPEAT_FAIL"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_196" location="-588,-924" level="Info" type="All">
+<translation xmi:type="utility:ConstantString" string="AFTER_REPLY1"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_197" location="-950,-1015" level="Debug" type="All">
+<translation xmi:type="utility:ConstantString" string="BEF_REPLY"/>
+</nodes>
+<nodes xmi:type="ComIbmCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_198" location="-1200,-479" computeExpression="esql://routine/#ISO_CLIENT_ADAPTER_FLOW_CHECK_NETMSG_RESP.Main">
+<translation xmi:type="utility:ConstantString" string="CHECK_NETMSG_RESP"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_199" location="-413,1685" level="Debug" type="All">
+<translation xmi:type="utility:ConstantString" string="FLOW_ORDER_FAILED"/>
+</nodes>
+<nodes xmi:type="LOG_DB_ERROR_SUBFLOW.subflow:FCMComposite_1" xmi:id="FCMComposite_1_200" location="-1609,876">
+<translation xmi:type="utility:ConstantString" string="LOG_DB_ERROR_MAP_REV_FAILED_SUBFLOW"/>
+</nodes>
+<nodes xmi:type="ComIbmMQOutput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_201" location="-1089,1503" queueName="ISO.REVERSAL.IN">
+<translation xmi:type="utility:ConstantString" string="MQ_PUT_REVERSAL1"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_202" location="-746,2049" level="Debug" type="All">
+<translation xmi:type="utility:ConstantString" string="REVERSAL_PUT_FAILURE"/>
+</nodes>
+<nodes xmi:type="LOG_DB_ERROR_SUBFLOW.subflow:FCMComposite_1" xmi:id="FCMComposite_1_203" location="679,67">
+<translation xmi:type="utility:ConstantString" string="LOG_DB_ERROR_PUT_CORE_FAILURE_SUBFLOW"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_204" location="-1959,-479" level="Debug" type="All">
+<translation xmi:type="utility:ConstantString" string="AFTER_CHECK_RESP"/>
+</nodes>
+<nodes xmi:type="ComIbmMQReply.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_205" location="-703,-1015">
+<translation xmi:type="utility:ConstantString" string="MQReply"/>
+</nodes>
+<nodes xmi:type="HanomanMapping.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_206" location="-1228,-1015" config="db://##${msg.data.mappingId}">
+<translation xmi:type="utility:ConstantString" string="MAP_LN_RESP"/>
+</nodes>
+<nodes xmi:type="ComIbmCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_207" location="-598,-24" computeExpression="esql://routine/#ISO_CLIENT_ADAPTER_FLOW_SET_CORE_QUEUE.Main" computeMode="destinationAndMessage">
+<translation xmi:type="utility:ConstantString" string="SET_CORE_QUEUE"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_208" location="-1474,785" level="Debug" type="All">
+<translation xmi:type="utility:ConstantString" string="BEF_PARSE"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_209" location="-586,-115" level="Debug" type="All">
+<translation xmi:type="utility:ConstantString" string="MAP_FAILURE1"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_210" location="-2507,-475" level="Debug" type="All">
+<translation xmi:type="utility:ConstantString" string="ISO.RESP.OUT_IN_LOG_OUT"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_211" location="-726,2140" level="Info" type="All">
+<translation xmi:type="utility:ConstantString" string="REVERSAL_PUT_OK"/>
+</nodes>
+<nodes xmi:type="ComIbmCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_212" location="-2121,2403" computeExpression="esql://routine/#ISO_CLIENT_ADAPTER_FLOW_SET_ERROR.Main" computeMode="destinationAndMessage">
+<translation xmi:type="utility:ConstantString" string="SET_ERROR"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_213" location="-1401,-297" level="Debug" type="All">
+<translation xmi:type="utility:ConstantString" string="BEFORE_MAPPING"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_214" location="-847,-24" level="Debug" type="All">
+<translation xmi:type="utility:ConstantString" string="MAPPED"/>
+</nodes>
+<nodes xmi:type="ComIbmMQInput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_1" location="-2647,-570" queueName="ISO.RESP.OUT_IN" messageDomainProperty="XMLNSC">
+<translation xmi:type="utility:ConstantString" string="ISO.RESP.OUT_IN"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_2" location="-2470,-570" level="Error" type="All">
+<translation xmi:type="utility:ConstantString" string="ISO.RESP.OUT_IN_LOG_FAILURE"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_3" location="-2465,522" level="Warning" type="All">
+<translation xmi:type="utility:ConstantString" string="ISO.RESP.OUT_IN_LOG_CATCH"/>
+</nodes>
+<nodes xmi:type="ComIbmMQInput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_4" location="-2647,1048" queueName="ISO.RESP.TO_IN" messageDomainProperty="XMLNSC">
+<translation xmi:type="utility:ConstantString" string="ISO.RESP.TO_IN"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_5" location="-2483,1048" level="Error" type="All">
+<translation xmi:type="utility:ConstantString" string="ISO.RESP.TO_IN_LOG_FAILURE"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_6" location="-2478,1412" level="Warning" type="All">
+<translation xmi:type="utility:ConstantString" string="ISO.RESP.TO_IN_LOG_CATCH"/>
+</nodes>
+<nodes xmi:type="ComIbmMQInput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_7" location="-2647,-1288" queueName="ISO.RESP.TCP_FAIL_IN" messageDomainProperty="XMLNSC">
+<translation xmi:type="utility:ConstantString" string="ISO.RESP.TCP_FAIL_IN"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_8" location="-2436,-1288" level="Error" type="All">
+<translation xmi:type="utility:ConstantString" string="ISO.RESP.TCP_FAIL_IN_LOG_FAILURE"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_9" location="-2426,-651" level="Warning" type="All">
+<translation xmi:type="utility:ConstantString" string="ISO.RESP.TCP_FAIL_IN_LOG_CATH"/>
+</nodes>
+<nodes xmi:type="ComIbmMQInput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_10" location="-2647,603" queueName="ISO.RESP.LATE_RESP_IN" messageDomainProperty="XMLNSC">
+<translation xmi:type="utility:ConstantString" string="ISO.RESP.LATE_RESP_IN"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_11" location="-2420,603" level="Error" type="All">
+<translation xmi:type="utility:ConstantString" string="ISO.RESP.LATE_RESP_IN_LOG_FAILURE"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_12" location="-2415,967" level="Warning" type="All">
+<translation xmi:type="utility:ConstantString" string="ISO.RESP.LATE_RESP_IN_LOG_CATCH"/>
+</nodes>
+<nodes xmi:type="ComIbmMQInput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_13" location="-2647,2312" queueName="ISO.RESP.FAILURE_IN" messageDomainProperty="XMLNSC">
+<translation xmi:type="utility:ConstantString" string="ISO.RESP.FAILURE_IN"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_14" location="-2440,2312" level="Error" type="All">
+<translation xmi:type="utility:ConstantString" string="ISO.RESP.FAILURE_IN_LOG_FAILURE"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_15" location="-2435,2585" level="Debug" type="All">
+<translation xmi:type="utility:ConstantString" string="ISO.RESP.FAILURE_IN_LOG_CATCH"/>
+</nodes>
+<nodes xmi:type="ComIbmCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_16" location="-2269,-476" computeExpression="esql://routine/#ISO_CLIENT_RESPONSE_FLOW_SET_REPLY.Main">
+<translation xmi:type="utility:ConstantString" string="SET_REPLY"/>
+</nodes>
+<nodes xmi:type="HanomanLogger.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_17" location="-2230,-308" level="Debug" type="All">
+<translation xmi:type="utility:ConstantString" string="SET_REPLY_LOG_OUT"/>
+</nodes>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_1" targetNode="FCMComposite_1_199" sourceNode="FCMComposite_1_193" sourceTerminalName="OutTerminal.failure" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_2" targetNode="FCMComposite_1_162" sourceNode="FCMComposite_1_108" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_3" targetNode="FCMComposite_1_120" sourceNode="FCMComposite_1_145" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_4" targetNode="FCMComposite_1_148" sourceNode="FCMComposite_1_165" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_5" targetNode="FCMComposite_1_154" sourceNode="FCMComposite_1_161" sourceTerminalName="OutTerminal.out2" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_6" targetNode="FCMComposite_1_186" sourceNode="FCMComposite_1_208" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_7" targetNode="FCMComposite_1_137" sourceNode="FCMComposite_1_128" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_8" targetNode="FCMComposite_1_123" sourceNode="FCMComposite_1_161" sourceTerminalName="OutTerminal.out3" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_9" targetNode="FCMComposite_1_124" sourceNode="FCMComposite_1_137" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_10" targetNode="FCMComposite_1_160" sourceNode="FCMComposite_1_130" sourceTerminalName="OutTerminal.failure" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_11" targetNode="FCMComposite_1_139" sourceNode="FCMComposite_1_117" sourceTerminalName="OutTerminal.failure" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_12" targetNode="FCMComposite_1_169" sourceNode="FCMComposite_1_124" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_13" targetNode="FCMComposite_1_109" sourceNode="FCMComposite_1_120" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_14" targetNode="FCMComposite_1_137" sourceNode="FCMComposite_1_157" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_15" targetNode="FCMComposite_1_125" sourceNode="FCMComposite_1_150" sourceTerminalName="OutTerminal.failure" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_16" targetNode="FCMComposite_1_205" sourceNode="FCMComposite_1_197" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_17" targetNode="FCMComposite_1_145" sourceNode="FCMComposite_1_131" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_18" targetNode="FCMComposite_1_108" sourceNode="FCMComposite_1_136" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_19" targetNode="FCMComposite_1_161" sourceNode="FCMComposite_1_168" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_20" targetNode="FCMComposite_1_142" sourceNode="FCMComposite_1_112" sourceTerminalName="OutTerminal.failure" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_21" targetNode="FCMComposite_1_204" sourceNode="FCMComposite_1_122" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_22" targetNode="FCMComposite_1_198" sourceNode="FCMComposite_1_182" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_23" targetNode="FCMComposite_1_132" sourceNode="FCMComposite_1_201" sourceTerminalName="OutTerminal.failure" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_24" targetNode="FCMComposite_1_140" sourceNode="FCMComposite_1_181" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_25" targetNode="FCMComposite_1_185" sourceNode="FCMComposite_1_198" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_26" targetNode="FCMComposite_1_111" sourceNode="FCMComposite_1_112" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_27" targetNode="FCMComposite_1_194" sourceNode="FCMComposite_1_201" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_28" targetNode="FCMComposite_1_174" sourceNode="FCMComposite_1_204" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_29" targetNode="FCMComposite_1_193" sourceNode="FCMComposite_1_172" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_30" targetNode="FCMComposite_1_117" sourceNode="FCMComposite_1_116" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_31" targetNode="FCMComposite_1_214" sourceNode="FCMComposite_1_134" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_32" targetNode="FCMComposite_1_180" sourceNode="FCMComposite_1_173" sourceTerminalName="OutTerminal.failure" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_33" targetNode="FCMComposite_1_206" sourceNode="FCMComposite_1_148" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_34" targetNode="FCMComposite_1_187" sourceNode="FCMComposite_1_173" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_35" targetNode="FCMComposite_1_167" sourceNode="FCMComposite_1_117" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_36" targetNode="FCMComposite_1_202" sourceNode="FCMComposite_1_166" sourceTerminalName="OutTerminal.failure" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_37" targetNode="FCMComposite_1_118" sourceNode="FCMComposite_1_156" sourceTerminalName="OutTerminal.out2" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_38" targetNode="FCMComposite_1_211" sourceNode="FCMComposite_1_166" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_39" targetNode="FCMComposite_1_213" sourceNode="FCMComposite_1_156" sourceTerminalName="OutTerminal.out1" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_40" targetNode="FCMComposite_1_116" sourceNode="FCMComposite_1_157" sourceTerminalName="OutTerminal.out2" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_41" targetNode="FCMComposite_1_156" sourceNode="FCMComposite_1_174" sourceTerminalName="OutTerminal.false" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_42" targetNode="FCMComposite_1_151" sourceNode="FCMComposite_1_155" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_43" targetNode="FCMComposite_1_184" sourceNode="FCMComposite_1_119" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_44" targetNode="FCMComposite_1_201" sourceNode="FCMComposite_1_169" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_45" targetNode="FCMComposite_1_178" sourceNode="FCMComposite_1_158" sourceTerminalName="OutTerminal.failure" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_46" targetNode="FCMComposite_1_130" sourceNode="FCMComposite_1_207" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_47" targetNode="FCMComposite_1_112" sourceNode="FCMComposite_1_144" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_48" targetNode="FCMComposite_1_135" sourceNode="FCMComposite_1_120" sourceTerminalName="OutTerminal.failure" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_49" targetNode="FCMComposite_1_158" sourceNode="FCMComposite_1_212" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_50" targetNode="FCMComposite_1_116" sourceNode="FCMComposite_1_190" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_51" targetNode="FCMComposite_1_183" sourceNode="FCMComposite_1_193" sourceTerminalName="OutTerminal.first" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_52" targetNode="FCMComposite_1_129" sourceNode="FCMComposite_1_138" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_53" targetNode="FCMComposite_1_197" sourceNode="FCMComposite_1_206" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_54" targetNode="FCMComposite_1_196" sourceNode="FCMComposite_1_205" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_55" targetNode="FCMComposite_1_134" sourceNode="FCMComposite_1_118" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_56" targetNode="FCMComposite_1_114" sourceNode="FCMComposite_1_189" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_57" targetNode="FCMComposite_1_182" sourceNode="FCMComposite_1_156" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_58" targetNode="FCMComposite_1_110" sourceNode="FCMComposite_1_138" sourceTerminalName="OutTerminal.failure" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_59" targetNode="FCMComposite_1_173" sourceNode="FCMComposite_1_185" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_60" targetNode="FCMComposite_1_155" sourceNode="FCMComposite_1_140" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_61" targetNode="FCMComposite_1_195" sourceNode="FCMComposite_1_114" sourceTerminalName="OutTerminal.failure" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_62" targetNode="FCMComposite_1_166" sourceNode="FCMComposite_1_167" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_63" targetNode="FCMComposite_1_126" sourceNode="FCMComposite_1_150" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_64" targetNode="FCMComposite_1_155" sourceNode="FCMComposite_1_183" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_65" targetNode="FCMComposite_1_181" sourceNode="FCMComposite_1_157" sourceTerminalName="OutTerminal.out1" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_66" targetNode="FCMComposite_1_138" sourceNode="FCMComposite_1_192" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_67" targetNode="FCMComposite_1_141" sourceNode="FCMComposite_1_158" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_68" targetNode="FCMComposite_1_189" sourceNode="FCMComposite_1_174" sourceTerminalName="OutTerminal.true" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_69" targetNode="FCMComposite_1_171" sourceNode="FCMComposite_1_205" sourceTerminalName="OutTerminal.failure" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_70" targetNode="FCMComposite_1_208" sourceNode="FCMComposite_1_129" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_71" targetNode="FCMComposite_1_192" sourceNode="FCMComposite_1_177" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_72" targetNode="FCMComposite_1_191" sourceNode="FCMComposite_1_162" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_73" targetNode="FCMComposite_1_157" sourceNode="FCMComposite_1_127" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_74" targetNode="FCMComposite_1_212" sourceNode="FCMComposite_1_153" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_75" targetNode="FCMComposite_1_206" sourceNode="FCMComposite_1_191" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_76" targetNode="FCMComposite_1_143" sourceNode="FCMComposite_1_129" sourceTerminalName="OutTerminal.failure" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_77" targetNode="FCMComposite_1_150" sourceNode="FCMComposite_1_130" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_78" targetNode="FCMComposite_1_136" sourceNode="FCMComposite_1_161" sourceTerminalName="OutTerminal.out1" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_79" targetNode="FCMComposite_1_133" sourceNode="FCMComposite_1_108" sourceTerminalName="OutTerminal.failure" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_80" targetNode="FCMComposite_1_163" sourceNode="FCMComposite_1_151" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_81" targetNode="FCMComposite_1_144" sourceNode="FCMComposite_1_193" sourceTerminalName="OutTerminal.second" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_82" targetNode="FCMComposite_1_113" sourceNode="FCMComposite_1_123" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_83" targetNode="FCMComposite_1_131" sourceNode="FCMComposite_1_213" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_84" targetNode="FCMComposite_1_165" sourceNode="FCMComposite_1_154" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_85" targetNode="FCMComposite_1_119" sourceNode="FCMComposite_1_163" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_86" targetNode="FCMComposite_1_170" sourceNode="FCMComposite_1_119" sourceTerminalName="OutTerminal.failure" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_87" targetNode="FCMComposite_1_207" sourceNode="FCMComposite_1_214" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_88" targetNode="FCMComposite_1_159" sourceNode="FCMComposite_1_122" sourceTerminalName="OutTerminal.failure" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_89" targetNode="FCMComposite_1_152" sourceNode="FCMComposite_1_134" sourceTerminalName="OutTerminal.failure" targetTerminalName="InTerminal.Input"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_90" targetNode="FCMComposite_1_179" sourceNode="FCMComposite_1_139" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_91" targetNode="FCMComposite_1_149" sourceNode="FCMComposite_1_131" sourceTerminalName="OutTerminal.failure" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_92" targetNode="FCMComposite_1_209" sourceNode="FCMComposite_1_149" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_93" targetNode="FCMComposite_1_188" sourceNode="FCMComposite_1_206" sourceTerminalName="OutTerminal.failure" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_94" targetNode="FCMComposite_1_176" sourceNode="FCMComposite_1_124" sourceTerminalName="OutTerminal.failure" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_95" targetNode="FCMComposite_1_172" sourceNode="FCMComposite_1_176" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_96" targetNode="FCMComposite_1_200" sourceNode="FCMComposite_1_110" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_97" targetNode="FCMComposite_1_115" sourceNode="FCMComposite_1_151" sourceTerminalName="OutTerminal.failure" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_98" targetNode="FCMComposite_1_121" sourceNode="FCMComposite_1_160" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_99" targetNode="FCMComposite_1_146" sourceNode="FCMComposite_1_135" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_100" targetNode="FCMComposite_1_203" sourceNode="FCMComposite_1_125" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_101" targetNode="FCMComposite_1_175" sourceNode="FCMComposite_1_132" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_102" targetNode="FCMComposite_1_147" sourceNode="FCMComposite_1_184" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_103" targetNode="FCMComposite_1_164" sourceNode="FCMComposite_1_152" sourceTerminalName="OutTerminal.Output" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_104" targetNode="FCMComposite_1_210" sourceNode="FCMComposite_1_1" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_105" targetNode="FCMComposite_1_2" sourceNode="FCMComposite_1_1" sourceTerminalName="OutTerminal.failure" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_106" targetNode="FCMComposite_1_3" sourceNode="FCMComposite_1_1" sourceTerminalName="OutTerminal.catch" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_107" targetNode="FCMComposite_1_127" sourceNode="FCMComposite_1_4" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_108" targetNode="FCMComposite_1_5" sourceNode="FCMComposite_1_4" sourceTerminalName="OutTerminal.failure" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_109" targetNode="FCMComposite_1_6" sourceNode="FCMComposite_1_4" sourceTerminalName="OutTerminal.catch" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_110" targetNode="FCMComposite_1_168" sourceNode="FCMComposite_1_7" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_111" targetNode="FCMComposite_1_8" sourceNode="FCMComposite_1_7" sourceTerminalName="OutTerminal.failure" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_112" targetNode="FCMComposite_1_9" sourceNode="FCMComposite_1_7" sourceTerminalName="OutTerminal.catch" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_113" targetNode="FCMComposite_1_177" sourceNode="FCMComposite_1_10" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_114" targetNode="FCMComposite_1_11" sourceNode="FCMComposite_1_10" sourceTerminalName="OutTerminal.failure" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_115" targetNode="FCMComposite_1_12" sourceNode="FCMComposite_1_10" sourceTerminalName="OutTerminal.catch" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_116" targetNode="FCMComposite_1_153" sourceNode="FCMComposite_1_13" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_117" targetNode="FCMComposite_1_14" sourceNode="FCMComposite_1_13" sourceTerminalName="OutTerminal.failure" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_118" targetNode="FCMComposite_1_15" sourceNode="FCMComposite_1_13" sourceTerminalName="OutTerminal.catch" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_119" targetNode="FCMComposite_1_16" sourceNode="FCMComposite_1_210" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_120" targetNode="FCMComposite_1_122" sourceNode="FCMComposite_1_17" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_121" targetNode="FCMComposite_1_17" sourceNode="FCMComposite_1_16" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+</composition>
+<propertyOrganizer>
+</propertyOrganizer>
+<stickyBoard/>
+</eClassifiers>
+</ecore:EPackage>

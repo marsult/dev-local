@@ -1,0 +1,138 @@
+
+
+CREATE COMPUTE MODULE CHANGE_GROUP_REVERSAL_FLOW_SET_CORRELID
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputLocalEnvironment = InputLocalEnvironment;
+		SET OutputRoot = InputRoot;
+
+		SET OutputLocalEnvironment.message = InputRoot;
+		SET OutputRoot.MQMD.CorrelId = CAST(SUBSTRING(InputRoot.XMLNSC.data.getByCorrelId || '                        ' FROM 1 FOR 24) AS BLOB CCSID 1208);
+
+		RETURN TRUE;
+	END;
+END MODULE;
+
+
+CREATE COMPUTE MODULE CHANGE_GROUP_REVERSAL_FLOW_SET_BACKUP
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputLocalEnvironment = InputLocalEnvironment;
+
+		DELETE FIELD OutputLocalEnvironment.message;
+		SET OutputRoot = InputLocalEnvironment.message;
+		SET OutputRoot.XMLNSC.data.backup = InputRoot.XMLNSC.data;
+		CREATE LASTCHILD OF OutputRoot.XMLNSC.data.log Domain('XMLNSC') NAME 'LoggerNode' VALUE InputRoot.XMLNSC.data.log.LoggerNode;
+		DELETE FIELD OutputRoot.XMLNSC.data.backup.log;
+
+		RETURN TRUE;
+	END;
+END MODULE;
+
+
+CREATE COMPUTE MODULE CHANGE_GROUP_REVERSAL_FLOW_BACKUP_MSG
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputLocalEnvironment = InputLocalEnvironment;
+		SET OutputLocalEnvironment.message = InputRoot;
+		
+		SET OutputRoot.Properties = InputRoot.Properties;
+		SET OutputRoot.MQMD = InputRoot.MQMD;
+		SET OutputRoot.MQMD.CorrelId = CAST(SUBSTRING(InputRoot.XMLNSC.data.backup.msgId || '                        ' FROM 1 FOR 24) AS BLOB CCSID 1208);
+		SET OutputRoot.MQMD.Expiry = 864000;
+		SET OutputRoot.XMLNSC.data = InputRoot.XMLNSC.data.coreChangeReq;
+		SET OutputRoot.XMLNSC.data.backup = InputRoot.XMLNSC.data.backup;
+
+		SET OutputLocalEnvironment.message.XMLNSC.data.group = InputRoot.XMLNSC.data.oldgroup;
+		SET OutputLocalEnvironment.message.XMLNSC.data.newgroup = InputRoot.XMLNSC.data.group;
+		SET OutputLocalEnvironment.message.XMLNSC.data.nolog = 'true';
+
+		RETURN TRUE;
+	END;
+END MODULE;
+
+
+CREATE COMPUTE MODULE CHANGE_GROUP_REVERSAL_FLOW_RESTORE_MSG
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputLocalEnvironment = InputLocalEnvironment;
+		DELETE FIELD OutputLocalEnvironment.message;
+
+		SET OutputRoot = InputLocalEnvironment.message;
+		DELETE FIELD OutputRoot.XMLNSC.data.coreChangeReq;
+		DELETE FIELD OutputRoot.XMLNSC.data.backup;
+		
+		RETURN TRUE;
+	END;
+END MODULE;
+
+
+CREATE COMPUTE MODULE CHANGE_GROUP_REVERSAL_FLOW_IS_RESPONSE_CODE_SUCCESS
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputLocalEnvironment = InputLocalEnvironment;
+		DELETE FIELD OutputLocalEnvironment.message;
+		
+		IF (InputLocalEnvironment.message.XMLNSC.data.body.responseCode = '00') THEN
+			SET OutputLocalEnvironment.Destination.MQDestinationList.DestinationData.queueName = InputRoot.XMLNSC.data.queueName;
+
+			SET OutputRoot = InputRoot;
+			SET OutputRoot.MQMD.CorrelId = CAST(SUBSTRING(InputLocalEnvironment.message.XMLNSC.data.CorrelId || '                        ' FROM 1 FOR 24) AS BLOB CCSID 1208);
+			SET OutputRoot.MQMD.ReplyToQ = 'GROUP_CHANGE_REVERSAL_REPLY.ITM';
+			SET OutputRoot.XMLNSC.data.CorrelId = InputLocalEnvironment.message.XMLNSC.data.CorrelId;
+			SET OutputRoot.XMLNSC.data.ReplyToQ = 'GROUP_CHANGE_REVERSAL_REPLY.ITM';
+			SET OutputRoot.XMLNSC.data.code = InputLocalEnvironment.message.XMLNSC.data.code;
+			SET OutputRoot.XMLNSC.data.connid = InputLocalEnvironment.message.XMLNSC.data.connid;
+			SET OutputRoot.XMLNSC.data.frontReplyToQ = InputRoot.MQMD.ReplyToQ;
+			SET OutputRoot.XMLNSC.data.group = InputLocalEnvironment.message.XMLNSC.data.newgroup;
+			SET OutputRoot.XMLNSC.data.reqtimestamp = InputLocalEnvironment.message.XMLNSC.data.reqtimestamp;
+			SET OutputRoot.XMLNSC.data.source = InputLocalEnvironment.message.XMLNSC.data.source;
+			DELETE FIELD OutputRoot.XMLNSC.data.nolog;
+
+			SET OutputRoot.XMLNSC.data.frontOriginal = InputLocalEnvironment.message.XMLNSC.data;
+			DELETE FIELD OutputRoot.XMLNSC.data.frontOriginal.nolog;
+			--SET OutputRoot.XMLNSC.data.frontOriginal.body.reservedPrivate2 = InputRoot.XMLNSC.data.backup.bit62;
+			--SET OutputRoot.XMLNSC.data.frontOriginal.body.fromAccount = InputRoot.XMLNSC.data.backup.accNoFrom;
+			--SET OutputRoot.XMLNSC.data.frontOriginal.body.toAccount = InputRoot.XMLNSC.data.backup.accNoTo;
+
+			DELETE FIELD OutputRoot.XMLNSC.data.log;
+			SET OutputRoot.XMLNSC.data.log = InputLocalEnvironment.message.XMLNSC.data.log;
+			CREATE LASTCHILD OF OutputRoot.XMLNSC.data.log Domain('XMLNSC') NAME 'LoggerNode' VALUE InputRoot.XMLNSC.data.log.LoggerNode;
+			DELETE FIELD OutputRoot.XMLNSC.data.frontOriginal.log;
+
+			RETURN TRUE;
+		ELSE
+			SET OutputRoot = InputLocalEnvironment.message;
+
+			SET OutputRoot.MQMD.MsgId = OutputRoot.MQMD.CorrelId;
+			SET OutputRoot.MQMD.ReplyToQ = InputRoot.MQMD.ReplyToQ;
+			SET OutputRoot.XMLNSC.data.body.reservedPrivate2 = InputRoot.XMLNSC.data.backup.bit62;
+			SET OutputRoot.XMLNSC.data.body.fromAccount = InputRoot.XMLNSC.data.backup.accNoFrom;
+			SET OutputRoot.XMLNSC.data.body.toAccount = InputRoot.XMLNSC.data.backup.accNoTo;
+			DELETE FIELD OutputRoot.XMLNSC.data.nolog;
+			DELETE FIELD OutputRoot.XMLNSC.data.log;
+			SET OutputRoot.XMLNSC.data.log = InputLocalEnvironment.message.XMLNSC.data.log;
+			CREATE LASTCHILD OF OutputRoot.XMLNSC.data.log Domain('XMLNSC') NAME 'LoggerNode' VALUE InputRoot.XMLNSC.data.log.LoggerNode;
+
+			PROPAGATE TO TERMINAL 'out1';
+			RETURN FALSE;
+		END IF;
+	END;
+END MODULE;
+
+
+CREATE COMPUTE MODULE CHANGE_GROUP_REVERSAL_FLOW_SET_RESPONSE
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot.Properties = InputRoot.Properties;
+		SET OutputRoot.MQMD = InputRoot.MQMD;
+		SET OutputRoot.MQMD.MsgId = InputRoot.MQMD.CorrelId;
+		SET OutputRoot.MQMD.ReplyToQ = InputRoot.XMLNSC.data.request.data.frontReplyToQ;
+		SET OutputRoot.XMLNSC.data = InputRoot.XMLNSC.data.request.data.frontOriginal;
+		SET OutputRoot.XMLNSC.data.coreChangeResponse.responseCode = InputRoot.XMLNSC.data.body.responseCode;
+		--SET OutputRoot.XMLNSC.data.log = InputRoot.XMLNSC.data.request.data.log;
+		SET OutputRoot.XMLNSC.data.log = InputRoot.XMLNSC.data.log;
+		
+		RETURN TRUE;
+	END;
+END MODULE;

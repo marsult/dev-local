@@ -1,0 +1,25 @@
+
+CREATE COMPUTE MODULE STORE_PAY_WS_BILLER_REQUEST_DELETE_HTTP_REQUEST
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot = InputRoot;
+		SET OutputLocalEnvironment = InputLocalEnvironment;
+		SET OutputLocalEnvironment.HTTPRequestHeader = InputRoot.HTTPRequestHeader;
+		DELETE FIELD OutputRoot.HTTPRequestHeader;	
+		RETURN TRUE;		
+	END;
+END MODULE;
+
+CREATE COMPUTE MODULE STORE_PAY_WS_BILLER_REQ_GET_HTTP_REQUEST_HEADER
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		--SET OutputRoot = InputRoot;
+		SET OutputLocalEnvironment = InputLocalEnvironment;
+		SET OutputRoot.Properties = InputRoot.Properties;
+		SET OutputRoot.MQMD = InputRoot.MQMD;
+		SET OutputRoot.HTTPRequestHeader = InputLocalEnvironment.HTTPRequestHeader ;
+		SET OutputRoot.XMLNSC = InputRoot.XMLNSC;	
+		RETURN TRUE;		
+	END;
+END MODULE;
+

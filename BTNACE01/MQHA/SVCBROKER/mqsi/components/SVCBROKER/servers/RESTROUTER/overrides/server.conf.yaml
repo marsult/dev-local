@@ -1,0 +1,14 @@
+---
+ResourceManagers: 
+  HTTPConnector: 
+    ListenerPort: '8081'
+  HTTPSConnector: 
+    ListenerPort: '8082'
+  JVM: 
+    jvmJavaOSStackSize: '1048576'
+    jvmSystemProperty: ''
+Statistics: 
+  Resource: 
+    reportingOn: 'false'
+  Snapshot: 
+    publicationOn: 'inactive'

@@ -1,0 +1,452 @@
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-08-06 14:46:13.794      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-08-06 14:46:26.462      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-08-07 01:01:36.508      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+node.js process.on('exit') event emitted with exitCode of 0
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-08-10 00:33:01.335      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-08-10 00:34:33.591      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-08-11 12:15:25.353      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-08-11 12:28:51.437      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+node.js process.on('exit') event emitted with exitCode of 0
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-08-11 15:52:41.344      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-08-11 16:17:37.132      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-08-12 22:27:48.492      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-08-17 23:49:06.523      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-08-17 23:52:00.612      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-08-21 17:16:01.534      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-08-25 12:25:25.958      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-08-27 11:03:21.590      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-08-27 13:23:11.005      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-08-27 13:34:33.449      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-08-27 16:13:18.115      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-08-27 16:18:29.730      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-08-27 16:41:46.407      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-08-27 22:45:13.339      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-08-27 22:49:47.339      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-08-28 00:52:00.637      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-08-28 01:01:37.465      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-08-28 01:07:56.997      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-08-28 01:23:42.390      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-08-28 01:31:44.102      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-08-28 01:34:49.370      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-08-28 05:11:43.272      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-08-28 15:28:36.678      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-08-28 16:17:10.586      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-08-28 16:22:35.985      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-08-28 16:26:17.317      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-08-28 19:42:45.796      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-08-28 23:58:26.756      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-08-29 03:54:29.545      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-08-29 11:07:44.245      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-08-29 13:47:21.011      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-08-29 16:34:22.002      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-08-31 02:32:45.143      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-08-31 02:33:59.753      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-08-31 03:08:41.236      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-08-31 03:34:11.577      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-08-31 14:56:49.253      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-08-31 15:06:08.185      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-01 19:51:52.600      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-03 02:55:54.298      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-03 03:09:15.141      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-03 03:28:42.429      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-03 03:31:01.692      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-03 03:35:54.818      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-03 03:59:33.273      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-03 04:58:45.408      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-03 05:02:16.676      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-03 05:03:09.765      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-03 05:06:09.495      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-03 05:26:20.789      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-03 05:38:00.835      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-03 05:43:50.782      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-03 05:48:59.169      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-03 06:08:08.288      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-03 10:13:06.357      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-03 10:15:51.079      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-03 11:38:28.475      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-03 12:07:24.754      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-03 14:23:29.770      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-03 14:28:24.263      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-03 19:56:17.099      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-03 20:06:28.807      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-03 20:15:01.048      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-04 02:14:13.096      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-04 02:21:17.125      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-04 02:30:23.041      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-05 10:22:00.656      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-05 11:02:40.100      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-05 11:04:33.295      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-05 11:26:33.414      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-05 11:55:58.125      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-05 11:57:34.771      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-05 12:04:23.713      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-05 15:10:07.263      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-05 20:56:25.463      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-05 21:00:55.331      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-05 21:08:15.862      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-05 21:10:17.040      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-05 21:14:27.818      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-05 21:19:12.813      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-05 21:20:50.571      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-05 21:50:57.469      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-05 21:54:18.314      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-05 21:57:30.753      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-05 22:02:58.876      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-09 10:36:58.460      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-09 11:08:24.483      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-11 11:56:33.330      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-11 12:01:08.690      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-11 12:17:52.429      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-11 14:04:16.140      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-12 14:20:43.883      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-13 10:57:46.058      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-13 14:03:33.932      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-13 15:20:25.305      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-13 16:45:48.852      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-13 20:38:50.675      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-13 20:42:24.311      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-13 21:20:47.142      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-15 16:36:24.198      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-16 02:17:51.923      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-16 02:21:47.250      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-16 02:30:23.541      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-16 02:33:59.792      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-16 16:47:01.078      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-16 16:49:08.756      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-16 17:41:01.058      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-16 20:14:21.968      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-16 20:16:28.222      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-16 20:19:03.849      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-20 00:12:21.736      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-21 06:02:33.116      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-22 23:43:38.655      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-25 11:02:31.085      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-26 22:54:03.399      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-27 13:28:56.755      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-27 13:38:27.984      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-27 13:46:56.613      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-27 14:22:56.591      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-28 15:20:39.247      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-28 17:31:15.560      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-28 17:39:44.977      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-30 03:21:50.840      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-30 04:25:22.052      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-30 04:32:23.273      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-09-30 19:58:20.409      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-10-03 06:52:19.475      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-10-04 00:05:41.910      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-10-04 17:20:06.175      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-10-05 17:48:29.460      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-10-06 19:35:57.619      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-10-07 19:38:03.666      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-10-08 15:31:24.288      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-10-10 04:09:17.276      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-10-10 12:58:07.456      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-10-10 16:04:29.673      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-10-12 12:55:41.087      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-10-13 15:55:48.398      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-10-15 15:43:44.885      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-10-19 16:58:12.193      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-10-21 02:37:07.333      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-10-21 02:41:31.706      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar
+Redirecting stdout to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stdout
+Redirecting stderr to /MQHA/ITMBROKER/mqsi/components/ITMBROKER/servers/ITMCORE1/stderr
+2024-10-21 02:48:26.191      1 Using jms interface URL: file:/opt/IBM/ace-12.0.11.1/server/../common/classes/jms2.0/jms.jar

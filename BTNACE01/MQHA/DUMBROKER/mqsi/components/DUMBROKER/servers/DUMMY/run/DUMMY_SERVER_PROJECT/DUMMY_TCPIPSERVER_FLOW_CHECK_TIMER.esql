@@ -1,0 +1,76 @@
+
+
+CREATE COMPUTE MODULE DUMMY_TCPIPSERVER_FLOW_SET_CASE
+	DECLARE delay EXTERNAL INTEGER;
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		-- CALL CopyMessageHeaders();
+		SET OutputRoot = InputRoot;
+		IF delay = 0 THEN
+			RETURN TRUE;
+		ELSEIF delay > 0 THEN
+			DECLARE requestDate TIMESTAMP CURRENT_TIMESTAMP;
+			DECLARE dd TIMESTAMP requestDate + CAST(COALESCE(delay, '1') AS INTERVAL SECOND);
+	
+			SET OutputLocalEnvironment = InputLocalEnvironment;
+			SET OutputLocalEnvironment.TimeoutRequest.Action = 'SET';
+			DECLARE tr REFERENCE TO OutputLocalEnvironment.TimeoutRequest;
+			SET tr.Identifier = InputRoot.XMLNSC.data.sid;
+			SET tr.StartDate = CAST(dd AS DATE);
+			SET tr.StartTime = CAST(dd AS TIME);
+			SET tr.Count = 1;
+	
+			PROPAGATE TO TERMINAL 'out1';
+			RETURN FALSE;
+		ELSE
+			PROPAGATE TO TERMINAL 'out2';
+			RETURN FALSE;
+		END IF;
+	END;
+END MODULE;
+
+
+CREATE COMPUTE MODULE DUMMY_TCPIPSERVER_FLOW_SET_RESPONSE_DELAY
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		DECLARE responseDate TIMESTAMP CURRENT_TIMESTAMP;
+		SET OutputLocalEnvironment = InputLocalEnvironment;
+		--SET OutputLocalEnvironment.Destination.HTTP.RequestIdentifier = BASE64DECODE(InputLocalEnvironment.TimeoutRequest.Identifier);
+
+		SET OutputRoot = InputRoot;
+		--SET OutputRoot.XMLNSC.Data.Body.timeLocalTransaction = CAST(responseDate AS TIME);
+		RETURN TRUE;
+	END;
+END MODULE;
+
+
+CREATE COMPUTE MODULE DUMMY_TCPIPSERVER_FLOW_SET_REQUEST
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputLocalEnvironment = InputLocalEnvironment;
+		SET OutputRoot = InputRoot;
+		
+		DECLARE URL CHARACTER CAST(InputRoot.HTTPInputHeader."X-Original-HTTP-Command" AS CHARACTER);
+
+		DECLARE mapping CHARACTER CAST(SUBSTRING(URL 
+		    FROM POSITION('/' IN URL REPEAT 3) + 1
+		    FOR (POSITION(' ' IN URL REPEAT 2) - 2) - POSITION('/' IN URL REPEAT 3) + 1
+		) AS CHARACTER);
+		SET OutputRoot.JSON.Data.mappingId = REPLACE(mapping, '/', '-');
+		DELETE FIELD OutputRoot.JSON.Data.log;
+		RETURN TRUE;
+	END;
+END MODULE;
+
+CREATE COMPUTE MODULE DUMMY_TCPIPSERVER_FLOW_SET_RESPONSE
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputLocalEnvironment = InputLocalEnvironment;
+		SET OutputRoot = InputRoot;
+		DELETE FIELD OutputRoot.JSON.Data.log;
+		DELETE FIELD OutputRoot.JSON.Data.mappingId;
+		DELETE FIELD OutputRoot.JSON.Data.request.mappingId;
+		DELETE FIELD OutputRoot.JSON.Data.response.mappingId;
+		RETURN TRUE;
+	END;
+END MODULE;

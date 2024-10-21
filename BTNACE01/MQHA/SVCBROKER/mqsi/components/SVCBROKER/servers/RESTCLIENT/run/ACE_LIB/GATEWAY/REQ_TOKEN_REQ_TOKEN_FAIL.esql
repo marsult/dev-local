@@ -1,0 +1,68 @@
+BROKER SCHEMA GATEWAY
+
+CREATE COMPUTE MODULE REQ_TOKEN_REQ_TOKEN_FAIL
+--    DECLARE CacheExpiry EXTERNAL INTEGER;
+--    DECLARE Target EXTERNAL CHARACTER;
+    CREATE FUNCTION Main() RETURNS BOOLEAN
+    BEGIN
+    	CALL CopyEntireMessage();
+--        DECLARE data ROW;
+--        CALL ACE_LIB.logInfo('Input', InputLocalEnvironment, InputExceptionList, InputRoot);
+--        SET OutputLocalEnvironment.UUID = InputLocalEnvironment.UUID;
+--        
+--        IF FIELDTYPE(InputExceptionList.*) IS NOT NULL THEN
+--            SET data.ExceptionList = InputExceptionList;
+--        END IF;
+--        SET data.LocalEnvironment = InputLocalEnvironment;
+--        SET data.Root = InputRoot;
+--        SET OutputRoot = InputRoot;
+--        
+--        IF InputExceptionList.RecoverableException.RecoverableException.RecoverableException.SocketTimeoutException.Insert[3].Text = 'java.net.SocketTimeoutException: Read timed out' THEN
+--            DELETE FIELD OutputRoot.JSON.Data;
+--            DELETE FIELD OutputRoot.BLOB.BLOB;
+--            SET OutputLocalEnvironment.SocketException = SUBSTRING(InputExceptionList.RecoverableException.RecoverableException.RecoverableException.SocketException.Insert[3].Text AFTER 'java.net.');
+--            CREATE FIELD OutputRoot.JSON.Data TYPE Name;
+--            DECLARE om REFERENCE TO OutputRoot.JSON.Data;
+--            SET om.LG_SET_RC_GROUP = '';
+--            CALL ACE_LIB.generateError('MDW', 'CLIENT_TIMEOUT', Target, CacheExpiry, om, OutputExceptionList);
+--            SET OutputRoot.HTTPResponseHeader."X-Original-HTTP-Status-Code" = om.Status;
+--            CALL ACE_LIB.logInfo('Output.ClientTimeOut', OutputLocalEnvironment, OutputExceptionList, OutputRoot);  
+--        ELSEIF SUBSTRING(InputExceptionList.RecoverableException.RecoverableException.RecoverableException.SocketTimeoutException.Insert[3].Text AFTER 'SocketTimeoutException: ') = 'connect timed out' THEN
+--            DELETE FIELD OutputRoot.JSON.Data;
+--            DELETE FIELD OutputRoot.BLOB.BLOB;
+--            SET OutputLocalEnvironment.SocketException = SUBSTRING(InputExceptionList.RecoverableException.RecoverableException.RecoverableException.SocketTimeoutException.Insert[3].Text AFTER 'java.net.');
+--            CREATE FIELD OutputRoot.JSON.Data TYPE Name;
+--            DECLARE om REFERENCE TO OutputRoot.JSON.Data;
+--            SET om.LG_SET_RC_GROUP = '';
+--            CALL ACE_LIB.generateError('MDW', 'CLIENT_TIMEOUT', Target, CacheExpiry, om, OutputExceptionList);
+--            SET OutputRoot.HTTPResponseHeader."X-Original-HTTP-Status-Code" = om.Status;
+--            CALL ACE_LIB.logInfo('Output.ClientTimeOut', OutputLocalEnvironment, OutputExceptionList, OutputRoot);
+--        ELSEIF InputExceptionList.RecoverableException.RecoverableException.Text = 'WebService Request Exception' THEN      
+--            DELETE FIELD OutputRoot.JSON.Data;
+--            DELETE FIELD OutputRoot.BLOB.BLOB;
+--            SET OutputLocalEnvironment.SocketException = SUBSTRING(InputExceptionList.RecoverableException.RecoverableException.RecoverableException.SocketException.Insert[2].Text AFTER 'java.net.');
+--            CREATE FIELD OutputRoot.JSON.Data TYPE Name;
+--            DECLARE om REFERENCE TO OutputRoot.JSON.Data;
+--            SET om.LG_SET_RC_GROUP = '';
+--            CALL ACE_LIB.generateError('MDW', 'CLIENT_LINK_DOWN', Target, CacheExpiry, om, OutputExceptionList);
+--            SET OutputRoot.HTTPResponseHeader."X-Original-HTTP-Status-Code" = om.Status;
+--            CALL ACE_LIB.logInfo('Output.LinkDown', OutputLocalEnvironment, OutputExceptionList, OutputRoot);
+--        ELSE        
+--            DELETE FIELD OutputRoot.JSON.Data;
+--            DELETE FIELD OutputRoot.BLOB.BLOB;
+--            CREATE FIELD OutputRoot.JSON.Data TYPE Name;
+--            DECLARE om REFERENCE TO OutputRoot.JSON.Data;
+--            SET om.LG_SET_RC_GROUP = '';
+--            CALL ACE_LIB.generateError('MDW', '*', Target, CacheExpiry, om, OutputExceptionList);
+--            SET OutputRoot.HTTPResponseHeader."X-Original-HTTP-Status-Code" = om.Status;
+--            CALL ACE_LIB.logInfo('Output', OutputLocalEnvironment, OutputExceptionList, OutputRoot);
+--        END IF;
+--        DELETE FIELD OutputRoot.JSON.Data.LG_SET_RC_GROUP;  
+--        RETURN TRUE;
+    END;
+
+
+    CREATE PROCEDURE CopyEntireMessage() BEGIN
+        SET OutputRoot = InputRoot;
+    END;
+END MODULE;

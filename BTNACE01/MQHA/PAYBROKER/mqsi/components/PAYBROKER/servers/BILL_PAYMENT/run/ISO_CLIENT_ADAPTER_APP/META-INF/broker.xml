@@ -1,0 +1,2385 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Broker deployBarfile="/opt/mdw/bar/PAYBROKER/BILL_PAYMENT/ISO_CLIENT_ADAPTER_FLOW.bar" deployTimestamp="2024-08-10 05:04:26">
+  <CompiledApplication>
+    <ConfigurableProperty uri="startMode">
+    </ConfigurableProperty>
+  </CompiledApplication>
+  <CompiledMessageFlow name="SAF_PROCESS" type="subflow" deployBarfile="/opt/mdw/bar/PAYBROKER/BILL_PAYMENT/ISO_CLIENT_ADAPTER_FLOW.bar" deployTimestamp="2024-08-10 05:04:26">
+    <ConfigurableProperty uri="SAF_PROCESS#FAILURE.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SAF_PROCESS#FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SAF_PROCESS#FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SAF_PROCESS#FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SAF_PROCESS#FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SAF_PROCESS#FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SAF_PROCESS#FLOW_ORDER_FAIL.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SAF_PROCESS#FLOW_ORDER_FAIL.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SAF_PROCESS#FLOW_ORDER_FAIL.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SAF_PROCESS#FLOW_ORDER_FAIL.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SAF_PROCESS#FLOW_ORDER_FAIL.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SAF_PROCESS#FLOW_ORDER_FAIL.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SAF_PROCESS#GET_ALL.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SAF_PROCESS#GET_ALL.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SAF_PROCESS#GET_ALL.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SAF_PROCESS#GET_ALL.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SAF_PROCESS#GET_ALL.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SAF_PROCESS#GET_ALL.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SAF_PROCESS#MQ_GET_SAF.SSLCertificateLabel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SAF_PROCESS#MQ_GET_SAF.SSLCipherSpec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SAF_PROCESS#MQ_GET_SAF.SSLPeerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SAF_PROCESS#MQ_GET_SAF.channelName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SAF_PROCESS#MQ_GET_SAF.connection">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SAF_PROCESS#MQ_GET_SAF.destinationQueueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SAF_PROCESS#MQ_GET_SAF.listenerPortNumber">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SAF_PROCESS#MQ_GET_SAF.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SAF_PROCESS#MQ_GET_SAF.queueManagerHostname">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SAF_PROCESS#MQ_GET_SAF.queueName" override="ISO.SAF">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SAF_PROCESS#MQ_GET_SAF.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SAF_PROCESS#MQ_GET_SAF.useSSL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SAF_PROCESS#MQ_GET_SAF.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SAF_PROCESS#SAF_NO_MESSAGE.filePath">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SAF_PROCESS#SAF_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SAF_PROCESS#SAF_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SAF_PROCESS#SAF_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SAF_PROCESS#SAF_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SAF_PROCESS#SAF_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SAF_PROCESS#SAF_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SAF_PROCESS#SAF_PROCESS.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SAF_PROCESS#SAF_PROCESS.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SAF_PROCESS#SAF_PROCESS.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SAF_PROCESS#SAF_PROCESS.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SAF_PROCESS#SAF_PROCESS.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SAF_PROCESS#SAF_PROCESS.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SAF_PROCESS#WARNING.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SAF_PROCESS#WARNING.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SAF_PROCESS#WARNING.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SAF_PROCESS#WARNING.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SAF_PROCESS#WARNING.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SAF_PROCESS#WARNING.xpath4">
+    </ConfigurableProperty>
+  </CompiledMessageFlow>
+  <CompiledMessageFlow name="TCPIP_ADAPTER" type="subflow" deployBarfile="/opt/mdw/bar/PAYBROKER/BILL_PAYMENT/ISO_CLIENT_ADAPTER_FLOW.bar" deployTimestamp="2024-08-10 05:04:26">
+    <ConfigurableProperty uri="TCPIP_ADAPTER#ADD_MQ_HEADER.mqdlhDestQMgrName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#ADD_MQ_HEADER.mqdlhDestQName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#ADD_MQ_HEADER.mqmdReplyToQ" override="$Root/XMLNSC/data/request/data/ReplyToQ">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#ADD_MQ_HEADER.mqmdReplyToQMgr" override="Inherit">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#ADD_MQ_HEADER_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#ADD_MQ_HEADER_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#ADD_MQ_HEADER_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#ADD_MQ_HEADER_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#ADD_MQ_HEADER_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#ADD_MQ_HEADER_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#ADD_MQ_HEADER_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#ADD_MQ_HEADER_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#ADD_MQ_HEADER_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#ADD_MQ_HEADER_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#ADD_MQ_HEADER_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#ADD_MQ_HEADER_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#AFTER_STORE_PAY_BILLER_REQ_LOG.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#AFTER_STORE_PAY_BILLER_REQ_LOG.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#AFTER_STORE_PAY_BILLER_REQ_LOG.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#AFTER_STORE_PAY_BILLER_REQ_LOG.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#AFTER_STORE_PAY_BILLER_REQ_LOG.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#AFTER_STORE_PAY_BILLER_REQ_LOG.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#BEFORE_SEND_BL.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#BEFORE_SEND_BL.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#BEFORE_SEND_BL.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#BEFORE_SEND_BL.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#BEFORE_SEND_BL.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#BEFORE_SEND_BL.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CATCH.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CATCH.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CATCH.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CATCH.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CATCH.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CATCH.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_DESTINATION.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_DESTINATION.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_DESTINATION.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_DESTINATION_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_DESTINATION_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_DESTINATION_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_DESTINATION_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_DESTINATION_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_DESTINATION_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_ERROR_MSG.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_ERROR_MSG.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_ERROR_MSG.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_ISPAYMENT_LOG_FAILURE.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_ISPAYMENT_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_ISPAYMENT_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_ISPAYMENT_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_ISPAYMENT_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_ISPAYMENT_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_ISPAYMENT_LOG_FALSE.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_ISPAYMENT_LOG_FALSE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_ISPAYMENT_LOG_FALSE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_ISPAYMENT_LOG_FALSE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_ISPAYMENT_LOG_FALSE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_ISPAYMENT_LOG_FALSE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_ISPAYMENT_LOG_TRUE.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_ISPAYMENT_LOG_TRUE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_ISPAYMENT_LOG_TRUE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_ISPAYMENT_LOG_TRUE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_ISPAYMENT_LOG_TRUE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_ISPAYMENT_LOG_TRUE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_MSGTYPE1.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_MSGTYPE1.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_MSGTYPE1.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_MSGTYPE1_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_MSGTYPE1_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_MSGTYPE1_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_MSGTYPE1_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_MSGTYPE1_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_MSGTYPE1_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_MSG_TYPE.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_MSG_TYPE.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_MSG_TYPE.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_PASSTROUGH2.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_PASSTROUGH2.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_PASSTROUGH2.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_PASSTROUGH2_LATE_RESPOSNE.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_PASSTROUGH2_LATE_RESPOSNE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_PASSTROUGH2_LATE_RESPOSNE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_PASSTROUGH2_LATE_RESPOSNE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_PASSTROUGH2_LATE_RESPOSNE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_PASSTROUGH2_LATE_RESPOSNE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_PASSTROUGH2_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_PASSTROUGH2_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_PASSTROUGH2_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_PASSTROUGH2_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_PASSTROUGH2_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_PASSTROUGH2_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_PASSTROUGH_FAIL.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_PASSTROUGH_FAIL.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_PASSTROUGH_FAIL.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_PASSTROUGH_FAIL1.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_PASSTROUGH_FAIL1.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_PASSTROUGH_FAIL1.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_TO_PASSTROUGH.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_TO_PASSTROUGH.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_TO_PASSTROUGH.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_TO_PASSTROUGH_LOG_OUT2.level" override="Info">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_TO_PASSTROUGH_LOG_OUT2.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_TO_PASSTROUGH_LOG_OUT2.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_TO_PASSTROUGH_LOG_OUT2.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_TO_PASSTROUGH_LOG_OUT2.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_TO_PASSTROUGH_LOG_OUT2.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_TYPE.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_TYPE.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CHECK_TYPE.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CLOSE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CLOSE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CLOSE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CLOSE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CLOSE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CLOSE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CONNECT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CONNECT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CONNECT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CONNECT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CONNECT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CONNECT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CONTROL_TCPIP.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CONTROL_TCPIP.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CONTROL_TCPIP.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CONTROL_TCPIP.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CONTROL_TCPIP.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#CONTROL_TCPIP.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#FLOW_ORDER_ERROR.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#FLOW_ORDER_ERROR.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#FLOW_ORDER_ERROR.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#FLOW_ORDER_ERROR.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#FLOW_ORDER_ERROR.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#FLOW_ORDER_ERROR.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#GOT_TIMEOUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#GOT_TIMEOUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#GOT_TIMEOUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#GOT_TIMEOUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#GOT_TIMEOUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#GOT_TIMEOUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQHEADER_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQHEADER_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQHEADER_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQHEADER_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQHEADER_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQHEADER_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQHeader.mqdlhDestQMgrName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQHeader.mqdlhDestQName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQHeader.mqmdReplyToQ" override="$Root/XMLNSC/data/ReplyToQ">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQHeader.mqmdReplyToQMgr" override="$Root/XMLNSC/data/ReplyToQMgr">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQMD_FAILURE.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQMD_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQMD_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQMD_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQMD_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQMD_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQReply.SSLCertificateLabel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQReply.SSLCipherSpec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQReply.SSLPeerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQReply.channelName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQReply.connection">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQReply.destinationQueueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQReply.listenerPortNumber">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQReply.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQReply.queueManagerHostname">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQReply.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQReply.useSSL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQReply.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQ_IN_PASS_TROUGH.SSLCertificateLabel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQ_IN_PASS_TROUGH.SSLCipherSpec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQ_IN_PASS_TROUGH.SSLPeerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQ_IN_PASS_TROUGH.additionalInstances">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQ_IN_PASS_TROUGH.channelName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQ_IN_PASS_TROUGH.componentLevel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQ_IN_PASS_TROUGH.connection">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQ_IN_PASS_TROUGH.destinationQueueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQ_IN_PASS_TROUGH.listenerPortNumber">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQ_IN_PASS_TROUGH.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQ_IN_PASS_TROUGH.queueManagerHostname">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQ_IN_PASS_TROUGH.queueName" override="ISO.PASSTROUGH.IN">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQ_IN_PASS_TROUGH.resetBrowseTimeout">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQ_IN_PASS_TROUGH.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQ_IN_PASS_TROUGH.securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQ_IN_PASS_TROUGH.serializationToken">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQ_IN_PASS_TROUGH.topicProperty">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQ_IN_PASS_TROUGH.useSSL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQ_IN_PASS_TROUGH.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQ_IN_PASS_TROUGH_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQ_IN_PASS_TROUGH_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQ_IN_PASS_TROUGH_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQ_IN_PASS_TROUGH_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQ_IN_PASS_TROUGH_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQ_IN_PASS_TROUGH_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQ_IN_PASS_TROUGH_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQ_IN_PASS_TROUGH_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQ_IN_PASS_TROUGH_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQ_IN_PASS_TROUGH_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQ_IN_PASS_TROUGH_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQ_IN_PASS_TROUGH_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQ_PUT.AddRequestToGroup">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQ_PUT.GroupRequestFolderName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQ_PUT.GroupRequestTimeout">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQ_PUT.SSLCertificateLabel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQ_PUT.SSLCipherSpec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQ_PUT.SSLPeerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQ_PUT.channelName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQ_PUT.connection">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQ_PUT.destinationQueueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQ_PUT.listenerPortNumber">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQ_PUT.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQ_PUT.queueManagerHostname">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQ_PUT.queueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQ_PUT.queueName" override="ISO.REVERSAL.IN">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQ_PUT.replyToQ">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQ_PUT.replyToQMgr">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQ_PUT.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQ_PUT.securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQ_PUT.useSSL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#MQ_PUT.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#NETMAN_FAILED.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#NETMAN_FAILED.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#NETMAN_FAILED.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#NETMAN_FAILED.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#NETMAN_FAILED.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#NETMAN_FAILED.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#NETMAN_SUBFLOW_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#NETMAN_SUBFLOW_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#NETMAN_SUBFLOW_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#NETMAN_SUBFLOW_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#NETMAN_SUBFLOW_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#NETMAN_SUBFLOW_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#NET_MAN.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#NET_MAN.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#NET_MAN.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#NET_MAN.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#NET_MAN.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#NET_MAN.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#OTHER_ERROR.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#OTHER_ERROR.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#OTHER_ERROR.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#OTHER_ERROR.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#OTHER_ERROR.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#OTHER_ERROR.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#REPLY_FAIL.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#REPLY_FAIL.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#REPLY_FAIL.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#REPLY_FAIL.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#REPLY_FAIL.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#REPLY_FAIL.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#REPLY_OK.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#REPLY_OK.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#REPLY_OK.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#REPLY_OK.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#REPLY_OK.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#REPLY_OK.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#REPLY_PASSTROUGH.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#REPLY_PASSTROUGH.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#REPLY_PASSTROUGH.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#REPLY_PASSTROUGH.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#REPLY_PASSTROUGH.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#REPLY_PASSTROUGH.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#SAF_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#SAF_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#SAF_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#SAF_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#SAF_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#SAF_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#SAF_OUT_FAIL.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#SAF_OUT_FAIL.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#SAF_OUT_FAIL.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#SAF_OUT_FAIL.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#SAF_OUT_FAIL.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#SAF_OUT_FAIL.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#SET_DESTINATION.config" override="db://##passthrough.${msg.data.group}.${msg.data.code}">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#SET_DESTINATION_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#SET_DESTINATION_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#SET_DESTINATION_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#SET_DESTINATION_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#SET_DESTINATION_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#SET_DESTINATION_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#SET_MSGID_CHECK_ISPAYMENT.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#SET_MSGID_CHECK_ISPAYMENT.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#SET_MSGID_CHECK_ISPAYMENT.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#SET_SIGNED_ON.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#SET_SIGNED_ON.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#SET_SIGNED_ON.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#SET_SIGNED_ON.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#SET_SIGNED_ON.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#SET_SIGNED_ON.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#TCPIPClientInput.config" override="db://##billpayClientNode">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#TCPIPClientOutput.config" override="db://##billpayClientNode">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#TCPIP_CATCH.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#TCPIP_CATCH.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#TCPIP_CATCH.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#TCPIP_CATCH.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#TCPIP_CATCH.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#TCPIP_CATCH.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#TCPIP_FAILURE.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#TCPIP_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#TCPIP_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#TCPIP_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#TCPIP_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#TCPIP_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#TCPIP_IN.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#TCPIP_IN.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#TCPIP_IN.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#TCPIP_IN.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#TCPIP_IN.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#TCPIP_IN.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#TCPIP_INPUT_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#TCPIP_INPUT_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#TCPIP_INPUT_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#TCPIP_INPUT_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#TCPIP_INPUT_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#TCPIP_INPUT_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#TO_SET_HEADER_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#TO_SET_HEADER_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#TO_SET_HEADER_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#TO_SET_HEADER_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#TO_SET_HEADER_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TCPIP_ADAPTER#TO_SET_HEADER_FAILURE.xpath4">
+    </ConfigurableProperty>
+  </CompiledMessageFlow>
+  <CompiledMessageFlow name="ISO_CLIENT_ADAPTER_FLOW" deployBarfile="/opt/mdw/bar/PAYBROKER/BILL_PAYMENT/ISO_CLIENT_ADAPTER_FLOW.bar" deployTimestamp="2024-08-10 05:04:26">
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#AFTER_CHECK_RESP.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#AFTER_CHECK_RESP.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#AFTER_CHECK_RESP.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#AFTER_CHECK_RESP.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#AFTER_CHECK_RESP.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#AFTER_CHECK_RESP.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#AFTER_MAP.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#AFTER_MAP.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#AFTER_MAP.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#AFTER_MAP.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#AFTER_MAP.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#AFTER_MAP.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#AFTER_MAP_TO_RES.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#AFTER_MAP_TO_RES.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#AFTER_MAP_TO_RES.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#AFTER_MAP_TO_RES.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#AFTER_MAP_TO_RES.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#AFTER_MAP_TO_RES.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#AFTER_REPLY.level" override="Info">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#AFTER_REPLY.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#AFTER_REPLY.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#AFTER_REPLY.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#AFTER_REPLY.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#AFTER_REPLY.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#AFTER_REPLY1.level" override="Info">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#AFTER_REPLY1.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#AFTER_REPLY1.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#AFTER_REPLY1.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#AFTER_REPLY1.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#AFTER_REPLY1.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#AFTER_SET_LOCALINV_LOG.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#AFTER_SET_LOCALINV_LOG.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#AFTER_SET_LOCALINV_LOG.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#AFTER_SET_LOCALINV_LOG.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#AFTER_SET_LOCALINV_LOG.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#AFTER_SET_LOCALINV_LOG.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#AFT_REPEAT_MAP.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#AFT_REPEAT_MAP.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#AFT_REPEAT_MAP.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#AFT_REPEAT_MAP.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#AFT_REPEAT_MAP.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#AFT_REPEAT_MAP.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#BEFORE_MAPPING.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#BEFORE_MAPPING.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#BEFORE_MAPPING.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#BEFORE_MAPPING.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#BEFORE_MAPPING.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#BEFORE_MAPPING.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#BEFORE_PUT_SAF_MSG.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#BEFORE_PUT_SAF_MSG.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#BEFORE_PUT_SAF_MSG.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#BEFORE_PUT_SAF_MSG.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#BEFORE_PUT_SAF_MSG.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#BEFORE_PUT_SAF_MSG.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#BEF_MAP_CORE_REV.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#BEF_MAP_CORE_REV.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#BEF_MAP_CORE_REV.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#BEF_MAP_CORE_REV.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#BEF_MAP_CORE_REV.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#BEF_MAP_CORE_REV.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#BEF_MAP_TO_RES.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#BEF_MAP_TO_RES.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#BEF_MAP_TO_RES.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#BEF_MAP_TO_RES.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#BEF_MAP_TO_RES.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#BEF_MAP_TO_RES.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#BEF_PARSE.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#BEF_PARSE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#BEF_PARSE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#BEF_PARSE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#BEF_PARSE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#BEF_PARSE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#BEF_REPLY.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#BEF_REPLY.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#BEF_REPLY.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#BEF_REPLY.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#BEF_REPLY.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#BEF_REPLY.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#BEF_TO_REPEAT_MAP.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#BEF_TO_REPEAT_MAP.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#BEF_TO_REPEAT_MAP.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#BEF_TO_REPEAT_MAP.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#BEF_TO_REPEAT_MAP.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#BEF_TO_REPEAT_MAP.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#CHECK_COUNTER.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#CHECK_COUNTER.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#CHECK_COUNTER.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#CHECK_MSG.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#CHECK_MSG.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#CHECK_MSG.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#CHECK_MSGTYPE.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#CHECK_MSGTYPE.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#CHECK_MSGTYPE.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#CHECK_NETMSG_RESP.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#CHECK_NETMSG_RESP.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#CHECK_NETMSG_RESP.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#CHECK_RESP.config" override="db://##checkRepeat">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#CREATE_REVERSAL_FAILURE.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#CREATE_REVERSAL_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#CREATE_REVERSAL_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#CREATE_REVERSAL_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#CREATE_REVERSAL_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#CREATE_REVERSAL_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#CUTOFF_MQIN.AddRequestToGroup">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#CUTOFF_MQIN.GroupRequestFolderName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#CUTOFF_MQIN.GroupRequestTimeout">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#CUTOFF_MQIN.SSLCertificateLabel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#CUTOFF_MQIN.SSLCipherSpec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#CUTOFF_MQIN.SSLPeerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#CUTOFF_MQIN.channelName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#CUTOFF_MQIN.connection">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#CUTOFF_MQIN.destinationQueueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#CUTOFF_MQIN.listenerPortNumber">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#CUTOFF_MQIN.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#CUTOFF_MQIN.queueManagerHostname">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#CUTOFF_MQIN.queueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#CUTOFF_MQIN.queueName" override="CUTOFF_MQIN">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#CUTOFF_MQIN.replyToQ">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#CUTOFF_MQIN.replyToQMgr">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#CUTOFF_MQIN.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#CUTOFF_MQIN.securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#CUTOFF_MQIN.useSSL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#CUTOFF_MQIN.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#CUTT_OFF_FAIL.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#CUTT_OFF_FAIL.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#CUTT_OFF_FAIL.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#CUTT_OFF_FAIL.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#CUTT_OFF_FAIL.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#CUTT_OFF_FAIL.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#CUT_OFF.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#CUT_OFF.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#CUT_OFF.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#CUT_OFF.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#CUT_OFF.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#CUT_OFF.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#CUT_OFF1.level" override="Info">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#CUT_OFF1.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#CUT_OFF1.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#CUT_OFF1.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#CUT_OFF1.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#CUT_OFF1.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#FAILURE.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#FLOW_ORDER_FAILED.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#FLOW_ORDER_FAILED.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#FLOW_ORDER_FAILED.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#FLOW_ORDER_FAILED.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#FLOW_ORDER_FAILED.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#FLOW_ORDER_FAILED.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#Filter.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#Filter.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#LATE_RESPONSE.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#LATE_RESPONSE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#LATE_RESPONSE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#LATE_RESPONSE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#LATE_RESPONSE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#LATE_RESPONSE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#LATE_REVERSE1.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#LATE_REVERSE1.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#LATE_REVERSE1.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#LATE_REVERSE1.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#LATE_REVERSE1.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#LATE_REVERSE1.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MAPPED.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MAPPED.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MAPPED.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MAPPED.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MAPPED.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MAPPED.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MAPPING_OK.config" override="db://##${msg.data.mappingId}">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MAPPING_OK1.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MAPPING_OK1.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MAPPING_OK1.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MAPPING_OK1.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MAPPING_OK1.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MAPPING_OK1.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MAP_CORE_REV.config" override="db://##${msg.data.mappingId}">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MAP_FAILURE.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MAP_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MAP_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MAP_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MAP_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MAP_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MAP_FAILURE1.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MAP_FAILURE1.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MAP_FAILURE1.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MAP_FAILURE1.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MAP_FAILURE1.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MAP_FAILURE1.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MAP_LN_RESP.config" override="db://##${msg.data.mappingId}">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MAP_REPEAT_REQ.config" override="db://##timeout-repeat.${msg.data.destination}.${msg.data.code}.${msg.data.TimeOutCounter}">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MAP_REVERSE.config" override="db://##late-reverse.${msg.data.source}.${msg.data.code}">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MAP_REV_FAILED.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MAP_REV_FAILED.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MAP_REV_FAILED.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MAP_REV_FAILED.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MAP_REV_FAILED.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MAP_REV_FAILED.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MAP_TO_RESP.config" override="db://##${msg.data.mappingId}">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MODIF.mqdlhDestQMgrName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MODIF.mqdlhDestQName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MODIF.mqmdReplyToQ" override="Inherit">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MODIF.mqmdReplyToQMgr">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MODIFY_HEADER.mqdlhDestQMgrName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MODIFY_HEADER.mqdlhDestQName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MODIFY_HEADER.mqmdReplyToQ" override="SMS_IBFT_REV_COREREPLY">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MODIFY_HEADER.mqmdReplyToQMgr" override=" ">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MODIFY_HEADER_FAILURE.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MODIFY_HEADER_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MODIFY_HEADER_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MODIFY_HEADER_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MODIFY_HEADER_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MODIFY_HEADER_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MODIF_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MODIF_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MODIF_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MODIF_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MODIF_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MODIF_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MODIF_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MODIF_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MODIF_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MODIF_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MODIF_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MODIF_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQHeader.mqdlhDestQMgrName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQHeader.mqdlhDestQName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQHeader.mqmdReplyToQ" override="LATE_REVERSE_IN">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQHeader.mqmdReplyToQMgr" override="Inherit">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQReply.SSLCertificateLabel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQReply.SSLCipherSpec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQReply.SSLPeerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQReply.channelName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQReply.connection">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQReply.destinationQueueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQReply.listenerPortNumber">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQReply.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQReply.queueManagerHostname">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQReply.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQReply.useSSL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQReply.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQReply1.SSLCertificateLabel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQReply1.SSLCipherSpec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQReply1.SSLPeerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQReply1.channelName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQReply1.connection">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQReply1.destinationQueueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQReply1.listenerPortNumber">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQReply1.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQReply1.queueManagerHostname">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQReply1.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQReply1.useSSL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQReply1.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQReply2.SSLCertificateLabel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQReply2.SSLCipherSpec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQReply2.SSLPeerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQReply2.channelName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQReply2.connection">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQReply2.destinationQueueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQReply2.listenerPortNumber">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQReply2.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQReply2.queueManagerHostname">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQReply2.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQReply2.useSSL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQReply2.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_HEADER_FAILED.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_HEADER_FAILED.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_HEADER_FAILED.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_HEADER_FAILED.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_HEADER_FAILED.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_HEADER_FAILED.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_MSG.SSLCertificateLabel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_MSG.SSLCipherSpec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_MSG.SSLPeerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_MSG.additionalInstances">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_MSG.channelName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_MSG.componentLevel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_MSG.connection">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_MSG.destinationQueueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_MSG.listenerPortNumber">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_MSG.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_MSG.queueManagerHostname">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_MSG.queueName" override="ISO.BILLPAYMENT.IN">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_MSG.resetBrowseTimeout">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_MSG.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_MSG.securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_MSG.serializationToken">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_MSG.topicProperty">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_MSG.useSSL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_MSG.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_MSG_CATCH.level" override="Warning">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_MSG_CATCH.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_MSG_CATCH.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_MSG_CATCH.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_MSG_CATCH.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_MSG_CATCH.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_MSG_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_MSG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_MSG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_MSG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_MSG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_MSG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_MSG_LOG_OUT.level" override="Info">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_MSG_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_MSG_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_MSG_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_MSG_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_MSG_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_REV.SSLCertificateLabel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_REV.SSLCipherSpec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_REV.SSLPeerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_REV.additionalInstances">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_REV.channelName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_REV.componentLevel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_REV.connection">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_REV.destinationQueueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_REV.listenerPortNumber">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_REV.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_REV.queueManagerHostname">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_REV.queueName" override="ISO.REVERSAL.IN">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_REV.resetBrowseTimeout">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_REV.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_REV.securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_REV.serializationToken">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_REV.topicProperty">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_REV.useSSL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_REV.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_REV_CATCH.level" override="Warning">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_REV_CATCH.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_REV_CATCH.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_REV_CATCH.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_REV_CATCH.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_REV_CATCH.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_REV_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_REV_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_REV_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_REV_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_REV_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_REV_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_REV_LOG_OUT.level" override="Info">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_REV_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_REV_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_REV_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_REV_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_IN_REV_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_CORE.AddRequestToGroup">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_CORE.GroupRequestFolderName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_CORE.GroupRequestTimeout">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_CORE.SSLCertificateLabel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_CORE.SSLCipherSpec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_CORE.SSLPeerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_CORE.channelName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_CORE.connection">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_CORE.destinationQueueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_CORE.listenerPortNumber">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_CORE.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_CORE.queueManagerHostname">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_CORE.queueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_CORE.queueName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_CORE.replyToQ">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_CORE.replyToQMgr">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_CORE.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_CORE.securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_CORE.useSSL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_CORE.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_REVERSAL.AddRequestToGroup">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_REVERSAL.GroupRequestFolderName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_REVERSAL.GroupRequestTimeout">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_REVERSAL.SSLCertificateLabel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_REVERSAL.SSLCipherSpec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_REVERSAL.SSLPeerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_REVERSAL.channelName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_REVERSAL.connection">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_REVERSAL.destinationQueueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_REVERSAL.listenerPortNumber">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_REVERSAL.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_REVERSAL.queueManagerHostname">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_REVERSAL.queueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_REVERSAL.queueName" override="ISO.REVERSAL.IN">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_REVERSAL.replyToQ">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_REVERSAL.replyToQMgr">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_REVERSAL.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_REVERSAL.securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_REVERSAL.useSSL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_REVERSAL.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_REVERSAL1.AddRequestToGroup">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_REVERSAL1.GroupRequestFolderName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_REVERSAL1.GroupRequestTimeout">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_REVERSAL1.SSLCertificateLabel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_REVERSAL1.SSLCipherSpec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_REVERSAL1.SSLPeerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_REVERSAL1.channelName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_REVERSAL1.connection">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_REVERSAL1.destinationQueueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_REVERSAL1.listenerPortNumber">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_REVERSAL1.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_REVERSAL1.queueManagerHostname">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_REVERSAL1.queueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_REVERSAL1.queueName" override="ISO.REVERSAL.IN">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_REVERSAL1.replyToQ">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_REVERSAL1.replyToQMgr">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_REVERSAL1.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_REVERSAL1.securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_REVERSAL1.useSSL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_REVERSAL1.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_SAF.AddRequestToGroup">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_SAF.GroupRequestFolderName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_SAF.GroupRequestTimeout">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_SAF.SSLCertificateLabel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_SAF.SSLCipherSpec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_SAF.SSLPeerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_SAF.channelName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_SAF.connection">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_SAF.destinationQueueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_SAF.listenerPortNumber">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_SAF.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_SAF.queueManagerHostname">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_SAF.queueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_SAF.queueName" override="ISO.SAF">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_SAF.replyToQ">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_SAF.replyToQMgr">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_SAF.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_SAF.securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_SAF.useSSL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_PUT_SAF.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_REPLY_FAILURE.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_REPLY_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_REPLY_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_REPLY_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_REPLY_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_REPLY_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_REPLY_SUCCESS.SSLCertificateLabel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_REPLY_SUCCESS.SSLCipherSpec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_REPLY_SUCCESS.SSLPeerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_REPLY_SUCCESS.channelName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_REPLY_SUCCESS.connection">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_REPLY_SUCCESS.destinationQueueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_REPLY_SUCCESS.listenerPortNumber">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_REPLY_SUCCESS.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_REPLY_SUCCESS.queueManagerHostname">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_REPLY_SUCCESS.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_REPLY_SUCCESS.useSSL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#MQ_REPLY_SUCCESS.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#NET_MSG_FAIL.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#NET_MSG_FAIL.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#NET_MSG_FAIL.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#NET_MSG_FAIL.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#NET_MSG_FAIL.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#NET_MSG_FAIL.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#NET_MSG_FAILED.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#NET_MSG_FAILED.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#NET_MSG_FAILED.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#NM_RECEIVE.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#NM_RECEIVE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#NM_RECEIVE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#NM_RECEIVE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#NM_RECEIVE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#NM_RECEIVE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#NO_REPEAT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#NO_REPEAT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#NO_REPEAT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#NO_REPEAT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#NO_REPEAT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#NO_REPEAT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#PAYMENT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#PAYMENT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#PAYMENT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#PAYMENT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#PAYMENT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#PAYMENT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#PUT_CORE_FAILURE.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#PUT_CORE_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#PUT_CORE_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#PUT_CORE_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#PUT_CORE_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#PUT_CORE_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#PUT_CORE_OK.level" override="Info">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#PUT_CORE_OK.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#PUT_CORE_OK.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#PUT_CORE_OK.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#PUT_CORE_OK.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#PUT_CORE_OK.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#PUT_REVERSAL_FAIL.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#PUT_REVERSAL_FAIL.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#PUT_REVERSAL_FAIL.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#PUT_REVERSAL_FAIL.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#PUT_REVERSAL_FAIL.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#PUT_REVERSAL_FAIL.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#PUT_REV_OK.level" override="Info">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#PUT_REV_OK.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#PUT_REV_OK.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#PUT_REV_OK.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#PUT_REV_OK.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#PUT_REV_OK.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#PUT_SAF.AddRequestToGroup">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#PUT_SAF.GroupRequestFolderName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#PUT_SAF.GroupRequestTimeout">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#PUT_SAF.SSLCertificateLabel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#PUT_SAF.SSLCipherSpec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#PUT_SAF.SSLPeerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#PUT_SAF.channelName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#PUT_SAF.connection">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#PUT_SAF.destinationQueueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#PUT_SAF.listenerPortNumber">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#PUT_SAF.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#PUT_SAF.queueManagerHostname">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#PUT_SAF.queueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#PUT_SAF.queueName" override="ISO.SAF">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#PUT_SAF.replyToQ">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#PUT_SAF.replyToQMgr">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#PUT_SAF.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#PUT_SAF.securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#PUT_SAF.useSSL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#PUT_SAF.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#PUT_SAF_FAIL.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#PUT_SAF_FAIL.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#PUT_SAF_FAIL.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#PUT_SAF_FAIL.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#PUT_SAF_FAIL.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#PUT_SAF_FAIL.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#PUT_SAF_FAIL1.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#PUT_SAF_FAIL1.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#PUT_SAF_FAIL1.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#PUT_SAF_FAIL1.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#PUT_SAF_FAIL1.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#PUT_SAF_FAIL1.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#PUT_SAF_OK.level" override="Info">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#PUT_SAF_OK.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#PUT_SAF_OK.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#PUT_SAF_OK.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#PUT_SAF_OK.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#PUT_SAF_OK.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#REPLY_FAILURE.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#REPLY_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#REPLY_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#REPLY_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#REPLY_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#REPLY_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#REPLY_FAILURE1.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#REPLY_FAILURE1.type" override="Body">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#REPLY_FAILURE1.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#REPLY_FAILURE1.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#REPLY_FAILURE1.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#REPLY_FAILURE1.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#REPLY_OK.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#REPLY_OK.type" override="Body">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#REPLY_OK.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#REPLY_OK.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#REPLY_OK.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#REPLY_OK.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#REV/ADV_REPLY_FAIL.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#REV/ADV_REPLY_FAIL.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#REV/ADV_REPLY_FAIL.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#REV/ADV_REPLY_FAIL.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#REV/ADV_REPLY_FAIL.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#REV/ADV_REPLY_FAIL.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#REV/ADV_REPLY_OK.level" override="Info">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#REV/ADV_REPLY_OK.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#REV/ADV_REPLY_OK.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#REV/ADV_REPLY_OK.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#REV/ADV_REPLY_OK.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#REV/ADV_REPLY_OK.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#REVERSAL_PUT_FAILURE.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#REVERSAL_PUT_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#REVERSAL_PUT_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#REVERSAL_PUT_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#REVERSAL_PUT_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#REVERSAL_PUT_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#REVERSAL_PUT_OK.level" override="Info">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#REVERSAL_PUT_OK.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#REVERSAL_PUT_OK.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#REVERSAL_PUT_OK.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#REVERSAL_PUT_OK.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#REVERSAL_PUT_OK.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#ROUTE.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#ROUTE.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#ROUTE.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#ROUTE_TO_REPEAT_FAIL.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#ROUTE_TO_REPEAT_FAIL.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#ROUTE_TO_REPEAT_FAIL.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#ROUTE_TO_REPEAT_FAIL.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#ROUTE_TO_REPEAT_FAIL.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#ROUTE_TO_REPEAT_FAIL.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#SEND_LN_RESPONSE.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#SEND_LN_RESPONSE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#SEND_LN_RESPONSE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#SEND_LN_RESPONSE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#SEND_LN_RESPONSE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#SEND_LN_RESPONSE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#SEND_SP_RESPONSE.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#SEND_SP_RESPONSE.type" override="Body">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#SEND_SP_RESPONSE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#SEND_SP_RESPONSE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#SEND_SP_RESPONSE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#SEND_SP_RESPONSE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#SET_CORE_QUEUE.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#SET_CORE_QUEUE.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#SET_CORE_QUEUE.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#SET_ERROR.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#SET_ERROR.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#SET_ERROR.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#SET_FAILED_IN.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#SET_FAILED_IN.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#SET_FAILED_IN.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#SET_LABEL.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#SET_LABEL.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#SET_LABEL.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#SET_LN_RESP.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#SET_LN_RESP.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#SET_LN_RESP.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#SET_LN_RESP.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#SET_LN_RESP.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#SET_LN_RESP.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#SET_LOCALINV.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#SET_LOCALINV.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#SET_LOCALINV.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#SET_QUEUE.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#SET_QUEUE.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#SET_QUEUE.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#SET_QUEUE_LOG_OUT.level" override="Info">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#SET_QUEUE_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#SET_QUEUE_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#SET_QUEUE_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#SET_QUEUE_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#SET_QUEUE_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#SET_SUSPECT.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#SET_SUSPECT.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#SET_SUSPECT.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#SET_SUSPECT_RESP.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#SET_SUSPECT_RESP.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#SET_SUSPECT_RESP.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#SET_TO.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#SET_TO.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#SET_TO.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#SET_TO_RESP.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#SET_TO_RESP.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#SET_TO_RESP.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#SET_TO_RESP.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#SET_TO_RESP.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#SET_TO_RESP.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#TCP_FAIL.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#TCP_FAIL.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#TCP_FAIL.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#TCP_FAIL.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#TCP_FAIL.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#TCP_FAIL.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#TO.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#TO.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#TO.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#TO.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#TO.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#TO.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#TO_MAPPING.config" override="db://##timeout.${msg.data.destination}.${msg.data.code}">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#VERIFY_MSG_TYPE.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#VERIFY_MSG_TYPE.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#VERIFY_MSG_TYPE.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#additionalInstances" override="200">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#commitCount">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#commitInterval">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#consumerPolicySet">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#consumerPolicySetBindings">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#coordinatedTransaction">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#maximumRateMsgsPerSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#monitoringProfile">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#notificationThresholdMsgsPerSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#processingTimeoutAction">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#processingTimeoutSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#providerPolicySet">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#providerPolicySetBindings">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#startInstancesWhenFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#startMode">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ISO_CLIENT_ADAPTER_FLOW#wlmPolicy">
+    </ConfigurableProperty>
+  </CompiledMessageFlow>
+  <CompiledMessageFlow name="NETMAN_SUBFLOW" type="subflow" deployBarfile="/opt/mdw/bar/PAYBROKER/BILL_PAYMENT/ISO_CLIENT_ADAPTER_FLOW.bar" deployTimestamp="2024-08-10 05:04:26">
+    <ConfigurableProperty uri="NETMAN_SUBFLOW#ADD_HEADER_FAILURE.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="NETMAN_SUBFLOW#ADD_HEADER_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="NETMAN_SUBFLOW#ADD_HEADER_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="NETMAN_SUBFLOW#ADD_HEADER_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="NETMAN_SUBFLOW#ADD_HEADER_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="NETMAN_SUBFLOW#ADD_HEADER_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="NETMAN_SUBFLOW#AFTER_ADD_HEADER.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="NETMAN_SUBFLOW#AFTER_ADD_HEADER.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="NETMAN_SUBFLOW#AFTER_ADD_HEADER.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="NETMAN_SUBFLOW#AFTER_ADD_HEADER.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="NETMAN_SUBFLOW#AFTER_ADD_HEADER.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="NETMAN_SUBFLOW#AFTER_ADD_HEADER.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="NETMAN_SUBFLOW#CHECK_NETSTATUS.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="NETMAN_SUBFLOW#CHECK_NETSTATUS.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="NETMAN_SUBFLOW#CHECK_NETSTATUS.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="NETMAN_SUBFLOW#ECHO_MAPPING_FAILURE.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="NETMAN_SUBFLOW#ECHO_MAPPING_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="NETMAN_SUBFLOW#ECHO_MAPPING_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="NETMAN_SUBFLOW#ECHO_MAPPING_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="NETMAN_SUBFLOW#ECHO_MAPPING_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="NETMAN_SUBFLOW#ECHO_MAPPING_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="NETMAN_SUBFLOW#ECHO_TEST.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="NETMAN_SUBFLOW#ECHO_TEST.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="NETMAN_SUBFLOW#ECHO_TEST.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="NETMAN_SUBFLOW#ECHO_TEST.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="NETMAN_SUBFLOW#ECHO_TEST.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="NETMAN_SUBFLOW#ECHO_TEST.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="NETMAN_SUBFLOW#MQHeader.mqdlhDestQMgrName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="NETMAN_SUBFLOW#MQHeader.mqdlhDestQName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="NETMAN_SUBFLOW#MQHeader.mqmdReplyToQ">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="NETMAN_SUBFLOW#MQHeader.mqmdReplyToQMgr">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="NETMAN_SUBFLOW#SET_CORRELID.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="NETMAN_SUBFLOW#SET_CORRELID.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="NETMAN_SUBFLOW#SET_CORRELID.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="NETMAN_SUBFLOW#SIGN_ON.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="NETMAN_SUBFLOW#SIGN_ON.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="NETMAN_SUBFLOW#SIGN_ON.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="NETMAN_SUBFLOW#SIGN_ON.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="NETMAN_SUBFLOW#SIGN_ON.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="NETMAN_SUBFLOW#SIGN_ON.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="NETMAN_SUBFLOW#SIGN_ON_MAPPING_FAIL.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="NETMAN_SUBFLOW#SIGN_ON_MAPPING_FAIL.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="NETMAN_SUBFLOW#SIGN_ON_MAPPING_FAIL.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="NETMAN_SUBFLOW#SIGN_ON_MAPPING_FAIL.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="NETMAN_SUBFLOW#SIGN_ON_MAPPING_FAIL.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="NETMAN_SUBFLOW#SIGN_ON_MAPPING_FAIL.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="NETMAN_SUBFLOW#SignOnMapping.config" override="db://##${msg.data.adaptor}.SIGN-ON">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="NETMAN_SUBFLOW#echoTestMapping.config" override="db://##${msg.data.adaptor}.ECHO-TEST">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="NETMAN_SUBFLOW#fail.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="NETMAN_SUBFLOW#fail.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="NETMAN_SUBFLOW#fail.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="NETMAN_SUBFLOW#fail.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="NETMAN_SUBFLOW#fail.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="NETMAN_SUBFLOW#fail.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="NETMAN_SUBFLOW#remapping-sign-on.config" override="db://##${msg.data.destination==null?msg.data.source.&quot;!value&quot;:msg.data.destination.&quot;!value&quot;}.SIGN-ON">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="NETMAN_SUBFLOW#resend.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="NETMAN_SUBFLOW#resend.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="NETMAN_SUBFLOW#resend.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="NETMAN_SUBFLOW#resend.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="NETMAN_SUBFLOW#resend.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="NETMAN_SUBFLOW#resend.xpath4">
+    </ConfigurableProperty>
+  </CompiledMessageFlow>
+  <CompiledMessageFlow name="STORE_PAY_BILLER_REQ" type="subflow" deployBarfile="/opt/mdw/bar/PAYBROKER/BILL_PAYMENT/ISO_CLIENT_ADAPTER_FLOW.bar" deployTimestamp="2024-08-10 05:04:26">
+    <ConfigurableProperty uri="STORE_PAY_BILLER_REQ#ADD_MQHEADER_AFTER.mqdlhDestQMgrName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_BILLER_REQ#ADD_MQHEADER_AFTER.mqdlhDestQName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_BILLER_REQ#ADD_MQHEADER_AFTER.mqmdReplyToQ" override="Inherit">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_BILLER_REQ#ADD_MQHEADER_AFTER.mqmdReplyToQMgr" override="Inherit">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_BILLER_REQ#ADD_MQHEADER_AFTER_LOG_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_BILLER_REQ#ADD_MQHEADER_AFTER_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_BILLER_REQ#ADD_MQHEADER_AFTER_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_BILLER_REQ#ADD_MQHEADER_AFTER_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_BILLER_REQ#ADD_MQHEADER_AFTER_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_BILLER_REQ#ADD_MQHEADER_AFTER_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_BILLER_REQ#ADD_MQHEADER_AFTER_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_BILLER_REQ#ADD_MQHEADER_AFTER_LOG_OUT.type" override="Root">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_BILLER_REQ#ADD_MQHEADER_AFTER_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_BILLER_REQ#ADD_MQHEADER_AFTER_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_BILLER_REQ#ADD_MQHEADER_AFTER_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_BILLER_REQ#ADD_MQHEADER_AFTER_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_BILLER_REQ#ADD_MQHEADER_BEFORE.mqdlhDestQMgrName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_BILLER_REQ#ADD_MQHEADER_BEFORE.mqdlhDestQName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_BILLER_REQ#ADD_MQHEADER_BEFORE.mqmdReplyToQ" override="Inherit">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_BILLER_REQ#ADD_MQHEADER_BEFORE.mqmdReplyToQMgr" override="Inherit">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_BILLER_REQ#ADD_MQHEADER_BEFORE_LOG_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_BILLER_REQ#ADD_MQHEADER_BEFORE_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_BILLER_REQ#ADD_MQHEADER_BEFORE_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_BILLER_REQ#ADD_MQHEADER_BEFORE_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_BILLER_REQ#ADD_MQHEADER_BEFORE_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_BILLER_REQ#ADD_MQHEADER_BEFORE_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_BILLER_REQ#ADD_MQHEADER_BEFORE_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_BILLER_REQ#ADD_MQHEADER_BEFORE_LOG_OUT.type" override="Root">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_BILLER_REQ#ADD_MQHEADER_BEFORE_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_BILLER_REQ#ADD_MQHEADER_BEFORE_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_BILLER_REQ#ADD_MQHEADER_BEFORE_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_BILLER_REQ#ADD_MQHEADER_BEFORE_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_BILLER_REQ#PAY_BILLER_REQ.AddRequestToGroup">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_BILLER_REQ#PAY_BILLER_REQ.GroupRequestFolderName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_BILLER_REQ#PAY_BILLER_REQ.GroupRequestTimeout">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_BILLER_REQ#PAY_BILLER_REQ.SSLCertificateLabel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_BILLER_REQ#PAY_BILLER_REQ.SSLCipherSpec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_BILLER_REQ#PAY_BILLER_REQ.SSLPeerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_BILLER_REQ#PAY_BILLER_REQ.channelName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_BILLER_REQ#PAY_BILLER_REQ.connection">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_BILLER_REQ#PAY_BILLER_REQ.destinationQueueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_BILLER_REQ#PAY_BILLER_REQ.listenerPortNumber">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_BILLER_REQ#PAY_BILLER_REQ.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_BILLER_REQ#PAY_BILLER_REQ.queueManagerHostname">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_BILLER_REQ#PAY_BILLER_REQ.queueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_BILLER_REQ#PAY_BILLER_REQ.queueName" override="PAY_BILLER_REQ">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_BILLER_REQ#PAY_BILLER_REQ.replyToQ">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_BILLER_REQ#PAY_BILLER_REQ.replyToQMgr">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_BILLER_REQ#PAY_BILLER_REQ.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_BILLER_REQ#PAY_BILLER_REQ.securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_BILLER_REQ#PAY_BILLER_REQ.useSSL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_BILLER_REQ#PAY_BILLER_REQ.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_BILLER_REQ#PAY_BILLER_REQ_LOG_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_BILLER_REQ#PAY_BILLER_REQ_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_BILLER_REQ#PAY_BILLER_REQ_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_BILLER_REQ#PAY_BILLER_REQ_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_BILLER_REQ#PAY_BILLER_REQ_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_BILLER_REQ#PAY_BILLER_REQ_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_BILLER_REQ#PAY_BILLER_REQ_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_BILLER_REQ#PAY_BILLER_REQ_LOG_OUT.type" override="None">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_BILLER_REQ#PAY_BILLER_REQ_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_BILLER_REQ#PAY_BILLER_REQ_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_BILLER_REQ#PAY_BILLER_REQ_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_BILLER_REQ#PAY_BILLER_REQ_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+  </CompiledMessageFlow>
+</Broker>

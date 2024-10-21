@@ -1,0 +1,237 @@
+BROKER SCHEMA gen.subflow
+DECLARE delayTime SHARED INTEGER 10;
+
+CREATE COMPUTE MODULE INQUIRY_SET_TIMEOUT
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot = InputRoot;
+		DECLARE OutputTimestamp TIMESTAMP CURRENT_TIMESTAMP + CAST((delayTime + 1) AS INTERVAL SECOND);
+		SET OutputLocalEnvironment.variables.TimerControl.Action = 'SET';
+		SET OutputLocalEnvironment.variables.TimerControl.Identifier = CAST(InputRoot.MQMD.CorrelId AS CHARACTER CCSID 1208);
+		SET OutputLocalEnvironment.variables.TimerControl.StartDate = 'TODAY';
+		SET OutputLocalEnvironment.variables.TimerControl.StartTime = CAST(OutputTimestamp AS TIME);
+		SET OutputLocalEnvironment.variables.TimerControl.IgnoreMissed = TRUE;
+		SET OutputLocalEnvironment.variables.TimerControl.AllowOverwrite = TRUE;
+		SET OutputLocalEnvironment.variables.TimerControl.Count = 1;
+--		PROPAGATE TO TERMINAL 'out1';
+--		
+--		SET OutputRoot = InputRoot;
+--		PROPAGATE TO TERMINAL 'out2';
+		RETURN TRUE;
+	END;
+
+	CREATE PROCEDURE CopyMessageHeaders() BEGIN
+		DECLARE I INTEGER 1;
+		DECLARE J INTEGER;
+		SET J = CARDINALITY(InputRoot.*[]);
+		WHILE I < J DO
+			SET OutputRoot.*[I] = InputRoot.*[I];
+			SET I = I + 1;
+		END WHILE;
+	END;
+
+	CREATE PROCEDURE CopyEntireMessage() BEGIN
+		SET OutputRoot = InputRoot;
+	END;
+END MODULE;
+
+
+CREATE COMPUTE MODULE INQUIRY_CANCEL_TO
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot = InputRoot;
+		SET OutputLocalEnvironment.variables.TimerControl.Action = 'CANCEL';
+		SET OutputLocalEnvironment.variables.TimerControl.Identifier = CAST(InputRoot.MQMD.CorrelId AS CHARACTER CCSID 1208);
+--		PROPAGATE TO TERMINAL 'out1';
+--		SET OutputRoot = InputRoot;
+--		PROPAGATE TO TERMINAL 'out2';
+		RETURN TRUE;
+	END;
+
+	CREATE PROCEDURE CopyMessageHeaders() BEGIN
+		DECLARE I INTEGER 1;
+		DECLARE J INTEGER;
+		SET J = CARDINALITY(InputRoot.*[]);
+		WHILE I < J DO
+			SET OutputRoot.*[I] = InputRoot.*[I];
+			SET I = I + 1;
+		END WHILE;
+	END;
+
+	CREATE PROCEDURE CopyEntireMessage() BEGIN
+		SET OutputRoot = InputRoot;
+	END;
+END MODULE;
+
+
+CREATE COMPUTE MODULE INQUIRY_CREATE_TIMOUT_RESP
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		CALL CopyMessageHeaders();
+		DECLARE req REFERENCE TO InputRoot.XMLNSC.ns:Inquiry.InquiryRequest;
+		DECLARE res REFERENCE TO OutputRoot.XMLNSC.data.InquiryResponse;
+		CREATE FIELD OutputRoot.XMLNSC.data.InquiryResponse;
+		SET res.responseCode = '68';
+		SET res.additionalData = req.additionalData;
+		SET res.collectingAgentCode = req.collectingAgentCode;
+		SET res.paymentCode = req.paymentCode;
+		SET res.semeter = req.semeter;
+		SET res.studentId = req.studentId;
+		SET res.transDateTime = req.transDateTime;
+		SET res.year = req.year;
+		SET res.signature = req.signature;
+		RETURN TRUE;
+	END;
+
+	CREATE PROCEDURE CopyMessageHeaders() BEGIN
+		DECLARE I INTEGER 1;
+		DECLARE J INTEGER;
+		SET J = CARDINALITY(InputRoot.*[]);
+		WHILE I < J DO
+			SET OutputRoot.*[I] = InputRoot.*[I];
+			SET I = I + 1;
+		END WHILE;
+	END;
+
+	CREATE PROCEDURE CopyEntireMessage() BEGIN
+		SET OutputRoot = InputRoot;
+	END;
+END MODULE;
+
+
+CREATE COMPUTE MODULE INQUIRY_CREATE_FAILED_RESP
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		CALL CopyMessageHeaders();
+		CREATE FIELD OutputRoot.XMLNSC.data.InquiryResponse;
+		DECLARE req REFERENCE TO InputRoot.XMLNSC.ns:Inquiry.InquiryRequest;
+		DECLARE res REFERENCE TO OutputRoot.XMLNSC.data.InquiryResponse;
+		
+		SET res.responseCode = '69';
+		SET res.additionalData = req.additionalData;
+		SET res.collectingAgentCode = req.collectingAgentCode;
+		SET res.paymentCode = req.paymentCode;
+		SET res.semeter = req.semeter;
+		SET res.studentId = req.studentId;
+		SET res.transDateTime = req.transDateTime;
+		SET res.year = req.year;
+		SET res.signature = req.signature;
+		RETURN TRUE;
+	END;
+
+	CREATE PROCEDURE CopyMessageHeaders() BEGIN
+		DECLARE I INTEGER 1;
+		DECLARE J INTEGER;
+		SET J = CARDINALITY(InputRoot.*[]);
+		WHILE I < J DO
+			SET OutputRoot.*[I] = InputRoot.*[I];
+			SET I = I + 1;
+		END WHILE;
+	END;
+
+	CREATE PROCEDURE CopyEntireMessage() BEGIN
+		SET OutputRoot = InputRoot;
+	END;
+END MODULE;
+
+CREATE COMPUTE MODULE INQUIRY_SET_SID
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot = InputRoot;
+		DELETE FIELD OutputLocalEnvironment.param;
+		DELETE FIELD OutputLocalEnvironment.variables;
+		DELETE FIELD OutputLocalEnvironment.WrittenDestination;
+		DELETE FIELD OutputLocalEnvironment.SOAP;
+		DELETE FIELD OutputRoot.HTTPResponseHeader;
+		DELETE FIELD OutputRoot.XMLNSC.ns:InquiryResponse;
+		RETURN TRUE;
+	END;
+
+	CREATE PROCEDURE CopyMessageHeaders() BEGIN
+		DECLARE I INTEGER 1;
+		DECLARE J INTEGER;
+		SET J = CARDINALITY(InputRoot.*[]);
+		WHILE I < J DO
+			SET OutputRoot.*[I] = InputRoot.*[I];
+			SET I = I + 1;
+		END WHILE;
+	END;
+
+	CREATE PROCEDURE CopyEntireMessage() BEGIN
+		SET OutputRoot = InputRoot;
+	END;
+END MODULE;
+
+
+CREATE COMPUTE MODULE INQUIRY_REMOVE_NS
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		CALL CopyMessageHeaders();
+		SET OutputRoot.XMLNSC.data.inquryResult = InputRoot.XMLNSC.ns:inquiryResponse.ns:inquiryResult;
+		RETURN TRUE;
+	END;
+
+	CREATE PROCEDURE CopyMessageHeaders() BEGIN
+		DECLARE I INTEGER 1;
+		DECLARE J INTEGER;
+		SET J = CARDINALITY(InputRoot.*[]);
+		WHILE I < J DO
+			SET OutputRoot.*[I] = InputRoot.*[I];
+			SET I = I + 1;
+		END WHILE;
+	END;
+
+	CREATE PROCEDURE CopyEntireMessage() BEGIN
+		SET OutputRoot = InputRoot;
+	END;
+END MODULE;
+
+
+
+CREATE COMPUTE MODULE INQUIRY_REMOVE_LCLENV
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot = InputRoot;
+		DELETE FIELD OutputLocalEnvironment.variables;
+		RETURN TRUE;
+	END;
+
+	CREATE PROCEDURE CopyMessageHeaders() BEGIN
+		DECLARE I INTEGER 1;
+		DECLARE J INTEGER;
+		SET J = CARDINALITY(InputRoot.*[]);
+		WHILE I < J DO
+			SET OutputRoot.*[I] = InputRoot.*[I];
+			SET I = I + 1;
+		END WHILE;
+	END;
+
+	CREATE PROCEDURE CopyEntireMessage() BEGIN
+		SET OutputRoot = InputRoot;
+	END;
+END MODULE;
+
+
+CREATE COMPUTE MODULE INQUIRY_ADD_MQMD
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot = InputRoot;
+		SET OutputLocalEnvironment = InputLocalEnvironment;
+		SET OutputRoot.MQMD = InputLocalEnvironment.MQMD;
+		RETURN TRUE;
+	END;
+
+	CREATE PROCEDURE CopyMessageHeaders() BEGIN
+		DECLARE I INTEGER 1;
+		DECLARE J INTEGER;
+		SET J = CARDINALITY(InputRoot.*[]);
+		WHILE I < J DO
+			SET OutputRoot.*[I] = InputRoot.*[I];
+			SET I = I + 1;
+		END WHILE;
+	END;
+
+	CREATE PROCEDURE CopyEntireMessage() BEGIN
+		SET OutputRoot = InputRoot;
+	END;
+END MODULE;

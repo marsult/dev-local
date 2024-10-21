@@ -1,0 +1,121 @@
+BROKER SCHEMA GATEWAY
+DECLARE cache SHARED ROW;
+
+CREATE COMPUTE MODULE SET_REQ_SET_REQUEST
+	DECLARE CODE EXTERNAL CHARACTER;
+	DECLARE BACKEND_URL EXTERNAL CHARACTER;
+	DECLARE AUTHMETHOD EXTERNAL CHARACTER;
+	DECLARE TOKEN_URL_OAUTH EXTERNAL CHARACTER;
+	DECLARE SIGN_PRIVATE_KEY EXTERNAL CHARACTER;
+	DECLARE SIGN_VALUE EXTERNAL CHARACTER;
+	DECLARE TOKEN_TYPE EXTERNAL CHARACTER;
+	DECLARE SIGN_ALGORITHM EXTERNAL CHARACTER;
+	DECLARE CONTENT_TYPE EXTERNAL CHARACTER;
+	DECLARE SIGNATURE_NEEDDECODE EXTERNAL CHARACTER;
+	
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputLocalEnvironment = InputLocalEnvironment;
+		SET OutputRoot.JSON.Data.HTTPInputHeader = InputRoot.JSON.Data.HTTPInputHeader;
+		SET OutputLocalEnvironment.OriginalRequest = InputRoot.JSON.Data;
+		DECLARE PASSTHRU BOOLEAN FALSE;
+		DECLARE useCache BOOLEAN FALSE;
+		SET OutputRoot.HTTPRequestHeader = InputRoot.HTTPRequestHeader;
+		SET OutputRoot.HTTPRequestHeader.Accept = '*/*';
+		DECLARE httpheader REFERENCE TO OutputRoot.HTTPRequestHeader;
+		DECLARE httpheaderinput REFERENCE TO InputRoot.HTTPRequestHeader;
+	    SET httpheader."Content-Type" = CONTENT_TYPE;
+	    SET httpheader."User-Agent" = 'BTN-MDW';
+	    SET OutputLocalEnvironment.CurrentTimeStamp = CURRENT_TIMESTAMP;
+	    DECLARE res ROW;
+		SET res.data[] = (SELECT * FROM Database.MWCONFIG.TOKEN_3RD_PARTY AS A WHERE A.CODE = CODE);
+		
+		SET OutputLocalEnvironment.BackupReq.contenttype = CONTENT_TYPE;
+		IF AUTHMETHOD IS NOT NULL AND AUTHMETHOD = 'basic' THEN
+			SET httpheader.Authorization = 'Basic ' || res.data.TOKEN;
+		
+		ELSEIF AUTHMETHOD IS NOT NULL AND AUTHMETHOD = 'oauth.2.0' THEN
+			
+			IF cache.TOKEN.EXPIRY IS NULL OR cache.TOKEN.EXPIRY < CURRENT_TIMESTAMP THEN
+				
+				IF res.data.EXPIRY IS NOT NULL AND res.data.EXPIRY > CURRENT_TIMESTAMP THEN
+					SET OutputLocalEnvironment = InputLocalEnvironment;
+					SET OutputLocalEnvironment.backup.code = CODE;
+					SET OutputLocalEnvironment.backup.HTTPUrl = 'BACKEND_URL';
+					SET httpheader.Authorization = 'Bearer ' || res.data.TOKEN;
+					SET OutputLocalEnvironment.Destination.HTTP.RequestURL = TOKEN_URL_OAUTH;
+					-- Setting Header
+					SET httpheader.Host = SUBSTRING(SUBSTRING(TOKEN_URL_OAUTH AFTER '://') BEFORE '/');	
+	       			SET OutputLocalEnvironment.Cache = cache;
+					TOKEN_LOCK: BEGIN ATOMIC
+						SET cache = res.data;
+					END TOKEN_LOCK;
+					CALL ACE_LIB.logDebug('InputSavedToken'||AUTHMETHOD, InputLocalEnvironment, InputExceptionList, InputRoot);
+					PROPAGATE TO TERMINAL 'out1';
+				
+				ELSE
+					DECLARE TOKENAPP_PASS CHARACTER res.data.TOKEN;
+					SET httpheader = httpheaderinput;	
+					SET httpheader.Host = SUBSTRING(SUBSTRING(BACKEND_URL AFTER '://') BEFORE '/');	
+		        	SET httpheader.Authorization = 'Bearer ' || TOKENAPP_PASS;
+					SET OutputLocalEnvironment.Destination.HTTP.RequestURL = BACKEND_URL;
+					TOKEN_LOCK: BEGIN ATOMIC
+						SET cache = res.data;
+					END TOKEN_LOCK;
+					SET OutputLocalEnvironment.Cache = cache;
+					CALL ACE_LIB.logDebug('InputRequestToken'||AUTHMETHOD, InputLocalEnvironment, InputExceptionList, InputRoot);
+					RETURN TRUE;
+				
+				END IF;
+			
+			ELSE
+				DECLARE CACHE_TOKEN CHARACTER cache.TOKEN.TOKEN;
+				SET OutputLocalEnvironment.Cache = cache;
+				SET OutputRoot.HTTPRequestHeader = InputRoot.HTTPRequestHeader;	
+				SET httpheader.Host = SUBSTRING(SUBSTRING(BACKEND_URL AFTER '://') BEFORE '/');
+		       	SET httpheader.Authorization = 'Bearer ' || CACHE_TOKEN;
+				SET OutputLocalEnvironment.Destination.HTTP.RequestURL = BACKEND_URL;
+				PROPAGATE TO TERMINAL 'out1';
+				CALL ACE_LIB.logDebug('InputSavedToken'||AUTHMETHOD, InputLocalEnvironment, InputExceptionList, InputRoot);
+			
+			END IF;
+		
+		ELSEIF AUTHMETHOD IS NOT NULL AND AUTHMETHOD = 'signature' THEN
+			SET OutputRoot.JSON.Data = InputRoot.JSON.Data;
+			SET OutputLocalEnvironment.BackupReq.key = SIGN_PRIVATE_KEY;
+			SET OutputLocalEnvironment.BackupReq.algorithm = SIGN_ALGORITHM;
+			SET OutputLocalEnvironment.BackupReq.auth = AUTHMETHOD;
+			SET OutputLocalEnvironment.BackupReq.needdecode = SIGNATURE_NEEDDECODE;
+			SET OutputLocalEnvironment.Cache = cache;
+			SET httpheader.Host = SUBSTRING(SUBSTRING(BACKEND_URL AFTER '://') BEFORE '/');
+			DECLARE SIGN CHAR;
+			DECLARE SIGNED CHAR;
+		
+			IF TOKEN_TYPE IS NOT NULL AND TOKEN_TYPE = 'JWT' THEN
+				SET OutputLocalEnvironment.BackupReq.tokentype = TOKEN_TYPE;
+				DECLARE JWT_SIGN_ALGORITHM CHAR 'Hmac'||SIGN_ALGORITHM;
+				DECLARE payloadBlob BLOB ASBITSTREAM(InputRoot.JSON.Data ENCODING InputRoot.Properties.Encoding CCSID InputRoot.Properties.CodedCharSetId);
+				DECLARE PAYLOAD CHAR CAST(payloadBlob AS CHAR CCSID 1208);
+				SET SIGNED = ACE_LIB.generatejwttoken(PAYLOAD, SIGN_PRIVATE_KEY, JWT_SIGN_ALGORITHM);
+								
+			ELSE
+				CALL ACE_LIB.sign(SIGN_PRIVATE_KEY, SIGN_VALUE) INTO SIGNED;
+		
+			END IF;
+		    SET httpheader.Authorization = 'Bearer ' || SIGNED;
+			SET OutputLocalEnvironment.Destination.HTTP.RequestURL = BACKEND_URL;
+			CALL ACE_LIB.logDebug('Input'||AUTHMETHOD||TOKEN_TYPE, InputLocalEnvironment, InputExceptionList, InputRoot);
+		
+		ELSE
+			
+		END IF;
+		IF CONTENT_TYPE = 'text/plain' THEN
+			DELETE FIELD OutputRoot.JSON;
+			DECLARE jsonData CHAR CAST(ASBITSTREAM(InputRoot.JSON.Data, InputRoot.Properties.Encoding, InputRoot.Properties.CodedCharSetId, 'JSON', 'JSON', 'MQSTR') AS CHAR CCSID 1208);
+			DECLARE jsonBlob BLOB CAST(jsonData AS BLOB CCSID 1208);
+			SET OutputRoot.BLOB.BLOB = jsonBlob;
+
+		END IF;
+		END;
+END MODULE;
+

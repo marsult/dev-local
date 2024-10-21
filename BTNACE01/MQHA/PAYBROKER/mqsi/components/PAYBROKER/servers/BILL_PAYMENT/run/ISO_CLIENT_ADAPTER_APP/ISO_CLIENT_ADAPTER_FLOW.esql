@@ -1,0 +1,314 @@
+DECLARE MsgFinReqType SHARED CHARACTER '0200';
+DECLARE MsgFinRespType SHARED CHARACTER '0210';
+DECLARE MsgRevReqType SHARED CHARACTER '0400'; 
+DECLARE MsgRevRespType SHARED CHARACTER '0410';
+DECLARE MsgNetReqType SHARED CHARACTER '0800'; 
+DECLARE MsgNetRespType SHARED CHARACTER '0810';
+
+DECLARE respLinkDown CONSTANT CHARACTER '89';
+DECLARE netStatus SHARED INTEGER 0;
+
+CREATE COMPUTE MODULE ISO_CLIENT_ADAPTER_FLOW_CHECK_NETMSG_RESP
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot = InputRoot;
+		IF InputRoot.XMLNSC.data.body.{bit70} = '201' THEN
+			RETURN TRUE;
+		--ELSEIF InputRoot.XMLNSC.data.body.{bit39} = '00' THEN
+		--	PROPAGATE TO TERMINAL 'out1';
+		END IF;	
+		RETURN FALSE;
+	END;
+END MODULE;
+
+CREATE COMPUTE MODULE ISO_CLIENT_ADAPTER_FLOW_NET_MSG_FAILED
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET netStatus = 0;
+		RETURN TRUE;
+	END;
+END MODULE;
+
+CREATE COMPUTE MODULE ISO_CLIENT_ADAPTER_FLOW_SET_FAILED_IN
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot = InputRoot;
+		IF FIELDTYPE(InputRoot.XMLNSC.data.body.frontOriginal) IS NOT NULL THEN
+			SET OutputRoot.XMLNSC.data = InputRoot.XMLNSC.data.body.frontOriginal;
+			SET OutputRoot.XMLNSC.data.mappingId = 'resp-ln.'||InputRoot.XMLNSC.data.body.frontOriginal.group;
+		ELSE
+			SET OutputRoot.XMLNSC.data.mappingId = 'resp-ln.'||InputRoot.XMLNSC.data.group;
+		END IF;
+		
+		IF STARTSWITH(OutputRoot.XMLNSC.data.body.messageType, '022') THEN
+			SET OutputRoot.XMLNSC.data.body.messageType = '0230';
+		ELSEIF STARTSWITH(OutputRoot.XMLNSC.data.body.messageType, '02') THEN
+			SET OutputRoot.XMLNSC.data.body.messageType = '0210';
+		ELSEIF STARTSWITH(OutputRoot.XMLNSC.data.body.messageType, '04') THEN
+			SET OutputRoot.XMLNSC.data.body.messageType = '0410';
+		ELSE
+			SET OutputRoot.XMLNSC.data.body.messageType = '0810';
+		END IF;
+		SET OutputRoot.XMLNSC.data.body.{bit39} = respLinkDown;
+		SET OutputRoot.MQMD.ReplyToQMgr = '';
+		RETURN TRUE;
+	END;
+END MODULE;
+
+CREATE COMPUTE MODULE ISO_CLIENT_ADAPTER_FLOW_SET_LABEL
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot = InputRoot;
+		SET OutputRoot.XMLNSC.data = InputRoot.XMLNSC.data.request.data;
+		IF InputRoot.XMLNSC.data.request.data.TimeOutCounter IS NOT NULL THEN
+				SET OutputRoot.XMLNSC.data.TimeOutCounter = CAST(InputRoot.XMLNSC.data.request.data.TimeOutCounter AS INTEGER) + 1;
+			ELSE
+				SET OutputRoot.XMLNSC.data.TimeOutCounter = 1;
+			END IF;
+		IF InputRoot.XMLNSC.data.body.messageType = '0210' THEN
+			SET OutputLocalEnvironment.Destination.RouterList.DestinationData[1].labelname = 'resp-reverse';
+		ELSE
+			SET OutputLocalEnvironment.Destination.RouterList.DestinationData[1].labelname = 'repeat';
+		END IF;
+		RETURN TRUE;
+	END;
+END MODULE;
+
+CREATE COMPUTE MODULE ISO_CLIENT_ADAPTER_FLOW_SET_SUSPECT_RESP
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot = InputRoot;
+		SET OutputRoot.XMLNSC.data = InputRoot.XMLNSC.data.body.frontOriginal;
+		SET OutputRoot.XMLNSC.data.body.responseCode = '68';
+		SET OutputRoot.XMLNSC.data.mappingId = 'resp-sp.'||InputRoot.XMLNSC.data.body.frontOriginal.group;
+		SET OutputRoot.MQMD.ReplyToQ = InputRoot.XMLNSC.data.ReplyToQ;
+		SET OutputRoot.MQMD.ReplyToQMgr = '';
+		RETURN TRUE;
+	END;
+END MODULE;
+
+CREATE COMPUTE MODULE ISO_CLIENT_ADAPTER_FLOW_CHECK_MSG
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot = InputRoot;
+		IF InputRoot.XMLNSC.data.body.messageType = '0210' THEN
+			SET OutputLocalEnvironment.Destination.RouterList.DestinationData[1].labelname = 'late-reverse';
+			RETURN TRUE;
+		ELSE
+			RETURN FALSE;
+		END IF;
+	END;
+END MODULE;
+
+CREATE COMPUTE MODULE ISO_CLIENT_ADAPTER_FLOW_SET_ERROR
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot = InputRoot;
+		IF STARTSWITH(InputRoot.XMLNSC.data.body.messageType, '022') THEN
+			SET OutputRoot.XMLNSC.data.body.messageType = '0230';
+		ELSEIF STARTSWITH(InputRoot.XMLNSC.data.body.messageType, '02') THEN
+			SET OutputRoot.XMLNSC.data.body.messageType = MsgFinRespType;
+		ELSEIF STARTSWITH(InputRoot.XMLNSC.data.body.messageType, '04') THEN
+			SET OutputRoot.XMLNSC.data.body.messageType = MsgRevRespType;
+		ELSE
+			SET OutputRoot.XMLNSC.data.body.messageType = MsgNetRespType;
+		END IF;
+		SET OutputRoot.XMLNSC.data.body.{bit39} = '89';
+		SET OutputRoot.XMLNSC.data.code = OutputRoot.XMLNSC.data.body.messageType||'.'||InputRoot.XMLNSC.data.body.{bit3};
+		RETURN TRUE;
+	END;
+END MODULE;
+
+CREATE COMPUTE MODULE ISO_CLIENT_ADAPTER_FLOW_ROUTE
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot = InputRoot;
+		DECLARE msgType CHAR;
+		SET msgType = InputRoot.XMLNSC.data.body.messageType;
+		--DECLARE frontReqMsgType CHAR;
+		--SET frontReqMsgType = InputRoot.XMLNSC.data.body.frontOriginal.body.messageType;
+		
+		IF STARTSWITH(msgType,'04') OR STARTSWITH(msgType,'022') THEN
+			--SET OutputRoot.MQMD.Expiry = -1;
+			--PROPAGATE TO TERMINAL 'out1';
+			PROPAGATE TO TERMINAL 'out2';
+		ELSEIF msgType = MsgNetReqType THEN
+			PROPAGATE TO TERMINAL 'out3';
+		ELSE
+			PROPAGATE TO TERMINAL 'out2';
+		END IF;
+		RETURN TRUE;
+	END;
+END MODULE;
+
+CREATE COMPUTE MODULE ISO_CLIENT_ADAPTER_FLOW_VERIFY_MSG_TYPE
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot = InputRoot;
+		IF (InputRoot.XMLNSC.data.flowType = 'P' OR InputRoot.XMLNSC.data.flowType = 'p') THEN
+			IF STARTSWITH(InputRoot.XMLNSC.data.body.messageType, '020') THEN
+				PROPAGATE TO TERMINAL 'out2';
+			ELSEIF STARTSWITH(InputRoot.XMLNSC.data.body.messageType, '220') THEN
+				IF InputRoot.XMLNSC.data.TimeOutCounter IS NOT NULL THEN
+					SET OutputRoot.XMLNSC.data.TimeOutCounter = CAST(InputRoot.XMLNSC.data.TimeOutCounter AS INTEGER) + 1;
+					RETURN TRUE;
+				ELSE
+					SET OutputRoot.XMLNSC.data.TimeOutCounter = 1;
+					PROPAGATE TO TERMINAL 'out2';
+				END IF;
+			ELSE
+				IF InputRoot.XMLNSC.data.TimeOutCounter IS NOT NULL THEN
+					SET OutputRoot.XMLNSC.data.TimeOutCounter = CAST(InputRoot.XMLNSC.data.TimeOutCounter AS INTEGER) + 1;
+				ELSE
+					SET OutputRoot.XMLNSC.data.TimeOutCounter = 1;
+				END IF;
+				RETURN TRUE;
+			END IF;
+		ELSE
+			PROPAGATE TO TERMINAL 'out1';
+		END IF;
+		RETURN FALSE;
+	END;
+END MODULE;
+
+CREATE COMPUTE MODULE ISO_CLIENT_ADAPTER_FLOW_SET_CORE_QUEUE
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot = InputRoot;
+		IF InputRoot.XMLNSC.data.destinationQueueName IS NOT NULL THEN
+			SET OutputLocalEnvironment.Destination.MQDestinationList.DestinationData.queueName = InputRoot.XMLNSC.data.destinationQueueName;
+		ELSE
+			SET OutputLocalEnvironment.Destination.MQDestinationList.DestinationData.queueName = 'CORE_IN';
+		END IF;
+		SET OutputRoot.XMLNSC.data.body.frontOriginal = InputLocalEnvironment.data;
+		RETURN TRUE;
+	END;
+END MODULE;
+
+CREATE COMPUTE MODULE ISO_CLIENT_ADAPTER_FLOW_SET_SUSPECT
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot = InputRoot;
+		SET OutputRoot.XMLNSC.data = InputRoot.XMLNSC.data.body.frontOriginal;
+		SET OutputRoot.XMLNSC.data.body.responseCode = '68';
+		SET OutputRoot.XMLNSC.data.mappingId = 'resp-sp.'||InputRoot.XMLNSC.data.body.frontOriginal.group;
+		SET OutputRoot.MQMD.ReplyToQ = InputRoot.XMLNSC.data.ReplyToQ;
+		SET OutputRoot.MQMD.ReplyToQMgr = '';
+		RETURN TRUE;
+	END;
+END MODULE;
+
+CREATE COMPUTE MODULE ISO_CLIENT_ADAPTER_FLOW_CHECK_COUNTER
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot = InputRoot;
+		IF InputRoot.XMLNSC.data.TimeOutCounter < 4 THEN
+			RETURN TRUE;
+		END IF;
+		RETURN FALSE;
+	END;
+END MODULE;
+
+CREATE COMPUTE MODULE ISO_CLIENT_ADAPTER_FLOW_SET_TO
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot = InputRoot;
+		IF InputRoot.XMLNSC.data.body.frontOriginal.group IS NOT NULL THEN
+			SET OutputRoot.XMLNSC.data = InputRoot.XMLNSC.data.body.frontOriginal;
+		END IF;
+		IF STARTSWITH(OutputRoot.XMLNSC.data.body.messageType, '022') THEN
+			SET OutputRoot.XMLNSC.data.body.messageType = '0230';
+		ELSEIF STARTSWITH(OutputRoot.XMLNSC.data.body.messageType, '02') THEN
+			SET OutputRoot.XMLNSC.data.body.messageType = '0210';
+		ELSEIF STARTSWITH(OutputRoot.XMLNSC.data.body.messageType, '04') THEN
+			SET OutputRoot.XMLNSC.data.body.messageType = '0410';
+		END IF;
+		SET OutputRoot.XMLNSC.data.mappingId = 'resp-to.'||InputRoot.XMLNSC.data.body.frontOriginal.group;
+		SET OutputRoot.XMLNSC.data.body.responseCode = '68';
+		SET OutputRoot.MQMD.ReplyToQ = InputRoot.XMLNSC.data.ReplyToQ;
+		SET OutputRoot.MQMD.ReplyToQMgr = '';
+		RETURN TRUE;
+	END;
+END MODULE;
+
+CREATE FILTER MODULE ISO_CLIENT_ADAPTER_FLOW_Filter
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		IF Root.XMLNSC.data.isRepeat = 'repeat' AND (Root.XMLNSC.data.request.data.flowType = 'P' OR Root.XMLNSC.data.request.data.flowType = 'p') THEN
+			RETURN TRUE;
+		ELSE
+			RETURN FALSE;
+		END IF;
+	END;
+
+END MODULE;
+
+
+
+
+
+CREATE COMPUTE MODULE ISO_CLIENT_ADAPTER_FLOW_SET_QUEUE
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot = InputRoot;
+		SET OutputRoot.XMLNSC.data.ReplyToQ = InputRoot.MQMD.ReplyToQ;
+		SET OutputRoot.MQMD.ReplyToQMgr = '';
+		SET OutputLocalEnvironment.data = InputRoot.XMLNSC.data;
+		RETURN TRUE;
+	END;
+END MODULE;
+
+CREATE COMPUTE MODULE ISO_CLIENT_ADAPTER_FLOW_CHECK_MSGTYPE
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot = InputRoot;
+		SET OutputRoot.XMLNSC.data.group = InputRoot.XMLNSC.data.request.data.body.frontOriginal.group;
+		IF STARTSWITH(InputRoot.XMLNSC.data.body.messageType,'02') OR  STARTSWITH(InputRoot.XMLNSC.data.body.messageType,'04') THEN
+			SET OutputRoot.XMLNSC.data.mappingId = InputRoot.XMLNSC.data.request.data.body.frontOriginal.group||'.'||
+					InputRoot.XMLNSC.data.request.data.body.frontOriginal.code||'.'||
+					InputRoot.XMLNSC.data.source||'.'||InputRoot.XMLNSC.data.code;
+--			IF OutputRoot.XMLNSC.data.mappingId IS NULL THEN
+--				SET OutputRoot.XMLNSC.data.mappingId = 'core-reverse.'||InputRoot.XMLNSC.data.code||'.'||InputRoot.XMLNSC.data.body.responseCode;
+--			END IF;
+
+			IF CONTAINS(InputRoot.XMLNSC.data.request.data.body.frontOriginal.codex, 'iso') THEN
+				
+			ELSE
+				IF InputRoot.XMLNSC.data.body.responseCode = '00' THEN
+					SET OutputRoot.XMLNSC.data.mappingId = OutputRoot.XMLNSC.data.mappingId||'.resp';
+				ELSE
+					SET OutputRoot.XMLNSC.data = InputRoot.XMLNSC.data.request.data.body.frontOriginal;
+					SET OutputRoot.XMLNSC.data.mappingId = InputRoot.XMLNSC.data.request.data.body.frontOriginal.group||'.failed';
+					--SET OutputRoot.XMLNSC.data.body.statusDescription = InputRoot.XMLNSC.data.body.
+					SET OutputRoot.XMLNSC.data.billerCode=InputRoot.XMLNSC.data.source;
+					SET OutputRoot.XMLNSC.data.body.processingCode = InputRoot.XMLNSC.data.body.processingCode;
+					SET OutputRoot.XMLNSC.data.body.responseCode = InputRoot.XMLNSC.data.body.responseCode;
+				END IF;
+			END IF;
+			
+			IF OutputRoot.XMLNSC.data.mappingId IS NULL THEN
+				SET OutputRoot.XMLNSC.data.mappingId = 'core-reverse.'||InputRoot.XMLNSC.data.source||'.'||InputRoot.XMLNSC.data.code||'.'||SUBSTRING(InputRoot.XMLNSC.data.body.reservedPrivate2 FROM 1 FOR 3)||'.'||InputRoot.XMLNSC.data.body.responseCode;
+				SET OutputRoot.XMLNSC.data.group = 'sms';
+				PROPAGATE TO TERMINAL 'out2';
+				RETURN FALSE;
+			END IF;
+			
+			SET OutputRoot.MQMD.ReplyToQMgr = '';
+			PROPAGATE TO TERMINAL 'out1';
+			RETURN FALSE;
+		ELSE
+			RETURN TRUE;
+		END IF;
+	END;
+END MODULE;
+
+CREATE COMPUTE MODULE ISO_CLIENT_ADAPTER_FLOW_SET_LOCALINV
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot = InputRoot;
+		SET OutputRoot.XMLNSC.data.ReplyToQ = InputRoot.MQMD.ReplyToQ;
+		SET OutputRoot.MQMD.ReplyToQMgr = '';
+		SET OutputLocalEnvironment.data = InputRoot.XMLNSC.data;
+		RETURN TRUE;
+	END;
+END MODULE;

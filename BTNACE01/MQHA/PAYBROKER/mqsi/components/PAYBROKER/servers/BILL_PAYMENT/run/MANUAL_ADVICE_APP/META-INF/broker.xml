@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Broker deployBarfile="/opt/mdw/bar/PAYBROKER/BILL_PAYMENT/MANUAL_ADVICE_BAR.bar" deployTimestamp="2024-08-10 05:04:44">
+  <CompiledApplication>
+    <ConfigurableProperty uri="startMode">
+    </ConfigurableProperty>
+  </CompiledApplication>
+  <CompiledMessageFlow name="WS_MAN_ADVICE_FLOW" deployBarfile="/opt/mdw/bar/PAYBROKER/BILL_PAYMENT/MANUAL_ADVICE_BAR.bar" deployTimestamp="2024-08-10 05:04:44">
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#AFTER_TRANSFORM.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#AFTER_TRANSFORM.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#AFTER_TRANSFORM.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#AFTER_TRANSFORM.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#AFTER_TRANSFORM.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#AFTER_TRANSFORM.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#BEFORE_PUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#BEFORE_PUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#BEFORE_PUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#BEFORE_PUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#BEFORE_PUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#BEFORE_PUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#BEF_REPLY.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#BEF_REPLY.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#BEF_REPLY.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#BEF_REPLY.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#BEF_REPLY.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#BEF_REPLY.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#BILLER_REPLY.SSLCertificateLabel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#BILLER_REPLY.SSLCipherSpec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#BILLER_REPLY.SSLPeerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#BILLER_REPLY.additionalInstances">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#BILLER_REPLY.channelName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#BILLER_REPLY.componentLevel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#BILLER_REPLY.connection">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#BILLER_REPLY.destinationQueueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#BILLER_REPLY.listenerPortNumber">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#BILLER_REPLY.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#BILLER_REPLY.queueManagerHostname">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#BILLER_REPLY.queueName" override="WS.MAN.ADVICE.REPLY">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#BILLER_REPLY.resetBrowseTimeout">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#BILLER_REPLY.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#BILLER_REPLY.securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#BILLER_REPLY.serializationToken">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#BILLER_REPLY.topicProperty">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#BILLER_REPLY.useSSL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#BILLER_REPLY.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#ERROR.logType" override="error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#ERROR1.logType" override="error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#GET_REPLY.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#GET_REPLY.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#GET_REPLY.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#GET_REPLY.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#GET_REPLY.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#GET_REPLY.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#GET_WSREQ1.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#GET_WSREQ1.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#GET_WSREQ1.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#GET_WSREQ1.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#GET_WSREQ1.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#GET_WSREQ1.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#LOG_REQ.logType" override="log">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#LOG_RESP.logType" override="log">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#MQOutput.AddRequestToGroup">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#MQOutput.GroupRequestFolderName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#MQOutput.GroupRequestTimeout">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#MQOutput.SSLCertificateLabel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#MQOutput.SSLCipherSpec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#MQOutput.SSLPeerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#MQOutput.channelName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#MQOutput.connection">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#MQOutput.destinationQueueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#MQOutput.listenerPortNumber">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#MQOutput.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#MQOutput.queueManagerHostname">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#MQOutput.queueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#MQOutput.queueName" override="ISO.ADVICEPASS.IN">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#MQOutput.replyToQ">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#MQOutput.replyToQMgr">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#MQOutput.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#MQOutput.securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#MQOutput.useSSL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#MQOutput.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#MQ_HEADER_ADD.mqdlhDestQMgrName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#MQ_HEADER_ADD.mqdlhDestQName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#MQ_HEADER_ADD.mqmdReplyToQ" override="WS.MAN.ADVICE.REPLY">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#MQ_HEADER_ADD.mqmdReplyToQMgr">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#SOAP Input.additionalInstances">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#SOAP Input.allowQueryWSDL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#SOAP Input.backoutDestination">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#SOAP Input.backoutThreshold">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#SOAP Input.componentLevel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#SOAP Input.connectionFactoryName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#SOAP Input.initialContextFactory">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#SOAP Input.locationJndiBindings">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#SOAP Input.maxClientWaitTime">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#SOAP Input.messageCorrelationIDSelector">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#SOAP Input.messageDeliveryModeSelector">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#SOAP Input.messageIDSelector">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#SOAP Input.messagePrioritySelector">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#SOAP Input.messageRedeliveredSelector">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#SOAP Input.policySet">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#SOAP Input.policySetBindings">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#SOAP Input.propertySelector">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#SOAP Input.securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#SOAP Input.sendProcessingFaultsToFailure">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#SOAP Input.targetService">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#SOAP Input.timeStampSelector">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#SOAP Input.urlSelector" override="/plnManualAdvice">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#SOAP Input.useHTTPS">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#SOAP Input.validateFailureAction">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#SOAP Input.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#SOAP Reply.allowMTOM">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#SOAP Reply.securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#SOAP Reply.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#SOAP_REPLY_FAIL.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#SOAP_REPLY_FAIL.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#SOAP_REPLY_FAIL.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#SOAP_REPLY_FAIL.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#SOAP_REPLY_FAIL.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#SOAP_REPLY_FAIL.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#TRANFORM_RESP.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#TRANFORM_RESP.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#TRANFORM_RESP.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#TRANSFORM_WSREQ.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#TRANSFORM_WSREQ.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#TRANSFORM_WSREQ.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#additionalInstances" override="20">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#commitCount">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#commitInterval">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#consumerPolicySet">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#consumerPolicySetBindings">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#coordinatedTransaction">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#maximumRateMsgsPerSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#monitoringProfile">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#notificationThresholdMsgsPerSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#processingTimeoutAction">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#processingTimeoutSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#providerPolicySet">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#providerPolicySetBindings">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#startInstancesWhenFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#startMode">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_MAN_ADVICE_FLOW#wlmPolicy">
+    </ConfigurableProperty>
+  </CompiledMessageFlow>
+  <CompiledMessageFlow name="gen.MANUAL_ADVICE_SUB_FLOW" type="subflow" deployBarfile="/opt/mdw/bar/PAYBROKER/BILL_PAYMENT/MANUAL_ADVICE_BAR.bar" deployTimestamp="2024-08-10 05:04:44">
+  </CompiledMessageFlow>
+  <CompiledMessageFlow name="gen.MANUAL_ADVICE_FLOW" type="subflow" deployBarfile="/opt/mdw/bar/PAYBROKER/BILL_PAYMENT/MANUAL_ADVICE_BAR.bar" deployTimestamp="2024-08-10 05:04:44">
+  </CompiledMessageFlow>
+</Broker>

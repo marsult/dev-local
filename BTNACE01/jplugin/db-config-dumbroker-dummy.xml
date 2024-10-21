@@ -1,0 +1,65 @@
+<db-config>
+	<url>jdbc:db2://btnmdwdata:50000/dconfig</url>
+	<driver-class>com.ibm.db2.jcc.DB2Driver</driver-class>
+	<username>db2inst1</username>
+	<password>wajFMo2HsNWsRQcLal8Y47jzNMHI+oAu8ywJwIfL9cA=</password>
+	<schema>mwconfig</schema>
+	<c3p0 id="jdbc:db2:">
+		<param id="minPoolSize">5</param>
+		<param id="maxPoolSize">50</param>
+		<param id="timeout">60</param>
+		<param id="idleConnectionTestPeriod">300</param>
+		<param id="maxIdleTime">300</param>
+		<param id="maxIdleTimeExcessConnections">180</param>
+		<param id="preferredTestQuery">select 1 from sysibm.sysdummy1</param>
+	</c3p0>
+	<config-pattern>
+		<!-- If path is not specify, will be included to config -->
+		<!-- If path is specify, only using <include>will be included to config -->
+		<!-- dck = Dummy Core Konven -->
+		<path id="config/clients/client" />
+		<path id="config/codex">
+			<!-- Dummy Core Konven -->
+			<include>\[dsp.*\]</include>
+			<!-- Dummy Artajasa -->
+			<include>\[iso-8583-core-syariah\]</include>
+			<include>\[iso-8583-bi-conn\]</include>
+			<include>\[iso-8583-itmibft\]</include>
+			<include>\[iso-8583-cws\]</include>
+		</path>
+		<path id="config/db" />
+		<path id="config/dbquery" />
+		<path id="config/dtree-map">
+			<!-- Dummy Core Konven -->
+			<include>\[CORE-SYARIAH-CODE\|.*\](\{.*\}|)</include>
+			<include>\[BDS-CODE\|.*\](\{.*\}|)</include>
+			<include>\[DSPRESP-CODE\|.*\](\{.*\}|)</include>
+		</path>
+		<path id="config/host" />
+		<path id="config/mapping">
+			<include>\[.*\]\{.*\[dck\].*\}</include>
+			<include>\[.*\]\{.*\[drs\].*\}</include>
+			<include>\[.*\]\{.*\[core-syariah-itm\].*\}</include>
+			<include>\[.*\]\{.*\[bi-conn\].*\}</include>
+			<include>\[.*\]\{.*\[itm-conn\].*\}</include>
+			<include>\[.*\]\{.*\[ist-syariah-conn\].*\}</include>
+		</path>
+		<path id="config/param-map">
+			<!-- Dummy Core Konven -->
+			<include>\[dsp-scenario-req-codex\|AXISSYSTEMSDNBHD\]</include>
+			<include>\[dsp-scenario-resp-codex\|AXISSYSTEMSDNBHD\]</include>
+			<include>\[dsp-scenario-req-codex\|SSSAAA0123456789\]</include>
+			<include>\[dsp-scenario-resp-codex\|SSSAAA0123456789\]</include>
+		</path>
+		<path id="config/parser" />
+		<path id="config/ports/port">
+			<include>\[dck-13000\]</include>
+			<include>\[core-syariah-itm-30804\]</include>
+			<include>\[bi-conn-8538\]</include>
+			<include>\[itm-conn-9038\]</include>
+			<include>\[ist-syariah-conn-9138\]</include>
+		</path>
+		<path id="config/routing" />
+		<path id="config/rpg-call" />
+	</config-pattern>
+</db-config>

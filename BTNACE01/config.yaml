@@ -1,0 +1,50 @@
+init: true
+queue_manager:
+  - name: DUMBROKER.QM
+    port: 1234
+  - name: ITMBROKER.QM
+    port: 1464
+  - name: ISOBROKER.QM
+    port: 1534
+  - name: PAYBROKER.QM
+    port: 1474
+  - name: SVCBROKER.QM
+    port: 1494
+  - name: SMSBROKER.QM
+    port: 1434
+server_ace:
+  - name: DUMBROKER
+    port: 4234
+    executiongroup:
+      - DUMMY
+  - name: ISOBROKER
+    port: 4534
+    executiongroup:
+      - ISOLOGDB
+      - SYARIAH
+      - KONVEN1
+  - name: ITMBROKER
+    port: 4464
+    executiongroup:
+      - ITMROUTER
+      - ITMITM1
+      - ITMCORE1
+      - ITMLOGDB
+  - name: SMSBROKER
+    port: 4434
+    executiongroup:
+      - SMS
+      - SMSROUTER
+      - SMSISO
+      - SMSMDW1
+      - SMSCORE1
+      - SMSLOGDB
+  - name: PAYBROKER
+    port: 4474
+    executiongroup:
+      - PAYREST1
+  - name: SVCBROKER
+    port: 4494
+    executiongroup:
+      - RESTROUTER
+      - SVCLOGDB

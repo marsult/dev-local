@@ -1,0 +1,12 @@
+---
+brokerDefaultCCSID: '1208'
+brokerUUID: 'e409a8ce-6445-11ef-a194-0a0a0a1b0000'
+defaultQueueManager: 'FNTBROKER.QM'
+MQTTServer: 
+  port: 11889
+NodeHttpListener: 
+  HTTPConnector: 
+    ListenerPort: 7080
+RestAdminListener: 
+  authorizationMode: 'mq'
+  port: 4524

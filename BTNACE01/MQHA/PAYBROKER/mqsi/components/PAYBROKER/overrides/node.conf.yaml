@@ -1,0 +1,12 @@
+---
+brokerDefaultCCSID: '1208'
+brokerUUID: '6b2c3224-53c8-11ef-9575-0a0a0a1b0000'
+defaultQueueManager: 'PAYBROKER.QM'
+MQTTServer: 
+  port: 11887
+NodeHttpListener: 
+  HTTPConnector: 
+    ListenerPort: 7080
+RestAdminListener: 
+  authorizationMode: 'mq'
+  port: 4474

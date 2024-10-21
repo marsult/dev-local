@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<log4j:configuration xmlns:log4j='http://jakarta.apache.org/log4j/'>
+
+	<appender name="file" class="org.apache.log4j.RollingFileAppender">
+		<param name="File" value="/var/mdw/wmb-${broker}-${executionGroup}.log"/>
+		<param name="append" value="true"/>
+		<param name="maximumFileSize" value="10485760"/>
+		<param name="maxBackupIndex" value="9"/>
+		<layout class="org.apache.log4j.TTCCLayout">
+			<param name="DateFormat" value="ISO8601" />
+		</layout>
+	</appender>
+
+	<category name="net">
+		<level value="debug"/>
+	</category>
+
+	<category name="DLOG">
+		<level value="INFO"/>
+	</category>
+
+	<category name="PROXY">
+		<level value="warn"/>
+	</category>
+	
+	<category name="SYSDUMP">
+		<level value="trace"/>
+	</category>
+
+	<category name="SYSLOG">
+		<level value="warn"/>
+	</category>
+
+	<category name="com.mchange">
+		<level value="warn"/>
+	</category>
+
+	<category name="id.co.hanoman.InMessageLog">
+		<level value="info"/>
+	</category>
+
+	<category name="id.co.hanoman.StartStopLog">
+		<level value="debug"/>
+	</category>
+
+	<category name="id.co.hanoman.config.Init">
+		<level value="info"/>
+	</category>
+	
+	<category name="id.co.hanoman.mbplugin.MappingNode">
+		<level value="trace"/>
+	</category>
+	
+	<category name="id.co.hanoman.mbplugin.TCPIPClientInputNode$ConnTask">
+		<level value="debug"/>
+	</category>
+	
+	<root>
+		<priority value="debug" />
+		<appender-ref ref="file"/>
+	</root>
+
+</log4j:configuration>

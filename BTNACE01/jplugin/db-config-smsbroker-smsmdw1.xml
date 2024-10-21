@@ -1,0 +1,107 @@
+<db-config>
+	<url>jdbc:db2://btnmdwdata:50000/mwconfig</url>
+	<driver-class>com.ibm.db2.jcc.DB2Driver</driver-class>
+	<username>db2inst1</username>
+	<password>wajFMo2HsNWsRQcLal8Y47jzNMHI+oAu8ywJwIfL9cA=</password>
+	<schema>mwconfig</schema>
+	<c3p0 id="jdbc:db2:">
+		<param id="minPoolSize">5</param>
+		<param id="maxPoolSize">50</param>
+		<param id="timeout">60</param>
+		<param id="idleConnectionTestPeriod">300</param>
+		<param id="maxIdleTime">300</param>
+		<param id="maxIdleTimeExcessConnections">180</param>
+		<param id="preferredTestQuery">select 1 from sysibm.sysdummy1</param>
+	</c3p0>
+	<config-pattern>
+		<!-- If path is not specify, will be included to config -->
+		<!-- If path is specify, only using <include> will be included to config -->
+		<path id="config/clients/client">
+			<include>\[core-sms\]</include>
+		</path>
+		<path id="config/codex">
+			<include>\[dsp.*\]</include>
+			<include>\[iso-8583-sms\]</include>
+		</path>
+		<path id="config/db">
+			<include>\[CORE_KONVEN_DSP\]</include>
+			<include>\[mwconfig\]</include>
+			<include>\[mwlog\]</include>
+		</path>
+		<path id="config/dbquery">
+			<include>\[get-request.*\]</include>
+			<include>\[sms.*\]</include>
+		</path>
+		<path id="config/dtree-map">
+            <include>\[.*\]\{.*\[core\].*\}</include>
+			<include>\[.*\]\{.*\[sms\].*\}</include>
+			<include>\[.*\]\{.*\[smsmd\].*\}</include>
+			<include>\[sms\](\{.*\}|)</include>
+			<include>\[CHARGES\|sms\](\{.*\}|)</include>
+			<include>\[CHARGES\|sms\|10](\{.*\}|)</include>
+			<include>\[CHARGES\|sms\|30](\{.*\}|)</include>
+			<include>\[.*\]\{.*\[spomd\].*\}</include>
+			<include>\[.*\]\{.*\[smsd\].*\}</include>
+		</path>
+		<path id="config/host" />
+		<path id="config/mapping">
+			<include>\[.*\]\{.*\[core\].*\}</include>
+			<include>\[.*\]\{.*\[sms\].*\}</include>
+			<include>\[.*\]\{.*\[smsd\].*\}</include>
+			<include>\[.*\]\{.*\[smsmd\].*\}</include>
+			<include>\[.*\]\{.*\[semmd\].*\}</include>
+			<include>\[.*\]\{.*\[syariah\].*\}</include>
+			<include>\[.*\]\{.*\[zzzmd\].*\}</include>
+			<include>\[.*\]\{.*\[szzmd\].*\}</include>
+			<include>\[.*\]\{.*\[sbimd\].*\}</include>
+      		<include>\[.*\]\{.*\[svlas\].*\}</include>
+			<include>\[check.res-core.need-reversal\](\{.*\}|)</include>
+			<include>\[req-core.sms.0200.new-mobile.master\](\{.*\}|)</include>
+			<include>\[dsp\](\{.*\}|)</include>
+			<include>\[req-core.sms.core-reverse\](\{.*\}|)</include>
+			<include>\[req-core.sms\](\{.*\}|)</include>
+			<include>\[res-core.sms.0200.error\](\{.*\}|)</include>
+			<include>\[res-core.sms.0400\](\{.*\}|)</include>
+			<include>\[res-core.sms.error\](\{.*\}|)</include>
+			<include>\[res-core.sms\](\{.*\}|)</include>
+            <include>\[res-core.sms-master\](\{.*\}|)</include>
+		</path>
+		<path id="config/param-map">
+			<include>\[Ayopop\|.*\]</include>
+			<include>\[error_map\|Ayopop.*\]</include>	
+			<include>\[account-type\|.*\]</include>
+			<include>\[biller.rc.toReverse\|.*\]</include>
+			<include>\[check.res-core.sms.*\|.*\]</include>
+			<include>\[general-mapping-update.*\|.*\]</include>
+			<include>\[coa-sms\|.*\]</include>
+			<include>\[coa\|.*\]</include>
+			<include>\[core-response-ok\|AXISSYSTEMSDNBHD\..*\]</include>
+			<include>\[device_teller_map\|.*\]</include>
+			<include>\[device_teller_map\|sms.*\]</include>
+			<include>\[dsp-scenario-req-codex\|AXISSYSTEMSDNBHD\]</include>
+			<include>\[dsp-scenario-resp-codex\|AXISSYSTEMSDNBHD\]</include>
+			<include>\[error-f2\|.*\]</include>
+			<include>\[error_map\|core-sms\|.*\]</include>
+			<include>\[parser-type\|.*\]</include>
+			<include>\[sms-konven-code\|.*\]</include> 
+			<include>\[sms\|.*\]</include>
+			<include>\[sms-api-core\|.*\]</include>
+			<include>\[error_map\|bi-.*\]</include>
+      		<include>\[currency-code\|.*\]</include>
+		</path>
+		<path id="config/parser">
+			<include>\[abcs-request\]</include>
+			<include>\[iso\]</include>
+			<include>\[parser-1\]</include>
+			<include>\[payment-parser\]</include>
+		</path>
+		<path id="config/ports/port">
+			<include>\[monitor-.*\]</include>
+			<include>\[sms-.*\]</include>
+		</path>
+		<path id="config/routing">
+			<include>\[sms.*\]</include>
+		</path>
+		<path id="config/rpg-call" />
+	</config-pattern>
+</db-config>

@@ -1,0 +1,49 @@
+
+==============================================
+
+!Fri Jan 14 18:45:45 ICT 2022
+
+Successfully added file UB_APP\UB_CLIENT_FLOW.msgflow to BAR file.
+
+Successfully added file UB_APP\PARSER_DB_ABCS_REQ_FLOW.esql to BAR file.
+
+Successfully added file UB_APP\PARSER_DB_ABCS_REQ_FLOW.subflow to BAR file.
+
+Successfully added file UB_APP\UB_CLIENT.esql to BAR file.
+
+Successfully added file UB_APP\UB_CLIENT_FLOW.esql to BAR file.
+
+Successfully added file UB_APP\application.descriptor to BAR file.
+
+Successfully added file UB_APP\application.descriptor to BAR file.
+
+Successfully added file UB_APP\application.descriptor to BAR file.
+
+Successfully added file UB_APP\application.descriptor to BAR file.
+
+Successfully added file UB_APP\gen\subflow\ECHOTEST.subflow to BAR file.
+
+Successfully added file UB_APP\gen\subflow\INQUIRY.esql to BAR file.
+
+Successfully added file UB_APP\gen\subflow\INQUIRY.esql to BAR file.
+
+Successfully added file UB_APP\gen\subflow\INQUIRY.subflow to BAR file.
+
+Successfully added file UB_APP\gen\subflow\PAYMENT.esql to BAR file.
+
+Successfully added file UB_APP\gen\subflow\PAYMENT.esql to BAR file.
+
+Successfully added file UB_APP\gen\subflow\PAYMENT.esql to BAR file.
+
+Successfully added file UB_APP\gen\subflow\PAYMENT.subflow to BAR file.
+
+Successfully added file UB_APP\gen\subflow\REVERSAL.esql to BAR file.
+
+Successfully added file UB_APP\gen\subflow\REVERSAL.esql to BAR file.
+
+Successfully added file UB_APP\gen\subflow\REVERSAL.subflow to BAR file.
+
+Successfully added file UB_APP\subflow\SOAP_PROCESS_SUBFLOW.esql to BAR file.
+
+Successfully added file UB_APP\subflow\SOAP_PROCESS_SUBFLOW.subflow to BAR file.
+

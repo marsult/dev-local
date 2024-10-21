@@ -1,0 +1,208 @@
+CREATE COMPUTE MODULE ISO_PAYMENT_FLOW_SET_MAPPING_ID
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot = InputRoot;
+		SET OutputRoot.XMLNSC.data.ReplyToQ = InputRoot.MQMD.ReplyToQ;
+		SET OutputRoot.XMLNSC.data.ReplyToQMgr = InputRoot.MQMD.ReplyToQMgr;
+		SET OutputRoot.XMLNSC.data.mappingId = 'req-core.'||InputRoot.XMLNSC.data.group||'.'||InputRoot.XMLNSC.data.code;
+		IF CONTAINS(InputRoot.XMLNSC.data.codex, 'iso') AND InputRoot.XMLNSC.data.body.reservedPrivate2 IS NOT NULL THEN
+			SET OutputRoot.XMLNSC.data.mappingId = OutputRoot.XMLNSC.data.mappingId||'.'||SUBSTRING(InputRoot.XMLNSC.data.body.reservedPrivate2 FROM 1 FOR 3);
+		END IF;
+		RETURN TRUE;
+	END;
+END MODULE;
+
+CREATE COMPUTE MODULE ISO_PAYMENT_FLOW_SET_QUEUE
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot = InputRoot;
+		
+		--set isPayment
+		IF FIELDTYPE(InputRoot.XMLNSC.data.isPayment) IS NOT NULL AND InputRoot.XMLNSC.data.isPayment ='false' THEN
+			SET OutputRoot.XMLNSC.data.isPayment = 'false';
+		ELSE
+			SET OutputRoot.XMLNSC.data.isPayment = 'true';
+		END IF;
+		
+		IF InputRoot.XMLNSC.data.destinationQueueName IS NOT NULL THEN
+		 SET OutputLocalEnvironment.Destination.MQDestinationList.DestinationData.queueName = InputRoot.XMLNSC.data.destinationQueueName;
+		ELSE
+		SET OutputLocalEnvironment.Destination.MQDestinationList.DestinationData.queueName = 'CORE_IN';
+		END IF;
+
+		RETURN TRUE;
+	END;
+END MODULE;
+
+CREATE COMPUTE MODULE ISO_PAYMENT_FLOW_ERROR
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot = InputRoot;
+		PROPAGATE TO TERMINAL 'out1';
+		SET OutputRoot = InputRoot;
+		SET OutputRoot.XMLNSC.data.body.responseCode = '99';
+		SET OutputRoot.XMLNSC.data.body.messageType = '0210';
+		SET OutputRoot.XMLNSC.data.code = OutputRoot.XMLNSC.data.body.messageType||'.'||InputRoot.XMLNSC.data.body.processingCode;
+		RETURN TRUE;
+	END;
+END MODULE;
+
+CREATE COMPUTE MODULE ISO_PAYMENT_FLOW_CHECK_RESP
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot = InputRoot;
+		IF InputRoot.XMLNSC.data.body.responseCode = '00' and NOT STARTSWITH(InputRoot.XMLNSC.data.body.messageType,'04') THEN
+			SET OutputLocalEnvironment.data = InputRoot.XMLNSC.data;
+			RETURN TRUE;
+		ELSE
+			PROPAGATE TO TERMINAL 'out1';
+			RETURN FALSE;
+		END IF;
+	END;
+END MODULE;
+
+CREATE COMPUTE MODULE ISO_PAYMENT_FLOW_SET_SUCCES_RES
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot = InputRoot;
+		SET OutputRoot.XMLNSC.data = InputLocalEnvironment.data;
+		SET OutputRoot.MQMD.ReplyToQMgr = '';
+		RETURN TRUE;
+	END;
+END MODULE;
+
+CREATE FILTER MODULE ISO_PAYMENT_FLOW_Filter
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		IF Root.XMLNSC.data.coreAct = 'reverse' THEN
+			RETURN TRUE;
+		ELSE
+			RETURN FALSE;
+		END IF;
+	END;
+END MODULE;
+
+CREATE COMPUTE MODULE ISO_PAYMENT_FLOW_STORE_RESP
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot = InputRoot;
+		SET OutputLocalEnvironment.data = InputRoot.XMLNSC.data;
+		RETURN TRUE;
+	END;
+END MODULE;
+
+CREATE COMPUTE MODULE ISO_PAYMENT_FLOW_SET_CONTENT
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot = InputRoot;
+		IF InputRoot.XMLNSC.data.type LIKE '%dsp%' THEN
+			SET OutputRoot.XMLNSC.data = InputLocalEnvironment.data;
+		ELSEIF InputRoot.XMLNSC.data.group LIKE '%itm%' and SUBSTRING(InputRoot.XMLNSC.data.body.reservedPrivate2 FROM 1 FOR 3) ='002' THEN
+			SET OutputRoot.XMLNSC.data = InputLocalEnvironment.data;
+			SET OutputRoot.MQMD.ReplyToQ = 'ROUTER_OUT.ITM';
+		ELSE
+			SET OutputRoot.XMLNSC.data.body = InputLocalEnvironment.data.body;
+		END IF;
+		SET OutputRoot.MQMD.ReplyToQMgr = '';
+		RETURN TRUE;
+	END;
+END MODULE;
+
+CREATE COMPUTE MODULE ISO_PAYMENT_FLOW_SET_MAP_ID
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot = InputRoot;
+		IF STARTSWITH(InputRoot.XMLNSC.data.coreRequest.destination,'core-bds-') THEN
+			SET OutputRoot.XMLNSC.data.mappingId = 'core-reverse.core-bds';
+		ELSE
+			SET OutputRoot.XMLNSC.data.mappingId = 'core-reverse.'||InputRoot.XMLNSC.data.coreRequest.destination;
+		END IF;
+		--ELSE
+		-- SET OutputRoot.XMLNSC.data.mappingId = 'core-reverse';
+		--END IF;
+		RETURN TRUE;
+	END;
+END MODULE;
+
+CREATE COMPUTE MODULE PAYMENT_FLOW_CHECK_RESPONSE
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		CALL CopyMessageHeaders();
+		SET OutputRoot.XMLNSC.data = InputRoot.XMLNSC.data.request.data.body.frontOriginal;
+		SET OutputRoot.XMLNSC.data.coreResponse = InputRoot.XMLNSC.data;
+		SET OutputRoot.XMLNSC.data.coreResponse.request = NULL;
+		SET OutputRoot.XMLNSC.data.coreRequest = InputRoot.XMLNSC.data.request.data;
+		SET OutputRoot.XMLNSC.data.coreRequest.body.frontOriginal = NULL;
+		SET OutputLocalEnvironment.isPayment = InputRoot.XMLNSC.data.request.data.isPayment;
+		IF InputRoot.XMLNSC.data.body.responseCode = '000' OR InputRoot.XMLNSC.data.body.responseCode = '00' THEN -- core transaction succes
+			--SET OutputRoot.XMLNSC.data.flowType = 'P';
+			
+			RETURN TRUE;
+		ELSE --ke core gagal
+			SET OutputRoot.XMLNSC.data.reqtimestamp = InputRoot.XMLNSC.data.request.data.body.frontOriginal.reqtimestamp;
+			PROPAGATE TO TERMINAL 'out1';
+			RETURN FALSE;
+		END IF;
+	END;
+	
+	CREATE PROCEDURE CopyMessageHeaders() BEGIN
+		DECLARE I INTEGER 1;
+		DECLARE J INTEGER;
+		SET J = CARDINALITY(InputRoot.*[]);
+		WHILE I < J DO
+			SET OutputRoot.*[I] = InputRoot.*[I];
+			SET I = I + 1;
+		END WHILE;
+	END;
+
+END MODULE;
+
+CREATE COMPUTE MODULE ISO_PAYMENT_FLOW_SET_TIMESTAMP
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot = InputRoot;
+		SET OutputRoot.XMLNSC.data.reqtimestamp = InputRoot.XMLNSC.data.request.data.reqtimestamp;
+		RETURN TRUE;
+	END;
+END MODULE;
+
+CREATE COMPUTE MODULE ISO_PAYMENT_FLOW_REVERSAL_MOVE
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot = InputRoot;
+		IF InputRoot.XMLNSC.data.body.responseCode = '000' AND InputRoot.XMLNSC.data.request.data.body.TLBWC2 = '10' THEN
+			IF InputRoot.XMLNSC.data.request.data.body.dspTransactionCode = '5419' OR InputRoot.XMLNSC.data.request.data.body.dspTransactionCode = '5420' THEN
+				-- SET OutputRoot.XMLNSC.data.body = InputLocalEnvironment.data.body;
+				-- SET OutputRoot.XMLNSC.data.request = InputLocalEnvironment.data.coreRequest.original1.request;
+				-- SET OutputRoot.XMLNSC.data.request.data.original1 = InputLocalEnvironment.data.coreRequest.original1;
+				SET OutputRoot.XMLNSC.data.request.data.body.fullReverse = 'true';
+				-- SET OutputRoot.XMLNSC.data.adaptor = 'core-'||InputRoot.XMLNSC.data.group;
+				SET OutputRoot.MQMD.ReplyToQ = 'MDW_CORE_REPLY';
+				SET OutputRoot.MQMD.MsgId = InputRoot.MQMD.CorrelId;
+				SET OutputRoot.XMLNSC.data.body.responseCode = '999';
+				SET OutputRoot.XMLNSC.data.body.statusMsg = 'not';
+				SET OutputRoot.XMLNSC.data.request.data.body.frontOriginal = InputRoot.XMLNSC.data.request.data.original1;
+				RETURN TRUE;
+			ELSE
+				RETURN FALSE;
+			END IF;
+		ELSE
+			RETURN FALSE;
+		END IF;
+		--RETURN TRUE;
+	END;
+END MODULE;
+
+CREATE COMPUTE MODULE ISO_PAYMENT_FLOW_SET_ISPAYMENT
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot = InputRoot;
+		IF  FIELDTYPE(InputLocalEnvironment.isPayment) IS NOT NULL AND InputLocalEnvironment.isPayment = 'false' THEN
+			SET OutputRoot.XMLNSC.data.isPayment = 'false';
+		ELSE
+			SET OutputRoot.XMLNSC.data.isPayment = 'true';
+		END IF;
+		
+		RETURN TRUE;
+	END;
+END MODULE;

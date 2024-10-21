@@ -1,0 +1,1030 @@
+2024-10-07 19:40:17,487 [main] INFO id.co.hanoman.StartStopLog BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:null) - BUILD [htcp]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [hcx]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [config]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+Java version IBM Corporation  1.8.0_391
+
+2024-10-07 19:40:18,247 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - RELOAD CONFIG [SVCBROKER:LOG_DB:HanomanDatabaseLogNode] NULL
+2024-10-07 19:40:18,255 [main] INFO id.co.hanoman.License BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Hanoman WMB Plugin for Bank Tabungan Negara
+2024-10-07 19:40:18,853 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - getConfig [db://]
+2024-10-07 19:40:18,853 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - getConfig [db://]
+2024-10-07 19:40:18,853 [main] INFO id.co.hanoman.mbplugin.reload BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - LOADING CONFIG [SVCBROKER:LOG_DB:DB_LOG_ERROR]  URL [db://]
+2024-10-07 19:40:18,984 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/clients/client]
+2024-10-07 19:40:18,985 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/codex]
+2024-10-07 19:40:18,985 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/db]
+2024-10-07 19:40:18,985 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path-include [config/db] pattern [config/db\[mwlog\]]
+2024-10-07 19:40:18,985 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/dbquery]
+2024-10-07 19:40:18,985 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/dtree-map]
+2024-10-07 19:40:18,986 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/host]
+2024-10-07 19:40:18,986 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/mapping]
+2024-10-07 19:40:18,986 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/param-map]
+2024-10-07 19:40:18,986 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/parser]
+2024-10-07 19:40:18,987 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/ports/port]
+2024-10-07 19:40:18,987 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/routing]
+2024-10-07 19:40:18,988 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/rpg-call]
+2024-10-07 19:40:19,251 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Creating new db connection
+2024-10-07 19:40:19,418 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Done creating new db connection
+2024-10-07 19:40:19,703 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - done building config
+2024-10-07 19:40:19,716 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Creating new db connection
+2024-10-07 19:40:19,722 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Done creating new db connection
+2024-10-07 19:40:19,749 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG) - RELOAD CONFIG [SVCBROKER:LOG_DB:HanomanDatabaseLogNode] NULL
+2024-10-07 19:40:19,749 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG) - getConfig [db://]
+2024-10-07 19:40:19,749 [main] DEBUG id.co.hanoman.mbplugin.reload BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG) - REUSE CONFIG [SVCBROKER:LOG_DB:DB_LOG]  URL [db://]
+2024-10-07 19:40:19,791 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SVCBROKER:SVCLOGDB:LOG_DB_JSON_FLOW:DB_LOG_JSON) - RELOAD CONFIG [SVCBROKER:LOG_DB_JSON_FLOW:HanomanDatabaseLogNode] NULL
+2024-10-07 19:40:19,792 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:SVCLOGDB:LOG_DB_JSON_FLOW:DB_LOG_JSON) - getConfig [db://]
+2024-10-07 19:40:19,792 [main] DEBUG id.co.hanoman.mbplugin.reload BROKER:(SVCBROKER:SVCLOGDB:LOG_DB_JSON_FLOW:DB_LOG_JSON) - REUSE CONFIG [SVCBROKER:LOG_DB_JSON_FLOW:DB_LOG_JSON]  URL [db://]
+2024-10-08 15:32:31,550 [main] INFO id.co.hanoman.StartStopLog BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:null) - BUILD [htcp]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [hcx]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [config]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+Java version IBM Corporation  1.8.0_391
+
+2024-10-08 15:32:31,896 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - RELOAD CONFIG [SVCBROKER:LOG_DB:HanomanDatabaseLogNode] NULL
+2024-10-08 15:32:31,898 [main] INFO id.co.hanoman.License BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Hanoman WMB Plugin for Bank Tabungan Negara
+2024-10-08 15:32:32,160 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - getConfig [db://]
+2024-10-08 15:32:32,160 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - getConfig [db://]
+2024-10-08 15:32:32,160 [main] INFO id.co.hanoman.mbplugin.reload BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - LOADING CONFIG [SVCBROKER:LOG_DB:DB_LOG_ERROR]  URL [db://]
+2024-10-08 15:32:32,245 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/clients/client]
+2024-10-08 15:32:32,246 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/codex]
+2024-10-08 15:32:32,246 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/db]
+2024-10-08 15:32:32,246 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path-include [config/db] pattern [config/db\[mwlog\]]
+2024-10-08 15:32:32,246 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/dbquery]
+2024-10-08 15:32:32,246 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/dtree-map]
+2024-10-08 15:32:32,246 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/host]
+2024-10-08 15:32:32,246 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/mapping]
+2024-10-08 15:32:32,246 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/param-map]
+2024-10-08 15:32:32,247 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/parser]
+2024-10-08 15:32:32,247 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/ports/port]
+2024-10-08 15:32:32,247 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/routing]
+2024-10-08 15:32:32,247 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/rpg-call]
+2024-10-08 15:32:32,402 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Creating new db connection
+2024-10-08 15:32:32,510 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Done creating new db connection
+2024-10-08 15:32:32,613 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - done building config
+2024-10-08 15:32:32,620 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Creating new db connection
+2024-10-08 15:32:32,624 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Done creating new db connection
+2024-10-08 15:32:32,650 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG) - RELOAD CONFIG [SVCBROKER:LOG_DB:HanomanDatabaseLogNode] NULL
+2024-10-08 15:32:32,651 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG) - getConfig [db://]
+2024-10-08 15:32:32,651 [main] DEBUG id.co.hanoman.mbplugin.reload BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG) - REUSE CONFIG [SVCBROKER:LOG_DB:DB_LOG]  URL [db://]
+2024-10-08 15:32:32,682 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SVCBROKER:SVCLOGDB:LOG_DB_JSON_FLOW:DB_LOG_JSON) - RELOAD CONFIG [SVCBROKER:LOG_DB_JSON_FLOW:HanomanDatabaseLogNode] NULL
+2024-10-08 15:32:32,682 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:SVCLOGDB:LOG_DB_JSON_FLOW:DB_LOG_JSON) - getConfig [db://]
+2024-10-08 15:32:32,683 [main] DEBUG id.co.hanoman.mbplugin.reload BROKER:(SVCBROKER:SVCLOGDB:LOG_DB_JSON_FLOW:DB_LOG_JSON) - REUSE CONFIG [SVCBROKER:LOG_DB_JSON_FLOW:DB_LOG_JSON]  URL [db://]
+2024-10-10 04:12:01,074 [main] INFO id.co.hanoman.StartStopLog BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:null) - BUILD [htcp]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [hcx]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [config]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+Java version IBM Corporation  1.8.0_391
+
+2024-10-10 04:12:01,807 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - RELOAD CONFIG [SVCBROKER:LOG_DB:HanomanDatabaseLogNode] NULL
+2024-10-10 04:12:01,815 [main] INFO id.co.hanoman.License BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Hanoman WMB Plugin for Bank Tabungan Negara
+2024-10-10 04:12:02,423 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - getConfig [db://]
+2024-10-10 04:12:02,424 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - getConfig [db://]
+2024-10-10 04:12:02,424 [main] INFO id.co.hanoman.mbplugin.reload BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - LOADING CONFIG [SVCBROKER:LOG_DB:DB_LOG_ERROR]  URL [db://]
+2024-10-10 04:12:02,569 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/clients/client]
+2024-10-10 04:12:02,570 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/codex]
+2024-10-10 04:12:02,570 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/db]
+2024-10-10 04:12:02,570 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path-include [config/db] pattern [config/db\[mwlog\]]
+2024-10-10 04:12:02,570 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/dbquery]
+2024-10-10 04:12:02,571 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/dtree-map]
+2024-10-10 04:12:02,571 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/host]
+2024-10-10 04:12:02,571 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/mapping]
+2024-10-10 04:12:02,571 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/param-map]
+2024-10-10 04:12:02,571 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/parser]
+2024-10-10 04:12:02,572 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/ports/port]
+2024-10-10 04:12:02,572 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/routing]
+2024-10-10 04:12:02,572 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/rpg-call]
+2024-10-10 04:12:02,869 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Creating new db connection
+2024-10-10 04:12:03,063 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Done creating new db connection
+2024-10-10 04:12:03,362 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - done building config
+2024-10-10 04:12:03,378 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Creating new db connection
+2024-10-10 04:12:03,384 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Done creating new db connection
+2024-10-10 04:12:03,412 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG) - RELOAD CONFIG [SVCBROKER:LOG_DB:HanomanDatabaseLogNode] NULL
+2024-10-10 04:12:03,412 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG) - getConfig [db://]
+2024-10-10 04:12:03,412 [main] DEBUG id.co.hanoman.mbplugin.reload BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG) - REUSE CONFIG [SVCBROKER:LOG_DB:DB_LOG]  URL [db://]
+2024-10-10 04:12:03,463 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SVCBROKER:SVCLOGDB:LOG_DB_JSON_FLOW:DB_LOG_JSON) - RELOAD CONFIG [SVCBROKER:LOG_DB_JSON_FLOW:HanomanDatabaseLogNode] NULL
+2024-10-10 04:12:03,463 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:SVCLOGDB:LOG_DB_JSON_FLOW:DB_LOG_JSON) - getConfig [db://]
+2024-10-10 04:12:03,464 [main] DEBUG id.co.hanoman.mbplugin.reload BROKER:(SVCBROKER:SVCLOGDB:LOG_DB_JSON_FLOW:DB_LOG_JSON) - REUSE CONFIG [SVCBROKER:LOG_DB_JSON_FLOW:DB_LOG_JSON]  URL [db://]
+2024-10-10 12:59:55,436 [main] INFO id.co.hanoman.StartStopLog BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:null) - BUILD [htcp]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [hcx]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [config]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+Java version IBM Corporation  1.8.0_391
+
+2024-10-10 12:59:56,224 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - RELOAD CONFIG [SVCBROKER:LOG_DB:HanomanDatabaseLogNode] NULL
+2024-10-10 12:59:56,233 [main] INFO id.co.hanoman.License BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Hanoman WMB Plugin for Bank Tabungan Negara
+2024-10-10 12:59:56,728 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - getConfig [db://]
+2024-10-10 12:59:56,728 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - getConfig [db://]
+2024-10-10 12:59:56,728 [main] INFO id.co.hanoman.mbplugin.reload BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - LOADING CONFIG [SVCBROKER:LOG_DB:DB_LOG_ERROR]  URL [db://]
+2024-10-10 12:59:56,885 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/clients/client]
+2024-10-10 12:59:56,887 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/codex]
+2024-10-10 12:59:56,887 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/db]
+2024-10-10 12:59:56,887 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path-include [config/db] pattern [config/db\[mwlog\]]
+2024-10-10 12:59:56,887 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/dbquery]
+2024-10-10 12:59:56,887 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/dtree-map]
+2024-10-10 12:59:56,887 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/host]
+2024-10-10 12:59:56,888 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/mapping]
+2024-10-10 12:59:56,888 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/param-map]
+2024-10-10 12:59:56,888 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/parser]
+2024-10-10 12:59:56,889 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/ports/port]
+2024-10-10 12:59:56,889 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/routing]
+2024-10-10 12:59:56,890 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/rpg-call]
+2024-10-10 12:59:57,168 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Creating new db connection
+2024-10-10 12:59:57,338 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Done creating new db connection
+2024-10-10 12:59:57,629 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - done building config
+2024-10-10 12:59:57,642 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Creating new db connection
+2024-10-10 12:59:57,647 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Done creating new db connection
+2024-10-10 12:59:57,679 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG) - RELOAD CONFIG [SVCBROKER:LOG_DB:HanomanDatabaseLogNode] NULL
+2024-10-10 12:59:57,679 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG) - getConfig [db://]
+2024-10-10 12:59:57,679 [main] DEBUG id.co.hanoman.mbplugin.reload BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG) - REUSE CONFIG [SVCBROKER:LOG_DB:DB_LOG]  URL [db://]
+2024-10-10 12:59:57,725 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SVCBROKER:SVCLOGDB:LOG_DB_JSON_FLOW:DB_LOG_JSON) - RELOAD CONFIG [SVCBROKER:LOG_DB_JSON_FLOW:HanomanDatabaseLogNode] NULL
+2024-10-10 12:59:57,725 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:SVCLOGDB:LOG_DB_JSON_FLOW:DB_LOG_JSON) - getConfig [db://]
+2024-10-10 12:59:57,725 [main] DEBUG id.co.hanoman.mbplugin.reload BROKER:(SVCBROKER:SVCLOGDB:LOG_DB_JSON_FLOW:DB_LOG_JSON) - REUSE CONFIG [SVCBROKER:LOG_DB_JSON_FLOW:DB_LOG_JSON]  URL [db://]
+2024-10-10 16:05:35,244 [main] INFO id.co.hanoman.StartStopLog BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:null) - BUILD [htcp]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [hcx]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [config]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+Java version IBM Corporation  1.8.0_391
+
+2024-10-10 16:05:35,619 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - RELOAD CONFIG [SVCBROKER:LOG_DB:HanomanDatabaseLogNode] NULL
+2024-10-10 16:05:35,621 [main] INFO id.co.hanoman.License BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Hanoman WMB Plugin for Bank Tabungan Negara
+2024-10-10 16:05:35,880 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - getConfig [db://]
+2024-10-10 16:05:35,880 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - getConfig [db://]
+2024-10-10 16:05:35,880 [main] INFO id.co.hanoman.mbplugin.reload BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - LOADING CONFIG [SVCBROKER:LOG_DB:DB_LOG_ERROR]  URL [db://]
+2024-10-10 16:05:35,954 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/clients/client]
+2024-10-10 16:05:35,955 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/codex]
+2024-10-10 16:05:35,955 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/db]
+2024-10-10 16:05:35,955 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path-include [config/db] pattern [config/db\[mwlog\]]
+2024-10-10 16:05:35,955 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/dbquery]
+2024-10-10 16:05:35,955 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/dtree-map]
+2024-10-10 16:05:35,955 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/host]
+2024-10-10 16:05:35,955 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/mapping]
+2024-10-10 16:05:35,955 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/param-map]
+2024-10-10 16:05:35,956 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/parser]
+2024-10-10 16:05:35,956 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/ports/port]
+2024-10-10 16:05:35,956 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/routing]
+2024-10-10 16:05:35,956 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/rpg-call]
+2024-10-10 16:05:36,101 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Creating new db connection
+2024-10-10 16:05:36,195 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Done creating new db connection
+2024-10-10 16:05:36,265 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - done building config
+2024-10-10 16:05:36,268 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG) - RELOAD CONFIG [SVCBROKER:LOG_DB:HanomanDatabaseLogNode] NULL
+2024-10-10 16:05:36,268 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG) - getConfig [db://]
+2024-10-10 16:05:36,268 [main] DEBUG id.co.hanoman.mbplugin.reload BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG) - REUSE CONFIG [SVCBROKER:LOG_DB:DB_LOG]  URL [db://]
+2024-10-10 16:05:36,293 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SVCBROKER:SVCLOGDB:LOG_DB_JSON_FLOW:DB_LOG_JSON) - RELOAD CONFIG [SVCBROKER:LOG_DB_JSON_FLOW:HanomanDatabaseLogNode] NULL
+2024-10-10 16:05:36,293 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:SVCLOGDB:LOG_DB_JSON_FLOW:DB_LOG_JSON) - getConfig [db://]
+2024-10-10 16:05:36,293 [main] DEBUG id.co.hanoman.mbplugin.reload BROKER:(SVCBROKER:SVCLOGDB:LOG_DB_JSON_FLOW:DB_LOG_JSON) - REUSE CONFIG [SVCBROKER:LOG_DB_JSON_FLOW:DB_LOG_JSON]  URL [db://]
+2024-10-12 12:57:29,192 [main] INFO id.co.hanoman.StartStopLog BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:null) - BUILD [htcp]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [hcx]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [config]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+Java version IBM Corporation  1.8.0_391
+
+2024-10-12 12:57:29,902 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - RELOAD CONFIG [SVCBROKER:LOG_DB:HanomanDatabaseLogNode] NULL
+2024-10-12 12:57:29,912 [main] INFO id.co.hanoman.License BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Hanoman WMB Plugin for Bank Tabungan Negara
+2024-10-12 12:57:30,684 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - getConfig [db://]
+2024-10-12 12:57:30,684 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - getConfig [db://]
+2024-10-12 12:57:30,684 [main] INFO id.co.hanoman.mbplugin.reload BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - LOADING CONFIG [SVCBROKER:LOG_DB:DB_LOG_ERROR]  URL [db://]
+2024-10-12 12:57:30,806 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/clients/client]
+2024-10-12 12:57:30,807 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/codex]
+2024-10-12 12:57:30,807 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/db]
+2024-10-12 12:57:30,808 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path-include [config/db] pattern [config/db\[mwlog\]]
+2024-10-12 12:57:30,808 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/dbquery]
+2024-10-12 12:57:30,808 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/dtree-map]
+2024-10-12 12:57:30,808 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/host]
+2024-10-12 12:57:30,808 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/mapping]
+2024-10-12 12:57:30,808 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/param-map]
+2024-10-12 12:57:30,809 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/parser]
+2024-10-12 12:57:30,810 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/ports/port]
+2024-10-12 12:57:30,810 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/routing]
+2024-10-12 12:57:30,810 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/rpg-call]
+2024-10-12 12:57:31,107 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Creating new db connection
+2024-10-12 12:57:31,260 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Done creating new db connection
+2024-10-12 12:57:31,564 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - done building config
+2024-10-12 12:57:31,579 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Creating new db connection
+2024-10-12 12:57:31,587 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Done creating new db connection
+2024-10-12 12:57:31,616 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG) - RELOAD CONFIG [SVCBROKER:LOG_DB:HanomanDatabaseLogNode] NULL
+2024-10-12 12:57:31,616 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG) - getConfig [db://]
+2024-10-12 12:57:31,616 [main] DEBUG id.co.hanoman.mbplugin.reload BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG) - REUSE CONFIG [SVCBROKER:LOG_DB:DB_LOG]  URL [db://]
+2024-10-12 12:57:31,673 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SVCBROKER:SVCLOGDB:LOG_DB_JSON_FLOW:DB_LOG_JSON) - RELOAD CONFIG [SVCBROKER:LOG_DB_JSON_FLOW:HanomanDatabaseLogNode] NULL
+2024-10-12 12:57:31,673 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:SVCLOGDB:LOG_DB_JSON_FLOW:DB_LOG_JSON) - getConfig [db://]
+2024-10-12 12:57:31,673 [main] DEBUG id.co.hanoman.mbplugin.reload BROKER:(SVCBROKER:SVCLOGDB:LOG_DB_JSON_FLOW:DB_LOG_JSON) - REUSE CONFIG [SVCBROKER:LOG_DB_JSON_FLOW:DB_LOG_JSON]  URL [db://]
+2024-10-13 15:57:00,068 [main] INFO id.co.hanoman.StartStopLog BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:null) - BUILD [htcp]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [hcx]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [config]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+Java version IBM Corporation  1.8.0_391
+
+2024-10-13 15:57:00,480 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - RELOAD CONFIG [SVCBROKER:LOG_DB:HanomanDatabaseLogNode] NULL
+2024-10-13 15:57:00,483 [main] INFO id.co.hanoman.License BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Hanoman WMB Plugin for Bank Tabungan Negara
+2024-10-13 15:57:00,804 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - getConfig [db://]
+2024-10-13 15:57:00,804 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - getConfig [db://]
+2024-10-13 15:57:00,804 [main] INFO id.co.hanoman.mbplugin.reload BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - LOADING CONFIG [SVCBROKER:LOG_DB:DB_LOG_ERROR]  URL [db://]
+2024-10-13 15:57:00,892 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/clients/client]
+2024-10-13 15:57:00,893 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/codex]
+2024-10-13 15:57:00,893 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/db]
+2024-10-13 15:57:00,893 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path-include [config/db] pattern [config/db\[mwlog\]]
+2024-10-13 15:57:00,893 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/dbquery]
+2024-10-13 15:57:00,893 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/dtree-map]
+2024-10-13 15:57:00,894 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/host]
+2024-10-13 15:57:00,894 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/mapping]
+2024-10-13 15:57:00,894 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/param-map]
+2024-10-13 15:57:00,894 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/parser]
+2024-10-13 15:57:00,895 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/ports/port]
+2024-10-13 15:57:00,895 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/routing]
+2024-10-13 15:57:00,895 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/rpg-call]
+2024-10-13 15:57:01,063 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Creating new db connection
+2024-10-13 15:57:01,171 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Done creating new db connection
+2024-10-13 15:57:01,304 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - done building config
+2024-10-13 15:57:01,311 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Creating new db connection
+2024-10-13 15:57:01,314 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Done creating new db connection
+2024-10-13 15:57:01,333 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG) - RELOAD CONFIG [SVCBROKER:LOG_DB:HanomanDatabaseLogNode] NULL
+2024-10-13 15:57:01,333 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG) - getConfig [db://]
+2024-10-13 15:57:01,333 [main] DEBUG id.co.hanoman.mbplugin.reload BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG) - REUSE CONFIG [SVCBROKER:LOG_DB:DB_LOG]  URL [db://]
+2024-10-13 15:57:01,363 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SVCBROKER:SVCLOGDB:LOG_DB_JSON_FLOW:DB_LOG_JSON) - RELOAD CONFIG [SVCBROKER:LOG_DB_JSON_FLOW:HanomanDatabaseLogNode] NULL
+2024-10-13 15:57:01,363 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:SVCLOGDB:LOG_DB_JSON_FLOW:DB_LOG_JSON) - getConfig [db://]
+2024-10-13 15:57:01,363 [main] DEBUG id.co.hanoman.mbplugin.reload BROKER:(SVCBROKER:SVCLOGDB:LOG_DB_JSON_FLOW:DB_LOG_JSON) - REUSE CONFIG [SVCBROKER:LOG_DB_JSON_FLOW:DB_LOG_JSON]  URL [db://]
+2024-10-15 15:45:10,916 [main] INFO id.co.hanoman.StartStopLog BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:null) - BUILD [htcp]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [hcx]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [config]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+Java version IBM Corporation  1.8.0_391
+
+2024-10-15 15:45:11,236 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - RELOAD CONFIG [SVCBROKER:LOG_DB:HanomanDatabaseLogNode] NULL
+2024-10-15 15:45:11,239 [main] INFO id.co.hanoman.License BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Hanoman WMB Plugin for Bank Tabungan Negara
+2024-10-15 15:45:11,533 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - getConfig [db://]
+2024-10-15 15:45:11,533 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - getConfig [db://]
+2024-10-15 15:45:11,533 [main] INFO id.co.hanoman.mbplugin.reload BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - LOADING CONFIG [SVCBROKER:LOG_DB:DB_LOG_ERROR]  URL [db://]
+2024-10-15 15:45:11,603 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/clients/client]
+2024-10-15 15:45:11,604 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/codex]
+2024-10-15 15:45:11,604 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/db]
+2024-10-15 15:45:11,604 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path-include [config/db] pattern [config/db\[mwlog\]]
+2024-10-15 15:45:11,604 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/dbquery]
+2024-10-15 15:45:11,604 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/dtree-map]
+2024-10-15 15:45:11,604 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/host]
+2024-10-15 15:45:11,604 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/mapping]
+2024-10-15 15:45:11,604 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/param-map]
+2024-10-15 15:45:11,604 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/parser]
+2024-10-15 15:45:11,605 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/ports/port]
+2024-10-15 15:45:11,605 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/routing]
+2024-10-15 15:45:11,605 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/rpg-call]
+2024-10-15 15:45:11,744 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Creating new db connection
+2024-10-15 15:45:11,832 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Done creating new db connection
+2024-10-15 15:45:11,969 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - done building config
+2024-10-15 15:45:11,976 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Creating new db connection
+2024-10-15 15:45:11,979 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Done creating new db connection
+2024-10-15 15:45:11,996 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG) - RELOAD CONFIG [SVCBROKER:LOG_DB:HanomanDatabaseLogNode] NULL
+2024-10-15 15:45:11,996 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG) - getConfig [db://]
+2024-10-15 15:45:11,996 [main] DEBUG id.co.hanoman.mbplugin.reload BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG) - REUSE CONFIG [SVCBROKER:LOG_DB:DB_LOG]  URL [db://]
+2024-10-15 15:45:12,020 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SVCBROKER:SVCLOGDB:LOG_DB_JSON_FLOW:DB_LOG_JSON) - RELOAD CONFIG [SVCBROKER:LOG_DB_JSON_FLOW:HanomanDatabaseLogNode] NULL
+2024-10-15 15:45:12,020 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:SVCLOGDB:LOG_DB_JSON_FLOW:DB_LOG_JSON) - getConfig [db://]
+2024-10-15 15:45:12,021 [main] DEBUG id.co.hanoman.mbplugin.reload BROKER:(SVCBROKER:SVCLOGDB:LOG_DB_JSON_FLOW:DB_LOG_JSON) - REUSE CONFIG [SVCBROKER:LOG_DB_JSON_FLOW:DB_LOG_JSON]  URL [db://]
+2024-10-19 16:59:18,369 [main] INFO id.co.hanoman.StartStopLog BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:null) - BUILD [htcp]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [hcx]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [config]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+Java version IBM Corporation  1.8.0_391
+
+2024-10-19 16:59:18,749 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - RELOAD CONFIG [SVCBROKER:LOG_DB:HanomanDatabaseLogNode] NULL
+2024-10-19 16:59:18,752 [main] INFO id.co.hanoman.License BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Hanoman WMB Plugin for Bank Tabungan Negara
+2024-10-19 16:59:19,056 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - getConfig [db://]
+2024-10-19 16:59:19,056 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - getConfig [db://]
+2024-10-19 16:59:19,056 [main] INFO id.co.hanoman.mbplugin.reload BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - LOADING CONFIG [SVCBROKER:LOG_DB:DB_LOG_ERROR]  URL [db://]
+2024-10-19 16:59:19,130 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/clients/client]
+2024-10-19 16:59:19,130 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/codex]
+2024-10-19 16:59:19,131 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/db]
+2024-10-19 16:59:19,131 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path-include [config/db] pattern [config/db\[mwlog\]]
+2024-10-19 16:59:19,131 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/dbquery]
+2024-10-19 16:59:19,131 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/dtree-map]
+2024-10-19 16:59:19,131 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/host]
+2024-10-19 16:59:19,131 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/mapping]
+2024-10-19 16:59:19,131 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/param-map]
+2024-10-19 16:59:19,131 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/parser]
+2024-10-19 16:59:19,132 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/ports/port]
+2024-10-19 16:59:19,132 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/routing]
+2024-10-19 16:59:19,132 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/rpg-call]
+2024-10-19 16:59:19,266 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Creating new db connection
+2024-10-19 16:59:19,356 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Done creating new db connection
+2024-10-19 16:59:19,446 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - done building config
+2024-10-19 16:59:19,454 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Creating new db connection
+2024-10-19 16:59:19,457 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Done creating new db connection
+2024-10-19 16:59:19,484 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG) - RELOAD CONFIG [SVCBROKER:LOG_DB:HanomanDatabaseLogNode] NULL
+2024-10-19 16:59:19,484 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG) - getConfig [db://]
+2024-10-19 16:59:19,485 [main] DEBUG id.co.hanoman.mbplugin.reload BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG) - REUSE CONFIG [SVCBROKER:LOG_DB:DB_LOG]  URL [db://]
+2024-10-19 16:59:19,513 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SVCBROKER:SVCLOGDB:LOG_DB_JSON_FLOW:DB_LOG_JSON) - RELOAD CONFIG [SVCBROKER:LOG_DB_JSON_FLOW:HanomanDatabaseLogNode] NULL
+2024-10-19 16:59:19,513 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:SVCLOGDB:LOG_DB_JSON_FLOW:DB_LOG_JSON) - getConfig [db://]
+2024-10-19 16:59:19,513 [main] DEBUG id.co.hanoman.mbplugin.reload BROKER:(SVCBROKER:SVCLOGDB:LOG_DB_JSON_FLOW:DB_LOG_JSON) - REUSE CONFIG [SVCBROKER:LOG_DB_JSON_FLOW:DB_LOG_JSON]  URL [db://]
+2024-10-21 02:42:36,312 [main] INFO id.co.hanoman.StartStopLog BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:null) - BUILD [htcp]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [hcx]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [config]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+Java version IBM Corporation  1.8.0_391
+
+2024-10-21 02:42:36,993 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - RELOAD CONFIG [SVCBROKER:LOG_DB:HanomanDatabaseLogNode] NULL
+2024-10-21 02:42:37,000 [main] INFO id.co.hanoman.License BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Hanoman WMB Plugin for Bank Tabungan Negara
+2024-10-21 02:42:37,550 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - getConfig [db://]
+2024-10-21 02:42:37,550 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - getConfig [db://]
+2024-10-21 02:42:37,550 [main] INFO id.co.hanoman.mbplugin.reload BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - LOADING CONFIG [SVCBROKER:LOG_DB:DB_LOG_ERROR]  URL [db://]
+2024-10-21 02:42:37,685 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/clients/client]
+2024-10-21 02:42:37,686 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/codex]
+2024-10-21 02:42:37,686 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/db]
+2024-10-21 02:42:37,686 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path-include [config/db] pattern [config/db\[mwlog\]]
+2024-10-21 02:42:37,686 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/dbquery]
+2024-10-21 02:42:37,686 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/dtree-map]
+2024-10-21 02:42:37,686 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/host]
+2024-10-21 02:42:37,687 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/mapping]
+2024-10-21 02:42:37,687 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/param-map]
+2024-10-21 02:42:37,687 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/parser]
+2024-10-21 02:42:37,688 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/ports/port]
+2024-10-21 02:42:37,688 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/routing]
+2024-10-21 02:42:37,688 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/rpg-call]
+2024-10-21 02:42:37,893 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Creating new db connection
+2024-10-21 02:42:38,019 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Done creating new db connection
+2024-10-21 02:42:38,121 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - done building config
+2024-10-21 02:42:38,125 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG) - RELOAD CONFIG [SVCBROKER:LOG_DB:HanomanDatabaseLogNode] NULL
+2024-10-21 02:42:38,125 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG) - getConfig [db://]
+2024-10-21 02:42:38,125 [main] DEBUG id.co.hanoman.mbplugin.reload BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG) - REUSE CONFIG [SVCBROKER:LOG_DB:DB_LOG]  URL [db://]
+2024-10-21 02:42:38,164 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SVCBROKER:SVCLOGDB:LOG_DB_JSON_FLOW:DB_LOG_JSON) - RELOAD CONFIG [SVCBROKER:LOG_DB_JSON_FLOW:HanomanDatabaseLogNode] NULL
+2024-10-21 02:42:38,164 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:SVCLOGDB:LOG_DB_JSON_FLOW:DB_LOG_JSON) - getConfig [db://]
+2024-10-21 02:42:38,164 [main] DEBUG id.co.hanoman.mbplugin.reload BROKER:(SVCBROKER:SVCLOGDB:LOG_DB_JSON_FLOW:DB_LOG_JSON) - REUSE CONFIG [SVCBROKER:LOG_DB_JSON_FLOW:DB_LOG_JSON]  URL [db://]
+2024-10-21 02:51:15,492 [main] INFO id.co.hanoman.StartStopLog BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:null) - BUILD [htcp]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [hcx]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [config]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+Java version IBM Corporation  1.8.0_391
+
+2024-10-21 02:51:16,105 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - RELOAD CONFIG [SVCBROKER:LOG_DB:HanomanDatabaseLogNode] NULL
+2024-10-21 02:51:16,111 [main] INFO id.co.hanoman.License BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Hanoman WMB Plugin for Bank Tabungan Negara
+2024-10-21 02:51:16,575 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - getConfig [db://]
+2024-10-21 02:51:16,575 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - getConfig [db://]
+2024-10-21 02:51:16,575 [main] INFO id.co.hanoman.mbplugin.reload BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - LOADING CONFIG [SVCBROKER:LOG_DB:DB_LOG_ERROR]  URL [db://]
+2024-10-21 02:51:16,715 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/clients/client]
+2024-10-21 02:51:16,715 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/codex]
+2024-10-21 02:51:16,715 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/db]
+2024-10-21 02:51:16,716 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path-include [config/db] pattern [config/db\[mwlog\]]
+2024-10-21 02:51:16,716 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/dbquery]
+2024-10-21 02:51:16,716 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/dtree-map]
+2024-10-21 02:51:16,716 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/host]
+2024-10-21 02:51:16,716 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/mapping]
+2024-10-21 02:51:16,716 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/param-map]
+2024-10-21 02:51:16,716 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/parser]
+2024-10-21 02:51:16,717 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/ports/port]
+2024-10-21 02:51:16,717 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/routing]
+2024-10-21 02:51:16,717 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/rpg-call]
+2024-10-21 02:51:16,949 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Creating new db connection
+2024-10-21 02:51:17,084 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Done creating new db connection
+2024-10-21 02:51:17,352 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - done building config
+2024-10-21 02:51:17,362 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Creating new db connection
+2024-10-21 02:51:17,366 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG_ERROR) - Done creating new db connection
+2024-10-21 02:51:17,411 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG) - RELOAD CONFIG [SVCBROKER:LOG_DB:HanomanDatabaseLogNode] NULL
+2024-10-21 02:51:17,411 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG) - getConfig [db://]
+2024-10-21 02:51:17,411 [main] DEBUG id.co.hanoman.mbplugin.reload BROKER:(SVCBROKER:SVCLOGDB:LOG_DB:DB_LOG) - REUSE CONFIG [SVCBROKER:LOG_DB:DB_LOG]  URL [db://]
+2024-10-21 02:51:17,449 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SVCBROKER:SVCLOGDB:LOG_DB_JSON_FLOW:DB_LOG_JSON) - RELOAD CONFIG [SVCBROKER:LOG_DB_JSON_FLOW:HanomanDatabaseLogNode] NULL
+2024-10-21 02:51:17,449 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:SVCLOGDB:LOG_DB_JSON_FLOW:DB_LOG_JSON) - getConfig [db://]
+2024-10-21 02:51:17,449 [main] DEBUG id.co.hanoman.mbplugin.reload BROKER:(SVCBROKER:SVCLOGDB:LOG_DB_JSON_FLOW:DB_LOG_JSON) - REUSE CONFIG [SVCBROKER:LOG_DB_JSON_FLOW:DB_LOG_JSON]  URL [db://]

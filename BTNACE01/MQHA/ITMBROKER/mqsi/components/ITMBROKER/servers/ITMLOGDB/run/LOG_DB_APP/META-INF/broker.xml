@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Broker deployBarfile="/opt/mdw/bar/ITMBROKER/ITMLOGDB/LOG_DB_BAR.bar" deployTimestamp="2024-08-09 17:35:05">
+  <CompiledApplication>
+    <ConfigurableProperty uri="startMode">
+    </ConfigurableProperty>
+  </CompiledApplication>
+  <CompiledMessageFlow name="LOG_DB" deployBarfile="/opt/mdw/bar/ITMBROKER/ITMLOGDB/LOG_DB_BAR.bar" deployTimestamp="2024-08-09 17:35:05">
+    <ConfigurableProperty uri="LOG_DB#DB_LOG.logType" override="log">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#DB_LOG_ERROR.logType" override="error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#DB_LOG_ERROR_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#DB_LOG_ERROR_LOG_OUT.type" override="None">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#DB_LOG_ERROR_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#DB_LOG_ERROR_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#DB_LOG_ERROR_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#DB_LOG_ERROR_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#DB_LOG_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#DB_LOG_LOG_OUT.type" override="None">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#DB_LOG_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#DB_LOG_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#DB_LOG_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#DB_LOG_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB.SSLCertificateLabel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB.SSLCipherSpec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB.SSLPeerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB.additionalInstances" override="10">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB.channelName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB.componentLevel" override="node">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB.connection">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB.destinationQueueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB.listenerPortNumber">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB.queueManagerHostname">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB.queueName" override="LOG_DB">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB.resetBrowseTimeout">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB.securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB.serializationToken">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB.topicProperty">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB.useSSL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB_ERROR.SSLCertificateLabel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB_ERROR.SSLCipherSpec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB_ERROR.SSLPeerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB_ERROR.additionalInstances" override="5">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB_ERROR.channelName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB_ERROR.componentLevel" override="node">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB_ERROR.connection">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB_ERROR.destinationQueueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB_ERROR.listenerPortNumber">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB_ERROR.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB_ERROR.queueManagerHostname">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB_ERROR.queueName" override="LOG_DB_ERROR">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB_ERROR.resetBrowseTimeout">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB_ERROR.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB_ERROR.securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB_ERROR.serializationToken">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB_ERROR.topicProperty">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB_ERROR.useSSL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB_ERROR.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB_ERROR_LOG_CATCH.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB_ERROR_LOG_CATCH.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB_ERROR_LOG_CATCH.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB_ERROR_LOG_CATCH.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB_ERROR_LOG_CATCH.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB_ERROR_LOG_CATCH.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB_ERROR_LOG_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB_ERROR_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB_ERROR_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB_ERROR_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB_ERROR_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB_ERROR_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB_ERROR_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB_ERROR_LOG_OUT.type" override="None">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB_ERROR_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB_ERROR_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB_ERROR_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB_ERROR_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB_LOG_CATCH.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB_LOG_CATCH.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB_LOG_CATCH.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB_LOG_CATCH.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB_LOG_CATCH.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB_LOG_CATCH.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB_LOG_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB_LOG_OUT.type" override="None">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#LOG_DB_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#additionalInstances" override="20">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#commitCount">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#commitInterval">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#consumerPolicySet">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#consumerPolicySetBindings">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#coordinatedTransaction">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#maximumRateMsgsPerSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#monitoringProfile">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#notificationThresholdMsgsPerSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#processingTimeoutAction">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#processingTimeoutSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#providerPolicySet">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#providerPolicySetBindings">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#startInstancesWhenFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#startMode">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB#wlmPolicy">
+    </ConfigurableProperty>
+  </CompiledMessageFlow>
+</Broker>

@@ -1,0 +1,155 @@
+
+2024-08-06 14:47:10.552063 Integration server started. Label is: 'SMS'. Integration node is: SMSBROKER
+
+2024-08-06 14:47:23.133315 Integration server started. Label is: 'SMS'. Integration node is: SMSBROKER
+
+2024-08-06 16:00:10.341808 Integration server started. Label is: 'SMS'. Integration node is: SMSBROKER
+
+2024-08-07 00:50:56.633026 Integration server started. Label is: 'SMS'. Integration node is: SMSBROKER
+
+2024-08-07 01:02:24.109699 Integration server started. Label is: 'SMS'. Integration node is: SMSBROKER
+
+2024-08-10 00:35:11.896552 Integration server started. Label is: 'SMS'. Integration node is: SMSBROKER
+
+2024-08-10 00:35:46.799822 Integration server started. Label is: 'SMS'. Integration node is: SMSBROKER
+JVMDUMP034I User requested Heap dump using '/var/mqsi/common/errors/heapdump.SMSBROKER.SMS.20240810.003604.10226.0001.phd' through com.ibm.jvm.Dump.HeapDump
+JVMDUMP010I Heap dump written to /var/mqsi/common/errors/heapdump.SMSBROKER.SMS.20240810.003604.10226.0001.phd
+JVMDUMP034I User requested Heap dump using '/var/mqsi/common/errors/heapdump.SMSBROKER.SMS.20240810.003609.10226.0002.phd' through com.ibm.jvm.Dump.HeapDump
+JVMDUMP010I Heap dump written to /var/mqsi/common/errors/heapdump.SMSBROKER.SMS.20240810.003609.10226.0002.phd
+
+2024-08-10 12:38:57.053369 Integration server started. Label is: 'SMS'. Integration node is: SMSBROKER
+
+2024-08-10 13:44:02.991846 Integration server started. Label is: 'SMS'. Integration node is: SMSBROKER
+
+2024-08-11 00:55:16.232528 Integration server started. Label is: 'SMS'. Integration node is: SMSBROKER
+
+2024-08-11 02:42:35.504534 Integration server started. Label is: 'SMS'. Integration node is: SMSBROKER
+
+2024-08-11 12:29:31.960506 Integration server started. Label is: 'SMS'. Integration node is: SMSBROKER
+
+2024-08-11 15:53:22.416413 Integration server started. Label is: 'SMS'. Integration node is: SMSBROKER
+
+2024-08-11 16:17:03.904066 Integration server started. Label is: 'SMS'. Integration node is: SMSBROKER
+JVMDUMP034I User requested Heap dump using '/var/mqsi/common/errors/heapdump.SMSBROKER.SMS.20240811.162427.6733.0001.phd' through com.ibm.jvm.Dump.HeapDump
+JVMDUMP010I Heap dump written to /var/mqsi/common/errors/heapdump.SMSBROKER.SMS.20240811.162427.6733.0001.phd
+node.js process.on('exit') event emitted with exitCode of 0
+
+2024-08-11 16:26:26.608590 Integration server started. Label is: 'SMS'. Integration node is: SMSBROKER
+JVMDUMP034I User requested Heap dump using '/var/mqsi/common/errors/heapdump.SMSBROKER.SMS.20240811.162830.9004.0001.phd' through com.ibm.jvm.Dump.HeapDump
+JVMDUMP010I Heap dump written to /var/mqsi/common/errors/heapdump.SMSBROKER.SMS.20240811.162830.9004.0001.phd
+node.js process.on('exit') event emitted with exitCode of 0
+
+2024-08-11 16:30:03.930167 Integration server started. Label is: 'SMS'. Integration node is: SMSBROKER
+JVMDUMP034I User requested Heap dump using '/var/mqsi/common/errors/heapdump.SMSBROKER.SMS.20240811.163152.10308.0001.phd' through com.ibm.jvm.Dump.HeapDump
+JVMDUMP010I Heap dump written to /var/mqsi/common/errors/heapdump.SMSBROKER.SMS.20240811.163152.10308.0001.phd
+node.js process.on('exit') event emitted with exitCode of 0
+
+2024-08-11 16:32:33.170947 Integration server started. Label is: 'SMS'. Integration node is: SMSBROKER
+JVMDUMP034I User requested Heap dump using '/var/mqsi/common/errors/heapdump.SMSBROKER.SMS.20240811.163346.11602.0001.phd' through com.ibm.jvm.Dump.HeapDump
+JVMDUMP010I Heap dump written to /var/mqsi/common/errors/heapdump.SMSBROKER.SMS.20240811.163346.11602.0001.phd
+node.js process.on('exit') event emitted with exitCode of 0
+
+2024-08-11 16:35:12.435034 Integration server started. Label is: 'SMS'. Integration node is: SMSBROKER
+JVMDUMP034I User requested Heap dump using '/var/mqsi/common/errors/heapdump.SMSBROKER.SMS.20240811.163610.13028.0001.phd' through com.ibm.jvm.Dump.HeapDump
+JVMDUMP010I Heap dump written to /var/mqsi/common/errors/heapdump.SMSBROKER.SMS.20240811.163610.13028.0001.phd
+node.js process.on('exit') event emitted with exitCode of 0
+
+2024-08-11 16:38:02.412474 Integration server started. Label is: 'SMS'. Integration node is: SMSBROKER
+
+2024-08-12 22:28:47.195261 Integration server started. Label is: 'SMS'. Integration node is: SMSBROKER
+
+2024-08-17 23:50:13.341672 Integration server started. Label is: 'SMS'. Integration node is: SMSBROKER
+JVMDUMP034I User requested Heap dump using '/var/mqsi/common/errors/heapdump.SMSBROKER.SMS.20240817.235046.5680.0001.phd' through com.ibm.jvm.Dump.HeapDump
+JVMDUMP010I Heap dump written to /var/mqsi/common/errors/heapdump.SMSBROKER.SMS.20240817.235046.5680.0001.phd
+node.js process.on('exit') event emitted with exitCode of 0
+
+2024-08-17 23:53:16.832367 Integration server started. Label is: 'SMS'. Integration node is: SMSBROKER
+JVMDUMP034I User requested Heap dump using '/var/mqsi/common/errors/heapdump.SMSBROKER.SMS.20240818.000825.4968.0001.phd' through com.ibm.jvm.Dump.HeapDump
+JVMDUMP010I Heap dump written to /var/mqsi/common/errors/heapdump.SMSBROKER.SMS.20240818.000825.4968.0001.phd
+node.js process.on('exit') event emitted with exitCode of 0
+
+2024-08-20 11:23:38.600923 Integration server started. Label is: 'SMS'. Integration node is: SMSBROKER
+
+2024-08-20 14:43:21.956583 Integration server started. Label is: 'SMS'. Integration node is: SMSBROKER
+
+2024-08-22 02:08:15.382206 Integration server started. Label is: 'SMS'. Integration node is: SMSBROKER
+
+2024-08-22 22:46:51.393558 Integration server started. Label is: 'SMS'. Integration node is: SMSBROKER
+
+2024-08-23 06:26:19.508872 Integration server started. Label is: 'SMS'. Integration node is: SMSBROKER
+
+2024-08-23 06:28:18.230315 Integration server started. Label is: 'SMS'. Integration node is: SMSBROKER
+
+2024-08-25 11:19:10.398160 Integration server started. Label is: 'SMS'. Integration node is: SMSBROKER
+
+2024-08-25 12:00:53.472586 Integration server started. Label is: 'SMS'. Integration node is: SMSBROKER
+
+2024-08-25 12:13:26.598705 Integration server started. Label is: 'SMS'. Integration node is: SMSBROKER
+
+2024-08-25 12:21:45.920192 Integration server started. Label is: 'SMS'. Integration node is: SMSBROKER
+
+2024-08-25 12:26:36.770874 Integration server started. Label is: 'SMS'. Integration node is: SMSBROKER
+
+2024-08-27 11:04:30.599764 Integration server started. Label is: 'SMS'. Integration node is: SMSBROKER
+
+2024-08-31 14:57:26.626856 Integration server started. Label is: 'SMS'. Integration node is: SMSBROKER
+
+2024-09-01 19:52:31.919984 Integration server started. Label is: 'SMS'. Integration node is: SMSBROKER
+
+2024-09-03 02:56:31.826045 Integration server started. Label is: 'SMS'. Integration node is: SMSBROKER
+
+2024-09-03 19:56:55.294365 Integration server started. Label is: 'SMS'. Integration node is: SMSBROKER
+
+2024-09-09 10:37:45.820307 Integration server started. Label is: 'SMS'. Integration node is: SMSBROKER
+
+2024-09-09 11:09:16.161182 Integration server started. Label is: 'SMS'. Integration node is: SMSBROKER
+
+2024-09-11 12:11:42.983166 Integration server started. Label is: 'SMS'. Integration node is: SMSBROKER
+
+2024-09-13 16:46:35.351421 Integration server started. Label is: 'SMS'. Integration node is: SMSBROKER
+
+2024-09-13 20:39:37.323465 Integration server started. Label is: 'SMS'. Integration node is: SMSBROKER
+
+2024-09-16 20:15:16.593034 Integration server started. Label is: 'SMS'. Integration node is: SMSBROKER
+
+2024-09-20 00:13:05.401699 Integration server started. Label is: 'SMS'. Integration node is: SMSBROKER
+
+2024-09-21 06:03:16.173280 Integration server started. Label is: 'SMS'. Integration node is: SMSBROKER
+
+2024-09-22 23:44:29.133129 Integration server started. Label is: 'SMS'. Integration node is: SMSBROKER
+
+2024-09-28 15:21:32.276309 Integration server started. Label is: 'SMS'. Integration node is: SMSBROKER
+
+2024-09-30 04:26:10.895725 Integration server started. Label is: 'SMS'. Integration node is: SMSBROKER
+
+2024-09-30 04:38:09.221351 Integration server started. Label is: 'SMS'. Integration node is: SMSBROKER
+
+2024-09-30 19:59:12.755043 Integration server started. Label is: 'SMS'. Integration node is: SMSBROKER
+
+2024-10-04 00:06:36.620659 Integration server started. Label is: 'SMS'. Integration node is: SMSBROKER
+
+2024-10-05 17:49:17.186175 Integration server started. Label is: 'SMS'. Integration node is: SMSBROKER
+
+2024-10-06 19:37:15.246684 Integration server started. Label is: 'SMS'. Integration node is: SMSBROKER
+
+2024-10-07 19:39:33.058127 Integration server started. Label is: 'SMS'. Integration node is: SMSBROKER
+
+2024-10-08 15:32:13.552933 Integration server started. Label is: 'SMS'. Integration node is: SMSBROKER
+
+2024-10-10 04:10:54.751540 Integration server started. Label is: 'SMS'. Integration node is: SMSBROKER
+
+2024-10-10 12:59:16.797964 Integration server started. Label is: 'SMS'. Integration node is: SMSBROKER
+
+2024-10-10 16:05:17.643237 Integration server started. Label is: 'SMS'. Integration node is: SMSBROKER
+
+2024-10-12 12:56:45.560717 Integration server started. Label is: 'SMS'. Integration node is: SMSBROKER
+
+2024-10-13 15:56:40.632613 Integration server started. Label is: 'SMS'. Integration node is: SMSBROKER
+
+2024-10-15 15:44:54.274273 Integration server started. Label is: 'SMS'. Integration node is: SMSBROKER
+
+2024-10-19 16:59:00.578665 Integration server started. Label is: 'SMS'. Integration node is: SMSBROKER
+
+2024-10-21 02:42:08.875164 Integration server started. Label is: 'SMS'. Integration node is: SMSBROKER
+
+2024-10-21 02:50:11.419019 Integration server started. Label is: 'SMS'. Integration node is: SMSBROKER

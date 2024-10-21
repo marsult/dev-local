@@ -1,0 +1,13 @@
+CREATE COMPUTE MODULE TCPIP_TESTER_FLOW_SET_CORELLATIONID
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot = InputRoot;
+		SET OutputRoot.MQMD.CorrelId = CAST(InputRoot.XMLNSC.data.sid AS BLOB CCSID 1208);
+		IF InputRoot.XMLNSC.data.body.messageType = '0200' AND InputRoot.XMLNSC.data.body.processingCode = '180000' THEN
+			SET OutputRoot.XMLNSC.data.body.flowType = 'P';
+		ELSEIF InputRoot.XMLNSC.data.body.messageType = '0200' AND InputRoot.XMLNSC.data.body.processingCode = '380000' THEN
+			SET OutputRoot.XMLNSC.data.body.flowType = 'I';
+		END IF;
+		RETURN TRUE;
+	END;
+END MODULE;

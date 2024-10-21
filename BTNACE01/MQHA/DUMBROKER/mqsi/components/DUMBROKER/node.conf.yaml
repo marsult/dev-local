@@ -1,0 +1,393 @@
+---
+# ACE Integration Node configuration file
+#
+# Created at 12.0.11.1 - 8b3bf211c6f61e479f1c1a6b3cf26b64-cd0c7608d98bfc3f627f157599ae75cb
+#
+# General notes :
+#  - Integration Node will load node.conf.yaml from directory named after the Integration Node
+#    in the components directory in the workpath:
+#    <workpath> eg: /var/mqsi/
+#     /components
+#      /<node-name>
+#       node.conf.yaml
+#  - To ensure valid YAML avoid any use of TAB characters
+#  - File paths may be taken as absolute, or relative to the integration server's work directory
+#
+# WARNING: Any value specified in the 'overrides/node.conf.yaml' will override values here
+#
+nodeConfVersion: 1
+
+#lilPath: ''                 # A list of paths from where User-defined node LIL/JAR files are loaded. (multiple directories are separated by platform path separator)
+
+#deployMode: 'replace'       # Deploy mode: replace | none | manual
+#scanForKeywords: ''         # A comma-delimited list of file types, selected from
+                             # [esql, xsl, xslt], to scan for keywords.
+
+#defaultQueueManager: ''     # Set non-empty string to specify a default queue manager
+#mqTrustedQueueManager: 'no' # Set to yes to enable MQ communication as a trusted (fastpath) application
+
+#agentTrace: 'none'          # choose 1 of : none|debug|diagnostic
+#agentTraceSize: '1G'        # Set the service trace size
+
+#defaultConfigurationTimeout: '300'           # Default timeout on configuration requests
+
+#resolveUserVariableEnvVars : 'false'           #Resolves values in the 'UserVariables' section of conf.yaml that are of the form  to their environment variable value, which may be an empty string.
+
+# We have a set of mime types that are considered compressible,
+# if this list needs to be modified the following lines can be uncommented
+# and comma-separated types listed in them
+#additionalCompressibleMimeTypes: ''
+#removeCompressibleMimeTypes: ''
+
+RestAdminListener:
+  port: 4414                                  # Set the Admin REST API Port for ACE Web UI and Toolkit. Defaults to 4414
+
+  # Note the Admin REST API will be insecure without the following being set
+  #host: 'localhost'                          # Set the hostname otherwise we bind to the unspecified address
+
+  # SSL Server auth
+  #sslCertificate: '/path/to/serverPKCS.p12'  # Certificate type can be p12 or pem, See comment below
+  #sslPassword: 'adminRestApi::sslpwd'        # See comment below
+
+  # Server TLS configuration
+  minimumTlsVersion: 'TLSv1.2'   # Set the minimum TLS version that will be accepted from clients. Default is 'TLSv1.0', must be one of 'TLSv1.0', 'TLSv1.1', or 'TLSv1.2'
+  # maximumTlsVersion: 'TLSv1.2' # Set the maximum TLS version that will be accepted from clients. Default is 'TLSv1.2', must be one of 'TLSv1.2' or 'TLSv1.3'. This must be at least the value set for minimumTlsVersion otherwise all connections will be rejected.
+  #tlsCipherList: '' # Set the list of acceptable ciphers that should be used in TLS connections. Specify the empty string to use the default cipher list. This should be a colon separated list of upper case cipher names following the OpenSSL cipher list naming convention.
+  #tlsTrace: false  # Enables tracing of TLS handshake to the console.
+
+  #antiClickJackingOption: 'SAMEORIGIN'      # Set the value of the X-Frame-Origin header sent by the web user interface. The default is 'SAMEORIGIN' for security. Set to '' to disable the X-Frame-Origin header.
+
+  # If using a pem certificate:
+    # sslCertificate is the full path to the server certificate key
+    # sslPassword is the full path to the server private key, which must be a standard private key and not an encrypted one
+    # The file names must end with '.pem'
+  # If using p12/pfx certificate:
+    # sslCertificate is the full path to the server certificate store file
+    # sslPassword is the passphrase or alias to the passphrase of the certificate store
+
+  # SSL Client auth
+  #requireClientCert: true                    # Request a certificate from the client
+  #caPath: '/path/to/CA/certificates'         # CA certs, all files at this path will be read
+
+  # Admin Security
+  #  Authentication
+  #  If basicAuth enabled, a maximum of authMaxAttempts authentication attempts are allowed for a client within period authAttemptsDuration
+  #  If authMaxAttempts is reached without success, the client is locked out for period authBlockedDuration
+  #basicAuth: false                                                   # Clients web user name and password will be authenticated when set true
+  webUserPasswordHashAlgorithm: PBKDF2-SHA-512                        # Algorithm used to hash the password for webuser accounts.
+  #authMaxAttempts: 5                                                 # Max allowed authentication attempts
+  #authAttemptsDuration: 300                                          # Authentication attempts period in seconds
+  #authBlockedDuration: 300                                           # Authentication blocked period in seconds
+  #sessionTimeout: 86400                                              # Set the timeout in seconds that REST API/Web UI sessions can be inactive before becoming invalid. Default is 86400 seconds (24 hours).
+  #ldapUrl: ldap[s]://server[:port]/baseDN[?[uid_attr][?[base|sub]]]  # ldap authentication url
+  #ldapBindDn: ldap::adminAuthentication                              # Resource alias or full bind dn
+  #ldapBindPassword: ldap::adminAuthentication                        # Resource alias or bind password
+  #  Authorization
+  #authorizationEnabled: false     # Clients web user role will be authorized when set true
+  #authorizationMode: 'file'       # Set authorization mode. Choose 1 of : ldap, file or mq
+  #ldapAuthorizeUrl: ldap[s]://server[:port]/baseDN[?[attr_name][?[base|sub]][?filter_expr]]  # ldap authorization url
+  #ldapCheckServerIdentity : true  # Disables hostname verification of ldaps server when set to false
+
+Log:
+  #elkLog: false             # Control the publication of BIP messages to an ELK (Elasticsearch, Logstash, Kibana) stack. Set to true or false, default is false.
+  #elkConnections: ''        # Name of the ELK connection to use, for example 'elkConnection1', must be defined in the ELKConnections section below.
+
+AdminLog:
+  #enabled: true                   # Control logging admin log messages. Set to true or false, default is true.
+  # When enabled the maximum amount of disk space required for admin log files is
+  # fileLogRetentionPeriod * fileLogCountDaily * fileLogSize * (1 + number of integration servers managed by the integration node)
+  #fileLog: false                  # Control writing admin log messages to file. Set to true or false, default is false.
+  #fileLogRetentionPeriod: 30      # Sets the number of days to record admin log.
+                                   # After this, old files are deleted as new ones are created. Default is 30 days.
+  #fileLogCountDaily: 10           # Maximum number of admin log files to write per day, default is 10 per day.
+  #fileLogSize: 100                # Maximum size in MB for each admin log file. Maximum size is 2000MB, default size is 100MB.
+  #logServerStartStopDetail: true  # Control logging of detailed application and message flow messages during integration server startup and shutdown, default is true.
+  #addNodeAndServerNameTags: false # Control addition of integration node and integration server name tags to all admin log messages, default is false.
+
+ActivityLog:
+  # Copy and customize the ActivityLogTemplate section for each Activity Log output configuration that you want to create.
+  # Rename the section title 'ActivityLogTemplate' to be the name of your Activity Log output configuration. This name must be unique.
+  #ActivityLogTemplate:
+    #enabled: true                    # The Enabled property defines whether the Activity Log output configuration is in effect. If it is set to false then the output configuration values will be ignored, default is true.
+    #filter: 'RM=JMS'                # The Tag filter property defines a string value consisting of name-value pairs delimited by semi-colons that are used to filter what is written to the configured activity log outputs.
+                                       # For example RM=JMS;MSGFLOW=myflow
+    #minSeverityLevel: INFO           # The Minimum severity of log entries property defines a string value to specify the minimum severity level of messages written to the configured activity Log outputs.
+                                          # Valid values are DEBUG, INFO, WARN and ERROR where ERROR is the highest severity level and DEBUG the lowest.
+    #elkLog: false                    # Enable logging to ELK, default is false.
+    #elkConnections:                  # Name of the ELKConnection for logging to ELK
+    #fileName: /user/logging/activitylog.txt # Name of file to write activity log to. Default is the empty string '' which means logging to file is disabled.
+    #numberOfLogs: 4                  # Number of log files
+    #maxAgeMins: 0                    # Maximum age of log files (minutes)
+    #maxFileSizeMb: 25                # Maximum log file size (MB)
+    #formatEntries: false             # Sets whether the formatted messages are written to the output file, default is false.
+    #consoleLog: false                # Control writing activity log messages to standard out. Set to true or false, default is false.
+    #consoleLogFormat: 'text'         # Control the format of activity log messages written to standard out. Set to idText, text or ibmjson, default is text if unset.
+    #additionalJsonElements: '"name1": "value1", "name2": "value2"'    # When the consoleLogFormat is set to ibmjson the specified json elements are added to the root of the logging object
+
+Security:
+  #dynamicUpdate: false            # If set true, and authorization is enabled in 'file' mode changes to Security.Node or Server Permissions
+                                   # made by editing node.conf.yaml or running mqsichangefileauth will be picked up automatically by the
+                                   # Integration Node, after a few seconds.
+  LdapAuthorizeAttributeToRoleMap:
+    # When 'authorizationMode' is ldap, set the mapping from a matched LDAP authorization attribute, as
+    # configured in 'ldapAuthorizeUrl' to the ACE web user role name
+    # e.g. map the following LDAP group DNs to web user roles 'adminRole', 'viewRole'
+    #'cn=admins,cn=group,ou=ace': 'adminRole'
+    #'cn=monitors,cn=group,ou=ace': 'viewRole'
+  Node:
+    Permissions:
+      # Set Admin Security Authorization file permissions for the Integration Node by web user role using 'read+:write+:execute+' , or 'all+'
+      # '+' grants permission, '-' denies permission
+      # e.g. define the following web user roles 'viewRole' and 'adminRole'
+      #viewRole:  'read+:write-:execute-'
+      #adminRole: 'all+'
+    DataPermissions:
+      # Set Admin Security Authorization file permissions for Record and Replay web user roles using 'read+:write+:execute+' , or 'all+'
+      # '+' grants permission, '-' denies permission. Record and Replay roles also require 'read+' permission to be defined for the
+      # Integration Node in the Permissions section above.
+      # e.g. define the following web user roles 'dataViewer', 'dataReplayer' and 'adminRole'
+      #dataViewer:  'read+:write-:execute-'
+      #dataReplayer: 'read+:write-:execute-'
+      #adminRole: 'all+'
+  Server:
+    # Set Admin Security Authorization file permissions for each named Integration Server
+    # e.g. define the following web user roles 'viewRole' and 'adminRole' for Integration Server 'server01'
+    #server01:
+      #Permissions:
+        #viewRole:  'read+:write-:execute-'
+        #adminRole: 'all+'
+      #DataPermissions:
+        # Set Admin Security Authorization file permissions for Record and Replay web user role using 'read+:write+:execute+' , or 'all+'
+        # '+' grants permission, '-' denies permission.
+        # e.g. define the following web user roles 'dataViewer', 'dataReplayer' and 'adminRole'
+        #dataViewer:  'read+:write-:execute-'
+        #dataReplayer: 'read+:write-:execute+'
+        #adminRole: 'all+'
+
+BrokerRegistry:
+  #brokerKeystoreType: 'JKS'                          # Key store type, can be 'JKS' or 'PKCS12'. Default is JKS.
+  #brokerKeystoreFile: ''                             # Location of the broker key store
+  #brokerKeystorePass: 'brokerKeystore::password'     # Resource alias containing the key store password
+  #brokerTruststoreType: 'JKS'                        # Trust store type, can be 'JKS' or 'PKCS12'. Default is JKS.
+  #brokerTruststoreFile: ''                           # Location of the broker trust store
+  #brokerTruststorePass: 'brokerTruststore::password' # Resource alias containing the trust store password
+  #brokerCRLFileList: ''
+  #brokerEnableCRLDP: ''
+  #allowSSLv3: ''
+  #allowSNI: ''
+  #reenableTransportAlgorithms: ''
+  #reenableCertificateAlgorithms: ''
+  #mqCCDT: ''
+  #httpConnectorPortRange: ''
+  #httpsConnectorPortRange: ''
+  #brokerKerberosConfigFile: ''
+  #brokerKerberosKeytabFile: ''
+  #mqKeyRepository: ''
+
+MQTTServer:
+  #enabled: true                              # Enables the MQTT server
+  #port: 11883                                # Sets the port for the MQTT server
+
+NodeHttpListener:
+  #startListener: true                   # Enables the Integration Node listener
+  #trace: 'none'                         # choose 1 of : none|service|diagnostic
+  #traceSize: '1G'                       # Set the service trace size
+
+  HTTPConnector:
+    ListenerPort: 7080            # Set non-zero to set a specific port, defaults to 7080
+    #ListenerAddress: '0.0.0.0'   # Set the IP address for the listener to listen on. Default is to listen on all addresses
+    #AutoRespondToHTTPHEADRequests: false # Automatically respond to HTTP HEAD requests without invoking the message flow. Set to true or false, default is false.
+    #HealthCheckRespondToGET: false # Respond to HTTP "GET /" as well as "HEAD /". Set to true or false; default is false.
+    #ServerName: ''               # Set the value to be returned in the 'Server' HTTP header.
+    #CORSEnabled: false           # Set the value to true to make the listener respond to valid HTTP CORS requests
+    #CORSAllowOrigins: '*'
+    #CORSAllowCredentials: false
+    #CORSExposeHeaders: 'Content-Type'
+    #CORSMaxAge: -1
+    #CORSAllowMethods: 'GET,HEAD,POST,PUT,PATCH,DELETE,OPTIONS'
+    #CORSAllowHeaders: 'Accept,Accept-Language,Content-Language,Content-Type,Authorization'
+    #MaxHeaderSize: 8192          # Set the maximum size for individual inbound HTTP headers. If this limit is exceeded then requests will be rejected with a 413 Entity Too Large error
+
+  HTTPSConnector:
+    ListenerPort: 7083               # Set non-zero to set a specific port, defaults to 7083
+    #ListenerAddress: '0.0.0.0'      # Set the IP address for the listener to listen on. Default is to listen on all addresses
+    #ReqClientAuth: true             # Controls whether to request for client certificate during tls handshake.
+    #RejectUnauthorizedClient: true  # Controls whether to allow connection without client certificate when ReqClientAuth is set.
+    #KeyAlias: ''
+    #KeyPassword: 'P4s5w0rd'         # Set the password or alias to the password of the key
+    #KeystoreFile: '/path/to/keystore.jks'
+    #KeystorePassword: 'P4s5w0rd'    # Set the password or alias to the password of the keystore
+    #KeystoreType: 'JKS'             # Set the key store type, can be 'JKS' or 'PKCS12'. Default is JKS.
+    #TruststoreFile: /path/tp/truststore.jks
+    #TruststorePassword: 'P4s5w0rd'  # Set the password or alias to the password of the keystore
+    #TruststoreType: 'JKS'           # Set the truststore type, can be 'JKS', 'PEM' or 'PKCS12'. Default is JKS.
+    #CipherSpec: ''                  # Comma-separated list of allowable ciphers. IANA cipher names are accepted.
+                                     # Example: 'TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA,TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384'.
+    #AutoRespondToHTTPHEADRequests: false # Automatically respond to HTTP HEAD requests without invoking the message flow. Set to true or false, default is false.
+    #HealthCheckRespondToGET: false # Respond to HTTP "GET /" as well as "HEAD /". Set to true or false; default is false.
+    #ServerName: ''                  # Set the value to be returned in the 'Server' HTTP header.
+    #CORSEnabled: false              # Set the value to true to make the listener respond to valid HTTP CORS requests
+    #CORSAllowOrigins: '*'
+    #CORSAllowCredentials: false
+    #CORSExposeHeaders: 'Content-Type'
+    #CORSMaxAge: -1
+    #CORSAllowMethods: 'GET,HEAD,POST,PUT,PATCH,DELETE,OPTIONS'
+    #CORSAllowHeaders: 'Accept,Accept-Language,Content-Language,Content-Type,Authorization'
+    #AllowRenegotiation: true        # Controls whether renegotiation of connections is allowed when using TLSv1.2 and earlier.
+    #MaxHeaderSize: 8192          # Set the maximum size for individual inbound HTTP headers. If this limit is exceeded then requests will be silently rejected
+Defaults:
+  Policies:
+    #HTTPReply: 'HTTPReplyWithCompression'  # Default HTTPReply node policy. Uncomment to compress messages with the following
+                                            # properties on all HTTPReply nodes:
+                                            #   - Compress all messages that have a compressible Content-Type
+                                            #   - Compress messages that are no smaller than 1024 bytes
+
+Events:
+  OperationalEvents: # Message flow and Resource statistics plus Workload management
+    MQ:
+      #policy: ''               # Specify a {policy project}:policy if not using  'defaultQueueManager'
+      enabled: true             # Set true or false, default false
+      #format: ''               # Set string or none
+      #publishRetryInterval: 0  # Set the retry interval (in milliseconds), to pause all publications and retry, when publication failures are causing serious delay to the transaction.
+    MQTT:
+      #policy: ''               # Specify a {policy project}:policy if not using  'default MQTTServer'
+      enabled: true             # Set true or false, default false
+      #publishRetryInterval: 0  # Set the retry interval (in milliseconds), to pause all publications and retry, when publication failures are causing serious delay to the transaction.
+  BusinessEvents: # Monitoring events
+    MQ:
+      #policy: ''               # Specify a {policy project}:policy if not using  'defaultQueueManager'
+      enabled: true             # Set true or false, default false
+      #format: ''               # Set string or none
+      #outputFormat: 'xml'      # Set comma separated list of one or more of : json,xml. Defaults to 'xml'
+      #publishRetryInterval: 0  # Set the retry interval (in milliseconds), to pause all publications and retry, when publication failures are causing serious delay to the transaction.
+    MQTT:
+      #policy: ''               # Specify a {policy project}:policy if not using  'default MQTTServer'
+      enabled: true             # Set true or false, default false
+      #outputFormat: 'xml'      # Set comma separated list of one or more of : json,xml. Defaults to 'xml'
+      #publishRetryInterval: 0  # Set the retry interval (in milliseconds), to pause all publications and retry, when publication failures are causing serious delay to the transaction.
+    ELK:
+      #enabled: false           # Set true or false, default false
+      #outputFormat: 'json'     # Set json
+      #elkConnections: ''       # Name of the ELK connection to use, for example 'elkConnection1', must be defined in the ELKConnections section below.
+    File:
+      #enabled: false           # Set true or false, default false
+      #outputFormat: 'json'     # Set comma separated list of one or more of : json,xml. Defaults to 'json'
+  AdminEvents: # Administration events - AdminLog
+    MQ:
+      #policy: ''               # Specify a {policy project}:policy if not using  'defaultQueueManager'
+      #enabled: false           # Set true or false, default false
+      #format: ''               # Set string or none
+      #publishRetryInterval: 0  # Set the retry interval (in milliseconds), to pause all publications and retry, when publication failures are causing serious delay to the transaction.
+    MQTT:
+      #policy: ''               # Specify a {policy project}:policy if not using  'default MQTTServer'
+      #enabled: false           # Set true or false, default false
+      #publishRetryInterval: 0  # Set the retry interval (in milliseconds), to pause all publications and retry, when publication failures are causing serious delay to the transaction.
+
+Monitoring:
+  MessageFlow:
+    #publicationOn: 'inactive'         # choose 1 of : active|inactive, default inactive
+                                       # Ensure Events.BusinessEvents.MQ|MQTT|ELK|File is also configured
+    #eventFormat: 'MonitoringEventV2'  # When BusinessEvents.-.outputFormat is xml set MonitoringEventV2 or WMB, default MonitoringEventV2
+
+Statistics:
+  # All applications and message flows running in integration servers owned by this node will inherit the Snapshot
+  # and Archive values set here, unless they have been overridden
+  # Notes
+  #  - values here can be overridden by 'overrides/node.conf.yaml'
+  #  - values here will be overridden by a value set in an integration server's server.conf.yaml
+  #  - changes via the WebUI, mqsichangeflowstats command, Toolkit or apiv2 REST can only be made at
+  #    an integration server level and will be stored in its 'overrides/server.conf.yaml'
+  #  - to publish on MQ or MQTT, also configure Events.OperationalEvents, and set outputFormat to include json and/or xml
+  #  - to display in the WebUI Snapshot.outputFormat must include json; nodeDataLevel needs to be set to basic or advanced
+  Snapshot:
+    #forceAllServersPublicationOn: ''  # Force the effective value of publicationOn in all integration servers owned by this node to be
+                                       # 'active' or 'inactive', regardless of the value set in each server.conf.yaml. Default unset
+    publicationOn: 'active'      # Set to one of 'active' or 'inactive'. Defaults to 'inactive'. This value will be used by
+                                 # integration servers owned by this node unless either:-
+                                 # - forceAllServersPublicationOn is set, in which case that value applies
+                                 # - the server's .conf.yaml overrides this value with a setting of 'active' or 'inactive'
+    #accountingOrigin: 'none'    # choose 1 of : none|basic
+    nodeDataLevel: 'basic'       # choose 1 of : none|basic|advanced
+    outputFormat: 'json'         # comma separated list of : csv,json,xml,usertrace
+    #threadDataLevel: 'none'     # choose 1 of : none|basic
+  Archive:
+    #forceAllServersArchivalOn: ''  # Force the effective value of archivalOn in all integration servers owned by this node to be
+                                    # 'active' or 'inactive', regardless of the value set in each server.conf.yaml. Default unset
+    #archivalOn: 'inactive'      # choose 1 of : active|inactive, default inactive
+                                 # Also set Events.OperationalEvents.MQ|MQTT for outputFormat xml to be published to MQ/MQTT
+    #accountingOrigin: 'none'    # choose 1 of : none|basic
+    #majorInterval: 60           # Sets the interval in minutes at which archive statistics are published
+    #nodeDataLevel: 'none'       # choose 1 of : none|basic|advanced
+    #outputFormat: 'usertrace'   # comma separated list of : csv,xml,usertrace
+    #threadDataLevel: 'none'     # choose 1 of : none|basic
+  #csv:                           # The csv section is used when either Snapshot or Archive Statistics have an output format of csv.
+    #filePath: ''                 # The file path where the statistics records will be written to when there is an outputFormat of csv.
+                                  # If this is set to '' then the default path is <MQSI_WORKPATH>/common/stats.
+    #numberOfFiles: 4             # The maximum number of files that message flow statistics file writing can rotate through.
+    #sizeOfFile: 25               # The maximum size in MB of a single file that a statistics file can use before rotating to the next file.
+    #averages: true               # When set to true the average values for each statistic are included in the written output.
+  Resource:
+    #forceAllServersReportingOn: ''  # Force the effective value of reportingOn in all integration servers owned by this node to be
+                                     # 'true' or 'false', regardless of the value set in each server.conf.yaml. Default unset
+    reportingOn: true            # Set to one of true or false. Defaults to false. This value will be used by integration
+                                 # servers owned by this node unless either:-
+                                 # - forceAllServersReportingOn is set, in which case that value applies
+                                 # - the server's .conf.yaml overrides this value with a setting of true or false
+    #outputFormat: 'csvFile'     # choose 'csvFile', or 'file' for IIB v10 compatibility. if unset will default to ''
+    #filePath: ''                # The file path where the statistics records will be written to when csvFile or file outputFormat is used.
+                                 # If this is set to '' then the default path is <MQSI_WORKPATH>/common/resourceStats.
+    #numberOfFiles: 4            # The maximum number of files that resource statistics file writing can rotate through.
+    #sizeOfFile: 25              # The maximum size in MB of a single file that a statistics file can use before rotating to the next file.
+    #averages: true              # When set to true the average values for each statistic are included in the written output.
+
+UserExits:
+  #activeUserExitList: ''        # Specify the name of an installed user exit to activate.
+  #userExitPath: ''              # Specify the path or paths containing the user exits to be loaded. Multiple paths should be separated by colons on Unix and semi-colons on Windows.
+
+ConnectorProviders:
+  #sharedConnectorIdleTimeout: 60 # length of time (in seconds) after which a ConnectorProvider connection for an idle message flow is released. The value can be greater than zero or -1 to mean a connection never times out.
+  SAPConnectorProvider:
+    #jarsURL: 'default_Path'     # Set to the absolute path containing the SAP JCo JARs
+    #nativeLibs: 'default_Path'  # Set to the absolute path containing the SAP JCo libraries
+    #enableStandaloneIDocParsing: false # Set to true to enable using the DataObject parser in SAP ALE IDoc mode without having adapter components deployed
+  SiebelConnectorProvider:
+    #jarsURL: 'default_Path'     # Set to the absolute path containing the Siebel JARs.
+    #nativeLibs: 'default_Path'  # Set to the absolute path containing the Siebel libraries.
+    #siebelPropertiesURL:  ''    # Set to the location of the siebel.properties file.
+  PeopleSoftConnectorProvider:
+    #jarsURL: 'default_Path'     # Set to the absolute path containing the PeopleSoft JARs.
+  JDEdwardsConnectorProvider:
+    #jarsURL: 'default_Path'     # Set to the absolute path containing the JDEdwards JARs.
+    #nativeLibs: 'default_Path'  # Set to the absolute path containing the JDEdwards libraries.
+  #WSRRConnectorProvider:    # Requires the optional WSRR component install
+    #endpointAddress: 'https://host:9443/WSRR8_0/services/WSRRCoreSDOPort'   # WSRR server endpoint url
+    #needCache: true                                                         # enable WSRR cache
+    #predefinedCacheQueries: ''                                              # semicolon-separated XPath querys to initialize WSRR cache at start-up
+    #enableCacheNotification: false                                          # enable WSRR cache notification
+    #locationJNDIBinding:  'iiop://host:2809'                                # WSRR cache WAS JMS provider JNDI bindings url
+  #MyCustomProvider:
+    #connectorClassName: 'com.company.connector.hyper.LoopConnectorFactory'
+    #jarsURL: 'installation_directory/runtime/LoopConnector' # absolute path
+    #nativeLibs: 'default_Path' # absolute path or special value "default_Path"
+
+Credentials:
+  ExternalDirectoryVault:
+    #directory: ''   # Optional path to an external directory vault that is shared by this and other integration nodes and integration servers. Default ''.
+
+ELKConnections:
+  # Description for ELK Connections.
+  # elkConnection1:
+  #   elkProtocol: 'beats'                       # Logstash input protocol. Valid values are: 'beats', 'beatsTls', 'http', or 'https'.
+  #   hostname: 'myhost.domain.com'              # Hostname for the elkProtocol endpoint.
+  #   port: 0                                    # Port for the elkProtocol endpoint.
+  #   uploadIntervalMilliSecs: 60000             # Interval between uploading cached data, set in milliseconds.
+  #   elkCredential: ''                          # Set an 'elk' credential alias name to enable basic authentication, if it is required by the Logstash input protocol.
+  #   keystoreFile: '/path/to/keystore.jks'      # Set the path to the keystore to be used, if it is required by the Logstash input protocol.
+  #   keystorePass: 'P4s5w0rd'                   # Set the password, or 'keystore' credential alias to the password, of the keystore.
+  #   keyAlias: ''                               # Set the alias name of the private key, if mutual authentication is required by the Logstash input protocol.
+  #   keyPass: ''                                # Set the password, or 'keystorekey' credential alias to the password, for accessing the private mutual authentication key.
+  #   truststoreFile: '/path/tp/truststore.jks'  # Set the path to the truststore to be used, if it is required by the Logstash input protocol.
+  #   truststorePass: 'P4s5w0rd'                 # Set the password, or 'truststore' credential alias to the password, for accessing the truststore.
+
+EnvironmentVariables:
+  #ENV_VAR_ONE: 'env_var_one_value'              # Set the named Environment Variable to the provided value for all managed servers, Note will be overridden if a value is set in the server's .conf.yaml

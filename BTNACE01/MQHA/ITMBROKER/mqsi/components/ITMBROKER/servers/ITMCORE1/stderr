@@ -1,0 +1,374 @@
+
+2024-08-06 14:46:13.371264 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-08-06 14:46:25.625 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-08-07 01:01:35.807547 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+JVMDUMP034I User requested Heap dump using '/var/mqsi/common/errors/heapdump.ITMBROKER.ITMCORE1.20240807.010444.8502.0001.phd' through com.ibm.jvm.Dump.HeapDump
+JVMDUMP010I Heap dump written to /var/mqsi/common/errors/heapdump.ITMBROKER.ITMCORE1.20240807.010444.8502.0001.phd
+2024-08-07 01:04:44.208      1 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-07 01:04:44.209     58 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-07 01:04:44.210      1 log4j:WARN Please initialize the log4j system properly.
+2024-08-07 01:04:44.210     58 log4j:WARN Please initialize the log4j system properly.
+2024-08-07 01:04:44.211     55 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-07 01:04:44.212     55 log4j:WARN Please initialize the log4j system properly.
+2024-08-07 01:04:44.213     49 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-07 01:04:44.213     49 log4j:WARN Please initialize the log4j system properly.
+2024-08-07 01:04:44.215     52 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-07 01:04:44.215     52 log4j:WARN Please initialize the log4j system properly.
+2024-08-07 01:04:44.216     57 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-07 01:04:44.217     57 log4j:WARN Please initialize the log4j system properly.
+2024-08-07 01:04:44.217     54 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-07 01:04:44.218     54 log4j:WARN Please initialize the log4j system properly.
+2024-08-07 01:04:44.219     50 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-07 01:04:44.220     50 log4j:WARN Please initialize the log4j system properly.
+2024-08-07 01:04:44.221     56 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-07 01:04:44.221     56 log4j:WARN Please initialize the log4j system properly.
+2024-08-07 01:04:44.222     53 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-07 01:04:44.223     53 log4j:WARN Please initialize the log4j system properly.
+2024-08-07 01:04:44.223     51 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-07 01:04:44.224     51 log4j:WARN Please initialize the log4j system properly.
+node.js process.on('exit') event emitted with exitCode of 0
+
+2024-08-10 00:33:00.136784 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-08-10 00:34:33.107075 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+JVMDUMP034I User requested Heap dump using '/var/mqsi/common/errors/heapdump.ITMBROKER.ITMCORE1.20240810.003452.8013.0001.phd' through com.ibm.jvm.Dump.HeapDump
+JVMDUMP010I Heap dump written to /var/mqsi/common/errors/heapdump.ITMBROKER.ITMCORE1.20240810.003452.8013.0001.phd
+2024-08-10 00:34:52.797     61 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-10 00:34:52.798     54 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-10 00:34:52.798     50 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-10 00:34:52.799     50 log4j:WARN Please initialize the log4j system properly.
+2024-08-10 00:34:52.799     55 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-10 00:34:52.800     55 log4j:WARN Please initialize the log4j system properly.
+2024-08-10 00:34:52.800     53 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-10 00:34:52.801     53 log4j:WARN Please initialize the log4j system properly.
+2024-08-10 00:34:52.801     51 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-10 00:34:52.802     51 log4j:WARN Please initialize the log4j system properly.
+2024-08-10 00:34:52.802     57 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-10 00:34:52.802     57 log4j:WARN Please initialize the log4j system properly.
+2024-08-10 00:34:52.803     54 log4j:WARN Please initialize the log4j system properly.
+2024-08-10 00:34:52.803     59 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-10 00:34:52.804     59 log4j:WARN Please initialize the log4j system properly.
+2024-08-10 00:34:52.804     58 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-10 00:34:52.805     58 log4j:WARN Please initialize the log4j system properly.
+2024-08-10 00:34:52.805     61 log4j:WARN Please initialize the log4j system properly.
+2024-08-10 00:34:52.806     56 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-10 00:34:52.806     56 log4j:WARN Please initialize the log4j system properly.
+2024-08-10 00:34:52.806     52 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-10 00:34:52.807     52 log4j:WARN Please initialize the log4j system properly.
+
+2024-08-11 12:15:24.555622 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-08-11 12:28:50.642821 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+JVMDUMP034I User requested Heap dump using '/var/mqsi/common/errors/heapdump.ITMBROKER.ITMCORE1.20240811.130150.2914.0001.phd' through com.ibm.jvm.Dump.HeapDump
+JVMDUMP010I Heap dump written to /var/mqsi/common/errors/heapdump.ITMBROKER.ITMCORE1.20240811.130150.2914.0001.phd
+2024-08-11 13:01:50.917      1 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 13:01:50.917     49 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 13:01:50.918     58 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 13:01:50.918     49 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 13:01:50.918     58 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 13:01:50.918     57 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 13:01:50.919     57 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 13:01:50.919     52 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 13:01:50.919     52 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 13:01:50.920     50 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 13:01:50.920     50 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 13:01:50.920     54 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 13:01:50.921     54 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 13:01:50.921     55 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 13:01:50.921     55 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 13:01:50.921     56 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 13:01:50.922     56 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 13:01:50.922      1 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 13:01:50.922     51 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 13:01:50.923     51 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 13:01:50.923     53 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 13:01:50.923     53 log4j:WARN Please initialize the log4j system properly.
+node.js process.on('exit') event emitted with exitCode of 0
+
+2024-08-11 15:52:40.409075 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-08-11 16:17:36.491411 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-08-12 22:27:47.796593 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-08-17 23:49:05.681611 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-08-17 23:51:59.549684 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-08-21 17:16:00.901708 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-08-25 12:25:25.292697 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-08-27 11:03:20.829421 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-08-27 13:23:10.471041 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-08-27 13:34:32.883352 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-08-27 16:13:17.611146 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-08-27 16:18:29.145969 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-08-27 16:41:45.885424 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-08-27 22:45:12.520287 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-08-27 22:49:46.548192 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-08-28 00:52:00.137968 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-08-28 01:01:36.983236 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-08-28 01:07:56.536781 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-08-28 01:23:41.948205 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-08-28 01:31:43.648154 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-08-28 01:34:48.919100 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-08-28 05:11:42.459634 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-08-28 15:28:36.250429 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-08-28 16:17:10.098451 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-08-28 16:22:35.537037 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-08-28 16:26:16.840700 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-08-28 19:42:45.328257 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-08-28 23:58:26.312898 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-08-29 03:54:29.054516 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-08-29 11:07:43.347230 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-08-29 13:47:20.547397 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-08-29 16:34:21.513849 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-08-31 02:32:44.681399 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-08-31 02:33:59.278744 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-08-31 03:08:40.771049 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-08-31 03:34:11.147709 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-08-31 14:56:48.595215 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-08-31 15:06:07.405619 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-01 19:51:51.875362 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-03 02:55:53.661932 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-03 03:09:14.345272 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-03 03:28:41.678638 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-03 03:31:00.930984 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-03 03:35:54.390150 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-03 03:59:32.849918 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-03 04:58:45.006282 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-03 05:02:16.271926 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-03 05:03:09.342517 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-03 05:06:09.077982 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-03 05:26:20.368870 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-03 05:38:00.399629 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-03 05:43:50.373923 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-03 05:48:58.756143 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-03 06:08:07.922463 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-03 10:13:05.949009 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-03 10:15:50.665706 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-03 11:38:27.697174 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-03 12:07:24.356049 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-03 14:23:29.022880 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-03 14:28:23.596390 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-03 19:56:16.462248 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-03 20:06:28.403608 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-03 20:15:00.636656 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-04 02:14:12.670356 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-04 02:21:16.729969 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-04 02:30:22.636724 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-05 10:22:00.271934 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-05 11:02:39.714373 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-05 11:04:32.875089 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-05 11:26:32.990831 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-05 11:55:57.701068 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-05 11:57:34.331631 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-05 12:04:23.294955 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-05 15:10:06.825074 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-05 20:56:24.689425 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-05 21:00:54.578089 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-05 21:08:15.312573 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-05 21:10:16.512208 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-05 21:14:27.057593 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-05 21:19:12.099634 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-05 21:20:50.152846 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-05 21:50:56.758980 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-05 21:54:17.544927 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-05 21:57:30.354700 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-05 22:02:58.470115 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-09 10:36:57.844678 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-09 11:08:23.822187 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-11 11:56:32.930501 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-11 12:01:08.271835 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-11 12:17:52.019571 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-11 14:04:15.722060 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-12 14:20:43.449962 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-13 10:57:45.624286 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-13 14:03:33.539040 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-13 15:20:24.894832 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-13 16:45:47.967602 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-13 20:38:50.051802 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-13 20:42:23.889550 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-13 21:20:46.778987 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-15 16:36:23.798161 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-16 02:17:51.494015 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-16 02:21:46.843464 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-16 02:30:23.080146 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-16 02:33:59.330897 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-16 16:47:00.643909 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-16 16:49:08.326178 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-16 17:41:00.602972 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-16 20:14:21.014534 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-16 20:16:27.732590 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-16 20:19:03.418651 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-20 00:12:21.008482 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-21 06:02:32.396179 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-22 23:43:38.034423 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-25 11:02:30.686128 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-26 22:54:02.965932 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-27 13:28:56.312188 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-27 13:38:27.551416 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-27 13:46:56.209106 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-27 14:22:56.166194 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-28 15:20:38.549777 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-28 17:31:15.139462 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-28 17:39:44.381686 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-30 03:21:50.005554 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-30 04:25:21.321161 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-30 04:32:22.835129 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-09-30 19:58:19.480108 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-10-03 06:52:19.094552 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-10-04 00:05:41.247979 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-10-04 17:20:05.764219 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-10-05 17:48:28.757839 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-10-06 19:35:56.908944 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-10-07 19:38:02.962709 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-10-08 15:31:23.622992 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-10-10 04:09:16.391360 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-10-10 12:58:06.610650 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-10-10 16:04:28.976571 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-10-12 12:55:40.439028 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-10-13 15:55:47.754841 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-10-15 15:43:44.076963 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-10-19 16:58:11.565290 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-10-21 02:37:05.615945 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-10-21 02:41:30.194667 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER
+
+2024-10-21 02:48:25.155701 Integration server started. Label is: 'ITMCORE1'. Integration node is: ITMBROKER

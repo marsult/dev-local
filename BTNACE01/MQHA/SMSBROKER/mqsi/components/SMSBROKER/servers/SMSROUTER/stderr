@@ -1,0 +1,565 @@
+
+2024-08-06 14:47:41.336261 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-06 14:47:53.708656 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-06 16:00:10.329669 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-07 00:50:56.639247 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-07 01:02:24.110005 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-10 00:35:11.921099 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-10 00:36:14.855955 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+JVMDUMP034I User requested Heap dump using '/var/mqsi/common/errors/heapdump.SMSBROKER.SMSROUTER.20240810.003633.10857.0001.phd' through com.ibm.jvm.Dump.HeapDump
+JVMDUMP010I Heap dump written to /var/mqsi/common/errors/heapdump.SMSBROKER.SMSROUTER.20240810.003633.10857.0001.phd
+
+2024-08-10 12:38:57.054752 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-10 13:44:02.990351 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-11 00:55:16.216840 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-11 02:42:35.562434 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-11 12:29:31.970105 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-11 15:53:22.402466 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-11 16:17:03.935143 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+JVMDUMP034I User requested Heap dump using '/var/mqsi/common/errors/heapdump.SMSBROKER.SMSROUTER.20240811.162432.6737.0001.phd' through com.ibm.jvm.Dump.HeapDump
+JVMDUMP010I Heap dump written to /var/mqsi/common/errors/heapdump.SMSBROKER.SMSROUTER.20240811.162432.6737.0001.phd
+node.js process.on('exit') event emitted with exitCode of 0
+
+2024-08-11 16:26:26.600832 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+JVMDUMP034I User requested Heap dump using '/var/mqsi/common/errors/heapdump.SMSBROKER.SMSROUTER.20240811.162832.9008.0001.phd' through com.ibm.jvm.Dump.HeapDump
+JVMDUMP010I Heap dump written to /var/mqsi/common/errors/heapdump.SMSBROKER.SMSROUTER.20240811.162832.9008.0001.phd
+node.js process.on('exit') event emitted with exitCode of 0
+
+2024-08-11 16:30:03.923370 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+JVMDUMP034I User requested Heap dump using '/var/mqsi/common/errors/heapdump.SMSBROKER.SMSROUTER.20240811.163153.10312.0001.phd' through com.ibm.jvm.Dump.HeapDump
+JVMDUMP010I Heap dump written to /var/mqsi/common/errors/heapdump.SMSBROKER.SMSROUTER.20240811.163153.10312.0001.phd
+node.js process.on('exit') event emitted with exitCode of 0
+
+2024-08-11 16:32:33.129369 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+JVMDUMP034I User requested Heap dump using '/var/mqsi/common/errors/heapdump.SMSBROKER.SMSROUTER.20240811.163355.11606.0001.phd' through com.ibm.jvm.Dump.HeapDump
+JVMDUMP010I Heap dump written to /var/mqsi/common/errors/heapdump.SMSBROKER.SMSROUTER.20240811.163355.11606.0001.phd
+node.js process.on('exit') event emitted with exitCode of 0
+
+2024-08-11 16:35:12.477987 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+JVMDUMP034I User requested Heap dump using '/var/mqsi/common/errors/heapdump.SMSBROKER.SMSROUTER.20240811.163615.13032.0001.phd' through com.ibm.jvm.Dump.HeapDump
+JVMDUMP010I Heap dump written to /var/mqsi/common/errors/heapdump.SMSBROKER.SMSROUTER.20240811.163615.13032.0001.phd
+node.js process.on('exit') event emitted with exitCode of 0
+
+2024-08-11 16:38:02.475489 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-12 16:08:54.401096 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-12 16:19:07.837975 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-12 16:20:19.443542 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-12 16:27:07.598740 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-12 17:28:09.526423 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-12 17:43:10.012404 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-12 17:46:21.407688 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-12 17:51:12.029422 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-12 17:52:59.736808 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-12 18:05:28.743892 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-12 18:07:00.437541 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-12 18:09:19.718774 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-12 18:16:29.257059 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-12 18:18:20.425313 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-12 18:21:12.179844 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-12 18:35:47.029801 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-12 18:49:40.824707 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-12 19:09:48.215805 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-12 19:24:49.674764 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-12 19:26:39.832295 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-12 19:34:27.014956 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-12 19:37:24.749001 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-12 19:52:29.143324 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-12 19:54:57.845240 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-12 21:07:54.380226 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-12 21:15:52.690254 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-12 21:23:56.458459 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-12 21:32:34.795401 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-12 21:40:20.008738 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-12 22:08:28.943711 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-12 22:09:57.567185 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-12 22:28:47.242209 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-12 22:38:46.646839 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-12 22:42:41.465010 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-13 01:24:13.761701 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-13 01:28:45.303917 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-13 01:30:54.541758 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-13 02:07:38.383419 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-13 02:23:58.387969 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-13 02:38:02.636604 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-13 02:42:29.633587 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-13 02:46:06.090651 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-13 02:49:16.474678 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-13 03:06:06.681661 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-13 10:33:43.193566 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-17 23:50:13.364975 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+JVMDUMP034I User requested Heap dump using '/var/mqsi/common/errors/heapdump.SMSBROKER.SMSROUTER.20240817.235043.5684.0001.phd' through com.ibm.jvm.Dump.HeapDump
+JVMDUMP010I Heap dump written to /var/mqsi/common/errors/heapdump.SMSBROKER.SMSROUTER.20240817.235043.5684.0001.phd
+node.js process.on('exit') event emitted with exitCode of 0
+
+2024-08-17 23:53:16.774823 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+JVMDUMP034I User requested Heap dump using '/var/mqsi/common/errors/heapdump.SMSBROKER.SMSROUTER.20240818.000831.4972.0001.phd' through com.ibm.jvm.Dump.HeapDump
+JVMDUMP010I Heap dump written to /var/mqsi/common/errors/heapdump.SMSBROKER.SMSROUTER.20240818.000831.4972.0001.phd
+node.js process.on('exit') event emitted with exitCode of 0
+
+2024-08-20 11:23:38.641471 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-20 14:43:21.959172 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-21 10:12:29.287390 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-21 10:23:55.242739 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-21 10:34:18.774205 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-21 11:26:17.530906 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-21 20:44:03.618003 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-21 20:46:27.287370 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-21 20:49:01.508686 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-21 20:50:44.649563 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-21 20:55:27.566454 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-21 21:05:18.448381 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-21 21:27:39.840359 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-21 21:35:16.486192 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-21 21:44:04.835631 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-21 21:47:59.160945 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-21 21:52:51.573081 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-21 22:10:03.881072 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-21 22:10:54.542538 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-21 22:27:42.060176 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-21 22:56:23.762596 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-21 23:04:53.744009 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-21 23:32:19.987919 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-21 23:34:20.201957 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-21 23:36:57.474090 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-21 23:42:46.692526 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-22 02:02:59.950148 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-22 23:58:35.398988 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-23 00:03:34.511059 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-23 06:29:19.488493 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-23 06:34:11.533817 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-23 17:49:47.797262 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-23 17:51:12.424334 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-23 17:54:01.644177 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-23 17:58:49.543091 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-23 18:04:47.017765 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-23 18:39:16.456756 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-25 11:19:10.399449 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-25 12:00:53.423332 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-25 12:13:26.590411 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-25 12:21:45.953355 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-25 12:26:36.870626 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-26 18:39:20.701790 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-26 18:41:21.395578 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-27 11:04:30.676330 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-08-31 14:57:26.615530 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-01 19:52:31.933364 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-03 02:56:31.921064 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-03 19:56:55.306456 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-08 23:38:43.111352 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-08 23:50:52.354245 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-08 23:58:21.550716 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-09 00:07:54.824375 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-09 00:09:49.987949 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-09 00:22:22.000043 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-09 00:26:46.823380 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-09 00:31:11.647502 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-09 10:37:45.805539 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-09 10:57:44.501084 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-09 11:09:16.161648 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-09 11:14:16.809374 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-09 23:17:44.394578 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-09 23:21:31.313918 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-09 23:22:24.397116 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-09 23:24:20.598489 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-09 23:25:23.202615 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-09 23:27:07.364043 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-09 23:30:59.801125 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-09 23:33:21.058322 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-09 23:37:24.499263 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-09 23:41:23.409332 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-09 23:44:35.277017 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-09 23:46:03.896143 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-09 23:51:58.660975 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-09 23:54:28.417304 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-09 23:59:41.016989 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-10 00:01:55.734770 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-10 00:19:38.575681 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-10 14:10:32.619223 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-10 14:29:43.603104 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-10 14:30:40.174279 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-10 14:32:11.784203 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-10 14:33:54.413045 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-10 14:34:48.477796 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-10 14:40:28.398928 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-11 11:21:59.742350 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-11 11:39:58.008306 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-11 11:51:30.902863 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-11 13:57:50.231593 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-11 14:00:01.392970 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-11 14:05:15.796528 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-11 14:07:45.510595 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-11 14:11:43.305806 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-11 14:22:53.637373 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-11 14:23:35.194148 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-11 15:04:52.487582 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-11 15:10:04.361024 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-11 15:36:01.601006 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-11 15:57:58.061282 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-11 16:43:06.183825 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-11 16:47:54.551735 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-11 16:53:03.964876 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-11 16:59:42.988285 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-11 17:17:32.500033 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-11 17:22:14.849609 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-11 17:24:35.524801 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-11 17:31:16.560729 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-12 00:53:53.451968 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-12 01:24:06.471333 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-12 14:12:04.231151 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-12 14:21:19.996018 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-12 14:25:32.056966 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-12 14:31:34.517759 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-12 14:35:17.808164 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-12 19:04:25.599295 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-13 10:46:13.882339 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-13 10:52:14.555336 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-13 11:02:23.211145 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-13 11:08:34.503351 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-13 11:11:26.839360 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-13 12:10:19.786882 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-13 13:42:13.954320 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-13 13:59:24.263419 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-13 14:05:08.903772 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-13 14:08:49.327157 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-13 14:21:32.148772 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-13 14:23:42.842060 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-13 14:27:41.669757 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-13 14:31:03.448233 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-13 14:34:29.732241 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-13 14:41:38.807454 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-13 14:49:42.971632 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-13 14:53:10.355541 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-13 14:56:49.636100 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-13 15:12:50.386213 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-13 15:16:23.672641 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-13 15:54:39.897916 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-13 15:57:19.131066 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-13 15:59:46.864098 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-13 16:03:54.194511 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-13 16:06:11.410722 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-13 16:46:35.347797 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-13 20:39:37.403550 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-13 20:43:10.284719 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-13 20:51:48.158292 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-13 21:00:26.561991 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-13 21:09:04.958478 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-13 21:11:08.198087 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-13 21:22:39.452230 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-13 21:25:06.719934 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-13 21:31:01.412757 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-13 21:32:35.111561 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-13 21:38:03.195031 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-15 16:17:04.879504 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-15 16:41:25.996632 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-15 16:57:05.620378 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-15 19:58:17.251905 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-16 00:04:03.044089 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-16 00:06:54.803733 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-16 02:01:20.428218 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-16 02:13:52.645029 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-16 02:16:13.354527 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-16 02:18:29.553926 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-16 02:30:56.628706 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-16 02:34:32.362929 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-16 02:56:13.888864 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-16 02:57:52.038325 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-16 16:47:30.174281 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-16 16:49:39.370713 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-16 17:09:10.517880 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-16 17:18:49.002118 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-16 17:24:43.134060 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-16 17:32:14.324697 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-16 17:36:30.691821 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-16 17:41:32.143856 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-16 20:15:16.584646 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-16 20:16:57.081521 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-19 13:47:39.840347 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-20 00:13:05.428452 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-21 06:03:16.200821 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-22 23:44:29.100318 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-26 15:16:26.493107 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-26 22:57:51.745516 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-27 11:26:17.595182 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-27 11:51:45.136534 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-28 15:21:32.285573 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-30 04:26:10.922739 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-30 04:35:48.012146 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-30 04:38:09.245466 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-09-30 19:59:12.760862 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-10-04 00:06:36.577932 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-10-04 17:23:15.018050 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-10-05 17:49:17.172524 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-10-06 19:37:15.258864 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-10-07 19:39:33.096644 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-10-08 15:32:13.577101 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-10-10 04:10:54.827585 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-10-10 12:59:16.801038 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-10-10 16:05:17.651388 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-10-12 12:56:45.578928 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-10-13 15:56:40.699179 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-10-15 15:44:54.273949 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-10-19 16:59:00.637555 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-10-21 02:42:08.921947 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER
+
+2024-10-21 02:50:11.479928 Integration server started. Label is: 'SMSROUTER'. Integration node is: SMSBROKER

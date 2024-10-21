@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy:Deploy xmlns:deploy="http://www.ibm.com/xmlns/prod/wmb/deploy/6.0.0" overrideConfigurableProperties="true" includeESQL="false">
+  <deployables>
+    <deployable deployed="true" barResourceTimeStamp="1724048719150" workspaceResource="/ACE_LIB/ACE_LIB/COMMON.esql">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file ACE_LIB\ACE_LIB\COMMON.esql.&#xA;Successfully added file ACE_LIB\ACE_LIB\COMMON.esql to BAR file.&#xA;" severity="0"/>
+      <barEntry name="ACE_LIB\COMMON.esql"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1722935286021" workspaceResource="/ACE_LIB/ACE_LIB/GENERATE_RESPONSE.esql">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file ACE_LIB\ACE_LIB\GENERATE_RESPONSE.esql.&#xA;Dependent ESQL file ACE_LIB/COMMON.esql is added to the BAR file.&#xA;&#xA;Dependent ESQL file ACE_LIB/GEN_ERROR.esql is added to the BAR file.&#xA;&#xA;Successfully added file ACE_LIB\ACE_LIB\GENERATE_RESPONSE.esql to BAR file.&#xA;" severity="0"/>
+      <barEntry name="ACE_LIB\GENERATE_RESPONSE.esql"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1723190413283" workspaceResource="/ACE_LIB/ACE_LIB/GEN_ERROR.esql">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file ACE_LIB\ACE_LIB\GEN_ERROR.esql.&#xA;Dependent ESQL file ACE_LIB/GENERATE_RESPONSE.esql is added to the BAR file.&#xA;&#xA;Successfully added file ACE_LIB\ACE_LIB\GEN_ERROR.esql to BAR file.&#xA;" severity="0"/>
+      <barEntry name="ACE_LIB\GEN_ERROR.esql"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1722931856954" workspaceResource="/ACE_LIB/ACE_LIB/LOG.esql">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file ACE_LIB\ACE_LIB\LOG.esql.&#xA;Successfully added file ACE_LIB\ACE_LIB\LOG.esql to BAR file.&#xA;" severity="0"/>
+      <barEntry name="ACE_LIB\LOG.esql"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1722932053092" workspaceResource="/ACE_LIB/ACE_LIB/SIGNATURE.esql">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file ACE_LIB\ACE_LIB\SIGNATURE.esql.&#xA;Successfully added file ACE_LIB\ACE_LIB\SIGNATURE.esql to BAR file.&#xA;" severity="0"/>
+      <barEntry name="ACE_LIB\SIGNATURE.esql"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1723792570661" workspaceResource="/ACE_LIB/GATEWAY/HTTP_PROCESS.subflow">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file ACE_LIB\GATEWAY\HTTP_PROCESS.subflow.&#xA;Successfully added file ACE_LIB\GATEWAY\HTTP_PROCESS.subflow to BAR file.&#xA;" severity="0"/>
+      <barEntry name="GATEWAY\HTTP_PROCESS.subflow"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1724051514840" workspaceResource="/ACE_LIB/GATEWAY/HTTP_PROCESS_SET_RESPONSE.esql">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file ACE_LIB\GATEWAY\HTTP_PROCESS_SET_RESPONSE.esql.&#xA;Dependent ESQL file ACE_LIB/LOG.esql is added to the BAR file.&#xA;&#xA;Dependent ESQL file ACE_LIB/SIGNATURE.esql is added to the BAR file.&#xA;&#xA;Dependent ESQL file ACE_LIB/GENERATE_RESPONSE.esql is added to the BAR file.&#xA;&#xA;Dependent ESQL file ACE_LIB/GEN_ERROR.esql is added to the BAR file.&#xA;&#xA;Dependent ESQL file ACE_LIB/COMMON.esql is added to the BAR file.&#xA;&#xA;Successfully added file ACE_LIB\GATEWAY\HTTP_PROCESS_SET_RESPONSE.esql to BAR file.&#xA;" severity="0"/>
+      <barEntry name="GATEWAY\HTTP_PROCESS_SET_RESPONSE.esql"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1722932434025" workspaceResource="/ACE_LIB/GATEWAY/REQ_TOKEN.subflow">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file ACE_LIB\GATEWAY\REQ_TOKEN.subflow.&#xA;Successfully added file ACE_LIB\GATEWAY\REQ_TOKEN.subflow to BAR file.&#xA;" severity="0"/>
+      <barEntry name="GATEWAY\REQ_TOKEN.subflow"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1722932128490" workspaceResource="/ACE_LIB/GATEWAY/REQ_TOKEN_REQ_TOKEN_ERROR.esql">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file ACE_LIB\GATEWAY\REQ_TOKEN_REQ_TOKEN_ERROR.esql.&#xA;Successfully added file ACE_LIB\GATEWAY\REQ_TOKEN_REQ_TOKEN_ERROR.esql to BAR file.&#xA;" severity="0"/>
+      <barEntry name="GATEWAY\REQ_TOKEN_REQ_TOKEN_ERROR.esql"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1723193118490" workspaceResource="/ACE_LIB/GATEWAY/REQ_TOKEN_REQ_TOKEN_FAIL.esql">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file ACE_LIB\GATEWAY\REQ_TOKEN_REQ_TOKEN_FAIL.esql.&#xA;Dependent ESQL file ACE_LIB/GEN_ERROR.esql is added to the BAR file.&#xA;&#xA;Dependent ESQL file ACE_LIB/LOG.esql is added to the BAR file.&#xA;&#xA;Successfully added file ACE_LIB\GATEWAY\REQ_TOKEN_REQ_TOKEN_FAIL.esql to BAR file.&#xA;" severity="0"/>
+      <barEntry name="GATEWAY\REQ_TOKEN_REQ_TOKEN_FAIL.esql"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1722932128498" workspaceResource="/ACE_LIB/GATEWAY/REQ_TOKEN_SET_REQUEST_AFTER_TOKEN.esql">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file ACE_LIB\GATEWAY\REQ_TOKEN_SET_REQUEST_AFTER_TOKEN.esql.&#xA;Dependent ESQL file GATEWAY/SET_REQ_SET_REQUEST.esql is added to the BAR file.&#xA;&#xA;Successfully added file ACE_LIB\GATEWAY\REQ_TOKEN_SET_REQUEST_AFTER_TOKEN.esql to BAR file.&#xA;" severity="0"/>
+      <barEntry name="GATEWAY\REQ_TOKEN_SET_REQUEST_AFTER_TOKEN.esql"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1723090468921" workspaceResource="/ACE_LIB/GATEWAY/SET_REQ.subflow">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file ACE_LIB\GATEWAY\SET_REQ.subflow.&#xA;Successfully added file ACE_LIB\GATEWAY\SET_REQ.subflow to BAR file.&#xA;" severity="0"/>
+      <barEntry name="GATEWAY\SET_REQ.subflow"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1723789958749" workspaceResource="/ACE_LIB/GATEWAY/SET_REQ_SET_REQUEST.esql">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file ACE_LIB\GATEWAY\SET_REQ_SET_REQUEST.esql.&#xA;Dependent ESQL file ACE_LIB/LOG.esql is added to the BAR file.&#xA;&#xA;Dependent ESQL file ACE_LIB/SIGNATURE.esql is added to the BAR file.&#xA;&#xA;Successfully added file ACE_LIB\GATEWAY\SET_REQ_SET_REQUEST.esql to BAR file.&#xA;" severity="0"/>
+      <barEntry name="GATEWAY\SET_REQ_SET_REQUEST.esql"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1706717875191" workspaceResource="/ACE_LIB/library.descriptor">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file ACE_LIB\library.descriptor.&#xA;Successfully added file ACE_LIB\library.descriptor to BAR file.&#xA;Elapsed time: 0 second(s).&#xA;&#xA;Successfully added file ACE_LIB\library.descriptor to BAR file.&#xA;" severity="0"/>
+      <barEntry name="library.descriptor"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1720679198674" workspaceResource="/java_btn_lib/.classpath">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file java_btn_lib\.classpath.&#xA;Successfully added file java_btn_lib\.classpath to BAR file.&#xA;Elapsed time: 0 second(s).&#xA;" severity="0"/>
+      <barEntry name="java_btn_lib.jar"/>
+    </deployable>
+  </deployables>
+</deploy:Deploy>

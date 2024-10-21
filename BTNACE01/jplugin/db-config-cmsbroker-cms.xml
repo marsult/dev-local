@@ -1,0 +1,104 @@
+<db-config>
+	<url>jdbc:db2://btnmdwdata:50000/mwconfig</url>
+	<driver-class>com.ibm.db2.jcc.DB2Driver</driver-class>
+	<username>db2inst1</username>
+	<password>wajFMo2HsNWsRQcLal8Y47jzNMHI+oAu8ywJwIfL9cA=</password>
+	<schema>mwconfig</schema>
+	<c3p0 id="jdbc:db2:">
+		<param id="minPoolSize">5</param>
+		<param id="maxPoolSize">50</param>
+		<param id="timeout">60</param>
+		<param id="idleConnectionTestPeriod">300</param>
+		<param id="maxIdleTime">300</param>
+		<param id="maxIdleTimeExcessConnections">180</param>
+		<param id="preferredTestQuery">select 1 from sysibm.sysdummy1</param>
+	</c3p0>
+	<config-pattern>
+		<path id="config/clients/client">
+			<include>\[core-cms\]</include>
+			<include>\[dsp-conn\]</include>
+		</path>
+		<path id="config/codex">
+			<include>\[dsp.*\]</include>
+			<include>\[iso-8583-cms-instid\]</include>
+			<include>\[iso-8583-cms-billerid\]</include>
+			<include>\[iso-8583-cms\]</include>
+			<include>\[iso-8583-indomrt\]</include>
+			<include>\[iso-8583-ppo\]</include>
+			<include>\[iso-8583-tokped\]</include>
+			<include>\[iso-8583-wsdl\]</include>
+		</path>
+		<path id="config/db">
+			<include>\[CORE_KONVEN_DSP\]</include>
+			<include>\[mwconfig\]</include>
+			<include>\[mwlog\]</include>
+		</path>
+		<path id="config/dbquery">
+			<include>\[cms-request-original.*\]</include>
+			<include>\[ibk-request-original.*\]</include>
+			<include>\[mbk-request-original.*\]</include>
+			<include>\[aut-request-original.*\]</include>
+			<include>\[cms.getbiller-original\]</include>
+			<include>\[ibk.getbiller-original\]</include>
+			<include>\[mbk.getbiller-original\]</include>
+		</path>
+		<path id="config/dtree-map">
+			<include>\[.*\]\{.*\[aut\].*\}</include>
+			<include>\[.*\]\{.*\[cms\].*\}</include>
+			<include>\[.*\]\{.*\[ibk\].*\}</include>
+			<include>\[.*\]\{.*\[mbk\].*\}</include>
+			<include>\[.*\]\{.*\[mbkro\].*\}</include>
+			<include>\[.*\]\{.*\[core\].*\}</include>
+			<include>\[.*\]\{.*\[ppo\].*\}</include>
+			<include>\[.*\]\{.*\[tibro\].*\}</include>
+			<include>\[CMS-CODE\|.*\](\{.*\}|)</include>
+		</path>
+		<path id="config/host" />
+		<path id="config/mapping">
+			<include>\[.*\]\{.*\[aut\].*\}</include>
+			<include>\[.*\]\{.*\[cms\].*\}</include>
+			<include>\[.*\]\{.*\[ibk\].*\}</include>
+			<include>\[.*\]\{.*\[mbk\].*\}</include>
+			<include>\[.*\]\{.*\[core\].*\}</include>
+			<include>\[.*\]\{.*\[ppo\].*\}</include>
+			<include>\[res-core.itm.0200\](\{.*\}|)</include>
+			<include>\[router-change-group\](\{.*\}|)</include>
+		</path>
+		<path id="config/param-map">
+			<include>\[dsp-scenario-req-codex\|AXISSYSTEMSDNBHD\]</include>
+			<include>\[dsp-scenario-resp-codex\|AXISSYSTEMSDNBHD\]</include>
+			<include>\[device_teller_map\|.*\]</include>
+			<include>\[core-response-ok\|AXISSYSTEMSDNBHD\..*\]</include>
+			<include>\[error-f2\|.*\]</include>
+			<include>\[error_map\|core-cms.*\]</include>
+			<include>\[group-change\|.*\]</include>
+			<include>\[group-check-code\|.*\]</include>
+			<include>\[group-core\|.*\]</include>
+			<include>\[time-check\|.*\]</include>
+			<include>\[account-type\|\d{2}\]</include>
+			<include>\[CMS-VA-ONUS\|.*\]</include>
+		</path>
+		<path id="config/parser">
+			<include>\[iso\]</include>
+			<include>\[parser-1\]</include>
+		</path>
+		<path id="config/ports/port">
+			<include>\[aut-10371.*\]</include>
+			<include>\[cms-10370.*\]</include>
+			<include>\[cms-160.*\]</include>
+			<include>\[ibk-160.*\]</include>
+			<include>\[indomrt-105.*\]</include>
+			<include>\[mbk-160.*\]</include>
+			<include>\[monitor-.*\]</include>
+			<include>\[ppo-105.*\]</include>
+			<include>\[tokped-105.*\]</include>
+		</path>
+		<path id="config/routing">
+			<include>\[aut.*\]</include>
+			<include>\[cms.*\]</include>
+			<include>\[cvd.*\]</include>
+			<include>\[cvs.*\]</include>
+		</path>
+		<path id="config/rpg-call" />
+	</config-pattern>
+</db-config>

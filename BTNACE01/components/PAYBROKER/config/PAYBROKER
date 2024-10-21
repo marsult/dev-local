@@ -1,0 +1,3 @@
+listener 11887 127.0.0.1
+allow_anonymous true
+user root

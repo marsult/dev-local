@@ -1,0 +1,15 @@
+CREATE OR REPLACE PROCEDURE MWCONFIG.DELETE_MAPPING (
+    IN P_ID VARCHAR(256)
+)
+BEGIN
+    DECLARE ROW_COUNT INT;
+
+    -- Check if the row with the given ID exists
+    SELECT COUNT(*) INTO ROW_COUNT FROM MWCONFIG.MAPPING WHERE ID = P_ID;
+
+    -- If the row exists, then delete it
+    IF ROW_COUNT > 0 THEN
+        DELETE FROM MWCONFIG.MAPPING WHERE ID = P_ID;
+    END IF;
+END
+@

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" 
+xmlns:xmi="http://www.omg.org/XMI" xmlns:ComIbmCompute.msgnode="ComIbmCompute.msgnode" xmlns:GATEWAY_REQ_TOKEN.subflow="GATEWAY/REQ_TOKEN.subflow" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:eflow="http://www.ibm.com/wbi/2005/eflow" 
+xmlns:utility="http://www.ibm.com/wbi/2005/eflow_utility" nsURI="GATEWAY/SET_REQ.subflow" 
+nsPrefix="GATEWAY_SET_REQ.subflow">
+<eClassifiers xmi:type="eflow:FCMComposite" name="FCMComposite_1" useDefaults="true" udpSupport="true" nodeLayoutStyle="RECTANGLE">
+<eSuperTypes href="http://www.ibm.com/wbi/2005/eflow#//FCMBlock"/>
+<eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.BACKEND_URL" name="BACKEND_URL" lowerBound="1"  defaultValueLiteral="http://localhost:8000">
+  <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+</eStructuralFeatures>
+<eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.TOKEN_URL_OAUTH" name="TOKEN_URL_OAUTH" >
+  <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+</eStructuralFeatures>
+<eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.SIGN_PRIVATE_KEY" name="SIGN_PRIVATE_KEY" >
+  <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+</eStructuralFeatures>
+<eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.SIGN_VALUE" name="SIGN_VALUE" >
+  <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+</eStructuralFeatures>
+<eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.TOKEN_TYPE" name="TOKEN_TYPE" >
+  <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+</eStructuralFeatures>
+<eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.SIGN_ALGORITHM" name="SIGN_ALGORITHM" >
+  <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+</eStructuralFeatures>
+<eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.CODE" name="CODE" >
+  <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+</eStructuralFeatures>
+<eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.CONTENT_TYPE" name="CONTENT_TYPE" lowerBound="1"  defaultValueLiteral="application/json">
+  <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+</eStructuralFeatures>
+<eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.SIGNATURE_NEEDDECODE" name="SIGNATURE_NEEDDECODE"  defaultValueLiteral="False">
+  <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+</eStructuralFeatures>
+<eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.AUTHMETHOD" name="AUTHMETHOD" lowerBound="1"  defaultValueLiteral="basic">
+  <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+</eStructuralFeatures>
+<translation xmi:type="utility:TranslatableString" key="SET_REQ" bundleName="GATEWAY/SET_REQ" pluginId="flowAPIgenerated"/>
+<colorGraphic16 xmi:type="utility:GIFFileGraphic" resourceName="platform:/plugin/flowAPIgenerated/icons/full/obj16/SET_REQ.gif"/>
+<colorGraphic32 xmi:type="utility:GIFFileGraphic" resourceName="platform:/plugin/flowAPIgenerated/icons/full/obj30/SET_REQ.gif"/>
+<composition>
+<nodes xmi:type="eflow:FCMSource" xmi:id="InTerminal.Input" location="20,20">
+<translation xmi:type="utility:TranslatableString" key="InTerminal.Input" bundleName="GATEWAY/SET_REQ" pluginId="flowAPIgenerated"/>
+</nodes>
+<nodes xmi:type="eflow:FCMSink" xmi:id="OutTerminal.Output" location="609,20">
+<translation xmi:type="utility:TranslatableString" key="OutTerminal.Output" bundleName="GATEWAY/SET_REQ" pluginId="flowAPIgenerated"/>
+</nodes>
+<nodes xmi:type="ComIbmCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_1" location="243,20" dataSource="MDW" computeExpression="esql://routine/GATEWAY#SET_REQ_SET_REQUEST.Main" computeMode="destinationAndMessage">
+<translation xmi:type="utility:ConstantString" string="SET_REQUEST"/>
+</nodes>
+<nodes xmi:type="GATEWAY_REQ_TOKEN.subflow:FCMComposite_1" xmi:id="FCMComposite_1_8" location="415,128">
+<translation xmi:type="utility:ConstantString" string="REQ_TOKEN"/>
+</nodes>
+<nodes xmi:type="eflow:FCMSink" xmi:id="OutTerminal.Output1" location="637,139">
+<translation xmi:type="utility:TranslatableString" key="OutTerminal.TOKEN" bundleName="GATEWAY/SET_REQ" pluginId="flowAPIgenerated"/>
+</nodes>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_1" targetNode="FCMComposite_1_8" sourceNode="FCMComposite_1_1" sourceTerminalName="OutTerminal.out1" targetTerminalName="InTerminal.Input"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_2" targetNode="OutTerminal.Output" sourceNode="FCMComposite_1_8" sourceTerminalName="OutTerminal.Output" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_3" targetNode="FCMComposite_1_1" sourceNode="InTerminal.Input" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_4" targetNode="OutTerminal.Output" sourceNode="FCMComposite_1_1" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_5" targetNode="OutTerminal.Output1" sourceNode="FCMComposite_1_8" sourceTerminalName="OutTerminal.Output1" targetTerminalName="InTerminal.in"/>
+</composition>
+<propertyOrganizer>
+<propertyDescriptor groupName="Group.HEADER" configurable="true" userDefined="true" describedAttribute="Property.BACKEND_URL">
+<propertyName xmi:type="utility:TranslatableString" key="Property.BACKEND_URL" bundleName="GATEWAY/SET_REQ" pluginId="flowAPIgenerated"/>
+<propertyDescriptor groupName="Group.AUTH" configurable="true" userDefined="true" describedAttribute="Property.TOKEN_URL_OAUTH">
+<propertyName xmi:type="utility:TranslatableString" key="Property.TOKEN_URL_OAUTH" bundleName="GATEWAY/SET_REQ" pluginId="flowAPIgenerated"/>
+<propertyDescriptor groupName="Group.HEADER" configurable="true" userDefined="true" describedAttribute="Property.SIGN_PRIVATE_KEY">
+<propertyName xmi:type="utility:TranslatableString" key="Property.SIGN_PRIVATE_KEY" bundleName="GATEWAY/SET_REQ" pluginId="flowAPIgenerated"/>
+<propertyDescriptor groupName="Group.AUTH" configurable="true" userDefined="true" describedAttribute="Property.SIGN_VALUE">
+<propertyName xmi:type="utility:TranslatableString" key="Property.SIGN_VALUE" bundleName="GATEWAY/SET_REQ" pluginId="flowAPIgenerated"/>
+<propertyDescriptor groupName="Group.AUTH" configurable="true" userDefined="true" describedAttribute="Property.TOKEN_TYPE">
+<propertyName xmi:type="utility:TranslatableString" key="Property.TOKEN_TYPE" bundleName="GATEWAY/SET_REQ" pluginId="flowAPIgenerated"/>
+<propertyDescriptor groupName="Group.AUTH" configurable="true" userDefined="true" describedAttribute="Property.SIGN_ALGORITHM">
+<propertyName xmi:type="utility:TranslatableString" key="Property.SIGN_ALGORITHM" bundleName="GATEWAY/SET_REQ" pluginId="flowAPIgenerated"/>
+<propertyDescriptor groupName="Group.HEADER" configurable="true" userDefined="true" describedAttribute="Property.CODE">
+<propertyName xmi:type="utility:TranslatableString" key="Property.CODE" bundleName="GATEWAY/SET_REQ" pluginId="flowAPIgenerated"/>
+<propertyDescriptor groupName="Group.HEADER" configurable="true" userDefined="true" describedAttribute="Property.CONTENT_TYPE">
+<propertyName xmi:type="utility:TranslatableString" key="Property.CONTENT_TYPE" bundleName="GATEWAY/SET_REQ" pluginId="flowAPIgenerated"/>
+<propertyDescriptor groupName="Group.AUTH" configurable="true" userDefined="true" describedAttribute="Property.SIGNATURE_NEEDDECODE">
+<propertyName xmi:type="utility:TranslatableString" key="Property.SIGNATURE_NEEDDECODE" bundleName="GATEWAY/SET_REQ" pluginId="flowAPIgenerated"/>
+<propertyDescriptor groupName="Group.AUTH" configurable="true" userDefined="true" describedAttribute="Property.AUTHMETHOD">
+<propertyName xmi:type="utility:TranslatableString" key="Property.AUTHMETHOD" bundleName="GATEWAY/SET_REQ" pluginId="flowAPIgenerated"/>
+</propertyDescriptor>
+</propertyDescriptor>
+</propertyDescriptor>
+</propertyDescriptor>
+</propertyDescriptor>
+</propertyDescriptor>
+</propertyDescriptor>
+</propertyDescriptor>
+</propertyDescriptor>
+</propertyDescriptor>
+</propertyOrganizer>
+<stickyBoard/>
+</eClassifiers>
+</ecore:EPackage>

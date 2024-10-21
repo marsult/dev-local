@@ -1,0 +1,2226 @@
+2024-10-08 13:44:33,885 [Thread-16] DEBUG id.co.hanoman.mbplugin.LoggerNode BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:LOG_DB_LOG_OUT) TX:(1008134432.134432) - [LOG_DB_LOG_OUT] 
+2024-10-08 13:44:33,936 [Thread-16] DEBUG id.co.hanoman.config.db.DBPool BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) TX:(1008134432.134432) - Creating new db connection
+2024-10-08 13:44:33,948 [Thread-16] DEBUG id.co.hanoman.config.db.DBPool BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) TX:(1008134432.134432) - Done creating new db connection
+2024-10-08 13:44:33,955 [Thread-16] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) TX:(1008134432.134432) - log type pre [iso-8583-core-syariah]
+2024-10-08 13:44:33,955 [Thread-16] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) TX:(1008134432.134432) - log type [iso-8583-core-syariah]  ori [iso-8583-core-syariah] [2]
+2024-10-08 13:44:33,956 [Thread-16] DEBUG id.co.hanoman.config.db.DBPool BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) TX:(1008134432.134432) - Creating new db connection
+2024-10-08 13:44:33,965 [Thread-16] DEBUG id.co.hanoman.config.db.DBPool BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) TX:(1008134432.134432) - Done creating new db connection
+2024-10-08 13:44:33,985 [Thread-16] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) TX:(1008134432.134432) - execute [mwlog]
+2024-10-08 13:44:33,992 [Thread-16] DEBUG id.co.hanoman.mbplugin.LoggerNode BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_LOG_OUT) TX:(1008134432.134432) - [DB_LOG_LOG_OUT] 
+2024-10-08 13:44:45,617 [Thread-17] DEBUG id.co.hanoman.mbplugin.LoggerNode BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:LOG_DB_LOG_OUT) TX:(1008134432.134432) - [LOG_DB_LOG_OUT] 
+2024-10-08 13:44:45,624 [Thread-17] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) TX:(1008134432.134432) - log type pre [iso-8583-core-syariah]
+2024-10-08 13:44:45,624 [Thread-17] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) TX:(1008134432.134432) - log type [iso-8583-core-syariah]  ori [iso-8583-core-syariah] [2]
+2024-10-08 13:44:45,626 [Thread-17] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) TX:(1008134432.134432) - execute [mwlog]
+2024-10-08 13:44:45,631 [Thread-17] DEBUG id.co.hanoman.mbplugin.LoggerNode BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_LOG_OUT) TX:(1008134432.134432) - [DB_LOG_LOG_OUT] 
+2024-10-08 15:31:20,041 [main] INFO id.co.hanoman.StartStopLog BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:null) - BUILD [htcp]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [hcx]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [config]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+Java version IBM Corporation  1.8.0_391
+
+2024-10-08 15:31:20,446 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - RELOAD CONFIG [ISOBROKER:LOG_DB:HanomanDatabaseLogNode] NULL
+2024-10-08 15:31:20,449 [main] INFO id.co.hanoman.License BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Hanoman WMB Plugin for Bank Tabungan Negara
+2024-10-08 15:31:20,779 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - getConfig [db://]
+2024-10-08 15:31:20,779 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - getConfig [db://]
+2024-10-08 15:31:20,780 [main] INFO id.co.hanoman.mbplugin.reload BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - LOADING CONFIG [ISOBROKER:LOG_DB:DB_LOG_ERROR]  URL [db://]
+2024-10-08 15:31:20,856 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/clients/client]
+2024-10-08 15:31:20,857 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/codex]
+2024-10-08 15:31:20,857 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/db]
+2024-10-08 15:31:20,857 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path-include [config/db] pattern [config/db\[mwlog\]]
+2024-10-08 15:31:20,857 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/dbquery]
+2024-10-08 15:31:20,857 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/dtree-map]
+2024-10-08 15:31:20,857 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/host]
+2024-10-08 15:31:20,858 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/mapping]
+2024-10-08 15:31:20,858 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/param-map]
+2024-10-08 15:31:20,858 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/parser]
+2024-10-08 15:31:20,858 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/ports/port]
+2024-10-08 15:31:20,858 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/routing]
+2024-10-08 15:31:20,858 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/rpg-call]
+2024-10-08 15:31:21,027 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Creating new db connection
+2024-10-08 15:31:21,120 [main] WARN id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Error loading [db://] null
+java.io.IOException: Error loading [db://] null
+	at id.co.hanoman.config.ConfigFactory.getConfig(ConfigFactory.java:90)
+	at id.co.hanoman.mbplugin.DatabaseDLogNode.initConfig(DatabaseDLogNode.java:226)
+	at id.co.hanoman.mbplugin.DatabaseDLogNode.onInitialize(DatabaseDLogNode.java:368)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:83)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:57)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:437)
+	at id.co.hanoman.config.ConfigFactory.getConfig(ConfigFactory.java:62)
+	... 2 more
+Caused by: java.sql.SQLException: Unable to connect to 'jdbc:db2://btnmdwdata:50000/mwconfig' with user 'db2inst1' [jcc][t4][2043][11550][3.58.81] Exception java.net.ConnectException: Error opening socket to server btnmdwdata/10.10.10.36 on port 50,000 with message: Connection refused (Connection refused). ERRORCODE=-4499, SQLSTATE=08001
+	at id.co.hanoman.config.db.ConfigDb.getConnection(ConfigDb.java:1097)
+	at id.co.hanoman.config.db.ConfigDb.init(ConfigDb.java:332)
+	at id.co.hanoman.config.db.ConfigDb.<init>(ConfigDb.java:295)
+	... 7 more
+Caused by: com.ibm.db2.jcc.am.io: [jcc][t4][2043][11550][3.58.81] Exception java.net.ConnectException: Error opening socket to server btnmdwdata/10.10.10.36 on port 50,000 with message: Connection refused (Connection refused). ERRORCODE=-4499, SQLSTATE=08001
+	at com.ibm.db2.jcc.am.ed.a(ed.java:319)
+	at com.ibm.db2.jcc.am.ed.a(ed.java:337)
+	at com.ibm.db2.jcc.t4.zb.a(zb.java:378)
+	at com.ibm.db2.jcc.t4.zb.<init>(zb.java:76)
+	at com.ibm.db2.jcc.t4.a.y(a.java:306)
+	at com.ibm.db2.jcc.t4.b.a(b.java:1796)
+	at com.ibm.db2.jcc.am.jb.a(jb.java:573)
+	at com.ibm.db2.jcc.am.jb.<init>(jb.java:524)
+	at com.ibm.db2.jcc.t4.b.<init>(b.java:305)
+	at com.ibm.db2.jcc.DB2SimpleDataSource.getConnection(DB2SimpleDataSource.java:214)
+	at com.ibm.db2.jcc.DB2Driver.connect(DB2Driver.java:456)
+	at java.sql.DriverManager.getConnection(DriverManager.java:675)
+	at java.sql.DriverManager.getConnection(DriverManager.java:258)
+	at id.co.hanoman.config.db.DBPool.getConnection(DBPool.java:233)
+	at id.co.hanoman.config.db.DBPool$1.getConnection(DBPool.java:113)
+	at id.co.hanoman.config.db.ConfigDb.getConnection(ConfigDb.java:1090)
+	... 9 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:380)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:236)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:218)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
+	at java.net.Socket.connect(Socket.java:682)
+	at com.ibm.db2.jcc.t4.ab.run(ab.java:34)
+	at java.security.AccessController.doPrivileged(AccessController.java:746)
+	at com.ibm.db2.jcc.t4.zb.a(zb.java:372)
+	... 22 more
+2024-10-08 15:31:21,122 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - RELOAD CONFIG [ISOBROKER:LOG_DB:HanomanDatabaseLogNode] NULL
+2024-10-08 15:31:21,122 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - getConfig [db://]
+2024-10-08 15:31:21,122 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - getConfig [db://]
+2024-10-08 15:31:21,122 [main] INFO id.co.hanoman.mbplugin.reload BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - LOADING CONFIG [ISOBROKER:LOG_DB:DB_LOG]  URL [db://]
+2024-10-08 15:31:21,127 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/clients/client]
+2024-10-08 15:31:21,127 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/codex]
+2024-10-08 15:31:21,127 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/db]
+2024-10-08 15:31:21,127 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path-include [config/db] pattern [config/db\[mwlog\]]
+2024-10-08 15:31:21,127 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/dbquery]
+2024-10-08 15:31:21,127 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/dtree-map]
+2024-10-08 15:31:21,128 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/host]
+2024-10-08 15:31:21,128 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/mapping]
+2024-10-08 15:31:21,128 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/param-map]
+2024-10-08 15:31:21,128 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/parser]
+2024-10-08 15:31:21,128 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/ports/port]
+2024-10-08 15:31:21,128 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/routing]
+2024-10-08 15:31:21,128 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/rpg-call]
+2024-10-08 15:31:21,129 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Creating new db connection
+2024-10-08 15:31:21,130 [main] WARN id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Error loading [db://] null
+java.io.IOException: Error loading [db://] null
+	at id.co.hanoman.config.ConfigFactory.getConfig(ConfigFactory.java:90)
+	at id.co.hanoman.mbplugin.DatabaseDLogNode.initConfig(DatabaseDLogNode.java:226)
+	at id.co.hanoman.mbplugin.DatabaseDLogNode.onInitialize(DatabaseDLogNode.java:368)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:83)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:57)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:437)
+	at id.co.hanoman.config.ConfigFactory.getConfig(ConfigFactory.java:62)
+	... 2 more
+Caused by: java.sql.SQLException: Unable to connect to 'jdbc:db2://btnmdwdata:50000/mwconfig' with user 'db2inst1' [jcc][t4][2043][11550][3.58.81] Exception java.net.ConnectException: Error opening socket to server btnmdwdata/10.10.10.36 on port 50,000 with message: Connection refused (Connection refused). ERRORCODE=-4499, SQLSTATE=08001
+	at id.co.hanoman.config.db.ConfigDb.getConnection(ConfigDb.java:1097)
+	at id.co.hanoman.config.db.ConfigDb.init(ConfigDb.java:332)
+	at id.co.hanoman.config.db.ConfigDb.<init>(ConfigDb.java:295)
+	... 7 more
+Caused by: com.ibm.db2.jcc.am.io: [jcc][t4][2043][11550][3.58.81] Exception java.net.ConnectException: Error opening socket to server btnmdwdata/10.10.10.36 on port 50,000 with message: Connection refused (Connection refused). ERRORCODE=-4499, SQLSTATE=08001
+	at com.ibm.db2.jcc.am.ed.a(ed.java:319)
+	at com.ibm.db2.jcc.am.ed.a(ed.java:337)
+	at com.ibm.db2.jcc.t4.zb.a(zb.java:378)
+	at com.ibm.db2.jcc.t4.zb.<init>(zb.java:76)
+	at com.ibm.db2.jcc.t4.a.y(a.java:306)
+	at com.ibm.db2.jcc.t4.b.a(b.java:1796)
+	at com.ibm.db2.jcc.am.jb.a(jb.java:573)
+	at com.ibm.db2.jcc.am.jb.<init>(jb.java:524)
+	at com.ibm.db2.jcc.t4.b.<init>(b.java:305)
+	at com.ibm.db2.jcc.DB2SimpleDataSource.getConnection(DB2SimpleDataSource.java:214)
+	at com.ibm.db2.jcc.DB2Driver.connect(DB2Driver.java:456)
+	at java.sql.DriverManager.getConnection(DriverManager.java:675)
+	at java.sql.DriverManager.getConnection(DriverManager.java:258)
+	at id.co.hanoman.config.db.DBPool.getConnection(DBPool.java:233)
+	at id.co.hanoman.config.db.DBPool$1.getConnection(DBPool.java:113)
+	at id.co.hanoman.config.db.ConfigDb.getConnection(ConfigDb.java:1090)
+	... 9 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:380)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:236)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:218)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
+	at java.net.Socket.connect(Socket.java:682)
+	at com.ibm.db2.jcc.t4.ab.run(ab.java:34)
+	at java.security.AccessController.doPrivileged(AccessController.java:746)
+	at com.ibm.db2.jcc.t4.zb.a(zb.java:372)
+	... 22 more
+2024-10-10 04:09:10,513 [main] INFO id.co.hanoman.StartStopLog BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:null) - BUILD [htcp]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [hcx]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [config]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+Java version IBM Corporation  1.8.0_391
+
+2024-10-10 04:09:11,386 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - RELOAD CONFIG [ISOBROKER:LOG_DB:HanomanDatabaseLogNode] NULL
+2024-10-10 04:09:11,396 [main] INFO id.co.hanoman.License BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Hanoman WMB Plugin for Bank Tabungan Negara
+2024-10-10 04:09:11,987 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - getConfig [db://]
+2024-10-10 04:09:11,988 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - getConfig [db://]
+2024-10-10 04:09:11,988 [main] INFO id.co.hanoman.mbplugin.reload BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - LOADING CONFIG [ISOBROKER:LOG_DB:DB_LOG_ERROR]  URL [db://]
+2024-10-10 04:09:12,135 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/clients/client]
+2024-10-10 04:09:12,136 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/codex]
+2024-10-10 04:09:12,136 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/db]
+2024-10-10 04:09:12,137 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path-include [config/db] pattern [config/db\[mwlog\]]
+2024-10-10 04:09:12,137 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/dbquery]
+2024-10-10 04:09:12,137 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/dtree-map]
+2024-10-10 04:09:12,137 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/host]
+2024-10-10 04:09:12,137 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/mapping]
+2024-10-10 04:09:12,137 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/param-map]
+2024-10-10 04:09:12,138 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/parser]
+2024-10-10 04:09:12,138 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/ports/port]
+2024-10-10 04:09:12,139 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/routing]
+2024-10-10 04:09:12,139 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/rpg-call]
+2024-10-10 04:09:12,523 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Creating new db connection
+2024-10-10 04:09:12,699 [main] WARN id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Error loading [db://] null
+java.io.IOException: Error loading [db://] null
+	at id.co.hanoman.config.ConfigFactory.getConfig(ConfigFactory.java:90)
+	at id.co.hanoman.mbplugin.DatabaseDLogNode.initConfig(DatabaseDLogNode.java:226)
+	at id.co.hanoman.mbplugin.DatabaseDLogNode.onInitialize(DatabaseDLogNode.java:368)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:83)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:57)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:437)
+	at id.co.hanoman.config.ConfigFactory.getConfig(ConfigFactory.java:62)
+	... 2 more
+Caused by: java.sql.SQLException: Unable to connect to 'jdbc:db2://btnmdwdata:50000/mwconfig' with user 'db2inst1' [jcc][t4][2043][11550][3.58.81] Exception java.net.ConnectException: Error opening socket to server btnmdwdata/10.10.10.36 on port 50,000 with message: Connection refused (Connection refused). ERRORCODE=-4499, SQLSTATE=08001
+	at id.co.hanoman.config.db.ConfigDb.getConnection(ConfigDb.java:1097)
+	at id.co.hanoman.config.db.ConfigDb.init(ConfigDb.java:332)
+	at id.co.hanoman.config.db.ConfigDb.<init>(ConfigDb.java:295)
+	... 7 more
+Caused by: com.ibm.db2.jcc.am.io: [jcc][t4][2043][11550][3.58.81] Exception java.net.ConnectException: Error opening socket to server btnmdwdata/10.10.10.36 on port 50,000 with message: Connection refused (Connection refused). ERRORCODE=-4499, SQLSTATE=08001
+	at com.ibm.db2.jcc.am.ed.a(ed.java:319)
+	at com.ibm.db2.jcc.am.ed.a(ed.java:337)
+	at com.ibm.db2.jcc.t4.zb.a(zb.java:378)
+	at com.ibm.db2.jcc.t4.zb.<init>(zb.java:76)
+	at com.ibm.db2.jcc.t4.a.y(a.java:306)
+	at com.ibm.db2.jcc.t4.b.a(b.java:1796)
+	at com.ibm.db2.jcc.am.jb.a(jb.java:573)
+	at com.ibm.db2.jcc.am.jb.<init>(jb.java:524)
+	at com.ibm.db2.jcc.t4.b.<init>(b.java:305)
+	at com.ibm.db2.jcc.DB2SimpleDataSource.getConnection(DB2SimpleDataSource.java:214)
+	at com.ibm.db2.jcc.DB2Driver.connect(DB2Driver.java:456)
+	at java.sql.DriverManager.getConnection(DriverManager.java:675)
+	at java.sql.DriverManager.getConnection(DriverManager.java:258)
+	at id.co.hanoman.config.db.DBPool.getConnection(DBPool.java:233)
+	at id.co.hanoman.config.db.DBPool$1.getConnection(DBPool.java:113)
+	at id.co.hanoman.config.db.ConfigDb.getConnection(ConfigDb.java:1090)
+	... 9 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:380)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:236)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:218)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
+	at java.net.Socket.connect(Socket.java:682)
+	at com.ibm.db2.jcc.t4.ab.run(ab.java:34)
+	at java.security.AccessController.doPrivileged(AccessController.java:746)
+	at com.ibm.db2.jcc.t4.zb.a(zb.java:372)
+	... 22 more
+2024-10-10 04:09:12,704 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - RELOAD CONFIG [ISOBROKER:LOG_DB:HanomanDatabaseLogNode] NULL
+2024-10-10 04:09:12,704 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - getConfig [db://]
+2024-10-10 04:09:12,704 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - getConfig [db://]
+2024-10-10 04:09:12,704 [main] INFO id.co.hanoman.mbplugin.reload BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - LOADING CONFIG [ISOBROKER:LOG_DB:DB_LOG]  URL [db://]
+2024-10-10 04:09:12,713 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/clients/client]
+2024-10-10 04:09:12,714 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/codex]
+2024-10-10 04:09:12,714 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/db]
+2024-10-10 04:09:12,714 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path-include [config/db] pattern [config/db\[mwlog\]]
+2024-10-10 04:09:12,714 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/dbquery]
+2024-10-10 04:09:12,714 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/dtree-map]
+2024-10-10 04:09:12,715 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/host]
+2024-10-10 04:09:12,715 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/mapping]
+2024-10-10 04:09:12,715 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/param-map]
+2024-10-10 04:09:12,715 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/parser]
+2024-10-10 04:09:12,716 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/ports/port]
+2024-10-10 04:09:12,716 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/routing]
+2024-10-10 04:09:12,716 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/rpg-call]
+2024-10-10 04:09:12,718 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Creating new db connection
+2024-10-10 04:09:12,720 [main] WARN id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Error loading [db://] null
+java.io.IOException: Error loading [db://] null
+	at id.co.hanoman.config.ConfigFactory.getConfig(ConfigFactory.java:90)
+	at id.co.hanoman.mbplugin.DatabaseDLogNode.initConfig(DatabaseDLogNode.java:226)
+	at id.co.hanoman.mbplugin.DatabaseDLogNode.onInitialize(DatabaseDLogNode.java:368)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:83)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:57)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:437)
+	at id.co.hanoman.config.ConfigFactory.getConfig(ConfigFactory.java:62)
+	... 2 more
+Caused by: java.sql.SQLException: Unable to connect to 'jdbc:db2://btnmdwdata:50000/mwconfig' with user 'db2inst1' [jcc][t4][2043][11550][3.58.81] Exception java.net.ConnectException: Error opening socket to server btnmdwdata/10.10.10.36 on port 50,000 with message: Connection refused (Connection refused). ERRORCODE=-4499, SQLSTATE=08001
+	at id.co.hanoman.config.db.ConfigDb.getConnection(ConfigDb.java:1097)
+	at id.co.hanoman.config.db.ConfigDb.init(ConfigDb.java:332)
+	at id.co.hanoman.config.db.ConfigDb.<init>(ConfigDb.java:295)
+	... 7 more
+Caused by: com.ibm.db2.jcc.am.io: [jcc][t4][2043][11550][3.58.81] Exception java.net.ConnectException: Error opening socket to server btnmdwdata/10.10.10.36 on port 50,000 with message: Connection refused (Connection refused). ERRORCODE=-4499, SQLSTATE=08001
+	at com.ibm.db2.jcc.am.ed.a(ed.java:319)
+	at com.ibm.db2.jcc.am.ed.a(ed.java:337)
+	at com.ibm.db2.jcc.t4.zb.a(zb.java:378)
+	at com.ibm.db2.jcc.t4.zb.<init>(zb.java:76)
+	at com.ibm.db2.jcc.t4.a.y(a.java:306)
+	at com.ibm.db2.jcc.t4.b.a(b.java:1796)
+	at com.ibm.db2.jcc.am.jb.a(jb.java:573)
+	at com.ibm.db2.jcc.am.jb.<init>(jb.java:524)
+	at com.ibm.db2.jcc.t4.b.<init>(b.java:305)
+	at com.ibm.db2.jcc.DB2SimpleDataSource.getConnection(DB2SimpleDataSource.java:214)
+	at com.ibm.db2.jcc.DB2Driver.connect(DB2Driver.java:456)
+	at java.sql.DriverManager.getConnection(DriverManager.java:675)
+	at java.sql.DriverManager.getConnection(DriverManager.java:258)
+	at id.co.hanoman.config.db.DBPool.getConnection(DBPool.java:233)
+	at id.co.hanoman.config.db.DBPool$1.getConnection(DBPool.java:113)
+	at id.co.hanoman.config.db.ConfigDb.getConnection(ConfigDb.java:1090)
+	... 9 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:380)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:236)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:218)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
+	at java.net.Socket.connect(Socket.java:682)
+	at com.ibm.db2.jcc.t4.ab.run(ab.java:34)
+	at java.security.AccessController.doPrivileged(AccessController.java:746)
+	at com.ibm.db2.jcc.t4.zb.a(zb.java:372)
+	... 22 more
+2024-10-10 12:58:01,000 [main] INFO id.co.hanoman.StartStopLog BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:null) - BUILD [htcp]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [hcx]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [config]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+Java version IBM Corporation  1.8.0_391
+
+2024-10-10 12:58:01,727 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - RELOAD CONFIG [ISOBROKER:LOG_DB:HanomanDatabaseLogNode] NULL
+2024-10-10 12:58:01,732 [main] INFO id.co.hanoman.License BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Hanoman WMB Plugin for Bank Tabungan Negara
+2024-10-10 12:58:02,283 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - getConfig [db://]
+2024-10-10 12:58:02,283 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - getConfig [db://]
+2024-10-10 12:58:02,283 [main] INFO id.co.hanoman.mbplugin.reload BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - LOADING CONFIG [ISOBROKER:LOG_DB:DB_LOG_ERROR]  URL [db://]
+2024-10-10 12:58:02,472 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/clients/client]
+2024-10-10 12:58:02,473 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/codex]
+2024-10-10 12:58:02,474 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/db]
+2024-10-10 12:58:02,474 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path-include [config/db] pattern [config/db\[mwlog\]]
+2024-10-10 12:58:02,474 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/dbquery]
+2024-10-10 12:58:02,474 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/dtree-map]
+2024-10-10 12:58:02,474 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/host]
+2024-10-10 12:58:02,475 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/mapping]
+2024-10-10 12:58:02,475 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/param-map]
+2024-10-10 12:58:02,475 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/parser]
+2024-10-10 12:58:02,476 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/ports/port]
+2024-10-10 12:58:02,476 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/routing]
+2024-10-10 12:58:02,476 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/rpg-call]
+2024-10-10 12:58:02,759 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Creating new db connection
+2024-10-10 12:58:02,931 [main] WARN id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Error loading [db://] null
+java.io.IOException: Error loading [db://] null
+	at id.co.hanoman.config.ConfigFactory.getConfig(ConfigFactory.java:90)
+	at id.co.hanoman.mbplugin.DatabaseDLogNode.initConfig(DatabaseDLogNode.java:226)
+	at id.co.hanoman.mbplugin.DatabaseDLogNode.onInitialize(DatabaseDLogNode.java:368)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:83)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:57)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:437)
+	at id.co.hanoman.config.ConfigFactory.getConfig(ConfigFactory.java:62)
+	... 2 more
+Caused by: java.sql.SQLException: Unable to connect to 'jdbc:db2://btnmdwdata:50000/mwconfig' with user 'db2inst1' [jcc][t4][2043][11550][3.58.81] Exception java.net.ConnectException: Error opening socket to server btnmdwdata/10.10.10.36 on port 50,000 with message: Connection refused (Connection refused). ERRORCODE=-4499, SQLSTATE=08001
+	at id.co.hanoman.config.db.ConfigDb.getConnection(ConfigDb.java:1097)
+	at id.co.hanoman.config.db.ConfigDb.init(ConfigDb.java:332)
+	at id.co.hanoman.config.db.ConfigDb.<init>(ConfigDb.java:295)
+	... 7 more
+Caused by: com.ibm.db2.jcc.am.io: [jcc][t4][2043][11550][3.58.81] Exception java.net.ConnectException: Error opening socket to server btnmdwdata/10.10.10.36 on port 50,000 with message: Connection refused (Connection refused). ERRORCODE=-4499, SQLSTATE=08001
+	at com.ibm.db2.jcc.am.ed.a(ed.java:319)
+	at com.ibm.db2.jcc.am.ed.a(ed.java:337)
+	at com.ibm.db2.jcc.t4.zb.a(zb.java:378)
+	at com.ibm.db2.jcc.t4.zb.<init>(zb.java:76)
+	at com.ibm.db2.jcc.t4.a.y(a.java:306)
+	at com.ibm.db2.jcc.t4.b.a(b.java:1796)
+	at com.ibm.db2.jcc.am.jb.a(jb.java:573)
+	at com.ibm.db2.jcc.am.jb.<init>(jb.java:524)
+	at com.ibm.db2.jcc.t4.b.<init>(b.java:305)
+	at com.ibm.db2.jcc.DB2SimpleDataSource.getConnection(DB2SimpleDataSource.java:214)
+	at com.ibm.db2.jcc.DB2Driver.connect(DB2Driver.java:456)
+	at java.sql.DriverManager.getConnection(DriverManager.java:675)
+	at java.sql.DriverManager.getConnection(DriverManager.java:258)
+	at id.co.hanoman.config.db.DBPool.getConnection(DBPool.java:233)
+	at id.co.hanoman.config.db.DBPool$1.getConnection(DBPool.java:113)
+	at id.co.hanoman.config.db.ConfigDb.getConnection(ConfigDb.java:1090)
+	... 9 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:380)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:236)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:218)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
+	at java.net.Socket.connect(Socket.java:682)
+	at com.ibm.db2.jcc.t4.ab.run(ab.java:34)
+	at java.security.AccessController.doPrivileged(AccessController.java:746)
+	at com.ibm.db2.jcc.t4.zb.a(zb.java:372)
+	... 22 more
+2024-10-10 12:58:02,934 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - RELOAD CONFIG [ISOBROKER:LOG_DB:HanomanDatabaseLogNode] NULL
+2024-10-10 12:58:02,934 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - getConfig [db://]
+2024-10-10 12:58:02,934 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - getConfig [db://]
+2024-10-10 12:58:02,934 [main] INFO id.co.hanoman.mbplugin.reload BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - LOADING CONFIG [ISOBROKER:LOG_DB:DB_LOG]  URL [db://]
+2024-10-10 12:58:02,941 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/clients/client]
+2024-10-10 12:58:02,942 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/codex]
+2024-10-10 12:58:02,942 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/db]
+2024-10-10 12:58:02,942 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path-include [config/db] pattern [config/db\[mwlog\]]
+2024-10-10 12:58:02,942 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/dbquery]
+2024-10-10 12:58:02,943 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/dtree-map]
+2024-10-10 12:58:02,943 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/host]
+2024-10-10 12:58:02,943 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/mapping]
+2024-10-10 12:58:02,943 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/param-map]
+2024-10-10 12:58:02,943 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/parser]
+2024-10-10 12:58:02,943 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/ports/port]
+2024-10-10 12:58:02,944 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/routing]
+2024-10-10 12:58:02,944 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/rpg-call]
+2024-10-10 12:58:02,945 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Creating new db connection
+2024-10-10 12:58:02,947 [main] WARN id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Error loading [db://] null
+java.io.IOException: Error loading [db://] null
+	at id.co.hanoman.config.ConfigFactory.getConfig(ConfigFactory.java:90)
+	at id.co.hanoman.mbplugin.DatabaseDLogNode.initConfig(DatabaseDLogNode.java:226)
+	at id.co.hanoman.mbplugin.DatabaseDLogNode.onInitialize(DatabaseDLogNode.java:368)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:83)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:57)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:437)
+	at id.co.hanoman.config.ConfigFactory.getConfig(ConfigFactory.java:62)
+	... 2 more
+Caused by: java.sql.SQLException: Unable to connect to 'jdbc:db2://btnmdwdata:50000/mwconfig' with user 'db2inst1' [jcc][t4][2043][11550][3.58.81] Exception java.net.ConnectException: Error opening socket to server btnmdwdata/10.10.10.36 on port 50,000 with message: Connection refused (Connection refused). ERRORCODE=-4499, SQLSTATE=08001
+	at id.co.hanoman.config.db.ConfigDb.getConnection(ConfigDb.java:1097)
+	at id.co.hanoman.config.db.ConfigDb.init(ConfigDb.java:332)
+	at id.co.hanoman.config.db.ConfigDb.<init>(ConfigDb.java:295)
+	... 7 more
+Caused by: com.ibm.db2.jcc.am.io: [jcc][t4][2043][11550][3.58.81] Exception java.net.ConnectException: Error opening socket to server btnmdwdata/10.10.10.36 on port 50,000 with message: Connection refused (Connection refused). ERRORCODE=-4499, SQLSTATE=08001
+	at com.ibm.db2.jcc.am.ed.a(ed.java:319)
+	at com.ibm.db2.jcc.am.ed.a(ed.java:337)
+	at com.ibm.db2.jcc.t4.zb.a(zb.java:378)
+	at com.ibm.db2.jcc.t4.zb.<init>(zb.java:76)
+	at com.ibm.db2.jcc.t4.a.y(a.java:306)
+	at com.ibm.db2.jcc.t4.b.a(b.java:1796)
+	at com.ibm.db2.jcc.am.jb.a(jb.java:573)
+	at com.ibm.db2.jcc.am.jb.<init>(jb.java:524)
+	at com.ibm.db2.jcc.t4.b.<init>(b.java:305)
+	at com.ibm.db2.jcc.DB2SimpleDataSource.getConnection(DB2SimpleDataSource.java:214)
+	at com.ibm.db2.jcc.DB2Driver.connect(DB2Driver.java:456)
+	at java.sql.DriverManager.getConnection(DriverManager.java:675)
+	at java.sql.DriverManager.getConnection(DriverManager.java:258)
+	at id.co.hanoman.config.db.DBPool.getConnection(DBPool.java:233)
+	at id.co.hanoman.config.db.DBPool$1.getConnection(DBPool.java:113)
+	at id.co.hanoman.config.db.ConfigDb.getConnection(ConfigDb.java:1090)
+	... 9 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:380)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:236)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:218)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
+	at java.net.Socket.connect(Socket.java:682)
+	at com.ibm.db2.jcc.t4.ab.run(ab.java:34)
+	at java.security.AccessController.doPrivileged(AccessController.java:746)
+	at com.ibm.db2.jcc.t4.zb.a(zb.java:372)
+	... 22 more
+2024-10-10 16:01:55,994 [Thread-15] DEBUG id.co.hanoman.mbplugin.LoggerNode BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:LOG_DB_ERROR_LOG_OUT) TX:(bMy2wlwqUqzqqqqueRlnyvQc) - [LOG_DB_ERROR_LOG_OUT] 
+2024-10-10 16:01:55,998 [Thread-15] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) TX:(bMy2wlwqUqzqqqqueRlnyvQc) - RELOAD CONFIG [ISOBROKER:LOG_DB:HanomanDatabaseLogNode] NULL
+2024-10-10 16:01:55,998 [Thread-15] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) TX:(bMy2wlwqUqzqqqqueRlnyvQc) - getConfig [db://]
+2024-10-10 16:01:55,998 [Thread-15] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) TX:(bMy2wlwqUqzqqqqueRlnyvQc) - getConfig [db://]
+2024-10-10 16:01:55,998 [Thread-15] INFO id.co.hanoman.mbplugin.reload BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) TX:(bMy2wlwqUqzqqqqueRlnyvQc) - LOADING CONFIG [ISOBROKER:LOG_DB:DB_LOG_ERROR]  URL [db://]
+2024-10-10 16:01:56,003 [Thread-15] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) TX:(bMy2wlwqUqzqqqqueRlnyvQc) - Config path path [config/clients/client]
+2024-10-10 16:01:56,003 [Thread-15] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) TX:(bMy2wlwqUqzqqqqueRlnyvQc) - Config path path [config/codex]
+2024-10-10 16:01:56,003 [Thread-15] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) TX:(bMy2wlwqUqzqqqqueRlnyvQc) - Config path path [config/db]
+2024-10-10 16:01:56,004 [Thread-15] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) TX:(bMy2wlwqUqzqqqqueRlnyvQc) - Config path-include [config/db] pattern [config/db\[mwlog\]]
+2024-10-10 16:01:56,004 [Thread-15] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) TX:(bMy2wlwqUqzqqqqueRlnyvQc) - Config path path [config/dbquery]
+2024-10-10 16:01:56,004 [Thread-15] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) TX:(bMy2wlwqUqzqqqqueRlnyvQc) - Config path path [config/dtree-map]
+2024-10-10 16:01:56,004 [Thread-15] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) TX:(bMy2wlwqUqzqqqqueRlnyvQc) - Config path path [config/host]
+2024-10-10 16:01:56,004 [Thread-15] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) TX:(bMy2wlwqUqzqqqqueRlnyvQc) - Config path path [config/mapping]
+2024-10-10 16:01:56,004 [Thread-15] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) TX:(bMy2wlwqUqzqqqqueRlnyvQc) - Config path path [config/param-map]
+2024-10-10 16:01:56,004 [Thread-15] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) TX:(bMy2wlwqUqzqqqqueRlnyvQc) - Config path path [config/parser]
+2024-10-10 16:01:56,004 [Thread-15] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) TX:(bMy2wlwqUqzqqqqueRlnyvQc) - Config path path [config/ports/port]
+2024-10-10 16:01:56,005 [Thread-15] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) TX:(bMy2wlwqUqzqqqqueRlnyvQc) - Config path path [config/routing]
+2024-10-10 16:01:56,005 [Thread-15] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) TX:(bMy2wlwqUqzqqqqueRlnyvQc) - Config path path [config/rpg-call]
+2024-10-10 16:01:56,006 [Thread-15] DEBUG id.co.hanoman.config.db.DBPool BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) TX:(bMy2wlwqUqzqqqqueRlnyvQc) - Creating new db connection
+2024-10-10 16:01:56,013 [Thread-15] WARN id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) TX:(bMy2wlwqUqzqqqqueRlnyvQc) - Error loading [db://] null
+java.io.IOException: Error loading [db://] null
+	at id.co.hanoman.config.ConfigFactory.getConfig(ConfigFactory.java:90)
+	at id.co.hanoman.mbplugin.DatabaseDLogNode.initConfig(DatabaseDLogNode.java:226)
+	at id.co.hanoman.mbplugin.DatabaseDLogNode.evaluate(DatabaseDLogNode.java:380)
+	at com.ibm.broker.plugin.MbNode.evaluate(MbNode.java:2138)
+	at com.ibm.broker.plugin.MbOutputTerminal._propagate(Native Method)
+	at com.ibm.broker.plugin.MbOutputTerminal.propagate(MbOutputTerminal.java:133)
+	at com.ibm.broker.plugin.MbOutputTerminal.propagate(MbOutputTerminal.java:88)
+	at id.co.hanoman.mbplugin.LoggerNode.evaluate(LoggerNode.java:532)
+	at com.ibm.broker.plugin.MbNode.evaluate(MbNode.java:2138)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:83)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:57)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:437)
+	at id.co.hanoman.config.ConfigFactory.getConfig(ConfigFactory.java:62)
+	... 8 more
+Caused by: java.sql.SQLException: Unable to connect to 'jdbc:db2://btnmdwdata:50000/mwconfig' with user 'db2inst1' [jcc][t4][2030][11211][3.58.81] A communication error occurred during operations on the connection's underlying socket, socket input stream, 
+or socket output stream.  Error location: Reply.fill().  Message: Insufficient data. ERRORCODE=-4499, SQLSTATE=08001
+	at id.co.hanoman.config.db.ConfigDb.getConnection(ConfigDb.java:1097)
+	at id.co.hanoman.config.db.ConfigDb.init(ConfigDb.java:332)
+	at id.co.hanoman.config.db.ConfigDb.<init>(ConfigDb.java:295)
+	... 13 more
+Caused by: com.ibm.db2.jcc.am.io: [jcc][t4][2030][11211][3.58.81] A communication error occurred during operations on the connection's underlying socket, socket input stream, 
+or socket output stream.  Error location: Reply.fill().  Message: Insufficient data. ERRORCODE=-4499, SQLSTATE=08001
+	at com.ibm.db2.jcc.am.ed.a(ed.java:319)
+	at com.ibm.db2.jcc.t4.a.a(a.java:416)
+	at com.ibm.db2.jcc.t4.a.a(a.java:411)
+	at com.ibm.db2.jcc.t4.cb.b(cb.java:227)
+	at com.ibm.db2.jcc.t4.cb.c(cb.java:249)
+	at com.ibm.db2.jcc.t4.cb.c(cb.java:360)
+	at com.ibm.db2.jcc.t4.cb.v(cb.java:1145)
+	at com.ibm.db2.jcc.t4.db.a(db.java:42)
+	at com.ibm.db2.jcc.t4.b.m(b.java:1238)
+	at com.ibm.db2.jcc.t4.b.b(b.java:1112)
+	at com.ibm.db2.jcc.t4.b.c(b.java:700)
+	at com.ibm.db2.jcc.t4.b.b(b.java:686)
+	at com.ibm.db2.jcc.t4.b.a(b.java:367)
+	at com.ibm.db2.jcc.t4.b.<init>(b.java:307)
+	at com.ibm.db2.jcc.DB2SimpleDataSource.getConnection(DB2SimpleDataSource.java:214)
+	at com.ibm.db2.jcc.DB2Driver.connect(DB2Driver.java:456)
+	at java.sql.DriverManager.getConnection(DriverManager.java:675)
+	at java.sql.DriverManager.getConnection(DriverManager.java:258)
+	at id.co.hanoman.config.db.DBPool.getConnection(DBPool.java:233)
+	at id.co.hanoman.config.db.DBPool$1.getConnection(DBPool.java:113)
+	at id.co.hanoman.config.db.ConfigDb.getConnection(ConfigDb.java:1090)
+	... 15 more
+2024-10-10 16:01:56,015 [Thread-15] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) TX:(bMy2wlwqUqzqqqqueRlnyvQc) - log type pre [error]
+2024-10-10 16:01:56,015 [Thread-15] WARN id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) TX:(bMy2wlwqUqzqqqqueRlnyvQc) - null
+java.lang.NullPointerException
+	at id.co.hanoman.mbplugin.DatabaseDLogNode.evaluate(DatabaseDLogNode.java:432)
+	at com.ibm.broker.plugin.MbNode.evaluate(MbNode.java:2138)
+	at com.ibm.broker.plugin.MbOutputTerminal._propagate(Native Method)
+	at com.ibm.broker.plugin.MbOutputTerminal.propagate(MbOutputTerminal.java:133)
+	at com.ibm.broker.plugin.MbOutputTerminal.propagate(MbOutputTerminal.java:88)
+	at id.co.hanoman.mbplugin.LoggerNode.evaluate(LoggerNode.java:532)
+	at com.ibm.broker.plugin.MbNode.evaluate(MbNode.java:2138)
+2024-10-10 16:01:56,016 [Thread-15] DEBUG id.co.hanoman.mbplugin.LoggerNode BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR_LOG_OUT) TX:(bMy2wlwqUqzqqqqueRlnyvQc) - [DB_LOG_ERROR_LOG_OUT] 
+2024-10-10 16:04:25,556 [main] INFO id.co.hanoman.StartStopLog BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:null) - BUILD [htcp]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [hcx]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [config]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+Java version IBM Corporation  1.8.0_391
+
+2024-10-10 16:04:25,996 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - RELOAD CONFIG [ISOBROKER:LOG_DB:HanomanDatabaseLogNode] NULL
+2024-10-10 16:04:26,002 [main] INFO id.co.hanoman.License BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Hanoman WMB Plugin for Bank Tabungan Negara
+2024-10-10 16:04:26,452 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - getConfig [db://]
+2024-10-10 16:04:26,452 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - getConfig [db://]
+2024-10-10 16:04:26,452 [main] INFO id.co.hanoman.mbplugin.reload BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - LOADING CONFIG [ISOBROKER:LOG_DB:DB_LOG_ERROR]  URL [db://]
+2024-10-10 16:04:26,560 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/clients/client]
+2024-10-10 16:04:26,561 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/codex]
+2024-10-10 16:04:26,561 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/db]
+2024-10-10 16:04:26,561 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path-include [config/db] pattern [config/db\[mwlog\]]
+2024-10-10 16:04:26,561 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/dbquery]
+2024-10-10 16:04:26,561 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/dtree-map]
+2024-10-10 16:04:26,562 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/host]
+2024-10-10 16:04:26,562 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/mapping]
+2024-10-10 16:04:26,562 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/param-map]
+2024-10-10 16:04:26,562 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/parser]
+2024-10-10 16:04:26,562 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/ports/port]
+2024-10-10 16:04:26,563 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/routing]
+2024-10-10 16:04:26,563 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/rpg-call]
+2024-10-10 16:04:26,736 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Creating new db connection
+2024-10-10 16:04:26,868 [main] WARN id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Error loading [db://] null
+java.io.IOException: Error loading [db://] null
+	at id.co.hanoman.config.ConfigFactory.getConfig(ConfigFactory.java:90)
+	at id.co.hanoman.mbplugin.DatabaseDLogNode.initConfig(DatabaseDLogNode.java:226)
+	at id.co.hanoman.mbplugin.DatabaseDLogNode.onInitialize(DatabaseDLogNode.java:368)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:83)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:57)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:437)
+	at id.co.hanoman.config.ConfigFactory.getConfig(ConfigFactory.java:62)
+	... 2 more
+Caused by: java.sql.SQLException: Unable to connect to 'jdbc:db2://btnmdwdata:50000/mwconfig' with user 'db2inst1' [jcc][t4][2043][11550][3.58.81] Exception java.net.ConnectException: Error opening socket to server btnmdwdata/10.10.10.36 on port 50,000 with message: Connection refused (Connection refused). ERRORCODE=-4499, SQLSTATE=08001
+	at id.co.hanoman.config.db.ConfigDb.getConnection(ConfigDb.java:1097)
+	at id.co.hanoman.config.db.ConfigDb.init(ConfigDb.java:332)
+	at id.co.hanoman.config.db.ConfigDb.<init>(ConfigDb.java:295)
+	... 7 more
+Caused by: com.ibm.db2.jcc.am.io: [jcc][t4][2043][11550][3.58.81] Exception java.net.ConnectException: Error opening socket to server btnmdwdata/10.10.10.36 on port 50,000 with message: Connection refused (Connection refused). ERRORCODE=-4499, SQLSTATE=08001
+	at com.ibm.db2.jcc.am.ed.a(ed.java:319)
+	at com.ibm.db2.jcc.am.ed.a(ed.java:337)
+	at com.ibm.db2.jcc.t4.zb.a(zb.java:378)
+	at com.ibm.db2.jcc.t4.zb.<init>(zb.java:76)
+	at com.ibm.db2.jcc.t4.a.y(a.java:306)
+	at com.ibm.db2.jcc.t4.b.a(b.java:1796)
+	at com.ibm.db2.jcc.am.jb.a(jb.java:573)
+	at com.ibm.db2.jcc.am.jb.<init>(jb.java:524)
+	at com.ibm.db2.jcc.t4.b.<init>(b.java:305)
+	at com.ibm.db2.jcc.DB2SimpleDataSource.getConnection(DB2SimpleDataSource.java:214)
+	at com.ibm.db2.jcc.DB2Driver.connect(DB2Driver.java:456)
+	at java.sql.DriverManager.getConnection(DriverManager.java:675)
+	at java.sql.DriverManager.getConnection(DriverManager.java:258)
+	at id.co.hanoman.config.db.DBPool.getConnection(DBPool.java:233)
+	at id.co.hanoman.config.db.DBPool$1.getConnection(DBPool.java:113)
+	at id.co.hanoman.config.db.ConfigDb.getConnection(ConfigDb.java:1090)
+	... 9 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:380)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:236)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:218)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
+	at java.net.Socket.connect(Socket.java:682)
+	at com.ibm.db2.jcc.t4.ab.run(ab.java:34)
+	at java.security.AccessController.doPrivileged(AccessController.java:746)
+	at com.ibm.db2.jcc.t4.zb.a(zb.java:372)
+	... 22 more
+2024-10-10 16:04:26,870 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - RELOAD CONFIG [ISOBROKER:LOG_DB:HanomanDatabaseLogNode] NULL
+2024-10-10 16:04:26,870 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - getConfig [db://]
+2024-10-10 16:04:26,870 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - getConfig [db://]
+2024-10-10 16:04:26,870 [main] INFO id.co.hanoman.mbplugin.reload BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - LOADING CONFIG [ISOBROKER:LOG_DB:DB_LOG]  URL [db://]
+2024-10-10 16:04:26,877 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/clients/client]
+2024-10-10 16:04:26,877 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/codex]
+2024-10-10 16:04:26,877 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/db]
+2024-10-10 16:04:26,878 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path-include [config/db] pattern [config/db\[mwlog\]]
+2024-10-10 16:04:26,878 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/dbquery]
+2024-10-10 16:04:26,878 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/dtree-map]
+2024-10-10 16:04:26,878 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/host]
+2024-10-10 16:04:26,878 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/mapping]
+2024-10-10 16:04:26,878 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/param-map]
+2024-10-10 16:04:26,878 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/parser]
+2024-10-10 16:04:26,879 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/ports/port]
+2024-10-10 16:04:26,879 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/routing]
+2024-10-10 16:04:26,879 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/rpg-call]
+2024-10-10 16:04:26,880 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Creating new db connection
+2024-10-10 16:04:26,882 [main] WARN id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Error loading [db://] null
+java.io.IOException: Error loading [db://] null
+	at id.co.hanoman.config.ConfigFactory.getConfig(ConfigFactory.java:90)
+	at id.co.hanoman.mbplugin.DatabaseDLogNode.initConfig(DatabaseDLogNode.java:226)
+	at id.co.hanoman.mbplugin.DatabaseDLogNode.onInitialize(DatabaseDLogNode.java:368)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:83)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:57)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:437)
+	at id.co.hanoman.config.ConfigFactory.getConfig(ConfigFactory.java:62)
+	... 2 more
+Caused by: java.sql.SQLException: Unable to connect to 'jdbc:db2://btnmdwdata:50000/mwconfig' with user 'db2inst1' [jcc][t4][2043][11550][3.58.81] Exception java.net.ConnectException: Error opening socket to server btnmdwdata/10.10.10.36 on port 50,000 with message: Connection refused (Connection refused). ERRORCODE=-4499, SQLSTATE=08001
+	at id.co.hanoman.config.db.ConfigDb.getConnection(ConfigDb.java:1097)
+	at id.co.hanoman.config.db.ConfigDb.init(ConfigDb.java:332)
+	at id.co.hanoman.config.db.ConfigDb.<init>(ConfigDb.java:295)
+	... 7 more
+Caused by: com.ibm.db2.jcc.am.io: [jcc][t4][2043][11550][3.58.81] Exception java.net.ConnectException: Error opening socket to server btnmdwdata/10.10.10.36 on port 50,000 with message: Connection refused (Connection refused). ERRORCODE=-4499, SQLSTATE=08001
+	at com.ibm.db2.jcc.am.ed.a(ed.java:319)
+	at com.ibm.db2.jcc.am.ed.a(ed.java:337)
+	at com.ibm.db2.jcc.t4.zb.a(zb.java:378)
+	at com.ibm.db2.jcc.t4.zb.<init>(zb.java:76)
+	at com.ibm.db2.jcc.t4.a.y(a.java:306)
+	at com.ibm.db2.jcc.t4.b.a(b.java:1796)
+	at com.ibm.db2.jcc.am.jb.a(jb.java:573)
+	at com.ibm.db2.jcc.am.jb.<init>(jb.java:524)
+	at com.ibm.db2.jcc.t4.b.<init>(b.java:305)
+	at com.ibm.db2.jcc.DB2SimpleDataSource.getConnection(DB2SimpleDataSource.java:214)
+	at com.ibm.db2.jcc.DB2Driver.connect(DB2Driver.java:456)
+	at java.sql.DriverManager.getConnection(DriverManager.java:675)
+	at java.sql.DriverManager.getConnection(DriverManager.java:258)
+	at id.co.hanoman.config.db.DBPool.getConnection(DBPool.java:233)
+	at id.co.hanoman.config.db.DBPool$1.getConnection(DBPool.java:113)
+	at id.co.hanoman.config.db.ConfigDb.getConnection(ConfigDb.java:1090)
+	... 9 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:380)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:236)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:218)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
+	at java.net.Socket.connect(Socket.java:682)
+	at com.ibm.db2.jcc.t4.ab.run(ab.java:34)
+	at java.security.AccessController.doPrivileged(AccessController.java:746)
+	at com.ibm.db2.jcc.t4.zb.a(zb.java:372)
+	... 22 more
+2024-10-12 12:55:37,041 [main] INFO id.co.hanoman.StartStopLog BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:null) - BUILD [htcp]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [hcx]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [config]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+Java version IBM Corporation  1.8.0_391
+
+2024-10-12 12:55:37,434 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - RELOAD CONFIG [ISOBROKER:LOG_DB:HanomanDatabaseLogNode] NULL
+2024-10-12 12:55:37,437 [main] INFO id.co.hanoman.License BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Hanoman WMB Plugin for Bank Tabungan Negara
+2024-10-12 12:55:37,749 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - getConfig [db://]
+2024-10-12 12:55:37,750 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - getConfig [db://]
+2024-10-12 12:55:37,750 [main] INFO id.co.hanoman.mbplugin.reload BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - LOADING CONFIG [ISOBROKER:LOG_DB:DB_LOG_ERROR]  URL [db://]
+2024-10-12 12:55:37,847 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/clients/client]
+2024-10-12 12:55:37,848 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/codex]
+2024-10-12 12:55:37,848 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/db]
+2024-10-12 12:55:37,848 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path-include [config/db] pattern [config/db\[mwlog\]]
+2024-10-12 12:55:37,848 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/dbquery]
+2024-10-12 12:55:37,848 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/dtree-map]
+2024-10-12 12:55:37,849 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/host]
+2024-10-12 12:55:37,849 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/mapping]
+2024-10-12 12:55:37,849 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/param-map]
+2024-10-12 12:55:37,849 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/parser]
+2024-10-12 12:55:37,850 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/ports/port]
+2024-10-12 12:55:37,850 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/routing]
+2024-10-12 12:55:37,850 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/rpg-call]
+2024-10-12 12:55:38,024 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Creating new db connection
+2024-10-12 12:55:38,118 [main] WARN id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Error loading [db://] null
+java.io.IOException: Error loading [db://] null
+	at id.co.hanoman.config.ConfigFactory.getConfig(ConfigFactory.java:90)
+	at id.co.hanoman.mbplugin.DatabaseDLogNode.initConfig(DatabaseDLogNode.java:226)
+	at id.co.hanoman.mbplugin.DatabaseDLogNode.onInitialize(DatabaseDLogNode.java:368)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:83)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:57)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:437)
+	at id.co.hanoman.config.ConfigFactory.getConfig(ConfigFactory.java:62)
+	... 2 more
+Caused by: java.sql.SQLException: Unable to connect to 'jdbc:db2://btnmdwdata:50000/mwconfig' with user 'db2inst1' [jcc][t4][2043][11550][3.58.81] Exception java.net.ConnectException: Error opening socket to server btnmdwdata/10.10.10.36 on port 50,000 with message: Connection refused (Connection refused). ERRORCODE=-4499, SQLSTATE=08001
+	at id.co.hanoman.config.db.ConfigDb.getConnection(ConfigDb.java:1097)
+	at id.co.hanoman.config.db.ConfigDb.init(ConfigDb.java:332)
+	at id.co.hanoman.config.db.ConfigDb.<init>(ConfigDb.java:295)
+	... 7 more
+Caused by: com.ibm.db2.jcc.am.io: [jcc][t4][2043][11550][3.58.81] Exception java.net.ConnectException: Error opening socket to server btnmdwdata/10.10.10.36 on port 50,000 with message: Connection refused (Connection refused). ERRORCODE=-4499, SQLSTATE=08001
+	at com.ibm.db2.jcc.am.ed.a(ed.java:319)
+	at com.ibm.db2.jcc.am.ed.a(ed.java:337)
+	at com.ibm.db2.jcc.t4.zb.a(zb.java:378)
+	at com.ibm.db2.jcc.t4.zb.<init>(zb.java:76)
+	at com.ibm.db2.jcc.t4.a.y(a.java:306)
+	at com.ibm.db2.jcc.t4.b.a(b.java:1796)
+	at com.ibm.db2.jcc.am.jb.a(jb.java:573)
+	at com.ibm.db2.jcc.am.jb.<init>(jb.java:524)
+	at com.ibm.db2.jcc.t4.b.<init>(b.java:305)
+	at com.ibm.db2.jcc.DB2SimpleDataSource.getConnection(DB2SimpleDataSource.java:214)
+	at com.ibm.db2.jcc.DB2Driver.connect(DB2Driver.java:456)
+	at java.sql.DriverManager.getConnection(DriverManager.java:675)
+	at java.sql.DriverManager.getConnection(DriverManager.java:258)
+	at id.co.hanoman.config.db.DBPool.getConnection(DBPool.java:233)
+	at id.co.hanoman.config.db.DBPool$1.getConnection(DBPool.java:113)
+	at id.co.hanoman.config.db.ConfigDb.getConnection(ConfigDb.java:1090)
+	... 9 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:380)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:236)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:218)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
+	at java.net.Socket.connect(Socket.java:682)
+	at com.ibm.db2.jcc.t4.ab.run(ab.java:34)
+	at java.security.AccessController.doPrivileged(AccessController.java:746)
+	at com.ibm.db2.jcc.t4.zb.a(zb.java:372)
+	... 22 more
+2024-10-12 12:55:38,120 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - RELOAD CONFIG [ISOBROKER:LOG_DB:HanomanDatabaseLogNode] NULL
+2024-10-12 12:55:38,120 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - getConfig [db://]
+2024-10-12 12:55:38,120 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - getConfig [db://]
+2024-10-12 12:55:38,120 [main] INFO id.co.hanoman.mbplugin.reload BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - LOADING CONFIG [ISOBROKER:LOG_DB:DB_LOG]  URL [db://]
+2024-10-12 12:55:38,125 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/clients/client]
+2024-10-12 12:55:38,125 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/codex]
+2024-10-12 12:55:38,126 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/db]
+2024-10-12 12:55:38,126 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path-include [config/db] pattern [config/db\[mwlog\]]
+2024-10-12 12:55:38,126 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/dbquery]
+2024-10-12 12:55:38,126 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/dtree-map]
+2024-10-12 12:55:38,126 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/host]
+2024-10-12 12:55:38,126 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/mapping]
+2024-10-12 12:55:38,126 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/param-map]
+2024-10-12 12:55:38,126 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/parser]
+2024-10-12 12:55:38,126 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/ports/port]
+2024-10-12 12:55:38,127 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/routing]
+2024-10-12 12:55:38,127 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/rpg-call]
+2024-10-12 12:55:38,128 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Creating new db connection
+2024-10-12 12:55:38,129 [main] WARN id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Error loading [db://] null
+java.io.IOException: Error loading [db://] null
+	at id.co.hanoman.config.ConfigFactory.getConfig(ConfigFactory.java:90)
+	at id.co.hanoman.mbplugin.DatabaseDLogNode.initConfig(DatabaseDLogNode.java:226)
+	at id.co.hanoman.mbplugin.DatabaseDLogNode.onInitialize(DatabaseDLogNode.java:368)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:83)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:57)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:437)
+	at id.co.hanoman.config.ConfigFactory.getConfig(ConfigFactory.java:62)
+	... 2 more
+Caused by: java.sql.SQLException: Unable to connect to 'jdbc:db2://btnmdwdata:50000/mwconfig' with user 'db2inst1' [jcc][t4][2043][11550][3.58.81] Exception java.net.ConnectException: Error opening socket to server btnmdwdata/10.10.10.36 on port 50,000 with message: Connection refused (Connection refused). ERRORCODE=-4499, SQLSTATE=08001
+	at id.co.hanoman.config.db.ConfigDb.getConnection(ConfigDb.java:1097)
+	at id.co.hanoman.config.db.ConfigDb.init(ConfigDb.java:332)
+	at id.co.hanoman.config.db.ConfigDb.<init>(ConfigDb.java:295)
+	... 7 more
+Caused by: com.ibm.db2.jcc.am.io: [jcc][t4][2043][11550][3.58.81] Exception java.net.ConnectException: Error opening socket to server btnmdwdata/10.10.10.36 on port 50,000 with message: Connection refused (Connection refused). ERRORCODE=-4499, SQLSTATE=08001
+	at com.ibm.db2.jcc.am.ed.a(ed.java:319)
+	at com.ibm.db2.jcc.am.ed.a(ed.java:337)
+	at com.ibm.db2.jcc.t4.zb.a(zb.java:378)
+	at com.ibm.db2.jcc.t4.zb.<init>(zb.java:76)
+	at com.ibm.db2.jcc.t4.a.y(a.java:306)
+	at com.ibm.db2.jcc.t4.b.a(b.java:1796)
+	at com.ibm.db2.jcc.am.jb.a(jb.java:573)
+	at com.ibm.db2.jcc.am.jb.<init>(jb.java:524)
+	at com.ibm.db2.jcc.t4.b.<init>(b.java:305)
+	at com.ibm.db2.jcc.DB2SimpleDataSource.getConnection(DB2SimpleDataSource.java:214)
+	at com.ibm.db2.jcc.DB2Driver.connect(DB2Driver.java:456)
+	at java.sql.DriverManager.getConnection(DriverManager.java:675)
+	at java.sql.DriverManager.getConnection(DriverManager.java:258)
+	at id.co.hanoman.config.db.DBPool.getConnection(DBPool.java:233)
+	at id.co.hanoman.config.db.DBPool$1.getConnection(DBPool.java:113)
+	at id.co.hanoman.config.db.ConfigDb.getConnection(ConfigDb.java:1090)
+	... 9 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:380)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:236)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:218)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
+	at java.net.Socket.connect(Socket.java:682)
+	at com.ibm.db2.jcc.t4.ab.run(ab.java:34)
+	at java.security.AccessController.doPrivileged(AccessController.java:746)
+	at com.ibm.db2.jcc.t4.zb.a(zb.java:372)
+	... 22 more
+2024-10-13 15:55:44,135 [main] INFO id.co.hanoman.StartStopLog BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:null) - BUILD [htcp]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [hcx]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [config]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+Java version IBM Corporation  1.8.0_391
+
+2024-10-13 15:55:44,509 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - RELOAD CONFIG [ISOBROKER:LOG_DB:HanomanDatabaseLogNode] NULL
+2024-10-13 15:55:44,512 [main] INFO id.co.hanoman.License BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Hanoman WMB Plugin for Bank Tabungan Negara
+2024-10-13 15:55:44,833 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - getConfig [db://]
+2024-10-13 15:55:44,833 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - getConfig [db://]
+2024-10-13 15:55:44,833 [main] INFO id.co.hanoman.mbplugin.reload BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - LOADING CONFIG [ISOBROKER:LOG_DB:DB_LOG_ERROR]  URL [db://]
+2024-10-13 15:55:44,922 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/clients/client]
+2024-10-13 15:55:44,922 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/codex]
+2024-10-13 15:55:44,922 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/db]
+2024-10-13 15:55:44,923 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path-include [config/db] pattern [config/db\[mwlog\]]
+2024-10-13 15:55:44,923 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/dbquery]
+2024-10-13 15:55:44,923 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/dtree-map]
+2024-10-13 15:55:44,923 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/host]
+2024-10-13 15:55:44,923 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/mapping]
+2024-10-13 15:55:44,923 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/param-map]
+2024-10-13 15:55:44,923 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/parser]
+2024-10-13 15:55:44,924 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/ports/port]
+2024-10-13 15:55:44,924 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/routing]
+2024-10-13 15:55:44,924 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/rpg-call]
+2024-10-13 15:55:45,087 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Creating new db connection
+2024-10-13 15:55:45,175 [main] WARN id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Error loading [db://] null
+java.io.IOException: Error loading [db://] null
+	at id.co.hanoman.config.ConfigFactory.getConfig(ConfigFactory.java:90)
+	at id.co.hanoman.mbplugin.DatabaseDLogNode.initConfig(DatabaseDLogNode.java:226)
+	at id.co.hanoman.mbplugin.DatabaseDLogNode.onInitialize(DatabaseDLogNode.java:368)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:83)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:57)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:437)
+	at id.co.hanoman.config.ConfigFactory.getConfig(ConfigFactory.java:62)
+	... 2 more
+Caused by: java.sql.SQLException: Unable to connect to 'jdbc:db2://btnmdwdata:50000/mwconfig' with user 'db2inst1' [jcc][t4][2043][11550][3.58.81] Exception java.net.ConnectException: Error opening socket to server btnmdwdata/10.10.10.36 on port 50,000 with message: Connection refused (Connection refused). ERRORCODE=-4499, SQLSTATE=08001
+	at id.co.hanoman.config.db.ConfigDb.getConnection(ConfigDb.java:1097)
+	at id.co.hanoman.config.db.ConfigDb.init(ConfigDb.java:332)
+	at id.co.hanoman.config.db.ConfigDb.<init>(ConfigDb.java:295)
+	... 7 more
+Caused by: com.ibm.db2.jcc.am.io: [jcc][t4][2043][11550][3.58.81] Exception java.net.ConnectException: Error opening socket to server btnmdwdata/10.10.10.36 on port 50,000 with message: Connection refused (Connection refused). ERRORCODE=-4499, SQLSTATE=08001
+	at com.ibm.db2.jcc.am.ed.a(ed.java:319)
+	at com.ibm.db2.jcc.am.ed.a(ed.java:337)
+	at com.ibm.db2.jcc.t4.zb.a(zb.java:378)
+	at com.ibm.db2.jcc.t4.zb.<init>(zb.java:76)
+	at com.ibm.db2.jcc.t4.a.y(a.java:306)
+	at com.ibm.db2.jcc.t4.b.a(b.java:1796)
+	at com.ibm.db2.jcc.am.jb.a(jb.java:573)
+	at com.ibm.db2.jcc.am.jb.<init>(jb.java:524)
+	at com.ibm.db2.jcc.t4.b.<init>(b.java:305)
+	at com.ibm.db2.jcc.DB2SimpleDataSource.getConnection(DB2SimpleDataSource.java:214)
+	at com.ibm.db2.jcc.DB2Driver.connect(DB2Driver.java:456)
+	at java.sql.DriverManager.getConnection(DriverManager.java:675)
+	at java.sql.DriverManager.getConnection(DriverManager.java:258)
+	at id.co.hanoman.config.db.DBPool.getConnection(DBPool.java:233)
+	at id.co.hanoman.config.db.DBPool$1.getConnection(DBPool.java:113)
+	at id.co.hanoman.config.db.ConfigDb.getConnection(ConfigDb.java:1090)
+	... 9 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:380)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:236)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:218)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
+	at java.net.Socket.connect(Socket.java:682)
+	at com.ibm.db2.jcc.t4.ab.run(ab.java:34)
+	at java.security.AccessController.doPrivileged(AccessController.java:746)
+	at com.ibm.db2.jcc.t4.zb.a(zb.java:372)
+	... 22 more
+2024-10-13 15:55:45,176 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - RELOAD CONFIG [ISOBROKER:LOG_DB:HanomanDatabaseLogNode] NULL
+2024-10-13 15:55:45,176 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - getConfig [db://]
+2024-10-13 15:55:45,176 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - getConfig [db://]
+2024-10-13 15:55:45,176 [main] INFO id.co.hanoman.mbplugin.reload BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - LOADING CONFIG [ISOBROKER:LOG_DB:DB_LOG]  URL [db://]
+2024-10-13 15:55:45,182 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/clients/client]
+2024-10-13 15:55:45,182 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/codex]
+2024-10-13 15:55:45,182 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/db]
+2024-10-13 15:55:45,183 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path-include [config/db] pattern [config/db\[mwlog\]]
+2024-10-13 15:55:45,183 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/dbquery]
+2024-10-13 15:55:45,183 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/dtree-map]
+2024-10-13 15:55:45,183 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/host]
+2024-10-13 15:55:45,183 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/mapping]
+2024-10-13 15:55:45,183 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/param-map]
+2024-10-13 15:55:45,183 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/parser]
+2024-10-13 15:55:45,183 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/ports/port]
+2024-10-13 15:55:45,183 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/routing]
+2024-10-13 15:55:45,184 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/rpg-call]
+2024-10-13 15:55:45,184 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Creating new db connection
+2024-10-13 15:55:45,186 [main] WARN id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Error loading [db://] null
+java.io.IOException: Error loading [db://] null
+	at id.co.hanoman.config.ConfigFactory.getConfig(ConfigFactory.java:90)
+	at id.co.hanoman.mbplugin.DatabaseDLogNode.initConfig(DatabaseDLogNode.java:226)
+	at id.co.hanoman.mbplugin.DatabaseDLogNode.onInitialize(DatabaseDLogNode.java:368)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:83)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:57)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:437)
+	at id.co.hanoman.config.ConfigFactory.getConfig(ConfigFactory.java:62)
+	... 2 more
+Caused by: java.sql.SQLException: Unable to connect to 'jdbc:db2://btnmdwdata:50000/mwconfig' with user 'db2inst1' [jcc][t4][2043][11550][3.58.81] Exception java.net.ConnectException: Error opening socket to server btnmdwdata/10.10.10.36 on port 50,000 with message: Connection refused (Connection refused). ERRORCODE=-4499, SQLSTATE=08001
+	at id.co.hanoman.config.db.ConfigDb.getConnection(ConfigDb.java:1097)
+	at id.co.hanoman.config.db.ConfigDb.init(ConfigDb.java:332)
+	at id.co.hanoman.config.db.ConfigDb.<init>(ConfigDb.java:295)
+	... 7 more
+Caused by: com.ibm.db2.jcc.am.io: [jcc][t4][2043][11550][3.58.81] Exception java.net.ConnectException: Error opening socket to server btnmdwdata/10.10.10.36 on port 50,000 with message: Connection refused (Connection refused). ERRORCODE=-4499, SQLSTATE=08001
+	at com.ibm.db2.jcc.am.ed.a(ed.java:319)
+	at com.ibm.db2.jcc.am.ed.a(ed.java:337)
+	at com.ibm.db2.jcc.t4.zb.a(zb.java:378)
+	at com.ibm.db2.jcc.t4.zb.<init>(zb.java:76)
+	at com.ibm.db2.jcc.t4.a.y(a.java:306)
+	at com.ibm.db2.jcc.t4.b.a(b.java:1796)
+	at com.ibm.db2.jcc.am.jb.a(jb.java:573)
+	at com.ibm.db2.jcc.am.jb.<init>(jb.java:524)
+	at com.ibm.db2.jcc.t4.b.<init>(b.java:305)
+	at com.ibm.db2.jcc.DB2SimpleDataSource.getConnection(DB2SimpleDataSource.java:214)
+	at com.ibm.db2.jcc.DB2Driver.connect(DB2Driver.java:456)
+	at java.sql.DriverManager.getConnection(DriverManager.java:675)
+	at java.sql.DriverManager.getConnection(DriverManager.java:258)
+	at id.co.hanoman.config.db.DBPool.getConnection(DBPool.java:233)
+	at id.co.hanoman.config.db.DBPool$1.getConnection(DBPool.java:113)
+	at id.co.hanoman.config.db.ConfigDb.getConnection(ConfigDb.java:1090)
+	... 9 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:380)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:236)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:218)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
+	at java.net.Socket.connect(Socket.java:682)
+	at com.ibm.db2.jcc.t4.ab.run(ab.java:34)
+	at java.security.AccessController.doPrivileged(AccessController.java:746)
+	at com.ibm.db2.jcc.t4.zb.a(zb.java:372)
+	... 22 more
+2024-10-15 15:43:40,433 [main] INFO id.co.hanoman.StartStopLog BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:null) - BUILD [htcp]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [hcx]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [config]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+Java version IBM Corporation  1.8.0_391
+
+2024-10-15 15:43:40,917 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - RELOAD CONFIG [ISOBROKER:LOG_DB:HanomanDatabaseLogNode] NULL
+2024-10-15 15:43:40,922 [main] INFO id.co.hanoman.License BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Hanoman WMB Plugin for Bank Tabungan Negara
+2024-10-15 15:43:41,363 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - getConfig [db://]
+2024-10-15 15:43:41,363 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - getConfig [db://]
+2024-10-15 15:43:41,363 [main] INFO id.co.hanoman.mbplugin.reload BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - LOADING CONFIG [ISOBROKER:LOG_DB:DB_LOG_ERROR]  URL [db://]
+2024-10-15 15:43:41,482 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/clients/client]
+2024-10-15 15:43:41,483 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/codex]
+2024-10-15 15:43:41,483 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/db]
+2024-10-15 15:43:41,483 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path-include [config/db] pattern [config/db\[mwlog\]]
+2024-10-15 15:43:41,483 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/dbquery]
+2024-10-15 15:43:41,483 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/dtree-map]
+2024-10-15 15:43:41,484 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/host]
+2024-10-15 15:43:41,484 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/mapping]
+2024-10-15 15:43:41,484 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/param-map]
+2024-10-15 15:43:41,484 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/parser]
+2024-10-15 15:43:41,484 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/ports/port]
+2024-10-15 15:43:41,485 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/routing]
+2024-10-15 15:43:41,485 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/rpg-call]
+2024-10-15 15:43:41,666 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Creating new db connection
+2024-10-15 15:43:41,772 [main] WARN id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Error loading [db://] null
+java.io.IOException: Error loading [db://] null
+	at id.co.hanoman.config.ConfigFactory.getConfig(ConfigFactory.java:90)
+	at id.co.hanoman.mbplugin.DatabaseDLogNode.initConfig(DatabaseDLogNode.java:226)
+	at id.co.hanoman.mbplugin.DatabaseDLogNode.onInitialize(DatabaseDLogNode.java:368)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:83)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:57)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:437)
+	at id.co.hanoman.config.ConfigFactory.getConfig(ConfigFactory.java:62)
+	... 2 more
+Caused by: java.sql.SQLException: Unable to connect to 'jdbc:db2://btnmdwdata:50000/mwconfig' with user 'db2inst1' [jcc][t4][2043][11550][3.58.81] Exception java.net.ConnectException: Error opening socket to server btnmdwdata/10.10.10.36 on port 50,000 with message: Connection refused (Connection refused). ERRORCODE=-4499, SQLSTATE=08001
+	at id.co.hanoman.config.db.ConfigDb.getConnection(ConfigDb.java:1097)
+	at id.co.hanoman.config.db.ConfigDb.init(ConfigDb.java:332)
+	at id.co.hanoman.config.db.ConfigDb.<init>(ConfigDb.java:295)
+	... 7 more
+Caused by: com.ibm.db2.jcc.am.io: [jcc][t4][2043][11550][3.58.81] Exception java.net.ConnectException: Error opening socket to server btnmdwdata/10.10.10.36 on port 50,000 with message: Connection refused (Connection refused). ERRORCODE=-4499, SQLSTATE=08001
+	at com.ibm.db2.jcc.am.ed.a(ed.java:319)
+	at com.ibm.db2.jcc.am.ed.a(ed.java:337)
+	at com.ibm.db2.jcc.t4.zb.a(zb.java:378)
+	at com.ibm.db2.jcc.t4.zb.<init>(zb.java:76)
+	at com.ibm.db2.jcc.t4.a.y(a.java:306)
+	at com.ibm.db2.jcc.t4.b.a(b.java:1796)
+	at com.ibm.db2.jcc.am.jb.a(jb.java:573)
+	at com.ibm.db2.jcc.am.jb.<init>(jb.java:524)
+	at com.ibm.db2.jcc.t4.b.<init>(b.java:305)
+	at com.ibm.db2.jcc.DB2SimpleDataSource.getConnection(DB2SimpleDataSource.java:214)
+	at com.ibm.db2.jcc.DB2Driver.connect(DB2Driver.java:456)
+	at java.sql.DriverManager.getConnection(DriverManager.java:675)
+	at java.sql.DriverManager.getConnection(DriverManager.java:258)
+	at id.co.hanoman.config.db.DBPool.getConnection(DBPool.java:233)
+	at id.co.hanoman.config.db.DBPool$1.getConnection(DBPool.java:113)
+	at id.co.hanoman.config.db.ConfigDb.getConnection(ConfigDb.java:1090)
+	... 9 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:380)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:236)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:218)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
+	at java.net.Socket.connect(Socket.java:682)
+	at com.ibm.db2.jcc.t4.ab.run(ab.java:34)
+	at java.security.AccessController.doPrivileged(AccessController.java:746)
+	at com.ibm.db2.jcc.t4.zb.a(zb.java:372)
+	... 22 more
+2024-10-15 15:43:41,774 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - RELOAD CONFIG [ISOBROKER:LOG_DB:HanomanDatabaseLogNode] NULL
+2024-10-15 15:43:41,774 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - getConfig [db://]
+2024-10-15 15:43:41,774 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - getConfig [db://]
+2024-10-15 15:43:41,774 [main] INFO id.co.hanoman.mbplugin.reload BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - LOADING CONFIG [ISOBROKER:LOG_DB:DB_LOG]  URL [db://]
+2024-10-15 15:43:41,779 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/clients/client]
+2024-10-15 15:43:41,780 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/codex]
+2024-10-15 15:43:41,780 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/db]
+2024-10-15 15:43:41,780 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path-include [config/db] pattern [config/db\[mwlog\]]
+2024-10-15 15:43:41,780 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/dbquery]
+2024-10-15 15:43:41,780 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/dtree-map]
+2024-10-15 15:43:41,780 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/host]
+2024-10-15 15:43:41,780 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/mapping]
+2024-10-15 15:43:41,780 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/param-map]
+2024-10-15 15:43:41,780 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/parser]
+2024-10-15 15:43:41,780 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/ports/port]
+2024-10-15 15:43:41,781 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/routing]
+2024-10-15 15:43:41,781 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/rpg-call]
+2024-10-15 15:43:41,782 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Creating new db connection
+2024-10-15 15:43:41,783 [main] WARN id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Error loading [db://] null
+java.io.IOException: Error loading [db://] null
+	at id.co.hanoman.config.ConfigFactory.getConfig(ConfigFactory.java:90)
+	at id.co.hanoman.mbplugin.DatabaseDLogNode.initConfig(DatabaseDLogNode.java:226)
+	at id.co.hanoman.mbplugin.DatabaseDLogNode.onInitialize(DatabaseDLogNode.java:368)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:83)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:57)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:437)
+	at id.co.hanoman.config.ConfigFactory.getConfig(ConfigFactory.java:62)
+	... 2 more
+Caused by: java.sql.SQLException: Unable to connect to 'jdbc:db2://btnmdwdata:50000/mwconfig' with user 'db2inst1' [jcc][t4][2043][11550][3.58.81] Exception java.net.ConnectException: Error opening socket to server btnmdwdata/10.10.10.36 on port 50,000 with message: Connection refused (Connection refused). ERRORCODE=-4499, SQLSTATE=08001
+	at id.co.hanoman.config.db.ConfigDb.getConnection(ConfigDb.java:1097)
+	at id.co.hanoman.config.db.ConfigDb.init(ConfigDb.java:332)
+	at id.co.hanoman.config.db.ConfigDb.<init>(ConfigDb.java:295)
+	... 7 more
+Caused by: com.ibm.db2.jcc.am.io: [jcc][t4][2043][11550][3.58.81] Exception java.net.ConnectException: Error opening socket to server btnmdwdata/10.10.10.36 on port 50,000 with message: Connection refused (Connection refused). ERRORCODE=-4499, SQLSTATE=08001
+	at com.ibm.db2.jcc.am.ed.a(ed.java:319)
+	at com.ibm.db2.jcc.am.ed.a(ed.java:337)
+	at com.ibm.db2.jcc.t4.zb.a(zb.java:378)
+	at com.ibm.db2.jcc.t4.zb.<init>(zb.java:76)
+	at com.ibm.db2.jcc.t4.a.y(a.java:306)
+	at com.ibm.db2.jcc.t4.b.a(b.java:1796)
+	at com.ibm.db2.jcc.am.jb.a(jb.java:573)
+	at com.ibm.db2.jcc.am.jb.<init>(jb.java:524)
+	at com.ibm.db2.jcc.t4.b.<init>(b.java:305)
+	at com.ibm.db2.jcc.DB2SimpleDataSource.getConnection(DB2SimpleDataSource.java:214)
+	at com.ibm.db2.jcc.DB2Driver.connect(DB2Driver.java:456)
+	at java.sql.DriverManager.getConnection(DriverManager.java:675)
+	at java.sql.DriverManager.getConnection(DriverManager.java:258)
+	at id.co.hanoman.config.db.DBPool.getConnection(DBPool.java:233)
+	at id.co.hanoman.config.db.DBPool$1.getConnection(DBPool.java:113)
+	at id.co.hanoman.config.db.ConfigDb.getConnection(ConfigDb.java:1090)
+	... 9 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:380)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:236)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:218)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
+	at java.net.Socket.connect(Socket.java:682)
+	at com.ibm.db2.jcc.t4.ab.run(ab.java:34)
+	at java.security.AccessController.doPrivileged(AccessController.java:746)
+	at com.ibm.db2.jcc.t4.zb.a(zb.java:372)
+	... 22 more
+2024-10-19 16:58:08,091 [main] INFO id.co.hanoman.StartStopLog BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:null) - BUILD [htcp]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [hcx]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [config]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+Java version IBM Corporation  1.8.0_391
+
+2024-10-19 16:58:08,462 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - RELOAD CONFIG [ISOBROKER:LOG_DB:HanomanDatabaseLogNode] NULL
+2024-10-19 16:58:08,465 [main] INFO id.co.hanoman.License BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Hanoman WMB Plugin for Bank Tabungan Negara
+2024-10-19 16:58:08,757 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - getConfig [db://]
+2024-10-19 16:58:08,757 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - getConfig [db://]
+2024-10-19 16:58:08,757 [main] INFO id.co.hanoman.mbplugin.reload BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - LOADING CONFIG [ISOBROKER:LOG_DB:DB_LOG_ERROR]  URL [db://]
+2024-10-19 16:58:08,850 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/clients/client]
+2024-10-19 16:58:08,851 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/codex]
+2024-10-19 16:58:08,851 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/db]
+2024-10-19 16:58:08,851 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path-include [config/db] pattern [config/db\[mwlog\]]
+2024-10-19 16:58:08,851 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/dbquery]
+2024-10-19 16:58:08,851 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/dtree-map]
+2024-10-19 16:58:08,851 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/host]
+2024-10-19 16:58:08,852 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/mapping]
+2024-10-19 16:58:08,852 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/param-map]
+2024-10-19 16:58:08,852 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/parser]
+2024-10-19 16:58:08,852 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/ports/port]
+2024-10-19 16:58:08,853 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/routing]
+2024-10-19 16:58:08,853 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/rpg-call]
+2024-10-19 16:58:09,014 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Creating new db connection
+2024-10-19 16:58:09,095 [main] WARN id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Error loading [db://] null
+java.io.IOException: Error loading [db://] null
+	at id.co.hanoman.config.ConfigFactory.getConfig(ConfigFactory.java:90)
+	at id.co.hanoman.mbplugin.DatabaseDLogNode.initConfig(DatabaseDLogNode.java:226)
+	at id.co.hanoman.mbplugin.DatabaseDLogNode.onInitialize(DatabaseDLogNode.java:368)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:83)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:57)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:437)
+	at id.co.hanoman.config.ConfigFactory.getConfig(ConfigFactory.java:62)
+	... 2 more
+Caused by: java.sql.SQLException: Unable to connect to 'jdbc:db2://btnmdwdata:50000/mwconfig' with user 'db2inst1' [jcc][t4][2043][11550][3.58.81] Exception java.net.ConnectException: Error opening socket to server btnmdwdata/10.10.10.36 on port 50,000 with message: Connection refused (Connection refused). ERRORCODE=-4499, SQLSTATE=08001
+	at id.co.hanoman.config.db.ConfigDb.getConnection(ConfigDb.java:1097)
+	at id.co.hanoman.config.db.ConfigDb.init(ConfigDb.java:332)
+	at id.co.hanoman.config.db.ConfigDb.<init>(ConfigDb.java:295)
+	... 7 more
+Caused by: com.ibm.db2.jcc.am.io: [jcc][t4][2043][11550][3.58.81] Exception java.net.ConnectException: Error opening socket to server btnmdwdata/10.10.10.36 on port 50,000 with message: Connection refused (Connection refused). ERRORCODE=-4499, SQLSTATE=08001
+	at com.ibm.db2.jcc.am.ed.a(ed.java:319)
+	at com.ibm.db2.jcc.am.ed.a(ed.java:337)
+	at com.ibm.db2.jcc.t4.zb.a(zb.java:378)
+	at com.ibm.db2.jcc.t4.zb.<init>(zb.java:76)
+	at com.ibm.db2.jcc.t4.a.y(a.java:306)
+	at com.ibm.db2.jcc.t4.b.a(b.java:1796)
+	at com.ibm.db2.jcc.am.jb.a(jb.java:573)
+	at com.ibm.db2.jcc.am.jb.<init>(jb.java:524)
+	at com.ibm.db2.jcc.t4.b.<init>(b.java:305)
+	at com.ibm.db2.jcc.DB2SimpleDataSource.getConnection(DB2SimpleDataSource.java:214)
+	at com.ibm.db2.jcc.DB2Driver.connect(DB2Driver.java:456)
+	at java.sql.DriverManager.getConnection(DriverManager.java:675)
+	at java.sql.DriverManager.getConnection(DriverManager.java:258)
+	at id.co.hanoman.config.db.DBPool.getConnection(DBPool.java:233)
+	at id.co.hanoman.config.db.DBPool$1.getConnection(DBPool.java:113)
+	at id.co.hanoman.config.db.ConfigDb.getConnection(ConfigDb.java:1090)
+	... 9 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:380)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:236)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:218)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
+	at java.net.Socket.connect(Socket.java:682)
+	at com.ibm.db2.jcc.t4.ab.run(ab.java:34)
+	at java.security.AccessController.doPrivileged(AccessController.java:746)
+	at com.ibm.db2.jcc.t4.zb.a(zb.java:372)
+	... 22 more
+2024-10-19 16:58:09,096 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - RELOAD CONFIG [ISOBROKER:LOG_DB:HanomanDatabaseLogNode] NULL
+2024-10-19 16:58:09,096 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - getConfig [db://]
+2024-10-19 16:58:09,096 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - getConfig [db://]
+2024-10-19 16:58:09,096 [main] INFO id.co.hanoman.mbplugin.reload BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - LOADING CONFIG [ISOBROKER:LOG_DB:DB_LOG]  URL [db://]
+2024-10-19 16:58:09,101 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/clients/client]
+2024-10-19 16:58:09,101 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/codex]
+2024-10-19 16:58:09,101 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/db]
+2024-10-19 16:58:09,101 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path-include [config/db] pattern [config/db\[mwlog\]]
+2024-10-19 16:58:09,101 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/dbquery]
+2024-10-19 16:58:09,101 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/dtree-map]
+2024-10-19 16:58:09,101 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/host]
+2024-10-19 16:58:09,102 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/mapping]
+2024-10-19 16:58:09,102 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/param-map]
+2024-10-19 16:58:09,102 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/parser]
+2024-10-19 16:58:09,102 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/ports/port]
+2024-10-19 16:58:09,102 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/routing]
+2024-10-19 16:58:09,102 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/rpg-call]
+2024-10-19 16:58:09,103 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Creating new db connection
+2024-10-19 16:58:09,103 [main] WARN id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Error loading [db://] null
+java.io.IOException: Error loading [db://] null
+	at id.co.hanoman.config.ConfigFactory.getConfig(ConfigFactory.java:90)
+	at id.co.hanoman.mbplugin.DatabaseDLogNode.initConfig(DatabaseDLogNode.java:226)
+	at id.co.hanoman.mbplugin.DatabaseDLogNode.onInitialize(DatabaseDLogNode.java:368)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:83)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:57)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:437)
+	at id.co.hanoman.config.ConfigFactory.getConfig(ConfigFactory.java:62)
+	... 2 more
+Caused by: java.sql.SQLException: Unable to connect to 'jdbc:db2://btnmdwdata:50000/mwconfig' with user 'db2inst1' [jcc][t4][2043][11550][3.58.81] Exception java.net.ConnectException: Error opening socket to server btnmdwdata/10.10.10.36 on port 50,000 with message: Connection refused (Connection refused). ERRORCODE=-4499, SQLSTATE=08001
+	at id.co.hanoman.config.db.ConfigDb.getConnection(ConfigDb.java:1097)
+	at id.co.hanoman.config.db.ConfigDb.init(ConfigDb.java:332)
+	at id.co.hanoman.config.db.ConfigDb.<init>(ConfigDb.java:295)
+	... 7 more
+Caused by: com.ibm.db2.jcc.am.io: [jcc][t4][2043][11550][3.58.81] Exception java.net.ConnectException: Error opening socket to server btnmdwdata/10.10.10.36 on port 50,000 with message: Connection refused (Connection refused). ERRORCODE=-4499, SQLSTATE=08001
+	at com.ibm.db2.jcc.am.ed.a(ed.java:319)
+	at com.ibm.db2.jcc.am.ed.a(ed.java:337)
+	at com.ibm.db2.jcc.t4.zb.a(zb.java:378)
+	at com.ibm.db2.jcc.t4.zb.<init>(zb.java:76)
+	at com.ibm.db2.jcc.t4.a.y(a.java:306)
+	at com.ibm.db2.jcc.t4.b.a(b.java:1796)
+	at com.ibm.db2.jcc.am.jb.a(jb.java:573)
+	at com.ibm.db2.jcc.am.jb.<init>(jb.java:524)
+	at com.ibm.db2.jcc.t4.b.<init>(b.java:305)
+	at com.ibm.db2.jcc.DB2SimpleDataSource.getConnection(DB2SimpleDataSource.java:214)
+	at com.ibm.db2.jcc.DB2Driver.connect(DB2Driver.java:456)
+	at java.sql.DriverManager.getConnection(DriverManager.java:675)
+	at java.sql.DriverManager.getConnection(DriverManager.java:258)
+	at id.co.hanoman.config.db.DBPool.getConnection(DBPool.java:233)
+	at id.co.hanoman.config.db.DBPool$1.getConnection(DBPool.java:113)
+	at id.co.hanoman.config.db.ConfigDb.getConnection(ConfigDb.java:1090)
+	... 9 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:380)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:236)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:218)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
+	at java.net.Socket.connect(Socket.java:682)
+	at com.ibm.db2.jcc.t4.ab.run(ab.java:34)
+	at java.security.AccessController.doPrivileged(AccessController.java:746)
+	at com.ibm.db2.jcc.t4.zb.a(zb.java:372)
+	... 22 more
+2024-10-21 02:36:57,205 [main] INFO id.co.hanoman.StartStopLog BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:null) - BUILD [htcp]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [hcx]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [config]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+Java version IBM Corporation  1.8.0_391
+
+2024-10-21 02:36:58,195 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - RELOAD CONFIG [ISOBROKER:LOG_DB:HanomanDatabaseLogNode] NULL
+2024-10-21 02:36:58,205 [main] INFO id.co.hanoman.License BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Hanoman WMB Plugin for Bank Tabungan Negara
+2024-10-21 02:36:59,173 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - getConfig [db://]
+2024-10-21 02:36:59,173 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - getConfig [db://]
+2024-10-21 02:36:59,173 [main] INFO id.co.hanoman.mbplugin.reload BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - LOADING CONFIG [ISOBROKER:LOG_DB:DB_LOG_ERROR]  URL [db://]
+2024-10-21 02:36:59,381 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/clients/client]
+2024-10-21 02:36:59,382 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/codex]
+2024-10-21 02:36:59,382 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/db]
+2024-10-21 02:36:59,383 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path-include [config/db] pattern [config/db\[mwlog\]]
+2024-10-21 02:36:59,383 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/dbquery]
+2024-10-21 02:36:59,383 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/dtree-map]
+2024-10-21 02:36:59,384 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/host]
+2024-10-21 02:36:59,384 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/mapping]
+2024-10-21 02:36:59,384 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/param-map]
+2024-10-21 02:36:59,384 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/parser]
+2024-10-21 02:36:59,386 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/ports/port]
+2024-10-21 02:36:59,386 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/routing]
+2024-10-21 02:36:59,386 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/rpg-call]
+2024-10-21 02:36:59,929 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Creating new db connection
+2024-10-21 02:37:00,187 [main] WARN id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Error loading [db://] null
+java.io.IOException: Error loading [db://] null
+	at id.co.hanoman.config.ConfigFactory.getConfig(ConfigFactory.java:90)
+	at id.co.hanoman.mbplugin.DatabaseDLogNode.initConfig(DatabaseDLogNode.java:226)
+	at id.co.hanoman.mbplugin.DatabaseDLogNode.onInitialize(DatabaseDLogNode.java:368)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:83)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:57)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:437)
+	at id.co.hanoman.config.ConfigFactory.getConfig(ConfigFactory.java:62)
+	... 2 more
+Caused by: java.sql.SQLException: Unable to connect to 'jdbc:db2://btnmdwdata:50000/mwconfig' with user 'db2inst1' [jcc][t4][2043][11550][3.58.81] Exception java.net.ConnectException: Error opening socket to server btnmdwdata/10.10.10.36 on port 50,000 with message: Connection refused (Connection refused). ERRORCODE=-4499, SQLSTATE=08001
+	at id.co.hanoman.config.db.ConfigDb.getConnection(ConfigDb.java:1097)
+	at id.co.hanoman.config.db.ConfigDb.init(ConfigDb.java:332)
+	at id.co.hanoman.config.db.ConfigDb.<init>(ConfigDb.java:295)
+	... 7 more
+Caused by: com.ibm.db2.jcc.am.io: [jcc][t4][2043][11550][3.58.81] Exception java.net.ConnectException: Error opening socket to server btnmdwdata/10.10.10.36 on port 50,000 with message: Connection refused (Connection refused). ERRORCODE=-4499, SQLSTATE=08001
+	at com.ibm.db2.jcc.am.ed.a(ed.java:319)
+	at com.ibm.db2.jcc.am.ed.a(ed.java:337)
+	at com.ibm.db2.jcc.t4.zb.a(zb.java:378)
+	at com.ibm.db2.jcc.t4.zb.<init>(zb.java:76)
+	at com.ibm.db2.jcc.t4.a.y(a.java:306)
+	at com.ibm.db2.jcc.t4.b.a(b.java:1796)
+	at com.ibm.db2.jcc.am.jb.a(jb.java:573)
+	at com.ibm.db2.jcc.am.jb.<init>(jb.java:524)
+	at com.ibm.db2.jcc.t4.b.<init>(b.java:305)
+	at com.ibm.db2.jcc.DB2SimpleDataSource.getConnection(DB2SimpleDataSource.java:214)
+	at com.ibm.db2.jcc.DB2Driver.connect(DB2Driver.java:456)
+	at java.sql.DriverManager.getConnection(DriverManager.java:675)
+	at java.sql.DriverManager.getConnection(DriverManager.java:258)
+	at id.co.hanoman.config.db.DBPool.getConnection(DBPool.java:233)
+	at id.co.hanoman.config.db.DBPool$1.getConnection(DBPool.java:113)
+	at id.co.hanoman.config.db.ConfigDb.getConnection(ConfigDb.java:1090)
+	... 9 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:380)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:236)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:218)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
+	at java.net.Socket.connect(Socket.java:682)
+	at com.ibm.db2.jcc.t4.ab.run(ab.java:34)
+	at java.security.AccessController.doPrivileged(AccessController.java:746)
+	at com.ibm.db2.jcc.t4.zb.a(zb.java:372)
+	... 22 more
+2024-10-21 02:37:00,194 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - RELOAD CONFIG [ISOBROKER:LOG_DB:HanomanDatabaseLogNode] NULL
+2024-10-21 02:37:00,194 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - getConfig [db://]
+2024-10-21 02:37:00,194 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - getConfig [db://]
+2024-10-21 02:37:00,194 [main] INFO id.co.hanoman.mbplugin.reload BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - LOADING CONFIG [ISOBROKER:LOG_DB:DB_LOG]  URL [db://]
+2024-10-21 02:37:00,273 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/clients/client]
+2024-10-21 02:37:00,274 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/codex]
+2024-10-21 02:37:00,274 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/db]
+2024-10-21 02:37:00,274 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path-include [config/db] pattern [config/db\[mwlog\]]
+2024-10-21 02:37:00,274 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/dbquery]
+2024-10-21 02:37:00,274 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/dtree-map]
+2024-10-21 02:37:00,275 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/host]
+2024-10-21 02:37:00,275 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/mapping]
+2024-10-21 02:37:00,275 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/param-map]
+2024-10-21 02:37:00,276 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/parser]
+2024-10-21 02:37:00,276 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/ports/port]
+2024-10-21 02:37:00,276 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/routing]
+2024-10-21 02:37:00,276 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/rpg-call]
+2024-10-21 02:37:00,278 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Creating new db connection
+2024-10-21 02:37:00,281 [main] WARN id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Error loading [db://] null
+java.io.IOException: Error loading [db://] null
+	at id.co.hanoman.config.ConfigFactory.getConfig(ConfigFactory.java:90)
+	at id.co.hanoman.mbplugin.DatabaseDLogNode.initConfig(DatabaseDLogNode.java:226)
+	at id.co.hanoman.mbplugin.DatabaseDLogNode.onInitialize(DatabaseDLogNode.java:368)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:83)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:57)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:437)
+	at id.co.hanoman.config.ConfigFactory.getConfig(ConfigFactory.java:62)
+	... 2 more
+Caused by: java.sql.SQLException: Unable to connect to 'jdbc:db2://btnmdwdata:50000/mwconfig' with user 'db2inst1' [jcc][t4][2043][11550][3.58.81] Exception java.net.ConnectException: Error opening socket to server btnmdwdata/10.10.10.36 on port 50,000 with message: Connection refused (Connection refused). ERRORCODE=-4499, SQLSTATE=08001
+	at id.co.hanoman.config.db.ConfigDb.getConnection(ConfigDb.java:1097)
+	at id.co.hanoman.config.db.ConfigDb.init(ConfigDb.java:332)
+	at id.co.hanoman.config.db.ConfigDb.<init>(ConfigDb.java:295)
+	... 7 more
+Caused by: com.ibm.db2.jcc.am.io: [jcc][t4][2043][11550][3.58.81] Exception java.net.ConnectException: Error opening socket to server btnmdwdata/10.10.10.36 on port 50,000 with message: Connection refused (Connection refused). ERRORCODE=-4499, SQLSTATE=08001
+	at com.ibm.db2.jcc.am.ed.a(ed.java:319)
+	at com.ibm.db2.jcc.am.ed.a(ed.java:337)
+	at com.ibm.db2.jcc.t4.zb.a(zb.java:378)
+	at com.ibm.db2.jcc.t4.zb.<init>(zb.java:76)
+	at com.ibm.db2.jcc.t4.a.y(a.java:306)
+	at com.ibm.db2.jcc.t4.b.a(b.java:1796)
+	at com.ibm.db2.jcc.am.jb.a(jb.java:573)
+	at com.ibm.db2.jcc.am.jb.<init>(jb.java:524)
+	at com.ibm.db2.jcc.t4.b.<init>(b.java:305)
+	at com.ibm.db2.jcc.DB2SimpleDataSource.getConnection(DB2SimpleDataSource.java:214)
+	at com.ibm.db2.jcc.DB2Driver.connect(DB2Driver.java:456)
+	at java.sql.DriverManager.getConnection(DriverManager.java:675)
+	at java.sql.DriverManager.getConnection(DriverManager.java:258)
+	at id.co.hanoman.config.db.DBPool.getConnection(DBPool.java:233)
+	at id.co.hanoman.config.db.DBPool$1.getConnection(DBPool.java:113)
+	at id.co.hanoman.config.db.ConfigDb.getConnection(ConfigDb.java:1090)
+	... 9 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:380)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:236)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:218)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
+	at java.net.Socket.connect(Socket.java:682)
+	at com.ibm.db2.jcc.t4.ab.run(ab.java:34)
+	at java.security.AccessController.doPrivileged(AccessController.java:746)
+	at com.ibm.db2.jcc.t4.zb.a(zb.java:372)
+	... 22 more
+2024-10-21 02:41:24,233 [main] INFO id.co.hanoman.StartStopLog BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:null) - BUILD [htcp]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [hcx]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [config]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+Java version IBM Corporation  1.8.0_391
+
+2024-10-21 02:41:24,982 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - RELOAD CONFIG [ISOBROKER:LOG_DB:HanomanDatabaseLogNode] NULL
+2024-10-21 02:41:24,988 [main] INFO id.co.hanoman.License BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Hanoman WMB Plugin for Bank Tabungan Negara
+2024-10-21 02:41:25,454 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - getConfig [db://]
+2024-10-21 02:41:25,455 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - getConfig [db://]
+2024-10-21 02:41:25,455 [main] INFO id.co.hanoman.mbplugin.reload BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - LOADING CONFIG [ISOBROKER:LOG_DB:DB_LOG_ERROR]  URL [db://]
+2024-10-21 02:41:25,605 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/clients/client]
+2024-10-21 02:41:25,606 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/codex]
+2024-10-21 02:41:25,606 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/db]
+2024-10-21 02:41:25,606 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path-include [config/db] pattern [config/db\[mwlog\]]
+2024-10-21 02:41:25,606 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/dbquery]
+2024-10-21 02:41:25,607 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/dtree-map]
+2024-10-21 02:41:25,607 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/host]
+2024-10-21 02:41:25,607 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/mapping]
+2024-10-21 02:41:25,607 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/param-map]
+2024-10-21 02:41:25,607 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/parser]
+2024-10-21 02:41:25,608 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/ports/port]
+2024-10-21 02:41:25,608 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/routing]
+2024-10-21 02:41:25,608 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/rpg-call]
+2024-10-21 02:41:25,941 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Creating new db connection
+2024-10-21 02:41:26,112 [main] WARN id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Error loading [db://] null
+java.io.IOException: Error loading [db://] null
+	at id.co.hanoman.config.ConfigFactory.getConfig(ConfigFactory.java:90)
+	at id.co.hanoman.mbplugin.DatabaseDLogNode.initConfig(DatabaseDLogNode.java:226)
+	at id.co.hanoman.mbplugin.DatabaseDLogNode.onInitialize(DatabaseDLogNode.java:368)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:83)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:57)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:437)
+	at id.co.hanoman.config.ConfigFactory.getConfig(ConfigFactory.java:62)
+	... 2 more
+Caused by: java.sql.SQLException: Unable to connect to 'jdbc:db2://btnmdwdata:50000/mwconfig' with user 'db2inst1' [jcc][t4][2043][11550][3.58.81] Exception java.net.ConnectException: Error opening socket to server btnmdwdata/10.10.10.36 on port 50,000 with message: Connection refused (Connection refused). ERRORCODE=-4499, SQLSTATE=08001
+	at id.co.hanoman.config.db.ConfigDb.getConnection(ConfigDb.java:1097)
+	at id.co.hanoman.config.db.ConfigDb.init(ConfigDb.java:332)
+	at id.co.hanoman.config.db.ConfigDb.<init>(ConfigDb.java:295)
+	... 7 more
+Caused by: com.ibm.db2.jcc.am.io: [jcc][t4][2043][11550][3.58.81] Exception java.net.ConnectException: Error opening socket to server btnmdwdata/10.10.10.36 on port 50,000 with message: Connection refused (Connection refused). ERRORCODE=-4499, SQLSTATE=08001
+	at com.ibm.db2.jcc.am.ed.a(ed.java:319)
+	at com.ibm.db2.jcc.am.ed.a(ed.java:337)
+	at com.ibm.db2.jcc.t4.zb.a(zb.java:378)
+	at com.ibm.db2.jcc.t4.zb.<init>(zb.java:76)
+	at com.ibm.db2.jcc.t4.a.y(a.java:306)
+	at com.ibm.db2.jcc.t4.b.a(b.java:1796)
+	at com.ibm.db2.jcc.am.jb.a(jb.java:573)
+	at com.ibm.db2.jcc.am.jb.<init>(jb.java:524)
+	at com.ibm.db2.jcc.t4.b.<init>(b.java:305)
+	at com.ibm.db2.jcc.DB2SimpleDataSource.getConnection(DB2SimpleDataSource.java:214)
+	at com.ibm.db2.jcc.DB2Driver.connect(DB2Driver.java:456)
+	at java.sql.DriverManager.getConnection(DriverManager.java:675)
+	at java.sql.DriverManager.getConnection(DriverManager.java:258)
+	at id.co.hanoman.config.db.DBPool.getConnection(DBPool.java:233)
+	at id.co.hanoman.config.db.DBPool$1.getConnection(DBPool.java:113)
+	at id.co.hanoman.config.db.ConfigDb.getConnection(ConfigDb.java:1090)
+	... 9 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:380)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:236)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:218)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
+	at java.net.Socket.connect(Socket.java:682)
+	at com.ibm.db2.jcc.t4.ab.run(ab.java:34)
+	at java.security.AccessController.doPrivileged(AccessController.java:746)
+	at com.ibm.db2.jcc.t4.zb.a(zb.java:372)
+	... 22 more
+2024-10-21 02:41:26,115 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - RELOAD CONFIG [ISOBROKER:LOG_DB:HanomanDatabaseLogNode] NULL
+2024-10-21 02:41:26,115 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - getConfig [db://]
+2024-10-21 02:41:26,115 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - getConfig [db://]
+2024-10-21 02:41:26,115 [main] INFO id.co.hanoman.mbplugin.reload BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - LOADING CONFIG [ISOBROKER:LOG_DB:DB_LOG]  URL [db://]
+2024-10-21 02:41:26,123 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/clients/client]
+2024-10-21 02:41:26,123 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/codex]
+2024-10-21 02:41:26,123 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/db]
+2024-10-21 02:41:26,124 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path-include [config/db] pattern [config/db\[mwlog\]]
+2024-10-21 02:41:26,124 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/dbquery]
+2024-10-21 02:41:26,124 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/dtree-map]
+2024-10-21 02:41:26,124 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/host]
+2024-10-21 02:41:26,124 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/mapping]
+2024-10-21 02:41:26,124 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/param-map]
+2024-10-21 02:41:26,124 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/parser]
+2024-10-21 02:41:26,125 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/ports/port]
+2024-10-21 02:41:26,125 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/routing]
+2024-10-21 02:41:26,125 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/rpg-call]
+2024-10-21 02:41:26,126 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Creating new db connection
+2024-10-21 02:41:26,128 [main] WARN id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Error loading [db://] null
+java.io.IOException: Error loading [db://] null
+	at id.co.hanoman.config.ConfigFactory.getConfig(ConfigFactory.java:90)
+	at id.co.hanoman.mbplugin.DatabaseDLogNode.initConfig(DatabaseDLogNode.java:226)
+	at id.co.hanoman.mbplugin.DatabaseDLogNode.onInitialize(DatabaseDLogNode.java:368)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:83)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:57)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:437)
+	at id.co.hanoman.config.ConfigFactory.getConfig(ConfigFactory.java:62)
+	... 2 more
+Caused by: java.sql.SQLException: Unable to connect to 'jdbc:db2://btnmdwdata:50000/mwconfig' with user 'db2inst1' [jcc][t4][2043][11550][3.58.81] Exception java.net.ConnectException: Error opening socket to server btnmdwdata/10.10.10.36 on port 50,000 with message: Connection refused (Connection refused). ERRORCODE=-4499, SQLSTATE=08001
+	at id.co.hanoman.config.db.ConfigDb.getConnection(ConfigDb.java:1097)
+	at id.co.hanoman.config.db.ConfigDb.init(ConfigDb.java:332)
+	at id.co.hanoman.config.db.ConfigDb.<init>(ConfigDb.java:295)
+	... 7 more
+Caused by: com.ibm.db2.jcc.am.io: [jcc][t4][2043][11550][3.58.81] Exception java.net.ConnectException: Error opening socket to server btnmdwdata/10.10.10.36 on port 50,000 with message: Connection refused (Connection refused). ERRORCODE=-4499, SQLSTATE=08001
+	at com.ibm.db2.jcc.am.ed.a(ed.java:319)
+	at com.ibm.db2.jcc.am.ed.a(ed.java:337)
+	at com.ibm.db2.jcc.t4.zb.a(zb.java:378)
+	at com.ibm.db2.jcc.t4.zb.<init>(zb.java:76)
+	at com.ibm.db2.jcc.t4.a.y(a.java:306)
+	at com.ibm.db2.jcc.t4.b.a(b.java:1796)
+	at com.ibm.db2.jcc.am.jb.a(jb.java:573)
+	at com.ibm.db2.jcc.am.jb.<init>(jb.java:524)
+	at com.ibm.db2.jcc.t4.b.<init>(b.java:305)
+	at com.ibm.db2.jcc.DB2SimpleDataSource.getConnection(DB2SimpleDataSource.java:214)
+	at com.ibm.db2.jcc.DB2Driver.connect(DB2Driver.java:456)
+	at java.sql.DriverManager.getConnection(DriverManager.java:675)
+	at java.sql.DriverManager.getConnection(DriverManager.java:258)
+	at id.co.hanoman.config.db.DBPool.getConnection(DBPool.java:233)
+	at id.co.hanoman.config.db.DBPool$1.getConnection(DBPool.java:113)
+	at id.co.hanoman.config.db.ConfigDb.getConnection(ConfigDb.java:1090)
+	... 9 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:380)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:236)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:218)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
+	at java.net.Socket.connect(Socket.java:682)
+	at com.ibm.db2.jcc.t4.ab.run(ab.java:34)
+	at java.security.AccessController.doPrivileged(AccessController.java:746)
+	at com.ibm.db2.jcc.t4.zb.a(zb.java:372)
+	... 22 more
+2024-10-21 02:48:19,477 [main] INFO id.co.hanoman.StartStopLog BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:null) - BUILD [htcp]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [hcx]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [config]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+Java version IBM Corporation  1.8.0_391
+
+2024-10-21 02:48:20,036 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - RELOAD CONFIG [ISOBROKER:LOG_DB:HanomanDatabaseLogNode] NULL
+2024-10-21 02:48:20,043 [main] INFO id.co.hanoman.License BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Hanoman WMB Plugin for Bank Tabungan Negara
+2024-10-21 02:48:20,691 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - getConfig [db://]
+2024-10-21 02:48:20,691 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - getConfig [db://]
+2024-10-21 02:48:20,691 [main] INFO id.co.hanoman.mbplugin.reload BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - LOADING CONFIG [ISOBROKER:LOG_DB:DB_LOG_ERROR]  URL [db://]
+2024-10-21 02:48:20,879 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/clients/client]
+2024-10-21 02:48:20,881 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/codex]
+2024-10-21 02:48:20,881 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/db]
+2024-10-21 02:48:20,881 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path-include [config/db] pattern [config/db\[mwlog\]]
+2024-10-21 02:48:20,882 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/dbquery]
+2024-10-21 02:48:20,882 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/dtree-map]
+2024-10-21 02:48:20,882 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/host]
+2024-10-21 02:48:20,882 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/mapping]
+2024-10-21 02:48:20,882 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/param-map]
+2024-10-21 02:48:20,883 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/parser]
+2024-10-21 02:48:20,884 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/ports/port]
+2024-10-21 02:48:20,884 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/routing]
+2024-10-21 02:48:20,884 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/rpg-call]
+2024-10-21 02:48:21,318 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Creating new db connection
+2024-10-21 02:48:21,439 [main] WARN id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG_ERROR) - Error loading [db://] null
+java.io.IOException: Error loading [db://] null
+	at id.co.hanoman.config.ConfigFactory.getConfig(ConfigFactory.java:90)
+	at id.co.hanoman.mbplugin.DatabaseDLogNode.initConfig(DatabaseDLogNode.java:226)
+	at id.co.hanoman.mbplugin.DatabaseDLogNode.onInitialize(DatabaseDLogNode.java:368)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:83)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:57)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:437)
+	at id.co.hanoman.config.ConfigFactory.getConfig(ConfigFactory.java:62)
+	... 2 more
+Caused by: java.sql.SQLException: Unable to connect to 'jdbc:db2://btnmdwdata:50000/mwconfig' with user 'db2inst1' [jcc][t4][2043][11550][3.58.81] Exception java.net.ConnectException: Error opening socket to server btnmdwdata/10.10.10.36 on port 50,000 with message: Connection refused (Connection refused). ERRORCODE=-4499, SQLSTATE=08001
+	at id.co.hanoman.config.db.ConfigDb.getConnection(ConfigDb.java:1097)
+	at id.co.hanoman.config.db.ConfigDb.init(ConfigDb.java:332)
+	at id.co.hanoman.config.db.ConfigDb.<init>(ConfigDb.java:295)
+	... 7 more
+Caused by: com.ibm.db2.jcc.am.io: [jcc][t4][2043][11550][3.58.81] Exception java.net.ConnectException: Error opening socket to server btnmdwdata/10.10.10.36 on port 50,000 with message: Connection refused (Connection refused). ERRORCODE=-4499, SQLSTATE=08001
+	at com.ibm.db2.jcc.am.ed.a(ed.java:319)
+	at com.ibm.db2.jcc.am.ed.a(ed.java:337)
+	at com.ibm.db2.jcc.t4.zb.a(zb.java:378)
+	at com.ibm.db2.jcc.t4.zb.<init>(zb.java:76)
+	at com.ibm.db2.jcc.t4.a.y(a.java:306)
+	at com.ibm.db2.jcc.t4.b.a(b.java:1796)
+	at com.ibm.db2.jcc.am.jb.a(jb.java:573)
+	at com.ibm.db2.jcc.am.jb.<init>(jb.java:524)
+	at com.ibm.db2.jcc.t4.b.<init>(b.java:305)
+	at com.ibm.db2.jcc.DB2SimpleDataSource.getConnection(DB2SimpleDataSource.java:214)
+	at com.ibm.db2.jcc.DB2Driver.connect(DB2Driver.java:456)
+	at java.sql.DriverManager.getConnection(DriverManager.java:675)
+	at java.sql.DriverManager.getConnection(DriverManager.java:258)
+	at id.co.hanoman.config.db.DBPool.getConnection(DBPool.java:233)
+	at id.co.hanoman.config.db.DBPool$1.getConnection(DBPool.java:113)
+	at id.co.hanoman.config.db.ConfigDb.getConnection(ConfigDb.java:1090)
+	... 9 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:380)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:236)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:218)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
+	at java.net.Socket.connect(Socket.java:682)
+	at com.ibm.db2.jcc.t4.ab.run(ab.java:34)
+	at java.security.AccessController.doPrivileged(AccessController.java:746)
+	at com.ibm.db2.jcc.t4.zb.a(zb.java:372)
+	... 22 more
+2024-10-21 02:48:21,440 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - RELOAD CONFIG [ISOBROKER:LOG_DB:HanomanDatabaseLogNode] NULL
+2024-10-21 02:48:21,440 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - getConfig [db://]
+2024-10-21 02:48:21,440 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - getConfig [db://]
+2024-10-21 02:48:21,440 [main] INFO id.co.hanoman.mbplugin.reload BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - LOADING CONFIG [ISOBROKER:LOG_DB:DB_LOG]  URL [db://]
+2024-10-21 02:48:21,445 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/clients/client]
+2024-10-21 02:48:21,445 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/codex]
+2024-10-21 02:48:21,445 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/db]
+2024-10-21 02:48:21,445 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path-include [config/db] pattern [config/db\[mwlog\]]
+2024-10-21 02:48:21,446 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/dbquery]
+2024-10-21 02:48:21,446 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/dtree-map]
+2024-10-21 02:48:21,446 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/host]
+2024-10-21 02:48:21,446 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/mapping]
+2024-10-21 02:48:21,446 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/param-map]
+2024-10-21 02:48:21,446 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/parser]
+2024-10-21 02:48:21,446 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/ports/port]
+2024-10-21 02:48:21,446 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/routing]
+2024-10-21 02:48:21,446 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Config path path [config/rpg-call]
+2024-10-21 02:48:21,447 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Creating new db connection
+2024-10-21 02:48:21,448 [main] WARN id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(ISOBROKER:ISOLOGDB:LOG_DB:DB_LOG) - Error loading [db://] null
+java.io.IOException: Error loading [db://] null
+	at id.co.hanoman.config.ConfigFactory.getConfig(ConfigFactory.java:90)
+	at id.co.hanoman.mbplugin.DatabaseDLogNode.initConfig(DatabaseDLogNode.java:226)
+	at id.co.hanoman.mbplugin.DatabaseDLogNode.onInitialize(DatabaseDLogNode.java:368)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:83)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:57)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:437)
+	at id.co.hanoman.config.ConfigFactory.getConfig(ConfigFactory.java:62)
+	... 2 more
+Caused by: java.sql.SQLException: Unable to connect to 'jdbc:db2://btnmdwdata:50000/mwconfig' with user 'db2inst1' [jcc][t4][2043][11550][3.58.81] Exception java.net.ConnectException: Error opening socket to server btnmdwdata/10.10.10.36 on port 50,000 with message: Connection refused (Connection refused). ERRORCODE=-4499, SQLSTATE=08001
+	at id.co.hanoman.config.db.ConfigDb.getConnection(ConfigDb.java:1097)
+	at id.co.hanoman.config.db.ConfigDb.init(ConfigDb.java:332)
+	at id.co.hanoman.config.db.ConfigDb.<init>(ConfigDb.java:295)
+	... 7 more
+Caused by: com.ibm.db2.jcc.am.io: [jcc][t4][2043][11550][3.58.81] Exception java.net.ConnectException: Error opening socket to server btnmdwdata/10.10.10.36 on port 50,000 with message: Connection refused (Connection refused). ERRORCODE=-4499, SQLSTATE=08001
+	at com.ibm.db2.jcc.am.ed.a(ed.java:319)
+	at com.ibm.db2.jcc.am.ed.a(ed.java:337)
+	at com.ibm.db2.jcc.t4.zb.a(zb.java:378)
+	at com.ibm.db2.jcc.t4.zb.<init>(zb.java:76)
+	at com.ibm.db2.jcc.t4.a.y(a.java:306)
+	at com.ibm.db2.jcc.t4.b.a(b.java:1796)
+	at com.ibm.db2.jcc.am.jb.a(jb.java:573)
+	at com.ibm.db2.jcc.am.jb.<init>(jb.java:524)
+	at com.ibm.db2.jcc.t4.b.<init>(b.java:305)
+	at com.ibm.db2.jcc.DB2SimpleDataSource.getConnection(DB2SimpleDataSource.java:214)
+	at com.ibm.db2.jcc.DB2Driver.connect(DB2Driver.java:456)
+	at java.sql.DriverManager.getConnection(DriverManager.java:675)
+	at java.sql.DriverManager.getConnection(DriverManager.java:258)
+	at id.co.hanoman.config.db.DBPool.getConnection(DBPool.java:233)
+	at id.co.hanoman.config.db.DBPool$1.getConnection(DBPool.java:113)
+	at id.co.hanoman.config.db.ConfigDb.getConnection(ConfigDb.java:1090)
+	... 9 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:380)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:236)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:218)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
+	at java.net.Socket.connect(Socket.java:682)
+	at com.ibm.db2.jcc.t4.ab.run(ab.java:34)
+	at java.security.AccessController.doPrivileged(AccessController.java:746)
+	at com.ibm.db2.jcc.t4.zb.a(zb.java:372)
+	... 22 more

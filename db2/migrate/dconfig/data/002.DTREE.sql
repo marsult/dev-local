@@ -1,0 +1,26 @@
+INSERT INTO MWCONFIG.DTREE (GROUP, PATH, VALUE, MODIFIED_BY, TIMESTAMP, MODULE) 
+    VALUES 
+        ('CORE-SYARIAH-CODE', '0200', '0200.${msg.processingCode?.padLeft(6, "0")}', 'CURRENT USER', CURRENT TIMESTAMP, '[syariah]'),
+        ('CORE-SYARIAH-CODE', '0210', '0210.${msg.processingCode?.padLeft(6, "0")}', 'CURRENT USER', CURRENT TIMESTAMP, '[syariah]'),
+        ('CORE-SYARIAH-CODE', '0400', '0400.${msg.processingCode?.padLeft(6, "0")}', 'CURRENT USER', CURRENT TIMESTAMP, '[syariah]'),
+        ('CORE-SYARIAH-CODE', '0410', '0410.${msg.processingCode?.padLeft(6, "0")}', 'CURRENT USER', CURRENT TIMESTAMP, '[syariah]'),
+        ('CORE-SYARIAH-CODE', '0420', '0420.${msg.processingCode?.padLeft(6, "0")}', 'CURRENT USER', CURRENT TIMESTAMP, '[syariah]'),
+        ('CORE-SYARIAH-CODE', '0430', '0430.${msg.processingCode?.padLeft(6, "0")}', 'CURRENT USER', CURRENT TIMESTAMP, '[syariah]'),
+        ('CORE-SYARIAH-CODE', '0401', '0401.${msg.processingCode?.padLeft(6, "0")}', 'CURRENT USER', CURRENT TIMESTAMP, '[syariah]'),
+        ('CORE-SYARIAH-CODE', '0411', '0411.${msg.processingCode?.padLeft(6, "0")}', 'CURRENT USER', CURRENT TIMESTAMP, '[syariah]'),
+        ('CORE-SYARIAH-CODE', '0800', '0800.${msg.networkManagementInformationCode?.padLeft(6, "0")}', 'CURRENT USER', CURRENT TIMESTAMP, '[syariah]'),
+        ('CORE-SYARIAH-CODE', '0810', '0810.${msg.networkManagementInformationCode?.padLeft(6, "0")}', 'CURRENT USER', CURRENT TIMESTAMP, '[syariah]'),
+        ('CORE-SYARIAH-CODE', '0200.2.301111', '0200.2.301111.${msg.additionalDataPrivate.substring(0,4).padLeft(4,"0")}', 'CURRENT USER', CURRENT TIMESTAMP, '[syariah]'),
+        ('CORE-SYARIAH-CODE', '0210.2.301111', '0210.2.301111.${msg.additionalDataPrivate.substring(0,4).padLeft(4,"0")}', 'CURRENT USER', CURRENT TIMESTAMP, '[syariah]'),
+        ('CORE-SYARIAH-CODE', '0200.102000', '0200.2.${msg.reservedPrivate3}', 'CURRENT USER', CURRENT TIMESTAMP, '[syariah]'),
+        ('CORE-SYARIAH-CODE', '0210.102000', '0210.2.${msg.reservedPrivate3}', 'CURRENT USER', CURRENT TIMESTAMP, '[syariah]'),
+        ('CORE-SYARIAH-CODE', '0200.101000', '0200.2.${msg.reservedPrivate3}', 'CURRENT USER', CURRENT TIMESTAMP, '[syariah]'),
+        ('CORE-SYARIAH-CODE', '0210.101000', '0210.2.${msg.reservedPrivate3}', 'CURRENT USER', CURRENT TIMESTAMP, '[syariah]'),
+        ('CORE-SYARIAH-CODE', 'AXISSYSTEMSDNBHD', 'AXISSYSTEMSDNBHD.${msg.dspTransactionCode?.padLeft(10, "0")}', 'CURRENT USER', CURRENT TIMESTAMP, '[syariah]'),
+        ('CORE-SYARIAH-CODE', '0400.101000', '0400.2.${msg.reservedPrivate3}', 'CURRENT USER', CURRENT TIMESTAMP, '[syariah]'),
+        ('CORE-SYARIAH-CODE', '0410.101000', '0410.2.${msg.reservedPrivate3}', 'CURRENT USER', CURRENT TIMESTAMP, '[syariah]'),
+        ('CORE-SYARIAH-CODE', '0400.102000', '0400.2.${msg.reservedPrivate3}', 'CURRENT USER', CURRENT TIMESTAMP, '[syariah]'),
+        ('CORE-SYARIAH-CODE', '0410.102000', '0410.2.${msg.reservedPrivate3}', 'CURRENT USER', CURRENT TIMESTAMP, '[syariah]'),
+        ('CORE-SYARIAH-CODE', '0200.531000', '0200.531000.${msg.reservedPrivate2}', 'CURRENT USER', CURRENT TIMESTAMP, '[syariah]'),
+        ('CORE-SYARIAH-CODE', '0200.532000', '0200.532000.${msg.reservedPrivate2}', 'CURRENT USER', CURRENT TIMESTAMP, '[syariah]');
+

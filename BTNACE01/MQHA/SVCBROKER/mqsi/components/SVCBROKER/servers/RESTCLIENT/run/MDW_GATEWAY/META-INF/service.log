@@ -1,0 +1,38 @@
+
+==============================================
+
+!Mon Aug 19 15:10:35 ICT 2024
+
+Successfully added file MDW_GATEWAY\gen\MDW_GATEWAY.msgflow to BAR file.
+
+Successfully added file MDW_GATEWAY\ADDITIONAL_REQUEST.esql to BAR file.
+
+Successfully added file MDW_GATEWAY\ADDITIONAL_REQUEST.esql to BAR file.
+
+Successfully added file MDW_GATEWAY\ADDITIONAL_RESPONSE.esql to BAR file.
+
+Successfully added file MDW_GATEWAY\ADDITIONAL_RESPONSE.esql to BAR file.
+
+Successfully added file MDW_GATEWAY\gen\BAR\db-config-paybroker-bill_payment.xml to BAR file.
+
+Successfully added file MDW_GATEWAY\gen\BAR\logback.xml to BAR file.
+
+Successfully added file MDW_GATEWAY\postLinking.subflow to BAR file.
+
+Successfully added file MDW_GATEWAY\postMutasi.subflow to BAR file.
+
+Successfully added file MDW_GATEWAY\postPayment.subflow to BAR file.
+
+Successfully added file MDW_GATEWAY\postService.subflow to BAR file.
+
+Successfully added file MDW_GATEWAY\restapi.descriptor to BAR file.
+
+Successfully added file MDW_GATEWAY\restapi.descriptor to BAR file.
+
+Successfully added file MDW_GATEWAY\restapi.descriptor to BAR file.
+
+Successfully added file MDW_GATEWAY\restapi.descriptor to BAR file.
+
+Successfully added file MDW_GATEWAY\swagger.json to BAR file.
+
+Successfully added file MDW_GATEWAY\swagger.json to BAR file.

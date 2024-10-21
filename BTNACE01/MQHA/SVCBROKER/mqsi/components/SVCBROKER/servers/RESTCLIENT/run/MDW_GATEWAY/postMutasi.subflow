@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" 
+xmlns:xmi="http://www.omg.org/XMI" xmlns:ComIbmCompute.msgnode="ComIbmCompute.msgnode" xmlns:GATEWAY_SET_REQ.subflow="GATEWAY/SET_REQ.subflow" xmlns:GATEWAY_HTTP_PROCESS.subflow="GATEWAY/HTTP_PROCESS.subflow" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:eflow="http://www.ibm.com/wbi/2005/eflow" 
+xmlns:utility="http://www.ibm.com/wbi/2005/eflow_utility" nsURI="postMutasi.subflow" 
+nsPrefix="postMutasi.subflow">
+<eClassifiers xmi:type="eflow:FCMComposite" name="FCMComposite_1" nodeLayoutStyle="RECTANGLE">
+<eSuperTypes href="http://www.ibm.com/wbi/2005/eflow#//FCMBlock"/>
+<eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.AUTHMETHOD" name="AUTHMETHOD" lowerBound="1"  defaultValueLiteral="signature">
+  <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+</eStructuralFeatures>
+<eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.SIGN_ALGORITHM" name="SIGN_ALGORITHM"  defaultValueLiteral="SHA512">
+  <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+</eStructuralFeatures>
+<eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.SIGN_VALUE" name="SIGN_VALUE" >
+  <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+</eStructuralFeatures>
+<eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.SIGNATURE_NEEDDECODE" name="SIGNATURE_NEEDDECODE"  defaultValueLiteral="True">
+  <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+</eStructuralFeatures>
+<eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.TOKEN_TYPE" name="TOKEN_TYPE"  defaultValueLiteral="JWT">
+  <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+</eStructuralFeatures>
+<eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.TOKEN_URL_OAUTH" name="TOKEN_URL_OAUTH" >
+  <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+</eStructuralFeatures>
+<eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.BACKEND_URL" name="BACKEND_URL" lowerBound="1"  defaultValueLiteral="http://172.15.30.134:8081/api-v2/bank/service">
+  <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+</eStructuralFeatures>
+<eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.CODE" name="CODE" >
+  <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+</eStructuralFeatures>
+<eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.CONTENT_TYPE" name="CONTENT_TYPE" lowerBound="1"  defaultValueLiteral="text/plain">
+  <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+</eStructuralFeatures>
+<eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.SIGN_PRIVATE_KEY" name="SIGN_PRIVATE_KEY"  defaultValueLiteral="g1WkhwsgXK4^5I5uh4yV7xRzzdz4t3Su">
+  <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+</eStructuralFeatures>
+<translation xmi:type="utility:TranslatableString" key="postMutasi" bundleName="postMutasi" pluginId="flowAPIgenerated"/>
+<colorGraphic16 xmi:type="utility:GIFFileGraphic" resourceName="platform:/plugin/flowAPIgenerated/icons/full/obj16/postMutasi.gif"/>
+<colorGraphic32 xmi:type="utility:GIFFileGraphic" resourceName="platform:/plugin/flowAPIgenerated/icons/full/obj30/postMutasi.gif"/>
+<composition>
+<nodes xmi:type="eflow:FCMSource" xmi:id="InTerminal.Input_1" location="25,25">
+<translation xmi:type="utility:TranslatableString" key="Input" bundleName="postMutasi" pluginId="flowAPIgenerated"/>
+</nodes>
+<nodes xmi:type="eflow:FCMSink" xmi:id="OutTerminal.Output_1" location="1302,29">
+<translation xmi:type="utility:TranslatableString" key="Output" bundleName="postMutasi" pluginId="flowAPIgenerated"/>
+</nodes>
+<nodes xmi:type="ComIbmCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_1" location="696,179" dataSource="MWLOG" computeExpression="esql://routine/#SET_SPECIFIC_REQ.Main" computeMode="destinationAndMessage">
+<translation xmi:type="utility:ConstantString" string="SET_SPECIFIC_REQ"/>
+</nodes>
+<nodes xmi:type="ComIbmCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_2" location="1053,28" computeExpression="esql://routine/#ADDITIONAL_RESPONSE_VADEBIT_PAYMENT.Main" computeMode="destinationAndMessage">
+<translation xmi:type="utility:ConstantString" string="ADDITIONAL_RESPONSE_LINKING"/>
+</nodes>
+<nodes xmi:type="ComIbmCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_4" location="330,24" computeExpression="esql://routine/#ADDITIONAL_REQUEST_VADEBIT_MUTASI.Main" computeMode="destinationAndMessage">
+<translation xmi:type="utility:ConstantString" string="ADDITIONAL_REQUEST_LINKING"/>
+</nodes>
+<nodes xmi:type="ComIbmCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_8" location="1063,196" dataSource="MWLOG" computeExpression="esql://routine/#SET_DLOG_RESP.Main" computeMode="destinationAndMessage">
+<translation xmi:type="utility:ConstantString" string="SET_DLOG_RESP"/>
+</nodes>
+<nodes xmi:type="GATEWAY_SET_REQ.subflow:FCMComposite_1" xmi:id="FCMComposite_1_3" location="537,70">
+<translation xmi:type="utility:ConstantString" string="SET_REQ"/>
+</nodes>
+<nodes xmi:type="GATEWAY_HTTP_PROCESS.subflow:FCMComposite_1" xmi:id="FCMComposite_1_5" location="857,67">
+<translation xmi:type="utility:ConstantString" string="HTTP_PROCESS"/>
+</nodes>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_1" targetNode="FCMComposite_1_4" sourceNode="InTerminal.Input_1" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_2" targetNode="OutTerminal.Output_1" sourceNode="FCMComposite_1_2" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_3" targetNode="FCMComposite_1_2" sourceNode="FCMComposite_1_8" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_4" targetNode="FCMComposite_1_3" sourceNode="FCMComposite_1_4" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.Input"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_5" targetNode="FCMComposite_1_1" sourceNode="FCMComposite_1_3" sourceTerminalName="OutTerminal.Output" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_6" targetNode="FCMComposite_1_5" sourceNode="FCMComposite_1_1" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.Input"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_7" targetNode="FCMComposite_1_8" sourceNode="FCMComposite_1_5" sourceTerminalName="OutTerminal.Output" targetTerminalName="InTerminal.in"/>
+<connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_8" targetNode="OutTerminal.Output_1" sourceNode="FCMComposite_1_5" sourceTerminalName="OutTerminal.Output1" targetTerminalName="InTerminal.in"/>
+</composition>
+<propertyOrganizer>
+<propertyDescriptor groupName="Group.AUTH" configurable="true" userDefined="true" describedAttribute="Property.AUTHMETHOD">
+<propertyName xmi:type="utility:TranslatableString" key="Property.AUTHMETHOD" bundleName="GATEWAY/SET_REQ" pluginId="ACE_LIB"/>
+<propertyDescriptor groupName="Group.AUTH" configurable="true" userDefined="true" describedAttribute="Property.SIGN_ALGORITHM">
+<propertyName xmi:type="utility:TranslatableString" key="Property.SIGN_ALGORITHM" bundleName="GATEWAY/SET_REQ" pluginId="ACE_LIB"/>
+<propertyDescriptor groupName="Group.AUTH" configurable="true" userDefined="true" describedAttribute="Property.SIGN_VALUE">
+<propertyName xmi:type="utility:TranslatableString" key="Property.SIGN_VALUE" bundleName="GATEWAY/SET_REQ" pluginId="ACE_LIB"/>
+<propertyDescriptor groupName="Group.AUTH" configurable="true" userDefined="true" describedAttribute="Property.SIGNATURE_NEEDDECODE">
+<propertyName xmi:type="utility:TranslatableString" key="Property.SIGNATURE_NEEDDECODE" bundleName="GATEWAY/SET_REQ" pluginId="ACE_LIB"/>
+<propertyDescriptor groupName="Group.AUTH" configurable="true" userDefined="true" describedAttribute="Property.TOKEN_TYPE">
+<propertyName xmi:type="utility:TranslatableString" key="Property.TOKEN_TYPE" bundleName="GATEWAY/SET_REQ" pluginId="ACE_LIB"/>
+<propertyDescriptor groupName="Group.AUTH" configurable="true" userDefined="true" describedAttribute="Property.TOKEN_URL_OAUTH">
+<propertyName xmi:type="utility:TranslatableString" key="Property.TOKEN_URL_OAUTH" bundleName="GATEWAY/SET_REQ" pluginId="ACE_LIB"/>
+<propertyDescriptor groupName="Group.HEADER" configurable="true" userDefined="true" describedAttribute="Property.BACKEND_URL">
+<propertyName xmi:type="utility:TranslatableString" key="Property.BACKEND_URL" bundleName="GATEWAY/SET_REQ" pluginId="ACE_LIB"/>
+<propertyDescriptor groupName="Group.HEADER" configurable="true" userDefined="true" describedAttribute="Property.CODE">
+<propertyName xmi:type="utility:TranslatableString" key="Property.CODE" bundleName="GATEWAY/SET_REQ" pluginId="ACE_LIB"/>
+<propertyDescriptor groupName="Group.HEADER" configurable="true" userDefined="true" describedAttribute="Property.CONTENT_TYPE">
+<propertyName xmi:type="utility:TranslatableString" key="Property.CONTENT_TYPE" bundleName="GATEWAY/SET_REQ" pluginId="ACE_LIB"/>
+<propertyDescriptor groupName="Group.HEADER" configurable="true" userDefined="true" describedAttribute="Property.SIGN_PRIVATE_KEY">
+<propertyName xmi:type="utility:TranslatableString" key="Property.SIGN_PRIVATE_KEY" bundleName="GATEWAY/SET_REQ" pluginId="ACE_LIB"/>
+</propertyDescriptor>
+</propertyDescriptor>
+</propertyDescriptor>
+</propertyDescriptor>
+</propertyDescriptor>
+</propertyDescriptor>
+</propertyDescriptor>
+</propertyDescriptor>
+</propertyDescriptor>
+</propertyDescriptor>
+</propertyOrganizer>
+<attributeLinks promotedAttribute="Property.AUTHMETHOD" overriddenNodes="FCMComposite_1_3">
+<overriddenAttribute href="GATEWAY/SET_REQ.subflow#Property.AUTHMETHOD"/>
+</attributeLinks>
+<attributeLinks promotedAttribute="Property.SIGN_ALGORITHM" overriddenNodes="FCMComposite_1_3">
+<overriddenAttribute href="GATEWAY/SET_REQ.subflow#Property.SIGN_ALGORITHM"/>
+</attributeLinks>
+<attributeLinks promotedAttribute="Property.SIGN_VALUE" overriddenNodes="FCMComposite_1_3">
+<overriddenAttribute href="GATEWAY/SET_REQ.subflow#Property.SIGN_VALUE"/>
+</attributeLinks>
+<attributeLinks promotedAttribute="Property.SIGNATURE_NEEDDECODE" overriddenNodes="FCMComposite_1_3">
+<overriddenAttribute href="GATEWAY/SET_REQ.subflow#Property.SIGNATURE_NEEDDECODE"/>
+</attributeLinks>
+<attributeLinks promotedAttribute="Property.TOKEN_TYPE" overriddenNodes="FCMComposite_1_3">
+<overriddenAttribute href="GATEWAY/SET_REQ.subflow#Property.TOKEN_TYPE"/>
+</attributeLinks>
+<attributeLinks promotedAttribute="Property.TOKEN_URL_OAUTH" overriddenNodes="FCMComposite_1_3">
+<overriddenAttribute href="GATEWAY/SET_REQ.subflow#Property.TOKEN_URL_OAUTH"/>
+</attributeLinks>
+<attributeLinks promotedAttribute="Property.BACKEND_URL" overriddenNodes="FCMComposite_1_3">
+<overriddenAttribute href="GATEWAY/SET_REQ.subflow#Property.BACKEND_URL"/>
+</attributeLinks>
+<attributeLinks promotedAttribute="Property.CODE" overriddenNodes="FCMComposite_1_3">
+<overriddenAttribute href="GATEWAY/SET_REQ.subflow#Property.CODE"/>
+</attributeLinks>
+<attributeLinks promotedAttribute="Property.CONTENT_TYPE" overriddenNodes="FCMComposite_1_3">
+<overriddenAttribute href="GATEWAY/SET_REQ.subflow#Property.CONTENT_TYPE"/>
+</attributeLinks>
+<attributeLinks promotedAttribute="Property.SIGN_PRIVATE_KEY" overriddenNodes="FCMComposite_1_3">
+<overriddenAttribute href="GATEWAY/SET_REQ.subflow#Property.SIGN_PRIVATE_KEY"/>
+</attributeLinks>
+<stickyBoard/>
+</eClassifiers>
+</ecore:EPackage>

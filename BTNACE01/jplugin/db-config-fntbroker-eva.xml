@@ -1,0 +1,150 @@
+<db-config>
+	<url>jdbc:db2://btnmdwdata:50000/mwconfig</url>
+	<driver-class>com.ibm.db2.jcc.DB2Driver</driver-class>
+	<username>db2inst1</username>
+	<password>wajFMo2HsNWsRQcLal8Y47jzNMHI+oAu8ywJwIfL9cA=</password>
+	<schema>mwconfig</schema>
+	<c3p0 id="jdbc:db2:">
+		<param id="minPoolSize">5</param>
+		<param id="maxPoolSize">50</param>
+		<param id="timeout">60</param>
+		<param id="idleConnectionTestPeriod">300</param>
+		<param id="maxIdleTime">300</param>
+		<param id="maxIdleTimeExcessConnections">180</param>
+		<param id="preferredTestQuery">select 1 from sysibm.sysdummy1</param>
+	</c3p0>
+	<config-pattern>
+		<path id="config/clients/client">
+			<include>\[core-dlm\]</include>
+			<include>\[core-eva\]</include>
+		</path>
+		<path id="config/codex">
+			<include>\[dsp-abcs.*\]</include>
+			<include>\[dsp-mbase-req-2701\]</include>
+			<include>\[dsp-mbase-req\]</include>
+			<include>\[dsp-mbase-resp-2701-multiple\]</include>
+			<include>\[dsp-mbase-resp-2701\]</include>
+			<include>\[dsp-mbase-resp\]</include>
+			<include>\[dsp-response\]</include>
+			<include>\[dsp\]</include>
+			<include>\[iso-8583-dlm\]</include>
+			<include>\[iso-8583-eva\]</include>
+            <include>\[iso-8583-oac\]</include><include>\[iso-8583-cws\]</include>
+			<include>\[iso-8583-mdrc\]</include>
+			<include>\[iso-8583-vas\]</include>
+			
+			<!-- TCASH -->
+			<include>\[dsp-mbase-req-2220\]</include>
+			<include>\[dsp-mbase-req-2920\]</include>
+			<include>\[dsp-mbase-resp-2220\]</include>
+			<include>\[dsp-mbase-resp-2220-multiple\]</include>
+			<include>\[dsp-mbase-resp-2920\]</include>
+			<include>\[dsp-mbase-resp-2920-multiple\]</include>
+			<include>\[dsp-mbase-req-1501\]</include> <!-- Open Account Agen Griya  -->
+			<include>\[dsp-mbase-resp-1501\]</include> <!-- Open Account Agen Griya -->
+			<include>\[dsp-mbase-resp-1501-multiple\]</include> <!-- Open Account Agen Griya -->
+			<include>\[dsp-mbase-req-1719\]</include> <!-- Open Account Agen Griya  -->
+			<include>\[dsp-mbase-resp-1719\]</include> <!-- Open Account Agen Griya -->
+			<include>\[dsp-mbase-resp-1719-multiple\]</include> <!-- Open Account Agen Griya -->
+			<include>\[dsp-mbase-req-2719\]</include> <!-- Open Account Agen Griya  -->
+			<include>\[dsp-mbase-resp-2719\]</include> <!-- Open Account Agen Griya -->
+			<include>\[dsp-mbase-resp-2719-multiple\]</include> <!-- Open Account Agen Griya -->
+			<include>\[dsp-mbase-req-1720\]</include> <!-- NEW Open Account Agen Griya  -->
+			<include>\[dsp-mbase-resp-1720\]</include> <!-- NEW Open Account Agen Griya -->
+			<include>\[dsp-mbase-resp-1720-multiple\]</include> <!-- NEW Open Account Agen Griya -->
+		</path>
+		<path id="config/db">
+			<include>\[CORE_KONVEN_DSP\]</include>
+			<include>\[mwlog\]</include>
+		</path>
+		<path id="config/dbquery">
+			<include>\[EOD_CONFIG\]</include>
+		</path>
+		<path id="config/dtree-map">
+			<include>\[CHARGES\|eva\](\{.*\}|)</include>
+			<include>\[EVA-CODE\|.*\](\{.*\}|)</include>
+			<include>\[.*\]\{.*\[core\].*\}</include>
+			<include>\[.*\]\{.*\[ebbm\].*\}</include>
+			<include>\[.*\]\{.*\[ebbmd\].*\}</include>
+			<include>\[.*\]\{.*\[ebbr\].*\}</include>
+			<include>\[.*\]\{.*\[efiwc\].*\}</include>
+            <include>\[.*\]\{.*\[dlm\].*\}</include>
+            <include>\[.*\]\{.*\[eoais\].*\}</include>
+		</path>
+		<path id="config/host" />
+		<path id="config/mapping">
+			<include>\[.*\]\{.*\[core\].*\}</include>
+			<include>\[.*\]\{.*\[ebbm\].*\}</include>
+			<include>\[.*\]\{.*\[ebbmd\].*\}</include>
+			<include>\[.*\]\{.*\[ebbd\].*\}</include>
+			<include>\[.*\]\{.*\[ebpwc\].*\}</include>	
+			<include>\[.*\]\{.*\[ebbm\].*\}</include>
+			<include>\[.*\]\{.*\[ebbr\].*\}</include>
+			<include>\[.*\]\{.*\[ecamd\].*\}</include>
+			<include>\[.*\]\{.*\[eoamd\].*\}</include>
+			<include>\[.*\]\{.*\[famm\].*\}</include>
+			<include>\[.*\]\{.*\[izzi\].*\}</include>		
+			<include>\[.*\]\{.*\[eoais\].*\}</include>		
+			<include>\[check.res-core.need-reversal\](\{.*\}|)</include>
+			<include>\[dsp\](\{.*\}|)</include>
+			<include>\[itm-network-res\](\{.*\}|)</include>
+			<include>\[itm.res-reverse-master\](\{.*\}|)</include>
+			<include>\[req-core.mbase-master\](\{.*\}|)</include>
+			<include>\[res-core.mbase-master\](\{.*\}|)</include>
+			<include>\[res-core.itm\](\{.*\}|)</include>
+			<include>\[.*\]\{.*\[dlm\].*\}</include>
+     </path>
+		<path id="config/param-map">
+			<include>\[account-type\|.*\]</include>
+			<include>\[coa-dlm\|.*\]</include>
+			<include>\[coa-eva\|.*\]</include>
+			<include>\[core-response-ok\|AXISSYSTEMSDNBHD\..*\]</include>
+			<include>\[device_teller_map\|.*\]</include>
+			<include>\[eva-api-core\|.*\]</include>
+			<include>\[dlm-konven-code\|.*\]</include>
+			<include>\[dsp-scenario-req-codex\|AXISSYSTEMSDNBHD\]</include>
+			<include>\[dsp-scenario-req-codex\|SSSAAA0123456789\]</include>
+			<include>\[dsp-scenario-resp-codex\|AXISSYSTEMSDNBHD\]</include>
+			<include>\[dsp-scenario-resp-codex\|SSSAAA0123456789\]</include>
+			<include>\[eva-konven-code\|.*\]</include>
+			<include>\[error-f2\|.*\]</include>
+			<include>\[error_map\|core-dlm\|.*\]</include>
+			<include>\[error_map\|core-eva\|.*\]</include>
+			<include>\[error_map\|dukcapil\|.*\]</include>
+			<include>\[error_map\|mx-client\|.*\]</include>
+			<include>\[error_map\|itm-eva-conn.*\]</include>
+			<include>\[error_map\|itm-conn-cms.*\]</include>
+			<include>\[error_map\|api-error-code.*\]</include>
+			<include>\[error_map_detail\|core-dlm\|.*\]</include>
+			<include>\[error_map_detail\|core-eva\|.*\]</include>
+			<include>\[error_map\|ist-conn\|.*\]</include>
+			<include>\[error_map\|ist-conn-dummy\|.*\]</include>
+			<include>\[giro-dlm\|.*\]</include>
+			<include>\[giro-eva\|.*\]</include>
+			<include>\[status-rek\|.*\]</include>
+			<include>\[time-check\|.*\]</include>
+		</path>
+		<path id="config/parser" />
+			<include>\[mbase-request\]</include>
+			<include>\[mbase-response\]</include>
+		<path id="config/ports/port">
+			<!--
+			<include>\[dlm.*\]</include>
+			-->
+			<include>\[eva.*\]</include>
+			<include>\[cus.*\]</include>
+			<include>\[dlm-1063.*\]</include>
+			<include>\[oac.*\]</include>
+			<include>\[mdrc.*\]</include>
+			<include>\[vas-.*\]</include>
+		</path>
+		<path id="config/routing">
+			<include>\[dlm.*\]</include>
+			<include>\[eva.*\]</include>
+			<include>\[oac.*\]</include>
+			<include>\[mdrc.*\]</include>
+			<include>\[vas-.*\]</include>
+		</path>
+		<path id="config/rpg-call" />
+	</config-pattern>
+</db-config>

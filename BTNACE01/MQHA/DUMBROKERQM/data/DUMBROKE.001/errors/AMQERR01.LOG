@@ -1,0 +1,1095 @@
+08/06/2024 03:54:01 PM - Process(96.3) User(admmdw) Program(amqzmuc0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:01.458Z)
+                    CommentInsert1(Linux 6.8.0-39-generic (MQ Linux (x86-64 platform) 64-bit))
+                    CommentInsert2(/opt/mqm (Installation1))
+                    CommentInsert3(9.2.0.0 (p920-L200709))
+                   
+AMQ6287I: IBM MQ V9.2.0.0 (p920-L200709).
+
+EXPLANATION:
+IBM MQ system information: 
+Host Info         :- Linux 6.8.0-39-generic (MQ Linux (x86-64 platform) 64-bit)
+
+Installation      :- /opt/mqm (Installation1) 
+Version           :- 9.2.0.0 (p920-L200709)
+ACTION:
+None.
+----- amqxeida.c : 6604 -------------------------------------------------------
+08/06/2024 03:54:01 PM - Process(96.3) User(admmdw) Program(amqzmuc0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:01.457Z)
+                    ArithInsert2(1)
+                    CommentInsert1(LOGGER-IO)
+                   
+AMQ5051I: The queue manager task 'LOGGER-IO' has started.
+
+EXPLANATION:
+The critical utility task manager has started the LOGGER-IO task. This task has
+now started 1 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 03:54:01 PM - Process(96.4) User(admmdw) Program(amqzmuc0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:01.465Z)
+                    ArithInsert2(1)
+                    CommentInsert1(CHECKPOINT)
+                   
+AMQ5051I: The queue manager task 'CHECKPOINT' has started.
+
+EXPLANATION:
+The critical utility task manager has started the CHECKPOINT task. This task
+has now started 1 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 03:54:01 PM - Process(96.1) User(admmdw) Program(amqzmuc0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:01.469Z)
+                    CommentInsert1(CHECKPOINT)
+                   
+AMQ5041I: The queue manager task 'CHECKPOINT' has ended.
+
+EXPLANATION:
+The queue manager task CHECKPOINT has ended.
+ACTION:
+None.
+----- amqzmut0.c : 3908 -------------------------------------------------------
+08/06/2024 03:54:01 PM - Process(96.1) User(admmdw) Program(amqzmuc0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:01.471Z)
+                    CommentInsert1(LOGGER-IO)
+                   
+AMQ5041I: The queue manager task 'LOGGER-IO' has ended.
+
+EXPLANATION:
+The queue manager task LOGGER-IO has ended.
+ACTION:
+None.
+----- amqzmut0.c : 3751 -------------------------------------------------------
+08/06/2024 03:54:01 PM - Process(115.4) User(admmdw) Program(amqzmuc0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:01.578Z)
+                    ArithInsert2(1)
+                    CommentInsert1(LOGGER-IO)
+                   
+AMQ5051I: The queue manager task 'LOGGER-IO' has started.
+
+EXPLANATION:
+The critical utility task manager has started the LOGGER-IO task. This task has
+now started 1 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 03:54:01 PM - Process(101.1) User(admmdw) Program(amqzxma0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:01.584Z)
+                    ArithInsert1(4)
+                    CommentInsert1(DUMBROKER.QM)
+                   
+AMQ7229I: 4 log records accessed on queue manager 'DUMBROKER.QM' during the log
+replay phase.
+
+EXPLANATION:
+4 log records have been accessed so far on queue manager DUMBROKER.QM during
+the log replay phase in order to bring the queue manager back to a previously
+known state.
+ACTION:
+None.
+----- amqalms0.c : 1202 -------------------------------------------------------
+08/06/2024 03:54:01 PM - Process(101.1) User(admmdw) Program(amqzxma0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:01.585Z)
+                    ArithInsert1(4)
+                    CommentInsert1(DUMBROKER.QM)
+                   
+AMQ7230I: Log replay for queue manager 'DUMBROKER.QM' complete.
+
+EXPLANATION:
+The log replay phase of the queue manager restart process has been completed
+for queue manager DUMBROKER.QM.
+ACTION:
+None.
+----- amqalms0.c : 1207 -------------------------------------------------------
+08/06/2024 03:54:01 PM - Process(115.5) User(admmdw) Program(amqzmuc0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:01.585Z)
+                    ArithInsert2(1)
+                    CommentInsert1(CHECKPOINT)
+                   
+AMQ5051I: The queue manager task 'CHECKPOINT' has started.
+
+EXPLANATION:
+The critical utility task manager has started the CHECKPOINT task. This task
+has now started 1 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 03:54:01 PM - Process(101.1) User(admmdw) Program(amqzxma0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:01.587Z)
+                    CommentInsert1(DUMBROKER.QM)
+                   
+AMQ7231I: 0 log records accessed on queue manager 'DUMBROKER.QM' during the
+recovery phase.
+
+EXPLANATION:
+0 log records have been accessed so far on queue manager DUMBROKER.QM during
+the recovery phase of the transactions manager state.
+ACTION:
+None.
+----- amqatmra.c : 693 --------------------------------------------------------
+08/06/2024 03:54:01 PM - Process(101.1) User(admmdw) Program(amqzxma0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:01.587Z)
+                    CommentInsert1(DUMBROKER.QM)
+                   
+AMQ7232I: Transaction manager state recovered for queue manager 'DUMBROKER.QM'.
+
+EXPLANATION:
+The state of transactions at the time the queue manager ended has been
+recovered for queue manager DUMBROKER.QM.
+ACTION:
+None.
+----- amqatmra.c : 1024 -------------------------------------------------------
+08/06/2024 03:54:01 PM - Process(101.1) User(admmdw) Program(amqzxma0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:01.590Z)
+                    CommentInsert1(DUMBROKER.QM)
+                   
+AMQ7233I: 0 out of 0 in-flight transactions resolved for queue manager
+'DUMBROKER.QM'.
+
+EXPLANATION:
+0 transactions out of 0 in-flight at the time queue manager DUMBROKER.QM ended
+have been resolved.
+ACTION:
+None.
+----- amqatmra.c : 1607 -------------------------------------------------------
+08/06/2024 03:54:01 PM - Process(121.9) User(admmdw) Program(amqzmur0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:01.608Z)
+                    ArithInsert2(5)
+                    CommentInsert1(APP-SIGNAL)
+                   
+AMQ5037I: The queue manager task 'APP-SIGNAL' has started.
+
+EXPLANATION:
+The restartable utility task manager has started the APP-SIGNAL task. This task
+has now started 5 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 03:54:01 PM - Process(121.4) User(admmdw) Program(amqzmur0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:01.608Z)
+                    ArithInsert2(1)
+                    CommentInsert1(ERROR-LOG)
+                   
+AMQ5037I: The queue manager task 'ERROR-LOG' has started.
+
+EXPLANATION:
+The restartable utility task manager has started the ERROR-LOG task. This task
+has now started 1 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 03:54:01 PM - Process(121.11) User(admmdw) Program(amqzmur0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:01.608Z)
+                    ArithInsert2(6)
+                    CommentInsert1(APP-SIGNAL)
+                   
+AMQ5037I: The queue manager task 'APP-SIGNAL' has started.
+
+EXPLANATION:
+The restartable utility task manager has started the APP-SIGNAL task. This task
+has now started 6 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 03:54:01 PM - Process(121.12) User(admmdw) Program(amqzmur0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:01.609Z)
+                    ArithInsert2(7)
+                    CommentInsert1(APP-SIGNAL)
+                   
+AMQ5037I: The queue manager task 'APP-SIGNAL' has started.
+
+EXPLANATION:
+The restartable utility task manager has started the APP-SIGNAL task. This task
+has now started 7 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 03:54:01 PM - Process(121.7) User(admmdw) Program(amqzmur0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:01.608Z)
+                    ArithInsert2(3)
+                    CommentInsert1(APP-SIGNAL)
+                   
+AMQ5037I: The queue manager task 'APP-SIGNAL' has started.
+
+EXPLANATION:
+The restartable utility task manager has started the APP-SIGNAL task. This task
+has now started 3 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 03:54:01 PM - Process(121.8) User(admmdw) Program(amqzmur0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:01.608Z)
+                    ArithInsert2(4)
+                    CommentInsert1(APP-SIGNAL)
+                   
+AMQ5037I: The queue manager task 'APP-SIGNAL' has started.
+
+EXPLANATION:
+The restartable utility task manager has started the APP-SIGNAL task. This task
+has now started 4 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 03:54:01 PM - Process(121.5) User(admmdw) Program(amqzmur0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:01.608Z)
+                    ArithInsert2(1)
+                    CommentInsert1(APP-SIGNAL)
+                   
+AMQ5037I: The queue manager task 'APP-SIGNAL' has started.
+
+EXPLANATION:
+The restartable utility task manager has started the APP-SIGNAL task. This task
+has now started 1 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 03:54:01 PM - Process(121.6) User(admmdw) Program(amqzmur0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:01.608Z)
+                    ArithInsert2(2)
+                    CommentInsert1(APP-SIGNAL)
+                   
+AMQ5037I: The queue manager task 'APP-SIGNAL' has started.
+
+EXPLANATION:
+The restartable utility task manager has started the APP-SIGNAL task. This task
+has now started 2 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 03:54:01 PM - Process(121.10) User(admmdw) Program(amqzmur0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:01.609Z)
+                    ArithInsert2(8)
+                    CommentInsert1(APP-SIGNAL)
+                   
+AMQ5037I: The queue manager task 'APP-SIGNAL' has started.
+
+EXPLANATION:
+The restartable utility task manager has started the APP-SIGNAL task. This task
+has now started 8 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 03:54:02 PM - Process(101.1) User(admmdw) Program(amqzxma0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:02.053Z)
+                    ArithInsert1(83)
+                    CommentInsert1(0)
+                   
+AMQ8048I: Default objects statistics : 83 created. 0 replaced. 0 failed.
+
+EXPLANATION:
+Information on the number of objects created or replaced successfully as well
+as any failures that occurred while creating the default objects.
+ACTION:
+None.
+----- amqzcdo0.c : 6480 -------------------------------------------------------
+08/06/2024 03:54:02 PM - Process(101.1) User(admmdw) Program(amqzxma0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:02.054Z)
+                    CommentInsert1(9.2.0.0)
+                    CommentInsert3(DUMBROKER.QM)
+                   
+AMQ8003I: IBM MQ queue manager 'DUMBROKER.QM' started using V9.2.0.0.
+
+EXPLANATION:
+IBM MQ queue manager 'DUMBROKER.QM' started using V9.2.0.0.
+ACTION:
+None.
+----- amqzxma0.c : 5560 -------------------------------------------------------
+08/06/2024 03:54:02 PM - Process(121.1) User(admmdw) Program(amqzmur0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:02.061Z)
+                    CommentInsert1(APP-SIGNAL)
+                   
+AMQ5041I: The queue manager task 'APP-SIGNAL' has ended.
+
+EXPLANATION:
+The queue manager task APP-SIGNAL has ended.
+ACTION:
+None.
+----- amqzmut0.c : 3751 -------------------------------------------------------
+08/06/2024 03:54:02 PM - Process(121.1) User(admmdw) Program(amqzmur0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:02.073Z)
+                    CommentInsert1(APP-SIGNAL)
+                   
+AMQ5041I: The queue manager task 'APP-SIGNAL' has ended.
+
+EXPLANATION:
+The queue manager task APP-SIGNAL has ended.
+ACTION:
+None.
+----- amqzmut0.c : 3908 -------------------------------------------------------
+08/06/2024 03:54:02 PM - Process(121.1) User(admmdw) Program(amqzmur0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:02.076Z)
+                    CommentInsert1(ERROR-LOG)
+                   
+AMQ5041I: The queue manager task 'ERROR-LOG' has ended.
+
+EXPLANATION:
+The queue manager task ERROR-LOG has ended.
+ACTION:
+None.
+----- amqzmut0.c : 3751 -------------------------------------------------------
+08/06/2024 03:54:02 PM - Process(115.1) User(admmdw) Program(amqzmuc0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:02.091Z)
+                    CommentInsert1(CHECKPOINT)
+                   
+AMQ5041I: The queue manager task 'CHECKPOINT' has ended.
+
+EXPLANATION:
+The queue manager task CHECKPOINT has ended.
+ACTION:
+None.
+----- amqzmut0.c : 3908 -------------------------------------------------------
+08/06/2024 03:54:02 PM - Process(115.1) User(admmdw) Program(amqzmuc0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:02.098Z)
+                    CommentInsert1(LOGGER-IO)
+                   
+AMQ5041I: The queue manager task 'LOGGER-IO' has ended.
+
+EXPLANATION:
+The queue manager task LOGGER-IO has ended.
+ACTION:
+None.
+----- amqzmut0.c : 3751 -------------------------------------------------------
+08/06/2024 03:54:02 PM - Process(101.1) User(admmdw) Program(amqzxma0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:02.102Z)
+                    CommentInsert3(DUMBROKER.QM)
+                   
+AMQ8004I: IBM MQ queue manager 'DUMBROKER.QM' ended.
+
+EXPLANATION:
+IBM MQ queue manager 'DUMBROKER.QM' ended.
+ACTION:
+None.
+----- amqzxma0.c : 2066 -------------------------------------------------------
+08/06/2024 03:54:02 PM - Process(160.4) User(admmdw) Program(amqzmuc0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:02.391Z)
+                    ArithInsert2(1)
+                    CommentInsert1(LOGGER-IO)
+                   
+AMQ5051I: The queue manager task 'LOGGER-IO' has started.
+
+EXPLANATION:
+The critical utility task manager has started the LOGGER-IO task. This task has
+now started 1 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 03:54:02 PM - Process(143.1) User(admmdw) Program(amqzxma0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:02.402Z)
+                    ArithInsert1(5)
+                    CommentInsert1(DUMBROKER.QM)
+                   
+AMQ7229I: 5 log records accessed on queue manager 'DUMBROKER.QM' during the log
+replay phase.
+
+EXPLANATION:
+5 log records have been accessed so far on queue manager DUMBROKER.QM during
+the log replay phase in order to bring the queue manager back to a previously
+known state.
+ACTION:
+None.
+----- amqalms0.c : 1202 -------------------------------------------------------
+08/06/2024 03:54:02 PM - Process(143.1) User(admmdw) Program(amqzxma0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:02.402Z)
+                    ArithInsert1(5)
+                    CommentInsert1(DUMBROKER.QM)
+                   
+AMQ7230I: Log replay for queue manager 'DUMBROKER.QM' complete.
+
+EXPLANATION:
+The log replay phase of the queue manager restart process has been completed
+for queue manager DUMBROKER.QM.
+ACTION:
+None.
+----- amqalms0.c : 1207 -------------------------------------------------------
+08/06/2024 03:54:02 PM - Process(160.9) User(admmdw) Program(amqzmuc0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:02.403Z)
+                    ArithInsert2(1)
+                    CommentInsert1(CHECKPOINT)
+                   
+AMQ5051I: The queue manager task 'CHECKPOINT' has started.
+
+EXPLANATION:
+The critical utility task manager has started the CHECKPOINT task. This task
+has now started 1 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 03:54:02 PM - Process(143.1) User(admmdw) Program(amqzxma0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:02.405Z)
+                    CommentInsert1(DUMBROKER.QM)
+                   
+AMQ7231I: 0 log records accessed on queue manager 'DUMBROKER.QM' during the
+recovery phase.
+
+EXPLANATION:
+0 log records have been accessed so far on queue manager DUMBROKER.QM during
+the recovery phase of the transactions manager state.
+ACTION:
+None.
+----- amqatmra.c : 693 --------------------------------------------------------
+08/06/2024 03:54:02 PM - Process(143.1) User(admmdw) Program(amqzxma0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:02.405Z)
+                    CommentInsert1(DUMBROKER.QM)
+                   
+AMQ7232I: Transaction manager state recovered for queue manager 'DUMBROKER.QM'.
+
+EXPLANATION:
+The state of transactions at the time the queue manager ended has been
+recovered for queue manager DUMBROKER.QM.
+ACTION:
+None.
+----- amqatmra.c : 1024 -------------------------------------------------------
+08/06/2024 03:54:02 PM - Process(143.1) User(admmdw) Program(amqzxma0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:02.408Z)
+                    CommentInsert1(DUMBROKER.QM)
+                   
+AMQ7233I: 0 out of 0 in-flight transactions resolved for queue manager
+'DUMBROKER.QM'.
+
+EXPLANATION:
+0 transactions out of 0 in-flight at the time queue manager DUMBROKER.QM ended
+have been resolved.
+ACTION:
+None.
+----- amqatmra.c : 1607 -------------------------------------------------------
+08/06/2024 03:54:02 PM - Process(185.4) User(admmdw) Program(amqzmur0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:02.432Z)
+                    ArithInsert2(1)
+                    CommentInsert1(ERROR-LOG)
+                   
+AMQ5037I: The queue manager task 'ERROR-LOG' has started.
+
+EXPLANATION:
+The restartable utility task manager has started the ERROR-LOG task. This task
+has now started 1 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 03:54:02 PM - Process(185.10) User(admmdw) Program(amqzmur0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:02.432Z)
+                    ArithInsert2(5)
+                    CommentInsert1(APP-SIGNAL)
+                   
+AMQ5037I: The queue manager task 'APP-SIGNAL' has started.
+
+EXPLANATION:
+The restartable utility task manager has started the APP-SIGNAL task. This task
+has now started 5 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 03:54:02 PM - Process(185.6) User(admmdw) Program(amqzmur0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:02.432Z)
+                    ArithInsert2(2)
+                    CommentInsert1(APP-SIGNAL)
+                   
+AMQ5037I: The queue manager task 'APP-SIGNAL' has started.
+
+EXPLANATION:
+The restartable utility task manager has started the APP-SIGNAL task. This task
+has now started 2 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 03:54:02 PM - Process(185.9) User(admmdw) Program(amqzmur0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:02.433Z)
+                    ArithInsert2(8)
+                    CommentInsert1(APP-SIGNAL)
+                   
+AMQ5037I: The queue manager task 'APP-SIGNAL' has started.
+
+EXPLANATION:
+The restartable utility task manager has started the APP-SIGNAL task. This task
+has now started 8 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 03:54:02 PM - Process(185.8) User(admmdw) Program(amqzmur0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:02.432Z)
+                    ArithInsert2(4)
+                    CommentInsert1(APP-SIGNAL)
+                   
+AMQ5037I: The queue manager task 'APP-SIGNAL' has started.
+
+EXPLANATION:
+The restartable utility task manager has started the APP-SIGNAL task. This task
+has now started 4 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 03:54:02 PM - Process(185.5) User(admmdw) Program(amqzmur0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:02.432Z)
+                    ArithInsert2(1)
+                    CommentInsert1(APP-SIGNAL)
+                   
+AMQ5037I: The queue manager task 'APP-SIGNAL' has started.
+
+EXPLANATION:
+The restartable utility task manager has started the APP-SIGNAL task. This task
+has now started 1 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 03:54:02 PM - Process(185.11) User(admmdw) Program(amqzmur0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:02.432Z)
+                    ArithInsert2(6)
+                    CommentInsert1(APP-SIGNAL)
+                   
+AMQ5037I: The queue manager task 'APP-SIGNAL' has started.
+
+EXPLANATION:
+The restartable utility task manager has started the APP-SIGNAL task. This task
+has now started 6 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 03:54:02 PM - Process(185.12) User(admmdw) Program(amqzmur0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:02.432Z)
+                    ArithInsert2(7)
+                    CommentInsert1(APP-SIGNAL)
+                   
+AMQ5037I: The queue manager task 'APP-SIGNAL' has started.
+
+EXPLANATION:
+The restartable utility task manager has started the APP-SIGNAL task. This task
+has now started 7 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 03:54:02 PM - Process(185.7) User(admmdw) Program(amqzmur0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:02.432Z)
+                    ArithInsert2(3)
+                    CommentInsert1(APP-SIGNAL)
+                   
+AMQ5037I: The queue manager task 'APP-SIGNAL' has started.
+
+EXPLANATION:
+The restartable utility task manager has started the APP-SIGNAL task. This task
+has now started 3 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 03:54:02 PM - Process(143.1) User(admmdw) Program(amqzxma0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:02.459Z)
+                    CommentInsert1(9.2.0.0)
+                    CommentInsert3(DUMBROKER.QM)
+                   
+AMQ8003I: IBM MQ queue manager 'DUMBROKER.QM' started using V9.2.0.0.
+
+EXPLANATION:
+IBM MQ queue manager 'DUMBROKER.QM' started using V9.2.0.0.
+ACTION:
+None.
+----- amqzxma0.c : 5560 -------------------------------------------------------
+08/06/2024 03:54:02 PM - Process(185.14) User(admmdw) Program(amqzmur0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:02.460Z)
+                    ArithInsert2(1)
+                    CommentInsert1(DEFERRED_DELIVERY)
+                   
+AMQ5037I: The queue manager task 'DEFERRED_DELIVERY' has started.
+
+EXPLANATION:
+The restartable utility task manager has started the DEFERRED_DELIVERY task.
+This task has now started 1 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 03:54:02 PM - Process(185.15) User(admmdw) Program(amqzmur0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:02.477Z)
+                    ArithInsert2(1)
+                    CommentInsert1(DEFERRED-MSG)
+                   
+AMQ5037I: The queue manager task 'DEFERRED-MSG' has started.
+
+EXPLANATION:
+The restartable utility task manager has started the DEFERRED-MSG task. This
+task has now started 1 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 03:54:02 PM - Process(204.1) User(admmdw) Program(amqrrmfa)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:02.477Z)
+                   
+AMQ9410I: Repository manager started.
+
+EXPLANATION:
+The repository manager started successfully.
+ACTION:
+None.
+----- amqrrmfa.c : 2104 -------------------------------------------------------
+08/06/2024 03:54:02 PM - Process(185.16) User(admmdw) Program(amqzmur0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:02.478Z)
+                    ArithInsert2(1)
+                    CommentInsert1(STATISTICS)
+                   
+AMQ5037I: The queue manager task 'STATISTICS' has started.
+
+EXPLANATION:
+The restartable utility task manager has started the STATISTICS task. This task
+has now started 1 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 03:54:02 PM - Process(160.26) User(admmdw) Program(amqzmuc0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:02.478Z)
+                    ArithInsert2(1)
+                    CommentInsert1(ACTVTRC)
+                   
+AMQ5051I: The queue manager task 'ACTVTRC' has started.
+
+EXPLANATION:
+The critical utility task manager has started the ACTVTRC task. This task has
+now started 1 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 03:54:02 PM - Process(160.27) User(admmdw) Program(amqzmuc0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:02.478Z)
+                    ArithInsert2(1)
+                    CommentInsert1(ASYNCQ)
+                   
+AMQ5051I: The queue manager task 'ASYNCQ' has started.
+
+EXPLANATION:
+The critical utility task manager has started the ASYNCQ task. This task has
+now started 1 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 03:54:02 PM - Process(160.28) User(admmdw) Program(amqzmuc0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:02.478Z)
+                    ArithInsert2(1)
+                    CommentInsert1(EXPIRER)
+                   
+AMQ5051I: The queue manager task 'EXPIRER' has started.
+
+EXPLANATION:
+The critical utility task manager has started the EXPIRER task. This task has
+now started 1 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 03:54:02 PM - Process(160.29) User(admmdw) Program(amqzmuc0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:02.479Z)
+                    ArithInsert2(1)
+                    CommentInsert1(DUR-SUBS-MGR)
+                   
+AMQ5051I: The queue manager task 'DUR-SUBS-MGR' has started.
+
+EXPLANATION:
+The critical utility task manager has started the DUR-SUBS-MGR task. This task
+has now started 1 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 03:54:02 PM - Process(185.17) User(admmdw) Program(amqzmur0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:02.482Z)
+                    ArithInsert2(1)
+                    CommentInsert1(MARKINTSCAN)
+                   
+AMQ5037I: The queue manager task 'MARKINTSCAN' has started.
+
+EXPLANATION:
+The restartable utility task manager has started the MARKINTSCAN task. This
+task has now started 1 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 03:54:02 PM - Process(199.4) User(admmdw) Program(amqzmuf0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:02.482Z)
+                    ArithInsert2(1)
+                    CommentInsert1(QPUBSUB-CTRLR)
+                   
+AMQ5052I: The queue manager task 'QPUBSUB-CTRLR' has started.
+
+EXPLANATION:
+The publish/subscribe utility task manager has started the QPUBSUB-CTRLR task.
+This task has now started 1 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 03:54:02 PM - Process(199.6) User(admmdw) Program(amqzmuf0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:02.482Z)
+                    ArithInsert2(1)
+                    CommentInsert1(QPUBSUB-SUBPT-NLCACHE)
+                   
+AMQ5052I: The queue manager task 'QPUBSUB-SUBPT-NLCACHE' has started.
+
+EXPLANATION:
+The publish/subscribe utility task manager has started the
+QPUBSUB-SUBPT-NLCACHE task. This task has now started 1 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 03:54:02 PM - Process(160.30) User(admmdw) Program(amqzmuc0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:02.482Z)
+                    ArithInsert2(1)
+                    CommentInsert1(TOPIC-TREE)
+                   
+AMQ5051I: The queue manager task 'TOPIC-TREE' has started.
+
+EXPLANATION:
+The critical utility task manager has started the TOPIC-TREE task. This task
+has now started 1 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 03:54:02 PM - Process(160.32) User(admmdw) Program(amqzmuc0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:02.482Z)
+                    ArithInsert2(1)
+                    CommentInsert1(Q-DELETION)
+                   
+AMQ5051I: The queue manager task 'Q-DELETION' has started.
+
+EXPLANATION:
+The critical utility task manager has started the Q-DELETION task. This task
+has now started 1 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 03:54:02 PM - Process(160.31) User(admmdw) Program(amqzmuc0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:02.482Z)
+                    ArithInsert2(1)
+                    CommentInsert1(RESOURCE_MONITOR)
+                   
+AMQ5051I: The queue manager task 'RESOURCE_MONITOR' has started.
+
+EXPLANATION:
+The critical utility task manager has started the RESOURCE_MONITOR task. This
+task has now started 1 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 03:54:02 PM - Process(199.5) User(admmdw) Program(amqzmuf0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:02.483Z)
+                    ArithInsert2(1)
+                    CommentInsert1(QPUBSUB-QUEUE-NLCACHE)
+                   
+AMQ5052I: The queue manager task 'QPUBSUB-QUEUE-NLCACHE' has started.
+
+EXPLANATION:
+The publish/subscribe utility task manager has started the
+QPUBSUB-QUEUE-NLCACHE task. This task has now started 1 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 03:54:02 PM - Process(160.33) User(admmdw) Program(amqzmuc0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:02.483Z)
+                    ArithInsert2(1)
+                    CommentInsert1(PRESERVED-Q)
+                   
+AMQ5051I: The queue manager task 'PRESERVED-Q' has started.
+
+EXPLANATION:
+The critical utility task manager has started the PRESERVED-Q task. This task
+has now started 1 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 03:54:02 PM - Process(160.34) User(admmdw) Program(amqzmuc0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:02.483Z)
+                    ArithInsert2(1)
+                    CommentInsert1(MULTICAST)
+                   
+AMQ5051I: The queue manager task 'MULTICAST' has started.
+
+EXPLANATION:
+The critical utility task manager has started the MULTICAST task. This task has
+now started 1 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 03:54:02 PM - Process(199.7) User(admmdw) Program(amqzmuf0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:02.483Z)
+                    ArithInsert2(1)
+                    CommentInsert1(PUBSUB-DAEMON)
+                   
+AMQ5052I: The queue manager task 'PUBSUB-DAEMON' has started.
+
+EXPLANATION:
+The publish/subscribe utility task manager has started the PUBSUB-DAEMON task.
+This task has now started 1 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 03:54:02 PM - Process(199.7) User(admmdw) Program(amqzmuf0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:02.483Z)
+                    CommentInsert1(IBM MQ Distributed Pub/Sub Controller)
+                   
+AMQ5975I: 'IBM MQ Distributed Pub/Sub Controller' has started.
+
+EXPLANATION:
+'IBM MQ Distributed Pub/Sub Controller' has started.
+ACTION:
+None.
+----- cmqxzmup.c : 3957 -------------------------------------------------------
+08/06/2024 03:54:02 PM - Process(157.1) User(admmdw) Program(amqzmgr0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:02.485Z)
+                    ArithInsert1(226)
+                    CommentInsert1(SYSTEM.CHANNEL.INITQ)
+                   
+AMQ5022I: The channel initiator has started. ProcessId(226).
+
+EXPLANATION:
+The channel initiator process has started.
+ACTION:
+None.
+----- amqzmgr0.c : 2982 -------------------------------------------------------
+08/06/2024 03:54:02 PM - Process(160.35) User(admmdw) Program(amqzmuc0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:02.486Z)
+                    ArithInsert2(1)
+                    CommentInsert1(IQM-COMMS-MANAGER)
+                   
+AMQ5051I: The queue manager task 'IQM-COMMS-MANAGER' has started.
+
+EXPLANATION:
+The critical utility task manager has started the IQM-COMMS-MANAGER task. This
+task has now started 1 times.
+ACTION:
+None.
+----- amqzmut0.c : 1772 -------------------------------------------------------
+08/06/2024 03:54:02 PM - Process(199.8) User(admmdw) Program(amqzmuf0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:02.486Z)
+                    CommentInsert1(IBM MQ Distributed Pub/Sub Fan Out Task)
+                   
+AMQ5975I: 'IBM MQ Distributed Pub/Sub Fan Out Task' has started.
+
+EXPLANATION:
+'IBM MQ Distributed Pub/Sub Fan Out Task' has started.
+ACTION:
+None.
+----- cmqxzmup.c : 386 --------------------------------------------------------
+08/06/2024 03:54:02 PM - Process(199.9) User(admmdw) Program(amqzmuf0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:02.486Z)
+                    CommentInsert1(IBM MQ Distributed Pub/Sub Command Task)
+                   
+AMQ5975I: 'IBM MQ Distributed Pub/Sub Command Task' has started.
+
+EXPLANATION:
+'IBM MQ Distributed Pub/Sub Command Task' has started.
+ACTION:
+None.
+----- cmqxzmup.c : 386 --------------------------------------------------------
+08/06/2024 03:54:02 PM - Process(157.1) User(admmdw) Program(amqzmgr0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:02.486Z)
+                    ArithInsert1(231)
+                    CommentInsert1(SYSTEM.CMDSERVER.1)
+                   
+AMQ5024I: The command server has started. ProcessId(231).
+
+EXPLANATION:
+The command server process has started.
+ACTION:
+None.
+----- amqzmgr0.c : 2991 -------------------------------------------------------
+08/06/2024 03:54:02 PM - Process(199.10) User(admmdw) Program(amqzmuf0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:02.487Z)
+                    CommentInsert1(IBM MQ Distributed Pub/Sub Publish Task)
+                   
+AMQ5975I: 'IBM MQ Distributed Pub/Sub Publish Task' has started.
+
+EXPLANATION:
+'IBM MQ Distributed Pub/Sub Publish Task' has started.
+ACTION:
+None.
+----- cmqxzmup.c : 386 --------------------------------------------------------
+08/06/2024 03:54:02 PM - Process(157.1) User(admmdw) Program(amqzmgr0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:02.488Z)
+                    ArithInsert1(232)
+                    CommentInsert1(SYSTEM.AMQP.SERVICE)
+                   
+AMQ5028I: The Server 'SYSTEM.AMQP.SERVICE' has started. ProcessId(232).
+
+EXPLANATION:
+The Server process has started.
+ACTION:
+None.
+----- amqzmgr0.c : 3007 -------------------------------------------------------
+08/06/2024 03:54:02 PM - Process(226.1) User(admmdw) Program(runmqchi)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:02.508Z)
+                    CommentInsert1(SYSTEM.CHANNEL.INITQ)
+                   
+AMQ8024I: IBM MQ channel initiator started.
+
+EXPLANATION:
+The channel initiator for queue SYSTEM.CHANNEL.INITQ has been started.
+ACTION:
+None.
+----- amqrimna.c : 917 --------------------------------------------------------
+08/06/2024 03:54:02 PM - Process(227.1) User(admmdw) Program(amqfqpub)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:02.516Z)
+                    CommentInsert1(DUMBROKER.QM)
+                   
+AMQ5806I: Queued Publish/Subscribe Daemon started for queue manager
+DUMBROKER.QM.
+
+EXPLANATION:
+Queued Publish/Subscribe Daemon started for queue manager DUMBROKER.QM.
+ACTION:
+None.
+----- cmqxfcxc.c : 1401 -------------------------------------------------------
+08/06/2024 03:54:02 PM - Process(157.1) User(admmdw) Program(amqzmgr0)
+                    Host(BTNACE01) Installation(Installation1)
+                    VRMF(9.2.0.0) QMgr(DUMBROKER.QM)
+                    Time(2024-08-06T08:54:02.610Z)
+                    ArithInsert1(322)
+                    CommentInsert1(DUMBROKER.QM.QM)
+                   
+AMQ5026I: The listener 'DUMBROKER.QM.QM' has started. ProcessId(322).
+
+EXPLANATION:
+The listener process has started.
+ACTION:
+None.
+----- amqzmgr0.c : 2999 -------------------------------------------------------

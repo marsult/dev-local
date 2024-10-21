@@ -1,0 +1,927 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Broker deployBarfile="/opt/mdw/bar/FNTBROKER/ITMCONN/BACKEND_ISO_APP.bar" deployTimestamp="2024-08-27 14:28:01">
+  <CompiledApplication>
+    <ConfigurableProperty uri="startMode">
+    </ConfigurableProperty>
+  </CompiledApplication>
+  <CompiledMessageFlow name="BACKEND_ISO_FLOW" deployBarfile="/opt/mdw/bar/FNTBROKER/ITMCONN/BACKEND_ISO_APP.bar" deployTimestamp="2024-08-27 14:28:01">
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#ADD_MQHEADER.mqdlhDestQMgrName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#ADD_MQHEADER.mqdlhDestQName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#ADD_MQHEADER.mqmdReplyToQ">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#ADD_MQHEADER.mqmdReplyToQMgr">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#ADD_MQHEADER_LOG_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#ADD_MQHEADER_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#ADD_MQHEADER_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#ADD_MQHEADER_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#ADD_MQHEADER_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#ADD_MQHEADER_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#ADD_MQHEADER_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#ADD_MQHEADER_LOG_OUT.type" override="Root">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#ADD_MQHEADER_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#ADD_MQHEADER_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#ADD_MQHEADER_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#ADD_MQHEADER_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_CLIENT_IN.config" override="db://##backend-iso">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_CLIENT_IN_CONNECT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_CLIENT_IN_CONNECT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_CLIENT_IN_CONNECT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_CLIENT_IN_CONNECT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_CLIENT_IN_CONNECT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_CLIENT_IN_CONNECT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_CLIENT_IN_LOG_CATCH.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_CLIENT_IN_LOG_CATCH.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_CLIENT_IN_LOG_CATCH.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_CLIENT_IN_LOG_CATCH.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_CLIENT_IN_LOG_CATCH.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_CLIENT_IN_LOG_CATCH.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_CLIENT_IN_LOG_CLOSE.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_CLIENT_IN_LOG_CLOSE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_CLIENT_IN_LOG_CLOSE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_CLIENT_IN_LOG_CLOSE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_CLIENT_IN_LOG_CLOSE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_CLIENT_IN_LOG_CLOSE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_CLIENT_IN_LOG_CONTROL.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_CLIENT_IN_LOG_CONTROL.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_CLIENT_IN_LOG_CONTROL.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_CLIENT_IN_LOG_CONTROL.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_CLIENT_IN_LOG_CONTROL.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_CLIENT_IN_LOG_CONTROL.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_CLIENT_IN_LOG_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_CLIENT_IN_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_CLIENT_IN_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_CLIENT_IN_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_CLIENT_IN_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_CLIENT_IN_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_CLIENT_IN_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_CLIENT_IN_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_CLIENT_IN_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_CLIENT_IN_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_CLIENT_IN_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_CLIENT_IN_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_CLIENT_OUT.config" override="db://##backend-iso">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_CLIENT_OUT_LOG_CATCH.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_CLIENT_OUT_LOG_CATCH.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_CLIENT_OUT_LOG_CATCH.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_CLIENT_OUT_LOG_CATCH.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_CLIENT_OUT_LOG_CATCH.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_CLIENT_OUT_LOG_CATCH.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_CLIENT_OUT_LOG_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_CLIENT_OUT_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_CLIENT_OUT_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_CLIENT_OUT_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_CLIENT_OUT_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_CLIENT_OUT_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_CLIENT_OUT_LOG_FAILURE_LOG_DB_ERROR_SUBFLOW_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_CLIENT_OUT_LOG_FAILURE_LOG_DB_ERROR_SUBFLOW_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_CLIENT_OUT_LOG_FAILURE_LOG_DB_ERROR_SUBFLOW_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_CLIENT_OUT_LOG_FAILURE_LOG_DB_ERROR_SUBFLOW_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_CLIENT_OUT_LOG_FAILURE_LOG_DB_ERROR_SUBFLOW_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_CLIENT_OUT_LOG_FAILURE_LOG_DB_ERROR_SUBFLOW_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_CLIENT_OUT_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_CLIENT_OUT_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_CLIENT_OUT_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_CLIENT_OUT_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_CLIENT_OUT_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_CLIENT_OUT_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_MQ1_IN.SSLCertificateLabel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_MQ1_IN.SSLCipherSpec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_MQ1_IN.SSLPeerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_MQ1_IN.additionalInstances">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_MQ1_IN.channelName" override="SYSTEM.ADMIN.SVRCONN">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_MQ1_IN.componentLevel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_MQ1_IN.connection">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_MQ1_IN.destinationQueueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_MQ1_IN.listenerPortNumber" override="1534">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_MQ1_IN.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_MQ1_IN.queueName" override="BACKEND_ISO_IN">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_MQ1_IN.resetBrowseTimeout">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_MQ1_IN.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_MQ1_IN.securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_MQ1_IN.serializationToken">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_MQ1_IN.topicProperty">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_MQ1_IN.useSSL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_MQ1_IN.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_MQ1_IN_LOG_CATCH.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_MQ1_IN_LOG_CATCH.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_MQ1_IN_LOG_CATCH.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_MQ1_IN_LOG_CATCH.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_MQ1_IN_LOG_CATCH.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_MQ1_IN_LOG_CATCH.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_MQ1_IN_LOG_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_MQ1_IN_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_MQ1_IN_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_MQ1_IN_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_MQ1_IN_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_MQ1_IN_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_MQ1_IN_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_MQ1_IN_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_MQ1_IN_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_MQ1_IN_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_MQ1_IN_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_MQ1_IN_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_MQ2_IN.SSLCertificateLabel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_MQ2_IN.SSLCipherSpec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_MQ2_IN.SSLPeerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_MQ2_IN.additionalInstances">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_MQ2_IN.channelName" override="SYSTEM.ADMIN.SVRCONN">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_MQ2_IN.componentLevel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_MQ2_IN.connection">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_MQ2_IN.destinationQueueManagerName" override="ISOBROKER.QM">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_MQ2_IN.listenerPortNumber" override="1534">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_MQ2_IN.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_MQ2_IN.queueName" override="BACKEND_ISO_IN">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_MQ2_IN.resetBrowseTimeout">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_MQ2_IN.securityIdentity" override="mySecureQM">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_MQ2_IN.securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_MQ2_IN.serializationToken">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_MQ2_IN.topicProperty">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_MQ2_IN.useSSL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_MQ2_IN.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_MQ2_IN_LOG_CATCH.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_MQ2_IN_LOG_CATCH.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_MQ2_IN_LOG_CATCH.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_MQ2_IN_LOG_CATCH.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_MQ2_IN_LOG_CATCH.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_MQ2_IN_LOG_CATCH.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_MQ2_IN_LOG_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_MQ2_IN_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_MQ2_IN_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_MQ2_IN_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_MQ2_IN_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_MQ2_IN_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_MQ2_IN_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_MQ2_IN_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_MQ2_IN_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_MQ2_IN_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_MQ2_IN_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_MQ2_IN_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_QM1_REPLY.SSLCertificateLabel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_QM1_REPLY.SSLCipherSpec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_QM1_REPLY.SSLPeerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_QM1_REPLY.channelName" override="SYSTEM.ADMIN.SVRCONN">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_QM1_REPLY.connection">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_QM1_REPLY.destinationQueueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_QM1_REPLY.listenerPortNumber" override="1534">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_QM1_REPLY.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_QM1_REPLY.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_QM1_REPLY.useSSL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_QM1_REPLY.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_QM1_REPLY_LOG_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_QM1_REPLY_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_QM1_REPLY_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_QM1_REPLY_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_QM1_REPLY_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_QM1_REPLY_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_QM1_REPLY_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_QM1_REPLY_LOG_OUT.type" override="Body">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_QM1_REPLY_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_QM1_REPLY_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_QM1_REPLY_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_QM1_REPLY_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_QM2_REPLY.SSLCertificateLabel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_QM2_REPLY.SSLCipherSpec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_QM2_REPLY.SSLPeerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_QM2_REPLY.channelName" override="SYSTEM.ADMIN.SVRCONN">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_QM2_REPLY.connection">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_QM2_REPLY.destinationQueueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_QM2_REPLY.listenerPortNumber" override="1534">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_QM2_REPLY.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_QM2_REPLY.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_QM2_REPLY.useSSL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_QM2_REPLY.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_QM2_REPLY_LOG_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_QM2_REPLY_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_QM2_REPLY_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_QM2_REPLY_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_QM2_REPLY_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_QM2_REPLY_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_QM2_REPLY_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_QM2_REPLY_LOG_OUT.type" override="Body">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_QM2_REPLY_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_QM2_REPLY_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_QM2_REPLY_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#BACKEND_ISO_QM2_REPLY_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#ERROR_MQ_REPLY.SSLCertificateLabel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#ERROR_MQ_REPLY.SSLCipherSpec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#ERROR_MQ_REPLY.SSLPeerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#ERROR_MQ_REPLY.channelName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#ERROR_MQ_REPLY.connection">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#ERROR_MQ_REPLY.destinationQueueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#ERROR_MQ_REPLY.listenerPortNumber">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#ERROR_MQ_REPLY.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#ERROR_MQ_REPLY.queueManagerHostname">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#ERROR_MQ_REPLY.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#ERROR_MQ_REPLY.useSSL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#ERROR_MQ_REPLY.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#ERROR_MQ_REPLY_LOG_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#ERROR_MQ_REPLY_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#ERROR_MQ_REPLY_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#ERROR_MQ_REPLY_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#ERROR_MQ_REPLY_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#ERROR_MQ_REPLY_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#ERROR_MQ_REPLY_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#ERROR_MQ_REPLY_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#ERROR_MQ_REPLY_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#ERROR_MQ_REPLY_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#ERROR_MQ_REPLY_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#ERROR_MQ_REPLY_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#FAILURE_IS_NETWORK_MESSAGE.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#FAILURE_IS_NETWORK_MESSAGE.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#FAILURE_IS_NETWORK_MESSAGE_LOG_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#FAILURE_IS_NETWORK_MESSAGE_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#FAILURE_IS_NETWORK_MESSAGE_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#FAILURE_IS_NETWORK_MESSAGE_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#FAILURE_IS_NETWORK_MESSAGE_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#FAILURE_IS_NETWORK_MESSAGE_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#FAILURE_IS_NETWORK_MESSAGE_LOG_FALSE.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#FAILURE_IS_NETWORK_MESSAGE_LOG_FALSE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#FAILURE_IS_NETWORK_MESSAGE_LOG_FALSE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#FAILURE_IS_NETWORK_MESSAGE_LOG_FALSE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#FAILURE_IS_NETWORK_MESSAGE_LOG_FALSE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#FAILURE_IS_NETWORK_MESSAGE_LOG_FALSE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#FAILURE_IS_NETWORK_MESSAGE_LOG_FALSE_LOG_DB_SUBFLOW_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#FAILURE_IS_NETWORK_MESSAGE_LOG_FALSE_LOG_DB_SUBFLOW_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#FAILURE_IS_NETWORK_MESSAGE_LOG_FALSE_LOG_DB_SUBFLOW_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#FAILURE_IS_NETWORK_MESSAGE_LOG_FALSE_LOG_DB_SUBFLOW_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#FAILURE_IS_NETWORK_MESSAGE_LOG_FALSE_LOG_DB_SUBFLOW_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#FAILURE_IS_NETWORK_MESSAGE_LOG_FALSE_LOG_DB_SUBFLOW_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#FAILURE_IS_NETWORK_MESSAGE_LOG_TRUE.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#FAILURE_IS_NETWORK_MESSAGE_LOG_TRUE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#FAILURE_IS_NETWORK_MESSAGE_LOG_TRUE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#FAILURE_IS_NETWORK_MESSAGE_LOG_TRUE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#FAILURE_IS_NETWORK_MESSAGE_LOG_TRUE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#FAILURE_IS_NETWORK_MESSAGE_LOG_TRUE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#FAILURE_IS_NETWORK_MESSAGE_LOG_UNKNOWN.level" override="Warning">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#FAILURE_IS_NETWORK_MESSAGE_LOG_UNKNOWN.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#FAILURE_IS_NETWORK_MESSAGE_LOG_UNKNOWN.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#FAILURE_IS_NETWORK_MESSAGE_LOG_UNKNOWN.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#FAILURE_IS_NETWORK_MESSAGE_LOG_UNKNOWN.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#FAILURE_IS_NETWORK_MESSAGE_LOG_UNKNOWN.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#IS_NETWORK_MESSAGE.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#IS_NETWORK_MESSAGE.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#IS_NETWORK_MESSAGE_LOG_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#IS_NETWORK_MESSAGE_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#IS_NETWORK_MESSAGE_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#IS_NETWORK_MESSAGE_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#IS_NETWORK_MESSAGE_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#IS_NETWORK_MESSAGE_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#IS_NETWORK_MESSAGE_LOG_FALSE.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#IS_NETWORK_MESSAGE_LOG_FALSE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#IS_NETWORK_MESSAGE_LOG_FALSE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#IS_NETWORK_MESSAGE_LOG_FALSE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#IS_NETWORK_MESSAGE_LOG_FALSE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#IS_NETWORK_MESSAGE_LOG_FALSE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#IS_NETWORK_MESSAGE_LOG_FALSE_LOG_DB_SUBFLOW_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#IS_NETWORK_MESSAGE_LOG_FALSE_LOG_DB_SUBFLOW_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#IS_NETWORK_MESSAGE_LOG_FALSE_LOG_DB_SUBFLOW_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#IS_NETWORK_MESSAGE_LOG_FALSE_LOG_DB_SUBFLOW_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#IS_NETWORK_MESSAGE_LOG_FALSE_LOG_DB_SUBFLOW_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#IS_NETWORK_MESSAGE_LOG_FALSE_LOG_DB_SUBFLOW_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#IS_NETWORK_MESSAGE_LOG_TRUE.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#IS_NETWORK_MESSAGE_LOG_TRUE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#IS_NETWORK_MESSAGE_LOG_TRUE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#IS_NETWORK_MESSAGE_LOG_TRUE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#IS_NETWORK_MESSAGE_LOG_TRUE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#IS_NETWORK_MESSAGE_LOG_TRUE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#IS_NETWORK_MESSAGE_LOG_UNKNOWN.level" override="Warning">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#IS_NETWORK_MESSAGE_LOG_UNKNOWN.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#IS_NETWORK_MESSAGE_LOG_UNKNOWN.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#IS_NETWORK_MESSAGE_LOG_UNKNOWN.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#IS_NETWORK_MESSAGE_LOG_UNKNOWN.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#IS_NETWORK_MESSAGE_LOG_UNKNOWN.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#OUT_ADD_MQHEADER.mqdlhDestQMgrName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#OUT_ADD_MQHEADER.mqdlhDestQName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#OUT_ADD_MQHEADER.mqmdReplyToQ">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#OUT_ADD_MQHEADER.mqmdReplyToQMgr">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#OUT_ADD_MQHEADER_LOG_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#OUT_ADD_MQHEADER_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#OUT_ADD_MQHEADER_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#OUT_ADD_MQHEADER_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#OUT_ADD_MQHEADER_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#OUT_ADD_MQHEADER_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#OUT_ADD_MQHEADER_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#OUT_ADD_MQHEADER_LOG_OUT.type" override="Root">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#OUT_ADD_MQHEADER_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#OUT_ADD_MQHEADER_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#OUT_ADD_MQHEADER_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#OUT_ADD_MQHEADER_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#OUT_IS_NETWORK_MESSAGE.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#OUT_IS_NETWORK_MESSAGE.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#OUT_IS_NETWORK_MESSAGE_LOG_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#OUT_IS_NETWORK_MESSAGE_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#OUT_IS_NETWORK_MESSAGE_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#OUT_IS_NETWORK_MESSAGE_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#OUT_IS_NETWORK_MESSAGE_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#OUT_IS_NETWORK_MESSAGE_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#OUT_IS_NETWORK_MESSAGE_LOG_FALSE.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#OUT_IS_NETWORK_MESSAGE_LOG_FALSE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#OUT_IS_NETWORK_MESSAGE_LOG_FALSE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#OUT_IS_NETWORK_MESSAGE_LOG_FALSE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#OUT_IS_NETWORK_MESSAGE_LOG_FALSE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#OUT_IS_NETWORK_MESSAGE_LOG_FALSE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#OUT_IS_NETWORK_MESSAGE_LOG_TRUE.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#OUT_IS_NETWORK_MESSAGE_LOG_TRUE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#OUT_IS_NETWORK_MESSAGE_LOG_TRUE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#OUT_IS_NETWORK_MESSAGE_LOG_TRUE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#OUT_IS_NETWORK_MESSAGE_LOG_TRUE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#OUT_IS_NETWORK_MESSAGE_LOG_TRUE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#OUT_IS_NETWORK_MESSAGE_LOG_UNKNOWN.level" override="Warning">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#OUT_IS_NETWORK_MESSAGE_LOG_UNKNOWN.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#OUT_IS_NETWORK_MESSAGE_LOG_UNKNOWN.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#OUT_IS_NETWORK_MESSAGE_LOG_UNKNOWN.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#OUT_IS_NETWORK_MESSAGE_LOG_UNKNOWN.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#OUT_IS_NETWORK_MESSAGE_LOG_UNKNOWN.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#REPLYQM1_OUT_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#REPLYQM1_OUT_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#REPLYQM1_OUT_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#REPLYQM1_OUT_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#REPLYQM1_OUT_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#REPLYQM1_OUT_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#REPLYQM2_OUT_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#REPLYQM2_OUT_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#REPLYQM2_OUT_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#REPLYQM2_OUT_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#REPLYQM2_OUT_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#REPLYQM2_OUT_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#REPLYQM_OUT_UNKNOWN.level" override="Warning">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#REPLYQM_OUT_UNKNOWN.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#REPLYQM_OUT_UNKNOWN.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#REPLYQM_OUT_UNKNOWN.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#REPLYQM_OUT_UNKNOWN.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#REPLYQM_OUT_UNKNOWN.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#RESTORE_REPLYTOQ.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#RESTORE_REPLYTOQ.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#RESTORE_REPLYTOQ.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#RESTORE_REPLYTOQ_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#RESTORE_REPLYTOQ_LOG_OUT.type" override="Root">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#RESTORE_REPLYTOQ_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#RESTORE_REPLYTOQ_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#RESTORE_REPLYTOQ_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#RESTORE_REPLYTOQ_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_BACKEND_ISO_ERROR_GENERAL.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_BACKEND_ISO_ERROR_GENERAL.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_BACKEND_ISO_ERROR_GENERAL.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_BACKEND_ISO_ERROR_GENERAL_LOG_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_BACKEND_ISO_ERROR_GENERAL_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_BACKEND_ISO_ERROR_GENERAL_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_BACKEND_ISO_ERROR_GENERAL_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_BACKEND_ISO_ERROR_GENERAL_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_BACKEND_ISO_ERROR_GENERAL_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_BACKEND_ISO_ERROR_GENERAL_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_BACKEND_ISO_ERROR_GENERAL_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_BACKEND_ISO_ERROR_GENERAL_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_BACKEND_ISO_ERROR_GENERAL_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_BACKEND_ISO_ERROR_GENERAL_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_BACKEND_ISO_ERROR_GENERAL_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_REPLYQM_OUT.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_REPLYQM_OUT.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_REPLYQM_OUT.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_REPLY_BACKEND_ISO_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_REPLY_BACKEND_ISO_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_REPLY_BACKEND_ISO_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_REPLY_BACKEND_ISO_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_REPLY_BACKEND_ISO_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_REPLY_BACKEND_ISO_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_REPLY_BACKEND_ISO_MQ1_IN.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_REPLY_BACKEND_ISO_MQ1_IN.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_REPLY_BACKEND_ISO_MQ1_IN.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_REPLY_BACKEND_ISO_MQ2_IN.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_REPLY_BACKEND_ISO_MQ2_IN.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_REPLY_BACKEND_ISO_MQ2_IN.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_RESPONSE_ISO_ERROR.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_RESPONSE_ISO_ERROR.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_RESPONSE_ISO_ERROR.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_RESPONSE_ISO_ERROR_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_RESPONSE_ISO_ERROR_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_RESPONSE_ISO_ERROR_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_RESPONSE_ISO_ERROR_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_RESPONSE_ISO_ERROR_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_RESPONSE_ISO_ERROR_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_RESPONSE_ISO_ERROR_LOG_OUT_MQ_REPLY.SSLCertificateLabel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_RESPONSE_ISO_ERROR_LOG_OUT_MQ_REPLY.SSLCipherSpec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_RESPONSE_ISO_ERROR_LOG_OUT_MQ_REPLY.SSLPeerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_RESPONSE_ISO_ERROR_LOG_OUT_MQ_REPLY.channelName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_RESPONSE_ISO_ERROR_LOG_OUT_MQ_REPLY.connection">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_RESPONSE_ISO_ERROR_LOG_OUT_MQ_REPLY.destinationQueueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_RESPONSE_ISO_ERROR_LOG_OUT_MQ_REPLY.listenerPortNumber">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_RESPONSE_ISO_ERROR_LOG_OUT_MQ_REPLY.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_RESPONSE_ISO_ERROR_LOG_OUT_MQ_REPLY.queueManagerHostname">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_RESPONSE_ISO_ERROR_LOG_OUT_MQ_REPLY.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_RESPONSE_ISO_ERROR_LOG_OUT_MQ_REPLY.useSSL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_RESPONSE_ISO_ERROR_LOG_OUT_MQ_REPLY.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_RESPONSE_ISO_ERROR_LOG_OUT_MQ_REPLY_LOG_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_RESPONSE_ISO_ERROR_LOG_OUT_MQ_REPLY_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_RESPONSE_ISO_ERROR_LOG_OUT_MQ_REPLY_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_RESPONSE_ISO_ERROR_LOG_OUT_MQ_REPLY_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_RESPONSE_ISO_ERROR_LOG_OUT_MQ_REPLY_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_RESPONSE_ISO_ERROR_LOG_OUT_MQ_REPLY_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_RESPONSE_ISO_ERROR_LOG_OUT_MQ_REPLY_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_RESPONSE_ISO_ERROR_LOG_OUT_MQ_REPLY_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_RESPONSE_ISO_ERROR_LOG_OUT_MQ_REPLY_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_RESPONSE_ISO_ERROR_LOG_OUT_MQ_REPLY_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_RESPONSE_ISO_ERROR_LOG_OUT_MQ_REPLY_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_RESPONSE_ISO_ERROR_LOG_OUT_MQ_REPLY_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_SIGN_ON.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_SIGN_ON.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_SIGN_ON.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_SIGN_ON_LOG_OUT1.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_SIGN_ON_LOG_OUT1.type" override="Body">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_SIGN_ON_LOG_OUT1.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_SIGN_ON_LOG_OUT1.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_SIGN_ON_LOG_OUT1.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_SIGN_ON_LOG_OUT1.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_SIGN_ON_LOG_OUT2.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_SIGN_ON_LOG_OUT2.type" override="Body">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_SIGN_ON_LOG_OUT2.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_SIGN_ON_LOG_OUT2.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_SIGN_ON_LOG_OUT2.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#SET_SIGN_ON_LOG_OUT2.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#STORE_REPLYTOQ.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#STORE_REPLYTOQ.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#STORE_REPLYTOQ.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#STORE_REPLYTOQ_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#STORE_REPLYTOQ_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#STORE_REPLYTOQ_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#STORE_REPLYTOQ_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#STORE_REPLYTOQ_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#STORE_REPLYTOQ_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#additionalInstances" override="256">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#commitCount">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#commitInterval">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#consumerPolicySet">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#consumerPolicySetBindings">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#coordinatedTransaction">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#maximumRateMsgsPerSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#monitoringProfile">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#notificationThresholdMsgsPerSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#processingTimeoutAction">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#processingTimeoutSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#providerPolicySet">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#providerPolicySetBindings">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#queueManagerHostname1" override="BTNQM1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#queueManagerHostname2" override="BTNQM2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#startInstancesWhenFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#startMode">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_ISO_FLOW#wlmPolicy">
+    </ConfigurableProperty>
+  </CompiledMessageFlow>
+</Broker>

@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Broker deployBarfile="/opt/mdw/bar/ISOBROKER/SYARIAH/ITM_SYARIAH_PASS_BAR.bar" deployTimestamp="2024-08-09 17:32:21">
+  <CompiledApplication>
+    <ConfigurableProperty uri="startMode">
+    </ConfigurableProperty>
+  </CompiledApplication>
+  <CompiledMessageFlow name="ITM_SYARIAH_PASS_FLOW" deployBarfile="/opt/mdw/bar/ISOBROKER/SYARIAH/ITM_SYARIAH_PASS_BAR.bar" deployTimestamp="2024-08-09 17:32:21">
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#CORE_SYARIAH_IN.AddRequestToGroup">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#CORE_SYARIAH_IN.GroupRequestFolderName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#CORE_SYARIAH_IN.GroupRequestTimeout">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#CORE_SYARIAH_IN.SSLCertificateLabel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#CORE_SYARIAH_IN.SSLCipherSpec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#CORE_SYARIAH_IN.SSLPeerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#CORE_SYARIAH_IN.channelName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#CORE_SYARIAH_IN.connection">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#CORE_SYARIAH_IN.destinationQueueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#CORE_SYARIAH_IN.listenerPortNumber">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#CORE_SYARIAH_IN.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#CORE_SYARIAH_IN.queueManagerHostname">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#CORE_SYARIAH_IN.queueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#CORE_SYARIAH_IN.queueName" override="CORE_SYARIAH_IN">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#CORE_SYARIAH_IN.replyToQ">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#CORE_SYARIAH_IN.replyToQMgr">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#CORE_SYARIAH_IN.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#CORE_SYARIAH_IN.securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#CORE_SYARIAH_IN.useSSL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#CORE_SYARIAH_IN.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#CORE_SYARIAH_IN_PAS_FAIL.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#CORE_SYARIAH_IN_PAS_FAIL.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#CORE_SYARIAH_IN_PAS_FAIL.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#CORE_SYARIAH_IN_PAS_FAIL.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#CORE_SYARIAH_IN_PAS_FAIL.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#CORE_SYARIAH_IN_PAS_FAIL.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#CORE_SYARIAH_IN_PAS_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#CORE_SYARIAH_IN_PAS_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#CORE_SYARIAH_IN_PAS_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#CORE_SYARIAH_IN_PAS_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#CORE_SYARIAH_IN_PAS_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#CORE_SYARIAH_IN_PAS_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REPLY.SSLCertificateLabel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REPLY.SSLCipherSpec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REPLY.SSLPeerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REPLY.additionalInstances" override="200">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REPLY.channelName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REPLY.componentLevel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REPLY.connection">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REPLY.destinationQueueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REPLY.listenerPortNumber">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REPLY.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REPLY.queueManagerHostname">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REPLY.queueName" override="ITM_SYARIAH_REPLY">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REPLY.resetBrowseTimeout">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REPLY.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REPLY.securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REPLY.serializationToken">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REPLY.topicProperty">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REPLY.useSSL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REPLY.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REPLY_LOG_CATCH.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REPLY_LOG_CATCH.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REPLY_LOG_CATCH.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REPLY_LOG_CATCH.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REPLY_LOG_CATCH.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REPLY_LOG_CATCH.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REPLY_LOG_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REPLY_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REPLY_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REPLY_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REPLY_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REPLY_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REPLY_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REPLY_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REPLY_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REPLY_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REPLY_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REPLY_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REQ.SSLCertificateLabel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REQ.SSLCipherSpec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REQ.SSLPeerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REQ.additionalInstances" override="200">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REQ.channelName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REQ.componentLevel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REQ.connection">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REQ.destinationQueueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REQ.listenerPortNumber">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REQ.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REQ.queueManagerHostname">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REQ.queueName" override="ITM_SYARIAH_REQ">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REQ.resetBrowseTimeout">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REQ.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REQ.securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REQ.serializationToken">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REQ.topicProperty">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REQ.useSSL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REQ.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REQ_LOG_CATCH.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REQ_LOG_CATCH.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REQ_LOG_CATCH.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REQ_LOG_CATCH.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REQ_LOG_CATCH.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REQ_LOG_CATCH.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REQ_LOG_FAIL.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REQ_LOG_FAIL.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REQ_LOG_FAIL.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REQ_LOG_FAIL.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REQ_LOG_FAIL.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REQ_LOG_FAIL.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REQ_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REQ_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REQ_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REQ_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REQ_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ITM_SYARIAH_REQ_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#REQ_SYARIAH_MAPPING.config" override="db://##req-syah.${msg.data.group}.${msg.data.code}">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#REQ_SYARIAH_MAPPING_LOG_FAIL.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#REQ_SYARIAH_MAPPING_LOG_FAIL.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#REQ_SYARIAH_MAPPING_LOG_FAIL.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#REQ_SYARIAH_MAPPING_LOG_FAIL.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#REQ_SYARIAH_MAPPING_LOG_FAIL.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#REQ_SYARIAH_MAPPING_LOG_FAIL.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#REQ_SYARIAH_MAPPING_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#REQ_SYARIAH_MAPPING_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#REQ_SYARIAH_MAPPING_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#REQ_SYARIAH_MAPPING_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#REQ_SYARIAH_MAPPING_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#REQ_SYARIAH_MAPPING_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ROUTER_OUT.SSLCertificateLabel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ROUTER_OUT.SSLCipherSpec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ROUTER_OUT.SSLPeerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ROUTER_OUT.channelName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ROUTER_OUT.connection">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ROUTER_OUT.destinationQueueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ROUTER_OUT.listenerPortNumber">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ROUTER_OUT.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ROUTER_OUT.queueManagerHostname">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ROUTER_OUT.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ROUTER_OUT.useSSL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ROUTER_OUT.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ROUTER_OUT_LOG_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ROUTER_OUT_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ROUTER_OUT_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ROUTER_OUT_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ROUTER_OUT_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ROUTER_OUT_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ROUTER_OUT_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ROUTER_OUT_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ROUTER_OUT_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ROUTER_OUT_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ROUTER_OUT_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#ROUTER_OUT_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#SET_ITM_SYARIAH_SOURCE.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#SET_ITM_SYARIAH_SOURCE.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#SET_ITM_SYARIAH_SOURCE.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#SET_REPLY_SYARIAH_REQ_LOG_FAIL.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#SET_REPLY_SYARIAH_REQ_LOG_FAIL.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#SET_REPLY_SYARIAH_REQ_LOG_FAIL.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#SET_REPLY_SYARIAH_REQ_LOG_FAIL.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#SET_REPLY_SYARIAH_REQ_LOG_FAIL.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#SET_REPLY_SYARIAH_REQ_LOG_FAIL.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#SET_REPLY_SYARIAH_REQ_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#SET_REPLY_SYARIAH_REQ_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#SET_REPLY_SYARIAH_REQ_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#SET_REPLY_SYARIAH_REQ_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#SET_REPLY_SYARIAH_REQ_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#SET_REPLY_SYARIAH_REQ_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#SET_REPLY_TO_SYARIAH_REQ.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#SET_REPLY_TO_SYARIAH_REQ.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#SET_REPLY_TO_SYARIAH_REQ.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#SET_SOURCE_LOG_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#SET_SOURCE_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#SET_SOURCE_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#SET_SOURCE_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#SET_SOURCE_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#SET_SOURCE_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#SET_SOURCE_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#SET_SOURCE_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#SET_SOURCE_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#SET_SOURCE_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#SET_SOURCE_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#SET_SOURCE_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#additionalInstances" override="50">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#commitCount">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#commitInterval">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#consumerPolicySet">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#consumerPolicySetBindings">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#coordinatedTransaction">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#maximumRateMsgsPerSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#monitoringProfile">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#notificationThresholdMsgsPerSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#processingTimeoutAction">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#processingTimeoutSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#providerPolicySet">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#providerPolicySetBindings">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#startInstancesWhenFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#startMode">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ITM_SYARIAH_PASS_FLOW#wlmPolicy">
+    </ConfigurableProperty>
+  </CompiledMessageFlow>
+</Broker>

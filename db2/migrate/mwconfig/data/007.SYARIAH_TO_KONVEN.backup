@@ -1,0 +1,100 @@
+INSERT INTO MWCONFIG.DTREE (GROUP, PATH, VALUE, MODIFIED_BY, TIMESTAMP, MODULE) VALUES('ITM-CODE', '0200.532000', '0200.532000.${msg.reservedPrivate2.substring(0, 9)}${msg.reservedPrivate2.substring(6, 9).equals("001") || msg.reservedPrivate2.substring(6, 9).equals("MVC")?(msg.toAccount==null?"":(msg.toAccount?.length()<12||msg.toAccount?.length()>=16)&&msg.toAccount?.substring(0,1).toBigDecimal()>=8?".VA"+getParamValue("ITM-VA-INST",msg.toAccount?.substring(1,5),""):""):""}', CURRENT USER, CURRENT TIMESTAMP, '[itm]');
+INSERT INTO MWCONFIG.DTREE (GROUP, PATH, VALUE, MODIFIED_BY, TIMESTAMP, MODULE) VALUES('ITM-CODE', '0210.532000', '0210.532000.${msg.reservedPrivate2.substring(0, 9)}${msg.reservedPrivate2.substring(6, 9).equals("001") || msg.reservedPrivate2.substring(6, 9).equals("MVC")?(msg.toAccount==null?"":(msg.toAccount?.length()<12||msg.toAccount?.length()>=16)&&msg.toAccount?.substring(0,1).toBigDecimal()>=8?".VA"+getParamValue("ITM-VA-INST",msg.toAccount?.substring(1,5),""):""):""}', CURRENT USER, CURRENT TIMESTAMP, '[itm]');
+INSERT INTO MWCONFIG.DTREE (GROUP, PATH, VALUE, MODIFIED_BY, TIMESTAMP, MODULE) VALUES('ITM-CODE', '0200.532000.002LMP001', '0200.532000.002LMP001.${msg.networkManagementInformation}', CURRENT USER, CURRENT TIMESTAMP, '[itm]');
+INSERT INTO MWCONFIG.DTREE (GROUP, PATH, VALUE, MODIFIED_BY, TIMESTAMP, MODULE) VALUES('ITM-CODE', '0210.532000.002LMP001', '0210.532000.002LMP001.${msg.networkManagementInformation}', CURRENT USER, CURRENT TIMESTAMP, '[itm]');
+
+INSERT INTO MWCONFIG.DTREE (GROUP, PATH, VALUE, MODIFIED_BY, TIMESTAMP, MODULE) VALUES('CHARGES', 'itm|532000', 'itm|53|${msg.reservedPrivate2."!value".substring(0,6)=="LMPEDC"?msg.reservedPrivate2."!value".substring(0,6):msg.reservedPrivate2."!value".substring(3,6)}', CURRENT USER, CURRENT TIMESTAMP, '[itm][syariah]');
+INSERT INTO MWCONFIG.DTREE (GROUP, PATH, VALUE, MODIFIED_BY, TIMESTAMP, MODULE) VALUES('CHARGES', 'itm|53|LMP', 'itm|53|LMP|${msg.reservedPrivate2."!value".substring(0,9)}', CURRENT USER, CURRENT TIMESTAMP, '[itm][syariah]');
+INSERT INTO MWCONFIG.DTREE (GROUP, PATH, VALUE, MODIFIED_BY, TIMESTAMP, MODULE) VALUES('CHARGES', 'itm|53|LMP|002LMP001', 'interbank', CURRENT USER, CURRENT TIMESTAMP, '[itm][syariah]');
+INSERT INTO MWCONFIG.DTREE (GROUP, PATH, VALUE, MODIFIED_BY, TIMESTAMP, MODULE) VALUES('CHARGES', 'interbank', 'itm-amp-link-transfer-interbank', CURRENT USER, CURRENT TIMESTAMP, '[itm][syariah]');
+INSERT INTO MWCONFIG.DTREE (GROUP, PATH, VALUE, MODIFIED_BY, TIMESTAMP, MODULE) VALUES('CHARGES', 'itm-amp-link-transfer-intrabank', 'itm-amp-link-transfer-intrabank-${msg.issuerTraceId}', CURRENT USER, CURRENT TIMESTAMP, '[itm][syariah]');
+INSERT INTO MWCONFIG.DTREE (GROUP, PATH, VALUE, MODIFIED_BY, TIMESTAMP, MODULE) VALUES('CHARGES', 'itm-amp-link-transfer-interbank', 'itm-amp-link-transfer-interbank-${msg.issuerTraceId}', CURRENT USER, CURRENT TIMESTAMP, '[itm][syariah]');
+INSERT INTO MWCONFIG.DTREE (GROUP, PATH, VALUE, MODIFIED_BY, TIMESTAMP, MODULE) VALUES('CHARGES', 'itm-amp-link-transfer-interbank-BHG', '----', CURRENT USER, CURRENT TIMESTAMP, '[itm][syariah]');
+INSERT INTO MWCONFIG.DTREE (GROUP, PATH, VALUE, MODIFIED_BY, TIMESTAMP, MODULE) VALUES('CHARGES', 'itm-amp-link-transfer-interbank-BPD', '----', CURRENT USER, CURRENT TIMESTAMP, '[itm][syariah]');
+INSERT INTO MWCONFIG.DTREE (GROUP, PATH, VALUE, MODIFIED_BY, TIMESTAMP, MODULE) VALUES('CHARGES', 'itm-amp-link-transfer-interbank-BST', '----', CURRENT USER, CURRENT TIMESTAMP, '[itm][syariah]');
+INSERT INTO MWCONFIG.DTREE (GROUP, PATH, VALUE, MODIFIED_BY, TIMESTAMP, MODULE) VALUES('CHARGES', 'itm-amp-link-transfer-interbank-LMP', '----', CURRENT USER, CURRENT TIMESTAMP, '[itm][syariah]');
+INSERT INTO MWCONFIG.DTREE (GROUP, PATH, VALUE, MODIFIED_BY, TIMESTAMP, MODULE) VALUES('CHARGES', 'itm-amp-link-transfer-intrabank-BHG', '----', CURRENT USER, CURRENT TIMESTAMP, '[itm][syariah]');
+INSERT INTO MWCONFIG.DTREE (GROUP, PATH, VALUE, MODIFIED_BY, TIMESTAMP, MODULE) VALUES('CHARGES', 'itm-amp-link-transfer-intrabank-BPD', '----', CURRENT USER, CURRENT TIMESTAMP, '[itm][syariah]');
+INSERT INTO MWCONFIG.DTREE (GROUP, PATH, VALUE, MODIFIED_BY, TIMESTAMP, MODULE) VALUES('CHARGES', 'itm-amp-link-transfer-intrabank-BST', '----', CURRENT USER, CURRENT TIMESTAMP, '[itm][syariah]');
+INSERT INTO MWCONFIG.DTREE (GROUP, PATH, VALUE, MODIFIED_BY, TIMESTAMP, MODULE) VALUES('CHARGES', 'itm-amp-link-transfer-intrabank-LMP', '----', CURRENT USER, CURRENT TIMESTAMP, '[itm][syariah]');
+INSERT INTO MWCONFIG.DTREE (GROUP, PATH, VALUE, MODIFIED_BY, TIMESTAMP, MODULE) VALUES('CHARGES', 'itm-amp-link-transfer-interbank-XMP', '----', CURRENT USER, CURRENT TIMESTAMP, '[itm][syariah]');
+INSERT INTO MWCONFIG.DTREE (GROUP, PATH, VALUE, MODIFIED_BY, TIMESTAMP, MODULE) VALUES('CHARGES', 'itm-amp-link-transfer-intrabank-XMP', '----', CURRENT USER, CURRENT TIMESTAMP, '[itm][syariah]');
+
+INSERT INTO MWCONFIG.ROUTING_TABLE (CODE_START, CODE_END, CHANNEL, START_DATE, END_DATE, QUEUE, CREATE_BY, CREATE_DATE, MODIFIED_BY, MODIFIED_DATE, STATUS, SUBCODEX, ADDITIONAL, REPLY_TO, REPLY_TO_QMGR) VALUES('0200.532000.002LMP001.1', '0200.532000.002LMP001.1', 'itm', CURRENT TIMESTAMP, NULL, 'ITM_SYARIAH_REQ', CURRENT USER, CURRENT TIMESTAMP, NULL, NULL, 'ACTIVE', NULL, NULL, 'ROUTER_OUT.ITM', 'ISOBROKER.QM');
+
+INSERT INTO MWCONFIG.CHARGES (ID, C1_VALUE, C1_NAME, C1_SCRIPT, C1_ACCOUNT, C2_VALUE, C2_NAME, C2_SCRIPT, C2_ACCOUNT, C3_VALUE, C3_NAME, C3_SCRIPT, C3_ACCOUNT, C4_VALUE, C4_NAME, C4_SCRIPT, C4_ACCOUNT, C5_VALUE, C5_NAME, C5_SCRIPT, C5_ACCOUNT, MODIFIED_BY, "TIMESTAMP", C6_VALUE, C6_NAME, C6_SCRIPT, C6_ACCOUNT) VALUES('itm-amp-link-transfer-interbank-LMP', 0.00, 'fee issuer', NULL, NULL, 375.00, 'fee switcher', NULL, NULL, 3625.00, 'fee acquirer', NULL, NULL, 0.00, 'fee promosi', NULL, NULL, 0.00, 'Fee Destination', NULL, NULL, CURRENT USER, CURRENT TIMESTAMP, 4000.00, 'total fee', NULL, NULL);
+
+-- INSERT INTO MWCONFIG.PARAM_MAP (GROUP, NAME, VALUE, SEQ, MODIFIED_BY, TIMESTAMP, DESCRIPTION) VALUES('coa', 'coa-kewajiban-amp', '999211978491413', NULL, CURRENT USER, CURRENT TIMESTAMP, NULL);
+-- INSERT INTO MWCONFIG.PARAM_MAP (GROUP, NAME, VALUE, SEQ, MODIFIED_BY, TIMESTAMP, DESCRIPTION) VALUES('coa', 'coa-kewajiban-switch-amp', '999211962491413', NULL, CURRENT USER, CURRENT TIMESTAMP, NULL);
+-- INSERT INTO MWCONFIG.PARAM_MAP (GROUP, NAME, VALUE, SEQ, MODIFIED_BY, TIMESTAMP, DESCRIPTION) VALUES('coa', 'coa-pendapatan-amp', '999467965491413', NULL, CURRENT USER, CURRENT TIMESTAMP, NULL);
+
+INSERT INTO MWCONFIG.MAPPING (ID, MODULE, MODIFIED_BY, TIMESTAMP) VALUES ('charges-syah.itm', '[syariah]', CURRENT USER, CURRENT TIMESTAMP);
+INSERT INTO MWCONFIG.MAPPING_GROUP (MAPPING_ID, ID, SOURCE, TARGET, INCLUDE_MAPPING_ID, INCLUDE_ID) VALUES ('charges-syah.itm', 1, '/data', '/data', NULL, NULL);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES ('charges-syah.itm', 1, '@', 'copyMessage();copyMessage("../mqmd","./mqmd");dtree("CHARGES", "!destination");', 10);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES ('charges-syah.itm', 1, '!CorrelId', '${head.CorrelId}', 20);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES ('charges-syah.itm', 1, '!code', '${head.code}', 20);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES ('charges-syah.itm', 1, '!connid', '${head.connid}', 20);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES ('charges-syah.itm', 1, '!destination', '${head.destination}', 20);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES ('charges-syah.itm', 1, '!group', '${head.group}', 20);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES ('charges-syah.itm', 1, '!mid', '${head.mid}', 20);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES ('charges-syah.itm', 1, '!raw', '${head.raw}', 20);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES ('charges-syah.itm', 1, '!reqtimestamp', '${head.reqtimestamp}', 20);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES ('charges-syah.itm', 1, '!sid', '${head.sid}', 20);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES ('charges-syah.itm', 1, '!source', '${head.source}', 20);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES ('charges-syah.itm', 1, '!timestamp', '${head.timestamp}', 20);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES ('charges-syah.itm', 1, '!mappingCode', '${head.code}', null);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES ('charges-syah.itm', 1, 'ack', '${getParamValue("syariah-ack", head.group."!value".trim()+head.code."!value".trim(), "true")}', null);
+
+
+INSERT INTO MWCONFIG.MAPPING (ID, MODULE, MODIFIED_BY, TIMESTAMP) VALUES ('req-syah.tf-amp-master', '[syariah]', CURRENT USER, CURRENT TIMESTAMP);
+INSERT INTO MWCONFIG.MAPPING_GROUP (MAPPING_ID, ID, SOURCE, TARGET, INCLUDE_MAPPING_ID, INCLUDE_ID) VALUES ('req-syah.tf-amp-master', 1, '/data/body', '/data/body', 'charges-syah.itm', '1');
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES ('req-syah.tf-amp-master', 1, '@', 'dtree("CHARGES", "!group")', 10);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES ('req-syah.tf-amp-master', 1, 'amountSettlementFee', 'D${decimalFormat("0", (getCharge(1).toBigDecimal()+getCharge(2).toBigDecimal()+getCharge(3).toBigDecimal()+getCharge(5).toBigDecimal())*100).padLeft(8, "0")}', null);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES ('req-syah.tf-amp-master', 1, 'reasonCode', 'D${getCharge(1)?decimalFormat("0",(getCharge(1).toBigDecimal()+getCharge(2).toBigDecimal()+getCharge(3).toBigDecimal()+getCharge(5).toBigDecimal())*100).padLeft(12, "0"):0}C000000000000', null);
+
+
+INSERT INTO MWCONFIG.MAPPING (ID, MODULE, MODIFIED_BY, TIMESTAMP) VALUES ('req-syah.itm.0200.532000.002LMP001.1', '[syariah]', CURRENT USER, CURRENT TIMESTAMP);
+INSERT INTO MWCONFIG.MAPPING_GROUP (MAPPING_ID, ID, SOURCE, TARGET, INCLUDE_MAPPING_ID, INCLUDE_ID) VALUES ('req-syah.itm.0200.532000.002LMP001.1', 1, '/data/body', '/data/body', 'req-syah.tf-amp-master', '1');
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES ('req-syah.itm.0200.532000.002LMP001.1', 1, 'tellerComplete', '${getParamValue("device_teller_map", head.group."!value".trim() + "_AMP" + msg.timeLocalTransaction."!value".substring(0,2), "|||| ")}', 10);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES ('req-syah.itm.0200.532000.002LMP001.1', 1, 'ICDEVN', '${tar.tellerComplete."!value".split("\\|", -1)[3]}', 20);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES ('req-syah.itm.0200.532000.002LMP001.1', 1, 'TLBCUD', '${tar.tellerComplete."!value".split("\\|", -1)[2]}', 20);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES ('req-syah.itm.0200.532000.002LMP001.1', 1, 'TLBID', '${tar.tellerComplete."!value".split("\\|", -1)[0]}', 20);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES ('req-syah.itm.0200.532000.002LMP001.1', 1, 'dspDeviceName', '${tar.tellerComplete."!value".split("\\|", -1)[3]}', 20);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES ('req-syah.itm.0200.532000.002LMP001.1', 1, 'dspTerminalId', '${tar.tellerComplete."!value".split("\\|", -1)[1]}', 20);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES ('req-syah.itm.0200.532000.002LMP001.1', 1, 'dspUserId', '${tar.tellerComplete."!value".split("\\|", -1)[0]}', 20);
+
+
+INSERT INTO MWCONFIG.MAPPING (ID, MODULE, MODIFIED_BY, TIMESTAMP) VALUES ('req-core.itm.amp-syariah-master', '[syariah]', CURRENT USER, CURRENT TIMESTAMP);
+INSERT INTO MWCONFIG.MAPPING_GROUP (MAPPING_ID, ID, SOURCE, TARGET, INCLUDE_MAPPING_ID, INCLUDE_ID) VALUES ('req-core.itm.amp-syariah-master', 1, '/data/body', '/data/body', 'req-core.itm', '1');
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES ('req-core.itm.amp-syariah-master', 1, 'TELLER', '${msg.reservedPrivate2."!value".substring(3,6) == "BMP"? (msg.cardAcceptorTerminalIdentification."!value".trim()):"AMP"}', 1);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES ('req-core.itm.amp-syariah-master', 1, '!connid', '${null}', 10);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES ('req-core.itm.amp-syariah-master', 1, 'tellerComplete', '${getParamValue("device_teller_map", head.request.data.group."!value".trim() + "_" + tar.TELLER."!value", "|||| ")}', 10);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES ('req-core.itm.amp-syariah-master', 1, 'ICDEVN', '${tar.tellerComplete."!value".split("\\|", -1)[3]}', 20);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES ('req-core.itm.amp-syariah-master', 1, 'TLBCUD', '${tar.tellerComplete."!value".split("\\|", -1)[2]}', 20);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES ('req-core.itm.amp-syariah-master', 1, 'TLBID', '${tar.tellerComplete."!value".split("\\|", -1)[0]}', 20);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES ('req-core.itm.amp-syariah-master', 1, 'dspDeviceName', '${tar.tellerComplete."!value".split("\\|", -1)[3]}', 20);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES ('req-core.itm.amp-syariah-master', 1, 'dspTerminalId', '${tar.tellerComplete."!value".split("\\|", -1)[1]}', 20);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES ('req-core.itm.amp-syariah-master', 1, 'dspUserId', '${tar.tellerComplete."!value".split("\\|", -1)[0]}', 20);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES ('req-core.itm.amp-syariah-master', 1, '!reqtimestamp', ' ${head.request.data.reqtimestamp}', null);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES ('req-core.itm.amp-syariah-master', 1, '!sid', '${head.request.data.sid}', null);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES ('req-core.itm.amp-syariah-master', 1, '!timestamp', '${head.request.data.reqtimestamp}', null);
+
+INSERT INTO MWCONFIG.MAPPING (ID, MODULE, MODIFIED_BY, TIMESTAMP) VALUES ('syariah-ack-core.0200.532000.002LMP001.1', '[syariah]', CURRENT USER, CURRENT TIMESTAMP);
+INSERT INTO MWCONFIG.MAPPING_GROUP (MAPPING_ID, ID, SOURCE, TARGET, INCLUDE_MAPPING_ID, INCLUDE_ID) VALUES ('syariah-ack-core.0200.532000.002LMP001.1', 1, '/data/request/data/body', '/data/body', NULL, NULL);
+INSERT INTO MWCONFIG.MAPPING_GROUP (MAPPING_ID, ID, SOURCE, TARGET, INCLUDE_MAPPING_ID, INCLUDE_ID) VALUES ('syariah-ack-core.0200.532000.002LMP001.1', 2, '/data/body', '/data/body', 'req-core.itm.amp-syariah-master', '1');
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES ('syariah-ack-core.0200.532000.002LMP001.1', 1, '@', 'dtree("CHARGES", "!group");', 10);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES ('syariah-ack-core.0200.532000.002LMP001.1', 2, '!code', 'AXISSYSTEMSDNBHD.0000005476', null);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES ('syariah-ack-core.0200.532000.002LMP001.1', 2, 'TLBF01', '${getParamValueWithError("coa", "tagihan-uus-amp", "error:92Unknown coa")}', null);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES ('syariah-ack-core.0200.532000.002LMP001.1', 2, 'TLBF02', '${(msg.amountTransaction."!number")+(getCharge(1)?getCharge(1).toBigDecimal()*100:0)+(getCharge(2)?getCharge(2).toBigDecimal()*100:0)+(getCharge(3)?getCharge(3).toBigDecimal()*100:0)+(getCharge(5)?getCharge(5).toBigDecimal()*100:0)}', null);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES ('syariah-ack-core.0200.532000.002LMP001.1', 2, 'TLBF03', '${getParamValueWithError("coa", "coa-kewajiban-amp", "error:92Unknown coa")}', null);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES ('syariah-ack-core.0200.532000.002LMP001.1', 2, 'TLBF04', '${getCharge(3)?getCharge(3).toBigDecimal()*100:0}', null);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES ('syariah-ack-core.0200.532000.002LMP001.1', 2, 'TLBF09', '${getParamValueWithError("coa", "coa-pendapatan-amp", "error:92Unknown coa")}', null);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES ('syariah-ack-core.0200.532000.002LMP001.1', 2, 'TLBF10', '${getCharge(5)?getCharge(5).toBigDecimal()*100:0}', null);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES ('syariah-ack-core.0200.532000.002LMP001.1', 2, 'TLBF11', '${getParamValueWithError("coa", "coa-pendapatan-amp", "error:92Unknown coa")}', null);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES ('syariah-ack-core.0200.532000.002LMP001.1', 2, 'TLBF12', '${getCharge(1)?getCharge(1).toBigDecimal()*100:0}', null);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES ('syariah-ack-core.0200.532000.002LMP001.1', 2, 'TLBF13', '${getParamValueWithError("coa", "coa-kewajiban-switch-amp", "error:92Unknown coa")}', null);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES ('syariah-ack-core.0200.532000.002LMP001.1', 2, 'TLBF14', '${getCharge(2)?getCharge(2).toBigDecimal()*100:0}', null);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES ('syariah-ack-core.0200.532000.002LMP001.1', 2, 'TLBF15', '${getParamValueWithError("coa", "gl-perantara-syariah-amp", "error:92Unknown coa")}', null);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES ('syariah-ack-core.0200.532000.002LMP001.1', 2, 'TLBF16', '${msg.amountTransaction."!number"}', null);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES ('syariah-ack-core.0200.532000.002LMP001.1', 2, 'TLBTCD', '5476', null);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES ('syariah-ack-core.0200.532000.002LMP001.1', 2, 'dspTransactionCode', '5476', null);

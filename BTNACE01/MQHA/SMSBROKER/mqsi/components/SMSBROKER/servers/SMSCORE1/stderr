@@ -1,0 +1,441 @@
+
+2024-08-06 14:48:41.405930 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-08-06 14:48:53.842455 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-08-06 16:00:10.330508 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-08-07 00:50:56.745743 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-08-07 01:02:24.166857 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-08-07 15:13:00.776354 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-08-07 15:14:56.409214 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-08-10 00:35:11.964963 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-08-10 00:37:31.467104 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+JVMDUMP034I User requested Heap dump using '/var/mqsi/common/errors/heapdump.SMSBROKER.SMSCORE1.20240810.003750.12634.0001.phd' through com.ibm.jvm.Dump.HeapDump
+JVMDUMP010I Heap dump written to /var/mqsi/common/errors/heapdump.SMSBROKER.SMSCORE1.20240810.003750.12634.0001.phd
+2024-08-10 00:37:50.660     62 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-10 00:37:50.660     50 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-10 00:37:50.661     50 log4j:WARN Please initialize the log4j system properly.
+2024-08-10 00:37:50.661     57 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-10 00:37:50.662     57 log4j:WARN Please initialize the log4j system properly.
+2024-08-10 00:37:50.662     62 log4j:WARN Please initialize the log4j system properly.
+2024-08-10 00:37:50.662     56 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-10 00:37:50.663     56 log4j:WARN Please initialize the log4j system properly.
+2024-08-10 00:37:50.663     59 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-10 00:37:50.664     59 log4j:WARN Please initialize the log4j system properly.
+2024-08-10 00:37:50.664     58 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-10 00:37:50.665     58 log4j:WARN Please initialize the log4j system properly.
+2024-08-10 00:37:50.665     53 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-10 00:37:50.666     53 log4j:WARN Please initialize the log4j system properly.
+2024-08-10 00:37:50.666     51 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-10 00:37:50.666     51 log4j:WARN Please initialize the log4j system properly.
+2024-08-10 00:37:50.667     52 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-10 00:37:50.667     52 log4j:WARN Please initialize the log4j system properly.
+2024-08-10 00:37:50.668     55 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-10 00:37:50.668     55 log4j:WARN Please initialize the log4j system properly.
+2024-08-10 00:37:50.668     54 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-10 00:37:50.673     54 log4j:WARN Please initialize the log4j system properly.
+
+2024-08-10 12:38:57.123691 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-08-10 13:44:03.004579 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-08-10 14:12:23.597341 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-08-10 14:20:53.144622 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-08-10 14:45:42.479340 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-08-10 15:01:51.920059 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-08-10 15:04:27.367209 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-08-10 15:16:19.782961 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-08-10 15:18:52.580770 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-08-10 15:21:20.439539 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-08-10 16:20:41.513902 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-08-10 16:37:07.106467 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-08-11 00:55:16.222574 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-08-11 01:32:01.435006 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-08-11 01:41:56.415870 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-08-11 02:42:35.560044 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+JVMDUMP034I User requested Heap dump using '/var/mqsi/common/errors/heapdump.SMSBROKER.SMSCORE1.20240811.115650.3873.0001.phd' through com.ibm.jvm.Dump.HeapDump
+JVMDUMP010I Heap dump written to /var/mqsi/common/errors/heapdump.SMSBROKER.SMSCORE1.20240811.115650.3873.0001.phd
+2024-08-11 11:56:50.600     78 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 11:56:50.601     56 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 11:56:50.601     60 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 11:56:50.601     56 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 11:56:50.602     78 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 11:56:50.602     57 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 11:56:50.602     57 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 11:56:50.603     54 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 11:56:50.603     54 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 11:56:50.604     53 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 11:56:50.604     53 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 11:56:50.605     52 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 11:56:50.605     52 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 11:56:50.605     55 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 11:56:50.605     55 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 11:56:50.606     60 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 11:56:50.606     58 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 11:56:50.607     58 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 11:56:50.607     51 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 11:56:50.607     51 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 11:56:50.607     59 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 11:56:50.608     59 log4j:WARN Please initialize the log4j system properly.
+
+2024-08-11 12:04:41.184775 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-08-11 12:29:31.982636 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-08-11 12:29:42.638633 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-08-11 12:34:10.409271 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-08-11 12:36:29.120601 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-08-11 13:09:01.804687 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-08-11 13:28:58.129025 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-08-11 13:55:56.254083 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-08-11 14:01:02.666556 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-08-11 14:08:48.878717 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-08-11 14:11:34.106304 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-08-11 14:25:09.697883 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-08-11 14:29:54.101021 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-08-11 14:33:48.915465 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-08-11 14:40:48.503911 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-08-11 15:02:28.445289 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-08-11 15:14:02.195312 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-08-11 15:53:22.496642 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-08-11 16:17:03.978824 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-08-11 16:20:43.824242 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-08-11 16:22:46.571926 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+JVMDUMP034I User requested Heap dump using '/var/mqsi/common/errors/heapdump.SMSBROKER.SMSCORE1.20240811.162427.8573.0001.phd' through com.ibm.jvm.Dump.HeapDump
+JVMDUMP010I Heap dump written to /var/mqsi/common/errors/heapdump.SMSBROKER.SMSCORE1.20240811.162427.8573.0001.phd
+2024-08-11 16:24:27.907      1 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:24:27.908     58 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:24:27.909      1 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:24:27.909     58 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:24:27.910     57 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:24:27.910     57 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:24:27.911     52 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:24:27.911     52 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:24:27.911     59 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:24:27.912     59 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:24:27.913     51 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:24:27.913     51 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:24:27.914     53 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:24:27.914     53 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:24:27.915     55 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:24:27.915     55 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:24:27.916     54 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:24:27.916     54 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:24:27.917     50 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:24:27.917     50 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:24:27.918     56 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:24:27.918     56 log4j:WARN Please initialize the log4j system properly.
+node.js process.on('exit') event emitted with exitCode of 0
+
+2024-08-11 16:26:26.643614 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+JVMDUMP034I User requested Heap dump using '/var/mqsi/common/errors/heapdump.SMSBROKER.SMSCORE1.20240811.162835.9015.0001.phd' through com.ibm.jvm.Dump.HeapDump
+JVMDUMP010I Heap dump written to /var/mqsi/common/errors/heapdump.SMSBROKER.SMSCORE1.20240811.162835.9015.0001.phd
+2024-08-11 16:28:35.949      1 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:28:35.950      1 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:28:35.951     58 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:28:35.952     56 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:28:35.952     58 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:28:35.953     57 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:28:35.954     57 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:28:35.955     64 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:28:35.955     64 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:28:35.956     55 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:28:35.956     55 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:28:35.957     61 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:28:35.958     61 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:28:35.958     56 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:28:35.959     60 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:28:35.960     60 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:28:35.960     63 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:28:35.961     63 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:28:35.962     59 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:28:35.962     59 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:28:35.963     62 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:28:35.964     62 log4j:WARN Please initialize the log4j system properly.
+node.js process.on('exit') event emitted with exitCode of 0
+
+2024-08-11 16:30:03.944797 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+JVMDUMP034I User requested Heap dump using '/var/mqsi/common/errors/heapdump.SMSBROKER.SMSCORE1.20240811.163157.10318.0001.phd' through com.ibm.jvm.Dump.HeapDump
+JVMDUMP010I Heap dump written to /var/mqsi/common/errors/heapdump.SMSBROKER.SMSCORE1.20240811.163157.10318.0001.phd
+2024-08-11 16:31:57.216      1 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:31:57.217     52 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:31:57.217      1 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:31:57.218     52 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:31:57.219     58 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:31:57.219     58 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:31:57.220     59 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:31:57.221     59 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:31:57.221     51 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:31:57.222     51 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:31:57.222     53 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:31:57.222     53 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:31:57.223     56 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:31:57.224     56 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:31:57.224     57 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:31:57.225     57 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:31:57.225     60 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:31:57.226     60 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:31:57.226     55 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:31:57.227     55 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:31:57.227     54 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:31:57.228     54 log4j:WARN Please initialize the log4j system properly.
+node.js process.on('exit') event emitted with exitCode of 0
+
+2024-08-11 16:32:33.177859 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+JVMDUMP034I User requested Heap dump using '/var/mqsi/common/errors/heapdump.SMSBROKER.SMSCORE1.20240811.163351.11612.0001.phd' through com.ibm.jvm.Dump.HeapDump
+JVMDUMP010I Heap dump written to /var/mqsi/common/errors/heapdump.SMSBROKER.SMSCORE1.20240811.163351.11612.0001.phd
+2024-08-11 16:33:51.418      1 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:33:51.419     56 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:33:51.419     56 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:33:51.420     58 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:33:51.421     58 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:33:51.421     53 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:33:51.422     53 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:33:51.422     55 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:33:51.423     55 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:33:51.423     59 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:33:51.424     59 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:33:51.424     60 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:33:51.425     60 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:33:51.426     61 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:33:51.426     61 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:33:51.427     52 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:33:51.427     52 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:33:51.428      1 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:33:51.429     54 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:33:51.429     54 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:33:51.429     57 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:33:51.430     57 log4j:WARN Please initialize the log4j system properly.
+node.js process.on('exit') event emitted with exitCode of 0
+
+2024-08-11 16:35:12.508424 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+JVMDUMP034I User requested Heap dump using '/var/mqsi/common/errors/heapdump.SMSBROKER.SMSCORE1.20240811.163609.13038.0001.phd' through com.ibm.jvm.Dump.HeapDump
+JVMDUMP010I Heap dump written to /var/mqsi/common/errors/heapdump.SMSBROKER.SMSCORE1.20240811.163609.13038.0001.phd
+2024-08-11 16:36:09.760      1 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:36:09.761     52 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:36:09.761      1 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:36:09.762     52 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:36:09.762     56 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:36:09.763     56 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:36:09.764     59 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:36:09.764     59 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:36:09.765     58 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:36:09.765     58 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:36:09.766     53 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:36:09.766     53 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:36:09.767     54 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:36:09.768     54 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:36:09.768     57 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:36:09.769     57 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:36:09.769     61 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:36:09.770     61 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:36:09.771     60 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:36:09.771     60 log4j:WARN Please initialize the log4j system properly.
+2024-08-11 16:36:09.772     55 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-11 16:36:09.772     55 log4j:WARN Please initialize the log4j system properly.
+node.js process.on('exit') event emitted with exitCode of 0
+
+2024-08-11 16:38:02.448816 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-08-11 16:40:34.112176 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-08-11 20:59:01.828523 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-08-11 21:22:08.237708 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-08-11 21:25:30.585825 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-08-11 21:36:58.255936 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-08-11 21:44:14.525669 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-08-12 00:31:18.927916 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-08-12 01:25:19.948177 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-08-12 01:39:55.289288 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-08-12 01:48:50.251382 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-08-12 02:09:16.289182 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-08-12 04:04:11.874613 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-08-12 22:28:47.292886 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-08-17 23:50:13.399956 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+JVMDUMP034I User requested Heap dump using '/var/mqsi/common/errors/heapdump.SMSBROKER.SMSCORE1.20240817.235045.5690.0001.phd' through com.ibm.jvm.Dump.HeapDump
+JVMDUMP010I Heap dump written to /var/mqsi/common/errors/heapdump.SMSBROKER.SMSCORE1.20240817.235045.5690.0001.phd
+2024-08-17 23:50:45.688      1 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-17 23:50:45.689     57 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-17 23:50:45.690     57 log4j:WARN Please initialize the log4j system properly.
+2024-08-17 23:50:45.690      1 log4j:WARN Please initialize the log4j system properly.
+2024-08-17 23:50:45.691     51 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-17 23:50:45.691     51 log4j:WARN Please initialize the log4j system properly.
+2024-08-17 23:50:45.692     54 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-17 23:50:45.692     54 log4j:WARN Please initialize the log4j system properly.
+2024-08-17 23:50:45.692     60 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-17 23:50:45.693     60 log4j:WARN Please initialize the log4j system properly.
+2024-08-17 23:50:45.693     52 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-17 23:50:45.694     52 log4j:WARN Please initialize the log4j system properly.
+2024-08-17 23:50:45.694     53 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-17 23:50:45.695     53 log4j:WARN Please initialize the log4j system properly.
+2024-08-17 23:50:45.695     59 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-17 23:50:45.696     59 log4j:WARN Please initialize the log4j system properly.
+2024-08-17 23:50:45.696     55 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-17 23:50:45.697     55 log4j:WARN Please initialize the log4j system properly.
+2024-08-17 23:50:45.697     58 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-17 23:50:45.697     58 log4j:WARN Please initialize the log4j system properly.
+2024-08-17 23:50:45.698     56 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-17 23:50:45.698     56 log4j:WARN Please initialize the log4j system properly.
+node.js process.on('exit') event emitted with exitCode of 0
+
+2024-08-17 23:53:16.889042 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+JVMDUMP034I User requested Heap dump using '/var/mqsi/common/errors/heapdump.SMSBROKER.SMSCORE1.20240818.000834.4978.0001.phd' through com.ibm.jvm.Dump.HeapDump
+JVMDUMP010I Heap dump written to /var/mqsi/common/errors/heapdump.SMSBROKER.SMSCORE1.20240818.000834.4978.0001.phd
+2024-08-18 00:08:34.989      1 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-18 00:08:34.989     57 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-18 00:08:34.989      1 log4j:WARN Please initialize the log4j system properly.
+2024-08-18 00:08:34.990     56 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-18 00:08:34.990     56 log4j:WARN Please initialize the log4j system properly.
+2024-08-18 00:08:34.991     55 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-18 00:08:34.991     55 log4j:WARN Please initialize the log4j system properly.
+2024-08-18 00:08:34.991     54 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-18 00:08:34.991     54 log4j:WARN Please initialize the log4j system properly.
+2024-08-18 00:08:34.992     51 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-18 00:08:34.992     51 log4j:WARN Please initialize the log4j system properly.
+2024-08-18 00:08:34.992     53 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-18 00:08:34.993     53 log4j:WARN Please initialize the log4j system properly.
+2024-08-18 00:08:34.993     57 log4j:WARN Please initialize the log4j system properly.
+2024-08-18 00:08:34.993     59 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-18 00:08:34.994     59 log4j:WARN Please initialize the log4j system properly.
+2024-08-18 00:08:34.994     52 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-18 00:08:34.995     52 log4j:WARN Please initialize the log4j system properly.
+2024-08-18 00:08:34.995     60 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-18 00:08:34.995     60 log4j:WARN Please initialize the log4j system properly.
+2024-08-18 00:08:34.996     58 log4j:WARN No appenders could be found for logger (id.co.hanoman.mbplugin.TCPIPClientInputNode).
+2024-08-18 00:08:34.996     58 log4j:WARN Please initialize the log4j system properly.
+node.js process.on('exit') event emitted with exitCode of 0
+
+2024-08-20 11:23:38.641802 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-08-20 14:43:21.985039 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-08-25 11:19:10.415168 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-08-25 12:00:53.481931 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-08-25 12:13:26.732319 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-08-25 12:21:45.963095 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-08-25 12:26:36.902246 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-08-27 11:04:30.696946 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-08-31 14:57:26.661908 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-09-01 19:52:32.029805 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-09-03 02:56:31.896700 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-09-03 19:56:55.385122 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-09-09 10:37:45.889821 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-09-09 11:09:16.177269 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-09-13 16:46:35.429320 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-09-13 20:39:37.417902 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-09-13 20:45:14.519535 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-09-16 17:09:57.597546 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-09-16 20:15:16.628185 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-09-16 20:22:54.529781 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-09-20 00:13:05.466061 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-09-21 06:03:16.291740 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-09-22 23:44:29.205664 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-09-28 13:03:55.368246 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-09-28 15:21:32.371845 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-09-30 04:26:10.869279 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-09-30 04:38:09.281389 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-09-30 19:59:12.797429 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-10-04 00:06:36.660103 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-10-04 20:13:30.093109 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-10-05 17:49:17.270034 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-10-06 19:37:15.314888 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-10-07 19:39:33.162608 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-10-08 15:32:13.654882 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-10-10 04:10:54.880131 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-10-10 12:59:16.847021 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-10-10 16:05:17.669709 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-10-12 12:56:45.650274 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-10-13 15:56:40.691307 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-10-15 15:44:54.351767 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-10-19 16:59:00.658001 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-10-21 02:42:08.911368 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER
+
+2024-10-21 02:50:11.559750 Integration server started. Label is: 'SMSCORE1'. Integration node is: SMSBROKER

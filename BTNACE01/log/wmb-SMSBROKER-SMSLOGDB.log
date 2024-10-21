@@ -1,0 +1,1234 @@
+2024-10-07 19:39:40,803 [main] INFO id.co.hanoman.StartStopLog BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:null) - BUILD [htcp]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [hcx]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [config]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+Java version IBM Corporation  1.8.0_391
+
+2024-10-07 19:39:41,691 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - RELOAD CONFIG [SMSBROKER:LOG_DB:HanomanDatabaseLogNode] NULL
+2024-10-07 19:39:41,700 [main] INFO id.co.hanoman.License BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Hanoman WMB Plugin for Bank Tabungan Negara
+2024-10-07 19:39:42,328 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - getConfig [db://]
+2024-10-07 19:39:42,328 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - getConfig [db://]
+2024-10-07 19:39:42,328 [main] INFO id.co.hanoman.mbplugin.reload BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - LOADING CONFIG [SMSBROKER:LOG_DB:DB_LOG_ERROR]  URL [db://]
+2024-10-07 19:39:42,508 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/clients/client]
+2024-10-07 19:39:42,509 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/codex]
+2024-10-07 19:39:42,510 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/db]
+2024-10-07 19:39:42,510 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path-include [config/db] pattern [config/db\[mwlog\]]
+2024-10-07 19:39:42,510 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/dbquery]
+2024-10-07 19:39:42,510 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/dtree-map]
+2024-10-07 19:39:42,510 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/host]
+2024-10-07 19:39:42,511 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/mapping]
+2024-10-07 19:39:42,511 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/param-map]
+2024-10-07 19:39:42,511 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/parser]
+2024-10-07 19:39:42,512 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/ports/port]
+2024-10-07 19:39:42,513 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/routing]
+2024-10-07 19:39:42,513 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/rpg-call]
+2024-10-07 19:39:42,912 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Creating new db connection
+2024-10-07 19:39:43,165 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Done creating new db connection
+2024-10-07 19:39:43,542 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - done building config
+2024-10-07 19:39:43,564 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Creating new db connection
+2024-10-07 19:39:43,568 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Done creating new db connection
+2024-10-07 19:39:43,615 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG) - RELOAD CONFIG [SMSBROKER:LOG_DB:HanomanDatabaseLogNode] NULL
+2024-10-07 19:39:43,615 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG) - getConfig [db://]
+2024-10-07 19:39:43,615 [main] DEBUG id.co.hanoman.mbplugin.reload BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG) - REUSE CONFIG [SMSBROKER:LOG_DB:DB_LOG]  URL [db://]
+2024-10-07 19:39:58,961 [Thread-18] DEBUG id.co.hanoman.mbplugin.LoggerNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:LOG_DB_LOG_OUT) - [LOG_DB_LOG_OUT] 
+2024-10-07 19:39:58,971 [Thread-18] WARN id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG) - Unsupported message. XMLNSC  (0x01000000)
+   data  (0x01000000)
+      control  (0x03000000) = (string) (len:7) "connect"
+      sid  (0x03000000) = (string) (len:24) "WZ-DflwqUqsqqqqueRlnyvQc"
+      source  (0x03000000) = (string) (len:8) "itm-conn"
+      adaptor  (0x03000000) = (string) (len:8) "itm-conn"
+      address  (0x03000000) = (string) (len:9) "localhost"
+      port  (0x03000000) = (string) (len:4) "9038"
+      log  (0x01000000)
+         LoggerNode  (0x03000000) = (string) (len:78) "2024/10/07 19:39:58.489 SMSBROKER.SMSISO.MASTER_ISO_FLOW.TCPIP_ADAPTER.CONNECT"
+         LoggerNode  (0x03000000) = (string) (len:110) "2024/10/07 19:39:58.491 SMSBROKER.SMSISO.MASTER_ISO_FLOW.TCPIP_ADAPTER.LOG_CONNECT.ADD_MQHEADER_BEFORE_LOG_OUT"
+         LoggerNode  (0x03000000) = (string) (len:64) "2024/10/07 19:39:58.962 SMSBROKER.SMSLOGDB.LOG_DB.LOG_DB_LOG_OUT"
+
+java.lang.Exception: Unsupported message. XMLNSC  (0x01000000)
+   data  (0x01000000)
+      control  (0x03000000) = (string) (len:7) "connect"
+      sid  (0x03000000) = (string) (len:24) "WZ-DflwqUqsqqqqueRlnyvQc"
+      source  (0x03000000) = (string) (len:8) "itm-conn"
+      adaptor  (0x03000000) = (string) (len:8) "itm-conn"
+      address  (0x03000000) = (string) (len:9) "localhost"
+      port  (0x03000000) = (string) (len:4) "9038"
+      log  (0x01000000)
+         LoggerNode  (0x03000000) = (string) (len:78) "2024/10/07 19:39:58.489 SMSBROKER.SMSISO.MASTER_ISO_FLOW.TCPIP_ADAPTER.CONNECT"
+         LoggerNode  (0x03000000) = (string) (len:110) "2024/10/07 19:39:58.491 SMSBROKER.SMSISO.MASTER_ISO_FLOW.TCPIP_ADAPTER.LOG_CONNECT.ADD_MQHEADER_BEFORE_LOG_OUT"
+         LoggerNode  (0x03000000) = (string) (len:64) "2024/10/07 19:39:58.962 SMSBROKER.SMSLOGDB.LOG_DB.LOG_DB_LOG_OUT"
+
+	at id.co.hanoman.mbplugin.DatabaseDLogNode.evaluate(DatabaseDLogNode.java:417)
+	at com.ibm.broker.plugin.MbNode.evaluate(MbNode.java:2138)
+	at com.ibm.broker.plugin.MbOutputTerminal._propagate(Native Method)
+	at com.ibm.broker.plugin.MbOutputTerminal.propagate(MbOutputTerminal.java:133)
+	at com.ibm.broker.plugin.MbOutputTerminal.propagate(MbOutputTerminal.java:88)
+	at id.co.hanoman.mbplugin.LoggerNode.evaluate(LoggerNode.java:532)
+	at com.ibm.broker.plugin.MbNode.evaluate(MbNode.java:2138)
+2024-10-07 19:39:58,972 [Thread-18] DEBUG id.co.hanoman.mbplugin.LoggerNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_LOG_OUT) - [DB_LOG_LOG_OUT] 
+2024-10-08 13:44:33,752 [Thread-20] DEBUG id.co.hanoman.mbplugin.LoggerNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:LOG_DB_LOG_OUT) TX:(1008134432.134432) - [LOG_DB_LOG_OUT] 
+2024-10-08 13:44:33,761 [Thread-20] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG) TX:(1008134432.134432) - Creating new db connection
+2024-10-08 13:44:33,771 [Thread-20] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG) TX:(1008134432.134432) - Done creating new db connection
+2024-10-08 13:44:33,782 [Thread-20] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG) TX:(1008134432.134432) - log type pre [iso-8583-sms]
+2024-10-08 13:44:33,782 [Thread-20] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG) TX:(1008134432.134432) - log type [iso-8583-sms]  ori [iso-8583-sms] [2]
+2024-10-08 13:44:33,783 [Thread-20] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG) TX:(1008134432.134432) - Creating new db connection
+2024-10-08 13:44:33,791 [Thread-20] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG) TX:(1008134432.134432) - Done creating new db connection
+2024-10-08 13:44:33,819 [Thread-20] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG) TX:(1008134432.134432) - execute [mwlog]
+2024-10-08 13:44:33,839 [Thread-20] DEBUG id.co.hanoman.mbplugin.LoggerNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_LOG_OUT) TX:(1008134432.134432) - [DB_LOG_LOG_OUT] 
+2024-10-08 13:44:34,402 [Thread-20] DEBUG id.co.hanoman.mbplugin.LoggerNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:LOG_DB_LOG_OUT) TX:(1008134432.134432) - [LOG_DB_LOG_OUT] 
+2024-10-08 13:44:34,404 [Thread-20] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG) TX:(1008134432.134432) - log type pre [iso-8583-core-syariah]
+2024-10-08 13:44:34,404 [Thread-20] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG) TX:(1008134432.134432) - log type [iso-8583-core-syariah]  ori [iso-8583-core-syariah] [2]
+2024-10-08 13:44:34,408 [Thread-20] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG) TX:(1008134432.134432) - execute [mwlog]
+2024-10-08 13:44:34,413 [Thread-20] DEBUG id.co.hanoman.mbplugin.LoggerNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_LOG_OUT) TX:(1008134432.134432) - [DB_LOG_LOG_OUT] 
+2024-10-08 13:44:35,557 [Thread-18] DEBUG id.co.hanoman.mbplugin.LoggerNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:LOG_DB_LOG_OUT) TX:(1008134432.134432) - [LOG_DB_LOG_OUT] 
+2024-10-08 13:44:35,561 [Thread-18] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG) TX:(1008134432.134432) - log type pre [dsp-abcs-request]
+2024-10-08 13:44:35,561 [Thread-18] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG) TX:(1008134432.134432) - log type [dsp-abcs-request]  ori [dsp-abcs-request] [2]
+2024-10-08 13:44:35,564 [Thread-18] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG) TX:(1008134432.134432) - execute [mwlog]
+2024-10-08 13:44:35,569 [Thread-18] DEBUG id.co.hanoman.mbplugin.LoggerNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_LOG_OUT) TX:(1008134432.134432) - [DB_LOG_LOG_OUT] 
+2024-10-08 13:44:38,922 [Thread-20] DEBUG id.co.hanoman.mbplugin.LoggerNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:LOG_DB_LOG_OUT) TX:(1008134432.134432) - [LOG_DB_LOG_OUT] 
+2024-10-08 13:44:38,927 [Thread-20] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG) TX:(1008134432.134432) - log type pre [dsp-abcs-response]
+2024-10-08 13:44:38,927 [Thread-20] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG) TX:(1008134432.134432) - log type [dsp-abcs-response]  ori [dsp-abcs-response] [2]
+2024-10-08 13:44:38,929 [Thread-20] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG) TX:(1008134432.134432) - execute [mwlog]
+2024-10-08 13:44:38,932 [Thread-20] DEBUG id.co.hanoman.mbplugin.LoggerNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_LOG_OUT) TX:(1008134432.134432) - [DB_LOG_LOG_OUT] 
+2024-10-08 13:44:45,357 [Thread-21] DEBUG id.co.hanoman.mbplugin.LoggerNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:LOG_DB_LOG_OUT) TX:(1008134432.134432) - [LOG_DB_LOG_OUT] 
+2024-10-08 13:44:45,365 [Thread-21] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG) TX:(1008134432.134432) - log type pre [iso-8583-sms]
+2024-10-08 13:44:45,365 [Thread-21] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG) TX:(1008134432.134432) - log type [iso-8583-sms]  ori [iso-8583-sms] [2]
+2024-10-08 13:44:45,368 [Thread-21] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG) TX:(1008134432.134432) - execute [mwlog]
+2024-10-08 13:44:45,373 [Thread-21] DEBUG id.co.hanoman.mbplugin.LoggerNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_LOG_OUT) TX:(1008134432.134432) - [DB_LOG_LOG_OUT] 
+2024-10-08 13:44:45,414 [Thread-21] DEBUG id.co.hanoman.mbplugin.LoggerNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:LOG_DB_LOG_OUT) TX:(1008134432.134432) - [LOG_DB_LOG_OUT] 
+2024-10-08 13:44:45,415 [Thread-21] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG) TX:(1008134432.134432) - log type pre [iso-8583-sms]
+2024-10-08 13:44:45,415 [Thread-21] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG) TX:(1008134432.134432) - log type [iso-8583-sms]  ori [iso-8583-sms] [2]
+2024-10-08 13:44:45,418 [Thread-21] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG) TX:(1008134432.134432) - execute [mwlog]
+2024-10-08 13:44:45,424 [Thread-21] DEBUG id.co.hanoman.mbplugin.LoggerNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_LOG_OUT) TX:(1008134432.134432) - [DB_LOG_LOG_OUT] 
+2024-10-08 13:44:45,495 [Thread-20] DEBUG id.co.hanoman.mbplugin.LoggerNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:LOG_DB_LOG_OUT) TX:(1008134432.134432) - [LOG_DB_LOG_OUT] 
+2024-10-08 13:44:45,500 [Thread-20] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG) TX:(1008134432.134432) - log type pre [none]
+2024-10-08 13:44:45,500 [Thread-20] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG) TX:(1008134432.134432) - log type [*]  ori [none] [2]
+2024-10-08 13:44:45,501 [Thread-20] DEBUG id.co.hanoman.mbplugin.LoggerNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_LOG_OUT) TX:(1008134432.134432) - [DB_LOG_LOG_OUT] 
+2024-10-08 13:44:45,535 [Thread-21] DEBUG id.co.hanoman.mbplugin.LoggerNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:LOG_DB_LOG_OUT) TX:(1008134432.134432) - [LOG_DB_LOG_OUT] 
+2024-10-08 13:44:45,536 [Thread-21] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG) TX:(1008134432.134432) - log type pre [dsp-abcs-request]
+2024-10-08 13:44:45,536 [Thread-21] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG) TX:(1008134432.134432) - log type [dsp-abcs-request]  ori [dsp-abcs-request] [2]
+2024-10-08 13:44:45,539 [Thread-21] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG) TX:(1008134432.134432) - execute [mwlog]
+2024-10-08 13:44:45,543 [Thread-21] DEBUG id.co.hanoman.mbplugin.LoggerNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_LOG_OUT) TX:(1008134432.134432) - [DB_LOG_LOG_OUT] 
+2024-10-08 13:44:45,594 [Thread-20] DEBUG id.co.hanoman.mbplugin.LoggerNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:LOG_DB_LOG_OUT) TX:(1008134432.134432) - [LOG_DB_LOG_OUT] 
+2024-10-08 13:44:45,595 [Thread-20] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG) TX:(1008134432.134432) - log type pre [dsp-abcs-response]
+2024-10-08 13:44:45,596 [Thread-20] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG) TX:(1008134432.134432) - log type [dsp-abcs-response]  ori [dsp-abcs-response] [2]
+2024-10-08 13:44:45,598 [Thread-20] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG) TX:(1008134432.134432) - execute [mwlog]
+2024-10-08 13:44:45,602 [Thread-20] DEBUG id.co.hanoman.mbplugin.LoggerNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_LOG_OUT) TX:(1008134432.134432) - [DB_LOG_LOG_OUT] 
+2024-10-08 15:32:20,863 [main] INFO id.co.hanoman.StartStopLog BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:null) - BUILD [htcp]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [hcx]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [config]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+Java version IBM Corporation  1.8.0_391
+
+2024-10-08 15:32:21,410 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - RELOAD CONFIG [SMSBROKER:LOG_DB:HanomanDatabaseLogNode] NULL
+2024-10-08 15:32:21,415 [main] INFO id.co.hanoman.License BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Hanoman WMB Plugin for Bank Tabungan Negara
+2024-10-08 15:32:21,873 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - getConfig [db://]
+2024-10-08 15:32:21,874 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - getConfig [db://]
+2024-10-08 15:32:21,874 [main] INFO id.co.hanoman.mbplugin.reload BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - LOADING CONFIG [SMSBROKER:LOG_DB:DB_LOG_ERROR]  URL [db://]
+2024-10-08 15:32:22,011 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/clients/client]
+2024-10-08 15:32:22,012 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/codex]
+2024-10-08 15:32:22,012 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/db]
+2024-10-08 15:32:22,013 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path-include [config/db] pattern [config/db\[mwlog\]]
+2024-10-08 15:32:22,013 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/dbquery]
+2024-10-08 15:32:22,013 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/dtree-map]
+2024-10-08 15:32:22,013 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/host]
+2024-10-08 15:32:22,013 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/mapping]
+2024-10-08 15:32:22,013 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/param-map]
+2024-10-08 15:32:22,013 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/parser]
+2024-10-08 15:32:22,014 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/ports/port]
+2024-10-08 15:32:22,014 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/routing]
+2024-10-08 15:32:22,014 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/rpg-call]
+2024-10-08 15:32:22,298 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Creating new db connection
+2024-10-08 15:32:22,453 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Done creating new db connection
+2024-10-08 15:32:22,528 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - done building config
+2024-10-08 15:32:22,532 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG) - RELOAD CONFIG [SMSBROKER:LOG_DB:HanomanDatabaseLogNode] NULL
+2024-10-08 15:32:22,532 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG) - getConfig [db://]
+2024-10-08 15:32:22,532 [main] DEBUG id.co.hanoman.mbplugin.reload BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG) - REUSE CONFIG [SMSBROKER:LOG_DB:DB_LOG]  URL [db://]
+2024-10-10 04:11:08,566 [main] INFO id.co.hanoman.StartStopLog BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:null) - BUILD [htcp]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [hcx]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [config]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+Java version IBM Corporation  1.8.0_391
+
+2024-10-10 04:11:10,102 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - RELOAD CONFIG [SMSBROKER:LOG_DB:HanomanDatabaseLogNode] NULL
+2024-10-10 04:11:10,120 [main] INFO id.co.hanoman.License BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Hanoman WMB Plugin for Bank Tabungan Negara
+2024-10-10 04:11:11,705 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - getConfig [db://]
+2024-10-10 04:11:11,705 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - getConfig [db://]
+2024-10-10 04:11:11,705 [main] INFO id.co.hanoman.mbplugin.reload BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - LOADING CONFIG [SMSBROKER:LOG_DB:DB_LOG_ERROR]  URL [db://]
+2024-10-10 04:11:12,125 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/clients/client]
+2024-10-10 04:11:12,129 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/codex]
+2024-10-10 04:11:12,129 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/db]
+2024-10-10 04:11:12,130 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path-include [config/db] pattern [config/db\[mwlog\]]
+2024-10-10 04:11:12,130 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/dbquery]
+2024-10-10 04:11:12,130 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/dtree-map]
+2024-10-10 04:11:12,132 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/host]
+2024-10-10 04:11:12,133 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/mapping]
+2024-10-10 04:11:12,133 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/param-map]
+2024-10-10 04:11:12,134 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/parser]
+2024-10-10 04:11:12,139 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/ports/port]
+2024-10-10 04:11:12,141 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/routing]
+2024-10-10 04:11:12,142 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/rpg-call]
+2024-10-10 04:11:12,998 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Creating new db connection
+2024-10-10 04:11:13,509 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Done creating new db connection
+2024-10-10 04:11:14,585 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - done building config
+2024-10-10 04:11:14,630 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Creating new db connection
+2024-10-10 04:11:14,649 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Done creating new db connection
+2024-10-10 04:11:14,838 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG) - RELOAD CONFIG [SMSBROKER:LOG_DB:HanomanDatabaseLogNode] NULL
+2024-10-10 04:11:14,838 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG) - getConfig [db://]
+2024-10-10 04:11:14,838 [main] DEBUG id.co.hanoman.mbplugin.reload BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG) - REUSE CONFIG [SMSBROKER:LOG_DB:DB_LOG]  URL [db://]
+2024-10-10 12:08:36,578 [Thread-17] DEBUG id.co.hanoman.mbplugin.LoggerNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:LOG_DB_LOG_OUT) - [LOG_DB_LOG_OUT] 
+2024-10-10 12:08:36,587 [Thread-17] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG) - Creating new db connection
+2024-10-10 12:08:36,592 [Thread-17] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG) - Done creating new db connection
+2024-10-10 12:08:36,604 [Thread-17] WARN id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG) - Unsupported message. XMLNSC  (0x01000000)
+   data  (0x01000000)
+      control  (0x03000000) = (string) (len:7) "connect"
+      sid  (0x03000000) = (string) (len:24) "Ztx1RlwqUqJqqqqueRlnyvQc"
+      source  (0x03000000) = (string) (len:8) "itm-conn"
+      adaptor  (0x03000000) = (string) (len:8) "itm-conn"
+      address  (0x03000000) = (string) (len:9) "localhost"
+      port  (0x03000000) = (string) (len:4) "9038"
+      log  (0x01000000)
+         LoggerNode  (0x03000000) = (string) (len:78) "2024/10/10 12:08:35.542 SMSBROKER.SMSISO.MASTER_ISO_FLOW.TCPIP_ADAPTER.CONNECT"
+         LoggerNode  (0x03000000) = (string) (len:110) "2024/10/10 12:08:35.574 SMSBROKER.SMSISO.MASTER_ISO_FLOW.TCPIP_ADAPTER.LOG_CONNECT.ADD_MQHEADER_BEFORE_LOG_OUT"
+         LoggerNode  (0x03000000) = (string) (len:64) "2024/10/10 12:08:36.580 SMSBROKER.SMSLOGDB.LOG_DB.LOG_DB_LOG_OUT"
+
+java.lang.Exception: Unsupported message. XMLNSC  (0x01000000)
+   data  (0x01000000)
+      control  (0x03000000) = (string) (len:7) "connect"
+      sid  (0x03000000) = (string) (len:24) "Ztx1RlwqUqJqqqqueRlnyvQc"
+      source  (0x03000000) = (string) (len:8) "itm-conn"
+      adaptor  (0x03000000) = (string) (len:8) "itm-conn"
+      address  (0x03000000) = (string) (len:9) "localhost"
+      port  (0x03000000) = (string) (len:4) "9038"
+      log  (0x01000000)
+         LoggerNode  (0x03000000) = (string) (len:78) "2024/10/10 12:08:35.542 SMSBROKER.SMSISO.MASTER_ISO_FLOW.TCPIP_ADAPTER.CONNECT"
+         LoggerNode  (0x03000000) = (string) (len:110) "2024/10/10 12:08:35.574 SMSBROKER.SMSISO.MASTER_ISO_FLOW.TCPIP_ADAPTER.LOG_CONNECT.ADD_MQHEADER_BEFORE_LOG_OUT"
+         LoggerNode  (0x03000000) = (string) (len:64) "2024/10/10 12:08:36.580 SMSBROKER.SMSLOGDB.LOG_DB.LOG_DB_LOG_OUT"
+
+	at id.co.hanoman.mbplugin.DatabaseDLogNode.evaluate(DatabaseDLogNode.java:417)
+	at com.ibm.broker.plugin.MbNode.evaluate(MbNode.java:2138)
+	at com.ibm.broker.plugin.MbOutputTerminal._propagate(Native Method)
+	at com.ibm.broker.plugin.MbOutputTerminal.propagate(MbOutputTerminal.java:133)
+	at com.ibm.broker.plugin.MbOutputTerminal.propagate(MbOutputTerminal.java:88)
+	at id.co.hanoman.mbplugin.LoggerNode.evaluate(LoggerNode.java:532)
+	at com.ibm.broker.plugin.MbNode.evaluate(MbNode.java:2138)
+2024-10-10 12:08:36,607 [Thread-17] DEBUG id.co.hanoman.mbplugin.LoggerNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_LOG_OUT) - [DB_LOG_LOG_OUT] 
+2024-10-10 12:59:24,319 [main] INFO id.co.hanoman.StartStopLog BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:null) - BUILD [htcp]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [hcx]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [config]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+Java version IBM Corporation  1.8.0_391
+
+2024-10-10 12:59:25,111 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - RELOAD CONFIG [SMSBROKER:LOG_DB:HanomanDatabaseLogNode] NULL
+2024-10-10 12:59:25,119 [main] INFO id.co.hanoman.License BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Hanoman WMB Plugin for Bank Tabungan Negara
+2024-10-10 12:59:25,766 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - getConfig [db://]
+2024-10-10 12:59:25,766 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - getConfig [db://]
+2024-10-10 12:59:25,766 [main] INFO id.co.hanoman.mbplugin.reload BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - LOADING CONFIG [SMSBROKER:LOG_DB:DB_LOG_ERROR]  URL [db://]
+2024-10-10 12:59:25,958 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/clients/client]
+2024-10-10 12:59:25,959 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/codex]
+2024-10-10 12:59:25,960 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/db]
+2024-10-10 12:59:25,960 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path-include [config/db] pattern [config/db\[mwlog\]]
+2024-10-10 12:59:25,960 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/dbquery]
+2024-10-10 12:59:25,960 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/dtree-map]
+2024-10-10 12:59:25,960 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/host]
+2024-10-10 12:59:25,961 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/mapping]
+2024-10-10 12:59:25,961 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/param-map]
+2024-10-10 12:59:25,961 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/parser]
+2024-10-10 12:59:25,962 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/ports/port]
+2024-10-10 12:59:25,962 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/routing]
+2024-10-10 12:59:25,963 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/rpg-call]
+2024-10-10 12:59:26,388 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Creating new db connection
+2024-10-10 12:59:26,613 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Done creating new db connection
+2024-10-10 12:59:26,910 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - done building config
+2024-10-10 12:59:26,929 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Creating new db connection
+2024-10-10 12:59:26,936 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Done creating new db connection
+2024-10-10 12:59:26,972 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG) - RELOAD CONFIG [SMSBROKER:LOG_DB:HanomanDatabaseLogNode] NULL
+2024-10-10 12:59:26,972 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG) - getConfig [db://]
+2024-10-10 12:59:26,972 [main] DEBUG id.co.hanoman.mbplugin.reload BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG) - REUSE CONFIG [SMSBROKER:LOG_DB:DB_LOG]  URL [db://]
+2024-10-10 13:03:36,911 [Thread-14] DEBUG id.co.hanoman.mbplugin.LoggerNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:LOG_DB_LOG_OUT) - [LOG_DB_LOG_OUT] 
+2024-10-10 13:03:36,925 [Thread-14] WARN id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG) - Unsupported message. XMLNSC  (0x01000000)
+   data  (0x01000000)
+      control  (0x03000000) = (string) (len:7) "connect"
+      sid  (0x03000000) = (string) (len:24) "sOu2BlwqUq3qqqqueRlnyvQc"
+      source  (0x03000000) = (string) (len:8) "itm-conn"
+      adaptor  (0x03000000) = (string) (len:8) "itm-conn"
+      address  (0x03000000) = (string) (len:9) "localhost"
+      port  (0x03000000) = (string) (len:4) "9038"
+      log  (0x01000000)
+         LoggerNode  (0x03000000) = (string) (len:78) "2024/10/10 13:03:36.189 SMSBROKER.SMSISO.MASTER_ISO_FLOW.TCPIP_ADAPTER.CONNECT"
+         LoggerNode  (0x03000000) = (string) (len:110) "2024/10/10 13:03:36.193 SMSBROKER.SMSISO.MASTER_ISO_FLOW.TCPIP_ADAPTER.LOG_CONNECT.ADD_MQHEADER_BEFORE_LOG_OUT"
+         LoggerNode  (0x03000000) = (string) (len:64) "2024/10/10 13:03:36.912 SMSBROKER.SMSLOGDB.LOG_DB.LOG_DB_LOG_OUT"
+
+java.lang.Exception: Unsupported message. XMLNSC  (0x01000000)
+   data  (0x01000000)
+      control  (0x03000000) = (string) (len:7) "connect"
+      sid  (0x03000000) = (string) (len:24) "sOu2BlwqUq3qqqqueRlnyvQc"
+      source  (0x03000000) = (string) (len:8) "itm-conn"
+      adaptor  (0x03000000) = (string) (len:8) "itm-conn"
+      address  (0x03000000) = (string) (len:9) "localhost"
+      port  (0x03000000) = (string) (len:4) "9038"
+      log  (0x01000000)
+         LoggerNode  (0x03000000) = (string) (len:78) "2024/10/10 13:03:36.189 SMSBROKER.SMSISO.MASTER_ISO_FLOW.TCPIP_ADAPTER.CONNECT"
+         LoggerNode  (0x03000000) = (string) (len:110) "2024/10/10 13:03:36.193 SMSBROKER.SMSISO.MASTER_ISO_FLOW.TCPIP_ADAPTER.LOG_CONNECT.ADD_MQHEADER_BEFORE_LOG_OUT"
+         LoggerNode  (0x03000000) = (string) (len:64) "2024/10/10 13:03:36.912 SMSBROKER.SMSLOGDB.LOG_DB.LOG_DB_LOG_OUT"
+
+	at id.co.hanoman.mbplugin.DatabaseDLogNode.evaluate(DatabaseDLogNode.java:417)
+	at com.ibm.broker.plugin.MbNode.evaluate(MbNode.java:2138)
+	at com.ibm.broker.plugin.MbOutputTerminal._propagate(Native Method)
+	at com.ibm.broker.plugin.MbOutputTerminal.propagate(MbOutputTerminal.java:133)
+	at com.ibm.broker.plugin.MbOutputTerminal.propagate(MbOutputTerminal.java:88)
+	at id.co.hanoman.mbplugin.LoggerNode.evaluate(LoggerNode.java:532)
+	at com.ibm.broker.plugin.MbNode.evaluate(MbNode.java:2138)
+2024-10-10 13:03:36,927 [Thread-14] DEBUG id.co.hanoman.mbplugin.LoggerNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_LOG_OUT) - [DB_LOG_LOG_OUT] 
+2024-10-10 16:01:55,968 [Thread-16] DEBUG id.co.hanoman.mbplugin.LoggerNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:LOG_DB_ERROR_LOG_OUT) TX:(sOu2BlwqUq3qqqqueRlnyvQc) - [LOG_DB_ERROR_LOG_OUT] 
+2024-10-10 16:01:55,970 [Thread-16] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) TX:(sOu2BlwqUq3qqqqueRlnyvQc) - Creating new db connection
+2024-10-10 16:01:55,977 [Thread-16] WARN id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) TX:(sOu2BlwqUq3qqqqueRlnyvQc) - Unable to connect to 'jdbc:db2://btnmdwdata:50000/mwconfig' with user 'db2inst1' [jcc][t4][2030][11211][3.58.81] A communication error occurred during operations on the connection's underlying socket, socket input stream, 
+or socket output stream.  Error location: Reply.fill().  Message: Insufficient data. ERRORCODE=-4499, SQLSTATE=08001
+java.lang.RuntimeException: Unable to connect to 'jdbc:db2://btnmdwdata:50000/mwconfig' with user 'db2inst1' [jcc][t4][2030][11211][3.58.81] A communication error occurred during operations on the connection's underlying socket, socket input stream, 
+or socket output stream.  Error location: Reply.fill().  Message: Insufficient data. ERRORCODE=-4499, SQLSTATE=08001
+	at id.co.hanoman.config.db.ConfigDb.getTimestamp(ConfigDb.java:1150)
+	at id.co.hanoman.mbplugin.DatabaseDLogNode.initConfig(DatabaseDLogNode.java:94)
+	at id.co.hanoman.mbplugin.DatabaseDLogNode.evaluate(DatabaseDLogNode.java:380)
+	at com.ibm.broker.plugin.MbNode.evaluate(MbNode.java:2138)
+	at com.ibm.broker.plugin.MbOutputTerminal._propagate(Native Method)
+	at com.ibm.broker.plugin.MbOutputTerminal.propagate(MbOutputTerminal.java:133)
+	at com.ibm.broker.plugin.MbOutputTerminal.propagate(MbOutputTerminal.java:88)
+	at id.co.hanoman.mbplugin.LoggerNode.evaluate(LoggerNode.java:532)
+	at com.ibm.broker.plugin.MbNode.evaluate(MbNode.java:2138)
+Caused by: java.sql.SQLException: Unable to connect to 'jdbc:db2://btnmdwdata:50000/mwconfig' with user 'db2inst1' [jcc][t4][2030][11211][3.58.81] A communication error occurred during operations on the connection's underlying socket, socket input stream, 
+or socket output stream.  Error location: Reply.fill().  Message: Insufficient data. ERRORCODE=-4499, SQLSTATE=08001
+	at id.co.hanoman.config.db.ConfigDb.getConnection(ConfigDb.java:1097)
+	at id.co.hanoman.config.db.ConfigDb.getTimestamp(ConfigDb.java:1134)
+	... 8 more
+Caused by: com.ibm.db2.jcc.am.io: [jcc][t4][2030][11211][3.58.81] A communication error occurred during operations on the connection's underlying socket, socket input stream, 
+or socket output stream.  Error location: Reply.fill().  Message: Insufficient data. ERRORCODE=-4499, SQLSTATE=08001
+	at com.ibm.db2.jcc.am.ed.a(ed.java:319)
+	at com.ibm.db2.jcc.t4.a.a(a.java:416)
+	at com.ibm.db2.jcc.t4.a.a(a.java:411)
+	at com.ibm.db2.jcc.t4.cb.b(cb.java:227)
+	at com.ibm.db2.jcc.t4.cb.c(cb.java:249)
+	at com.ibm.db2.jcc.t4.cb.c(cb.java:360)
+	at com.ibm.db2.jcc.t4.cb.v(cb.java:1145)
+	at com.ibm.db2.jcc.t4.db.a(db.java:42)
+	at com.ibm.db2.jcc.t4.b.m(b.java:1238)
+	at com.ibm.db2.jcc.t4.b.b(b.java:1112)
+	at com.ibm.db2.jcc.t4.b.c(b.java:700)
+	at com.ibm.db2.jcc.t4.b.b(b.java:686)
+	at com.ibm.db2.jcc.t4.b.a(b.java:367)
+	at com.ibm.db2.jcc.t4.b.<init>(b.java:307)
+	at com.ibm.db2.jcc.DB2SimpleDataSource.getConnection(DB2SimpleDataSource.java:214)
+	at com.ibm.db2.jcc.DB2Driver.connect(DB2Driver.java:456)
+	at java.sql.DriverManager.getConnection(DriverManager.java:675)
+	at java.sql.DriverManager.getConnection(DriverManager.java:258)
+	at id.co.hanoman.config.db.DBPool.getConnection(DBPool.java:233)
+	at id.co.hanoman.config.db.DBPool$1.getConnection(DBPool.java:113)
+	at id.co.hanoman.config.db.ConfigDb.getConnection(ConfigDb.java:1090)
+	... 9 more
+2024-10-10 16:01:55,978 [Thread-16] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) TX:(sOu2BlwqUq3qqqqueRlnyvQc) - log type pre [error]
+2024-10-10 16:01:55,978 [Thread-16] WARN id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) TX:(sOu2BlwqUq3qqqqueRlnyvQc) - null
+java.lang.NullPointerException
+	at id.co.hanoman.mbplugin.DatabaseDLogNode.evaluate(DatabaseDLogNode.java:432)
+	at com.ibm.broker.plugin.MbNode.evaluate(MbNode.java:2138)
+	at com.ibm.broker.plugin.MbOutputTerminal._propagate(Native Method)
+	at com.ibm.broker.plugin.MbOutputTerminal.propagate(MbOutputTerminal.java:133)
+	at com.ibm.broker.plugin.MbOutputTerminal.propagate(MbOutputTerminal.java:88)
+	at id.co.hanoman.mbplugin.LoggerNode.evaluate(LoggerNode.java:532)
+	at com.ibm.broker.plugin.MbNode.evaluate(MbNode.java:2138)
+2024-10-10 16:01:55,979 [Thread-16] DEBUG id.co.hanoman.mbplugin.LoggerNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR_LOG_OUT) TX:(sOu2BlwqUq3qqqqueRlnyvQc) - [DB_LOG_ERROR_LOG_OUT] 
+2024-10-10 16:05:24,729 [main] INFO id.co.hanoman.StartStopLog BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:null) - BUILD [htcp]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [hcx]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [config]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+Java version IBM Corporation  1.8.0_391
+
+2024-10-10 16:05:25,306 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - RELOAD CONFIG [SMSBROKER:LOG_DB:HanomanDatabaseLogNode] NULL
+2024-10-10 16:05:25,311 [main] INFO id.co.hanoman.License BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Hanoman WMB Plugin for Bank Tabungan Negara
+2024-10-10 16:05:25,787 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - getConfig [db://]
+2024-10-10 16:05:25,787 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - getConfig [db://]
+2024-10-10 16:05:25,787 [main] INFO id.co.hanoman.mbplugin.reload BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - LOADING CONFIG [SMSBROKER:LOG_DB:DB_LOG_ERROR]  URL [db://]
+2024-10-10 16:05:25,898 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/clients/client]
+2024-10-10 16:05:25,899 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/codex]
+2024-10-10 16:05:25,899 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/db]
+2024-10-10 16:05:25,899 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path-include [config/db] pattern [config/db\[mwlog\]]
+2024-10-10 16:05:25,899 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/dbquery]
+2024-10-10 16:05:25,899 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/dtree-map]
+2024-10-10 16:05:25,899 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/host]
+2024-10-10 16:05:25,899 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/mapping]
+2024-10-10 16:05:25,900 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/param-map]
+2024-10-10 16:05:25,900 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/parser]
+2024-10-10 16:05:25,901 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/ports/port]
+2024-10-10 16:05:25,901 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/routing]
+2024-10-10 16:05:25,901 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/rpg-call]
+2024-10-10 16:05:26,145 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Creating new db connection
+2024-10-10 16:05:26,275 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Done creating new db connection
+2024-10-10 16:05:26,361 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - done building config
+2024-10-10 16:05:26,366 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG) - RELOAD CONFIG [SMSBROKER:LOG_DB:HanomanDatabaseLogNode] NULL
+2024-10-10 16:05:26,366 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG) - getConfig [db://]
+2024-10-10 16:05:26,366 [main] DEBUG id.co.hanoman.mbplugin.reload BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG) - REUSE CONFIG [SMSBROKER:LOG_DB:DB_LOG]  URL [db://]
+2024-10-12 12:56:55,155 [main] INFO id.co.hanoman.StartStopLog BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:null) - BUILD [htcp]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [hcx]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [config]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+Java version IBM Corporation  1.8.0_391
+
+2024-10-12 12:56:56,190 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - RELOAD CONFIG [SMSBROKER:LOG_DB:HanomanDatabaseLogNode] NULL
+2024-10-12 12:56:56,199 [main] INFO id.co.hanoman.License BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Hanoman WMB Plugin for Bank Tabungan Negara
+2024-10-12 12:56:57,154 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - getConfig [db://]
+2024-10-12 12:56:57,156 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - getConfig [db://]
+2024-10-12 12:56:57,157 [main] INFO id.co.hanoman.mbplugin.reload BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - LOADING CONFIG [SMSBROKER:LOG_DB:DB_LOG_ERROR]  URL [db://]
+2024-10-12 12:56:57,473 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/clients/client]
+2024-10-12 12:56:57,474 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/codex]
+2024-10-12 12:56:57,475 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/db]
+2024-10-12 12:56:57,476 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path-include [config/db] pattern [config/db\[mwlog\]]
+2024-10-12 12:56:57,476 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/dbquery]
+2024-10-12 12:56:57,477 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/dtree-map]
+2024-10-12 12:56:57,477 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/host]
+2024-10-12 12:56:57,478 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/mapping]
+2024-10-12 12:56:57,478 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/param-map]
+2024-10-12 12:56:57,478 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/parser]
+2024-10-12 12:56:57,479 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/ports/port]
+2024-10-12 12:56:57,480 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/routing]
+2024-10-12 12:56:57,480 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/rpg-call]
+2024-10-12 12:56:57,961 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Creating new db connection
+2024-10-12 12:56:58,242 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Done creating new db connection
+2024-10-12 12:56:58,715 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - done building config
+2024-10-12 12:56:58,743 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Creating new db connection
+2024-10-12 12:56:58,752 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Done creating new db connection
+2024-10-12 12:56:58,869 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG) - RELOAD CONFIG [SMSBROKER:LOG_DB:HanomanDatabaseLogNode] NULL
+2024-10-12 12:56:58,869 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG) - getConfig [db://]
+2024-10-12 12:56:58,869 [main] DEBUG id.co.hanoman.mbplugin.reload BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG) - REUSE CONFIG [SMSBROKER:LOG_DB:DB_LOG]  URL [db://]
+2024-10-13 15:56:48,506 [main] INFO id.co.hanoman.StartStopLog BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:null) - BUILD [htcp]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [hcx]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [config]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+Java version IBM Corporation  1.8.0_391
+
+2024-10-13 15:56:49,096 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - RELOAD CONFIG [SMSBROKER:LOG_DB:HanomanDatabaseLogNode] NULL
+2024-10-13 15:56:49,101 [main] INFO id.co.hanoman.License BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Hanoman WMB Plugin for Bank Tabungan Negara
+2024-10-13 15:56:49,607 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - getConfig [db://]
+2024-10-13 15:56:49,607 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - getConfig [db://]
+2024-10-13 15:56:49,607 [main] INFO id.co.hanoman.mbplugin.reload BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - LOADING CONFIG [SMSBROKER:LOG_DB:DB_LOG_ERROR]  URL [db://]
+2024-10-13 15:56:49,724 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/clients/client]
+2024-10-13 15:56:49,725 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/codex]
+2024-10-13 15:56:49,725 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/db]
+2024-10-13 15:56:49,725 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path-include [config/db] pattern [config/db\[mwlog\]]
+2024-10-13 15:56:49,725 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/dbquery]
+2024-10-13 15:56:49,725 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/dtree-map]
+2024-10-13 15:56:49,725 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/host]
+2024-10-13 15:56:49,725 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/mapping]
+2024-10-13 15:56:49,725 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/param-map]
+2024-10-13 15:56:49,726 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/parser]
+2024-10-13 15:56:49,726 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/ports/port]
+2024-10-13 15:56:49,727 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/routing]
+2024-10-13 15:56:49,727 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/rpg-call]
+2024-10-13 15:56:49,988 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Creating new db connection
+2024-10-13 15:56:50,152 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Done creating new db connection
+2024-10-13 15:56:50,266 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - done building config
+2024-10-13 15:56:50,271 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG) - RELOAD CONFIG [SMSBROKER:LOG_DB:HanomanDatabaseLogNode] NULL
+2024-10-13 15:56:50,271 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG) - getConfig [db://]
+2024-10-13 15:56:50,271 [main] DEBUG id.co.hanoman.mbplugin.reload BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG) - REUSE CONFIG [SMSBROKER:LOG_DB:DB_LOG]  URL [db://]
+2024-10-15 15:45:01,094 [main] INFO id.co.hanoman.StartStopLog BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:null) - BUILD [htcp]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [hcx]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [config]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+Java version IBM Corporation  1.8.0_391
+
+2024-10-15 15:45:01,637 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - RELOAD CONFIG [SMSBROKER:LOG_DB:HanomanDatabaseLogNode] NULL
+2024-10-15 15:45:01,642 [main] INFO id.co.hanoman.License BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Hanoman WMB Plugin for Bank Tabungan Negara
+2024-10-15 15:45:02,045 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - getConfig [db://]
+2024-10-15 15:45:02,045 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - getConfig [db://]
+2024-10-15 15:45:02,045 [main] INFO id.co.hanoman.mbplugin.reload BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - LOADING CONFIG [SMSBROKER:LOG_DB:DB_LOG_ERROR]  URL [db://]
+2024-10-15 15:45:02,147 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/clients/client]
+2024-10-15 15:45:02,148 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/codex]
+2024-10-15 15:45:02,148 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/db]
+2024-10-15 15:45:02,148 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path-include [config/db] pattern [config/db\[mwlog\]]
+2024-10-15 15:45:02,148 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/dbquery]
+2024-10-15 15:45:02,148 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/dtree-map]
+2024-10-15 15:45:02,148 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/host]
+2024-10-15 15:45:02,148 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/mapping]
+2024-10-15 15:45:02,148 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/param-map]
+2024-10-15 15:45:02,149 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/parser]
+2024-10-15 15:45:02,149 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/ports/port]
+2024-10-15 15:45:02,149 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/routing]
+2024-10-15 15:45:02,149 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/rpg-call]
+2024-10-15 15:45:02,349 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Creating new db connection
+2024-10-15 15:45:02,492 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Done creating new db connection
+2024-10-15 15:45:02,555 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - done building config
+2024-10-15 15:45:02,558 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG) - RELOAD CONFIG [SMSBROKER:LOG_DB:HanomanDatabaseLogNode] NULL
+2024-10-15 15:45:02,559 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG) - getConfig [db://]
+2024-10-15 15:45:02,559 [main] DEBUG id.co.hanoman.mbplugin.reload BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG) - REUSE CONFIG [SMSBROKER:LOG_DB:DB_LOG]  URL [db://]
+2024-10-19 16:59:07,753 [main] INFO id.co.hanoman.StartStopLog BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:null) - BUILD [htcp]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [hcx]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [config]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+Java version IBM Corporation  1.8.0_391
+
+2024-10-19 16:59:08,323 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - RELOAD CONFIG [SMSBROKER:LOG_DB:HanomanDatabaseLogNode] NULL
+2024-10-19 16:59:08,328 [main] INFO id.co.hanoman.License BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Hanoman WMB Plugin for Bank Tabungan Negara
+2024-10-19 16:59:08,782 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - getConfig [db://]
+2024-10-19 16:59:08,782 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - getConfig [db://]
+2024-10-19 16:59:08,782 [main] INFO id.co.hanoman.mbplugin.reload BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - LOADING CONFIG [SMSBROKER:LOG_DB:DB_LOG_ERROR]  URL [db://]
+2024-10-19 16:59:08,917 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/clients/client]
+2024-10-19 16:59:08,918 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/codex]
+2024-10-19 16:59:08,918 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/db]
+2024-10-19 16:59:08,918 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path-include [config/db] pattern [config/db\[mwlog\]]
+2024-10-19 16:59:08,918 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/dbquery]
+2024-10-19 16:59:08,918 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/dtree-map]
+2024-10-19 16:59:08,918 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/host]
+2024-10-19 16:59:08,919 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/mapping]
+2024-10-19 16:59:08,919 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/param-map]
+2024-10-19 16:59:08,919 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/parser]
+2024-10-19 16:59:08,920 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/ports/port]
+2024-10-19 16:59:08,920 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/routing]
+2024-10-19 16:59:08,920 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/rpg-call]
+2024-10-19 16:59:09,151 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Creating new db connection
+2024-10-19 16:59:09,280 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Done creating new db connection
+2024-10-19 16:59:09,382 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - done building config
+2024-10-19 16:59:09,386 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG) - RELOAD CONFIG [SMSBROKER:LOG_DB:HanomanDatabaseLogNode] NULL
+2024-10-19 16:59:09,386 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG) - getConfig [db://]
+2024-10-19 16:59:09,386 [main] DEBUG id.co.hanoman.mbplugin.reload BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG) - REUSE CONFIG [SMSBROKER:LOG_DB:DB_LOG]  URL [db://]
+2024-10-21 02:42:20,342 [main] INFO id.co.hanoman.StartStopLog BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:null) - BUILD [htcp]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [hcx]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [config]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+Java version IBM Corporation  1.8.0_391
+
+2024-10-21 02:42:21,536 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - RELOAD CONFIG [SMSBROKER:LOG_DB:HanomanDatabaseLogNode] NULL
+2024-10-21 02:42:21,543 [main] INFO id.co.hanoman.License BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Hanoman WMB Plugin for Bank Tabungan Negara
+2024-10-21 02:42:22,482 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - getConfig [db://]
+2024-10-21 02:42:22,482 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - getConfig [db://]
+2024-10-21 02:42:22,482 [main] INFO id.co.hanoman.mbplugin.reload BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - LOADING CONFIG [SMSBROKER:LOG_DB:DB_LOG_ERROR]  URL [db://]
+2024-10-21 02:42:22,922 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/clients/client]
+2024-10-21 02:42:22,926 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/codex]
+2024-10-21 02:42:22,927 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/db]
+2024-10-21 02:42:22,928 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path-include [config/db] pattern [config/db\[mwlog\]]
+2024-10-21 02:42:22,928 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/dbquery]
+2024-10-21 02:42:22,929 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/dtree-map]
+2024-10-21 02:42:22,929 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/host]
+2024-10-21 02:42:22,930 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/mapping]
+2024-10-21 02:42:22,930 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/param-map]
+2024-10-21 02:42:22,931 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/parser]
+2024-10-21 02:42:22,934 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/ports/port]
+2024-10-21 02:42:22,935 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/routing]
+2024-10-21 02:42:22,935 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/rpg-call]
+2024-10-21 02:42:23,668 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Creating new db connection
+2024-10-21 02:42:23,943 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Done creating new db connection
+2024-10-21 02:42:24,048 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - done building config
+2024-10-21 02:42:24,060 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG) - RELOAD CONFIG [SMSBROKER:LOG_DB:HanomanDatabaseLogNode] NULL
+2024-10-21 02:42:24,060 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG) - getConfig [db://]
+2024-10-21 02:42:24,061 [main] DEBUG id.co.hanoman.mbplugin.reload BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG) - REUSE CONFIG [SMSBROKER:LOG_DB:DB_LOG]  URL [db://]
+2024-10-21 02:50:22,881 [main] INFO id.co.hanoman.StartStopLog BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:null) - BUILD [htcp]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [hcx]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [config]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+Java version IBM Corporation  1.8.0_391
+
+2024-10-21 02:50:24,180 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - RELOAD CONFIG [SMSBROKER:LOG_DB:HanomanDatabaseLogNode] NULL
+2024-10-21 02:50:24,189 [main] INFO id.co.hanoman.License BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Hanoman WMB Plugin for Bank Tabungan Negara
+2024-10-21 02:50:25,280 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - getConfig [db://]
+2024-10-21 02:50:25,280 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - getConfig [db://]
+2024-10-21 02:50:25,281 [main] INFO id.co.hanoman.mbplugin.reload BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - LOADING CONFIG [SMSBROKER:LOG_DB:DB_LOG_ERROR]  URL [db://]
+2024-10-21 02:50:25,682 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/clients/client]
+2024-10-21 02:50:25,684 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/codex]
+2024-10-21 02:50:25,687 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/db]
+2024-10-21 02:50:25,688 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path-include [config/db] pattern [config/db\[mwlog\]]
+2024-10-21 02:50:25,688 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/dbquery]
+2024-10-21 02:50:25,688 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/dtree-map]
+2024-10-21 02:50:25,689 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/host]
+2024-10-21 02:50:25,689 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/mapping]
+2024-10-21 02:50:25,689 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/param-map]
+2024-10-21 02:50:25,690 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/parser]
+2024-10-21 02:50:25,691 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/ports/port]
+2024-10-21 02:50:25,691 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/routing]
+2024-10-21 02:50:25,691 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Config path path [config/rpg-call]
+2024-10-21 02:50:26,278 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Creating new db connection
+2024-10-21 02:50:26,624 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Done creating new db connection
+2024-10-21 02:50:27,771 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - done building config
+2024-10-21 02:50:27,822 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Creating new db connection
+2024-10-21 02:50:27,833 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_ERROR) - Done creating new db connection
+2024-10-21 02:50:28,098 [main] DEBUG id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG) - RELOAD CONFIG [SMSBROKER:LOG_DB:HanomanDatabaseLogNode] NULL
+2024-10-21 02:50:28,099 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG) - getConfig [db://]
+2024-10-21 02:50:28,099 [main] DEBUG id.co.hanoman.mbplugin.reload BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG) - REUSE CONFIG [SMSBROKER:LOG_DB:DB_LOG]  URL [db://]
+2024-10-21 02:54:51,583 [Thread-17] DEBUG id.co.hanoman.mbplugin.LoggerNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:LOG_DB_LOG_OUT) - [LOG_DB_LOG_OUT] 
+2024-10-21 02:54:51,595 [Thread-17] WARN id.co.hanoman.mbplugin.DatabaseDLogNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG) - Unsupported message. XMLNSC  (0x01000000)
+   data  (0x01000000)
+      control  (0x03000000) = (string) (len:7) "connect"
+      sid  (0x03000000) = (string) (len:24) "KL_K3lwqUq3qqqqueRlnyvQc"
+      source  (0x03000000) = (string) (len:8) "itm-conn"
+      adaptor  (0x03000000) = (string) (len:8) "itm-conn"
+      address  (0x03000000) = (string) (len:9) "localhost"
+      port  (0x03000000) = (string) (len:4) "9038"
+      log  (0x01000000)
+         LoggerNode  (0x03000000) = (string) (len:78) "2024/10/21 02:54:51.135 SMSBROKER.SMSISO.MASTER_ISO_FLOW.TCPIP_ADAPTER.CONNECT"
+         LoggerNode  (0x03000000) = (string) (len:110) "2024/10/21 02:54:51.138 SMSBROKER.SMSISO.MASTER_ISO_FLOW.TCPIP_ADAPTER.LOG_CONNECT.ADD_MQHEADER_BEFORE_LOG_OUT"
+         LoggerNode  (0x03000000) = (string) (len:64) "2024/10/21 02:54:51.584 SMSBROKER.SMSLOGDB.LOG_DB.LOG_DB_LOG_OUT"
+
+java.lang.Exception: Unsupported message. XMLNSC  (0x01000000)
+   data  (0x01000000)
+      control  (0x03000000) = (string) (len:7) "connect"
+      sid  (0x03000000) = (string) (len:24) "KL_K3lwqUq3qqqqueRlnyvQc"
+      source  (0x03000000) = (string) (len:8) "itm-conn"
+      adaptor  (0x03000000) = (string) (len:8) "itm-conn"
+      address  (0x03000000) = (string) (len:9) "localhost"
+      port  (0x03000000) = (string) (len:4) "9038"
+      log  (0x01000000)
+         LoggerNode  (0x03000000) = (string) (len:78) "2024/10/21 02:54:51.135 SMSBROKER.SMSISO.MASTER_ISO_FLOW.TCPIP_ADAPTER.CONNECT"
+         LoggerNode  (0x03000000) = (string) (len:110) "2024/10/21 02:54:51.138 SMSBROKER.SMSISO.MASTER_ISO_FLOW.TCPIP_ADAPTER.LOG_CONNECT.ADD_MQHEADER_BEFORE_LOG_OUT"
+         LoggerNode  (0x03000000) = (string) (len:64) "2024/10/21 02:54:51.584 SMSBROKER.SMSLOGDB.LOG_DB.LOG_DB_LOG_OUT"
+
+	at id.co.hanoman.mbplugin.DatabaseDLogNode.evaluate(DatabaseDLogNode.java:417)
+	at com.ibm.broker.plugin.MbNode.evaluate(MbNode.java:2138)
+	at com.ibm.broker.plugin.MbOutputTerminal._propagate(Native Method)
+	at com.ibm.broker.plugin.MbOutputTerminal.propagate(MbOutputTerminal.java:133)
+	at com.ibm.broker.plugin.MbOutputTerminal.propagate(MbOutputTerminal.java:88)
+	at id.co.hanoman.mbplugin.LoggerNode.evaluate(LoggerNode.java:532)
+	at com.ibm.broker.plugin.MbNode.evaluate(MbNode.java:2138)
+2024-10-21 02:54:51,596 [Thread-17] DEBUG id.co.hanoman.mbplugin.LoggerNode BROKER:(SMSBROKER:SMSLOGDB:LOG_DB:DB_LOG_LOG_OUT) - [DB_LOG_LOG_OUT] 

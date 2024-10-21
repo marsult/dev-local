@@ -1,0 +1,97 @@
+
+==============================================
+
+!Mon Aug 19 15:10:35 ICT 2024
+
+Processing file MDW_GATEWAY\gen\MDW_GATEWAY.msgflow.
+Successfully added file MDW_GATEWAY\gen\MDW_GATEWAY.msgflow to BAR file.
+
+==============================================
+
+!Mon Aug 19 15:10:35 ICT 2024
+
+Processing file MDW_GATEWAY\ADDITIONAL_REQUEST.esql.
+Dependent ESQL file ACE_LIB/LOG.esql is added to the BAR file.
+
+Successfully added file MDW_GATEWAY\ADDITIONAL_REQUEST.esql to BAR file.
+
+==============================================
+
+!Mon Aug 19 15:10:35 ICT 2024
+
+Processing file MDW_GATEWAY\ADDITIONAL_RESPONSE.esql.
+Dependent ESQL file ACE_LIB/LOG.esql is added to the BAR file.
+
+Successfully added file MDW_GATEWAY\ADDITIONAL_RESPONSE.esql to BAR file.
+
+==============================================
+
+!Mon Aug 19 15:10:35 ICT 2024
+
+Processing file MDW_GATEWAY\gen\BAR\db-config-paybroker-bill_payment.xml.
+Successfully added file MDW_GATEWAY\gen\BAR\db-config-paybroker-bill_payment.xml to BAR file.
+
+==============================================
+
+!Mon Aug 19 15:10:35 ICT 2024
+
+Processing file MDW_GATEWAY\gen\BAR\logback.xml.
+Successfully added file MDW_GATEWAY\gen\BAR\logback.xml to BAR file.
+
+==============================================
+
+!Mon Aug 19 15:10:35 ICT 2024
+
+Processing file MDW_GATEWAY\postLinking.subflow.
+Successfully added file MDW_GATEWAY\postLinking.subflow to BAR file.
+
+==============================================
+
+!Mon Aug 19 15:10:35 ICT 2024
+
+Processing file MDW_GATEWAY\postMutasi.subflow.
+Successfully added file MDW_GATEWAY\postMutasi.subflow to BAR file.
+
+==============================================
+
+!Mon Aug 19 15:10:35 ICT 2024
+
+Processing file MDW_GATEWAY\postPayment.subflow.
+Successfully added file MDW_GATEWAY\postPayment.subflow to BAR file.
+
+==============================================
+
+!Mon Aug 19 15:10:35 ICT 2024
+
+Processing file MDW_GATEWAY\postService.subflow.
+Successfully added file MDW_GATEWAY\postService.subflow to BAR file.
+
+==============================================
+
+!Mon Aug 19 15:10:35 ICT 2024
+
+Processing file MDW_GATEWAY\restapi.descriptor.
+Successfully added file MDW_GATEWAY\restapi.descriptor to BAR file.
+Elapsed time: 0 second(s).
+
+Successfully added file MDW_GATEWAY\restapi.descriptor to BAR file.
+
+==============================================
+
+!Mon Aug 19 15:10:35 ICT 2024
+
+Processing file MDW_GATEWAY\restapi.descriptor.
+Successfully added file MDW_GATEWAY\restapi.descriptor to BAR file.
+Elapsed time: 0 second(s).
+
+Successfully added file MDW_GATEWAY\restapi.descriptor to BAR file.
+
+==============================================
+
+!Mon Aug 19 15:10:35 ICT 2024
+
+Processing file MDW_GATEWAY\swagger.json.
+Successfully added file MDW_GATEWAY\swagger.json to BAR file.
+Elapsed time: 0 second(s).
+
+Successfully added file MDW_GATEWAY\swagger.json to BAR file.

@@ -1,0 +1,175 @@
+
+
+CREATE COMPUTE MODULE WS_MBASE_SUBFLOW_COPY_REPLY
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		CALL CopyMessageHeaders();
+		SET OutputRoot.XMLNSC = InputLocalEnvironment.XMLNSC;
+		
+		DELETE FIELD OutputRoot.XMLNSC.*.log;
+		 
+		RETURN TRUE;
+	END;
+
+	CREATE PROCEDURE CopyMessageHeaders() BEGIN
+		DECLARE I INTEGER 1;
+		DECLARE J INTEGER;
+		SET J = CARDINALITY(InputRoot.*[]);
+		WHILE I < J DO
+			SET OutputRoot.*[I] = InputRoot.*[I];
+			SET I = I + 1;
+		END WHILE;
+	END;
+
+	CREATE PROCEDURE CopyEntireMessage() BEGIN
+		SET OutputRoot = InputRoot;
+	END;
+END MODULE;
+	
+
+CREATE COMPUTE MODULE WS_MBASE_SUBFLOW_CLEAN_SOAP
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot = InputRoot;
+		SET OutputRoot.XMLNSC.data.ReplyIdentifier = InputLocalEnvironment.Destination.SOAP.Reply.ReplyIdentifier;
+		SET OutputRoot.XMLNSC.data.labelName = InputLocalEnvironment.Destination.RouterList.DestinationData.labelName;
+		SET OutputRoot.XMLNSC.data.namespace = InputLocalEnvironment.SOAP.Envelope.InRequest.CustInfoFileServiceSoapBinding.SOAP.Context.portTypeNamespace;
+		SET OutputRoot.XMLNSC.data.CorrelId = InputLocalEnvironment.request_id;
+		SET OutputRoot.XMLNSC.data.timestamp = InputLocalEnvironment.request_timestamp;
+		SET OutputRoot.XMLNSC.data.reqtimestamp = InputLocalEnvironment.request_timestamp;
+
+		DECLARE I INTEGER 1;
+		DECLARE J INTEGER;
+		SET J = CARDINALITY(InputRoot.XMLNSC.{InputLocalEnvironment.SOAP.Envelope.InRequest.CustInfoFileServiceSoapBinding.SOAP.Context.portTypeNamespace}:{InputLocalEnvironment.Destination.RouterList.DestinationData.labelName}.*[]);
+
+		WHILE I <= J DO
+			SET OutputRoot.XMLNSC.data.body.*[I] = InputRoot.XMLNSC.{InputLocalEnvironment.SOAP.Envelope.InRequest.CustInfoFileServiceSoapBinding.SOAP.Context.portTypeNamespace}:{InputLocalEnvironment.Destination.RouterList.DestinationData.labelName}.*[I];
+			SET I = I + 1;
+		END WHILE;
+
+		DELETE FIELD OutputRoot.XMLNSC.{InputLocalEnvironment.SOAP.Envelope.InRequest.CustInfoFileServiceSoapBinding.SOAP.Context.portTypeNamespace}:{InputLocalEnvironment.Destination.RouterList.DestinationData.labelName};
+		DELETE FIELD OutputRoot.Properties;
+		DELETE FIELD OutputRoot.HTTPInputHeader;
+
+		RETURN TRUE;
+	END;
+
+	CREATE PROCEDURE CopyMessageHeaders() BEGIN
+		DECLARE I INTEGER 1;
+		DECLARE J INTEGER;
+		SET J = CARDINALITY(InputRoot.*[]);
+		WHILE I < J DO
+			SET OutputRoot.*[I] = InputRoot.*[I];
+			SET I = I + 1;
+		END WHILE;
+	END;
+
+	CREATE PROCEDURE CopyEntireMessage() BEGIN
+		SET OutputRoot = InputRoot;
+	END;
+END MODULE;
+
+
+CREATE COMPUTE MODULE WS_MBASE_SUBFLOW_MBASE_SOAP_FAULT
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		CALL CopyMessageHeaders();
+		
+		--SET OutputRoot.XMLNSC.(XMLNSC.XmlDeclaration)XmlDeclaration.(XMLNSC.Attribute)Version = '1.0';
+		--SET OutputRoot.XMLNSC.(XMLNSC.XmlDeclaration)XmlDeclaration.(XMLNSC.Attribute)Encoding = 'UTF-8';
+
+		DECLARE soapenv NAMESPACE 'http://schemas.xmlsoap.org/soap/envelope/';
+		
+		SET InputLocalEnvironment.namespace = InputRoot.XMLNSC.data.request.data.namespace;
+		SET InputLocalEnvironment.labelName = InputRoot.XMLNSC.data.request.data.labelName;
+		
+		IF FIELDTYPE(OutputRoot.XMLNSC.data.body.TLBERR_F2) IS NOT NULL THEN
+			SET OutputRoot.XMLNSC.soapenv:Fault.faultcode = InputRoot.XMLNSC.data.body.TLBERR_F2;
+			SET OutputRoot.XMLNSC.soapenv:Fault.faultstring = 'Errors occurred while requesting to the core';
+			SET OutputRoot.XMLNSC.soapenv:Fault.detail.Message = InputRoot.XMLNSC.data.body.ERROR_F2;
+		ELSE
+			SET OutputRoot.XMLNSC.soapenv:Fault.faultcode = InputRoot.XMLNSC.data.body.RCD1;
+			SET OutputRoot.XMLNSC.soapenv:Fault.faultstring = 'Errors response from the core';
+			SET OutputRoot.XMLNSC.soapenv:Fault.detail.Message = InputRoot.XMLNSC.data.body.RRE1;	
+		END IF;
+		
+		RETURN TRUE;
+	END;
+
+	CREATE PROCEDURE CopyMessageHeaders() BEGIN
+		DECLARE I INTEGER 1;
+		DECLARE J INTEGER;
+		SET J = CARDINALITY(InputRoot.*[]);
+		WHILE I < J DO
+			SET OutputRoot.*[I] = InputRoot.*[I];
+			SET I = I + 1;
+		END WHILE;
+	END;
+
+	CREATE PROCEDURE CopyEntireMessage() BEGIN
+		SET OutputRoot = InputRoot;
+	END;
+END MODULE;
+
+
+CREATE COMPUTE MODULE WS_MBASE_SUBFLOW_CHECK_RESPONSE
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		-- CALL CopyMessageHeaders();
+		CALL CopyEntireMessage();
+		-- CHECK IS TIMEOUT 
+		IF FIELDTYPE(OutputRoot.XMLNSC.data.body.TLBERR_F2) IS NOT NULL THEN
+			PROPAGATE TO TERMINAL 'out1';
+			RETURN FALSE;
+		ELSEIF LENGTH(TRIM(OutputRoot.XMLNSC.data.body.RCD1)) > 1 THEN
+			PROPAGATE TO TERMINAL 'out2';
+			RETURN FALSE;
+		ELSE 
+			RETURN TRUE;
+		END IF;
+	END;
+
+	CREATE PROCEDURE CopyMessageHeaders() BEGIN
+		DECLARE I INTEGER 1;
+		DECLARE J INTEGER;
+		SET J = CARDINALITY(InputRoot.*[]);
+		WHILE I < J DO
+			SET OutputRoot.*[I] = InputRoot.*[I];
+			SET I = I + 1;
+		END WHILE;
+	END;
+
+	CREATE PROCEDURE CopyEntireMessage() BEGIN
+		SET OutputRoot = InputRoot;
+	END;
+END MODULE;
+
+
+CREATE COMPUTE MODULE CIF_FLOW_SOAP_ENVELOPE_REPLY
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		
+		CALL CopyEntireMessage();
+		
+		SET InputLocalEnvironment.Destination.SOAP.Reply.ReplyIdentifier = InputRoot.MQMD.CorrelId;
+		SET InputLocalEnvironment.Destination.RouterList.DestinationData.labelName = InputLocalEnvironment.labelName;
+		
+		SET InputLocalEnvironment.XMLNSC = InputRoot.XMLNSC;
+		
+		RETURN TRUE;
+	END;
+
+	CREATE PROCEDURE CopyMessageHeaders() BEGIN
+		DECLARE I INTEGER 1;
+		DECLARE J INTEGER;
+		SET J = CARDINALITY(InputRoot.*[]);
+		WHILE I < J DO
+			SET OutputRoot.*[I] = InputRoot.*[I];
+			SET I = I + 1;
+		END WHILE;
+	END;
+
+	CREATE PROCEDURE CopyEntireMessage() BEGIN
+		SET OutputRoot = InputRoot;
+	END;
+END MODULE;

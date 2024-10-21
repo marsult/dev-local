@@ -1,0 +1,31 @@
+
+
+CREATE COMPUTE MODULE STORE_RESP_SUBFLOW_BACKUP_MSG
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputLocalEnvironment = InputLocalEnvironment;
+		SET OutputLocalEnvironment.message = InputRoot;
+		
+		SET OutputRoot.Properties = InputRoot.Properties;
+		SET OutputRoot.MQMD = InputRoot.MQMD;
+		SET OutputRoot.MQMD.CorrelId = CAST(SUBSTRING(InputRoot.XMLNSC.data.backup.msgId || '                        ' FROM 1 FOR 24) AS BLOB CCSID 1208);
+		SET OutputRoot.MQMD.Expiry = 864000;
+		SET OutputRoot.XMLNSC.data = InputRoot.XMLNSC.data.backup;
+		
+		RETURN TRUE;
+	END;
+END MODULE;
+
+CREATE COMPUTE MODULE STORE_RESP_SUBFLOW_RESTORE_MSG
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputLocalEnvironment = InputLocalEnvironment;
+		DELETE FIELD OutputLocalEnvironment.message;
+
+		SET OutputRoot = InputLocalEnvironment.message;
+		SET OutputRoot.MQMD.ReplyToQ = 'GROUP_CHANGE_OUT';
+		DELETE FIELD OutputRoot.XMLNSC.data.backup;
+
+		RETURN TRUE;
+	END;
+END MODULE;

@@ -1,0 +1,169 @@
+INSERT INTO MWCONFIG.ROUTING_TABLE (CODE_START, CODE_END, CHANNEL, START_DATE, QUEUE, STATUS, REPLY_TO, REPLY_TO_QMGR, CREATE_BY, CREATE_DATE) VALUES 
+    ('0200.470000', '0200.470000', 'sms', CURRENT TIMESTAMP, 'SMS_IBFT_INQIN', 'ACTIVE', 'ROUTER_OUT', 'SMSBROKER.QM', CURRENT USER, CURRENT TIMESTAMP),
+    ('0200.570000', '0200.570000', 'sms', CURRENT TIMESTAMP, 'SMS_IBFT_PAYIN', 'ACTIVE', 'ROUTER_OUT', 'SMSBROKER.QM', CURRENT USER, CURRENT TIMESTAMP);
+
+INSERT INTO MWCONFIG.MAPPING (ID, MODULE, MODIFIED_BY, TIMESTAMP) VALUES 
+    ('sms.abcs-err-to-iso', '[sms]', CURRENT USER, CURRENT TIMESTAMP);
+INSERT INTO MWCONFIG.MAPPING_GROUP (MAPPING_ID, ID, SOURCE, TARGET, INCLUDE_MAPPING_ID, INCLUDE_ID) VALUES 
+    ('sms.abcs-err-to-iso', 1, '/data', '/data', NULL, NULL),
+    ('sms.abcs-err-to-iso', 2, '/data/body', '/data/body', NULL, NULL),
+    ('sms.abcs-err-to-iso', 3, '/data/coreResponse/body', '/data/body', NULL, NULL);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES 
+    ('sms.abcs-err-to-iso', 1, '@', 'copyMessage()', 1),
+    ('sms.abcs-err-to-iso', 2, 'messageType', '0210', 1),
+    ('sms.abcs-err-to-iso', 2, 'responseCode', '${getParamValue("error_map|core-itm", head.coreResponse.body.responseCode."!value","99")}', 2),
+    ('sms.abcs-err-to-iso', 3, 'reservedForPrivateUse2', '${msg.ERROR_F2==null?"":msg.ERROR_F2."!value"}', 2);
+
+INSERT INTO MWCONFIG.MAPPING (ID, MODULE, MODIFIED_BY, TIMESTAMP) VALUES 
+    ('sms.0200.470000', '[sms]', CURRENT USER, CURRENT TIMESTAMP);
+INSERT INTO MWCONFIG.MAPPING_GROUP (MAPPING_ID, ID, SOURCE, TARGET, INCLUDE_MAPPING_ID, INCLUDE_ID) VALUES 
+    ('sms.0200.470000', 1, '/data', '/data', NULL, NULL),
+    ('sms.0200.470000', 2, '/data/body', '/data/body', NULL, NULL);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES 
+    ('sms.0200.470000', 1, '@', 'copyMessage();', 1),
+    ('sms.0200.470000', 1, 'type', '${null}', 1),
+    ('sms.0200.470000', 2, '!destination', 'itm-conn', 1),
+    ('sms.0200.470000', 2, '!group', '${head.group}', 1),
+    ('sms.0200.470000', 2, 'messageType', '0200', 2),
+    ('sms.0200.470000', 2, 'systemsTraceAuditNumber', '${msg.systemsTraceAuditNumber} ', 3),
+    ('sms.0200.470000', 2, 'transmissionDateTime', '${getTimeZoneFormat("MMddHHmmss","GMT")}', 5),
+    ('sms.0200.470000', 2, 'amountTransactionFee', '${null}', 6),
+    ('sms.0200.470000', 2, 'amountTransactionProcessingFee', '${null}', 6),
+    ('sms.0200.470000', 2, 'merchantType', '6017', 6),
+    ('sms.0200.470000', 2, 'receivingInstitutionIdentificationCode', '${head.source."!value".substring(4,8) == "5080"?msg.cardAcceptorIdentificationCode."!value".padRight(11," ").substring(0,11):msg.receivingInstitutionIdentificationCode."!value".padRight(11," ").substring(0,11)}', 7),
+    ('sms.0200.470000', 2, 'reservedForPrivateUse', '${msg.receivingInstitutionIdentificationCode}', 7),
+    ('sms.0200.470000', 2, 'reservedPrivate2', '001${msg.reservedPrivate2."!value".substring(0,6).equals("001AMP")?"001MRP":msg.reservedPrivate2."!value".substring(0,6)}000', 8),
+    ('sms.0200.470000', 2, 'timeLocalTransaction', '${new java.text.SimpleDateFormat("HHmmss").format(new Date())}', 10),
+    ('sms.0200.470000', 2, 'dateLocalTransaction', '${new java.text.SimpleDateFormat("MMdd").format(new Date())}', 11),
+    ('sms.0200.470000', 2, '!mid', '${tar.transmissionDateTime."!value"+"."+tar.systemsTraceAuditNumber."!value"}', 99),
+    ('sms.0200.470000', 2, 'processingCode', '${msg.reservedPrivate2."!value".substring(3,6).equals("AMP")?"45":msg.reservedPrivate2."!value".substring(3,6).equals("BCA")?"46":msg.reservedPrivate2."!value".substring(3,6).equals("HBR")?"47":msg.reservedPrivate2."!value".substring(3,6).equals("SAT")?"48":msg.reservedPrivate2."!value".substring(3,6).equals("ALT")?"49":"99"}${msg.processingCode."!value".substring(2,6)}', null);
+
+INSERT INTO MWCONFIG.MAPPING(ID, DESCRIPTION, MODIFIED_BY, TIMESTAMP, MODULE) VALUES ('sms.0200.470000.itm-conn.0210.490000', '', CURRENT USER, CURRENT TIMESTAMP, '[sms]');
+INSERT INTO MWCONFIG.MAPPING_GROUP(MAPPING_ID, ID, "SOURCE", TARGET, INCLUDE_MAPPING_ID, INCLUDE_ID) VALUES 
+    ('sms.0200.470000.itm-conn.0210.490000', 1, '/data/request/data/body/frontOriginal', '/data', null, null),
+    ('sms.0200.470000.itm-conn.0210.490000', 2, '/data/body', '/data/body', null, null);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE(MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES 
+    ('sms.0200.470000.itm-conn.0210.490000', 2, 'additionalDataPrivate', '${msg.responseCode."!value".equals("00")?msg.additionalDataPrivate:tar.additionalDataPrivate}${head.request.data.source."!value".substring(4,8) != "1080" ? "000000650000" : ""}', 4),
+    ('sms.0200.470000.itm-conn.0210.490000', 2, 'messageType', '0210', 5),
+    ('sms.0200.470000.itm-conn.0210.490000', 2, 'responseCode', '${head.request.data.source."!value".substring(0,6).equals("sms-10")?"99":(getParamValue("error_map|ibft-"+head.request.data.body.frontOriginal.body.reservedPrivate2."!value".substring(3,6).toUpperCase(), msg.responseCode."!value",msg.responseCode."!value"))}', 6),
+    ('sms.0200.470000.itm-conn.0210.490000', 1, '@', 'copyMessage();', 2);
+
+INSERT INTO MWCONFIG.MAPPING(ID, DESCRIPTION, MODIFIED_BY, TIMESTAMP, MODULE) VALUES ('sms.0200.470000.itm-conn.0210.450000', null, CURRENT USER, CURRENT TIMESTAMP, '[sms]');
+INSERT INTO MWCONFIG.MAPPING_GROUP(MAPPING_ID, ID, "SOURCE", TARGET, INCLUDE_MAPPING_ID, INCLUDE_ID) VALUES
+    ('sms.0200.470000.itm-conn.0210.450000', 1, '/data/request/data/body/frontOriginal', '/data', 'sms.0200.470000.itm-conn.0210.490000', 1),
+    ('sms.0200.470000.itm-conn.0210.450000', 2, '/data/body', '/data/body', 'sms.0200.470000.itm-conn.0210.490000', 2);
+
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE(MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES 
+    ('sms.0200.470000.itm-conn.0210.450000', 2, 'issuerTraceId', '${msg.issuerTraceId}', null),
+    ('sms.0200.470000.itm-conn.0210.450000', 2, 'additionalDataPrivate', '${msg.responseCode."!value".equals("00")?msg.additionalDataPrivate:tar.additionalDataPrivate}${head.request.data.source."!value".substring(4,8) != "1080" ? (msg.issuerTraceId."!value"==null?"":msg.issuerTraceId."!value"=="LMP"?"000000650000":msg.issuerTraceId."!value"=="XMP"?"000000650000":"000000000000") : ""}', null);
+
+INSERT INTO MWCONFIG.MAPPING (ID, MODULE, MODIFIED_BY, TIMESTAMP) VALUES ('req-core.sms.0200.570000.001', '[sms]', CURRENT USER, CURRENT TIMESTAMP);
+INSERT INTO MWCONFIG.MAPPING_GROUP (MAPPING_ID, ID, SOURCE, TARGET, INCLUDE_MAPPING_ID, INCLUDE_ID) VALUES ('req-core.sms.0200.570000.001', 1, '/data/body', '/data/body', 'req-core.sms', '1');
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES 
+    ('req-core.sms.0200.570000.001', 1, '@', 'copyMessage("frontOriginal", ".");dtree("CHARGES","!group");', 1),
+    ('req-core.sms.0200.570000.001', 1, '!reqtimestamp', '${head.reqtimestamp}', 2),
+    ('req-core.sms.0200.570000.001', 1, '!CorrelId', '${head.CorrelId}', 3),
+    ('req-core.sms.0200.570000.001', 1, '!type', 'dsp', 4),
+    ('req-core.sms.0200.570000.001', 1, '!destination', 'core-sms', 5),
+    ('req-core.sms.0200.570000.001', 1, '!mid', '${head.mid}', 6),
+    ('req-core.sms.0200.570000.001', 1, '!ttl', '15000', 10),
+    ('req-core.sms.0200.570000.001', 1, 'dspTransactionCode', '${getParamValueWithError("sms-ibft-konven-code", msg.reservedPrivate2."!value".substring(3,6)+"-"+msg.processingCode."!value".substring(2,4), "error:92Unknown Transaction Code")}', 10),
+    ('req-core.sms.0200.570000.001', 1, 'fee_ibb', '${head.source."!value".substring(4,7) == "318"? msg.amountTransactionProcessingFee==null?"0":msg.amountTransactionProcessingFee."!value"==null?"0":msg.amountTransactionProcessingFee."!value"=="0"?"0":msg.amountTransactionProcessingFee."!value"==""?"0":msg.amountTransactionProcessingFee:0}', 10),
+    ('req-core.sms.0200.570000.001', 1, 'total_fee', '${(getCharge(1)?getCharge(1).toBigDecimal()*100:0)+(getCharge(2)?getCharge(2).toBigDecimal()*100:0)+(getCharge(3)?getCharge(3).toBigDecimal()*100:0)+(getCharge(4)?getCharge(4).toBigDecimal()*100:0)+(getCharge(5)?getCharge(5).toBigDecimal()*100:0)}', 10),
+    ('req-core.sms.0200.570000.001', 1, 'RMPAD1', '${head.source."!value".substring(4,8).equals("5080")?msg.reservedForIsoUse1?."!value":""}', 15),
+    ('req-core.sms.0200.570000.001', 1, 'TLBFP3', 'FF', 15),
+    ('req-core.sms.0200.570000.001', 1, 'RMPAD2', '${head.source."!value".substring(4,8).equals("5080")?msg.reservedForIsoUse2?."!value":""}', 16),
+    ('req-core.sms.0200.570000.001', 1, 'TLBJSN', '${msg.systemsTraceAuditNumber}', 16),
+    ('req-core.sms.0200.570000.001', 1, 'RMPAD3', '${head.source."!value".substring(4,8).equals("5080")?msg.transmissionDateTime?."!value":""}', 17),
+    ('req-core.sms.0200.570000.001', 1, 'TLBFP1', 'FF', 17),
+    ('req-core.sms.0200.570000.001', 1, 'TLBFP2', 'FC', 18),
+    ('req-core.sms.0200.570000.001', 1, 'TLBF01', '${msg.fromAccount}', 19),
+    ('req-core.sms.0200.570000.001', 1, '!code', 'AXISSYSTEMSDNBHD.000000${tar.dspTransactionCode}', 20),
+    ('req-core.sms.0200.570000.001', 1, 'RMPYID', '${head.source."!value".substring(4,8).equals("5080")?decimalFormat("0",msg.amountTransaction."!value".toBigDecimal()/100):""}', 20),
+    ('req-core.sms.0200.570000.001', 1, 'TLBF02', '${msg.amountTransaction}', 20),
+    ('req-core.sms.0200.570000.001', 1, 'TLBTCD', '${tar.dspTransactionCode}', 20),
+    ('req-core.sms.0200.570000.001', 1, 'TLBTPN', '${head.source."!value".substring(4,8).equals("5080")?msg.reservedForIsoUse3?."!value":"TRF "+msg.additionalDataPrivate?."!value".padRight(76," ").substring(0,12).trim()+" "+getParamValue("bank-name", msg.receivingInstitutionIdentificationCode."!value".trim(), "").padRight(10," ").substring(0,10).trim()+" "+(msg.toAccount?."!value"!=null?msg.toAccount."!value".padLeft(19,"0").substring(7,19):"")}', 20),
+    ('req-core.sms.0200.570000.001', 1, 'TLBF03', '${getAccount(1)}', 21),
+    ('req-core.sms.0200.570000.001', 1, 'TLBF04', '${getCharge(1)?getCharge(1).toBigDecimal()*100:0}', 22),
+    ('req-core.sms.0200.570000.001', 1, 'TLBF05', '${msg.reservedPrivate2."!value".substring(3,6).equals("ALT")?getAccount(2):msg.reservedPrivate2."!value".substring(3,6).equals("AMP")?"":getAccount(2)}', 23),
+    ('req-core.sms.0200.570000.001', 1, 'TLBF09', '${msg.reservedPrivate2."!value".substring(3,6).equals("ALT")?"0":msg.reservedPrivate2."!value".substring(3,6).equals("AMP")?"":getAccount(4)}', 23),
+    ('req-core.sms.0200.570000.001', 1, 'TLBF11', '${head.source."!value".substring(4,7) == "318" ? getParamValueWithError("coa", "gl-pendapatan-layanan", "error:92Unknown coa") : msg.reservedPrivate2."!value".substring(3,6).equals("ALT")? "0":msg.reservedPrivate2."!value".substring(3,6).equals("AMP")? (msg.issuerTraceId."!value"=="LMP" ? "0" : getAccount(1)): "0"}', 23),
+    ('req-core.sms.0200.570000.001', 1, 'TLBF06', '${msg.reservedPrivate2."!value".substring(3,6).equals("ALT")?(getCharge(2)?getCharge(2).toBigDecimal()*100:0):msg.reservedPrivate2."!value".substring(3,6).equals("AMP")?"":getCharge(2)?getCharge(2).toBigDecimal()*100:0}', 24),
+    ('req-core.sms.0200.570000.001', 1, 'TLBF10', '${msg.reservedPrivate2."!value".substring(3,6).equals("ALT")?"0":msg.reservedPrivate2."!value".substring(3,6).equals("AMP")?"":getCharge(4)?getCharge(4).toBigDecimal()*100:0}', 24),
+    ('req-core.sms.0200.570000.001', 1, 'TLBF12', '${head.source."!value".substring(4,7) == "318" ? tar.fee_ibb : msg.reservedPrivate2."!value".substring(3,6).equals("ALT")? "0":msg.reservedPrivate2."!value".substring(3,6).equals("AMP")? (msg.issuerTraceId."!value"=="LMP" ? "0" : getCharge(2).toBigDecimal()*100): "0"}', 24),
+    ('req-core.sms.0200.570000.001', 1, 'TLBF16', '${msg.reservedPrivate2."!value".substring(3,6).equals("ALT") || msg.reservedPrivate2."!value".substring(3,6).equals("BCA")?(msg.amountTransaction."!number"):msg.reservedPrivate2."!value".substring(3,6).equals("AMP")? head.source."!value".substring(4,7) == "318" ? msg.amountTransaction."!value".toBigDecimal()+tar.TLBF12."!value".toBigDecimal():(msg.amountTransaction."!number")+(getCharge(5)?getCharge(5).toBigDecimal()*100:0):getCharge(5)?getCharge(5).toBigDecimal()*100:0}', 24),
+    ('req-core.sms.0200.570000.001', 1, 'TLBF07', '${msg.reservedPrivate2."!value".substring(3,6).equals("ALT")?getAccount(4):msg.reservedPrivate2."!value".substring(3,6).equals("AMP")?"":getAccount(3)}', 25),
+    ('req-core.sms.0200.570000.001', 1, 'TLBF08', '${msg.reservedPrivate2."!value".substring(3,6).equals("ALT")?(getCharge(4)?getCharge(4).toBigDecimal()*100:0):msg.reservedPrivate2."!value".substring(3,6).equals("AMP")?"":getCharge(3)?getCharge(3).toBigDecimal()*100:0}', 26),
+    ('req-core.sms.0200.570000.001', 1, 'TLBF13', '${getAccount(4)}', 28),
+    ('req-core.sms.0200.570000.001', 1, 'TLBF14', '${getCharge(4)?getCharge(4).toBigDecimal()*100:0}', 28),
+    ('req-core.sms.0200.570000.001', 1, 'TLBF15', '${getAccount(5)}', 28),
+    ('req-core.sms.0200.570000.001', 1, 'TLBCUR', 'IDR', 30),
+    ('req-core.sms.0200.570000.001', 1, 'TLBF17', '${msg.reservedPrivate2."!value".substring(3,6).equals("AMP")?tar.total_fee:getCharge(5)?getCharge(5).toBigDecimal()*100:0}', 30),
+    ('req-core.sms.0200.570000.001', 1, 'TLBCIF', '${msg.timeLocalTransaction}', 31),
+    ('req-core.sms.0200.570000.001', 1, 'RMCKC', '${msg.transmissionDateTime}', 34),
+    ('req-core.sms.0200.570000.001', 1, 'RMAPID', '${msg.retrievalReferenceNumber}${(new java.text.SimpleDateFormat("yyMMddHHmmss")).format(new Date())}', 35),
+    ('req-core.sms.0200.570000.001', 1, 'RMADD3', '${head.source."!value".substring(4,7) == "208"||head.source."!value".substring(4,7) == "318"?(msg.reservedIso2==null?"00000000000":msg.reservedIso2."!value").padRight(16," "):head.source."!value".substring(4,8).equals("5080")?msg.fromAccount."!value"+" ".padRight(1," ")+msg.toAccount."!value":msg.track2Data}', 36),
+    ('req-core.sms.0200.570000.001', 1, 'RMSEHS', '${msg.dateLocalTransaction}', 37),
+    ('req-core.sms.0200.570000.001', 1, 'RMPSTC', '${(new java.text.SimpleDateFormat("yyyyMMdd")).format(new Date())}', 41),
+    ('req-core.sms.0200.570000.001', 1, 'TLBFIL', '${tar.dspUserId}:${msg.receivingInstitutionIdentificationCode."!value".trim()}${msg.toAccount}:${msg.retrievalReferenceNumber}', 52),
+    ('req-core.sms.0200.570000.001', 1, 'RMADD2', 'KE ${msg.additionalDataPrivate?."!value".padRight(76," ").substring(0,15).trim()} ${msg.toAccount?."!value"!=null?msg.toAccount."!value".padLeft(19,"0").substring(3,19):""}', null),
+    ('req-core.sms.0200.570000.001', 1, 'RMNAME', 'DR ${msg.additionalDataPrivate?."!value".padRight(76," ").substring(46,61).trim()} ${msg.fromAccount?."!value"!=null?msg.fromAccount."!value".padLeft(19,"0").substring(3,19):""}', null),
+    ('req-core.sms.0200.570000.001', 1, 'RMPYNM', '${msg.cardAcceptorTerminalIdentification?."!value"!=null?msg.cardAcceptorTerminalIdentification."!value".padRight(8," ").substring(0,8):"".padRight(8," ")} ${msg.track2Data?."!value"!=null?msg.track2Data."!value".padRight(16," ").substring(0,16):"".padRight(16," ")} ${msg.retrievalReferenceNumber."!value".padRight(12,"0").substring(0,12)}', null),
+    ('req-core.sms.0200.570000.001', 1, 'TLBDS1', '${head.source."!value".substring(4,8) == "5080" ? "API" : "MOB" } ${msg.cardAcceptorTerminalIdentification}', null),
+    ('req-core.sms.0200.570000.001', 1, 'TLBDS2', 'REF ${msg.retrievalReferenceNumber."!value".padRight(12," ").substring(0,12)}', null),
+    ('req-core.sms.0200.570000.001', 1, 'TLXUFD', '${head.source."!value".substring(4,8) == "2080" ? "NEWMB" : head.source."!value".substring(4,8) == "3180" ? "IBB" : head.source."!value".substring(4,8) == "5080" ? "OPENAPI" : "TRFATM" }', null);
+
+INSERT INTO MWCONFIG.PARAM_MAP (GROUP, NAME, VALUE, TIMESTAMP, MODIFIED_BY) VALUES 
+    ('sms-ibft-konven-code', 'ALT-10', '6394', CURRENT TIMESTAMP, CURRENT USER),
+    ('sms-ibft-konven-code', 'ALT-20', '6395', CURRENT TIMESTAMP, CURRENT USER),
+    ('sms-ibft-konven-code', 'AMP-10', '7140', CURRENT TIMESTAMP, CURRENT USER),
+    ('sms-ibft-konven-code', 'AMP-20', '7141', CURRENT TIMESTAMP, CURRENT USER),
+    ('sms-ibft-konven-code', 'BCA-10', '6390', CURRENT TIMESTAMP, CURRENT USER),
+    ('sms-ibft-konven-code', 'BCA-20', '6391', CURRENT TIMESTAMP, CURRENT USER),
+    ('sms-ibft-konven-code', 'HBR-10', '6392', CURRENT TIMESTAMP, CURRENT USER),
+    ('sms-ibft-konven-code', 'HBR-20', '6393', CURRENT TIMESTAMP, CURRENT USER),
+    ('sms-ibft-konven-code', 'SAT-10', '6388', CURRENT TIMESTAMP, CURRENT USER),
+    ('sms-ibft-konven-code', 'SAT-20', '6389', CURRENT TIMESTAMP, CURRENT USER);
+
+INSERT INTO MWCONFIG.PARAM_MAP (GROUP, NAME, VALUE, DESCRIPTION, SEQ, MODIFIED_BY, TIMESTAMP) VALUES
+    ('core-response-ok', 'AXISSYSTEMSDNBHD.0000007140', '89 F1', NULL, NULL, CURRENT USER, CURRENT TIMESTAMP);
+
+INSERT INTO MWCONFIG.MAPPING (ID, MODULE, MODIFIED_BY, TIMESTAMP) VALUES 
+    ('sms.0200.570000', '[sms]', CURRENT USER, CURRENT TIMESTAMP);
+INSERT INTO MWCONFIG.MAPPING_GROUP (MAPPING_ID, ID, SOURCE, TARGET, INCLUDE_MAPPING_ID, INCLUDE_ID) VALUES 
+    ('sms.0200.570000', 1, '/data', '/data', NULL, NULL),
+    ('sms.0200.570000', 2, '/data/body', '/data/body', NULL, NULL);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES 
+    ('sms.0200.570000', 1, '@', 'copyMessage()', 1),
+    ('sms.0200.570000', 2, '@', 'copyMessage("frontOriginal", ".");', 1),
+    ('sms.0200.570000', 1, 'type', 'iso-8583-itmibft', 2),
+    ('sms.0200.570000', 2, 'messageType', '0200', 2),
+    ('sms.0200.570000', 2, 'systemsTraceAuditNumber', '${msg.systemsTraceAuditNumber} ', 3),
+    ('sms.0200.570000', 2, 'processingCode', '${msg.reservedPrivate2."!value".substring(3,6).equals("AMP")?"65":msg.reservedPrivate2."!value".substring(3,6).equals("BCA")?"66":msg.reservedPrivate2."!value".substring(3,6).equals("HBR")?"67":msg.reservedPrivate2."!value".substring(3,6).equals("SAT")?"68":msg.reservedPrivate2."!value".substring(3,6).equals("ALT")?"69":"99"}${msg.processingCode."!value".substring(2,6)}', 4),
+    ('sms.0200.570000', 2, 'transmissionDateTime', '${getTimeZoneFormat("MMddHHmmss","GMT")}', 5),
+    ('sms.0200.570000', 2, 'merchantType', '6017', 6),
+    ('sms.0200.570000', 2, 'reservedForPrivateUse', '${msg.receivingInstitutionIdentificationCode}', 7),
+    ('sms.0200.570000', 2, 'amountTransactionFee', '${null}', 8),
+    ('sms.0200.570000', 2, 'amountTransactionProcessingFee', '${null}', 8),
+    ('sms.0200.570000', 2, 'reservedPrivate2', '001${msg.reservedPrivate2."!value".substring(0,6).equals("001AMP")?"001MRP":msg.reservedPrivate2."!value".substring(0,6)}000', 8),
+    ('sms.0200.570000', 2, '!sid', '${head.sid}', 9),
+    ('sms.0200.570000', 2, '!flowType', 'P', 10),
+    ('sms.0200.570000', 2, '!destination', 'itm-conn', 11),
+    ('sms.0200.570000', 2, 'dateLocalTransaction', '${new java.text.SimpleDateFormat("MMdd").format(new Date())}', 11),
+    ('sms.0200.570000', 2, 'timeLocalTransaction', '${new java.text.SimpleDateFormat("HHmmss").format(new Date())}', 12),
+    ('sms.0200.570000', 2, 'reservedForIsoUse1', '${null}', 14),
+    ('sms.0200.570000', 2, 'reservedForIsoUse2', '${null}', 14),
+    ('sms.0200.570000', 2, 'reservedForIsoUse3', '${null}', 14),
+    ('sms.0200.570000', 2, '!mid', '${tar.transmissionDateTime."!value"+"."+tar.systemsTraceAuditNumber."!value"}', 99);
+
+
+INSERT INTO MWCONFIG.MAPPING (ID, MODULE, MODIFIED_BY, TIMESTAMP) VALUES 
+    ('sms.0200.570000.itm-conn.0210.650000', '[sms]', CURRENT USER, CURRENT TIMESTAMP);
+INSERT INTO MWCONFIG.MAPPING_GROUP (MAPPING_ID, ID, SOURCE, TARGET, INCLUDE_MAPPING_ID, INCLUDE_ID) VALUES 
+    ('sms.0200.570000.itm-conn.0210.650000', 1, '/data/request/data/body/frontOriginal', '/data', NULL, NULL),
+    ('sms.0200.570000.itm-conn.0210.650000', 2, '/data/body', '/data/body', NULL, NULL);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES 
+    ('sms.0200.570000.itm-conn.0210.650000', 1, '@', 'copyMessage()', 1),
+    ('sms.0200.570000.itm-conn.0210.650000', 2, 'messageType', '0210', 2),
+    ('sms.0200.570000.itm-conn.0210.650000', 2, 'additionalDataPrivate', '${msg.responseCode."!value".equals("00")?msg.additionalDataPrivate :tar.additionalDataPrivate}${head.request.data.source."!value".substring(4,8) != "1080" ? msg.responseCode."!value"!="00"?"000000000000":(msg.issuerTraceId."!value".equals("XMP")?"000000650000":msg.issuerTraceId."!value".equals("LMP")?"000000650000":"000000650000") : ""}', 3),
+    ('sms.0200.570000.itm-conn.0210.650000', 2, 'responseCode', '${getParamValue("error_map|ibft-"+head.request.data.body.frontOriginal.body.reservedPrivate2."!value".substring(3,6).toUpperCase(), msg.responseCode."!value",msg.responseCode."!value")}', 4);

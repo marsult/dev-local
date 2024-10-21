@@ -1,0 +1,141 @@
+
+CREATE COMPUTE MODULE CORE_PAY_FLOW_STORE_REPLY_TO
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		CALL CopyEntireMessage();
+
+		SET OutputRoot.XMLNSC.data.replyToQueue = InputRoot.MQMD.ReplyToQ;
+		SET OutputRoot.XMLNSC.data.replyToManager = InputRoot.MQMD.ReplyToQMgr;
+		RETURN TRUE;
+	END;
+
+	CREATE PROCEDURE CopyEntireMessage() BEGIN
+		SET OutputRoot = InputRoot;
+	END;
+END MODULE;
+
+CREATE FILTER MODULE CORE_PAY_FLOW_REVERSAL_FILTER
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		RETURN Root.XMLNSC.data.ttl = 0;
+	END;
+END MODULE;
+
+CREATE COMPUTE MODULE CORE_PAY_FLOW_SET_REPLY_TO
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		CALL CopyEntireMessage();
+
+		SET OutputRoot.MQMD.ReplyToQ = InputRoot.XMLNSC.data.request.data.replyToQueue;
+		SET OutputRoot.MQMD.ReplyToQMgr = InputRoot.XMLNSC.data.request.data.replyToManager;
+		RETURN TRUE;
+	END;
+
+	CREATE PROCEDURE CopyEntireMessage() BEGIN
+		SET OutputRoot = InputRoot;
+	END;
+END MODULE;
+
+CREATE COMPUTE MODULE CORE_FILTER_ERROR
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		CALL CopyEntireMessage();
+
+		IF InputRoot.XMLNSC.data.error LIKE '%reset by that socket%' THEN
+			PROPAGATE TO TERMINAL 'out1';
+			RETURN FALSE;
+		ELSEIF InputRoot.XMLNSC.data.error LIKE '%EOF%' THEN
+			PROPAGATE TO TERMINAL 'out1';
+			RETURN FALSE;
+		ELSE
+			RETURN TRUE;
+		END IF;
+	END;
+
+	CREATE PROCEDURE CopyEntireMessage() BEGIN
+		SET OutputRoot = InputRoot;
+	END;
+END MODULE;
+
+CREATE COMPUTE MODULE CORE_PAY_FLOW_GET_REPLY_TO
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		CALL CopyEntireMessage();
+
+		SET OutputRoot.MQMD.ReplyToQ = InputRoot.XMLNSC.data.request.data.replyToQueue;
+		SET OutputRoot.MQMD.ReplyToQMgr = InputRoot.XMLNSC.data.request.data.replyToManager;
+		
+		IF (CAST(InputRoot.XMLNSC.data.body.sequenceNumber AS INT) <> CAST(InputRoot.XMLNSC.data.request.data.body.TLBJSN AS INT)) THEN
+			PROPAGATE TO TERMINAL 'out1';
+			RETURN FALSE;
+		END IF;
+
+		RETURN TRUE;
+	END;
+
+	CREATE PROCEDURE CopyEntireMessage() BEGIN
+		SET OutputRoot = InputRoot;
+	END;
+END MODULE;
+
+CREATE COMPUTE MODULE CORE_FLOW_SET_MSGID
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		CALL CopyEntireMessage();
+		
+		DECLARE group CHARACTER;
+		DECLARE fullCharacter CHARACTER;
+		
+		IF LENGTH(InputRoot.XMLNSC.data.group) > 4 THEN
+			SET group = SUBSTRING(InputRoot.XMLNSC.data.body.group FROM 1 FOR 4);
+		ELSE
+			SET group = InputRoot.XMLNSC.data.group;
+		END IF;
+		
+		IF InputRoot.XMLNSC.data.group = 'bds' THEN
+			SET fullCharacter = group || '.'|| SUBSTRING(InputRoot.XMLNSC.data.body.TLBTDT FROM 1 FOR 4) ||'.'|| TRIM(InputRoot.XMLNSC.data.body.TLBJSN) ||'.'|| TRIM(InputRoot.XMLNSC.data.body.TLBID) ;	
+		ELSE
+			IF FIELDTYPE(InputRoot.XMLNSC.data.body.original) IS NOT NULL THEN
+				SET fullCharacter = group || '.'|| TRIM(InputRoot.XMLNSC.data.body.original.retrievalReferenceNumber) ||'.'|| TRIM(InputRoot.XMLNSC.data.body.original.timeLocalTransaction) ;
+			ELSE
+				SET fullCharacter = group || '.'|| TRIM(InputRoot.XMLNSC.data.body.frontOriginal.body.retrievalReferenceNumber) ||'.'|| TRIM(InputRoot.XMLNSC.data.body.frontOriginal.body.timeLocalTransaction) ;
+			end if;
+			
+			--SET fullCharacter = group || '.'|| TRIM(InputRoot.XMLNSC.data.body.frontOriginal.body.retrievalReferenceNumber) ||'.'|| TRIM(InputRoot.XMLNSC.data.body.original.timeLocalTransaction) ;	
+		END IF;
+		
+		SET fullCharacter = fullCharacter || '                        ';
+		SET fullCharacter = SUBSTRING (fullCharacter FROM 1 FOR 24);
+		SET OutputRoot.MQMD.MsgId = CAST(fullCharacter AS BLOB CCSID 1208);
+		SET OutputRoot.XMLNSC.data.MsgId = fullCharacter;
+		
+		--cek isPayment
+		IF FIELDTYPE(InputRoot.XMLNSC.data.isPayment) IS NOT NULL AND InputRoot.XMLNSC.data.isPayment ='true' THEN
+			RETURN TRUE;
+		ELSE
+			PROPAGATE TO TERMINAL 'out1';
+			RETURN FALSE;
+		END IF;		
+	END;
+
+	CREATE PROCEDURE CopyEntireMessage() BEGIN
+		SET OutputRoot = InputRoot;
+	END;
+END MODULE;
+
+---
+CREATE COMPUTE MODULE CORE_FLOW_SET_QUEUE
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot = InputRoot;
+		
+		IF FIELDTYPE(InputRoot.MQMD.ReplyToQ) IS NOT NULL AND (TRIM(InputRoot.MQMD.ReplyToQ) ='BP.WS.PAYMENT.COREREPLY' OR TRIM(InputRoot.MQMD.ReplyToQ) ='OMNI.BP.WS.PAYMENT.COREREPLY') THEN
+			PROPAGATE TO TERMINAL 'out1';
+			RETURN FALSE;
+		ELSE
+			RETURN TRUE;
+		END IF;		
+	END;
+
+END MODULE;
+

@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Broker deployBarfile="/opt/mdw/bar/PAYBROKER/PAYMDW/MDW.bar" deployTimestamp="2024-09-27 04:37:42">
+  <CompiledMessageFlow name="LOG_DB_SOAP_SUBFLOW" type="subflow" deployBarfile="/opt/mdw/bar/PAYBROKER/PAYMDW/MDW.bar" deployTimestamp="2024-09-27 04:37:42">
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#ADD_MQ_HEADER_AFTER.mqdlhDestQMgrName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#ADD_MQ_HEADER_AFTER.mqdlhDestQName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#ADD_MQ_HEADER_AFTER.mqmdReplyToQ" override="Inherit">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#ADD_MQ_HEADER_AFTER.mqmdReplyToQMgr" override="Inherit">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#ADD_MQ_HEADER_AFTER_LOG_FAILURE.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#ADD_MQ_HEADER_AFTER_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#ADD_MQ_HEADER_AFTER_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#ADD_MQ_HEADER_AFTER_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#ADD_MQ_HEADER_AFTER_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#ADD_MQ_HEADER_AFTER_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#ADD_MQ_HEADER_AFTER_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#ADD_MQ_HEADER_AFTER_LOG_OUT.type" override="Body">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#ADD_MQ_HEADER_AFTER_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#ADD_MQ_HEADER_AFTER_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#ADD_MQ_HEADER_AFTER_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#ADD_MQ_HEADER_AFTER_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#ADD_MQ_HEADER_BEFORE.mqdlhDestQMgrName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#ADD_MQ_HEADER_BEFORE.mqdlhDestQName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#ADD_MQ_HEADER_BEFORE.mqmdReplyToQ">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#ADD_MQ_HEADER_BEFORE.mqmdReplyToQMgr">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#ADD_MQ_HEADER_BEFORE_LOG_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#ADD_MQ_HEADER_BEFORE_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#ADD_MQ_HEADER_BEFORE_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#ADD_MQ_HEADER_BEFORE_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#ADD_MQ_HEADER_BEFORE_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#ADD_MQ_HEADER_BEFORE_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#ADD_MQ_HEADER_BEFORE_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#ADD_MQ_HEADER_BEFORE_LOG_OUT.type" override="Root">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#ADD_MQ_HEADER_BEFORE_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#ADD_MQ_HEADER_BEFORE_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#ADD_MQ_HEADER_BEFORE_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#ADD_MQ_HEADER_BEFORE_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#LOG_DB_SOAP.AddRequestToGroup">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#LOG_DB_SOAP.GroupRequestFolderName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#LOG_DB_SOAP.GroupRequestTimeout">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#LOG_DB_SOAP.SSLCertificateLabel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#LOG_DB_SOAP.SSLCipherSpec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#LOG_DB_SOAP.SSLPeerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#LOG_DB_SOAP.channelName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#LOG_DB_SOAP.connection">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#LOG_DB_SOAP.destinationQueueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#LOG_DB_SOAP.listenerPortNumber">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#LOG_DB_SOAP.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#LOG_DB_SOAP.queueManagerHostname">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#LOG_DB_SOAP.queueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#LOG_DB_SOAP.queueName" override="LOG_DB_SOAP">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#LOG_DB_SOAP.replyToQ">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#LOG_DB_SOAP.replyToQMgr">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#LOG_DB_SOAP.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#LOG_DB_SOAP.securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#LOG_DB_SOAP.useSSL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#LOG_DB_SOAP.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#LOG_DB_SOAP_LOG_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#LOG_DB_SOAP_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#LOG_DB_SOAP_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#LOG_DB_SOAP_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#LOG_DB_SOAP_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#LOG_DB_SOAP_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#LOG_DB_SOAP_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#LOG_DB_SOAP_LOG_OUT.type" override="None">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#LOG_DB_SOAP_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#LOG_DB_SOAP_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#LOG_DB_SOAP_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#LOG_DB_SOAP_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#MOVE_LOCAL_ENV.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#MOVE_LOCAL_ENV.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#MOVE_LOCAL_ENV.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#MOVE_LOCAL_ENV_LOG_FAILURE.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#MOVE_LOCAL_ENV_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#MOVE_LOCAL_ENV_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#MOVE_LOCAL_ENV_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#MOVE_LOCAL_ENV_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#MOVE_LOCAL_ENV_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#MOVE_LOCAL_ENV_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#MOVE_LOCAL_ENV_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#MOVE_LOCAL_ENV_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#MOVE_LOCAL_ENV_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#MOVE_LOCAL_ENV_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#MOVE_LOCAL_ENV_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#RESTORE_LOCAL_ENV.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#RESTORE_LOCAL_ENV.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#RESTORE_LOCAL_ENV.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#RESTORE_LOCAL_ENV_LOG_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#RESTORE_LOCAL_ENV_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#RESTORE_LOCAL_ENV_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#RESTORE_LOCAL_ENV_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#RESTORE_LOCAL_ENV_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#RESTORE_LOCAL_ENV_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#RESTORE_LOCAL_ENV_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#RESTORE_LOCAL_ENV_LOG_OUT.type" override="Root">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#RESTORE_LOCAL_ENV_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#RESTORE_LOCAL_ENV_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#RESTORE_LOCAL_ENV_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#RESTORE_LOCAL_ENV_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#SET_SOAP_REQID_JCOM.javaClassLoader">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#SET_SOAP_REQID_JCOM.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#SET_SOAP_REQID_JCOM_LOG_CATCH.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#SET_SOAP_REQID_JCOM_LOG_CATCH.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#SET_SOAP_REQID_JCOM_LOG_CATCH.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#SET_SOAP_REQID_JCOM_LOG_CATCH.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#SET_SOAP_REQID_JCOM_LOG_CATCH.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#SET_SOAP_REQID_JCOM_LOG_CATCH.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#SET_SOAP_REQID_JCOM_LOG_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#SET_SOAP_REQID_JCOM_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#SET_SOAP_REQID_JCOM_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#SET_SOAP_REQID_JCOM_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#SET_SOAP_REQID_JCOM_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#SET_SOAP_REQID_JCOM_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#SET_SOAP_REQID_JCOM_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#SET_SOAP_REQID_JCOM_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#SET_SOAP_REQID_JCOM_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#SET_SOAP_REQID_JCOM_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#SET_SOAP_REQID_JCOM_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_SUBFLOW#SET_SOAP_REQID_JCOM_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+  </CompiledMessageFlow>
+  <CompiledMessageFlow name="LOG_DB_SOAP_REPLY_SUBFLOW" type="subflow" deployBarfile="/opt/mdw/bar/PAYBROKER/PAYMDW/MDW.bar" deployTimestamp="2024-09-27 04:37:42">
+    <ConfigurableProperty uri="LOG_DB_SOAP_REPLY_SUBFLOW#CLEAR_LENV_FAULT.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_REPLY_SUBFLOW#CLEAR_LENV_FAULT.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_REPLY_SUBFLOW#CLEAR_LENV_FAULT.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_REPLY_SUBFLOW#CLEAR_LENV_FAULT_LOG_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_REPLY_SUBFLOW#CLEAR_LENV_FAULT_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_REPLY_SUBFLOW#CLEAR_LENV_FAULT_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_REPLY_SUBFLOW#CLEAR_LENV_FAULT_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_REPLY_SUBFLOW#CLEAR_LENV_FAULT_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_REPLY_SUBFLOW#CLEAR_LENV_FAULT_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_REPLY_SUBFLOW#LOG_DB_SOAP_REPLY.AddRequestToGroup">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_REPLY_SUBFLOW#LOG_DB_SOAP_REPLY.GroupRequestFolderName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_REPLY_SUBFLOW#LOG_DB_SOAP_REPLY.GroupRequestTimeout">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_REPLY_SUBFLOW#LOG_DB_SOAP_REPLY.SSLCertificateLabel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_REPLY_SUBFLOW#LOG_DB_SOAP_REPLY.SSLCipherSpec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_REPLY_SUBFLOW#LOG_DB_SOAP_REPLY.SSLPeerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_REPLY_SUBFLOW#LOG_DB_SOAP_REPLY.channelName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_REPLY_SUBFLOW#LOG_DB_SOAP_REPLY.connection">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_REPLY_SUBFLOW#LOG_DB_SOAP_REPLY.destinationQueueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_REPLY_SUBFLOW#LOG_DB_SOAP_REPLY.listenerPortNumber">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_REPLY_SUBFLOW#LOG_DB_SOAP_REPLY.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_REPLY_SUBFLOW#LOG_DB_SOAP_REPLY.queueManagerHostname">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_REPLY_SUBFLOW#LOG_DB_SOAP_REPLY.queueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_REPLY_SUBFLOW#LOG_DB_SOAP_REPLY.queueName" override="LOG_DB_SOAP_REPLY">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_REPLY_SUBFLOW#LOG_DB_SOAP_REPLY.replyToQ">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_REPLY_SUBFLOW#LOG_DB_SOAP_REPLY.replyToQMgr">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_REPLY_SUBFLOW#LOG_DB_SOAP_REPLY.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_REPLY_SUBFLOW#LOG_DB_SOAP_REPLY.securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_REPLY_SUBFLOW#LOG_DB_SOAP_REPLY.useSSL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_REPLY_SUBFLOW#LOG_DB_SOAP_REPLY.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_REPLY_SUBFLOW#LOG_DB_SOAP_REPLY_LOG_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_REPLY_SUBFLOW#LOG_DB_SOAP_REPLY_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_REPLY_SUBFLOW#LOG_DB_SOAP_REPLY_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_REPLY_SUBFLOW#LOG_DB_SOAP_REPLY_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_REPLY_SUBFLOW#LOG_DB_SOAP_REPLY_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_REPLY_SUBFLOW#LOG_DB_SOAP_REPLY_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_REPLY_SUBFLOW#LOG_DB_SOAP_REPLY_LOG_OUT.level" override="Info">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_REPLY_SUBFLOW#LOG_DB_SOAP_REPLY_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_REPLY_SUBFLOW#LOG_DB_SOAP_REPLY_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_REPLY_SUBFLOW#LOG_DB_SOAP_REPLY_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_REPLY_SUBFLOW#LOG_DB_SOAP_REPLY_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_SOAP_REPLY_SUBFLOW#LOG_DB_SOAP_REPLY_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+  </CompiledMessageFlow>
+</Broker>

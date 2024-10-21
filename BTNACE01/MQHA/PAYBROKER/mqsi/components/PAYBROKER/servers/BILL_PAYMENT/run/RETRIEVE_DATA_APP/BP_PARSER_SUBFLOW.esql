@@ -1,0 +1,36 @@
+CREATE COMPUTE MODULE BP_PARSER_CHECK_TYPE
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot = InputRoot;
+
+		IF InputRoot.XMLNSC.data.parserType =  InputRoot.XMLNSC.data.type THEN
+			PROPAGATE TO TERMINAL 'out1';
+			RETURN FALSE;
+		ELSE 
+			SET OutputRoot.XMLNSC.data.body = null;
+			IF InputRoot.XMLNSC.data.parserType <> 'default' THEN
+				SET OutputRoot.XMLNSC.data.type = InputRoot.XMLNSC.data.parserType;
+				SET OutputRoot.XMLNSC.data.oldType = InputRoot.XMLNSC.data.type;
+			END IF;
+			IF InputRoot.XMLNSC.data.type LIKE '%dsp%' THEN
+					SET OutputRoot.XMLNSC.data.oldType = InputRoot.XMLNSC.data.type;
+					SET OutputRoot.XMLNSC.data.type = 'dsp';
+			END IF;
+	
+			RETURN TRUE;
+		END IF;
+	END;
+END MODULE;
+
+CREATE COMPUTE MODULE BP_PARSER_SET_OLDTYPE
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot = InputRoot;
+
+		IF InputRoot.XMLNSC.data.oldType IS NOT NULL THEN
+			SET OutputRoot.XMLNSC.data.type = InputRoot.XMLNSC.data.oldType;
+		END IF;
+
+		RETURN TRUE;
+	END;
+END MODULE;

@@ -1,0 +1,1166 @@
+2024-10-07 19:40:17,525 [main] INFO id.co.hanoman.StartStopLog BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:null) - BUILD [htcp]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [hcx]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [config]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+Java version IBM Corporation  1.8.0_391
+
+2024-10-07 19:40:18,324 [main] DEBUG id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - RELOAD CONFIG [SVCBROKER:ROUTER_REST_APP:HanomanMappingNode] NULL
+2024-10-07 19:40:18,331 [main] INFO id.co.hanoman.License BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Hanoman WMB Plugin for Bank Tabungan Negara
+2024-10-07 19:40:18,332 [main] INFO id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Parse config [db://##rest-api.${msg.Data.mappingId}.request]
+2024-10-07 19:40:18,333 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - getConfig [db://]
+2024-10-07 19:40:18,333 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - getConfig [db://]
+2024-10-07 19:40:18,333 [main] INFO id.co.hanoman.mbplugin.reload BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - LOADING CONFIG [SVCBROKER:ROUTER_REST_APP:REQ_JSON]  URL [db://]
+2024-10-07 19:40:18,525 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/clients/client]
+2024-10-07 19:40:18,526 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/codex]
+2024-10-07 19:40:18,526 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/db]
+2024-10-07 19:40:18,526 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path-include [config/db] pattern [config/db\[mwlog\]]
+2024-10-07 19:40:18,526 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/dbquery]
+2024-10-07 19:40:18,526 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/dtree-map]
+2024-10-07 19:40:18,527 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/host]
+2024-10-07 19:40:18,527 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/mapping]
+2024-10-07 19:40:18,527 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path-include [config/mapping] pattern [config/mapping\[.*\]\{.*\[rest\].*\}]
+2024-10-07 19:40:18,527 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/param-map]
+2024-10-07 19:40:18,527 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path-include [config/param-map] pattern [config/param-map\[currency-code\|.*\]]
+2024-10-07 19:40:18,527 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path-include [config/param-map] pattern [config/param-map\[coa-sms\|.*\]]
+2024-10-07 19:40:18,528 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path-include [config/param-map] pattern [config/param-map\[account-type\|.*\]]
+2024-10-07 19:40:18,528 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path-include [config/param-map] pattern [config/param-map\[sms\|.*\]]
+2024-10-07 19:40:18,528 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/parser]
+2024-10-07 19:40:18,529 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/ports/port]
+2024-10-07 19:40:18,529 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/routing]
+2024-10-07 19:40:18,529 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/rpg-call]
+2024-10-07 19:40:18,534 [main] INFO id.co.hanoman.License BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Hanoman WMB Plugin for Bank Tabungan Negara
+2024-10-07 19:40:19,266 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Creating new db connection
+2024-10-07 19:40:19,433 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Done creating new db connection
+2024-10-07 19:40:19,740 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - done building config
+2024-10-07 19:40:19,751 [main] DEBUG id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - TODO DONE dtress
+2024-10-07 19:40:19,754 [main] DEBUG id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - TODO DONE config.getList(/*/mapping) 0
+2024-10-07 19:40:20,034 [main] INFO id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Done init config [db://##rest-api.${msg.Data.mappingId}.request]
+2024-10-07 19:40:20,034 [main] INFO id.co.hanoman.StartStopLog BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Node SVCBROKER RESTROUTER com.ibm.broker.plugin.MbMessageFlow@79222060 started.
+2024-10-07 19:40:20,042 [main] DEBUG id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - RELOAD CONFIG [SVCBROKER:ROUTER_REST_APP:HanomanMappingNode] NULL
+2024-10-07 19:40:20,044 [main] INFO id.co.hanoman.License BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - Hanoman WMB Plugin for Bank Tabungan Negara
+2024-10-07 19:40:20,044 [main] INFO id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - Parse config [db://##rest-api.${msg.data.code}.response]
+2024-10-07 19:40:20,044 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - getConfig [db://]
+2024-10-07 19:40:20,044 [main] DEBUG id.co.hanoman.mbplugin.reload BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - REUSE CONFIG [SVCBROKER:ROUTER_REST_APP:RESP_MAPPING]  URL [db://]
+2024-10-07 19:40:20,044 [main] DEBUG id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - TODO DONE dtress
+2024-10-07 19:40:20,045 [main] DEBUG id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - TODO DONE config.getList(/*/mapping) 0
+2024-10-07 19:40:20,067 [main] INFO id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - Done init config [db://##rest-api.${msg.data.code}.response]
+2024-10-07 19:40:20,067 [main] INFO id.co.hanoman.StartStopLog BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - Node SVCBROKER RESTROUTER com.ibm.broker.plugin.MbMessageFlow@79222060 started.
+2024-10-08 15:32:31,474 [main] INFO id.co.hanoman.StartStopLog BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:null) - BUILD [htcp]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [hcx]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [config]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+Java version IBM Corporation  1.8.0_391
+
+2024-10-08 15:32:31,864 [main] DEBUG id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - RELOAD CONFIG [SVCBROKER:ROUTER_REST_APP:HanomanMappingNode] NULL
+2024-10-08 15:32:31,867 [main] INFO id.co.hanoman.License BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Hanoman WMB Plugin for Bank Tabungan Negara
+2024-10-08 15:32:31,867 [main] INFO id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Parse config [db://##rest-api.${msg.Data.mappingId}.request]
+2024-10-08 15:32:31,868 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - getConfig [db://]
+2024-10-08 15:32:31,868 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - getConfig [db://]
+2024-10-08 15:32:31,868 [main] INFO id.co.hanoman.mbplugin.reload BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - LOADING CONFIG [SVCBROKER:ROUTER_REST_APP:REQ_JSON]  URL [db://]
+2024-10-08 15:32:31,938 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/clients/client]
+2024-10-08 15:32:31,938 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/codex]
+2024-10-08 15:32:31,938 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/db]
+2024-10-08 15:32:31,938 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path-include [config/db] pattern [config/db\[mwlog\]]
+2024-10-08 15:32:31,939 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/dbquery]
+2024-10-08 15:32:31,939 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/dtree-map]
+2024-10-08 15:32:31,939 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/host]
+2024-10-08 15:32:31,939 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/mapping]
+2024-10-08 15:32:31,939 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path-include [config/mapping] pattern [config/mapping\[.*\]\{.*\[rest\].*\}]
+2024-10-08 15:32:31,939 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/param-map]
+2024-10-08 15:32:31,939 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path-include [config/param-map] pattern [config/param-map\[currency-code\|.*\]]
+2024-10-08 15:32:31,939 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path-include [config/param-map] pattern [config/param-map\[coa-sms\|.*\]]
+2024-10-08 15:32:31,939 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path-include [config/param-map] pattern [config/param-map\[account-type\|.*\]]
+2024-10-08 15:32:31,939 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path-include [config/param-map] pattern [config/param-map\[sms\|.*\]]
+2024-10-08 15:32:31,939 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/parser]
+2024-10-08 15:32:31,940 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/ports/port]
+2024-10-08 15:32:31,940 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/routing]
+2024-10-08 15:32:31,940 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/rpg-call]
+2024-10-08 15:32:31,943 [main] INFO id.co.hanoman.License BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Hanoman WMB Plugin for Bank Tabungan Negara
+2024-10-08 15:32:32,371 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Creating new db connection
+2024-10-08 15:32:32,472 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Done creating new db connection
+2024-10-08 15:32:32,609 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - done building config
+2024-10-08 15:32:32,617 [main] DEBUG id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - TODO DONE dtress
+2024-10-08 15:32:32,618 [main] DEBUG id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - TODO DONE config.getList(/*/mapping) 0
+2024-10-08 15:32:32,770 [main] INFO id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Done init config [db://##rest-api.${msg.Data.mappingId}.request]
+2024-10-08 15:32:32,770 [main] INFO id.co.hanoman.StartStopLog BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Node SVCBROKER RESTROUTER com.ibm.broker.plugin.MbMessageFlow@c4a4dc30 started.
+2024-10-08 15:32:32,772 [main] DEBUG id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - RELOAD CONFIG [SVCBROKER:ROUTER_REST_APP:HanomanMappingNode] NULL
+2024-10-08 15:32:32,773 [main] INFO id.co.hanoman.License BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - Hanoman WMB Plugin for Bank Tabungan Negara
+2024-10-08 15:32:32,773 [main] INFO id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - Parse config [db://##rest-api.${msg.data.code}.response]
+2024-10-08 15:32:32,773 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - getConfig [db://]
+2024-10-08 15:32:32,773 [main] DEBUG id.co.hanoman.mbplugin.reload BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - REUSE CONFIG [SVCBROKER:ROUTER_REST_APP:RESP_MAPPING]  URL [db://]
+2024-10-08 15:32:32,773 [main] DEBUG id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - TODO DONE dtress
+2024-10-08 15:32:32,773 [main] DEBUG id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - TODO DONE config.getList(/*/mapping) 0
+2024-10-08 15:32:32,784 [main] INFO id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - Done init config [db://##rest-api.${msg.data.code}.response]
+2024-10-08 15:32:32,784 [main] INFO id.co.hanoman.StartStopLog BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - Node SVCBROKER RESTROUTER com.ibm.broker.plugin.MbMessageFlow@c4a4dc30 started.
+2024-10-10 04:12:01,169 [main] INFO id.co.hanoman.StartStopLog BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:null) - BUILD [htcp]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [hcx]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [config]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+Java version IBM Corporation  1.8.0_391
+
+2024-10-10 04:12:02,041 [main] DEBUG id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - RELOAD CONFIG [SVCBROKER:ROUTER_REST_APP:HanomanMappingNode] NULL
+2024-10-10 04:12:02,048 [main] INFO id.co.hanoman.License BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Hanoman WMB Plugin for Bank Tabungan Negara
+2024-10-10 04:12:02,049 [main] INFO id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Parse config [db://##rest-api.${msg.Data.mappingId}.request]
+2024-10-10 04:12:02,050 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - getConfig [db://]
+2024-10-10 04:12:02,050 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - getConfig [db://]
+2024-10-10 04:12:02,050 [main] INFO id.co.hanoman.mbplugin.reload BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - LOADING CONFIG [SVCBROKER:ROUTER_REST_APP:REQ_JSON]  URL [db://]
+2024-10-10 04:12:02,243 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/clients/client]
+2024-10-10 04:12:02,244 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/codex]
+2024-10-10 04:12:02,244 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/db]
+2024-10-10 04:12:02,245 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path-include [config/db] pattern [config/db\[mwlog\]]
+2024-10-10 04:12:02,245 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/dbquery]
+2024-10-10 04:12:02,245 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/dtree-map]
+2024-10-10 04:12:02,245 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/host]
+2024-10-10 04:12:02,245 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/mapping]
+2024-10-10 04:12:02,245 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path-include [config/mapping] pattern [config/mapping\[.*\]\{.*\[rest\].*\}]
+2024-10-10 04:12:02,246 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/param-map]
+2024-10-10 04:12:02,246 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path-include [config/param-map] pattern [config/param-map\[currency-code\|.*\]]
+2024-10-10 04:12:02,246 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path-include [config/param-map] pattern [config/param-map\[coa-sms\|.*\]]
+2024-10-10 04:12:02,246 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path-include [config/param-map] pattern [config/param-map\[account-type\|.*\]]
+2024-10-10 04:12:02,246 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path-include [config/param-map] pattern [config/param-map\[sms\|.*\]]
+2024-10-10 04:12:02,246 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/parser]
+2024-10-10 04:12:02,247 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/ports/port]
+2024-10-10 04:12:02,247 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/routing]
+2024-10-10 04:12:02,248 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/rpg-call]
+2024-10-10 04:12:02,253 [main] INFO id.co.hanoman.License BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Hanoman WMB Plugin for Bank Tabungan Negara
+2024-10-10 04:12:02,975 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Creating new db connection
+2024-10-10 04:12:03,145 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Done creating new db connection
+2024-10-10 04:12:03,512 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - done building config
+2024-10-10 04:12:03,524 [main] DEBUG id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - TODO DONE dtress
+2024-10-10 04:12:03,526 [main] DEBUG id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - TODO DONE config.getList(/*/mapping) 0
+2024-10-10 04:12:03,785 [main] INFO id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Done init config [db://##rest-api.${msg.Data.mappingId}.request]
+2024-10-10 04:12:03,785 [main] INFO id.co.hanoman.StartStopLog BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Node SVCBROKER RESTROUTER com.ibm.broker.plugin.MbMessageFlow@498b2830 started.
+2024-10-10 04:12:03,791 [main] DEBUG id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - RELOAD CONFIG [SVCBROKER:ROUTER_REST_APP:HanomanMappingNode] NULL
+2024-10-10 04:12:03,793 [main] INFO id.co.hanoman.License BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - Hanoman WMB Plugin for Bank Tabungan Negara
+2024-10-10 04:12:03,793 [main] INFO id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - Parse config [db://##rest-api.${msg.data.code}.response]
+2024-10-10 04:12:03,793 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - getConfig [db://]
+2024-10-10 04:12:03,793 [main] DEBUG id.co.hanoman.mbplugin.reload BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - REUSE CONFIG [SVCBROKER:ROUTER_REST_APP:RESP_MAPPING]  URL [db://]
+2024-10-10 04:12:03,793 [main] DEBUG id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - TODO DONE dtress
+2024-10-10 04:12:03,794 [main] DEBUG id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - TODO DONE config.getList(/*/mapping) 0
+2024-10-10 04:12:03,814 [main] INFO id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - Done init config [db://##rest-api.${msg.data.code}.response]
+2024-10-10 04:12:03,814 [main] INFO id.co.hanoman.StartStopLog BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - Node SVCBROKER RESTROUTER com.ibm.broker.plugin.MbMessageFlow@498b2830 started.
+2024-10-10 12:59:55,641 [main] INFO id.co.hanoman.StartStopLog BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:null) - BUILD [htcp]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [hcx]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [config]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+Java version IBM Corporation  1.8.0_391
+
+2024-10-10 12:59:56,420 [main] DEBUG id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - RELOAD CONFIG [SVCBROKER:ROUTER_REST_APP:HanomanMappingNode] NULL
+2024-10-10 12:59:56,428 [main] INFO id.co.hanoman.License BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Hanoman WMB Plugin for Bank Tabungan Negara
+2024-10-10 12:59:56,428 [main] INFO id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Parse config [db://##rest-api.${msg.Data.mappingId}.request]
+2024-10-10 12:59:56,430 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - getConfig [db://]
+2024-10-10 12:59:56,430 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - getConfig [db://]
+2024-10-10 12:59:56,430 [main] INFO id.co.hanoman.mbplugin.reload BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - LOADING CONFIG [SVCBROKER:ROUTER_REST_APP:REQ_JSON]  URL [db://]
+2024-10-10 12:59:56,595 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/clients/client]
+2024-10-10 12:59:56,596 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/codex]
+2024-10-10 12:59:56,596 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/db]
+2024-10-10 12:59:56,597 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path-include [config/db] pattern [config/db\[mwlog\]]
+2024-10-10 12:59:56,597 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/dbquery]
+2024-10-10 12:59:56,597 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/dtree-map]
+2024-10-10 12:59:56,597 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/host]
+2024-10-10 12:59:56,597 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/mapping]
+2024-10-10 12:59:56,598 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path-include [config/mapping] pattern [config/mapping\[.*\]\{.*\[rest\].*\}]
+2024-10-10 12:59:56,598 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/param-map]
+2024-10-10 12:59:56,598 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path-include [config/param-map] pattern [config/param-map\[currency-code\|.*\]]
+2024-10-10 12:59:56,598 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path-include [config/param-map] pattern [config/param-map\[coa-sms\|.*\]]
+2024-10-10 12:59:56,598 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path-include [config/param-map] pattern [config/param-map\[account-type\|.*\]]
+2024-10-10 12:59:56,598 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path-include [config/param-map] pattern [config/param-map\[sms\|.*\]]
+2024-10-10 12:59:56,598 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/parser]
+2024-10-10 12:59:56,599 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/ports/port]
+2024-10-10 12:59:56,599 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/routing]
+2024-10-10 12:59:56,600 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/rpg-call]
+2024-10-10 12:59:56,605 [main] INFO id.co.hanoman.License BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Hanoman WMB Plugin for Bank Tabungan Negara
+2024-10-10 12:59:57,536 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Creating new db connection
+2024-10-10 12:59:57,722 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Done creating new db connection
+2024-10-10 12:59:58,028 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - done building config
+2024-10-10 12:59:58,040 [main] DEBUG id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - TODO DONE dtress
+2024-10-10 12:59:58,041 [main] DEBUG id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - TODO DONE config.getList(/*/mapping) 0
+2024-10-10 12:59:58,308 [main] INFO id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Done init config [db://##rest-api.${msg.Data.mappingId}.request]
+2024-10-10 12:59:58,308 [main] INFO id.co.hanoman.StartStopLog BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Node SVCBROKER RESTROUTER com.ibm.broker.plugin.MbMessageFlow@45971700 started.
+2024-10-10 12:59:58,314 [main] DEBUG id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - RELOAD CONFIG [SVCBROKER:ROUTER_REST_APP:HanomanMappingNode] NULL
+2024-10-10 12:59:58,315 [main] INFO id.co.hanoman.License BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - Hanoman WMB Plugin for Bank Tabungan Negara
+2024-10-10 12:59:58,315 [main] INFO id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - Parse config [db://##rest-api.${msg.data.code}.response]
+2024-10-10 12:59:58,315 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - getConfig [db://]
+2024-10-10 12:59:58,315 [main] DEBUG id.co.hanoman.mbplugin.reload BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - REUSE CONFIG [SVCBROKER:ROUTER_REST_APP:RESP_MAPPING]  URL [db://]
+2024-10-10 12:59:58,315 [main] DEBUG id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - TODO DONE dtress
+2024-10-10 12:59:58,316 [main] DEBUG id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - TODO DONE config.getList(/*/mapping) 0
+2024-10-10 12:59:58,335 [main] INFO id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - Done init config [db://##rest-api.${msg.data.code}.response]
+2024-10-10 12:59:58,335 [main] INFO id.co.hanoman.StartStopLog BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - Node SVCBROKER RESTROUTER com.ibm.broker.plugin.MbMessageFlow@45971700 started.
+2024-10-10 16:05:35,292 [main] INFO id.co.hanoman.StartStopLog BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:null) - BUILD [htcp]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [hcx]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [config]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+Java version IBM Corporation  1.8.0_391
+
+2024-10-10 16:05:35,713 [main] DEBUG id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - RELOAD CONFIG [SVCBROKER:ROUTER_REST_APP:HanomanMappingNode] NULL
+2024-10-10 16:05:35,717 [main] INFO id.co.hanoman.License BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Hanoman WMB Plugin for Bank Tabungan Negara
+2024-10-10 16:05:35,717 [main] INFO id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Parse config [db://##rest-api.${msg.Data.mappingId}.request]
+2024-10-10 16:05:35,718 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - getConfig [db://]
+2024-10-10 16:05:35,718 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - getConfig [db://]
+2024-10-10 16:05:35,718 [main] INFO id.co.hanoman.mbplugin.reload BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - LOADING CONFIG [SVCBROKER:ROUTER_REST_APP:REQ_JSON]  URL [db://]
+2024-10-10 16:05:35,785 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/clients/client]
+2024-10-10 16:05:35,786 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/codex]
+2024-10-10 16:05:35,786 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/db]
+2024-10-10 16:05:35,786 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path-include [config/db] pattern [config/db\[mwlog\]]
+2024-10-10 16:05:35,786 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/dbquery]
+2024-10-10 16:05:35,786 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/dtree-map]
+2024-10-10 16:05:35,786 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/host]
+2024-10-10 16:05:35,786 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/mapping]
+2024-10-10 16:05:35,786 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path-include [config/mapping] pattern [config/mapping\[.*\]\{.*\[rest\].*\}]
+2024-10-10 16:05:35,786 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/param-map]
+2024-10-10 16:05:35,787 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path-include [config/param-map] pattern [config/param-map\[currency-code\|.*\]]
+2024-10-10 16:05:35,787 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path-include [config/param-map] pattern [config/param-map\[coa-sms\|.*\]]
+2024-10-10 16:05:35,787 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path-include [config/param-map] pattern [config/param-map\[account-type\|.*\]]
+2024-10-10 16:05:35,787 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path-include [config/param-map] pattern [config/param-map\[sms\|.*\]]
+2024-10-10 16:05:35,787 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/parser]
+2024-10-10 16:05:35,787 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/ports/port]
+2024-10-10 16:05:35,787 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/routing]
+2024-10-10 16:05:35,787 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/rpg-call]
+2024-10-10 16:05:35,790 [main] INFO id.co.hanoman.License BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Hanoman WMB Plugin for Bank Tabungan Negara
+2024-10-10 16:05:36,196 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Creating new db connection
+2024-10-10 16:05:36,288 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Done creating new db connection
+2024-10-10 16:05:36,343 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - done building config
+2024-10-10 16:05:36,349 [main] DEBUG id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - TODO DONE dtress
+2024-10-10 16:05:36,350 [main] DEBUG id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - TODO DONE config.getList(/*/mapping) 0
+2024-10-10 16:05:36,491 [main] INFO id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Done init config [db://##rest-api.${msg.Data.mappingId}.request]
+2024-10-10 16:05:36,491 [main] INFO id.co.hanoman.StartStopLog BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Node SVCBROKER RESTROUTER com.ibm.broker.plugin.MbMessageFlow@40f7eba0 started.
+2024-10-10 16:05:36,493 [main] DEBUG id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - RELOAD CONFIG [SVCBROKER:ROUTER_REST_APP:HanomanMappingNode] NULL
+2024-10-10 16:05:36,494 [main] INFO id.co.hanoman.License BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - Hanoman WMB Plugin for Bank Tabungan Negara
+2024-10-10 16:05:36,494 [main] INFO id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - Parse config [db://##rest-api.${msg.data.code}.response]
+2024-10-10 16:05:36,494 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - getConfig [db://]
+2024-10-10 16:05:36,494 [main] DEBUG id.co.hanoman.mbplugin.reload BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - REUSE CONFIG [SVCBROKER:ROUTER_REST_APP:RESP_MAPPING]  URL [db://]
+2024-10-10 16:05:36,494 [main] DEBUG id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - TODO DONE dtress
+2024-10-10 16:05:36,494 [main] DEBUG id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - TODO DONE config.getList(/*/mapping) 0
+2024-10-10 16:05:36,503 [main] INFO id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - Done init config [db://##rest-api.${msg.data.code}.response]
+2024-10-10 16:05:36,504 [main] INFO id.co.hanoman.StartStopLog BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - Node SVCBROKER RESTROUTER com.ibm.broker.plugin.MbMessageFlow@40f7eba0 started.
+2024-10-12 12:57:29,207 [main] INFO id.co.hanoman.StartStopLog BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:null) - BUILD [htcp]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [hcx]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [config]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+Java version IBM Corporation  1.8.0_391
+
+2024-10-12 12:57:29,934 [main] DEBUG id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - RELOAD CONFIG [SVCBROKER:ROUTER_REST_APP:HanomanMappingNode] NULL
+2024-10-12 12:57:29,939 [main] INFO id.co.hanoman.License BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Hanoman WMB Plugin for Bank Tabungan Negara
+2024-10-12 12:57:29,939 [main] INFO id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Parse config [db://##rest-api.${msg.Data.mappingId}.request]
+2024-10-12 12:57:29,940 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - getConfig [db://]
+2024-10-12 12:57:29,940 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - getConfig [db://]
+2024-10-12 12:57:29,940 [main] INFO id.co.hanoman.mbplugin.reload BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - LOADING CONFIG [SVCBROKER:ROUTER_REST_APP:REQ_JSON]  URL [db://]
+2024-10-12 12:57:30,063 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/clients/client]
+2024-10-12 12:57:30,063 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/codex]
+2024-10-12 12:57:30,064 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/db]
+2024-10-12 12:57:30,064 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path-include [config/db] pattern [config/db\[mwlog\]]
+2024-10-12 12:57:30,064 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/dbquery]
+2024-10-12 12:57:30,064 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/dtree-map]
+2024-10-12 12:57:30,064 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/host]
+2024-10-12 12:57:30,064 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/mapping]
+2024-10-12 12:57:30,065 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path-include [config/mapping] pattern [config/mapping\[.*\]\{.*\[rest\].*\}]
+2024-10-12 12:57:30,065 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/param-map]
+2024-10-12 12:57:30,065 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path-include [config/param-map] pattern [config/param-map\[currency-code\|.*\]]
+2024-10-12 12:57:30,065 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path-include [config/param-map] pattern [config/param-map\[coa-sms\|.*\]]
+2024-10-12 12:57:30,065 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path-include [config/param-map] pattern [config/param-map\[account-type\|.*\]]
+2024-10-12 12:57:30,065 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path-include [config/param-map] pattern [config/param-map\[sms\|.*\]]
+2024-10-12 12:57:30,065 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/parser]
+2024-10-12 12:57:30,066 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/ports/port]
+2024-10-12 12:57:30,066 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/routing]
+2024-10-12 12:57:30,066 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/rpg-call]
+2024-10-12 12:57:30,071 [main] INFO id.co.hanoman.License BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Hanoman WMB Plugin for Bank Tabungan Negara
+2024-10-12 12:57:30,861 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Creating new db connection
+2024-10-12 12:57:31,060 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Done creating new db connection
+2024-10-12 12:57:31,381 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - done building config
+2024-10-12 12:57:31,391 [main] DEBUG id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - TODO DONE dtress
+2024-10-12 12:57:31,393 [main] DEBUG id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - TODO DONE config.getList(/*/mapping) 0
+2024-10-12 12:57:31,689 [main] INFO id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Done init config [db://##rest-api.${msg.Data.mappingId}.request]
+2024-10-12 12:57:31,689 [main] INFO id.co.hanoman.StartStopLog BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Node SVCBROKER RESTROUTER com.ibm.broker.plugin.MbMessageFlow@c5729490 started.
+2024-10-12 12:57:31,693 [main] DEBUG id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - RELOAD CONFIG [SVCBROKER:ROUTER_REST_APP:HanomanMappingNode] NULL
+2024-10-12 12:57:31,695 [main] INFO id.co.hanoman.License BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - Hanoman WMB Plugin for Bank Tabungan Negara
+2024-10-12 12:57:31,695 [main] INFO id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - Parse config [db://##rest-api.${msg.data.code}.response]
+2024-10-12 12:57:31,695 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - getConfig [db://]
+2024-10-12 12:57:31,695 [main] DEBUG id.co.hanoman.mbplugin.reload BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - REUSE CONFIG [SVCBROKER:ROUTER_REST_APP:RESP_MAPPING]  URL [db://]
+2024-10-12 12:57:31,695 [main] DEBUG id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - TODO DONE dtress
+2024-10-12 12:57:31,696 [main] DEBUG id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - TODO DONE config.getList(/*/mapping) 0
+2024-10-12 12:57:31,714 [main] INFO id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - Done init config [db://##rest-api.${msg.data.code}.response]
+2024-10-12 12:57:31,714 [main] INFO id.co.hanoman.StartStopLog BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - Node SVCBROKER RESTROUTER com.ibm.broker.plugin.MbMessageFlow@c5729490 started.
+2024-10-13 15:57:00,097 [main] INFO id.co.hanoman.StartStopLog BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:null) - BUILD [htcp]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [hcx]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [config]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+Java version IBM Corporation  1.8.0_391
+
+2024-10-13 15:57:00,591 [main] DEBUG id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - RELOAD CONFIG [SVCBROKER:ROUTER_REST_APP:HanomanMappingNode] NULL
+2024-10-13 15:57:00,595 [main] INFO id.co.hanoman.License BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Hanoman WMB Plugin for Bank Tabungan Negara
+2024-10-13 15:57:00,595 [main] INFO id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Parse config [db://##rest-api.${msg.Data.mappingId}.request]
+2024-10-13 15:57:00,596 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - getConfig [db://]
+2024-10-13 15:57:00,596 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - getConfig [db://]
+2024-10-13 15:57:00,596 [main] INFO id.co.hanoman.mbplugin.reload BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - LOADING CONFIG [SVCBROKER:ROUTER_REST_APP:REQ_JSON]  URL [db://]
+2024-10-13 15:57:00,679 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/clients/client]
+2024-10-13 15:57:00,680 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/codex]
+2024-10-13 15:57:00,680 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/db]
+2024-10-13 15:57:00,680 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path-include [config/db] pattern [config/db\[mwlog\]]
+2024-10-13 15:57:00,680 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/dbquery]
+2024-10-13 15:57:00,680 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/dtree-map]
+2024-10-13 15:57:00,681 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/host]
+2024-10-13 15:57:00,681 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/mapping]
+2024-10-13 15:57:00,681 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path-include [config/mapping] pattern [config/mapping\[.*\]\{.*\[rest\].*\}]
+2024-10-13 15:57:00,681 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/param-map]
+2024-10-13 15:57:00,681 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path-include [config/param-map] pattern [config/param-map\[currency-code\|.*\]]
+2024-10-13 15:57:00,681 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path-include [config/param-map] pattern [config/param-map\[coa-sms\|.*\]]
+2024-10-13 15:57:00,681 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path-include [config/param-map] pattern [config/param-map\[account-type\|.*\]]
+2024-10-13 15:57:00,681 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path-include [config/param-map] pattern [config/param-map\[sms\|.*\]]
+2024-10-13 15:57:00,681 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/parser]
+2024-10-13 15:57:00,682 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/ports/port]
+2024-10-13 15:57:00,682 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/routing]
+2024-10-13 15:57:00,682 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/rpg-call]
+2024-10-13 15:57:00,685 [main] INFO id.co.hanoman.License BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Hanoman WMB Plugin for Bank Tabungan Negara
+2024-10-13 15:57:01,175 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Creating new db connection
+2024-10-13 15:57:01,287 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Done creating new db connection
+2024-10-13 15:57:01,426 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - done building config
+2024-10-13 15:57:01,433 [main] DEBUG id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - TODO DONE dtress
+2024-10-13 15:57:01,434 [main] DEBUG id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - TODO DONE config.getList(/*/mapping) 0
+2024-10-13 15:57:01,577 [main] INFO id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Done init config [db://##rest-api.${msg.Data.mappingId}.request]
+2024-10-13 15:57:01,577 [main] INFO id.co.hanoman.StartStopLog BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Node SVCBROKER RESTROUTER com.ibm.broker.plugin.MbMessageFlow@4abacd40 started.
+2024-10-13 15:57:01,580 [main] DEBUG id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - RELOAD CONFIG [SVCBROKER:ROUTER_REST_APP:HanomanMappingNode] NULL
+2024-10-13 15:57:01,581 [main] INFO id.co.hanoman.License BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - Hanoman WMB Plugin for Bank Tabungan Negara
+2024-10-13 15:57:01,581 [main] INFO id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - Parse config [db://##rest-api.${msg.data.code}.response]
+2024-10-13 15:57:01,581 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - getConfig [db://]
+2024-10-13 15:57:01,581 [main] DEBUG id.co.hanoman.mbplugin.reload BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - REUSE CONFIG [SVCBROKER:ROUTER_REST_APP:RESP_MAPPING]  URL [db://]
+2024-10-13 15:57:01,581 [main] DEBUG id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - TODO DONE dtress
+2024-10-13 15:57:01,582 [main] DEBUG id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - TODO DONE config.getList(/*/mapping) 0
+2024-10-13 15:57:01,596 [main] INFO id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - Done init config [db://##rest-api.${msg.data.code}.response]
+2024-10-13 15:57:01,596 [main] INFO id.co.hanoman.StartStopLog BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - Node SVCBROKER RESTROUTER com.ibm.broker.plugin.MbMessageFlow@4abacd40 started.
+2024-10-15 15:45:10,943 [main] INFO id.co.hanoman.StartStopLog BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:null) - BUILD [htcp]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [hcx]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [config]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+Java version IBM Corporation  1.8.0_391
+
+2024-10-15 15:45:11,304 [main] DEBUG id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - RELOAD CONFIG [SVCBROKER:ROUTER_REST_APP:HanomanMappingNode] NULL
+2024-10-15 15:45:11,307 [main] INFO id.co.hanoman.License BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Hanoman WMB Plugin for Bank Tabungan Negara
+2024-10-15 15:45:11,307 [main] INFO id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Parse config [db://##rest-api.${msg.Data.mappingId}.request]
+2024-10-15 15:45:11,308 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - getConfig [db://]
+2024-10-15 15:45:11,308 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - getConfig [db://]
+2024-10-15 15:45:11,308 [main] INFO id.co.hanoman.mbplugin.reload BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - LOADING CONFIG [SVCBROKER:ROUTER_REST_APP:REQ_JSON]  URL [db://]
+2024-10-15 15:45:11,374 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/clients/client]
+2024-10-15 15:45:11,375 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/codex]
+2024-10-15 15:45:11,375 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/db]
+2024-10-15 15:45:11,375 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path-include [config/db] pattern [config/db\[mwlog\]]
+2024-10-15 15:45:11,375 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/dbquery]
+2024-10-15 15:45:11,375 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/dtree-map]
+2024-10-15 15:45:11,375 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/host]
+2024-10-15 15:45:11,375 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/mapping]
+2024-10-15 15:45:11,375 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path-include [config/mapping] pattern [config/mapping\[.*\]\{.*\[rest\].*\}]
+2024-10-15 15:45:11,375 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/param-map]
+2024-10-15 15:45:11,376 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path-include [config/param-map] pattern [config/param-map\[currency-code\|.*\]]
+2024-10-15 15:45:11,376 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path-include [config/param-map] pattern [config/param-map\[coa-sms\|.*\]]
+2024-10-15 15:45:11,376 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path-include [config/param-map] pattern [config/param-map\[account-type\|.*\]]
+2024-10-15 15:45:11,376 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path-include [config/param-map] pattern [config/param-map\[sms\|.*\]]
+2024-10-15 15:45:11,376 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/parser]
+2024-10-15 15:45:11,376 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/ports/port]
+2024-10-15 15:45:11,376 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/routing]
+2024-10-15 15:45:11,376 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/rpg-call]
+2024-10-15 15:45:11,379 [main] INFO id.co.hanoman.License BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Hanoman WMB Plugin for Bank Tabungan Negara
+2024-10-15 15:45:11,805 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Creating new db connection
+2024-10-15 15:45:11,890 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Done creating new db connection
+2024-10-15 15:45:12,016 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - done building config
+2024-10-15 15:45:12,023 [main] DEBUG id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - TODO DONE dtress
+2024-10-15 15:45:12,024 [main] DEBUG id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - TODO DONE config.getList(/*/mapping) 0
+2024-10-15 15:45:12,138 [main] INFO id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Done init config [db://##rest-api.${msg.Data.mappingId}.request]
+2024-10-15 15:45:12,138 [main] INFO id.co.hanoman.StartStopLog BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Node SVCBROKER RESTROUTER com.ibm.broker.plugin.MbMessageFlow@fae26600 started.
+2024-10-15 15:45:12,140 [main] DEBUG id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - RELOAD CONFIG [SVCBROKER:ROUTER_REST_APP:HanomanMappingNode] NULL
+2024-10-15 15:45:12,141 [main] INFO id.co.hanoman.License BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - Hanoman WMB Plugin for Bank Tabungan Negara
+2024-10-15 15:45:12,141 [main] INFO id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - Parse config [db://##rest-api.${msg.data.code}.response]
+2024-10-15 15:45:12,141 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - getConfig [db://]
+2024-10-15 15:45:12,141 [main] DEBUG id.co.hanoman.mbplugin.reload BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - REUSE CONFIG [SVCBROKER:ROUTER_REST_APP:RESP_MAPPING]  URL [db://]
+2024-10-15 15:45:12,141 [main] DEBUG id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - TODO DONE dtress
+2024-10-15 15:45:12,141 [main] DEBUG id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - TODO DONE config.getList(/*/mapping) 0
+2024-10-15 15:45:12,149 [main] INFO id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - Done init config [db://##rest-api.${msg.data.code}.response]
+2024-10-15 15:45:12,149 [main] INFO id.co.hanoman.StartStopLog BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - Node SVCBROKER RESTROUTER com.ibm.broker.plugin.MbMessageFlow@fae26600 started.
+2024-10-19 16:59:18,222 [main] INFO id.co.hanoman.StartStopLog BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:null) - BUILD [htcp]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [hcx]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [config]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+Java version IBM Corporation  1.8.0_391
+
+2024-10-19 16:59:18,648 [main] DEBUG id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - RELOAD CONFIG [SVCBROKER:ROUTER_REST_APP:HanomanMappingNode] NULL
+2024-10-19 16:59:18,651 [main] INFO id.co.hanoman.License BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Hanoman WMB Plugin for Bank Tabungan Negara
+2024-10-19 16:59:18,651 [main] INFO id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Parse config [db://##rest-api.${msg.Data.mappingId}.request]
+2024-10-19 16:59:18,652 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - getConfig [db://]
+2024-10-19 16:59:18,652 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - getConfig [db://]
+2024-10-19 16:59:18,652 [main] INFO id.co.hanoman.mbplugin.reload BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - LOADING CONFIG [SVCBROKER:ROUTER_REST_APP:REQ_JSON]  URL [db://]
+2024-10-19 16:59:18,732 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/clients/client]
+2024-10-19 16:59:18,732 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/codex]
+2024-10-19 16:59:18,733 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/db]
+2024-10-19 16:59:18,733 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path-include [config/db] pattern [config/db\[mwlog\]]
+2024-10-19 16:59:18,733 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/dbquery]
+2024-10-19 16:59:18,733 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/dtree-map]
+2024-10-19 16:59:18,733 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/host]
+2024-10-19 16:59:18,733 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/mapping]
+2024-10-19 16:59:18,733 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path-include [config/mapping] pattern [config/mapping\[.*\]\{.*\[rest\].*\}]
+2024-10-19 16:59:18,733 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/param-map]
+2024-10-19 16:59:18,733 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path-include [config/param-map] pattern [config/param-map\[currency-code\|.*\]]
+2024-10-19 16:59:18,733 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path-include [config/param-map] pattern [config/param-map\[coa-sms\|.*\]]
+2024-10-19 16:59:18,733 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path-include [config/param-map] pattern [config/param-map\[account-type\|.*\]]
+2024-10-19 16:59:18,733 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path-include [config/param-map] pattern [config/param-map\[sms\|.*\]]
+2024-10-19 16:59:18,733 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/parser]
+2024-10-19 16:59:18,734 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/ports/port]
+2024-10-19 16:59:18,734 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/routing]
+2024-10-19 16:59:18,734 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/rpg-call]
+2024-10-19 16:59:18,737 [main] INFO id.co.hanoman.License BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Hanoman WMB Plugin for Bank Tabungan Negara
+2024-10-19 16:59:19,168 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Creating new db connection
+2024-10-19 16:59:19,256 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Done creating new db connection
+2024-10-19 16:59:19,357 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - done building config
+2024-10-19 16:59:19,365 [main] DEBUG id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - TODO DONE dtress
+2024-10-19 16:59:19,366 [main] DEBUG id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - TODO DONE config.getList(/*/mapping) 0
+2024-10-19 16:59:19,523 [main] INFO id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Done init config [db://##rest-api.${msg.Data.mappingId}.request]
+2024-10-19 16:59:19,523 [main] INFO id.co.hanoman.StartStopLog BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Node SVCBROKER RESTROUTER com.ibm.broker.plugin.MbMessageFlow@7e9f3560 started.
+2024-10-19 16:59:19,525 [main] DEBUG id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - RELOAD CONFIG [SVCBROKER:ROUTER_REST_APP:HanomanMappingNode] NULL
+2024-10-19 16:59:19,526 [main] INFO id.co.hanoman.License BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - Hanoman WMB Plugin for Bank Tabungan Negara
+2024-10-19 16:59:19,526 [main] INFO id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - Parse config [db://##rest-api.${msg.data.code}.response]
+2024-10-19 16:59:19,526 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - getConfig [db://]
+2024-10-19 16:59:19,526 [main] DEBUG id.co.hanoman.mbplugin.reload BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - REUSE CONFIG [SVCBROKER:ROUTER_REST_APP:RESP_MAPPING]  URL [db://]
+2024-10-19 16:59:19,526 [main] DEBUG id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - TODO DONE dtress
+2024-10-19 16:59:19,526 [main] DEBUG id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - TODO DONE config.getList(/*/mapping) 0
+2024-10-19 16:59:19,536 [main] INFO id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - Done init config [db://##rest-api.${msg.data.code}.response]
+2024-10-19 16:59:19,536 [main] INFO id.co.hanoman.StartStopLog BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - Node SVCBROKER RESTROUTER com.ibm.broker.plugin.MbMessageFlow@7e9f3560 started.
+2024-10-21 02:42:36,269 [main] INFO id.co.hanoman.StartStopLog BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:null) - BUILD [htcp]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [hcx]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [config]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+Java version IBM Corporation  1.8.0_391
+
+2024-10-21 02:42:36,990 [main] DEBUG id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - RELOAD CONFIG [SVCBROKER:ROUTER_REST_APP:HanomanMappingNode] NULL
+2024-10-21 02:42:36,995 [main] INFO id.co.hanoman.License BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Hanoman WMB Plugin for Bank Tabungan Negara
+2024-10-21 02:42:36,995 [main] INFO id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Parse config [db://##rest-api.${msg.Data.mappingId}.request]
+2024-10-21 02:42:36,996 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - getConfig [db://]
+2024-10-21 02:42:36,996 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - getConfig [db://]
+2024-10-21 02:42:36,996 [main] INFO id.co.hanoman.mbplugin.reload BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - LOADING CONFIG [SVCBROKER:ROUTER_REST_APP:REQ_JSON]  URL [db://]
+2024-10-21 02:42:37,170 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/clients/client]
+2024-10-21 02:42:37,171 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/codex]
+2024-10-21 02:42:37,171 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/db]
+2024-10-21 02:42:37,171 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path-include [config/db] pattern [config/db\[mwlog\]]
+2024-10-21 02:42:37,171 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/dbquery]
+2024-10-21 02:42:37,171 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/dtree-map]
+2024-10-21 02:42:37,172 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/host]
+2024-10-21 02:42:37,172 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/mapping]
+2024-10-21 02:42:37,172 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path-include [config/mapping] pattern [config/mapping\[.*\]\{.*\[rest\].*\}]
+2024-10-21 02:42:37,172 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/param-map]
+2024-10-21 02:42:37,172 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path-include [config/param-map] pattern [config/param-map\[currency-code\|.*\]]
+2024-10-21 02:42:37,172 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path-include [config/param-map] pattern [config/param-map\[coa-sms\|.*\]]
+2024-10-21 02:42:37,172 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path-include [config/param-map] pattern [config/param-map\[account-type\|.*\]]
+2024-10-21 02:42:37,173 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path-include [config/param-map] pattern [config/param-map\[sms\|.*\]]
+2024-10-21 02:42:37,173 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/parser]
+2024-10-21 02:42:37,174 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/ports/port]
+2024-10-21 02:42:37,174 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/routing]
+2024-10-21 02:42:37,174 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/rpg-call]
+2024-10-21 02:42:37,179 [main] INFO id.co.hanoman.License BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Hanoman WMB Plugin for Bank Tabungan Negara
+2024-10-21 02:42:37,866 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Creating new db connection
+2024-10-21 02:42:38,004 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Done creating new db connection
+2024-10-21 02:42:38,121 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - done building config
+2024-10-21 02:42:38,129 [main] DEBUG id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - TODO DONE dtress
+2024-10-21 02:42:38,131 [main] DEBUG id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - TODO DONE config.getList(/*/mapping) 0
+2024-10-21 02:42:38,295 [main] INFO id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Done init config [db://##rest-api.${msg.Data.mappingId}.request]
+2024-10-21 02:42:38,295 [main] INFO id.co.hanoman.StartStopLog BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Node SVCBROKER RESTROUTER com.ibm.broker.plugin.MbMessageFlow@9b96ab10 started.
+2024-10-21 02:42:38,298 [main] DEBUG id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - RELOAD CONFIG [SVCBROKER:ROUTER_REST_APP:HanomanMappingNode] NULL
+2024-10-21 02:42:38,301 [main] INFO id.co.hanoman.License BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - Hanoman WMB Plugin for Bank Tabungan Negara
+2024-10-21 02:42:38,301 [main] INFO id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - Parse config [db://##rest-api.${msg.data.code}.response]
+2024-10-21 02:42:38,301 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - getConfig [db://]
+2024-10-21 02:42:38,301 [main] DEBUG id.co.hanoman.mbplugin.reload BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - REUSE CONFIG [SVCBROKER:ROUTER_REST_APP:RESP_MAPPING]  URL [db://]
+2024-10-21 02:42:38,301 [main] DEBUG id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - TODO DONE dtress
+2024-10-21 02:42:38,301 [main] DEBUG id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - TODO DONE config.getList(/*/mapping) 0
+2024-10-21 02:42:38,330 [main] INFO id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - Done init config [db://##rest-api.${msg.data.code}.response]
+2024-10-21 02:42:38,331 [main] INFO id.co.hanoman.StartStopLog BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - Node SVCBROKER RESTROUTER com.ibm.broker.plugin.MbMessageFlow@9b96ab10 started.
+2024-10-21 02:51:15,639 [main] INFO id.co.hanoman.StartStopLog BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:null) - BUILD [htcp]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [hcx]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+BUILD [config]
+    35dc7bd  2024-07-18 22:02:32  fix decode len charset=BINARY
+    272b4c6  2024-07-18 11:42:10  fix decode charset=BINARY
+    c149318  2024-07-18 10:35:00  fix encode charset=BINARY
+    1238f64  2024-07-18 10:08:55  fix init padChar for BINARY
+    ef3c681  2024-07-17 16:08:29  support charset BINARY for type llvar or lllvar
+    d636827  2024-07-17 16:07:10  format StringCodex.java
+    3805bf9  2024-01-03 11:53:23  test skema UAT
+    2fd9276  2023-12-21 10:36:59  add scheme master slave
+    e8bc6c6  2023-11-28 09:30:37  test SIT
+    7f39e64  2023-11-24 17:03:13  test SIT
+    9eb60e7  2023-11-21 16:13:22  change config to jenkins BTN
+    abcb0bf  2023-10-09 06:49:31  update builders
+    5f0ea0c  2023-10-09 06:32:50  remove git reset --hard
+    890e469  2023-10-08 07:16:54  fix cicd
+    4a85ad3  2023-09-27 18:14:54  update cicd ace-builder to 12.0.5.0
+    6da1c1c  2023-09-27 15:06:53  update cicd ace-builder
+    aab7c68  2023-09-27 11:24:10  change cicd par dest folder
+    180bb1d  2023-09-27 11:24:10  add cicd
+    b5b53a2  2022-08-27 13:08:30  fix tcp client sock id
+    5cb972d  2022-08-26 15:42:39  build
+Java version IBM Corporation  1.8.0_391
+
+2024-10-21 02:51:16,339 [main] DEBUG id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - RELOAD CONFIG [SVCBROKER:ROUTER_REST_APP:HanomanMappingNode] NULL
+2024-10-21 02:51:16,346 [main] INFO id.co.hanoman.License BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Hanoman WMB Plugin for Bank Tabungan Negara
+2024-10-21 02:51:16,346 [main] INFO id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Parse config [db://##rest-api.${msg.Data.mappingId}.request]
+2024-10-21 02:51:16,348 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - getConfig [db://]
+2024-10-21 02:51:16,348 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - getConfig [db://]
+2024-10-21 02:51:16,348 [main] INFO id.co.hanoman.mbplugin.reload BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - LOADING CONFIG [SVCBROKER:ROUTER_REST_APP:REQ_JSON]  URL [db://]
+2024-10-21 02:51:16,515 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/clients/client]
+2024-10-21 02:51:16,516 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/codex]
+2024-10-21 02:51:16,516 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/db]
+2024-10-21 02:51:16,516 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path-include [config/db] pattern [config/db\[mwlog\]]
+2024-10-21 02:51:16,516 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/dbquery]
+2024-10-21 02:51:16,516 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/dtree-map]
+2024-10-21 02:51:16,517 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/host]
+2024-10-21 02:51:16,517 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/mapping]
+2024-10-21 02:51:16,517 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path-include [config/mapping] pattern [config/mapping\[.*\]\{.*\[rest\].*\}]
+2024-10-21 02:51:16,517 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/param-map]
+2024-10-21 02:51:16,517 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path-include [config/param-map] pattern [config/param-map\[currency-code\|.*\]]
+2024-10-21 02:51:16,517 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path-include [config/param-map] pattern [config/param-map\[coa-sms\|.*\]]
+2024-10-21 02:51:16,517 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path-include [config/param-map] pattern [config/param-map\[account-type\|.*\]]
+2024-10-21 02:51:16,517 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path-include [config/param-map] pattern [config/param-map\[sms\|.*\]]
+2024-10-21 02:51:16,517 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/parser]
+2024-10-21 02:51:16,518 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/ports/port]
+2024-10-21 02:51:16,518 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/routing]
+2024-10-21 02:51:16,518 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Config path path [config/rpg-call]
+2024-10-21 02:51:16,524 [main] INFO id.co.hanoman.License BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Hanoman WMB Plugin for Bank Tabungan Negara
+2024-10-21 02:51:17,288 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Creating new db connection
+2024-10-21 02:51:17,457 [main] DEBUG id.co.hanoman.config.db.DBPool BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Done creating new db connection
+2024-10-21 02:51:17,669 [main] DEBUG id.co.hanoman.config.db.ConfigDb BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - done building config
+2024-10-21 02:51:17,677 [main] DEBUG id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - TODO DONE dtress
+2024-10-21 02:51:17,679 [main] DEBUG id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - TODO DONE config.getList(/*/mapping) 0
+2024-10-21 02:51:17,845 [main] INFO id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Done init config [db://##rest-api.${msg.Data.mappingId}.request]
+2024-10-21 02:51:17,845 [main] INFO id.co.hanoman.StartStopLog BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:REQ_JSON) - Node SVCBROKER RESTROUTER com.ibm.broker.plugin.MbMessageFlow@9b7d2030 started.
+2024-10-21 02:51:17,849 [main] DEBUG id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - RELOAD CONFIG [SVCBROKER:ROUTER_REST_APP:HanomanMappingNode] NULL
+2024-10-21 02:51:17,849 [main] INFO id.co.hanoman.License BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - Hanoman WMB Plugin for Bank Tabungan Negara
+2024-10-21 02:51:17,850 [main] INFO id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - Parse config [db://##rest-api.${msg.data.code}.response]
+2024-10-21 02:51:17,850 [main] DEBUG id.co.hanoman.config.ConfigFactory BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - getConfig [db://]
+2024-10-21 02:51:17,850 [main] DEBUG id.co.hanoman.mbplugin.reload BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - REUSE CONFIG [SVCBROKER:ROUTER_REST_APP:RESP_MAPPING]  URL [db://]
+2024-10-21 02:51:17,850 [main] DEBUG id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - TODO DONE dtress
+2024-10-21 02:51:17,850 [main] DEBUG id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - TODO DONE config.getList(/*/mapping) 0
+2024-10-21 02:51:17,863 [main] INFO id.co.hanoman.mbplugin.MappingNode BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - Done init config [db://##rest-api.${msg.data.code}.response]
+2024-10-21 02:51:17,863 [main] INFO id.co.hanoman.StartStopLog BROKER:(SVCBROKER:RESTROUTER:ROUTER_REST_APP:RESP_MAPPING) - Node SVCBROKER RESTROUTER com.ibm.broker.plugin.MbMessageFlow@9b7d2030 started.

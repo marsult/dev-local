@@ -1,0 +1,1153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Broker deployBarfile="/opt/mdw/bar/ITMBROKER/ITMCORE1/CORE.bar" deployTimestamp="2024-08-09 17:34:43">
+  <CompiledApplication>
+    <ConfigurableProperty uri="startMode">
+    </ConfigurableProperty>
+  </CompiledApplication>
+  <CompiledMessageFlow name="TIME_REQUEST_CHECK_FLOW" type="subflow" deployBarfile="/opt/mdw/bar/ITMBROKER/ITMCORE1/CORE.bar" deployTimestamp="2024-08-09 17:34:43">
+    <ConfigurableProperty uri="TIME_REQUEST_CHECK_FLOW#REPLY_TO.SSLCertificateLabel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TIME_REQUEST_CHECK_FLOW#REPLY_TO.SSLCipherSpec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TIME_REQUEST_CHECK_FLOW#REPLY_TO.SSLPeerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TIME_REQUEST_CHECK_FLOW#REPLY_TO.channelName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TIME_REQUEST_CHECK_FLOW#REPLY_TO.connection">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TIME_REQUEST_CHECK_FLOW#REPLY_TO.destinationQueueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TIME_REQUEST_CHECK_FLOW#REPLY_TO.listenerPortNumber">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TIME_REQUEST_CHECK_FLOW#REPLY_TO.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TIME_REQUEST_CHECK_FLOW#REPLY_TO.queueManagerHostname">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TIME_REQUEST_CHECK_FLOW#REPLY_TO.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TIME_REQUEST_CHECK_FLOW#REPLY_TO.useSSL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TIME_REQUEST_CHECK_FLOW#REPLY_TO.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TIME_REQUEST_CHECK_FLOW#REPLY_TO_LOG_FAIL.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TIME_REQUEST_CHECK_FLOW#REPLY_TO_LOG_FAIL.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TIME_REQUEST_CHECK_FLOW#REPLY_TO_LOG_FAIL.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TIME_REQUEST_CHECK_FLOW#REPLY_TO_LOG_FAIL.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TIME_REQUEST_CHECK_FLOW#REPLY_TO_LOG_FAIL.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TIME_REQUEST_CHECK_FLOW#REPLY_TO_LOG_FAIL.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TIME_REQUEST_CHECK_FLOW#REPLY_TO_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TIME_REQUEST_CHECK_FLOW#REPLY_TO_LOG_OUT.type" override="None">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TIME_REQUEST_CHECK_FLOW#REPLY_TO_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TIME_REQUEST_CHECK_FLOW#REPLY_TO_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TIME_REQUEST_CHECK_FLOW#REPLY_TO_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TIME_REQUEST_CHECK_FLOW#REPLY_TO_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TIME_REQUEST_CHECK_FLOW#TIME_REQUEST_CHECK_FILTER.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TIME_REQUEST_CHECK_FLOW#TIME_REQUEST_CHECK_FILTER.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TIME_REQUEST_CHECK_FLOW#TIME_REQUEST_CHECK_FILTER_DUMP.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TIME_REQUEST_CHECK_FLOW#TIME_REQUEST_CHECK_FILTER_DUMP.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TIME_REQUEST_CHECK_FLOW#TIME_REQUEST_CHECK_FILTER_DUMP.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TIME_REQUEST_CHECK_FLOW#TIME_REQUEST_CHECK_FILTER_DUMP.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TIME_REQUEST_CHECK_FLOW#TIME_REQUEST_CHECK_FILTER_DUMP.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TIME_REQUEST_CHECK_FLOW#TIME_REQUEST_CHECK_FILTER_DUMP.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TIME_REQUEST_CHECK_FLOW#TIME_REQUEST_CHECK_FILTER_TRUE.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TIME_REQUEST_CHECK_FLOW#TIME_REQUEST_CHECK_FILTER_TRUE.type" override="None">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TIME_REQUEST_CHECK_FLOW#TIME_REQUEST_CHECK_FILTER_TRUE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TIME_REQUEST_CHECK_FLOW#TIME_REQUEST_CHECK_FILTER_TRUE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TIME_REQUEST_CHECK_FLOW#TIME_REQUEST_CHECK_FILTER_TRUE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TIME_REQUEST_CHECK_FLOW#TIME_REQUEST_CHECK_FILTER_TRUE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TIME_REQUEST_CHECK_FLOW#TIME_REQUEST_CHECK_MAP.config" override="db://##time-request-check">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TIME_REQUEST_CHECK_FLOW#TIME_REQUEST_CHECK_MAP_LOG_ERROR.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TIME_REQUEST_CHECK_FLOW#TIME_REQUEST_CHECK_MAP_LOG_ERROR.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TIME_REQUEST_CHECK_FLOW#TIME_REQUEST_CHECK_MAP_LOG_ERROR.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TIME_REQUEST_CHECK_FLOW#TIME_REQUEST_CHECK_MAP_LOG_ERROR.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TIME_REQUEST_CHECK_FLOW#TIME_REQUEST_CHECK_MAP_LOG_ERROR.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TIME_REQUEST_CHECK_FLOW#TIME_REQUEST_CHECK_MAP_LOG_ERROR.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TIME_REQUEST_CHECK_FLOW#TIME_REQUEST_CHECK_MAP_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TIME_REQUEST_CHECK_FLOW#TIME_REQUEST_CHECK_MAP_LOG_OUT.type" override="Body">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TIME_REQUEST_CHECK_FLOW#TIME_REQUEST_CHECK_MAP_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TIME_REQUEST_CHECK_FLOW#TIME_REQUEST_CHECK_MAP_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TIME_REQUEST_CHECK_FLOW#TIME_REQUEST_CHECK_MAP_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TIME_REQUEST_CHECK_FLOW#TIME_REQUEST_CHECK_MAP_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+  </CompiledMessageFlow>
+  <CompiledMessageFlow name="STORE_PAY_WS_CORE_REQ" type="subflow" deployBarfile="/opt/mdw/bar/ITMBROKER/ITMCORE1/CORE.bar" deployTimestamp="2024-08-09 17:34:43">
+    <ConfigurableProperty uri="STORE_PAY_WS_CORE_REQ#ADD_MQHEADER_AFTER.mqdlhDestQMgrName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_CORE_REQ#ADD_MQHEADER_AFTER.mqdlhDestQName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_CORE_REQ#ADD_MQHEADER_AFTER.mqmdReplyToQ" override="Inherit">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_CORE_REQ#ADD_MQHEADER_AFTER.mqmdReplyToQMgr" override="Inherit">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_CORE_REQ#ADD_MQHEADER_AFTER_LOG_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_CORE_REQ#ADD_MQHEADER_AFTER_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_CORE_REQ#ADD_MQHEADER_AFTER_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_CORE_REQ#ADD_MQHEADER_AFTER_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_CORE_REQ#ADD_MQHEADER_AFTER_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_CORE_REQ#ADD_MQHEADER_AFTER_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_CORE_REQ#ADD_MQHEADER_AFTER_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_CORE_REQ#ADD_MQHEADER_AFTER_LOG_OUT.type" override="Root">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_CORE_REQ#ADD_MQHEADER_AFTER_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_CORE_REQ#ADD_MQHEADER_AFTER_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_CORE_REQ#ADD_MQHEADER_AFTER_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_CORE_REQ#ADD_MQHEADER_AFTER_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_CORE_REQ#ADD_MQHEADER_BEFORE.mqdlhDestQMgrName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_CORE_REQ#ADD_MQHEADER_BEFORE.mqdlhDestQName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_CORE_REQ#ADD_MQHEADER_BEFORE.mqmdReplyToQ" override="Inherit">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_CORE_REQ#ADD_MQHEADER_BEFORE.mqmdReplyToQMgr" override="Inherit">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_CORE_REQ#ADD_MQHEADER_BEFORE_LOG_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_CORE_REQ#ADD_MQHEADER_BEFORE_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_CORE_REQ#ADD_MQHEADER_BEFORE_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_CORE_REQ#ADD_MQHEADER_BEFORE_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_CORE_REQ#ADD_MQHEADER_BEFORE_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_CORE_REQ#ADD_MQHEADER_BEFORE_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_CORE_REQ#ADD_MQHEADER_BEFORE_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_CORE_REQ#ADD_MQHEADER_BEFORE_LOG_OUT.type" override="Root">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_CORE_REQ#ADD_MQHEADER_BEFORE_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_CORE_REQ#ADD_MQHEADER_BEFORE_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_CORE_REQ#ADD_MQHEADER_BEFORE_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_CORE_REQ#ADD_MQHEADER_BEFORE_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_CORE_REQ#PAY_CORE_REQ_LOG_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_CORE_REQ#PAY_CORE_REQ_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_CORE_REQ#PAY_CORE_REQ_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_CORE_REQ#PAY_CORE_REQ_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_CORE_REQ#PAY_CORE_REQ_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_CORE_REQ#PAY_CORE_REQ_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_CORE_REQ#PAY_CORE_REQ_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_CORE_REQ#PAY_CORE_REQ_LOG_OUT.type" override="None">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_CORE_REQ#PAY_CORE_REQ_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_CORE_REQ#PAY_CORE_REQ_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_CORE_REQ#PAY_CORE_REQ_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_CORE_REQ#PAY_CORE_REQ_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_CORE_REQ#PAY_WS_CORE_REQ.AddRequestToGroup">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_CORE_REQ#PAY_WS_CORE_REQ.GroupRequestFolderName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_CORE_REQ#PAY_WS_CORE_REQ.GroupRequestTimeout">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_CORE_REQ#PAY_WS_CORE_REQ.SSLCertificateLabel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_CORE_REQ#PAY_WS_CORE_REQ.SSLCipherSpec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_CORE_REQ#PAY_WS_CORE_REQ.SSLPeerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_CORE_REQ#PAY_WS_CORE_REQ.channelName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_CORE_REQ#PAY_WS_CORE_REQ.connection">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_CORE_REQ#PAY_WS_CORE_REQ.destinationQueueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_CORE_REQ#PAY_WS_CORE_REQ.listenerPortNumber">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_CORE_REQ#PAY_WS_CORE_REQ.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_CORE_REQ#PAY_WS_CORE_REQ.queueManagerHostname">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_CORE_REQ#PAY_WS_CORE_REQ.queueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_CORE_REQ#PAY_WS_CORE_REQ.queueName" override="PAY_WS_CORE_REQ">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_CORE_REQ#PAY_WS_CORE_REQ.replyToQ">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_CORE_REQ#PAY_WS_CORE_REQ.replyToQMgr">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_CORE_REQ#PAY_WS_CORE_REQ.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_CORE_REQ#PAY_WS_CORE_REQ.securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_CORE_REQ#PAY_WS_CORE_REQ.useSSL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_CORE_REQ#PAY_WS_CORE_REQ.validateMaster">
+    </ConfigurableProperty>
+  </CompiledMessageFlow>
+  <CompiledMessageFlow name="CORE_FLOW" deployBarfile="/opt/mdw/bar/ITMBROKER/ITMCORE1/CORE.bar" deployTimestamp="2024-08-09 17:34:43">
+    <ConfigurableProperty uri="CORE_FLOW#ADD_MQHEADER.mqdlhDestQMgrName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#ADD_MQHEADER.mqdlhDestQName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#ADD_MQHEADER.mqmdReplyToQ">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#ADD_MQHEADER.mqmdReplyToQMgr">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#ADD_MQHEADER1.mqdlhDestQMgrName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#ADD_MQHEADER1.mqdlhDestQName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#ADD_MQHEADER1.mqmdReplyToQ">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#ADD_MQHEADER1.mqmdReplyToQMgr">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#ADD_MQHEADER2.mqdlhDestQMgrName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#ADD_MQHEADER2.mqdlhDestQName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#ADD_MQHEADER2.mqmdReplyToQ">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#ADD_MQHEADER2.mqmdReplyToQMgr">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#ADD_MQHEADER_LOG_FAIL.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#ADD_MQHEADER_LOG_FAIL.type" override="Root">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#ADD_MQHEADER_LOG_FAIL.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#ADD_MQHEADER_LOG_FAIL.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#ADD_MQHEADER_LOG_FAIL.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#ADD_MQHEADER_LOG_FAIL.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#ADD_MQHEADER_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#ADD_MQHEADER_LOG_OUT.type" override="Root">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#ADD_MQHEADER_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#ADD_MQHEADER_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#ADD_MQHEADER_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#ADD_MQHEADER_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#BEFORE_SET_MSGID_LOG.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#BEFORE_SET_MSGID_LOG.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#BEFORE_SET_MSGID_LOG.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#BEFORE_SET_MSGID_LOG.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#BEFORE_SET_MSGID_LOG.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#BEFORE_SET_MSGID_LOG.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CHECK_ISPAYMENT_LOG_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CHECK_ISPAYMENT_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CHECK_ISPAYMENT_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CHECK_ISPAYMENT_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CHECK_ISPAYMENT_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CHECK_ISPAYMENT_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CHECK_ISPAYMENT_LOG_FALSE.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CHECK_ISPAYMENT_LOG_FALSE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CHECK_ISPAYMENT_LOG_FALSE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CHECK_ISPAYMENT_LOG_FALSE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CHECK_ISPAYMENT_LOG_FALSE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CHECK_ISPAYMENT_LOG_FALSE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CHECK_ISPAYMENT_LOG_TRUE.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CHECK_ISPAYMENT_LOG_TRUE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CHECK_ISPAYMENT_LOG_TRUE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CHECK_ISPAYMENT_LOG_TRUE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CHECK_ISPAYMENT_LOG_TRUE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CHECK_ISPAYMENT_LOG_TRUE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_CTRL.AddRequestToGroup">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_CTRL.GroupRequestFolderName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_CTRL.GroupRequestTimeout">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_CTRL.SSLCertificateLabel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_CTRL.SSLCipherSpec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_CTRL.SSLPeerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_CTRL.channelName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_CTRL.connection">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_CTRL.destinationQueueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_CTRL.listenerPortNumber">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_CTRL.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_CTRL.queueManagerHostname">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_CTRL.queueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_CTRL.queueName" override="CORE_CLIENT_CTRL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_CTRL.replyToQ">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_CTRL.replyToQMgr">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_CTRL.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_CTRL.securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_CTRL.useSSL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_CTRL.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_IN.config" override="db://##core-client">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_IN_DB_ERROR_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_IN_DB_ERROR_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_IN_DB_ERROR_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_IN_DB_ERROR_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_IN_DB_ERROR_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_IN_DB_ERROR_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_IN_LOG_CTRL.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_IN_LOG_CTRL.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_IN_LOG_CTRL.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_IN_LOG_CTRL.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_IN_LOG_CTRL.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_IN_LOG_CTRL.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_IN_LOG_FAIL.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_IN_LOG_FAIL.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_IN_LOG_FAIL.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_IN_LOG_FAIL.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_IN_LOG_FAIL.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_IN_LOG_FAIL.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_IN_LOG_OUT.level" override="Info">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_IN_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_IN_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_IN_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_IN_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_IN_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_OUT.config" override="db://##core-client">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_OUT_DB_ERROR.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_OUT_DB_ERROR.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_OUT_DB_ERROR.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_OUT_DB_ERROR.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_OUT_DB_ERROR.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_OUT_DB_ERROR.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_OUT_LOG_CATCH.level" override="Warning">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_OUT_LOG_CATCH.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_OUT_LOG_CATCH.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_OUT_LOG_CATCH.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_OUT_LOG_CATCH.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_OUT_LOG_CATCH.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_OUT_LOG_FAIL.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_OUT_LOG_FAIL.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_OUT_LOG_FAIL.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_OUT_LOG_FAIL.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_OUT_LOG_FAIL.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_OUT_LOG_FAIL.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_OUT_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_OUT_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_OUT_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_OUT_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_OUT_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_OUT_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_OUT_MAP_ERROR.config" override="db://##abcs-res-conFail-F2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_OUT_MAP_ERROR_FAIL_OUT.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_OUT_MAP_ERROR_FAIL_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_OUT_MAP_ERROR_FAIL_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_OUT_MAP_ERROR_FAIL_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_OUT_MAP_ERROR_FAIL_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_OUT_MAP_ERROR_FAIL_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_OUT_MAP_ERROR_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_OUT_MAP_ERROR_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_OUT_MAP_ERROR_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_OUT_MAP_ERROR_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_OUT_MAP_ERROR_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLIENT_OUT_MAP_ERROR_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLOSE.SSLCertificateLabel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLOSE.SSLCipherSpec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLOSE.SSLPeerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLOSE.additionalInstances" override="10">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLOSE.channelName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLOSE.componentLevel" override="node">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLOSE.connection">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLOSE.destinationQueueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLOSE.listenerPortNumber">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLOSE.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLOSE.queueManagerHostname">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLOSE.queueName" override="CORE_CLOSE">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLOSE.resetBrowseTimeout">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLOSE.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLOSE.securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLOSE.serializationToken">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLOSE.topicProperty">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLOSE.useSSL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLOSE.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLOSE_LOG_CATCH.level" override="Warning">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLOSE_LOG_CATCH.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLOSE_LOG_CATCH.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLOSE_LOG_CATCH.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLOSE_LOG_CATCH.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLOSE_LOG_CATCH.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLOSE_LOG_FAIL.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLOSE_LOG_FAIL.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLOSE_LOG_FAIL.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLOSE_LOG_FAIL.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLOSE_LOG_FAIL.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLOSE_LOG_FAIL.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLOSE_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLOSE_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLOSE_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLOSE_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLOSE_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_CLOSE_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_FILTER_ERROR.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_FILTER_ERROR.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_FILTER_ERROR.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_FILTER_ERROR_LOG_DUMP.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_FILTER_ERROR_LOG_DUMP.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_FILTER_ERROR_LOG_DUMP.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_FILTER_ERROR_LOG_DUMP.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_FILTER_ERROR_LOG_DUMP.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_FILTER_ERROR_LOG_DUMP.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_FILTER_ERROR_LOG_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_FILTER_ERROR_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_FILTER_ERROR_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_FILTER_ERROR_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_FILTER_ERROR_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_FILTER_ERROR_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_FILTER_ERROR_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_FILTER_ERROR_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_FILTER_ERROR_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_FILTER_ERROR_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_FILTER_ERROR_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_FILTER_ERROR_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_IN.SSLCertificateLabel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_IN.SSLCipherSpec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_IN.SSLPeerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_IN.additionalInstances" override="10">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_IN.channelName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_IN.componentLevel" override="node">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_IN.connection">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_IN.destinationQueueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_IN.listenerPortNumber">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_IN.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_IN.queueManagerHostname">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_IN.queueName" override="CORE_IN">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_IN.resetBrowseTimeout">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_IN.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_IN.securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_IN.serializationToken">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_IN.topicProperty">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_IN.useSSL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_IN.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_IN_LOG_CATCH.level" override="Warning">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_IN_LOG_CATCH.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_IN_LOG_CATCH.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_IN_LOG_CATCH.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_IN_LOG_CATCH.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_IN_LOG_CATCH.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_IN_LOG_FAIL.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_IN_LOG_FAIL.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_IN_LOG_FAIL.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_IN_LOG_FAIL.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_IN_LOG_FAIL.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_IN_LOG_FAIL.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_IN_LOG_OUT.level" override="Info">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_IN_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_IN_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_IN_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_IN_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#CORE_IN_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#DIFFERENT_SEQNO.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#DIFFERENT_SEQNO.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#DIFFERENT_SEQNO.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#DIFFERENT_SEQNO.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#DIFFERENT_SEQNO.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#DIFFERENT_SEQNO.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#GET_REPLY_TO.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#GET_REPLY_TO.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#GET_REPLY_TO.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#GET_REPLY_TO_LOG_FAIL.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#GET_REPLY_TO_LOG_FAIL.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#GET_REPLY_TO_LOG_FAIL.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#GET_REPLY_TO_LOG_FAIL.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#GET_REPLY_TO_LOG_FAIL.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#GET_REPLY_TO_LOG_FAIL.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#GET_REPLY_TO_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#GET_REPLY_TO_LOG_OUT.type" override="Root">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#GET_REPLY_TO_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#GET_REPLY_TO_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#GET_REPLY_TO_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#GET_REPLY_TO_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#MQ_CORE_REPLY.SSLCertificateLabel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#MQ_CORE_REPLY.SSLCipherSpec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#MQ_CORE_REPLY.SSLPeerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#MQ_CORE_REPLY.channelName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#MQ_CORE_REPLY.connection">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#MQ_CORE_REPLY.destinationQueueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#MQ_CORE_REPLY.listenerPortNumber">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#MQ_CORE_REPLY.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#MQ_CORE_REPLY.queueManagerHostname">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#MQ_CORE_REPLY.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#MQ_CORE_REPLY.useSSL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#MQ_CORE_REPLY.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#MQ_CORE_REPLY_FAIL.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#MQ_CORE_REPLY_FAIL.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#MQ_CORE_REPLY_FAIL.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#MQ_CORE_REPLY_FAIL.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#MQ_CORE_REPLY_FAIL.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#MQ_CORE_REPLY_FAIL.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#MQ_CORE_REPLY_LOG_OUT.level" override="Info">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#MQ_CORE_REPLY_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#MQ_CORE_REPLY_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#MQ_CORE_REPLY_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#MQ_CORE_REPLY_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#MQ_CORE_REPLY_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#REVERSAL_FILTER.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#REVERSAL_FILTER.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#SET_MSGID.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#SET_MSGID.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#SET_MSGID.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#SET_QUEUE.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#SET_QUEUE.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#SET_QUEUE.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#SET_REPLY_TO.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#SET_REPLY_TO.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#SET_REPLY_TO.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#SET_REPLY_TO_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#SET_REPLY_TO_LOG_OUT.type" override="Body">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#SET_REPLY_TO_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#SET_REPLY_TO_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#SET_REPLY_TO_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#SET_REPLY_TO_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#STORE_PAY_CORE_REQ_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#STORE_PAY_CORE_REQ_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#STORE_PAY_CORE_REQ_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#STORE_PAY_CORE_REQ_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#STORE_PAY_CORE_REQ_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#STORE_PAY_CORE_REQ_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#STORE_PAY_WS_CORE_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#STORE_PAY_WS_CORE_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#STORE_PAY_WS_CORE_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#STORE_PAY_WS_CORE_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#STORE_PAY_WS_CORE_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#STORE_PAY_WS_CORE_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#STORE_REPLY_TO.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#STORE_REPLY_TO.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#STORE_REPLY_TO.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#STORE_REPLY_TO_LOG_FAIL.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#STORE_REPLY_TO_LOG_FAIL.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#STORE_REPLY_TO_LOG_FAIL.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#STORE_REPLY_TO_LOG_FAIL.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#STORE_REPLY_TO_LOG_FAIL.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#STORE_REPLY_TO_LOG_FAIL.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#STORE_REPLY_TO_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#STORE_REPLY_TO_LOG_OUT.type" override="Body">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#STORE_REPLY_TO_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#STORE_REPLY_TO_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#STORE_REPLY_TO_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#STORE_REPLY_TO_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#additionalInstances" override="255">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#commitCount">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#commitInterval">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#consumerPolicySet">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#consumerPolicySetBindings">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#coordinatedTransaction">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#maximumRateMsgsPerSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#monitoringProfile">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#notificationThresholdMsgsPerSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#processingTimeoutAction">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#processingTimeoutSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#providerPolicySet">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#providerPolicySetBindings">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#startInstancesWhenFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#startMode">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FLOW#wlmPolicy">
+    </ConfigurableProperty>
+  </CompiledMessageFlow>
+  <CompiledMessageFlow name="CORE_FAIL_FLOW" type="subflow" deployBarfile="/opt/mdw/bar/ITMBROKER/ITMCORE1/CORE.bar" deployTimestamp="2024-08-09 17:34:43">
+    <ConfigurableProperty uri="CORE_FAIL_FLOW#CHECK_EOD_CORE_DB.config" override="db://##CORE_KONVEN_DSP">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FAIL_FLOW#CHECK_EOD_CORE_DB.destination" override="JHEODS_STAT">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FAIL_FLOW#CHECK_EOD_CORE_DB.path" override=".">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FAIL_FLOW#CHECK_EOD_CORE_DB.query" override="select JHEODS from BW${schema}DAT.JHEOD">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FAIL_FLOW#CHECK_EOD_CORE_DB_FAIL_OUT.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FAIL_FLOW#CHECK_EOD_CORE_DB_FAIL_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FAIL_FLOW#CHECK_EOD_CORE_DB_FAIL_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FAIL_FLOW#CHECK_EOD_CORE_DB_FAIL_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FAIL_FLOW#CHECK_EOD_CORE_DB_FAIL_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FAIL_FLOW#CHECK_EOD_CORE_DB_FAIL_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FAIL_FLOW#CHECK_EOD_CORE_DB_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FAIL_FLOW#CHECK_EOD_CORE_DB_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FAIL_FLOW#CHECK_EOD_CORE_DB_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FAIL_FLOW#CHECK_EOD_CORE_DB_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FAIL_FLOW#CHECK_EOD_CORE_DB_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FAIL_FLOW#CHECK_EOD_CORE_DB_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FAIL_FLOW#CHECK_EOD_MAP_ERROR.config" override="db://##abcs-res-timeout-F2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FAIL_FLOW#CHECK_EOD_MAP_ERROR_FAIL_OUT.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FAIL_FLOW#CHECK_EOD_MAP_ERROR_FAIL_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FAIL_FLOW#CHECK_EOD_MAP_ERROR_FAIL_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FAIL_FLOW#CHECK_EOD_MAP_ERROR_FAIL_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FAIL_FLOW#CHECK_EOD_MAP_ERROR_FAIL_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FAIL_FLOW#CHECK_EOD_MAP_ERROR_FAIL_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FAIL_FLOW#CHECK_EOD_MAP_ERROR_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FAIL_FLOW#CHECK_EOD_MAP_ERROR_LOG_OUT.type" override="Body">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FAIL_FLOW#CHECK_EOD_MAP_ERROR_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FAIL_FLOW#CHECK_EOD_MAP_ERROR_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FAIL_FLOW#CHECK_EOD_MAP_ERROR_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CORE_FAIL_FLOW#CHECK_EOD_MAP_ERROR_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+  </CompiledMessageFlow>
+  <CompiledMessageFlow name="SET_MAPPING_ERROR" type="subflow" deployBarfile="/opt/mdw/bar/ITMBROKER/ITMCORE1/CORE.bar" deployTimestamp="2024-08-09 17:34:43">
+    <ConfigurableProperty uri="SET_MAPPING_ERROR#MAPPING_ERROR_DB_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SET_MAPPING_ERROR#MAPPING_ERROR_DB_LOG_OUT.type" override="None">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SET_MAPPING_ERROR#MAPPING_ERROR_DB_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SET_MAPPING_ERROR#MAPPING_ERROR_DB_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SET_MAPPING_ERROR#MAPPING_ERROR_DB_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SET_MAPPING_ERROR#MAPPING_ERROR_DB_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SET_MAPPING_ERROR#MAPPING_FAILURE.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SET_MAPPING_ERROR#MAPPING_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SET_MAPPING_ERROR#MAPPING_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SET_MAPPING_ERROR#MAPPING_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SET_MAPPING_ERROR#MAPPING_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SET_MAPPING_ERROR#MAPPING_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SET_MAPPING_ERROR#SET_RESP_MAPPING_FAILURE.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SET_MAPPING_ERROR#SET_RESP_MAPPING_FAILURE.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SET_MAPPING_ERROR#SET_RESP_MAPPING_FAILURE.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SET_MAPPING_ERROR#SET_RESP_MAPPING_FAILURE_LOG_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SET_MAPPING_ERROR#SET_RESP_MAPPING_FAILURE_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SET_MAPPING_ERROR#SET_RESP_MAPPING_FAILURE_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SET_MAPPING_ERROR#SET_RESP_MAPPING_FAILURE_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SET_MAPPING_ERROR#SET_RESP_MAPPING_FAILURE_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SET_MAPPING_ERROR#SET_RESP_MAPPING_FAILURE_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SET_MAPPING_ERROR#SET_RESP_MAPPING_FAILURE_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SET_MAPPING_ERROR#SET_RESP_MAPPING_FAILURE_LOG_OUT.type" override="Body">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SET_MAPPING_ERROR#SET_RESP_MAPPING_FAILURE_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SET_MAPPING_ERROR#SET_RESP_MAPPING_FAILURE_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SET_MAPPING_ERROR#SET_RESP_MAPPING_FAILURE_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SET_MAPPING_ERROR#SET_RESP_MAPPING_FAILURE_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+  </CompiledMessageFlow>
+  <CompiledMessageFlow name="STORE_PAY_CORE_REQ" type="subflow" deployBarfile="/opt/mdw/bar/ITMBROKER/ITMCORE1/CORE.bar" deployTimestamp="2024-08-09 17:34:43">
+    <ConfigurableProperty uri="STORE_PAY_CORE_REQ#ADD_MQHEADER_AFTER.mqdlhDestQMgrName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_CORE_REQ#ADD_MQHEADER_AFTER.mqdlhDestQName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_CORE_REQ#ADD_MQHEADER_AFTER.mqmdReplyToQ" override="Inherit">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_CORE_REQ#ADD_MQHEADER_AFTER.mqmdReplyToQMgr" override="Inherit">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_CORE_REQ#ADD_MQHEADER_AFTER_LOG_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_CORE_REQ#ADD_MQHEADER_AFTER_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_CORE_REQ#ADD_MQHEADER_AFTER_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_CORE_REQ#ADD_MQHEADER_AFTER_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_CORE_REQ#ADD_MQHEADER_AFTER_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_CORE_REQ#ADD_MQHEADER_AFTER_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_CORE_REQ#ADD_MQHEADER_AFTER_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_CORE_REQ#ADD_MQHEADER_AFTER_LOG_OUT.type" override="Root">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_CORE_REQ#ADD_MQHEADER_AFTER_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_CORE_REQ#ADD_MQHEADER_AFTER_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_CORE_REQ#ADD_MQHEADER_AFTER_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_CORE_REQ#ADD_MQHEADER_AFTER_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_CORE_REQ#ADD_MQHEADER_BEFORE.mqdlhDestQMgrName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_CORE_REQ#ADD_MQHEADER_BEFORE.mqdlhDestQName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_CORE_REQ#ADD_MQHEADER_BEFORE.mqmdReplyToQ" override="Inherit">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_CORE_REQ#ADD_MQHEADER_BEFORE.mqmdReplyToQMgr" override="Inherit">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_CORE_REQ#ADD_MQHEADER_BEFORE_LOG_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_CORE_REQ#ADD_MQHEADER_BEFORE_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_CORE_REQ#ADD_MQHEADER_BEFORE_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_CORE_REQ#ADD_MQHEADER_BEFORE_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_CORE_REQ#ADD_MQHEADER_BEFORE_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_CORE_REQ#ADD_MQHEADER_BEFORE_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_CORE_REQ#ADD_MQHEADER_BEFORE_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_CORE_REQ#ADD_MQHEADER_BEFORE_LOG_OUT.type" override="Root">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_CORE_REQ#ADD_MQHEADER_BEFORE_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_CORE_REQ#ADD_MQHEADER_BEFORE_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_CORE_REQ#ADD_MQHEADER_BEFORE_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_CORE_REQ#ADD_MQHEADER_BEFORE_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_CORE_REQ#PAY_CORE_REQ.AddRequestToGroup">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_CORE_REQ#PAY_CORE_REQ.GroupRequestFolderName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_CORE_REQ#PAY_CORE_REQ.GroupRequestTimeout">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_CORE_REQ#PAY_CORE_REQ.SSLCertificateLabel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_CORE_REQ#PAY_CORE_REQ.SSLCipherSpec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_CORE_REQ#PAY_CORE_REQ.SSLPeerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_CORE_REQ#PAY_CORE_REQ.channelName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_CORE_REQ#PAY_CORE_REQ.connection">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_CORE_REQ#PAY_CORE_REQ.destinationQueueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_CORE_REQ#PAY_CORE_REQ.listenerPortNumber">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_CORE_REQ#PAY_CORE_REQ.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_CORE_REQ#PAY_CORE_REQ.queueManagerHostname">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_CORE_REQ#PAY_CORE_REQ.queueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_CORE_REQ#PAY_CORE_REQ.queueName" override="PAY_CORE_REQ">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_CORE_REQ#PAY_CORE_REQ.replyToQ">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_CORE_REQ#PAY_CORE_REQ.replyToQMgr">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_CORE_REQ#PAY_CORE_REQ.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_CORE_REQ#PAY_CORE_REQ.securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_CORE_REQ#PAY_CORE_REQ.useSSL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_CORE_REQ#PAY_CORE_REQ.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_CORE_REQ#PAY_CORE_REQ_LOG_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_CORE_REQ#PAY_CORE_REQ_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_CORE_REQ#PAY_CORE_REQ_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_CORE_REQ#PAY_CORE_REQ_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_CORE_REQ#PAY_CORE_REQ_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_CORE_REQ#PAY_CORE_REQ_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_CORE_REQ#PAY_CORE_REQ_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_CORE_REQ#PAY_CORE_REQ_LOG_OUT.type" override="None">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_CORE_REQ#PAY_CORE_REQ_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_CORE_REQ#PAY_CORE_REQ_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_CORE_REQ#PAY_CORE_REQ_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_CORE_REQ#PAY_CORE_REQ_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+  </CompiledMessageFlow>
+</Broker>

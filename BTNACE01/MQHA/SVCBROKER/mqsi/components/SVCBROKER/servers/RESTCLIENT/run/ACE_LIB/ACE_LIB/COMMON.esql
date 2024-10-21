@@ -1,0 +1,52 @@
+BROKER SCHEMA ACE_LIB
+
+CREATE FUNCTION fixedLenLeftPad(IN val REFERENCE, IN len INTEGER, IN padChar CHARACTER) RETURNS CHARACTER
+BEGIN
+	IF FIELDVALUE(val) IS NOT NULL THEN
+		DECLARE lv INTEGER LENGTH(val);
+		IF lv = len THEN
+			RETURN val;
+		ELSEIF lv > len THEN
+			RETURN SUBSTRING(val FROM lv - len + 1);
+		ELSE
+			RETURN REPLICATE(padChar, len - lv) || val;
+		END IF;
+	END IF;
+	RETURN REPLICATE(padChar, len);
+END;
+
+CREATE PROCEDURE handleExceptionRecursive(IN showStackTrace BOOLEAN, IN ref REFERENCE, IN ptr REFERENCE)
+BEGIN
+	IF ptr.Number IS NOT NULL THEN
+		SET ref.Code = FIELDNAME(ptr);
+		DECLARE Text CHARACTER CAST(ptr.Number as CHARACTER);
+		IF ptr.Label IS NOT NULL THEN
+			SET Text = Text || ':' || ptr.Label;
+		END IF;
+		SET Text = Text || ': ' || ptr.Text;
+		DECLARE tptr REFERENCE TO ptr;
+		MOVE tptr FIRSTCHILD;
+		WHILE LASTMOVE(tptr) DO
+			IF FIELDNAME(tptr) = 'Insert' THEN
+				SET Text = Text || ' ' || tptr.Text;
+			END IF;
+			MOVE tptr NEXTSIBLING;
+		END WHILE;
+		IF showStackTrace THEN
+			CREATE FIRSTCHILD OF ref.StackTrace NAME 'Item' VALUE Text;
+		END IF;
+		SET ref.Message = Text;
+	END IF;
+	DECLARE cptr REFERENCE TO ptr;
+	MOVE cptr FIRSTCHILD;
+	WHILE LASTMOVE(cptr) DO
+		CALL handleExceptionRecursive(showStackTrace, ref, cptr);
+		MOVE cptr NEXTSIBLING;
+	END WHILE;
+END;
+
+CREATE PROCEDURE handleException(IN ref REFERENCE, IN InputExceptionList REFERENCE)
+BEGIN
+	DECLARE showStackTrace BOOLEAN TRUE;
+	CALL handleExceptionRecursive(showStackTrace, ref, InputExceptionList);
+END;

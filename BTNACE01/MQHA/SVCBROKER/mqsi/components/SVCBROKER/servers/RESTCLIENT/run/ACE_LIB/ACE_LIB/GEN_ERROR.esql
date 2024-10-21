@@ -1,0 +1,172 @@
+BROKER SCHEMA ACE_LIB
+DECLARE cache SHARED ROW;
+
+CREATE PROCEDURE generateError(IN origin CHARACTER, IN code CHARACTER, IN target CHARACTER, IN cacheExpiry INTEGER, IN OutputMessage REFERENCE, IN Error REFERENCE)
+BEGIN
+	DECLARE em ROW;
+	ERROR_MAP_LOCK: BEGIN ATOMIC
+		DECLARE cacheref REFERENCE TO cache.errorMap.{target}.{origin};
+
+		IF cacheref.__EXPIRY IS NULL OR cacheref.__EXPIRY < CURRENT_TIMESTAMP THEN
+			DECLARE value CHARACTER null;
+			IF value IS NULL THEN
+				DECLARE res ROW;
+				CREATE LASTCHILD OF res DOMAIN 'JSON' NAME 'JSON';
+				CREATE FIELD res.JSON.Data TYPE Name;
+				DECLARE resData REFERENCE TO res.JSON.Data;
+
+				DECLARE r REFERENCE TO res.data[1];
+				WHILE LASTMOVE(r) DO
+					SET resData.{r.CODE} = r;
+					MOVE r NEXTSIBLING;
+				END WHILE;
+				SET cache.errorMap.{target}.{origin} = resData;
+
+				MOVE cacheref TO cache.errorMap.{target}.{origin};
+				SET value = CAST(ASBITSTREAM(res) AS CHAR CCSID 1208 Encoding 815);
+			ELSE
+				DECLARE res ROW;
+				CREATE LASTCHILD OF res DOMAIN 'JSON' PARSE(value CCSID 1208);
+				SET cache.errorMap.{target}.{origin} = res.JSON.Data;
+				MOVE cacheref TO cache.errorMap.{target}.{origin};
+			END IF;
+			SET cacheref.__EXPIRY = CURRENT_TIMESTAMP + CAST(cacheExpiry AS INTERVAL SECOND);
+		END IF;
+
+		SET em = cacheref.{code};
+		IF em.ID IS NULL THEN
+			SET em = cacheref.{'*'};
+		END IF;
+	END ERROR_MAP_LOCK;
+
+	CASE
+	WHEN target = 'ENKAPS' THEN
+		IF em.RC IS NOT NULL THEN
+			IF FIELDTYPE(OutputMessage.LG_SET_RC_GROUP) IS NOT NULL THEN
+				SET OutputMessage.LG_RC_GROUP = em.RC_GROUP;
+			END IF;
+			SET OutputMessage.RC = em.RC;
+			SET OutputMessage.RCMSG = em.MESSAGE;
+			SET OutputMessage.RCINFO.ITEM[1].SEVERITY_STATUS = em.SEVERITY_STATUS;
+			SET OutputMessage.RCINFO.ITEM[1].DESCRIPTION = em.DESCRIPTION;
+			SET OutputMessage.RCINFO.ITEM[1].MESSAGE_ID = em.MESSAGE_ID;
+			SET OutputMessage.RCINFO.ITEM[1].FIELD_IN_ERROR = em.FIELD_IN_ERROR;
+			SET OutputMessage.RCINFO.ITEM[1].IS_OVERRIDE = em.IS_OVERRIDE;
+			SET OutputMessage.RCINFO.ITEM[1].SEVERITY = em.SEVERITY;
+			SET OutputMessage.RCINFO.ITEM[1].AUTHORITY = em.AUTHORITY;
+			SET OutputMessage.RCINFO.ITEM[1].ERROR = Error;
+		ELSE
+			IF FIELDTYPE(OutputMessage.LG_SET_RC_GROUP) IS NOT NULL THEN
+				SET OutputMessage.LG_RC_GROUP = 'general-error';
+			END IF;
+			SET OutputMessage.RC = code;
+			SET OutputMessage.RCMSG.ITEM[1].MESSAGE = 'Unknown "' || target || '" "' || origin || '" "' || code || '"';
+			SET OutputMessage.RCMSG.ITEM[1].ERROR = Error;
+		END IF;
+	WHEN target = 'CONVERTERJSON' THEN
+		IF origin = 'MDW' THEN
+			SET OutputMessage.MT = OVERLAY(OutputMessage.MT PLACING '1' FROM 3 FOR 1);
+		END IF;
+		IF em.RC IS NOT NULL THEN
+			IF FIELDTYPE(OutputMessage.LG_SET_RC_GROUP) IS NOT NULL THEN
+				SET OutputMessage.LG_RC_GROUP = em.RC_GROUP;
+			END IF;
+			SET OutputMessage.RC = em.RC;
+			SET OutputMessage.RCMSG = em.MESSAGE;
+		ELSE
+			IF FIELDTYPE(OutputMessage.LG_SET_RC_GROUP) IS NOT NULL THEN
+				SET OutputMessage.LG_RC_GROUP = 'general-error';
+			END IF;
+			SET OutputMessage.RC = '0099';
+			SET OutputMessage.RCMSG = 'Unknown "' || target || '" "' || origin || '" "' || code || '"';
+		END IF;
+	WHEN target = 'JSONPBB' THEN
+		IF origin = 'MDW' THEN
+			SET OutputMessage.MT = OVERLAY(OutputMessage.MT PLACING '1' FROM 3 FOR 1);
+		END IF;
+		IF em.RC IS NOT NULL THEN
+			IF FIELDTYPE(OutputMessage.LG_SET_RC_GROUP) IS NOT NULL THEN
+				SET OutputMessage.LG_RC_GROUP = em.RC_GROUP;
+			END IF;
+			SET OutputMessage.RC.RC = em.RC;
+			SET OutputMessage.RC.RCM = em.MESSAGE;
+		ELSE
+			IF FIELDTYPE(OutputMessage.LG_SET_RC_GROUP) IS NOT NULL THEN
+				SET OutputMessage.LG_RC_GROUP = 'general-error';
+			END IF;
+			SET OutputMessage.RC.RC = '0099';
+			SET OutputMessage.RC.RCM = 'Unknown "' || target || '" "' || origin || '" "' || code || '"';
+		END IF;
+	WHEN CONTAINS(target, 'JSON') THEN
+		IF origin = 'MDW' THEN
+			SET OutputMessage.MT = OVERLAY(OutputMessage.MT PLACING '1' FROM 3 FOR 1);
+		END IF;
+		IF em.RC IS NOT NULL THEN
+			IF FIELDTYPE(OutputMessage.LG_SET_RC_GROUP) IS NOT NULL THEN
+				SET OutputMessage.LG_RC_GROUP = em.RC_GROUP;
+			END IF;
+			SET OutputMessage.RC = em.RC;
+			SET OutputMessage.RCMSG.ITEM[1].MESSAGE = em.MESSAGE;
+			SET OutputMessage.RCMSG.ITEM[1].SEVERITY_STATUS = em.SEVERITY_STATUS;
+			SET OutputMessage.RCMSG.ITEM[1].DESCRIPTION = em.DESCRIPTION;
+			SET OutputMessage.RCMSG.ITEM[1].MESSAGE_ID = em.MESSAGE_ID;
+			SET OutputMessage.RCMSG.ITEM[1].FIELD_IN_ERROR = em.FIELD_IN_ERROR;
+			SET OutputMessage.RCMSG.ITEM[1].IS_OVERRIDE = em.IS_OVERRIDE;
+			SET OutputMessage.RCMSG.ITEM[1].SEVERITY = em.SEVERITY;
+			SET OutputMessage.RCMSG.ITEM[1].AUTHORITY = em.AUTHORITY;
+			SET OutputMessage.RCMSG.ITEM[1].ERROR = Error;
+		ELSE
+			IF FIELDTYPE(OutputMessage.LG_SET_RC_GROUP) IS NOT NULL THEN
+				SET OutputMessage.LG_RC_GROUP = 'general-error';
+			END IF;
+			SET OutputMessage.RC = code;
+			SET OutputMessage.RCMSG.ITEM[1].MESSAGE = 'Unknown "' || target || '" "' || origin || '" "' || code || '"';
+			SET OutputMessage.RCMSG.ITEM[1].ERROR = Error;
+		END IF;
+	WHEN CONTAINS(target, 'ISO8583') THEN
+		IF origin = 'MDW' THEN
+			IF FIELDTYPE(OutputMessage.MTI_MessageFunction) IS NOT NULL THEN
+				SET OutputMessage.MTI_MessageFunction = CAST(CAST(OutputMessage.MTI_MessageFunction AS INT) + 1 AS CHAR);
+			ELSE
+				SET OutputMessage.MTI_MessageFunction = '1';
+			END IF;
+			SET OutputMessage.MTI_MessageOrigin = '0';
+		END IF;
+		IF em.F039 IS NOT NULL THEN
+			IF FIELDTYPE(OutputMessage.LG_SET_RC_GROUP) IS NOT NULL THEN
+				SET OutputMessage.LG_RC_GROUP = em.RC_GROUP;
+			END IF;
+			SET OutputMessage.F039 = em.F039;
+		ELSE
+			IF FIELDTYPE(OutputMessage.LG_SET_RC_GROUP) IS NOT NULL THEN
+				SET OutputMessage.LG_RC_GROUP = 'general-error';
+			END IF;
+			SET OutputMessage.F039 = '76';
+			SET OutputMessage.F127 = 'Unknown "' || target || '" "' || origin || '" "' || code || '"';
+		END IF;
+	WHEN CONTAINS(target, 'REST') OR CONTAINS(target, 'SOAP') THEN
+		IF em.HTTP_STATUS_CODE IS NOT NULL THEN
+			IF FIELDTYPE(OutputMessage.LG_SET_RC_GROUP) IS NOT NULL THEN
+				SET OutputMessage.LG_RC_GROUP = em.RC_GROUP;
+			END IF;
+			SET OutputMessage.responseCode = em.HTTP_STATUS_CODE || COALESCE(em.HTTP_SERVICE_CODE, '00') || COALESCE(em.HTTP_CASE_CODE, '00');
+			SET OutputMessage.responseMessage = em.HTTP_ERROR_MESSAGE;
+		ELSE
+			IF FIELDTYPE(OutputMessage.LG_SET_RC_GROUP) IS NOT NULL THEN
+				SET OutputMessage.LG_RC_GROUP = 'general-error';
+			END IF;
+			SET OutputMessage.responseCode = '5000000';
+			SET OutputMessage.responseMessage = 'Unknown "' || target || '" "' || origin || '" "' || code || '"';
+		END IF;
+	ELSE
+		IF FIELDTYPE(OutputMessage.LG_SET_RC_GROUP) IS NOT NULL THEN
+			SET OutputMessage.LG_RC_GROUP = 'general-error';
+		END IF;
+		SET OutputMessage.RC = code;
+		SET OutputMessage.RCMSG.ITEM[1].MESSAGE = 'Unknown "' || target || '" "' || origin || '" "' || code || '"';
+		SET OutputMessage.RCMSG.ITEM[1].ERROR = Error;
+	END CASE;
+END;
+
+
+

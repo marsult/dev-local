@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy:Deploy xmlns:deploy="http://www.ibm.com/xmlns/prod/wmb/deploy/6.0.0" overrideConfigurableProperties="true" includeESQL="false">
+  <deployables>
+    <deployable deployed="true" barResourceTimeStamp="1702858308702" workspaceResource="/DUMMY_SERVER_PROJECT/DUMMY_TCPIPSERVER_FLOW.msgflow">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file DUMMY_SERVER_PROJECT/DUMMY_TCPIPSERVER_FLOW.msgflow.&#xA;Successfully added file DUMMY_SERVER_PROJECT/DUMMY_TCPIPSERVER_FLOW.msgflow to BAR file.&#xA;" severity="0"/>
+      <barEntry name="DUMMY_TCPIPSERVER_FLOW.msgflow"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1702994775914" workspaceResource="/DUMMY_SERVER_PROJECT/DUMMY_TCPIPSERVER_FLOW_CHECK_TIMER.esql">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file DUMMY_SERVER_PROJECT/DUMMY_TCPIPSERVER_FLOW_CHECK_TIMER.esql.&#xA;Successfully added file DUMMY_SERVER_PROJECT/DUMMY_TCPIPSERVER_FLOW_CHECK_TIMER.esql to BAR file.&#xA;" severity="0"/>
+      <barEntry name="DUMMY_TCPIPSERVER_FLOW_CHECK_TIMER.esql"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1694496931806" workspaceResource="/DUMMY_SERVER_PROJECT/application.descriptor">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file DUMMY_SERVER_PROJECT/application.descriptor.&#xA;Successfully added file DUMMY_SERVER_PROJECT/application.descriptor to BAR file.&#xA;Elapsed time: 0 second(s).&#xA;&#xA;Successfully added file DUMMY_SERVER_PROJECT/application.descriptor to BAR file.&#xA;" severity="0"/>
+      <barEntry name="application.descriptor"/>
+    </deployable>
+  </deployables>
+</deploy:Deploy>

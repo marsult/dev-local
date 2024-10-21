@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy:Deploy xmlns:deploy="http://www.ibm.com/xmlns/prod/wmb/deploy/6.0.0" overrideConfigurableProperties="true" includeESQL="false">
+  <deployables>
+    <deployable deployed="true" barResourceTimeStamp="1642310843524" workspaceResource="/LOG_DB_APP/LOG_DB.msgflow">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file LOG_DB_APP\LOG_DB.msgflow.&#xA;Successfully added file LOG_DB_APP\LOG_DB.msgflow to BAR file.&#xA;" severity="0"/>
+      <barEntry name="LOG_DB.msgflow"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1639486512049" workspaceResource="/LOG_DB_APP/application.descriptor">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file LOG_DB_APP\application.descriptor.&#xA;Successfully added file LOG_DB_APP\application.descriptor to BAR file.&#xA;Elapsed time: 0 second(s).&#xA;&#xA;Successfully added file LOG_DB_APP\application.descriptor to BAR file.&#xA;" severity="0"/>
+      <barEntry name="application.descriptor"/>
+    </deployable>
+  </deployables>
+</deploy:Deploy>

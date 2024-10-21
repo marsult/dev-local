@@ -1,0 +1,123 @@
+services:
+  db2:
+    restart: always
+    container_name: db2
+    image: "docker.senomas.com/ibm-db2-ce-11.5.8.0:latest"
+    environment:
+      - TZ=Asia/Jakarta
+      - DB2INST1_PASSWORD=mdw4dm1n
+      - DB2INSTANCE=db2inst1
+      - DBNAME01=MWCONFIG
+      - DBNAME02=MWLOG
+      - DBNAME03=DCONFIG
+      - DBNAME04=MWAPP
+      - LICENSE=accept
+      - SAMPLEDB=false
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "sh",
+          "-c",
+          "/bin/su - $$DB2INSTANCE -c 'test -e /var/migrate.done'"
+        ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 600s
+    # ports:
+    #   - '10501:50000'
+    privileged: true
+    networks:
+      middleware:
+        ipv4_address: 10.10.10.36
+    volumes:
+      - 'db2-data:/database'
+      - './db2/custom:/var/custom'
+      - './db2/db2_setup/:/var/db2_setup'
+      - './db2/migrate/:/var/migrate'
+  BTNACE01:
+    container_name: BTNACE01
+    restart: always
+    image: ace:12.0.11.1
+    hostname: BTNACE01
+    tty: true
+    command:
+      [
+        "/bin/bash",
+        "-c",
+        ". /tmp/run/init.sh && tail -f /dev/null"
+      ]
+    environment:
+      - TZ=Asia/Jakarta
+      - DB2CLIINIPATH=/opt/IBM/ace-12.0.11.1/ie02/etc
+      - ODBCINI=/opt/IBM/ace-12.0.11.1/ie02/etc/odbc.ini
+      - ODBCSYSINI=/opt/IBM/ace-12.0.11.1/ie02/etc
+    networks:
+      middleware:
+        ipv4_address: 10.10.10.27
+    volumes:
+      - ./BTNACE01/init.sh:/tmp/run/init.sh
+      - ./BTNACE01/.bash_history:/home/admmdw/.bash_history
+      - ./BTNACE01/config.yaml:/home/admmdw/config.yaml
+      - ./BTNACE01/queue:/home/admmdw/queue
+      - ./BTNACE01/jplugin:/opt/mdw/jplugin
+      - ./BTNACE01/bar:/opt/mdw/bar
+      - ./BTNACE01/log:/var/mdw
+      - ./BTNACE01/config:/var/mqsi/config
+      - ./BTNACE01/components:/var/mqsi/components
+      - ./BTNACE01/shared-lookup-tables:/var/mqsi/shared-lookup-tables
+      - ./BTNACE01/MQHA:/MQHA
+      - ./BTNACE01/odbc/db2cli.ini:/opt/IBM/ace-12.0.11.1/ie02/etc/db2cli.ini
+      - ./BTNACE01/odbc/odbc.ini:/opt/IBM/ace-12.0.11.1/ie02/etc/odbc.ini
+      - ./BTNACE01/odbc/odbcinst.ini:/opt/IBM/ace-12.0.11.1/ie02/etc/odbcinst.ini
+    extra_hosts:
+      - "BTNCOREKONVEN:127.0.0.1"
+      - "DUMMY:127.0.0.1"
+      - "btnmdwdata:10.10.10.36"
+      - "btnmwlog:10.10.10.36"
+  WAS:
+    container_name: WAS
+    image: ibmcom/websphere-traditional:latest
+    networks:
+      middleware:
+        ipv4_address: 10.10.10.35
+    # ports:
+    #   - "9043:9043"
+    #   - "9443:9443"
+    environment:
+      - LICENSE=accept
+      - USERNAME=admin
+      - PASSWORD=admin
+      # - TZ=Asia/Jakarta
+    volumes:
+      - ./WAS/work:/work
+      # - ./WAS/install.sh:/tmp/install.sh
+    # command: /bin/bash -c "/tmp/install.sh"
+  cloudbeaver:
+    container_name: cloudbeaver
+    image: dbeaver/cloudbeaver:latest
+    restart: always
+    networks:
+      middleware:
+        ipv4_address: 10.10.10.37
+    ports:
+      - "8978:8978"
+    environment:
+      - CB_SERVER_PORT=8978
+      - TZ=Asia/Jakarta
+    volumes:
+      - ./cloudbeaver:/opt/cloudbeaver/workspace
+volumes:
+  cloudbeaver:
+    driver: local
+  db2-data:
+    driver: local
+  BTNACE01-data:
+    driver: local
+
+networks:
+  middleware:
+    ipam:
+      config:
+        - subnet: 10.10.10.0/24

@@ -1,0 +1,33 @@
+
+==============================================
+
+!Sun Jan 16 12:47:44 ICT 2022
+
+Successfully added file CORE_APP\CORE_FLOW.msgflow to BAR file.
+
+Successfully added file CORE_APP\CORE_FAIL_FLOW.subflow to BAR file.
+
+Successfully added file CORE_APP\CORE_FLOW.esql to BAR file.
+
+Successfully added file CORE_APP\SET_MAPPING_ERROR.esql to BAR file.
+
+Successfully added file CORE_APP\SET_MAPPING_ERROR.subflow to BAR file.
+
+Successfully added file CORE_APP\STORE_PAY_CORE_REQ.subflow to BAR file.
+
+Successfully added file CORE_APP\STORE_PAY_WS_CORE_REQ.subflow to BAR file.
+
+Successfully added file CORE_APP\TIME_REQUEST_CHECK_FLOW.esql to BAR file.
+
+Successfully added file CORE_APP\TIME_REQUEST_CHECK_FLOW.subflow to BAR file.
+
+Successfully added file CORE_APP\application.descriptor to BAR file.
+
+Successfully added file CORE_APP\application.descriptor to BAR file.
+
+Successfully added file CORE_APP\application.descriptor to BAR file.
+
+Successfully added file CORE_APP\application.descriptor to BAR file.
+
+Successfully added file SUBFLOW_LOGDB_LIB to BAR file.
+

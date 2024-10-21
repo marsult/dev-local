@@ -1,0 +1,13 @@
+---
+brokerDefaultCCSID: '1208'
+brokerUUID: '7af81826-53c8-11ef-b88d-0a0a0a1b0000'
+defaultQueueManager: 'SVCBROKER.QM'
+MQTTServer: 
+  port: 11888
+NodeHttpListener: 
+  startListener: false
+  HTTPConnector: 
+    ListenerPort: 7080
+RestAdminListener: 
+  authorizationMode: 'mq'
+  port: 4494

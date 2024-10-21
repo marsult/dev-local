@@ -1,0 +1,1567 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Broker deployBarfile="/opt/mdw/bar/PAYBROKER/BILL_PAYMENT/WS_CLIENT_ADAPTER.bar" deployTimestamp="2024-08-10 05:05:06">
+  <CompiledApplication>
+    <ConfigurableProperty uri="startMode">
+    </ConfigurableProperty>
+  </CompiledApplication>
+  <CompiledMessageFlow name="WS_CLIENT_ADAPTER_FLOW" deployBarfile="/opt/mdw/bar/PAYBROKER/BILL_PAYMENT/WS_CLIENT_ADAPTER.bar" deployTimestamp="2024-08-10 05:05:06">
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#ADD_ENV.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#ADD_ENV.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#ADD_ENV.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#AFTER_ADD_ENV.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#AFTER_ADD_ENV.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#AFTER_ADD_ENV.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#AFTER_ADD_ENV.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#AFTER_ADD_ENV.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#AFTER_ADD_ENV.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#AFTER_MAPPING_REVERSAL.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#AFTER_MAPPING_REVERSAL.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#AFTER_MAPPING_REVERSAL.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#AFTER_MAPPING_REVERSAL.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#AFTER_MAPPING_REVERSAL.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#AFTER_MAPPING_REVERSAL.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#AFTER_MAP_RES.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#AFTER_MAP_RES.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#AFTER_MAP_RES.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#AFTER_MAP_RES.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#AFTER_MAP_RES.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#AFTER_MAP_RES.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#AFTER_RESP_MAPPING_LOG.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#AFTER_RESP_MAPPING_LOG.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#AFTER_RESP_MAPPING_LOG.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#AFTER_RESP_MAPPING_LOG.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#AFTER_RESP_MAPPING_LOG.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#AFTER_RESP_MAPPING_LOG.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#AFTER_RESP_PAYMENT_MAPPING.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#AFTER_RESP_PAYMENT_MAPPING.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#AFTER_RESP_PAYMENT_MAPPING.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#AFTER_RESP_PAYMENT_MAPPING.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#AFTER_RESP_PAYMENT_MAPPING.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#AFTER_RESP_PAYMENT_MAPPING.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#BEFORE_MAP.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#BEFORE_MAP.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#BEFORE_MAP.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#BEFORE_MAP.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#BEFORE_MAP.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#BEFORE_MAP.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#BEF_FILTER_INQUIRY_RESPONSE.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#BEF_FILTER_INQUIRY_RESPONSE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#BEF_FILTER_INQUIRY_RESPONSE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#BEF_FILTER_INQUIRY_RESPONSE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#BEF_FILTER_INQUIRY_RESPONSE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#BEF_FILTER_INQUIRY_RESPONSE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#BEF_FILTER_PAYMENT_RESPONSE.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#BEF_FILTER_PAYMENT_RESPONSE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#BEF_FILTER_PAYMENT_RESPONSE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#BEF_FILTER_PAYMENT_RESPONSE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#BEF_FILTER_PAYMENT_RESPONSE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#BEF_FILTER_PAYMENT_RESPONSE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#BEF_FILTER_REVERSAL_RESPONSE.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#BEF_FILTER_REVERSAL_RESPONSE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#BEF_FILTER_REVERSAL_RESPONSE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#BEF_FILTER_REVERSAL_RESPONSE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#BEF_FILTER_REVERSAL_RESPONSE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#BEF_FILTER_REVERSAL_RESPONSE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#CHECK_RESPONSE.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#CHECK_RESPONSE.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#CHECK_RESPONSE.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#FAILED_ERR_MAP.config" override="db://##${msg.data.group}.failed">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#FAILURE_RESP_MAPPING.config" override="db://##${msg.data.group}.failed">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#FAILURE_RESP_MAPP_ERR_LOG.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#FAILURE_RESP_MAPP_ERR_LOG.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#FAILURE_RESP_MAPP_ERR_LOG.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#FAILURE_RESP_MAPP_ERR_LOG.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#FAILURE_RESP_MAPP_ERR_LOG.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#FAILURE_RESP_MAPP_ERR_LOG.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#FAILURE_RESP_PAYMENT_MAPPING.config" override="db://##${msg.data.group}.failed">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#FILTER_INQUIRY_FAILURE.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#FILTER_INQUIRY_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#FILTER_INQUIRY_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#FILTER_INQUIRY_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#FILTER_INQUIRY_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#FILTER_INQUIRY_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#FILTER_INQUIRY_RESPONSE.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#FILTER_INQUIRY_RESPONSE.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#FILTER_PAYMENT_FAILURE.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#FILTER_PAYMENT_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#FILTER_PAYMENT_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#FILTER_PAYMENT_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#FILTER_PAYMENT_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#FILTER_PAYMENT_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#FILTER_PAYMENT_RESPONSE.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#FILTER_PAYMENT_RESPONSE.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#FILTER_REVERSAL_FAILURE.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#FILTER_REVERSAL_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#FILTER_REVERSAL_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#FILTER_REVERSAL_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#FILTER_REVERSAL_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#FILTER_REVERSAL_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#FILTER_REVERSAL_RESPONSE.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#FILTER_REVERSAL_RESPONSE.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#GET_INQUIRY_CATCH.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#GET_INQUIRY_CATCH.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#GET_INQUIRY_CATCH.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#GET_INQUIRY_CATCH.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#GET_INQUIRY_CATCH.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#GET_INQUIRY_CATCH.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#GET_INQUIRY_FAIL.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#GET_INQUIRY_FAIL.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#GET_INQUIRY_FAIL.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#GET_INQUIRY_FAIL.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#GET_INQUIRY_FAIL.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#GET_INQUIRY_FAIL.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#GET_INQUIRY_FAIL1.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#GET_INQUIRY_FAIL1.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#GET_INQUIRY_FAIL1.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#GET_INQUIRY_FAIL1.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#GET_INQUIRY_FAIL1.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#GET_INQUIRY_FAIL1.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#GET_INQUIRY_LOG.level" override="Info">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#GET_INQUIRY_LOG.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#GET_INQUIRY_LOG.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#GET_INQUIRY_LOG.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#GET_INQUIRY_LOG.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#GET_INQUIRY_LOG.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#INQUIRY-RESP_FAULTERROR_MAPPING.config" override="db://##${msg.data.group}.${msg.data.code}.faulterror">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#INQUIRY-RESP_FAULT_ERROR_MAPPING_LOGOUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#INQUIRY-RESP_FAULT_ERROR_MAPPING_LOGOUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#INQUIRY-RESP_FAULT_ERROR_MAPPING_LOGOUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#INQUIRY-RESP_FAULT_ERROR_MAPPING_LOGOUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#INQUIRY-RESP_FAULT_ERROR_MAPPING_LOGOUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#INQUIRY-RESP_FAULT_ERROR_MAPPING_LOGOUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#INQUIRY_SOAP_PROCESS_OUT_LOG.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#INQUIRY_SOAP_PROCESS_OUT_LOG.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#INQUIRY_SOAP_PROCESS_OUT_LOG.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#INQUIRY_SOAP_PROCESS_OUT_LOG.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#INQUIRY_SOAP_PROCESS_OUT_LOG.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#INQUIRY_SOAP_PROCESS_OUT_LOG.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#ISO_TO_SOAP_ERROR.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#ISO_TO_SOAP_ERROR.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#ISO_TO_SOAP_ERROR.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#ISO_TO_SOAP_ERROR.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#ISO_TO_SOAP_ERROR.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#ISO_TO_SOAP_ERROR.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MAPPING_FAILES.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MAPPING_FAILES.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MAPPING_FAILES.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MAPPING_FAILES.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MAPPING_FAILES.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MAPPING_FAILES.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MAPPING_FAILES1.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MAPPING_FAILES1.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MAPPING_FAILES1.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MAPPING_FAILES1.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MAPPING_FAILES1.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MAPPING_FAILES1.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MAPPING_REVERSAL.config" override="db://##${msg.data.frontOriginal.group}.${msg.data.frontOriginal.code}.biller-reverse">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MAPPING_REVERSAL_WS_RESP.config" override="db://##${msg.data.group}.${msg.data.code}.resp">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MAPPING_TO_SOAP.config" override="db://##${msg.data.group}.${msg.data.code}">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MODIFIED_HEADER.mqdlhDestQMgrName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MODIFIED_HEADER.mqdlhDestQName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MODIFIED_HEADER.mqmdReplyToQ" override="Inherit">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MODIFIED_HEADER.mqmdReplyToQMgr" override="Inherit">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQReply.SSLCertificateLabel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQReply.SSLCipherSpec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQReply.SSLPeerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQReply.channelName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQReply.connection">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQReply.destinationQueueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQReply.listenerPortNumber">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQReply.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQReply.queueManagerHostname">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQReply.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQReply.useSSL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQReply.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQReply1.SSLCertificateLabel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQReply1.SSLCipherSpec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQReply1.SSLPeerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQReply1.channelName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQReply1.connection">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQReply1.destinationQueueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQReply1.listenerPortNumber">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQReply1.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQReply1.queueManagerHostname">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQReply1.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQReply1.useSSL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQReply1.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQReply2.SSLCertificateLabel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQReply2.SSLCipherSpec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQReply2.SSLPeerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQReply2.channelName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQReply2.connection">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQReply2.destinationQueueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQReply2.listenerPortNumber">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQReply2.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQReply2.queueManagerHostname">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQReply2.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQReply2.useSSL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQReply2.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_BILLER_REPLY.SSLCertificateLabel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_BILLER_REPLY.SSLCipherSpec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_BILLER_REPLY.SSLPeerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_BILLER_REPLY.channelName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_BILLER_REPLY.connection">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_BILLER_REPLY.destinationQueueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_BILLER_REPLY.listenerPortNumber">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_BILLER_REPLY.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_BILLER_REPLY.queueManagerHostname">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_BILLER_REPLY.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_BILLER_REPLY.useSSL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_BILLER_REPLY.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_BILLER_REPLY1.SSLCertificateLabel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_BILLER_REPLY1.SSLCipherSpec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_BILLER_REPLY1.SSLPeerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_BILLER_REPLY1.channelName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_BILLER_REPLY1.connection">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_BILLER_REPLY1.destinationQueueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_BILLER_REPLY1.listenerPortNumber">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_BILLER_REPLY1.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_BILLER_REPLY1.queueManagerHostname">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_BILLER_REPLY1.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_BILLER_REPLY1.useSSL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_BILLER_REPLY1.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_INQUIRY_IN.SSLCertificateLabel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_INQUIRY_IN.SSLCipherSpec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_INQUIRY_IN.SSLPeerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_INQUIRY_IN.additionalInstances">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_INQUIRY_IN.channelName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_INQUIRY_IN.componentLevel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_INQUIRY_IN.connection">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_INQUIRY_IN.destinationQueueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_INQUIRY_IN.listenerPortNumber">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_INQUIRY_IN.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_INQUIRY_IN.queueManagerHostname">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_INQUIRY_IN.queueName" override="WS.INQUIRY.IN">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_INQUIRY_IN.resetBrowseTimeout">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_INQUIRY_IN.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_INQUIRY_IN.securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_INQUIRY_IN.serializationToken">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_INQUIRY_IN.topicProperty">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_INQUIRY_IN.useSSL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_INQUIRY_IN.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_PAYMENT_IN.SSLCertificateLabel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_PAYMENT_IN.SSLCipherSpec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_PAYMENT_IN.SSLPeerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_PAYMENT_IN.additionalInstances">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_PAYMENT_IN.channelName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_PAYMENT_IN.componentLevel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_PAYMENT_IN.connection">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_PAYMENT_IN.destinationQueueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_PAYMENT_IN.listenerPortNumber">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_PAYMENT_IN.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_PAYMENT_IN.queueManagerHostname">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_PAYMENT_IN.queueName" override="WS.PAYMENT.COREREPLY.IN">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_PAYMENT_IN.resetBrowseTimeout">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_PAYMENT_IN.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_PAYMENT_IN.securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_PAYMENT_IN.serializationToken">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_PAYMENT_IN.topicProperty">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_PAYMENT_IN.useSSL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_PAYMENT_IN.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_PAYMENT_IN_CATCH.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_PAYMENT_IN_CATCH.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_PAYMENT_IN_CATCH.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_PAYMENT_IN_CATCH.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_PAYMENT_IN_CATCH.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_PAYMENT_IN_CATCH.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_PAYMENT_IN_FAIL.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_PAYMENT_IN_FAIL.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_PAYMENT_IN_FAIL.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_PAYMENT_IN_FAIL.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_PAYMENT_IN_FAIL.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_PAYMENT_IN_FAIL.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_PAYMENT_IN_LOG.level" override="Info">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_PAYMENT_IN_LOG.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_PAYMENT_IN_LOG.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_PAYMENT_IN_LOG.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_PAYMENT_IN_LOG.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_PAYMENT_IN_LOG.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_REVERSAL_IN.SSLCertificateLabel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_REVERSAL_IN.SSLCipherSpec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_REVERSAL_IN.SSLPeerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_REVERSAL_IN.additionalInstances">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_REVERSAL_IN.channelName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_REVERSAL_IN.componentLevel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_REVERSAL_IN.connection">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_REVERSAL_IN.destinationQueueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_REVERSAL_IN.listenerPortNumber">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_REVERSAL_IN.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_REVERSAL_IN.queueManagerHostname">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_REVERSAL_IN.queueName" override="WS.REVERSAL.IN">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_REVERSAL_IN.resetBrowseTimeout">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_REVERSAL_IN.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_REVERSAL_IN.securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_REVERSAL_IN.serializationToken">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_REVERSAL_IN.topicProperty">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_REVERSAL_IN.useSSL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_REVERSAL_IN.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_REVERSAL_IN_CATCH.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_REVERSAL_IN_CATCH.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_REVERSAL_IN_CATCH.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_REVERSAL_IN_CATCH.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_REVERSAL_IN_CATCH.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_REVERSAL_IN_CATCH.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_REVERSAL_IN_FAIL.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_REVERSAL_IN_FAIL.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_REVERSAL_IN_FAIL.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_REVERSAL_IN_FAIL.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_REVERSAL_IN_FAIL.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#MQ_REVERSAL_IN_FAIL.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#PAYMENT-RESP_FAULTERROR_MAPPING.config" override="db://##${msg.data.group}.${msg.data.code}.faulterror">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#PAYMENT-RESP_FAULTERROR_MAPPING_LOGOUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#PAYMENT-RESP_FAULTERROR_MAPPING_LOGOUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#PAYMENT-RESP_FAULTERROR_MAPPING_LOGOUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#PAYMENT-RESP_FAULTERROR_MAPPING_LOGOUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#PAYMENT-RESP_FAULTERROR_MAPPING_LOGOUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#PAYMENT-RESP_FAULTERROR_MAPPING_LOGOUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#PAYMENT_CHECK_RESPONSE.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#PAYMENT_CHECK_RESPONSE.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#PAYMENT_CHECK_RESPONSE.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#PAYMENT_CHECK_RESPONSE_FAILURE.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#PAYMENT_CHECK_RESPONSE_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#PAYMENT_CHECK_RESPONSE_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#PAYMENT_CHECK_RESPONSE_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#PAYMENT_CHECK_RESPONSE_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#PAYMENT_CHECK_RESPONSE_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#PAYMENT_CHECK_RESPONSE_SUCCESS.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#PAYMENT_CHECK_RESPONSE_SUCCESS.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#PAYMENT_CHECK_RESPONSE_SUCCESS.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#PAYMENT_CHECK_RESPONSE_SUCCESS.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#PAYMENT_CHECK_RESPONSE_SUCCESS.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#PAYMENT_CHECK_RESPONSE_SUCCESS.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#PAYMENT_ISO_STORE.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#PAYMENT_ISO_STORE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#PAYMENT_ISO_STORE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#PAYMENT_ISO_STORE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#PAYMENT_ISO_STORE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#PAYMENT_ISO_STORE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#PAYMENT_RESP_MAPPING.config" override="db://##${msg.data.group}.${msg.data.code}.resp">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#PAYMENT_SOAP_PROCESS_OUT_LOG.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#PAYMENT_SOAP_PROCESS_OUT_LOG.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#PAYMENT_SOAP_PROCESS_OUT_LOG.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#PAYMENT_SOAP_PROCESS_OUT_LOG.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#PAYMENT_SOAP_PROCESS_OUT_LOG.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#PAYMENT_SOAP_PROCESS_OUT_LOG.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REPLY_FAILED.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REPLY_FAILED.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REPLY_FAILED.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REPLY_FAILED.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REPLY_FAILED.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REPLY_FAILED.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REPLY_OK.level" override="Info">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REPLY_OK.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REPLY_OK.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REPLY_OK.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REPLY_OK.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REPLY_OK.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REPLY_TO.SSLCertificateLabel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REPLY_TO.SSLCipherSpec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REPLY_TO.SSLPeerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REPLY_TO.channelName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REPLY_TO.connection">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REPLY_TO.destinationQueueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REPLY_TO.listenerPortNumber">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REPLY_TO.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REPLY_TO.queueManagerHostname">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REPLY_TO.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REPLY_TO.useSSL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REPLY_TO.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REPLY_TO1.SSLCertificateLabel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REPLY_TO1.SSLCipherSpec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REPLY_TO1.SSLPeerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REPLY_TO1.channelName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REPLY_TO1.connection">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REPLY_TO1.destinationQueueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REPLY_TO1.listenerPortNumber">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REPLY_TO1.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REPLY_TO1.queueManagerHostname">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REPLY_TO1.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REPLY_TO1.useSSL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REPLY_TO1.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REPLY_TO2.SSLCertificateLabel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REPLY_TO2.SSLCipherSpec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REPLY_TO2.SSLPeerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REPLY_TO2.channelName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REPLY_TO2.connection">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REPLY_TO2.destinationQueueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REPLY_TO2.listenerPortNumber">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REPLY_TO2.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REPLY_TO2.queueManagerHostname">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REPLY_TO2.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REPLY_TO2.useSSL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REPLY_TO2.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REPLY_TO_ROUTER_FAIL.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REPLY_TO_ROUTER_FAIL.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REPLY_TO_ROUTER_FAIL.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REPLY_TO_ROUTER_FAIL.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REPLY_TO_ROUTER_FAIL.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REPLY_TO_ROUTER_FAIL.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REPLY_TO_ROUTER_FAIL1.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REPLY_TO_ROUTER_FAIL1.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REPLY_TO_ROUTER_FAIL1.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REPLY_TO_ROUTER_FAIL1.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REPLY_TO_ROUTER_FAIL1.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REPLY_TO_ROUTER_FAIL1.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REPLY_TO_ROUTER_SUCCESS.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REPLY_TO_ROUTER_SUCCESS.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REPLY_TO_ROUTER_SUCCESS.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REPLY_TO_ROUTER_SUCCESS.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REPLY_TO_ROUTER_SUCCESS.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REPLY_TO_ROUTER_SUCCESS.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REPLY_TO_ROUTER_SUCCESS1.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REPLY_TO_ROUTER_SUCCESS1.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REPLY_TO_ROUTER_SUCCESS1.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REPLY_TO_ROUTER_SUCCESS1.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REPLY_TO_ROUTER_SUCCESS1.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REPLY_TO_ROUTER_SUCCESS1.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REQ_MAPPING.config" override="db://##${msg.data.group}.${msg.data.code}">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REQ_MAPPING_ERR_LOG.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REQ_MAPPING_ERR_LOG.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REQ_MAPPING_ERR_LOG.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REQ_MAPPING_ERR_LOG.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REQ_MAPPING_ERR_LOG.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REQ_MAPPING_ERR_LOG.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#RESPONSE_FAILURE.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#RESPONSE_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#RESPONSE_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#RESPONSE_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#RESPONSE_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#RESPONSE_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#RESPONSE_SUCCESS.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#RESPONSE_SUCCESS.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#RESPONSE_SUCCESS.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#RESPONSE_SUCCESS.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#RESPONSE_SUCCESS.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#RESPONSE_SUCCESS.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#RESP_MAPPING.config" override="db://##${msg.data.group}.${msg.data.code}.resp">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REVERSAL-RESP_FAULTERROR_MAPPING.config" override="db://##${msg.data.group}.${msg.data.code}.faulterror">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REVERSAL_BILLER_REPLY_FAILURE_LOG.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REVERSAL_BILLER_REPLY_FAILURE_LOG.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REVERSAL_BILLER_REPLY_FAILURE_LOG.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REVERSAL_BILLER_REPLY_FAILURE_LOG.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REVERSAL_BILLER_REPLY_FAILURE_LOG.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REVERSAL_BILLER_REPLY_FAILURE_LOG.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REVERSAL_BILLER_REPLY_OUT_LOG.level" override="Info">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REVERSAL_BILLER_REPLY_OUT_LOG.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REVERSAL_BILLER_REPLY_OUT_LOG.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REVERSAL_BILLER_REPLY_OUT_LOG.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REVERSAL_BILLER_REPLY_OUT_LOG.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REVERSAL_BILLER_REPLY_OUT_LOG.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REVERSAL_IN_LOG.level" override="Info">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REVERSAL_IN_LOG.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REVERSAL_IN_LOG.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REVERSAL_IN_LOG.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REVERSAL_IN_LOG.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#REVERSAL_IN_LOG.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#ROUTER_OUT_FAILURE_LOG.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#ROUTER_OUT_FAILURE_LOG.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#ROUTER_OUT_FAILURE_LOG.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#ROUTER_OUT_FAILURE_LOG.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#ROUTER_OUT_FAILURE_LOG.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#ROUTER_OUT_FAILURE_LOG.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#ROUTER_OUT_LOG.level" override="Info">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#ROUTER_OUT_LOG.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#ROUTER_OUT_LOG.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#ROUTER_OUT_LOG.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#ROUTER_OUT_LOG.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#ROUTER_OUT_LOG.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#SAVE_ORIGINAL.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#SAVE_ORIGINAL.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#SAVE_ORIGINAL.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#SAVE_ORIGINAL1.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#SAVE_ORIGINAL1.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#SAVE_ORIGINAL1.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#SAVE_ORIGINAL_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#SAVE_ORIGINAL_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#SAVE_ORIGINAL_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#SAVE_ORIGINAL_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#SAVE_ORIGINAL_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#SAVE_ORIGINAL_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#SET_DATA.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#SET_DATA.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#SET_DATA.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#SET_DATA1.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#SET_DATA1.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#SET_DATA1.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#SET_DATA2.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#SET_DATA2.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#SET_DATA2.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#SET_RESPONSE.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#SET_RESPONSE.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#SET_RESPONSE.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#SET_RESPONSE1.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#SET_RESPONSE1.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#SET_RESPONSE1.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#SET_RESPONSE2.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#SET_RESPONSE2.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#SET_RESPONSE2.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#SUCCESS_RESP_MAPP_ERR_LOG.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#SUCCESS_RESP_MAPP_ERR_LOG.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#SUCCESS_RESP_MAPP_ERR_LOG.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#SUCCESS_RESP_MAPP_ERR_LOG.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#SUCCESS_RESP_MAPP_ERR_LOG.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#SUCCESS_RESP_MAPP_ERR_LOG.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#TO_REPLY.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#TO_REPLY.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#TO_REPLY.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#TO_REPLY.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#TO_REPLY.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#TO_REPLY.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#additionalInstances" override="200">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#commitCount">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#commitInterval">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#consumerPolicySet">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#consumerPolicySetBindings">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#coordinatedTransaction">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#maximumRateMsgsPerSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#monitoringProfile">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#notificationThresholdMsgsPerSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#processingTimeoutAction">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#processingTimeoutSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#providerPolicySet">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#providerPolicySetBindings">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#startInstancesWhenFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#startMode">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="WS_CLIENT_ADAPTER_FLOW#wlmPolicy">
+    </ConfigurableProperty>
+  </CompiledMessageFlow>
+  <CompiledMessageFlow name="STORE_PAY_WS_BILLER_REQ" type="subflow" deployBarfile="/opt/mdw/bar/PAYBROKER/BILL_PAYMENT/WS_CLIENT_ADAPTER.bar" deployTimestamp="2024-08-10 05:05:06">
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#ADD_MQHEADER_AFTER.mqdlhDestQMgrName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#ADD_MQHEADER_AFTER.mqdlhDestQName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#ADD_MQHEADER_AFTER.mqmdReplyToQ" override="Inherit">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#ADD_MQHEADER_AFTER.mqmdReplyToQMgr" override="Inherit">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#ADD_MQHEADER_AFTER_LOG_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#ADD_MQHEADER_AFTER_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#ADD_MQHEADER_AFTER_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#ADD_MQHEADER_AFTER_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#ADD_MQHEADER_AFTER_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#ADD_MQHEADER_AFTER_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#ADD_MQHEADER_AFTER_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#ADD_MQHEADER_AFTER_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#ADD_MQHEADER_AFTER_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#ADD_MQHEADER_AFTER_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#ADD_MQHEADER_AFTER_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#ADD_MQHEADER_AFTER_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#ADD_MQHEADER_BEFORE.mqdlhDestQMgrName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#ADD_MQHEADER_BEFORE.mqdlhDestQName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#ADD_MQHEADER_BEFORE.mqmdReplyToQ" override="Inherit">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#ADD_MQHEADER_BEFORE.mqmdReplyToQMgr" override="Inherit">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#ADD_MQHEADER_BEFORE_LOG_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#ADD_MQHEADER_BEFORE_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#ADD_MQHEADER_BEFORE_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#ADD_MQHEADER_BEFORE_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#ADD_MQHEADER_BEFORE_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#ADD_MQHEADER_BEFORE_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#ADD_MQHEADER_BEFORE_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#ADD_MQHEADER_BEFORE_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#ADD_MQHEADER_BEFORE_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#ADD_MQHEADER_BEFORE_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#ADD_MQHEADER_BEFORE_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#ADD_MQHEADER_BEFORE_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#AFTER_DELETE_HTTP_REQUEST_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#AFTER_DELETE_HTTP_REQUEST_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#AFTER_DELETE_HTTP_REQUEST_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#AFTER_DELETE_HTTP_REQUEST_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#AFTER_DELETE_HTTP_REQUEST_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#AFTER_DELETE_HTTP_REQUEST_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#DELETE_HTTP_REQUEST.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#DELETE_HTTP_REQUEST.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#DELETE_HTTP_REQUEST.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#DELETE_HTTP_REQUEST_FAILURE.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#DELETE_HTTP_REQUEST_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#DELETE_HTTP_REQUEST_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#DELETE_HTTP_REQUEST_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#DELETE_HTTP_REQUEST_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#DELETE_HTTP_REQUEST_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#GET_HTTP_REQUEST_HEADER.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#GET_HTTP_REQUEST_HEADER.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#GET_HTTP_REQUEST_HEADER.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#GET_HTTP_REQUEST_HEADER_FAILURE.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#GET_HTTP_REQUEST_HEADER_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#GET_HTTP_REQUEST_HEADER_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#GET_HTTP_REQUEST_HEADER_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#GET_HTTP_REQUEST_HEADER_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#GET_HTTP_REQUEST_HEADER_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#GET_HTTP_REQUEST_HRADER_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#GET_HTTP_REQUEST_HRADER_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#GET_HTTP_REQUEST_HRADER_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#GET_HTTP_REQUEST_HRADER_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#GET_HTTP_REQUEST_HRADER_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#GET_HTTP_REQUEST_HRADER_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#PAY_BILLER_REQ_LOG_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#PAY_BILLER_REQ_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#PAY_BILLER_REQ_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#PAY_BILLER_REQ_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#PAY_BILLER_REQ_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#PAY_BILLER_REQ_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#PAY_BILLER_REQ_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#PAY_BILLER_REQ_LOG_OUT.type" override="None">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#PAY_BILLER_REQ_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#PAY_BILLER_REQ_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#PAY_BILLER_REQ_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#PAY_BILLER_REQ_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#PAY_WS_BILLER_REQ.AddRequestToGroup">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#PAY_WS_BILLER_REQ.GroupRequestFolderName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#PAY_WS_BILLER_REQ.GroupRequestTimeout">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#PAY_WS_BILLER_REQ.SSLCertificateLabel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#PAY_WS_BILLER_REQ.SSLCipherSpec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#PAY_WS_BILLER_REQ.SSLPeerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#PAY_WS_BILLER_REQ.channelName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#PAY_WS_BILLER_REQ.connection">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#PAY_WS_BILLER_REQ.destinationQueueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#PAY_WS_BILLER_REQ.listenerPortNumber">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#PAY_WS_BILLER_REQ.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#PAY_WS_BILLER_REQ.queueManagerHostname">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#PAY_WS_BILLER_REQ.queueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#PAY_WS_BILLER_REQ.queueName" override="PAY_WS_BILLER_REQ">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#PAY_WS_BILLER_REQ.replyToQ">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#PAY_WS_BILLER_REQ.replyToQMgr">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#PAY_WS_BILLER_REQ.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#PAY_WS_BILLER_REQ.securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#PAY_WS_BILLER_REQ.useSSL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="STORE_PAY_WS_BILLER_REQ#PAY_WS_BILLER_REQ.validateMaster">
+    </ConfigurableProperty>
+  </CompiledMessageFlow>
+  <CompiledMessageFlow name="SOAP_PROCESS_SUBFLOW" type="subflow" deployBarfile="/opt/mdw/bar/PAYBROKER/BILL_PAYMENT/WS_CLIENT_ADAPTER.bar" deployTimestamp="2024-08-10 05:05:06">
+    <ConfigurableProperty uri="SOAP_PROCESS_SUBFLOW#CHECK_SOAP_ACTION.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_PROCESS_SUBFLOW#CHECK_SOAP_ACTION.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_PROCESS_SUBFLOW#CHECK_SOAP_ACTION.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_PROCESS_SUBFLOW#REVERSAL_ADD_HEADER.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_PROCESS_SUBFLOW#REVERSAL_ADD_HEADER.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_PROCESS_SUBFLOW#REVERSAL_ADD_HEADER.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_PROCESS_SUBFLOW#REVERSAL_SOAP_PROCESS_IN.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_PROCESS_SUBFLOW#REVERSAL_SOAP_PROCESS_IN.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_PROCESS_SUBFLOW#REVERSAL_SOAP_PROCESS_IN.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_PROCESS_SUBFLOW#REVERSAL_SOAP_PROCESS_IN.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_PROCESS_SUBFLOW#REVERSAL_SOAP_PROCESS_IN.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_PROCESS_SUBFLOW#REVERSAL_SOAP_PROCESS_IN.xpath4">
+    </ConfigurableProperty>
+  </CompiledMessageFlow>
+  <CompiledMessageFlow name="SOAP_REQUEST" type="subflow" deployBarfile="/opt/mdw/bar/PAYBROKER/BILL_PAYMENT/WS_CLIENT_ADAPTER.bar" deployTimestamp="2024-08-10 05:05:06">
+    <ConfigurableProperty uri="SOAP_REQUEST#ADD_HEADER_FAIL.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#ADD_HEADER_FAIL.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#ADD_HEADER_FAIL.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#ADD_HEADER_FAIL.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#ADD_HEADER_FAIL.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#ADD_HEADER_FAIL.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#ADD_HEADER_FAIL1.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#ADD_HEADER_FAIL1.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#ADD_HEADER_FAIL1.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#ADD_HEADER_FAIL1.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#ADD_HEADER_FAIL1.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#ADD_HEADER_FAIL1.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#ADD_HEADER_MQ.mqdlhDestQMgrName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#ADD_HEADER_MQ.mqdlhDestQName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#ADD_HEADER_MQ.mqmdReplyToQ" override="$LocalEnvironment/MQMD/ReplyToQ">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#ADD_HEADER_MQ.mqmdReplyToQMgr" override="$LocalEnvironment/MQMD/ReplyToQMgr">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#ADD_MQMD.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#ADD_MQMD.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#ADD_MQMD.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#ADD_MQMD1.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#ADD_MQMD1.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#ADD_MQMD1.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#ADD_MQMD_FAILURE_SOAP.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#ADD_MQMD_FAILURE_SOAP.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#ADD_MQMD_FAILURE_SOAP.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#ADD_MQMD_FAILURE_SOAP1.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#ADD_MQMD_FAILURE_SOAP1.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#ADD_MQMD_FAILURE_SOAP1.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#ADD_MQMD_FAILURE_SOAP1.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#ADD_MQMD_FAILURE_SOAP1.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#ADD_MQMD_FAILURE_SOAP1.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#ADD_MQMD_LOG.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#ADD_MQMD_LOG.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#ADD_MQMD_LOG.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#ADD_MQMD_LOG.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#ADD_MQMD_LOG.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#ADD_MQMD_LOG.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#AFTER_ADD_HEADER.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#AFTER_ADD_HEADER.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#AFTER_ADD_HEADER.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#AFTER_ADD_HEADER.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#AFTER_ADD_HEADER.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#AFTER_ADD_HEADER.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#AFTER_EVELOPE.level" override="Info">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#AFTER_EVELOPE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#AFTER_EVELOPE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#AFTER_EVELOPE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#AFTER_EVELOPE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#AFTER_EVELOPE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#AFTER_EXTRACT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#AFTER_EXTRACT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#AFTER_EXTRACT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#AFTER_EXTRACT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#AFTER_EXTRACT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#AFTER_EXTRACT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#CHECK_ISPAYMENT.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#CHECK_ISPAYMENT.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#CHECK_ISPAYMENT.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#CHECK_ISPAYMENT_LOG_FAILURE.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#CHECK_ISPAYMENT_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#CHECK_ISPAYMENT_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#CHECK_ISPAYMENT_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#CHECK_ISPAYMENT_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#CHECK_ISPAYMENT_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#CHECK_ISPAYMENT_LOG_FALSE.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#CHECK_ISPAYMENT_LOG_FALSE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#CHECK_ISPAYMENT_LOG_FALSE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#CHECK_ISPAYMENT_LOG_FALSE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#CHECK_ISPAYMENT_LOG_FALSE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#CHECK_ISPAYMENT_LOG_FALSE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#CHECK_ISPAYMENT_LOG_TRUE.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#CHECK_ISPAYMENT_LOG_TRUE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#CHECK_ISPAYMENT_LOG_TRUE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#CHECK_ISPAYMENT_LOG_TRUE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#CHECK_ISPAYMENT_LOG_TRUE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#CHECK_ISPAYMENT_LOG_TRUE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#ENVELOP_FAILURE.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#ENVELOP_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#ENVELOP_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#ENVELOP_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#ENVELOP_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#ENVELOP_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#EXTRACT_FAILURE.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#EXTRACT_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#EXTRACT_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#EXTRACT_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#EXTRACT_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#EXTRACT_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#LOG_REQ_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#LOG_REQ_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#LOG_REQ_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#LOG_REQ_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#LOG_REQ_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#LOG_REQ_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#MQ_ADD_HEADER.mqdlhDestQMgrName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#MQ_ADD_HEADER.mqdlhDestQName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#MQ_ADD_HEADER.mqmdReplyToQ" override="$LocalEnvironment/MQMD/ReplyToQ">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#MQ_ADD_HEADER.mqmdReplyToQMgr" override="$LocalEnvironment/MQMD/ReplyToQMgr">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#MQ_ADD_HEADER_LOG.level" override="Info">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#MQ_ADD_HEADER_LOG.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#MQ_ADD_HEADER_LOG.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#MQ_ADD_HEADER_LOG.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#MQ_ADD_HEADER_LOG.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#MQ_ADD_HEADER_LOG.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#Request.URLSpecifier" override="http://localhost:7800">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#Request.acceptCompressedResponses">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#Request.allowedCiphers">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#Request.enableCRLCheck">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#Request.enableKeepAlive">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#Request.hostnameChecking">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#Request.httpProxyLocation">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#Request.httpVersion">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#Request.keyAlias">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#Request.protocol">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#Request.requestCompressionType">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#Request.securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#Request.timeoutForServer" override="30">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#Request.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#SET_GENERATED_SOAP_FAULT.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#SET_GENERATED_SOAP_FAULT.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#SET_GENERATED_SOAP_FAULT.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#SET_GENERATED_SOAP_FAULT_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#SET_GENERATED_SOAP_FAULT_LOG_OUT.type" override="Root">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#SET_GENERATED_SOAP_FAULT_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#SET_GENERATED_SOAP_FAULT_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#SET_GENERATED_SOAP_FAULT_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#SET_GENERATED_SOAP_FAULT_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#SOAP_ERROR.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#SOAP_ERROR.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#SOAP_ERROR.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#SOAP_ERROR.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#SOAP_ERROR.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#SOAP_ERROR.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#SOAP_REQ_FAIL.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#SOAP_REQ_FAIL.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#SOAP_REQ_FAIL.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#SOAP_REQ_FAIL.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#SOAP_REQ_FAIL.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#SOAP_REQ_FAIL.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#TO_ENVELOPE.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#TO_ENVELOPE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#TO_ENVELOPE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#TO_ENVELOPE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#TO_ENVELOPE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#TO_ENVELOPE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#_ADD_HEADER_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#_ADD_HEADER_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#_ADD_HEADER_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#_ADD_HEADER_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#_ADD_HEADER_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="SOAP_REQUEST#_ADD_HEADER_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+  </CompiledMessageFlow>
+</Broker>

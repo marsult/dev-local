@@ -1,0 +1,109 @@
+{
+	"folders": {},
+	"connections": {
+		"db2-1926c772f34-4e5e021c9f368dc": {
+			"provider": "db2",
+			"driver": "db2",
+			"name": "MWCONFIG@10.10.10.36",
+			"save-password": true,
+			"navigator-show-only-entities": true,
+			"navigator-hide-folders": true,
+			"navigator-hide-virtual": true,
+			"configuration": {
+				"host": "10.10.10.36",
+				"port": "50000",
+				"database": "MWCONFIG",
+				"url": "jdbc:db2://10.10.10.36:50000/MWCONFIG",
+				"configurationType": "MANUAL",
+				"type": "dev",
+				"closeIdleConnection": true,
+				"auth-model": "native",
+				"bootstrap": {
+					"autocommit": true
+				}
+			}
+		},
+		"db2-1926f94d6d2-69ccc9d2b6b254df": {
+			"provider": "db2",
+			"driver": "db2",
+			"name": "MWLOG@172.18.30.36",
+			"save-password": true,
+			"navigator-show-only-entities": true,
+			"navigator-hide-folders": true,
+			"navigator-hide-virtual": true,
+			"configuration": {
+				"host": "172.18.30.36",
+				"port": "50000",
+				"database": "MWLOG",
+				"url": "jdbc:db2://172.18.30.36:50000/MWLOG",
+				"configurationType": "MANUAL",
+				"type": "dev",
+				"closeIdleConnection": true,
+				"auth-model": "native",
+				"bootstrap": {
+					"autocommit": true
+				}
+			}
+		},
+		"db2-1926f959eb5-4f32fbb71f83b1d5": {
+			"provider": "db2",
+			"driver": "db2",
+			"name": "MWCONFIG@10.255.0.122",
+			"save-password": true,
+			"navigator-show-only-entities": true,
+			"navigator-hide-folders": true,
+			"navigator-hide-virtual": true,
+			"configuration": {
+				"host": "10.255.0.122",
+				"port": "50000",
+				"database": "MWCONFIG",
+				"url": "jdbc:db2://10.255.0.122:50000/MWCONFIG",
+				"configurationType": "MANUAL",
+				"type": "dev",
+				"closeIdleConnection": true,
+				"auth-model": "native",
+				"bootstrap": {
+					"autocommit": true
+				}
+			}
+		},
+		"db2-1927512f806-7308d3e8c3c8b192": {
+			"provider": "db2",
+			"driver": "db2",
+			"name": "MWCONFIG@172.18.30.36",
+			"save-password": true,
+			"navigator-show-only-entities": true,
+			"navigator-hide-folders": true,
+			"navigator-hide-virtual": true,
+			"configuration": {
+				"host": "172.18.30.36",
+				"port": "50000",
+				"database": "MWCONFIG",
+				"url": "jdbc:db2://172.18.30.36:50000/MWCONFIG",
+				"configurationType": "MANUAL",
+				"type": "dev",
+				"closeIdleConnection": true,
+				"auth-model": "native",
+				"bootstrap": {
+					"autocommit": true
+				}
+			}
+		}
+	},
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false,
+			"smart-commit": false,
+			"smart-commit-recover": true,
+			"auto-close-transactions": true,
+			"close-transactions-period": 1800,
+			"auto-close-connections": true,
+			"close-connections-period": 14400
+		}
+	}
+}

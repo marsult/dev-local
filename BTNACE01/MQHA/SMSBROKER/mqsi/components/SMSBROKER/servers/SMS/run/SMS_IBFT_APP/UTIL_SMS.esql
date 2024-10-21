@@ -1,0 +1,69 @@
+DECLARE MsgFinReqType SHARED CHARACTER '0200';
+DECLARE MsgFinRespType SHARED CHARACTER '0210';
+DECLARE MsgRevReqType SHARED CHARACTER '0400';
+DECLARE MsgRevRespType SHARED CHARACTER '0410';
+DECLARE MsgNetReqType SHARED CHARACTER '0800';
+DECLARE MsgNetRespType SHARED CHARACTER '0810';
+
+DECLARE respApprove CONSTANT CHARACTER '00';
+DECLARE respUndefine CONSTANT CHARACTER '05';
+DECLARE respRevFailedPayDone CONSTANT CHARACTER '12';
+DECLARE respInvalidAmount CONSTANT CHARACTER '13';
+DECLARE respCustIdNF CONSTANT CHARACTER '14';
+DECLARE respWrongMessageFormat CONSTANT CHARACTER '30';
+DECLARE respNotSupported CONSTANT CHARACTER '31';
+DECLARE respRevFailedNoPay CONSTANT CHARACTER '63';
+DECLARE respTimeOut CONSTANT CHARACTER '68';
+DECLARE respSuspect CONSTANT CHARACTER '68';
+DECLARE respBillPaid CONSTANT CHARACTER '88';
+DECLARE respLinkDown CONSTANT CHARACTER '89';
+DECLARE respDBMSProblem CONSTANT CHARACTER '91';
+DECLARE respRevHadDoneBefore CONSTANT CHARACTER '94';
+
+DECLARE reversebBecauseOfTO CONSTANT CHARACTER '090';
+
+CREATE COMPUTE MODULE SET_TYPE
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot = InputRoot;
+		--SET OutputRoot.XMLNSC.data.body = null;
+		SET OutputLocalEnvironment.data = InputRoot.XMLNSC.data;
+		IF InputRoot.XMLNSC.data.type LIKE '%dsp%' THEN
+			SET OutputRoot.XMLNSC.data.type = 'dsp-abcs-request';
+		END IF;
+		RETURN TRUE;
+	END;
+END MODULE;
+
+CREATE COMPUTE MODULE SET_RESPONSE
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot = InputRoot;
+		IF STARTSWITH(InputRoot.XMLNSC.data.body.messageType, '022') THEN
+			SET OutputRoot.XMLNSC.data.body.messageType = '0230';
+		ELSEIF STARTSWITH(InputRoot.XMLNSC.data.body.messageType, '02') THEN
+			SET OutputRoot.XMLNSC.data.body.messageType = MsgFinRespType;
+		ELSEIF STARTSWITH(InputRoot.XMLNSC.data.body.messageType, '04') THEN
+			SET OutputRoot.XMLNSC.data.body.messageType = MsgRevRespType;
+		ELSE
+			SET OutputRoot.XMLNSC.data.body.messageType = MsgNetRespType;
+		END IF;
+		SET OutputRoot.XMLNSC.data.body.responseCode = '89';
+		--SET OutputRoot.XMLNSC.data.code = OutputRoot.XMLNSC.data.body.messageType||'.'||InputRoot.XMLNSC.data.body.processingCode;
+		RETURN TRUE;
+	END;
+END MODULE;
+
+CREATE COMPUTE MODULE SET_QUEUE
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot = InputRoot;
+		IF InputRoot.XMLNSC.data.destinationQueueName IS NOT NULL THEN
+			SET OutputLocalEnvironment.Destination.MQDestinationList.DestinationData.queueName = InputRoot.XMLNSC.data.destinationQueueName;
+		ELSE
+			SET OutputLocalEnvironment.Destination.MQDestinationList.DestinationData.queueName = 'CORE_IN';
+		END IF;
+		SET OutputRoot.XMLNSC.data.body.frontOriginal = InputLocalEnvironment.data;
+		RETURN TRUE;
+	END;
+END MODULE;

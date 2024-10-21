@@ -1,0 +1,387 @@
+DECLARE MDW_SIGNON_CACHE SHARED ROW;
+
+
+CREATE COMPUTE MODULE MDW_FLOW_SET_MDW_ABCS_REPLY_TO_QUEUE
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot = InputRoot;
+		SET OutputLocalEnvironment = InputLocalEnvironment;
+
+		IF FIELDTYPE(InputRoot.XMLNSC.data.ReplyToQ) IS NULL THEN
+			SET OutputRoot.MQMD.ReplyToQ = 'MDW_CORE_REPLY';
+		ELSE
+			SET OutputRoot.MQMD.ReplyToQ = InputRoot.XMLNSC.data.ReplyToQ;
+		END IF;
+		SET OutputLocalEnvironment.Destination.MQDestinationList.DestinationData.queueName = InputRoot.XMLNSC.data.queueName;
+		SET OutputRoot.MQMD.ReplyToQMgr=null;
+		RETURN TRUE;
+	END;
+END MODULE;
+
+
+CREATE COMPUTE MODULE MDW_FLOW_SET_MDW_CORE_REVERSAL_REPLY_TO_QUEUE
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot = InputRoot;
+		SET OutputLocalEnvironment = InputLocalEnvironment;
+
+		SET OutputRoot.MQMD.ReplyToQ = 'MDW_CORE_REVERSAL_REPLY';
+		SET OutputLocalEnvironment.Destination.MQDestinationList.DestinationData.queueName = InputRoot.XMLNSC.data.queueName;
+
+		RETURN TRUE;
+	END;
+END MODULE;
+
+
+CREATE COMPUTE MODULE MDW_FLOW_SET_ISO_ABCS_MAPPING
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot = InputRoot;
+
+		SET OutputRoot.XMLNSC.data.type = 'outgoing-full';
+
+		RETURN TRUE;
+	END;
+END MODULE;
+
+
+CREATE COMPUTE MODULE MDW_FLOW_SET_SIGNON
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot = InputRoot;
+		SET OutputLocalEnvironment = InputLocalEnvironment;
+
+		SIGNON : BEGIN ATOMIC
+			--
+			-- set signon cache to local environment
+			SET OutputLocalEnvironment.MDW_SIGNON = MDW_SIGNON_CACHE;
+			--
+			-- set current connid to variable
+			DECLARE ci CHAR InputRoot.XMLNSC.data.connid;
+			--
+			-- check whether connid is exist in signon cache
+			DECLARE i INTEGER 1;
+			DECLARE isExist BOOLEAN FALSE;
+			CHECKEXIST : BEGIN
+				FOR sc AS OutputLocalEnvironment.MDW_SIGNON.CONNID[] DO
+					IF (sc = ci) THEN
+						SET isExist = TRUE;
+						LEAVE CHECKEXIST;
+					END IF;
+
+					SET i = i + 1;
+				END FOR ;
+			END;
+			--
+			-- delete signon cache which its port equal to current signon's port
+			DECLARE j INTEGER 1;
+			DECLARE currentPort CHAR SUBSTRING(ci AFTER '-');
+			SET currentPort = SUBSTRING(currentPort BEFORE '-');
+			FOR sc AS OutputLocalEnvironment.MDW_SIGNON.CONNID[] DO
+				DECLARE cachePort CHAR SUBSTRING(sc AFTER '-');
+				SET cachePort = SUBSTRING(cachePort BEFORE '-');
+				IF (currentPort = cachePort) THEN
+					DELETE FIELD OutputLocalEnvironment.MDW_SIGNON.CONNID[j];
+				END IF;
+
+				SET j = j + 1;
+			END FOR ;
+			--
+			-- add current signon to signon cache if not exist
+			IF NOT isExist THEN
+				CREATE LASTCHILD OF OutputLocalEnvironment.MDW_SIGNON NAME 'CONNID' VALUE ci;
+				SET MDW_SIGNON_CACHE = OutputLocalEnvironment.MDW_SIGNON;
+			END IF;
+			--
+			-- print signon cache
+			SET OutputLocalEnvironment.MDW_SIGNON_EXIST = isExist;
+		END SIGNON;
+
+		RETURN TRUE;
+	END;
+END MODULE;
+
+
+CREATE COMPUTE MODULE MDW_FLOW_SET_SIGNOFF
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot = InputRoot;
+
+		SIGNOFF : BEGIN ATOMIC
+			--
+			-- set signon cache to local environment
+			SET OutputLocalEnvironment.MDW_SIGNON = MDW_SIGNON_CACHE;
+			--
+			-- set current connid to variable
+			DECLARE ci CHAR InputRoot.XMLNSC.data.connid;
+			--
+			-- check whether connid is exist in signon cache
+			DECLARE i INTEGER 1;
+			DECLARE isExist BOOLEAN FALSE;
+			CHECKEXIST : BEGIN
+				FOR sc AS OutputLocalEnvironment.MDW_SIGNON.CONNID[] DO
+					IF (sc = ci) THEN
+						SET isExist = TRUE;
+						LEAVE CHECKEXIST;
+					END IF;
+
+					SET i = i + 1;
+				END FOR ;
+			END;
+			--
+			-- add current signon to signon cache if not exist
+			IF isExist THEN
+				DELETE FIELD OutputLocalEnvironment.MDW_SIGNON.CONNID[i];
+				-- CREATE LASTCHILD OF OutputLocalEnvironment.MDW_SIGNON NAME 'CONNID' VALUE ci;
+				SET MDW_SIGNON_CACHE = OutputLocalEnvironment.MDW_SIGNON;
+			END IF;
+			--
+			-- print signon cache
+			SET OutputLocalEnvironment.MDW_SIGNON_EXIST = isExist;
+		END SIGNOFF;
+
+		RETURN TRUE;
+	END;
+END MODULE;
+
+
+CREATE FILTER MODULE ALREADY_SIGNON_FILTER
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		DECLARE isExist BOOLEAN FALSE;
+
+		CHECK_SIGNON : BEGIN ATOMIC
+			--
+			-- set signon cache to local environment
+			SET LocalEnvironment.MDW_SIGNON = MDW_SIGNON_CACHE;
+			--
+			-- set current connid to variable
+			DECLARE ci CHAR Root.XMLNSC.data.connid;
+			--
+			-- check whether connid is exist in signon cache
+			DECLARE i INTEGER 1;
+			CHECKEXIST : BEGIN
+				FOR sc AS LocalEnvironment.MDW_SIGNON.CONNID[] DO
+					IF (sc = ci) THEN
+						SET isExist = TRUE;
+						LEAVE CHECKEXIST;
+					END IF;
+
+					SET i = i + 1;
+				END FOR ;
+			END;
+		END CHECK_SIGNON;
+
+		RETURN isExist;
+	END;
+END MODULE;
+
+
+CREATE COMPUTE MODULE SET_ISO_ERROR_NOT_SIGNON
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot = InputRoot;
+
+		SET OutputRoot.XMLNSC.data.nolog = 'true';
+
+		IF InputRoot.XMLNSC.data.body.messageType = '0200' THEN
+			SET OutputRoot.XMLNSC.data.body.messageType = '0210';
+		ELSEIF InputRoot.XMLNSC.data.body.messageType = '0400' THEN
+			SET OutputRoot.XMLNSC.data.body.messageType = '0410';
+		ELSEIF InputRoot.XMLNSC.data.body.messageType = '0401' THEN
+			SET OutputRoot.XMLNSC.data.body.messageType = '0411';
+		END IF;
+
+		SET OutputRoot.XMLNSC.data.body.responseCode = '93';
+
+		RETURN TRUE;
+	END;
+END MODULE;
+
+
+CREATE FILTER MODULE MDW_FLOW_RES_CORE_NOT_ERROR_FILTER
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		--IF FIELDTYPE(Root.XMLNSC.data.body.responseCode) IS NOT NULL AND (Root.XMLNSC.data.body.responseCode <> '000' AND Root.XMLNSC.data.body.responseCode <> '00') THEN
+		--RETURN FALSE;
+		--ELSEIF Root.XMLNSC.data.error = 'NULL' THEN
+		--RETURN FALSE;
+		--ELSE
+		--RETURN TRUE;
+		--END IF;
+
+		DECLARE errorMsg CHARACTER;
+		DECLARE errorMsgLength INTEGER;
+
+		SET errorMsg = Root.XMLNSC.data.body.RRE1;
+
+		IF FIELDTYPE (Root.XMLNSC.data.body.responseCode) IS NOT NULL THEN
+
+			IF (Root.XMLNSC.data.body.responseCode <> '000' AND Root.XMLNSC.data.body.responseCode <> '00') THEN
+				RETURN FALSE;
+			ELSE
+				RETURN TRUE;
+			END IF;
+		ELSEIF FIELDTYPE (Root.XMLNSC.data.body.RRE1) IS NOT NULL THEN
+			SET errorMsgLength = LENGTH(TRIM(errorMsg));
+			IF errorMsgLength > 0 THEN
+				RETURN FALSE;
+			ELSE
+				RETURN TRUE;
+			END IF;
+		ELSE
+			RETURN TRUE;
+		END IF;
+	END;
+END MODULE;
+
+
+CREATE COMPUTE MODULE MDW_FLOW_SET_ISO_RES_ERROR
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot = InputRoot;
+
+		DELETE FIELD OutputRoot.XMLNSC.data;
+
+		SET OutputRoot.XMLNSC.data.CorrelId = InputRoot.XMLNSC.data.CorrelId;
+		SET OutputRoot.XMLNSC.data.sid = InputRoot.XMLNSC.data.sid;
+		SET OutputRoot.XMLNSC.data.connid = InputRoot.XMLNSC.data.connid;
+		SET OutputRoot.XMLNSC.data.timestamp = InputRoot.XMLNSC.data.timestamp;
+		SET OutputRoot.XMLNSC.data.reqtimestamp = InputRoot.XMLNSC.data.reqtimestamp;
+
+		IF FIELDTYPE(InputRoot.XMLNSC.data.request.data.source) IS NULL THEN
+			SET OutputRoot.XMLNSC.data.source = InputRoot.XMLNSC.data.source;
+		ELSE
+			SET OutputRoot.XMLNSC.data.source = InputRoot.XMLNSC.data.request.data.source;
+		END IF;
+
+		IF FIELDTYPE(InputRoot.XMLNSC.data.body.original.original) IS NULL THEN
+			SET OutputRoot.XMLNSC.data.body = InputRoot.XMLNSC.data.request.data.body.original;
+			SET OutputRoot.XMLNSC.data.code = SUBSTRING(InputRoot.XMLNSC.data.request.data.body.original.messageType FROM 1 FOR 2) || '10.' || InputRoot.XMLNSC.data.request.data.body.original.processingCode;
+		ELSE
+			SET OutputRoot.XMLNSC.data.body = InputRoot.XMLNSC.data.body.original.original;
+			SET OutputRoot.XMLNSC.data.code = SUBSTRING(InputRoot.XMLNSC.data.body.original.original.messageType FROM 1 FOR 2) || '10.' || InputRoot.XMLNSC.data.body.original.original.processingCode;
+		END IF;
+
+		IF FIELDTYPE(InputRoot.XMLNSC.data.error) IS NULL THEN
+			SET OutputRoot.XMLNSC.data.body.responseCode = '06';
+		ELSE
+			IF STARTSWITH(InputRoot.XMLNSC.data.error, 'Mapping ') AND ENDSWITH(InputRoot.XMLNSC.data.error, ' not found') THEN
+				SET OutputRoot.XMLNSC.data.body.responseCode = '92';
+			ELSEIF InputRoot.XMLNSC.data.error = 'failed to connect' THEN
+				SET OutputRoot.XMLNSC.data.body.responseCode = '06';
+			ELSEIF InputRoot.XMLNSC.data.error = 'timeout' THEN
+				SET OutputRoot.XMLNSC.data.body.responseCode = '68';
+			ELSE
+				SET OutputRoot.XMLNSC.data.body.responseCode = '06';
+			END IF;
+		END IF;
+
+		IF OutputRoot.XMLNSC.data.body.messageType = '0200' THEN
+			SET OutputRoot.XMLNSC.data.body.messageType = '0210';
+		ELSEIF OutputRoot.XMLNSC.data.body.messageType = '0400' THEN
+			SET OutputRoot.XMLNSC.data.body.messageType = '0410';
+		ELSEIF OutputRoot.XMLNSC.data.body.messageType = '0401' THEN
+			SET OutputRoot.XMLNSC.data.body.messageType = '0411';
+		END IF;
+
+		RETURN TRUE;
+	END;
+END MODULE;
+
+
+CREATE COMPUTE MODULE MDW_FLOW_SET_ISO_REQ_NOT_FOUND
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot = InputRoot;
+
+		IF FIELDTYPE(InputRoot.XMLNSC.data.original) IS NOT NULL THEN
+			SET OutputRoot.XMLNSC.data.body = InputRoot.XMLNSC.data.original;
+			DELETE FIELD OutputRoot.XMLNSC.data.original;
+		END IF;
+
+		IF InputRoot.XMLNSC.data.original.messageType = '0200' THEN
+			SET OutputRoot.XMLNSC.data.body.messageType = '0210';
+		ELSEIF InputRoot.XMLNSC.data.original.messageType = '0400' THEN
+			SET OutputRoot.XMLNSC.data.body.messageType = '0410';
+		ELSEIF InputRoot.XMLNSC.data.original.messageType = '0401' THEN
+			SET OutputRoot.XMLNSC.data.body.messageType = '0411';
+		END IF;
+
+		SET OutputRoot.XMLNSC.data.body.responseCode = '90';
+
+		RETURN TRUE;
+	END;
+END MODULE;
+
+
+CREATE FILTER MODULE MDW_FLOW_ERROR_MAPPING_FILTER
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		IF FIELDTYPE(Root.XMLNSC.data.error) IS NULL THEN
+			RETURN FALSE;
+		ELSE
+			IF CONTAINS(Root.XMLNSC.data.error, 'error:') THEN
+				RETURN TRUE;
+			ELSE
+				RETURN FALSE;
+			END IF;
+		END IF;
+	END;
+END MODULE;
+
+
+CREATE COMPUTE MODULE MDW_FLOW_SET_ISO_ERROR_MAPPING
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot = InputRoot;
+
+		IF InputRoot.XMLNSC.data.body.messageType = '0200' THEN
+			SET OutputRoot.XMLNSC.data.body.messageType = '0210';
+		ELSEIF InputRoot.XMLNSC.data.body.messageType = '0400' THEN
+			SET OutputRoot.XMLNSC.data.body.messageType = '0410';
+		ELSEIF InputRoot.XMLNSC.data.body.messageType = '0401' THEN
+			SET OutputRoot.XMLNSC.data.body.messageType = '0411';
+		END IF;
+		SET OutputRoot.XMLNSC.data.body.responseCode = SUBSTRING(InputRoot.XMLNSC.data.error AFTER 'error:' FOR 2);
+		RETURN TRUE;
+	END;
+END MODULE;
+
+
+CREATE COMPUTE MODULE MDW_FLOW_CHECK_REQUEST_TIMESTAMP
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot = InputRoot;
+
+		IF FIELDTYPE (InputRoot.XMLNSC.data.reqtimestamp) IS NULL THEN
+			SET OutputRoot.XMLNSC.data.reqtimestamp=InputRoot.XMLNSC.data.request.data.reqtimestamp;
+		END IF;
+
+		RETURN TRUE;
+	END;
+END MODULE;
+
+
+CREATE COMPUTE MODULE MDW_FLOW_SET_REPLY_TO_Q
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot = InputRoot;
+
+		SET OutputRoot.MQMD.MsgId = InputRoot.MQMD.CorrelId;
+
+		IF FIELDTYPE(InputRoot.XMLNSC.data.ReplyToQ) IS NOT NULL THEN
+			SET OutputRoot.MQMD.ReplyToQ = InputRoot.XMLNSC.data.ReplyToQ;
+		ELSE
+			SET OutputRoot.MQMD.ReplyToQ = 'ROUTER_OUT';
+		END IF;
+
+		IF FIELDTYPE(InputRoot.XMLNSC.data.ReplyToQMgr) IS NOT NULL THEN
+			SET OutputRoot.MQMD.ReplyToQMgr = InputRoot.XMLNSC.data.ReplyToQMgr;
+		ELSE
+			SET OutputRoot.MQMD.ReplyToQMgr = null;
+		END IF;
+
+		RETURN TRUE;
+	END;
+END MODULE;

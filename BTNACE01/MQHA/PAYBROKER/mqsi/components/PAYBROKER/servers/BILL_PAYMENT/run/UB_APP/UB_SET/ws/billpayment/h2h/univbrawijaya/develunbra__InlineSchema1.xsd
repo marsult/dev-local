@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="univbrawijaya.h2h.billpayment.ws" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:con="http://eviware.com/soapui/config" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:s0="univbrawijaya.h2h.billpayment.ws" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/">
+      <xsd:element name="reverse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="0" name="request" type="s0:ReversalRequest"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:complexType name="ReversalRequest">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="language" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="trxDateTime" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="origTrxDateTime" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="transmissionDateTime" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="origTransmissionDateTime" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="companyCode" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="channelID" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="terminalID" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="billKey1" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="billKey2" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="billKey3" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="paymentAmount" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="currency" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="transactionID" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="reference1" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="reference2" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="reference3" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="reverseResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="0" name="reverseResult" type="s0:ReversalResponse"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:complexType name="ReversalResponse">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="status" type="s0:Status"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="Status">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="isError" type="xsd:boolean"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="errorCode" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="statusDescription" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="payment">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="0" name="request" type="s0:PaymentRequest"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:complexType name="PaymentRequest">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="language" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="trxDateTime" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="transmissionDateTime" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="companyCode" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="channelID" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="terminalID" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="billKey1" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="billKey2" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="billKey3" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="paidBills" type="s0:ArrayOfString"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="paymentAmount" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="currency" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="transactionID" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="reference1" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="reference2" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="reference3" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOfString">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="string" nillable="true" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="paymentResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="0" name="paymentResult" type="s0:PaymentResponse"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:complexType name="PaymentResponse">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="billInfo1" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="billInfo2" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="billInfo3" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="billInfo4" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="billInfo5" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="billInfo6" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="billInfo7" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="billInfo8" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="billInfo9" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="billInfo10" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="billInfo11" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="billInfo12" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="billInfo13" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="billInfo14" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="billInfo15" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="billInfo16" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="billInfo17" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="billInfo18" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="billInfo19" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="billInfo21" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="billInfo22" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="billInfo23" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="billInfo24" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="billInfo25" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="status" type="s0:Status"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="inquiry">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="0" name="request" type="s0:InquiryRequest"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:complexType name="InquiryRequest">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="language" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="trxDateTime" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="transmissionDateTime" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="companyCode" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="channelID" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="terminalID" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="billKey1" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="billKey2" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="billKey3" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="reference1" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="reference2" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="reference3" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="inquiryResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="0" name="inquiryResult" type="s0:InquiryResponse"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:complexType name="InquiryResponse">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="currency" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="billInfo1" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="billInfo2" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="billInfo3" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="billInfo4" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="billInfo5" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="billInfo6" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="billInfo7" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="billInfo8" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="billInfo9" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="billInfo10" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="billInfo11" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="billInfo12" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="billInfo13" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="billInfo14" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="billInfo15" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="billInfo16" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="billInfo17" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="billInfo18" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="billInfo19" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="billInfo21" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="billInfo22" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="billInfo23" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="billInfo24" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="billInfo25" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="billDetails" type="s0:ArrayOfBillDetail"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="status" type="s0:Status"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOfBillDetail">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="BillDetail" nillable="true" type="s0:BillDetail"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="BillDetail">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="billCode" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="billName" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="billShortName" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="billAmount" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="reference1" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="reference2" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="reference3" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="echoTest">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="0" name="tx" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="echoTestResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="0" name="echoTestResult" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>

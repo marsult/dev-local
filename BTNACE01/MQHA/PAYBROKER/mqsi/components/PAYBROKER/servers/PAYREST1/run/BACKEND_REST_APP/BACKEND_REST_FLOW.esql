@@ -1,0 +1,259 @@
+CREATE COMPUTE MODULE BACKEND_REST_FLOW_SET_REQUEST
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputLocalEnvironment = InputLocalEnvironment;
+		SET OutputRoot.Properties = InputRoot.Properties;
+
+		SET OutputLocalEnvironment.dlog.dir = 'O';
+		SET OutputLocalEnvironment.dlog.request_id = InputRoot.MQMD.CorrelId;
+		SET OutputLocalEnvironment.dlog.request_source = InputRoot.XMLNSC.data.destination;
+		SET OutputLocalEnvironment.dlog.request_timestamp = InputRoot.XMLNSC.data.reqtimestamp;
+		SET OutputLocalEnvironment.dlog.request_url = InputRoot.XMLNSC.data.RequestURL;
+
+		SET OutputLocalEnvironment.Destination.HTTP.RequestURL = InputRoot.XMLNSC.data.RequestURL;
+		
+		
+		SET OutputLocalEnvironment.MQMD.MsgId = InputRoot.MQMD.MsgId;
+		SET OutputLocalEnvironment.MQMD.CorrelId = InputRoot.MQMD.CorrelId;
+		SET OutputLocalEnvironment.request.data = InputRoot.XMLNSC.data;
+
+		IF FIELDTYPE(InputRoot.XMLNSC.data.ReplyToQ) IS NOT NULL THEN
+			SET OutputLocalEnvironment.data.ReplyToQ = InputRoot.XMLNSC.data.ReplyToQ;
+		ELSE
+			SET OutputLocalEnvironment.data.ReplyToQ = InputRoot.MQMD.ReplyToQ;
+		END IF;
+
+		SET OutputRoot.JSON.Data = InputRoot.XMLNSC.data.body;
+		
+		
+		DELETE FIELD OutputRoot.JSON.Data.bckp;
+		DELETE FIELD OutputRoot.JSON.Data.charge_name_1;
+		DELETE FIELD OutputRoot.JSON.Data.charge_value_1;
+		DELETE FIELD OutputRoot.JSON.Data.charge_name_2;
+		DELETE FIELD OutputRoot.JSON.Data.charge_value_2;
+		DELETE FIELD OutputRoot.JSON.Data.charge_name_3;
+		DELETE FIELD OutputRoot.JSON.Data.charge_value_3;
+		DELETE FIELD OutputRoot.JSON.Data.charge_name_4;
+		DELETE FIELD OutputRoot.JSON.Data.charge_value_4;
+		DELETE FIELD OutputRoot.JSON.Data.charge_name_5;
+		DELETE FIELD OutputRoot.JSON.Data.charge_value_5;
+		DELETE FIELD OutputRoot.JSON.Data.charge_value_6;
+		DELETE FIELD OutputRoot.JSON.Data.charge_value_7;
+		DELETE FIELD OutputRoot.JSON.Data.isMultipleRequest;
+		DELETE FIELD OutputRoot.JSON.Data.isNoNeedReply;
+		DELETE FIELD OutputRoot.JSON.Data.fullReverse;
+		DELETE FIELD OutputRoot.JSON.Data.mappingCodeMultiple;
+		DELETE FIELD OutputRoot.JSON.Data.original;
+		
+		DECLARE host CHARACTER REPLACE(REPLACE(InputRoot.XMLNSC.data.RequestURL, 'http://', ''), 'https://', '');
+		SET OutputLocalEnvironment.HTTPRequestHeader."host" = SUBSTRING(host FROM 1 FOR (POSITION('/' IN host) - 1));
+		--SET OutputLocalEnvironment.HTTPRequestHeader."id" = InputRoot.XMLNSC.data.id;
+		--SET OutputLocalEnvironment.HTTPRequestHeader."key" = InputRoot.XMLNSC.data.key;
+		
+		SET OutputLocalEnvironment.HTTPRequestHeader = InputRoot.XMLNSC.additionalHeader;
+		
+
+		SET OutputLocalEnvironment.HTTPRequestHeader."Content-Type" = 'application/json';
+		SET OutputLocalEnvironment.HTTPRequestHeader."Content-Length" = LENGTH(InputRoot.XMLNSC.data.body);
+		SET OutputLocalEnvironment.HTTPRequestHeader."Accept" = '*/*';
+		SET OutputLocalEnvironment.HTTPRequestHeader."User-Agent" = 'BTNAPP/1.0';
+		SET OutputLocalEnvironment.HTTPRequestHeader."Connection" = 'keep-alive';
+		
+		
+		RETURN TRUE;
+	END;
+END MODULE;
+
+CREATE COMPUTE MODULE BACKEND_REST_FLOW_SET_GENERATED_REST_FAULT
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputLocalEnvironment = InputLocalEnvironment;
+		SET OutputLocalEnvironment.dlog.dir = 'I';
+
+		SET OutputRoot = InputRoot;
+		DECLARE ptrException REFERENCE TO InputExceptionList.*[1];
+		DECLARE messageText CHARACTER;
+		WHILE lastmove(ptrException) DO
+			IF ptrException.Number IS NOT NULL THEN
+				SET messageText = ptrException.Text;
+			END IF;
+			move ptrException lastchild;
+		END WHILE;
+
+		SET OutputRoot.JSON.Data.faultstring = messageText;
+		SET OutputRoot.JSON.Data.faultactor = 'Generated';
+		IF CONTAINS(messageText, 'timeout') THEN
+			SET OutputRoot.JSON.Data.faultcode = 'G01';
+		ELSEIF CONTAINS(messageText, 'socket operation') THEN
+			SET OutputRoot.JSON.Data.faultcode = 'G02';
+		ELSE
+			SET OutputRoot.JSON.Data.faultcode = 'G99';
+		END IF;
+
+		SET OutputRoot.MQMD = InputRoot.MQMD;
+
+		RETURN TRUE;
+	END;
+END MODULE;
+
+CREATE COMPUTE MODULE BACKEND_REST_FLOW_SET_GENERATED_REST_ERROR
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputLocalEnvironment = InputLocalEnvironment;
+		SET OutputLocalEnvironment.dlog.dir = 'I';
+
+		SET OutputRoot.Properties = InputRoot.Properties;
+
+		SET OutputRoot.JSON.Data.faultactor = 'Generated';
+		SET OutputRoot.JSON.Data.faultcode = 'G' || CAST (InputRoot.HTTPResponseHeader."X-Original-HTTP-Status-Code" AS CHARACTER);
+		SET OutputRoot.JSON.Data.faultstring = InputRoot.HTTPResponseHeader."X-Original-HTTP-Status-Line";
+
+		RETURN TRUE;
+	END;
+END MODULE;
+
+CREATE COMPUTE MODULE BACKEND_REST_FLOW_SET_RESPONSE_LOG_DB
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputLocalEnvironment = InputLocalEnvironment;
+
+		SET OutputLocalEnvironment.dlog.dir = 'I';
+		-- SET OutputLocalEnvironment.dlog.timestamp = CAST(CAST(((CURRENT_TIMESTAMP - (TIMESTAMP '1970-01-01 00:00:00')) SECOND * 1000 ) AS INT) AS CHARACTER);
+		
+		RETURN TRUE;
+	END;
+END MODULE;
+
+CREATE COMPUTE MODULE BACKEND_REST_FLOW_SET_RESPONSE
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot.Properties = InputRoot.Properties;
+		-- SET OutputRoot.MQMD.MsgId = InputLocalEnvironment.MQMD.MsgId;
+		SET OutputRoot.MQMD.MsgId = InputLocalEnvironment.MQMD.CorrelId;
+		SET OutputRoot.MQMD.CorrelId = InputLocalEnvironment.MQMD.CorrelId;
+		SET OutputRoot.MQMD.ReplyToQ = InputLocalEnvironment.request.data.ReplyToQ;
+		SET OutputRoot.MQMD.ReplyToQMgr = InputLocalEnvironment.request.data.ReplyToQMgr;
+
+		SET OutputRoot.XMLNSC.data.body = InputRoot.JSON.Data;
+
+		SET OutputRoot.XMLNSC.data.destination = InputLocalEnvironment.dlog.request_source;
+		SET OutputRoot.XMLNSC.data.nolog = 'true';
+		SET OutputRoot.XMLNSC.data.reqtimestamp = InputLocalEnvironment.request.data.reqtimestamp;
+		SET OutputRoot.XMLNSC.data.request = InputLocalEnvironment.request;
+		SET OutputRoot.XMLNSC.data.request.data.group = InputLocalEnvironment.request.data.group;
+		SET OutputRoot.XMLNSC.data.request.data.mappingCode = InputLocalEnvironment.request.data.code;
+
+		DECLARE refErrorPath REFERENCE TO InputRoot.JSON.Data;
+		IF FIELDTYPE(InputLocalEnvironment.request.data.errorCodePath) IS NOT NULL THEN
+			DECLARE errorCodePath CHARACTER InputLocalEnvironment.request.data.errorCodePath;
+
+			CREATE FIELD OutputRoot.XMLNSC.data.error;
+			DECLARE refError REFERENCE TO OutputRoot.XMLNSC.data.error;
+			DECLARE iIndx INT 1;
+			WHILE LENGTH(errorCodePath) > 0 DO
+				IF CONTAINS(errorCodePath, '.') THEN
+					SET refError.path[iIndx] = SUBSTRING (errorCodePath BEFORE '.');
+					SET errorCodePath = SUBSTRING (errorCodePath AFTER '.');
+				ELSE
+					SET refError.path[iIndx] = errorCodePath;
+					SET errorCodePath = '';
+				END IF;
+				SET iIndx = iIndx + 1;
+			END WHILE;
+			SET iIndx = iIndx - 1;
+
+			DECLARE eIndx INT 1;
+			WHILE iIndx > 0 DO
+				MOVE refErrorPath TO refErrorPath.{refError.path[eIndx]};
+				SET iIndx = iIndx - 1;
+				SET eIndx = eIndx + 1;
+			END WHILE;
+			DELETE FIELD refError;
+		END IF;
+		DECLARE rc CHARACTER refErrorPath;
+
+		IF FIELDTYPE(InputRoot.JSON.Data.faultcode) IS NOT NULL THEN
+			SET OutputRoot.XMLNSC.data.body.responseCode = InputRoot.JSON.Data.faultcode;
+		ELSEIF FIELDTYPE(InputLocalEnvironment.request.data.errorCodePath) IS NOT NULL AND rc IS NOT NULL THEN
+			SET OutputRoot.XMLNSC.data.body.responseCode = rc;
+		ELSE
+			SET OutputRoot.XMLNSC.data.body.responseCode = '00';
+		END IF;
+		
+		DECLARE inputRef REFERENCE TO InputRoot.JSON.Data;
+		DECLARE outputRef REFERENCE TO OutputRoot.XMLNSC.data.body;
+
+--		DECLARE arrayPath CHARACTER 'customer.accounts';
+		DECLARE arrayPath CHARACTER InputLocalEnvironment.request.data.arrayPath;
+		IF arrayPath IS NOT NULL THEN
+			CALL Split(arrayPath, outputRef, '.');
+			DECLARE i INT 1;
+			DECLARE count INT CARDINALITY(outputRef.Split.Array[]);
+			FOR p AS outputRef.Split.Array[] DO
+				IF (i <> count) THEN
+					MOVE outputRef FIRSTCHILD NAME p;
+				ELSE
+					DELETE FIELD outputRef.{p};
+					CREATE LASTCHILD OF outputRef AS outputRef NAME p;
+				END IF;
+				MOVE inputRef FIRSTCHILD NAME p;
+	
+				SET i = i + 1;
+			END FOR;
+			DELETE FIELD OutputRoot.XMLNSC.data.body.Split;
+	
+			DECLARE j INT 1;
+			DECLARE itemPath CHARACTER;
+			FOR p AS inputRef.Item[] DO
+				SET itemPath = 'Item' || CAST(j AS CHAR);
+				SET outputRef.{itemPath} = inputRef.Item[j];
+	
+				SET j = j + 1;
+			END FOR;
+			SET outputRef.countItem = j-1;
+	
+			DELETE FIELD OutputRoot.XMLNSC.data.body.log;
+			SET OutputRoot.XMLNSC.data.body.log = InputRoot.JSON.Data.log;
+		END IF;
+
+		RETURN TRUE;
+	END;
+
+	CREATE PROCEDURE Split (IN S CHARACTER, IN Env REFERENCE, IN Delim CHARACTER)
+	BEGIN
+		DECLARE P INTEGER;
+		DECLARE Idx INTEGER 1;
+
+		SET Env.Split = NULL;
+
+		REPEAT
+			SET P = POSITION(Delim IN S);
+			IF P = 0 THEN
+				SET Env.Split.Array[Idx] = S;
+			ELSE
+				SET Env.Split.Array[Idx] = LEFT(S, P - 1);
+				SET S = SUBSTRING(S FROM P + LENGTH(Delim));
+				SET Idx = Idx + 1;
+			END IF;
+			UNTIL P = 0
+		END REPEAT;
+	END;
+END MODULE;
+
+
+CREATE COMPUTE MODULE BACKEND_REST_FLOW_REMOVE_LOG
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot = InputRoot;
+		SET OutputRoot.Properties.CodedCharSetId = 1208;
+		SET OutputRoot.HTTPRequestHeader = InputLocalEnvironment.HTTPRequestHeader;
+		DELETE FIELD OutputRoot.JSON.*.log;
+
+		IF FIELDTYPE(InputLocalEnvironment.request.data.httpMethode) IS NOT NULL AND InputLocalEnvironment.request.data.httpMethode = 'GET' THEN
+			PROPAGATE TO TERMINAL 'out1';
+			RETURN FALSE;		
+		ELSE
+			RETURN TRUE;	
+		END IF;
+	END;
+END MODULE;

@@ -1,0 +1,33 @@
+
+CREATE COMPUTE MODULE BACKUP_TO_BODY
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot.Properties = InputRoot.Properties;
+		SET OutputRoot.MQMD = InputRoot.MQMD;
+		SET OutputRoot.XMLNSC = InputRoot.XMLNSC;
+
+		SET OutputRoot.XMLNSC.*[<].backup.HTTPRequestHeader = InputRoot.HTTPRequestHeader;
+		SET OutputRoot.XMLNSC.*[<].backup.request_timestamp = InputLocalEnvironment.request_timestamp;
+		SET OutputRoot.XMLNSC.*[<].backup.source = InputLocalEnvironment.source;
+		SET OutputRoot.XMLNSC.*[<].backup.dir = InputLocalEnvironment.dir;
+
+--		SET OutputRoot.XMLNSC.*[<].backup.timestamp = CAST(((CURRENT_TIMESTAMP - (TIMESTAMP '1970-01-01 00:00:00')) SECOND * 1000 ) AS INT);
+
+		RETURN TRUE;
+	END;
+END MODULE;
+
+
+CREATE COMPUTE MODULE RESTORE_TO_HEADER
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot.Properties = InputRoot.Properties;
+		SET OutputRoot.HTTPRequestHeader = InputRoot.XMLNSC.*.backup.HTTPRequestHeader;
+		SET OutputRoot.MQMD = InputRoot.MQMD;
+		SET OutputRoot.XMLNSC = InputRoot.XMLNSC;
+
+		DELETE FIELD OutputRoot.XMLNSC.*.backup;
+
+		RETURN TRUE;
+	END;
+END MODULE;

@@ -1,0 +1,75 @@
+<db-config>
+	<url>jdbc:db2://btnmdwdata:50000/mwconfig</url>
+	<driver-class>com.ibm.db2.jcc.DB2Driver</driver-class>
+	<username>db2inst1</username>
+	<password>wajFMo2HsNWsRQcLal8Y47jzNMHI+oAu8ywJwIfL9cA=</password>
+	<schema>mwconfig</schema>
+	<c3p0 id="jdbc:db2:">
+		<param id="minPoolSize">5</param>
+		<param id="maxPoolSize">50</param>
+		<param id="timeout">60</param>
+		<param id="idleConnectionTestPeriod">300</param>
+		<param id="maxIdleTime">300</param>
+		<param id="maxIdleTimeExcessConnections">180</param>
+		<param id="preferredTestQuery">select 1 from sysibm.sysdummy1</param>
+	</c3p0>
+	<config-pattern>
+		<path id="config/clients/client">
+			<include>\[core-sms\]</include>
+		</path>
+		<path id="config/codex">
+			<include>\[dsp.*\]</include>
+			<include>\[iso-8583-itmibft\]</include>
+			<include>\[iso-8583-sms\]</include>
+		</path>
+		<path id="config/db">
+			<include>\[CORE_KONVEN_DSP\]</include>
+			<include>\[mwconfig\]</include>
+			<include>\[mwlog\]</include>
+		</path>
+		<path id="config/dbquery">
+			<include>\[get-request.*\]</include>
+			<include>\[sms.*\]</include>
+			<include>\[pslpay.*\]</include>
+		</path>
+		<path id="config/dtree-map">
+			<include>\[SMS-CODE.*\|.*\]</include>
+			<include>\[BDS-CODE.*\|.*\]</include>
+			<include>\[DSPRESP-CODE.*\|.*\]</include>
+			<include>\[.*\]\{.*\[core\].*\}</include>
+			<include>\[.*\]\{.*\[sms\].*\}</include>
+			<include>\[.*\]\{.*\[smsro\].*\}</include>			
+			<include>\[CHARGES\|sms\](\{.*\}|)</include>
+		</path>
+		<path id="config/host">
+		</path>
+		<path id="config/mapping">
+			<include>\[.*\]\{.*\[core\].*\}</include>
+			<include>\[.*\]\{.*\[sms\].*\}</include>
+			<include>\[itm-network-res\](\{.*\}|)</include>
+			<include>\[time-request-check\](\{.*\}|)</include>
+			<include>\[checkBillerResp\](\{.*\}|)</include>
+		</path>
+		<path id="config/param-map">
+			<include>\[sms-ibft-konven-code\|.*\]</include>
+			<include>\[core-response-ok\|AXISSYSTEMSDNBHD\..*\]</include>
+			<include>\[dsp-scenario-req-codex\|AXISSYSTEMSDNBHD\]</include>
+			<include>\[dsp-scenario-resp-codex\|AXISSYSTEMSDNBHD\]</include>
+			<include>\[dsp-scenario-req-codex\|SSSAAA0123456789\]</include>
+			<include>\[dsp-scenario-resp-codex\|SSSAAA0123456789\]</include>
+			<include>\[error-f2\|.*\]</include>
+			<include>\[time-check\|.*\]</include>
+			<include>\[error_map\|core-itm\|.*\]</include>
+		</path>
+		<path id="config/parser">
+		</path>
+		<path id="config/ports/port">
+			<include>\[sms-.*\]</include>
+		</path>
+		<path id="config/routing">
+			<include>\[sms.*\]</include>
+		</path>
+		<path id="config/rpg-call" >
+		</path>
+	</config-pattern>
+</db-config>

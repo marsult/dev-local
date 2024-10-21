@@ -1,0 +1,259 @@
+INSERT INTO MWCONFIG.ROUTING_TABLE (CODE_START, CODE_END, CHANNEL, START_DATE, QUEUE, CREATE_BY, CREATE_DATE, STATUS, REPLY_TO, REPLY_TO_QMGR) VALUES 
+('0200.512000.VASLMP', '0200.512000.VASLMP', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0200.512000.VASHBR', '0200.512000.VASHBR', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0200.612000.VASHBR', '0200.612000.VASHBR', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0200.812000.VASALT', '0200.812000.VASALT', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0200.412000.VASBCABCA', '0200.412000.VASBCABCA', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0200.422000.VAS', '0200.422000.VAS', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0200.522000.VAS', '0200.522000.VAS', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0200.622000.VAS', '0200.622000.VAS', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0200.822000.VAS', '0200.822000.VAS', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0200.502000.VASLMP', '0200.502000.VASLMP', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0200.502000.VASHBR', '0200.502000.VASHBR', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0200.602000.VASSAT', '0200.602000.VASSAT', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0200.802000.VASALT', '0200.802000.VASALT', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0200.402000.VASBCA', '0200.402000.VASBCA', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0200.532000.VASLMP000', '0200.532000.VASLMP000', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0200.532000.VASHBR000', '0200.532000.VASHBR000', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0200.632000.VASSAT000', '0200.632000.VASSAT000', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0200.832000.VASALT000', '0200.832000.VASALT000', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0200.432000.VASBCA000', '0200.432000.VASBCA000', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0200.531000.000LMPVAS', '0200.531000.000LMPVAS', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0200.532000.000LMPVAS', '0200.532000.000LMPVAS', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0200.531000.000HBRVAS', '0200.531000.000HBRVAS', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0200.532000.000HBRVAS', '0200.532000.000HBRVAS', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0200.631000.000SATVAS', '0200.631000.000SATVAS', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0200.632000.000SATVAS', '0200.632000.000SATVAS', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0200.831000.000ALTVAS', '0200.831000.000ALTVAS', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0200.832000.000ALTVAS', '0200.832000.000ALTVAS', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0200.431000.000BCAVAS', '0200.431000.000BCAVAS', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0200.432000.000BCAVAS', '0200.432000.000BCAVAS', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0200.532000.VASLMPVAS', '0200.532000.VASLMPVAS', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0200.532000.VASHBRVAS', '0200.532000.VASHBRVAS', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0200.632000.VASSATVAS', '0200.632000.VASSATVAS', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0200.832000.VASALTVAS', '0200.832000.VASALTVAS', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0200.432000.VASBCAVAS', '0200.432000.VASBCAVAS', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0200.532000.VASLMP002', '0200.532000.VASLMP002', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0200.532000.VASHBR002', '0200.532000.VASHBR002', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0200.632000.VASSAT002', '0200.632000.VASSAT002', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0200.832000.VASALT002', '0200.832000.VASALT002', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0200.432000.VASBCA002', '0200.432000.VASBCA002', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0200.531000.LMPBMPVAS', '0200.531000.LMPBMPVAS', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0200.532000.LMPBMPVAS', '0200.532000.LMPBMPVAS', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0200.531000.000001VAS', '0200.531000.000001VAS', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0200.532000.000001VAS', '0200.532000.000001VAS', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0200.631000.000001VAS', '0200.631000.000001VAS', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0200.632000.000001VAS', '0200.632000.000001VAS', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0200.831000.000001VAS', '0200.831000.000001VAS', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0200.832000.000001VAS', '0200.832000.000001VAS', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0200.431000.000001VAS', '0200.431000.000001VAS', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0200.432000.000001VAS', '0200.432000.000001VAS', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0200.612000.VASSAT', '0200.612000.VASSAT', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0400.612000.VASSAT', '0400.612000.VASSAT', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_REVERSAL_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0400.512000.VASLMP000', '0400.512000.VASLMP000', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_REVERSAL_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0400.512000.VASLMP000', '0400.512000.VASLMP000', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_REVERSAL_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0400.512000.VASHBR000', '0400.512000.VASHBR000', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_REVERSAL_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0400.612000.VASHBR000', '0400.612000.VASHBR000', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_REVERSAL_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0400.812000.VASALT000', '0400.812000.VASALT000', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_REVERSAL_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0400.412000.VASBCA000', '0400.412000.VASBCA000', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_REVERSAL_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0400.502000.VASLMP000', '0400.502000.VASLMP000', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_REVERSAL_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0400.502000.VASHBR000', '0400.502000.VASHBR000', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_REVERSAL_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0400.602000.VASSAT000', '0400.602000.VASSAT000', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_REVERSAL_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0400.802000.VASALT000', '0400.802000.VASALT000', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_REVERSAL_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0400.402000.VASBCA000', '0400.402000.VASBCA000', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_REVERSAL_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0400.532000.VASLMP000', '0400.532000.VASLMP000', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_REVERSAL_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0400.532000.VASHBR000', '0400.532000.VASHBR000', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_REVERSAL_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0400.632000.VASSAT000', '0400.632000.VASSAT000', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_REVERSAL_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0400.832000.VASALT000', '0400.832000.VASALT000', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_REVERSAL_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0400.432000.VASBCA000', '0400.432000.VASBCA000', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_REVERSAL_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0400.531000.000LMPVAS', '0400.531000.000LMPVAS', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_REVERSAL_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0400.532000.000LMPVAS', '0400.532000.000LMPVAS', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_REVERSAL_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0400.531000.000HBRVAS', '0400.531000.000HBRVAS', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_REVERSAL_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0400.532000.000HBRVAS', '0400.532000.000HBRVAS', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_REVERSAL_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0400.631000.000SATVAS', '0400.631000.000SATVAS', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_REVERSAL_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0400.632000.000SATVAS', '0400.632000.000SATVAS', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_REVERSAL_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0400.831000.000ALTVAS', '0400.831000.000ALTVAS', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_REVERSAL_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0400.832000.000ALTVAS', '0400.832000.000ALTVAS', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_REVERSAL_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0400.431000.000BCAVAS', '0400.431000.000BCAVAS', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_REVERSAL_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0400.432000.000BCAVAS', '0400.432000.000BCAVAS', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_REVERSAL_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0400.532000.VASLMPVAS', '0400.532000.VASLMPVAS', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_REVERSAL_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0400.532000.VASHBRVAS', '0400.532000.VASHBRVAS', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_REVERSAL_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0400.632000.VASSATVAS', '0400.632000.VASSATVAS', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_REVERSAL_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0400.832000.VASALTVAS', '0400.832000.VASALTVAS', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_REVERSAL_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0400.432000.VASBCAVAS', '0400.432000.VASBCAVAS', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_REVERSAL_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0400.532000.VASLMP002', '0400.532000.VASLMP002', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_REVERSAL_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0400.532000.VASHBR002', '0400.532000.VASHBR002', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_REVERSAL_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0400.632000.VASSAT002', '0400.632000.VASSAT002', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_REVERSAL_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0400.832000.VASALT002', '0400.832000.VASALT002', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_REVERSAL_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0400.432000.VASBCA002', '0400.432000.VASBCA002', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_REVERSAL_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0400.531000.LMPBMPVAS', '0400.531000.LMPBMPVAS', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_REVERSAL_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0400.532000.LMPBMPVAS', '0400.532000.LMPBMPVAS', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_REVERSAL_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0400.531000.000001VAS', '0400.531000.000001VAS', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_REVERSAL_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0400.532000.000001VAS', '0400.532000.000001VAS', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_REVERSAL_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0400.631000.000001VAS', '0400.631000.000001VAS', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_REVERSAL_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0400.632000.000001VAS', '0400.632000.000001VAS', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_REVERSAL_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0400.831000.000001VAS', '0400.831000.000001VAS', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_REVERSAL_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0400.832000.000001VAS', '0400.832000.000001VAS', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_REVERSAL_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0400.431000.000001VAS', '0400.431000.000001VAS', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_REVERSAL_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('0400.432000.000001VAS', '0400.432000.000001VAS', 'vas', CURRENT TIMESTAMP, 'GROUP_CHANGE_REVERSAL_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM'),
+('*', '*', 'vas', CURRENT TIMESTAMP, 'ITM_IN', CURRENT USER, CURRENT TIMESTAMP, 'ACTIVE', 'ROUTER_OUT', 'ITMBROKER.QM');
+
+	
+
+INSERT INTO MWCONFIG.PARAM_MAP("GROUP", NAME, "VALUE", SEQ, MODIFIED_BY, TIMESTAMP) VALUES 
+	('group-change', 'VAD', 'vad', NULL, CURRENT USER, CURRENT TIMESTAMP),
+	('group-change', 'cms.VAD', 'cvd', NULL, CURRENT USER, CURRENT TIMESTAMP),
+	('group-change', 'cms.VAS', 'cvs', NULL, CURRENT USER, CURRENT TIMESTAMP),
+	('group-change', 'itm.VAD', 'vad', NULL, CURRENT USER, CURRENT TIMESTAMP),
+	('group-change', 'itm.VAS', 'vas', NULL, CURRENT USER, CURRENT TIMESTAMP),
+	('group-core', 'cvd', 'vad', NULL, CURRENT USER, CURRENT TIMESTAMP),
+	('group-core', 'cvs', 'vas', NULL, CURRENT USER, CURRENT TIMESTAMP),
+	('group-core', 'vad', 'vad', NULL, CURRENT USER, CURRENT TIMESTAMP),
+	('group-core', 'vas', 'vas', NULL, CURRENT USER, CURRENT TIMESTAMP),
+	('group-check-code', 'cms.0200.24', 'true', NULL, CURRENT USER, CURRENT TIMESTAMP),
+	('group-check-code', 'itm.0200.24', 'true', NULL, CURRENT USER, CURRENT TIMESTAMP),
+	('group-check-code', 'itm.24', 'true', NULL, CURRENT USER, CURRENT TIMESTAMP);
+
+INSERT INTO MWCONFIG.PARAM_MAP("GROUP", NAME, "VALUE", SEQ, MODIFIED_BY, TIMESTAMP, DESCRIPTION) 
+	VALUES ('request-url', 'VaDebit', 'http://DUMMY:7080/vaccount/btn', null, CURRENT USER, CURRENT TIMESTAMP, null);
+
+
+INSERT INTO MWCONFIG.MAPPING (ID, MODULE, MODIFIED_BY, TIMESTAMP) VALUES ('req-change-group.vas', '[vas]', CURRENT USER, CURRENT TIMESTAMP);
+INSERT INTO MWCONFIG.MAPPING_GROUP (MAPPING_ID, ID, SOURCE, TARGET, INCLUDE_MAPPING_ID, INCLUDE_ID) 
+VALUES 	('req-change-group.vas', 1, '/data/frontOriginal', '/data/body', NULL, NULL),
+		('req-change-group.vas', 2, '/data/frontOriginal/body', '/data/body', NULL, NULL);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) 
+VALUES 	('req-change-group.vas', 1, '@', 'copyMessage("..",".");', 10),
+		('req-change-group.vas', 2, '@', 'dtree("CHARGES","!oldgroup");', 10),
+		('req-change-group.vas', 1, '!dir', 'O', 20),
+		('req-change-group.vas', 2, 'feeAmount', '${getCharge(6)?getCharge(6).replace(".00",""):"0"}', 20),
+		('req-change-group.vas', 2, 'trxAmount', '${head.frontOriginal.body.amountTransaction."!value"==null?"0":decimalFormat("0",(head.frontOriginal.body.amountTransaction."!value".toBigDecimal()/100))}', 20),
+		('req-change-group.vas', 1, '!ReplyToQ', 'GROUP_CHANGE_REPLY.ITM', null),
+		('req-change-group.vas', 1, '!ReplyToQMgr', 'PAYBROKER.QM', null),
+		('req-change-group.vas', 1, '!RequestURL', '${getParamValue("request-url","VaDebit","http://localhost:8094")}/service', null),
+		('req-change-group.vas', 1, '!destination', 'VaDebit', null),
+		('req-change-group.vas', 1, '!errorCodePath', 'body.response.data.Item.errCode', null),
+		('req-change-group.vas', 1, '!queueName', 'BACKEND_REST_IN', null),
+		('req-change-group.vas', 1, 'accNoFrom', '${head.frontOriginal.body.fromAccount}', null),
+		('req-change-group.vas', 1, 'accNoTo', '${head.frontOriginal.body.toAccount}', null),
+		('req-change-group.vas', 1, 'cnl', 'OT', null),
+		('req-change-group.vas', 1, 'iat', '${new java.text.SimpleDateFormat("yyyy").format(new Date())}${head.frontOriginal.body.transmissionDateTime}', null),
+		('req-change-group.vas', 1, 'jti', '${head.frontOriginal.body.systemsTraceAuditNumber}${head.frontOriginal.body.retrievalReferenceNumber."!value".trim().padLeft(12,"0").substring(8,12)}', null),
+		('req-change-group.vas', 1, 'proCode', '${head.code."!value".padRight(21,"0")}', null),
+		('req-change-group.vas', 1, 'reffNoRev', '${head.frontOriginal.body.systemsTraceAuditNumber}${head.frontOriginal.body.retrievalReferenceNumber."!value".trim().padLeft(12,"0").substring(8,12)}', null),
+		('req-change-group.vas', 1, 'tid', '${head.frontOriginal.body.cardAcceptorTerminalIdentification}', null),
+		('req-change-group.vas', 2, 'bic', '${msg.reservedPrivate2."!value".substring(6,9) == "VAS"  ? msg.receivingInstitutionIdentificationCode."!value": msg.reservedForPrivateUse."!value"}', null);
+
+INSERT INTO MWCONFIG.MAPPING (ID, MODULE, MODIFIED_BY, TIMESTAMP) VALUES ('req-enhance.vas', '[vas]', CURRENT USER, CURRENT TIMESTAMP);
+INSERT INTO MWCONFIG.MAPPING_GROUP (MAPPING_ID, ID, SOURCE, TARGET, INCLUDE_MAPPING_ID, INCLUDE_ID) 
+VALUES 	('req-enhance.vas', 1, '/data', '/data', NULL, NULL),
+		('req-enhance.vas', 2, '/data/body', '/data/body', NULL, NULL),
+		('req-enhance.vas', 3, '/data/body', '/data/backup', NULL, NULL);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) 
+VALUES 	('req-enhance.vas', 1, '@', 'copyMessage();', null),
+		('req-enhance.vas', 2, '!code', '${head.code."!value".replace("VAS", "002")}', null),
+		('req-enhance.vas', 2, 'fromAccount', '${head.coreResponse.response.data.accPoolingFrom==null?head.body.fromAccount:head.coreResponse.response.data.accPoolingFrom}', null),
+		('req-enhance.vas', 2, 'reservedPrivate2', '${head.body.reservedPrivate2."!value".replace("VAS", "002")}', null),
+		('req-enhance.vas', 2, 'toAccount', '${head.coreResponse.response.data.accPoolingTo==null?head.body.toAccount:head.coreResponse.response.data.accPoolingTo}', null),
+		('req-enhance.vas', 3, 'accNameFrom', '${head.coreResponse.response.data.accNameFrom}', null),
+		('req-enhance.vas', 3, 'accNameTo', '${head.coreResponse.response.data.accNameTo}', null),
+		('req-enhance.vas', 3, 'accNoFrom', '${head.coreResponse.response.data.accNoFrom}', null),
+		('req-enhance.vas', 3, 'accNoTo', '${head.coreResponse.response.data.accNoTo}', null),
+		('req-enhance.vas', 3, 'accPoolingFrom', '${head.coreResponse.response.data.accPoolingFrom}', null),
+		('req-enhance.vas', 3, 'accPoolingTo', '${head.coreResponse.response.data.accPoolingTo}', null),
+		('req-enhance.vas', 3, 'balanceFrom', '${head.coreResponse.response.data.balanceFrom}', null),
+		('req-enhance.vas', 3, 'balanceTo', '${head.coreResponse.response.data.balanceTo}', null),
+		('req-enhance.vas', 3, 'bit62', '${head.body.reservedPrivate2}', null),
+		('req-enhance.vas', 3, 'msgId', '${head.oldgroup}.${head.CorrelId}', null),
+		('req-enhance.vas', 3, 'newgroup', '${head.group}', null),
+		('req-enhance.vas', 3, 'proCode', '${head.coreResponse.request.proCode}', null);
+
+
+INSERT INTO MWCONFIG.MAPPING (ID, MODULE, MODIFIED_BY, TIMESTAMP) VALUES ('req-change-group.vas.reverse', '[vas]', CURRENT USER, CURRENT TIMESTAMP);
+INSERT INTO MWCONFIG.MAPPING_GROUP (MAPPING_ID, ID, SOURCE, TARGET, INCLUDE_MAPPING_ID, INCLUDE_ID) VALUES ('req-change-group.vas.reverse', 1, '/data/body', '/data/body', NULL, NULL);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) 
+	VALUES
+		('req-change-group.vas.reverse', 1, '@', 'dtree("CHARGES", "!oldgroup");', 10),
+		('req-change-group.vas.reverse', 1, '!CorrelId', '${head.CorrelId}', null),
+		('req-change-group.vas.reverse', 1, '!ReplyToQ', 'ITM_CORE_REVERSAL_REPLY', null),
+		('req-change-group.vas.reverse', 1, '!ReplyToQMgr', 'PAYBROKER.QM', null),
+		('req-change-group.vas.reverse', 1, '!RequestURL', '${getParamValue("request-url","VaDebit","http://localhost:8094")}/service', null),
+		('req-change-group.vas.reverse', 1, '!destination', 'VaDebit', null),
+		('req-change-group.vas.reverse', 1, '!errorCodePath', 'body.response.data.Item.errCode', null),
+		('req-change-group.vas.reverse', 1, '!queueName', 'BACKEND_REST_IN', null),
+		('req-change-group.vas.reverse', 1, '!reqtimestamp', '${head.reqtimestamp}', null),
+		('req-change-group.vas.reverse', 1, 'accNoFrom', '${head.backup.accNoFrom."!value"}', null),
+		('req-change-group.vas.reverse', 1, 'accNoTo', '${head.backup.accNoTo."!value"}', null),
+		('req-change-group.vas.reverse', 1, 'bic', '${head.backup.proCode."!value".substring(12,15)=="VAS"?msg.reservedForPrivateUse."!value":head.backup.proCode."!value".padRight(21,"0").substring(18,21)=="VAS"?msg.receivingInstitutionIdentificationCode."!value":""}', null),
+		('req-change-group.vas.reverse', 1, 'cnl', 'OT', null),
+		('req-change-group.vas.reverse', 1, 'feeAmount', '${getCharge(6)?getCharge(6).toBigDecimal():0}', null),
+		('req-change-group.vas.reverse', 1, 'iat', '${new java.text.SimpleDateFormat("yyyy").format(new Date())}${msg.transmissionDateTime}', null),
+		('req-change-group.vas.reverse', 1, 'jti', '${msg.systemsTraceAuditNumber}${msg.retrievalReferenceNumber."!value".trim().padLeft(12,"0").substring(8,12)}', null),
+		('req-change-group.vas.reverse', 1, 'proCode', '${head.backup.proCode."!value".replace("0200.", "0400.")}', null),
+		('req-change-group.vas.reverse', 1, 'reffNoRev', '${msg.systemsTraceAuditNumber}${msg.retrievalReferenceNumber."!value".trim().padLeft(12,"0").substring(8,12)}', null),
+		('req-change-group.vas.reverse', 1, 'tid', '${msg.cardAcceptorTerminalIdentification}', null),
+		('req-change-group.vas.reverse', 1, 'trxAmount', '${head.body.amountTransaction."!value"==null?"0":decimalFormat("0",(head.body.amountTransaction."!value".toBigDecimal()/100)-(getCharge(6)?getCharge(6).toBigDecimal():0))}', null);
+
+INSERT INTO MWCONFIG.MAPPING (ID, MODULE, MODIFIED_BY, TIMESTAMP) VALUES ('res-change-group.vas', '[vas]', CURRENT USER, CURRENT TIMESTAMP);
+INSERT INTO MWCONFIG.MAPPING_GROUP (MAPPING_ID, ID, SOURCE, TARGET, INCLUDE_MAPPING_ID, INCLUDE_ID) VALUES ('res-change-group.vas', 1, '/data', '/data', NULL, NULL);
+INSERT INTO MWCONFIG.MAPPING_GROUP (MAPPING_ID, ID, SOURCE, TARGET, INCLUDE_MAPPING_ID, INCLUDE_ID) VALUES ('res-change-group.vas', 2, '/data/body', '/data/body', NULL, NULL);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) 
+	VALUES 
+		('res-change-group.vas', 1, '@', 'copyMessage();', 10),
+		('res-change-group.vas', 2, 'fromAccount', '${head.backup==null?head.body.fromAccount:head.backup.accNoFrom}', 30),
+		('res-change-group.vas', 2, 'reservedPrivate2', '${head.backup==null?msg.reservedPrivate2:head.backup.bit62 }', 30),
+		('res-change-group.vas', 2, 'toAccount', '${head.backup==null?head.body.toAccount:head.backup.accNoTo}', 30);
+
+INSERT INTO MWCONFIG.MAPPING (ID, MODULE, MODIFIED_BY, TIMESTAMP) VALUES ('res-change-group.vas.error', '[vas]', CURRENT USER, CURRENT TIMESTAMP);
+INSERT INTO MWCONFIG.MAPPING_GROUP (MAPPING_ID, ID, SOURCE, TARGET, INCLUDE_MAPPING_ID, INCLUDE_ID) 
+	VALUES
+		('res-change-group.vas.error', 1, '/data', '/data', NULL, NULL),
+		('res-change-group.vas.error', 2, '/data/body', '/data/body', NULL, NULL);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ)
+VALUES
+	('res-change-group.vas.error', 1, '@', 'copyMessage();', 10),
+	('res-change-group.vas.error', 2, 'messageType', '${head.body.messageType."!value".substring(0,2)}${head.body.messageType."!value".substring(2,4).toBigDecimal()+10}', 20),
+	('res-change-group.vas.error', 2, 'responseCode', '${getParamValue("error_map|VaDebit", head.coreResponse.responseCode."!value","99")}', null);
+
+
+INSERT INTO MWCONFIG.MAPPING (ID, MODULE, MODIFIED_BY, TIMESTAMP) VALUES ('req-change-group.vad.reverse', '[vas]', CURRENT USER, CURRENT TIMESTAMP);
+INSERT INTO MWCONFIG.MAPPING_GROUP (MAPPING_ID, ID, SOURCE, TARGET, INCLUDE_MAPPING_ID, INCLUDE_ID) VALUES ('req-change-group.vad.reverse', 1, '/data/body', '/data/body', NULL, NULL);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) 
+	VALUES 
+		('req-change-group.vad.reverse', 1, '@', 'dtree("CHARGES", "!oldgroup");', 10),
+		('req-change-group.vad.reverse', 1, '!CorrelId', '${head.CorrelId}', null),
+		('req-change-group.vad.reverse', 1, '!ReplyToQ', 'ITM_CORE_REVERSAL_REPLY', null),
+		('req-change-group.vad.reverse', 1, '!ReplyToQMgr', 'PAYBROKER.QM', null),
+		('req-change-group.vad.reverse', 1, '!RequestURL', '${getParamValue("request-url","VaDebit","http://localhost:8094")}/service', null),
+		('req-change-group.vad.reverse', 1, '!destination', 'VaDebit', null),
+		('req-change-group.vad.reverse', 1, '!errorCodePath', 'body.response.data.Item.errCode', null),
+		('req-change-group.vad.reverse', 1, '!queueName', 'BACKEND_REST_IN', null),
+		('req-change-group.vad.reverse', 1, '!reqtimestamp', '${head.reqtimestamp}', null),
+		('req-change-group.vad.reverse', 1, 'accNoFrom', '${head.backup.accNoFrom."!value"}', null),
+		('req-change-group.vad.reverse', 1, 'accNoTo', '${head.backup.accNoTo."!value"}', null),
+		('req-change-group.vad.reverse', 1, 'bic', '${head.backup.proCode."!value".substring(12,15)=="VAD"?msg.reservedForPrivateUse."!value":head.backup.proCode."!value".substring(18,21)=="VAD"?msg.receivingInstitutionIdentificationCode."!value":""}', null),
+		('req-change-group.vad.reverse', 1, 'cnl', 'OT', null),
+		('req-change-group.vad.reverse', 1, 'feeAmount', '${getParamValue("atm-vad-no-fee",head.backup.proCode."!value".replace("0200.","0400."),head.backup.proCode."!value".replace("0200.","0400.").contains("602000.VADSAT")||head.backup.proCode."!value".replace("0200.","0400.").contains("612000.VADSAT")?decimalFormat("0",(getCharge(1)?getCharge(1).toBigDecimal():0)+(getCharge(2)?getCharge(2).toBigDecimal():0)+(getCharge(4)?getCharge(4).toBigDecimal():0)):head.backup.proCode."!value".replace("0200.","0400.").contains("632000.VADSAT000")||head.backup.proCode."!value".replace("0200.","0400.").contains("632000.VAD001000")||head.backup.proCode."!value".replace("0200.","0400.").contains("632000.VADSATVAD.1")||head.backup.proCode."!value".replace("0200.","0400.").contains("632000.VADSAT001.1")||head.backup.proCode."!value".replace("0200.","0400.").contains("632000.001SATVAD.1")?decimalFormat("0",(getCharge(1)?getCharge(1).toBigDecimal():0)+(getCharge(2)?getCharge(2).toBigDecimal():0)+(getCharge(3)?getCharge(3).toBigDecimal():0)):decimalFormat("0",(getCharge(1)?getCharge(1).toBigDecimal():0)+(getCharge(2)?getCharge(2).toBigDecimal():0)+(getCharge(3)?getCharge(3).toBigDecimal():0)+(getCharge(4)?getCharge(4).toBigDecimal():0)+(getCharge(5)?getCharge(5).toBigDecimal():0)))}', null),
+		('req-change-group.vad.reverse', 1, 'iat', '${new java.text.SimpleDateFormat("yyyy").format(new Date())}${msg.transmissionDateTime}', null),
+		('req-change-group.vad.reverse', 1, 'jti', '${msg.systemsTraceAuditNumber}${msg.retrievalReferenceNumber."!value".trim().padLeft(12,"0").substring(8,12)}', null),
+		('req-change-group.vad.reverse', 1, 'proCode', '${head.backup.proCode."!value".replace("0200.", "0400.")}', null),
+		('req-change-group.vad.reverse', 1, 'reffNoRev', '${msg.systemsTraceAuditNumber}${msg.retrievalReferenceNumber."!value".trim().padLeft(12,"0").substring(8,12)}', null),
+		('req-change-group.vad.reverse', 1, 'tid', '${msg.cardAcceptorTerminalIdentification}', null),
+		('req-change-group.vad.reverse', 1, 'trxAmount', '${head.body.amountTransaction."!value"==null?"0":decimalFormat("0",(head.body.amountTransaction."!value".toBigDecimal()/100)-(getCharge(6)?getCharge(6).toBigDecimal():0))}', null);
+
+
+INSERT INTO MWCONFIG.MAPPING (ID, MODULE, MODIFIED_BY, TIMESTAMP) VALUES ('req-reversal-set-correlid.vas', '[vas]', CURRENT USER, CURRENT TIMESTAMP);
+INSERT INTO MWCONFIG.MAPPING_GROUP (MAPPING_ID, ID, SOURCE, TARGET, INCLUDE_MAPPING_ID, INCLUDE_ID) VALUES ('req-reversal-set-correlid.vas', 1, '/data', '/data', NULL, NULL);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES ('req-reversal-set-correlid.vas', 1, '@', 'copyMessage();', null);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES ('req-reversal-set-correlid.vas', 1, 'getByCorrelId', 'itm.${msg.body.originalDataElements."!value".substring(16,20)}${msg.body.originalDataElements."!value".substring(20,26)}.${msg.body.systemsTraceAuditNumber}', null);
+
+INSERT INTO MWCONFIG.MAPPING (ID, MODULE, MODIFIED_BY, TIMESTAMP) VALUES ('req-reversal-enhance.vas', '[vas]', CURRENT USER, CURRENT TIMESTAMP);
+INSERT INTO MWCONFIG.MAPPING_GROUP (MAPPING_ID, ID, SOURCE, TARGET, INCLUDE_MAPPING_ID, INCLUDE_ID) VALUES 
+	('req-reversal-enhance.vas', 1, '/data', '/data', NULL, NULL),
+	('req-reversal-enhance.vas', 2, '/data/body', '/data/body', NULL, NULL);
+INSERT INTO MWCONFIG.MAPPING_GROUP_LINE (MAPPING_ID, MAPPING_GROUP_ID, NAME, TEXT, SEQ) VALUES 
+	('req-reversal-enhance.vas', 1, '@', 'copyMessage();', null),
+	('req-reversal-enhance.vas', 2, '!ReplyToQ', 'GROUP_CHANGE_REVERSAL_OUT', null),
+	('req-reversal-enhance.vas', 2, '!code', '${head.code."!value".replace("VAS", "002")}', null),
+	('req-reversal-enhance.vas', 2, 'fromAccount', '${head.backup.accPoolingFrom==null?head.body.fromAccount:head.backup.accPoolingFrom}', null),
+	('req-reversal-enhance.vas', 2, 'reservedPrivate2', '${head.body.reservedPrivate2."!value".replace("VAS", "002")}', null);

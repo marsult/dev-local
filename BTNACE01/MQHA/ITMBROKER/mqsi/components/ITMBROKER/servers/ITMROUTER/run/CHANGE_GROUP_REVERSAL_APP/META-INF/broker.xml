@@ -1,0 +1,1055 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Broker deployBarfile="/opt/mdw/bar/ITMBROKER/ITMROUTER/CHANGE_GROUP_REVERSAL_APP.bar" deployTimestamp="2024-08-09 17:33:47">
+  <CompiledApplication>
+    <ConfigurableProperty uri="startMode">
+    </ConfigurableProperty>
+  </CompiledApplication>
+  <CompiledMessageFlow name="CHANGE_GROUP_REVERSAL_FLOW" deployBarfile="/opt/mdw/bar/ITMBROKER/ITMROUTER/CHANGE_GROUP_REVERSAL_APP.bar" deployTimestamp="2024-08-09 17:33:47">
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#BACKUP_MSG.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#BACKUP_MSG.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#BACKUP_MSG.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#BACKUP_MSG_LOG_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#BACKUP_MSG_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#BACKUP_MSG_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#BACKUP_MSG_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#BACKUP_MSG_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#BACKUP_MSG_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#CHANGE_GROUP_REVERSAL_REPLY_LOG_CATCH.level" override="Warning">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#CHANGE_GROUP_REVERSAL_REPLY_LOG_CATCH.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#CHANGE_GROUP_REVERSAL_REPLY_LOG_CATCH.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#CHANGE_GROUP_REVERSAL_REPLY_LOG_CATCH.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#CHANGE_GROUP_REVERSAL_REPLY_LOG_CATCH.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#CHANGE_GROUP_REVERSAL_REPLY_LOG_CATCH.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#DESTINATION_LIST.AddRequestToGroup">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#DESTINATION_LIST.GroupRequestFolderName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#DESTINATION_LIST.GroupRequestTimeout">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#DESTINATION_LIST.SSLCertificateLabel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#DESTINATION_LIST.SSLCipherSpec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#DESTINATION_LIST.SSLPeerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#DESTINATION_LIST.channelName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#DESTINATION_LIST.connection">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#DESTINATION_LIST.destinationQueueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#DESTINATION_LIST.listenerPortNumber">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#DESTINATION_LIST.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#DESTINATION_LIST.queueManagerHostname">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#DESTINATION_LIST.queueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#DESTINATION_LIST.queueName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#DESTINATION_LIST.replyToQ" override="GROUP_CHANGE_REVERSAL_OUT">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#DESTINATION_LIST.replyToQMgr">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#DESTINATION_LIST.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#DESTINATION_LIST.securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#DESTINATION_LIST.useSSL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#DESTINATION_LIST.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#DESTINATION_LIST_CORE_CHANGE.AddRequestToGroup">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#DESTINATION_LIST_CORE_CHANGE.GroupRequestFolderName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#DESTINATION_LIST_CORE_CHANGE.GroupRequestTimeout">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#DESTINATION_LIST_CORE_CHANGE.SSLCertificateLabel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#DESTINATION_LIST_CORE_CHANGE.SSLCipherSpec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#DESTINATION_LIST_CORE_CHANGE.SSLPeerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#DESTINATION_LIST_CORE_CHANGE.channelName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#DESTINATION_LIST_CORE_CHANGE.connection">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#DESTINATION_LIST_CORE_CHANGE.destinationQueueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#DESTINATION_LIST_CORE_CHANGE.listenerPortNumber">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#DESTINATION_LIST_CORE_CHANGE.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#DESTINATION_LIST_CORE_CHANGE.queueManagerHostname">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#DESTINATION_LIST_CORE_CHANGE.queueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#DESTINATION_LIST_CORE_CHANGE.queueName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#DESTINATION_LIST_CORE_CHANGE.replyToQ">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#DESTINATION_LIST_CORE_CHANGE.replyToQMgr">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#DESTINATION_LIST_CORE_CHANGE.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#DESTINATION_LIST_CORE_CHANGE.securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#DESTINATION_LIST_CORE_CHANGE.useSSL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#DESTINATION_LIST_CORE_CHANGE.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#DESTINATION_LIST_CORE_CHANGE_LOG_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#DESTINATION_LIST_CORE_CHANGE_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#DESTINATION_LIST_CORE_CHANGE_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#DESTINATION_LIST_CORE_CHANGE_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#DESTINATION_LIST_CORE_CHANGE_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#DESTINATION_LIST_CORE_CHANGE_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#DESTINATION_LIST_CORE_CHANGE_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#DESTINATION_LIST_CORE_CHANGE_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#DESTINATION_LIST_CORE_CHANGE_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#DESTINATION_LIST_CORE_CHANGE_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#DESTINATION_LIST_CORE_CHANGE_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#DESTINATION_LIST_CORE_CHANGE_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#DESTINATION_LIST_LOG_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#DESTINATION_LIST_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#DESTINATION_LIST_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#DESTINATION_LIST_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#DESTINATION_LIST_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#DESTINATION_LIST_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#DESTINATION_LIST_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#DESTINATION_LIST_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#DESTINATION_LIST_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#DESTINATION_LIST_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#DESTINATION_LIST_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#DESTINATION_LIST_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GET_CORECHANGE_REQREV.SSLCertificateLabel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GET_CORECHANGE_REQREV.SSLCipherSpec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GET_CORECHANGE_REQREV.SSLPeerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GET_CORECHANGE_REQREV.channelName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GET_CORECHANGE_REQREV.connection">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GET_CORECHANGE_REQREV.destinationQueueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GET_CORECHANGE_REQREV.listenerPortNumber">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GET_CORECHANGE_REQREV.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GET_CORECHANGE_REQREV.queueManagerHostname">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GET_CORECHANGE_REQREV.queueName" override="STORE_CORECHANGE_REQREV">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GET_CORECHANGE_REQREV.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GET_CORECHANGE_REQREV.useSSL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GET_CORECHANGE_REQREV.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GET_CORECHANGE_REQREV_LOG_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GET_CORECHANGE_REQREV_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GET_CORECHANGE_REQREV_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GET_CORECHANGE_REQREV_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GET_CORECHANGE_REQREV_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GET_CORECHANGE_REQREV_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GET_CORECHANGE_REQREV_LOG_NOMSG.level" override="Warning">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GET_CORECHANGE_REQREV_LOG_NOMSG.type" override="None">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GET_CORECHANGE_REQREV_LOG_NOMSG.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GET_CORECHANGE_REQREV_LOG_NOMSG.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GET_CORECHANGE_REQREV_LOG_NOMSG.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GET_CORECHANGE_REQREV_LOG_NOMSG.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GET_CORECHANGE_REQREV_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GET_CORECHANGE_REQREV_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GET_CORECHANGE_REQREV_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GET_CORECHANGE_REQREV_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GET_CORECHANGE_REQREV_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GET_CORECHANGE_REQREV_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GET_CORECHANGE_REQREV_LOG_WARNING.level" override="Warning">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GET_CORECHANGE_REQREV_LOG_WARNING.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GET_CORECHANGE_REQREV_LOG_WARNING.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GET_CORECHANGE_REQREV_LOG_WARNING.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GET_CORECHANGE_REQREV_LOG_WARNING.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GET_CORECHANGE_REQREV_LOG_WARNING.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_IN.SSLCertificateLabel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_IN.SSLCipherSpec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_IN.SSLPeerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_IN.additionalInstances">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_IN.channelName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_IN.componentLevel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_IN.connection">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_IN.destinationQueueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_IN.listenerPortNumber">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_IN.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_IN.queueManagerHostname">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_IN.queueName" override="GROUP_CHANGE_REVERSAL_IN">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_IN.resetBrowseTimeout">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_IN.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_IN.securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_IN.serializationToken">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_IN.topicProperty">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_IN.useSSL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_IN.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_IN_LOG_CATCH.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_IN_LOG_CATCH.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_IN_LOG_CATCH.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_IN_LOG_CATCH.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_IN_LOG_CATCH.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_IN_LOG_CATCH.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_IN_LOG_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_IN_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_IN_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_IN_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_IN_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_IN_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_IN_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_IN_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_IN_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_IN_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_IN_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_IN_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_OUT.SSLCertificateLabel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_OUT.SSLCipherSpec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_OUT.SSLPeerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_OUT.additionalInstances">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_OUT.channelName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_OUT.componentLevel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_OUT.connection">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_OUT.destinationQueueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_OUT.listenerPortNumber">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_OUT.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_OUT.queueManagerHostname">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_OUT.queueName" override="GROUP_CHANGE_REVERSAL_OUT">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_OUT.resetBrowseTimeout">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_OUT.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_OUT.securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_OUT.serializationToken">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_OUT.topicProperty">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_OUT.useSSL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_OUT.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_OUT_LOG_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_OUT_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_OUT_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_OUT_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_OUT_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_OUT_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_OUT_LOG_OUT.level" override="Info">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_OUT_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_OUT_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_OUT_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_OUT_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_OUT_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_OUT_LOG_WARNING.level" override="Warning">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_OUT_LOG_WARNING.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_OUT_LOG_WARNING.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_OUT_LOG_WARNING.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_OUT_LOG_WARNING.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_OUT_LOG_WARNING.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_REPLY.SSLCertificateLabel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_REPLY.SSLCipherSpec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_REPLY.SSLPeerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_REPLY.additionalInstances">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_REPLY.channelName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_REPLY.componentLevel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_REPLY.connection">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_REPLY.destinationQueueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_REPLY.listenerPortNumber">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_REPLY.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_REPLY.queueManagerHostname">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_REPLY.queueName" override="GROUP_CHANGE_REVERSAL_REPLY">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_REPLY.resetBrowseTimeout">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_REPLY.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_REPLY.securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_REPLY.serializationToken">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_REPLY.topicProperty">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_REPLY.useSSL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_REPLY.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_REPLY_LOG_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_REPLY_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_REPLY_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_REPLY_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_REPLY_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_REPLY_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_REPLY_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_REPLY_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_REPLY_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_REPLY_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_REPLY_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#GROUP_CHANGE_REVERSAL_REPLY_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#IS_RESPONSE_CODE_SUCCESS.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#IS_RESPONSE_CODE_SUCCESS.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#IS_RESPONSE_CODE_SUCCESS.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#IS_RESPONSE_CODE_SUCCESS_LOG_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#IS_RESPONSE_CODE_SUCCESS_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#IS_RESPONSE_CODE_SUCCESS_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#IS_RESPONSE_CODE_SUCCESS_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#IS_RESPONSE_CODE_SUCCESS_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#IS_RESPONSE_CODE_SUCCESS_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#IS_RESPONSE_CODE_SUCCESS_LOG_FALSE.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#IS_RESPONSE_CODE_SUCCESS_LOG_FALSE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#IS_RESPONSE_CODE_SUCCESS_LOG_FALSE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#IS_RESPONSE_CODE_SUCCESS_LOG_FALSE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#IS_RESPONSE_CODE_SUCCESS_LOG_FALSE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#IS_RESPONSE_CODE_SUCCESS_LOG_FALSE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#IS_RESPONSE_CODE_SUCCESS_LOG_TRUE.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#IS_RESPONSE_CODE_SUCCESS_LOG_TRUE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#IS_RESPONSE_CODE_SUCCESS_LOG_TRUE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#IS_RESPONSE_CODE_SUCCESS_LOG_TRUE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#IS_RESPONSE_CODE_SUCCESS_LOG_TRUE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#IS_RESPONSE_CODE_SUCCESS_LOG_TRUE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REPLYTOQ_LOG_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REPLYTOQ_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REPLYTOQ_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REPLYTOQ_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REPLYTOQ_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REPLYTOQ_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REPLYTOQ_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REPLYTOQ_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REPLYTOQ_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REPLYTOQ_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REPLYTOQ_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REPLYTOQ_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REPLYTOQ_NOTSUCCESS.SSLCertificateLabel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REPLYTOQ_NOTSUCCESS.SSLCipherSpec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REPLYTOQ_NOTSUCCESS.SSLPeerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REPLYTOQ_NOTSUCCESS.channelName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REPLYTOQ_NOTSUCCESS.connection">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REPLYTOQ_NOTSUCCESS.destinationQueueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REPLYTOQ_NOTSUCCESS.listenerPortNumber">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REPLYTOQ_NOTSUCCESS.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REPLYTOQ_NOTSUCCESS.queueManagerHostname">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REPLYTOQ_NOTSUCCESS.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REPLYTOQ_NOTSUCCESS.useSSL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REPLYTOQ_NOTSUCCESS.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REPLYTOQ_NOTSUCCESS_LOG_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REPLYTOQ_NOTSUCCESS_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REPLYTOQ_NOTSUCCESS_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REPLYTOQ_NOTSUCCESS_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REPLYTOQ_NOTSUCCESS_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REPLYTOQ_NOTSUCCESS_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REPLYTOQ_NOTSUCCESS_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REPLYTOQ_NOTSUCCESS_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REPLYTOQ_NOTSUCCESS_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REPLYTOQ_NOTSUCCESS_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REPLYTOQ_NOTSUCCESS_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REPLYTOQ_NOTSUCCESS_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REPLYTOQ_OUT.AddRequestToGroup">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REPLYTOQ_OUT.GroupRequestFolderName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REPLYTOQ_OUT.GroupRequestTimeout">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REPLYTOQ_OUT.SSLCertificateLabel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REPLYTOQ_OUT.SSLCipherSpec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REPLYTOQ_OUT.SSLPeerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REPLYTOQ_OUT.channelName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REPLYTOQ_OUT.connection">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REPLYTOQ_OUT.destinationQueueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REPLYTOQ_OUT.listenerPortNumber">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REPLYTOQ_OUT.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REPLYTOQ_OUT.queueManagerHostname">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REPLYTOQ_OUT.queueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REPLYTOQ_OUT.queueName" override="ROUTER_OUT">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REPLYTOQ_OUT.replyToQ">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REPLYTOQ_OUT.replyToQMgr">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REPLYTOQ_OUT.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REPLYTOQ_OUT.securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REPLYTOQ_OUT.useSSL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REPLYTOQ_OUT.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REQ_REVERSAL_ENHANCE_MAPPING.config" override="db://##req-reversal-enhance.${msg.data.group}">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REQ_REVERSAL_ENHANCE_MAPPING_LOG_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REQ_REVERSAL_ENHANCE_MAPPING_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REQ_REVERSAL_ENHANCE_MAPPING_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REQ_REVERSAL_ENHANCE_MAPPING_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REQ_REVERSAL_ENHANCE_MAPPING_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REQ_REVERSAL_ENHANCE_MAPPING_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REQ_REVERSAL_ENHANCE_MAPPING_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REQ_REVERSAL_ENHANCE_MAPPING_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REQ_REVERSAL_ENHANCE_MAPPING_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REQ_REVERSAL_ENHANCE_MAPPING_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REQ_REVERSAL_ENHANCE_MAPPING_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REQ_REVERSAL_ENHANCE_MAPPING_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REQ_SET_CORRELID_MAPPING.config" override="db://##req-reversal-set-correlid.${msg.data.group}">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REQ_SET_CORRELID_MAPPING1.config" override="db://##req-reversal-set-correlid.${msg.data.newgroup}">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REQ_SET_CORRELID_MAPPING1_LOG_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REQ_SET_CORRELID_MAPPING1_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REQ_SET_CORRELID_MAPPING1_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REQ_SET_CORRELID_MAPPING1_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REQ_SET_CORRELID_MAPPING1_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REQ_SET_CORRELID_MAPPING1_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REQ_SET_CORRELID_MAPPING1_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REQ_SET_CORRELID_MAPPING1_LOG_OUT.type" override="Body">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REQ_SET_CORRELID_MAPPING1_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REQ_SET_CORRELID_MAPPING1_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REQ_SET_CORRELID_MAPPING1_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REQ_SET_CORRELID_MAPPING1_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REQ_SET_CORRELID_MAPPING_LOG_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REQ_SET_CORRELID_MAPPING_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REQ_SET_CORRELID_MAPPING_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REQ_SET_CORRELID_MAPPING_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REQ_SET_CORRELID_MAPPING_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REQ_SET_CORRELID_MAPPING_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REQ_SET_CORRELID_MAPPING_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REQ_SET_CORRELID_MAPPING_LOG_OUT.type" override="Body">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REQ_SET_CORRELID_MAPPING_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REQ_SET_CORRELID_MAPPING_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REQ_SET_CORRELID_MAPPING_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#REQ_SET_CORRELID_MAPPING_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#RESTORE_MSG.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#RESTORE_MSG.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#RESTORE_MSG.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#RESTORE_MSG_LOG_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#RESTORE_MSG_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#RESTORE_MSG_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#RESTORE_MSG_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#RESTORE_MSG_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#RESTORE_MSG_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#RESTORE_MSG_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#RESTORE_MSG_LOG_OUT.type" override="Root">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#RESTORE_MSG_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#RESTORE_MSG_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#RESTORE_MSG_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#RESTORE_MSG_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#RES_REV_CHANGE_GROUP_MAPPING.config" override="db://##res-reversal-change-group.${msg.data.newgroup}">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#RES_REV_CHANGE_GROUP_MAPPING_LOG_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#RES_REV_CHANGE_GROUP_MAPPING_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#RES_REV_CHANGE_GROUP_MAPPING_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#RES_REV_CHANGE_GROUP_MAPPING_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#RES_REV_CHANGE_GROUP_MAPPING_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#RES_REV_CHANGE_GROUP_MAPPING_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#RES_REV_CHANGE_GROUP_MAPPING_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#RES_REV_CHANGE_GROUP_MAPPING_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#RES_REV_CHANGE_GROUP_MAPPING_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#RES_REV_CHANGE_GROUP_MAPPING_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#RES_REV_CHANGE_GROUP_MAPPING_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#RES_REV_CHANGE_GROUP_MAPPING_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#ROUTING_REVERSAL_OLDGROUP_LOG_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#ROUTING_REVERSAL_OLDGROUP_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#ROUTING_REVERSAL_OLDGROUP_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#ROUTING_REVERSAL_OLDGROUP_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#ROUTING_REVERSAL_OLDGROUP_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#ROUTING_REVERSAL_OLDGROUP_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#ROUTING_REVERSAL_OLDGROUP_LOG_OUT.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#ROUTING_REVERSAL_OLDGROUP_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#ROUTING_REVERSAL_OLDGROUP_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#ROUTING_REVERSAL_OLDGROUP_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#ROUTING_REVERSAL_OLDGROUP_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#ROUTING_REVERSAL_OLDGROUP_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#SET_BACKUP.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#SET_BACKUP.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#SET_BACKUP.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#SET_BACKUP_LOG_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#SET_BACKUP_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#SET_BACKUP_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#SET_BACKUP_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#SET_BACKUP_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#SET_BACKUP_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#SET_BACKUP_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#SET_BACKUP_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#SET_BACKUP_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#SET_BACKUP_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#SET_BACKUP_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#SET_BACKUP_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#SET_CORRELID.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#SET_CORRELID.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#SET_CORRELID.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#SET_CORRELID1.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#SET_CORRELID1.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#SET_CORRELID1.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#SET_CORRELID1_LOG_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#SET_CORRELID1_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#SET_CORRELID1_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#SET_CORRELID1_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#SET_CORRELID1_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#SET_CORRELID1_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#SET_CORRELID1_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#SET_CORRELID1_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#SET_CORRELID1_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#SET_CORRELID1_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#SET_CORRELID1_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#SET_CORRELID1_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#SET_CORRELID_LOG_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#SET_CORRELID_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#SET_CORRELID_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#SET_CORRELID_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#SET_CORRELID_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#SET_CORRELID_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#SET_CORRELID_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#SET_CORRELID_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#SET_CORRELID_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#SET_CORRELID_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#SET_CORRELID_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#SET_CORRELID_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#SET_RESPONSE.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#SET_RESPONSE.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#SET_RESPONSE.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#SET_RESPONSE_LOG_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#SET_RESPONSE_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#SET_RESPONSE_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#SET_RESPONSE_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#SET_RESPONSE_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#SET_RESPONSE_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#SET_RESPONSE_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#SET_RESPONSE_LOG_OUT.type" override="Root">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#SET_RESPONSE_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#SET_RESPONSE_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#SET_RESPONSE_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#SET_RESPONSE_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#STORE_CORECHANGE_REQREV.AddRequestToGroup">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#STORE_CORECHANGE_REQREV.GroupRequestFolderName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#STORE_CORECHANGE_REQREV.GroupRequestTimeout">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#STORE_CORECHANGE_REQREV.SSLCertificateLabel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#STORE_CORECHANGE_REQREV.SSLCipherSpec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#STORE_CORECHANGE_REQREV.SSLPeerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#STORE_CORECHANGE_REQREV.channelName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#STORE_CORECHANGE_REQREV.connection">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#STORE_CORECHANGE_REQREV.destinationQueueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#STORE_CORECHANGE_REQREV.listenerPortNumber">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#STORE_CORECHANGE_REQREV.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#STORE_CORECHANGE_REQREV.queueManagerHostname">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#STORE_CORECHANGE_REQREV.queueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#STORE_CORECHANGE_REQREV.queueName" override="STORE_CORECHANGE_REQREV">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#STORE_CORECHANGE_REQREV.replyToQ">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#STORE_CORECHANGE_REQREV.replyToQMgr">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#STORE_CORECHANGE_REQREV.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#STORE_CORECHANGE_REQREV.securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#STORE_CORECHANGE_REQREV.useSSL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#STORE_CORECHANGE_REQREV.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#STORE_CORECHANGE_REQREV_LOG_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#STORE_CORECHANGE_REQREV_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#STORE_CORECHANGE_REQREV_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#STORE_CORECHANGE_REQREV_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#STORE_CORECHANGE_REQREV_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#STORE_CORECHANGE_REQREV_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#STORE_CORECHANGE_REQREV_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#STORE_CORECHANGE_REQREV_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#STORE_CORECHANGE_REQREV_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#STORE_CORECHANGE_REQREV_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#STORE_CORECHANGE_REQREV_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#STORE_CORECHANGE_REQREV_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#STORE_CORECHANGE_RESP_GET.SSLCertificateLabel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#STORE_CORECHANGE_RESP_GET.SSLCipherSpec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#STORE_CORECHANGE_RESP_GET.SSLPeerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#STORE_CORECHANGE_RESP_GET.channelName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#STORE_CORECHANGE_RESP_GET.connection">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#STORE_CORECHANGE_RESP_GET.destinationQueueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#STORE_CORECHANGE_RESP_GET.listenerPortNumber">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#STORE_CORECHANGE_RESP_GET.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#STORE_CORECHANGE_RESP_GET.queueManagerHostname">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#STORE_CORECHANGE_RESP_GET.queueName" override="STORE_CORECHANGE_RESP">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#STORE_CORECHANGE_RESP_GET.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#STORE_CORECHANGE_RESP_GET.useSSL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#STORE_CORECHANGE_RESP_GET.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#STORE_CORECHANGE_RESP_GET_LOG_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#STORE_CORECHANGE_RESP_GET_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#STORE_CORECHANGE_RESP_GET_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#STORE_CORECHANGE_RESP_GET_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#STORE_CORECHANGE_RESP_GET_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#STORE_CORECHANGE_RESP_GET_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#STORE_CORECHANGE_RESP_GET_LOG_NOMSG.level" override="Warning">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#STORE_CORECHANGE_RESP_GET_LOG_NOMSG.type" override="None">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#STORE_CORECHANGE_RESP_GET_LOG_NOMSG.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#STORE_CORECHANGE_RESP_GET_LOG_NOMSG.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#STORE_CORECHANGE_RESP_GET_LOG_NOMSG.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#STORE_CORECHANGE_RESP_GET_LOG_NOMSG.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#STORE_CORECHANGE_RESP_GET_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#STORE_CORECHANGE_RESP_GET_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#STORE_CORECHANGE_RESP_GET_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#STORE_CORECHANGE_RESP_GET_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#STORE_CORECHANGE_RESP_GET_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#STORE_CORECHANGE_RESP_GET_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#STORE_CORECHANGE_RESP_GET_LOG_WARNING.level" override="Warning">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#STORE_CORECHANGE_RESP_GET_LOG_WARNING.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#STORE_CORECHANGE_RESP_GET_LOG_WARNING.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#STORE_CORECHANGE_RESP_GET_LOG_WARNING.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#STORE_CORECHANGE_RESP_GET_LOG_WARNING.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#STORE_CORECHANGE_RESP_GET_LOG_WARNING.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#additionalInstances" override="255">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#commitCount">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#commitInterval">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#consumerPolicySet">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#consumerPolicySetBindings">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#coordinatedTransaction">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#maximumRateMsgsPerSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#monitoringProfile">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#notificationThresholdMsgsPerSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#processingTimeoutAction">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#processingTimeoutSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#providerPolicySet">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#providerPolicySetBindings">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#startInstancesWhenFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#startMode">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CHANGE_GROUP_REVERSAL_FLOW#wlmPolicy">
+    </ConfigurableProperty>
+  </CompiledMessageFlow>
+</Broker>

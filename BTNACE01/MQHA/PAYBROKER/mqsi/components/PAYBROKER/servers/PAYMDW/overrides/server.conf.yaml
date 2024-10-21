@@ -1,0 +1,4 @@
+---
+ResourceManagers: 
+  JVM: 
+    jvmMaxHeapSize: 1073741824

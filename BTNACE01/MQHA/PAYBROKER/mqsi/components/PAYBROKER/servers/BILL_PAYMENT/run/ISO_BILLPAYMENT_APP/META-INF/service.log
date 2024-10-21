@@ -1,0 +1,31 @@
+
+==============================================
+
+!Wed Sep 21 21:33:45 ICT 2022
+
+Successfully added file ISO_BILLPAYMENT_APP\ISO_REVERSAL_FLOW.msgflow to BAR file.
+
+Successfully added file ISO_BILLPAYMENT_APP\ISO_PAYMENT_FLOW.msgflow to BAR file.
+
+Successfully added file ISO_BILLPAYMENT_APP\ISO_INQUIRY_FLOW.msgflow to BAR file.
+
+Successfully added file ISO_BILLPAYMENT_APP\BP_PARSER.esql to BAR file.
+
+Successfully added file ISO_BILLPAYMENT_APP\BP_PARSER.subflow to BAR file.
+
+Successfully added file ISO_BILLPAYMENT_APP\ISO_INQUIRY_FLOW.esql to BAR file.
+
+Successfully added file ISO_BILLPAYMENT_APP\ISO_PAYMENT_FLOW.esql to BAR file.
+
+Successfully added file ISO_BILLPAYMENT_APP\ISO_REVERSAL_FLOW.esql to BAR file.
+
+Successfully added file ISO_BILLPAYMENT_APP\application.descriptor to BAR file.
+
+Successfully added file ISO_BILLPAYMENT_APP\application.descriptor to BAR file.
+
+Successfully added file ISO_BILLPAYMENT_APP\application.descriptor to BAR file.
+
+Successfully added file ISO_BILLPAYMENT_APP\application.descriptor to BAR file.
+
+Successfully added file SUBFLOW_LOGDB_LIB to BAR file.
+

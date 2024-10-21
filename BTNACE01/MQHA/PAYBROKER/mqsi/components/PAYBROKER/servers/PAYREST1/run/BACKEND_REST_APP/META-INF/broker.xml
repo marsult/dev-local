@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Broker deployBarfile="/opt/mdw/bar/PAYBROKER/PAYREST1/BACKEND_REST_APP.bar" deployTimestamp="2024-08-09 17:38:35">
+  <CompiledApplication>
+    <ConfigurableProperty uri="startMode">
+    </ConfigurableProperty>
+  </CompiledApplication>
+  <CompiledMessageFlow name="BACKEND_REST_FLOW" deployBarfile="/opt/mdw/bar/PAYBROKER/PAYREST1/BACKEND_REST_APP.bar" deployTimestamp="2024-08-09 17:38:35">
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#BACKEND_ISO_REPLY.SSLCertificateLabel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#BACKEND_ISO_REPLY.SSLCipherSpec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#BACKEND_ISO_REPLY.SSLPeerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#BACKEND_ISO_REPLY.channelName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#BACKEND_ISO_REPLY.connection">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#BACKEND_ISO_REPLY.destinationQueueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#BACKEND_ISO_REPLY.listenerPortNumber">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#BACKEND_ISO_REPLY.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#BACKEND_ISO_REPLY.queueManagerHostname">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#BACKEND_ISO_REPLY.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#BACKEND_ISO_REPLY.useSSL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#BACKEND_ISO_REPLY.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#BACKEND_ISO_REPLY_LOG_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#BACKEND_ISO_REPLY_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#BACKEND_ISO_REPLY_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#BACKEND_ISO_REPLY_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#BACKEND_ISO_REPLY_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#BACKEND_ISO_REPLY_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#BACKEND_ISO_REPLY_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#BACKEND_ISO_REPLY_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#BACKEND_ISO_REPLY_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#BACKEND_ISO_REPLY_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#BACKEND_ISO_REPLY_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#BACKEND_ISO_REPLY_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#BACKEND_REST_IN.SSLCertificateLabel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#BACKEND_REST_IN.SSLCipherSpec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#BACKEND_REST_IN.SSLPeerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#BACKEND_REST_IN.additionalInstances">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#BACKEND_REST_IN.channelName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#BACKEND_REST_IN.componentLevel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#BACKEND_REST_IN.connection">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#BACKEND_REST_IN.destinationQueueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#BACKEND_REST_IN.listenerPortNumber">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#BACKEND_REST_IN.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#BACKEND_REST_IN.queueManagerHostname">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#BACKEND_REST_IN.queueName" override="BACKEND_REST_IN">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#BACKEND_REST_IN.resetBrowseTimeout">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#BACKEND_REST_IN.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#BACKEND_REST_IN.securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#BACKEND_REST_IN.serializationToken">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#BACKEND_REST_IN.topicProperty">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#BACKEND_REST_IN.useSSL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#BACKEND_REST_IN.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#BACKEND_REST_IN_LOG_CATCH.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#BACKEND_REST_IN_LOG_CATCH.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#BACKEND_REST_IN_LOG_CATCH.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#BACKEND_REST_IN_LOG_CATCH.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#BACKEND_REST_IN_LOG_CATCH.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#BACKEND_REST_IN_LOG_CATCH.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#BACKEND_REST_IN_LOG_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#BACKEND_REST_IN_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#BACKEND_REST_IN_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#BACKEND_REST_IN_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#BACKEND_REST_IN_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#BACKEND_REST_IN_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#BACKEND_REST_IN_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#BACKEND_REST_IN_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#BACKEND_REST_IN_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#BACKEND_REST_IN_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#BACKEND_REST_IN_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#BACKEND_REST_IN_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#BEF_REMOVE_LOG.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#BEF_REMOVE_LOG.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#BEF_REMOVE_LOG.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#BEF_REMOVE_LOG.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#BEF_REMOVE_LOG.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#BEF_REMOVE_LOG.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#REMOVE_LOG.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#REMOVE_LOG.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#REMOVE_LOG.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#REST_REQUEST.URLSpecifier" override="http://localhost:8080">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#REST_REQUEST.acceptCompressedResponses">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#REST_REQUEST.allowedCiphers">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#REST_REQUEST.enableCRLCheck">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#REST_REQUEST.enableKeepAlive">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#REST_REQUEST.hostnameChecking">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#REST_REQUEST.httpProxyLocation">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#REST_REQUEST.httpVersion">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#REST_REQUEST.keyAlias">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#REST_REQUEST.protocol" override="TLS">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#REST_REQUEST.requestCompressionType">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#REST_REQUEST.securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#REST_REQUEST.timeoutForServer" override="30">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#REST_REQUEST.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#REST_REQUEST_GET.URLSpecifier" override="http://localhost:8080">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#REST_REQUEST_GET.acceptCompressedResponses">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#REST_REQUEST_GET.allowedCiphers">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#REST_REQUEST_GET.enableCRLCheck">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#REST_REQUEST_GET.enableKeepAlive">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#REST_REQUEST_GET.hostnameChecking">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#REST_REQUEST_GET.httpProxyLocation">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#REST_REQUEST_GET.httpVersion">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#REST_REQUEST_GET.keyAlias">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#REST_REQUEST_GET.protocol" override="TLS">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#REST_REQUEST_GET.requestCompressionType">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#REST_REQUEST_GET.securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#REST_REQUEST_GET.timeoutForServer" override="30">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#REST_REQUEST_GET.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#REST_REQUEST_LOG_ERROR.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#REST_REQUEST_LOG_ERROR.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#REST_REQUEST_LOG_ERROR.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#REST_REQUEST_LOG_ERROR.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#REST_REQUEST_LOG_ERROR.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#REST_REQUEST_LOG_ERROR.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#REST_REQUEST_LOG_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#REST_REQUEST_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#REST_REQUEST_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#REST_REQUEST_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#REST_REQUEST_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#REST_REQUEST_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#REST_REQUEST_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#REST_REQUEST_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#REST_REQUEST_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#REST_REQUEST_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#REST_REQUEST_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#REST_REQUEST_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#SET_GENERATED_REST_FAULT.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#SET_GENERATED_REST_FAULT.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#SET_GENERATED_REST_FAULT.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#SET_GENERATED_REST_FAULT_LOG_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#SET_GENERATED_REST_FAULT_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#SET_GENERATED_REST_FAULT_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#SET_GENERATED_REST_FAULT_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#SET_GENERATED_REST_FAULT_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#SET_GENERATED_REST_FAULT_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#SET_GENERATED_REST_FAULT_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#SET_GENERATED_REST_FAULT_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#SET_GENERATED_REST_FAULT_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#SET_GENERATED_REST_FAULT_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#SET_GENERATED_REST_FAULT_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#SET_GENERATED_REST_FAULT_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#SET_REQUEST.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#SET_REQUEST.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#SET_REQUEST.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#SET_REQUEST_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#SET_REQUEST_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#SET_REQUEST_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#SET_REQUEST_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#SET_REQUEST_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#SET_REQUEST_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#SET_RESPONSE.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#SET_RESPONSE.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#SET_RESPONSE.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#SET_RESPONSE_LOG_DB.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#SET_RESPONSE_LOG_DB.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#SET_RESPONSE_LOG_DB.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#SET_RESPONSE_LOG_DB_LOG_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#SET_RESPONSE_LOG_DB_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#SET_RESPONSE_LOG_DB_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#SET_RESPONSE_LOG_DB_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#SET_RESPONSE_LOG_DB_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#SET_RESPONSE_LOG_DB_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#SET_RESPONSE_LOG_DB_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#SET_RESPONSE_LOG_DB_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#SET_RESPONSE_LOG_DB_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#SET_RESPONSE_LOG_DB_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#SET_RESPONSE_LOG_DB_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#SET_RESPONSE_LOG_DB_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#SET_RESPONSE_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#SET_RESPONSE_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#SET_RESPONSE_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#SET_RESPONSE_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#SET_RESPONSE_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#SET_RESPONSE_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#SET_RESPONSE_REST_ERROR.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#SET_RESPONSE_REST_ERROR.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#SET_RESPONSE_REST_ERROR.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#SET_RESPONSE_REST_ERROR_LOG_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#SET_RESPONSE_REST_ERROR_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#SET_RESPONSE_REST_ERROR_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#SET_RESPONSE_REST_ERROR_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#SET_RESPONSE_REST_ERROR_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#SET_RESPONSE_REST_ERROR_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#SET_RESPONSE_REST_ERROR_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#SET_RESPONSE_REST_ERROR_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#SET_RESPONSE_REST_ERROR_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#SET_RESPONSE_REST_ERROR_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#SET_RESPONSE_REST_ERROR_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#SET_RESPONSE_REST_ERROR_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#additionalInstances" override="250">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#commitCount">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#commitInterval">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#consumerPolicySet">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#consumerPolicySetBindings">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#coordinatedTransaction">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#maximumRateMsgsPerSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#monitoringProfile">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#notificationThresholdMsgsPerSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#processingTimeoutAction">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#processingTimeoutSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#providerPolicySet">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#providerPolicySetBindings">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#startInstancesWhenFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#startMode">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="BACKEND_REST_FLOW#wlmPolicy">
+    </ConfigurableProperty>
+  </CompiledMessageFlow>
+</Broker>

@@ -1,0 +1,196 @@
+<db-config>
+	<url>jdbc:db2://btnmdwdata:50000/mwconfig</url>
+	<driver-class>com.ibm.db2.jcc.DB2Driver</driver-class>
+	<username>db2inst1</username>
+	<password>wajFMo2HsNWsRQcLal8Y47jzNMHI+oAu8ywJwIfL9cA=</password>
+	<schema>mwconfig</schema>
+	<c3p0 id="jdbc:db2:">
+		<param id="minPoolSize">5</param>
+		<param id="maxPoolSize">50</param>
+		<param id="timeout">60</param>
+		<param id="idleConnectionTestPeriod">300</param>
+		<param id="maxIdleTime">300</param>
+		<param id="maxIdleTimeExcessConnections">180</param>
+		<param id="preferredTestQuery">select 1 from sysibm.sysdummy1</param>
+	</c3p0>
+	<config-pattern>
+		<!-- If path is not specify, will be included to config -->
+		<!-- If path is specify, only using <include> will be included to config -->
+		<path id="config/clients/client" />
+		<path id="config/codex">
+			<include>\[dsp-abcs.*\]</include>
+			<include>\[iso-8583-core-syariah\]</include>
+		</path>
+		<path id="config/db">
+			<include>\[mwlog\]</include>
+		</path>
+		<path id="config/dbquery">
+			<include>\[get-request.*\]</include>
+			<include>\[itm.*\]</include>
+		</path>
+		<path id="config/dtree-map">
+			<!--
+			<include>\[.*\]\{.*\[pay\].*\}</include>
+			-->
+			<include>\[.*\]\{.*\[mpomd\].*\}</include>
+			<include>\[.*\]\{.*\[tpomd\].*\}</include>
+			<include>\[.*\]\{.*\[spomd\].*\}</include>
+			
+			<!--sms -->
+			<include>\[.*\]\{.*\[sajmd\].*\}</include>
+			<include>\[.*\]\{.*\[sfiim\].*\}</include>
+			<include>\[.*\]\{.*\[sfimd\].*\}</include>
+			<include>\[.*\]\{.*\[ssymd\].*\}</include>
+			<include>\[.*\]\{.*\[slamd\].*\}</include>
+			<include>\[.*\]\{.*\[szzmd\].*\}</include>
+			<include>\[.*\]\{.*\[smsro\].*\}</include>
+			
+            <!-- vadebit payment -->
+			<include>\[.*\]\{.*\[cvdpay\].*\}</include> 
+			<include>\[.*\]\{.*\[cvdmd\].*\}</include> 
+            <include>\[.*\]\{.*\[vadpay\].*\}</include>
+
+			<include>\[.*\]\{.*\[ifid\].*\}</include>
+			<include>\[.*\]\{.*\[imip\].*\}</include>
+			<include>\[.*\]\{.*\[izzp\].*\}</include>
+			<include>\[.*\]\{.*\[isyip\].*\}</include>
+			<include>\[.*\]\{.*\[ssyip\].*\}</include>
+			
+			<include>\[.*\]\{.*\[zzzmd\].*\}</include>
+			<include>\[.*\]\{.*\[izzp\].*\}</include>
+
+			<include>\[CHARGES\|ibk\](\{.*\}|)</include>
+			<include>\[CHARGES\|ibk\|10\d{4}\](\{.*\}|)</include>
+			<include>\[CHARGES\|mbk\](\{.*\}|)</include>
+			<include>\[CHARGES\|mbk\|10\d{4}\](\{.*\}|)</include>
+			<include>\[CHARGES\|sms\](\{.*\}|)</include>
+			<include>\[CHARGES\|sms\|10\d{4}\](\{.*\}|)</include>
+			
+			<include>\[CHARGES\|itm\](\{.*\}|)</include>
+			<include>\[CHARGES\|itm\|10.*\](\{.*\}|)</include>
+			<include>\[CHARGES\|itm\|30.*\](\{.*\}|)</include>
+			<include>\[CHARGES\|itm\|30.*\](\{.*\}|)</include>
+			<include>\[CHARGES\|sms\](\{.*\}|)</include>
+			<include>\[CHARGES\|sms\|10.*\](\{.*\}|)</include>
+			<include>\[CHARGES\|sms\|30.*\](\{.*\}|)</include>
+			<include>\[ITM-CODE\|02.*\|1020.*\](\{.*\}|)</include>
+			<include>\[SMS-CODE\|02.*\|1020.*\](\{.*\}|)</include>
+		</path>
+		<path id="config/host" />
+		<path id="config/mapping">
+			<include>\[check.res-core.need-reversal\](\{.*\}|)</include>
+			<include>\[dsp\](\{.*\}|)</include>
+			<include>\[itm-link.req-telkomsel-master\](\{.*\}|)</include>
+			<include>\[itm.res-reverse-master\](\{.*\}|)</include>
+			<include>\[req-core.itm.0200.2.101103.001\](\{.*\}|)</include>
+			<include>\[req-core.itm\](\{.*\}|)</include>
+			<include>\[res-core.itm.0200.error\](\{.*\}|)</include>
+			<include>\[res-core.itm.error\](\{.*\}|)</include>
+			<include>\[res-core.itm\](\{.*\}|)</include>
+			<include>\[req-core.itm.0200.2.101101.001\](\{.*\}|)</include>
+			<include>\[req-core.sms.error\](\{.*\}|)</include>
+			
+			<include>\[.*\]\{.*\[iajmd\].*\}</include>
+			<include>\[.*\]\{.*\[iajip\].*\}</include>
+			<include>\[.*\]\{.*\[isyim\].*\}</include>
+			<!--
+			<include>\[.*\]\{.*\[isymi\].*\}</include>
+			<include>\[.*\]\{.*\[isymd\].*\}</include>
+			<include>\[.*\]\{.*\[isyip\].*\}</include>
+			
+			-->
+			<include>\[.*\]\{.*\[imimd\].*\}</include>
+			<include>\[.*\]\{.*\[imiip\].*\}</include>
+			<include>\[.*\]\{.*\[ifid\].*\}</include>
+			<include>\[.*\]\{.*\[ifimd\].*\}</include>
+			<include>\[.*\]\{.*\[ifiip\].*\}</include>
+			<include>\[.*\]\{.*\[ifiim\].*\}</include>
+			<!--FORTUNA-->
+			<include>\[.*\]\{.*\[ifomd\].*\}</include>
+			<include>\[.*\]\{.*\[zfomd\].*\}</include>
+			
+			<!-- ITM-MKM 
+			<include>\[.*\]\{.*\[imkmd\].*\}</include>
+			-->
+			<include>\[.*\]\{.*\[sgpmd\].*\}</include>
+
+			<include>\[.*\]\{.*\[sfimd\].*\}</include>
+			<include>\[.*\]\{.*\[zfimd\].*\}</include>
+			
+			<!--
+			<include>\[.*\]\{.*\[mpomd\].*\}</include>
+			<include>\[.*\]\{.*\[tpomd\].*\}</include>
+			<include>\[.*\]\{.*\[tzzmd\].*\}</include>
+			<include>\[.*\]\{.*\[spomd\].*\}</include>
+			<include>\[.*\]\{.*\[itm\].*\}</include>
+			<include>\[.*\]\{.*\[zpomd\].*\}</include>
+			-->
+			<!--
+			<include>\[.*\]\{.*\[iwswc\].*\}</include>
+			-->
+			<include>\[.*\]\{.*\[slamd\].*\}</include>
+			<include>\[.*\]\{.*\[mzzmd\].*\}</include>
+			<include>\[.*\]\{.*\[sajmd\].*\}</include>
+			<include>\[.*\]\{.*\[ssymd\].*\}</include>
+			<include>\[.*\]\{.*\[szzmd\].*\}</include>
+			<include>\[.*\]\{.*\[zzzmd\].*\}</include>
+			<include>\[.*\]\{.*\[zmimd\].*\}</include>
+			<include>\[.*\]\{.*\[zajmd\].*\}</include>
+			<include>\[.*\]\{.*\[zmkmd\].*\}</include>
+			<include>\[.*\]\{.*\[zsymd\].*\}</include>
+			
+			<!-- SPP-Syariah -->
+			<include>\[.*\]\{.*\[iwsip\].*\}</include>
+			<include>\[.*\]\{.*\[swsip\].*\}</include>
+			<!-- vadebit payment -->
+			<include>\[.*\]\{.*\[cvdpay\].*\}</include> 
+			<include>\[.*\]\{.*\[cvdmd\].*\}</include> 
+            <include>\[.*\]\{.*\[vadpay\].*\}</include> 
+			<include>\[req-core.cms.multiple-master.konven\](\{.*\}|)</include>
+			<include>\[res-core.cvd.0200.error\](\{.*\}|)</include>
+
+			<include>\[.*\]\{.*\[syariah\].*\}</include>
+
+			<include>\[req-core.cms\](\{.*\}|)</include>
+			<include>\[req-core.sms\](\{.*\}|)</include>
+			<include>\[res-core.ibk\](\{.*\}|)</include>
+			<include>\[res-core.mbk\](\{.*\}|)</include>
+			<include>\[res-core.sms\](\{.*\}|)</include>
+		</path>
+		<path id="config/param-map">
+			<include>\[check.res-core.itm.102000\|.*\]</include>
+			<include>\[coa-syariah\|.*\]</include>
+			<include>\[coa-pay\|.*\]</include>
+			<include>\[coa-itm\|.*\]</include>
+			<include>\[coa-pay-mdw\|.*\]</include>
+			<include>\[device_teller_map\|.*\]</include>
+			<include>\[error_map\|core-bds.*\]</include>
+			<include>\[error_map\|core-cms\|.*\]</include>
+			<include>\[error_map\|core-sms\|.*\]</include>
+			<include>\[error_map\|core-itm.*\]</include>
+			<include>\[error_map\|VaDebit.*\]</include>
+			<include>\[error_map\|core-syariah-itm.*\]</include>
+			<include>\[error_map_detail\|core-bds.*\]</include>
+			<include>\[error_map_detail\|core-itm.*\]</include>
+			<include>\[error_map_detail\|core-syariah-itm.*\]</include>
+			<include>\[giro-skh\|.*\]</include>
+			<include>\[pay\|.*\]</include>
+			<include>\[skh\|.*\]</include>
+			<include>\[coa\|.*\]</include>
+			<include>\[aut\|.*\]</include>
+			<include>\[sms-konven-code\|.*\]</include>
+			<include>\[core-response-ok\|AXISSYSTEMSDNBHD\..*\]</include>
+			<include>\[cms\|VaDebit.*\]</include>
+            <include>\[check.res-core.core-cms\|.*\]</include>
+		</path>
+		<path id="config/parser">
+			<include>\[iso\]</include>
+			<include>\[abcs-request\]</include>
+			<include>\[parser-1\]</include>
+			<include>\[payment-parser\]</include>
+		</path>
+		<path id="config/ports/port" />
+		<path id="config/routing" />
+		<path id="config/rpg-call" />
+	</config-pattern>
+</db-config>

@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Broker deployBarfile="/btn/btnmw-ace/TestModeBarFiles/ROUTER_REST_APPproject.TestMode.bar" deployTimestamp="2024-08-21 19:35:40">
+  <CompiledApplication>
+    <ConfigurableProperty uri="startMode">
+    </ConfigurableProperty>
+  </CompiledApplication>
+  <CompiledMessageFlow name="ROUTER_REST_APP" deployBarfile="/btn/btnmw-ace/TestModeBarFiles/ROUTER_REST_APPproject.TestMode.bar" deployTimestamp="2024-08-21 19:35:40">
+    <ConfigurableProperty uri="ROUTER_REST_APP#BEFORE_HTTP_RESPONSE.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#BEFORE_HTTP_RESPONSE.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#BEFORE_HTTP_RESPONSE.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#ERROR_JSON.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#ERROR_JSON.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#ERROR_JSON.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#HTTP_RESPONSE.compressionType">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#HTTP_RESPONSE.validateMaster" override="none">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#LOG_DB_RESPONSE_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#LOG_DB_RESPONSE_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#LOG_DB_RESPONSE_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#LOG_DB_RESPONSE_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#LOG_DB_RESPONSE_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#LOG_DB_RESPONSE_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#MQ Output1.AddRequestToGroup">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#MQ Output1.GroupRequestFolderName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#MQ Output1.GroupRequestTimeout">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#MQ Output1.SSLCertificateLabel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#MQ Output1.SSLCipherSpec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#MQ Output1.SSLPeerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#MQ Output1.channelName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#MQ Output1.connection">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#MQ Output1.destinationQueueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#MQ Output1.listenerPortNumber">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#MQ Output1.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#MQ Output1.queueManagerHostname">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#MQ Output1.queueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#MQ Output1.queueName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#MQ Output1.replyToQ">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#MQ Output1.replyToQMgr">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#MQ Output1.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#MQ Output1.securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#MQ Output1.useSSL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#MQ Output1.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#MQ_DESTINATION_LOG_FAILURE.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#MQ_DESTINATION_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#MQ_DESTINATION_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#MQ_DESTINATION_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#MQ_DESTINATION_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#MQ_DESTINATION_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#MQ_DESTINATION_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#MQ_DESTINATION_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#MQ_DESTINATION_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#MQ_DESTINATION_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#MQ_DESTINATION_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#MQ_DESTINATION_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#REQ_JSON.config" override="db://##rest-api.${msg.Data.mappingId}.request">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#REQ_JSON_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#REQ_JSON_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#REQ_JSON_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#REQ_JSON_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#REQ_JSON_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#REQ_JSON_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#RESPONSE_TO_JSON.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#RESPONSE_TO_JSON.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#RESPONSE_TO_JSON.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#RESP_MAPPING.config" override="db://##rest-api.${msg.data.code}.response">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#RESP_MAPPING_LOG_FAILURE.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#RESP_MAPPING_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#RESP_MAPPING_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#RESP_MAPPING_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#RESP_MAPPING_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#RESP_MAPPING_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#RESP_MAPPING_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#RESP_MAPPING_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#RESP_MAPPING_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#RESP_MAPPING_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#RESP_MAPPING_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#RESP_MAPPING_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#REST_IN.URLSpecifier" override="/*/*">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#REST_IN.decompressInputMessage">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#REST_IN.faultFormat" override="JSON">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#REST_IN.securityProfileName" override="NULL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#REST_IN.timeoutForClient" override="60">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#REST_IN.useHTTPS">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#REST_IN.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#REST_IN1.URLSpecifier" override="/counter">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#REST_IN1.decompressInputMessage">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#REST_IN1.faultFormat" override="JSON">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#REST_IN1.securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#REST_IN1.timeoutForClient" override="60">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#REST_IN1.useHTTPS">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#REST_IN1.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#REST_IN_LOG_CATCH.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#REST_IN_LOG_CATCH.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#REST_IN_LOG_CATCH.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#REST_IN_LOG_CATCH.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#REST_IN_LOG_CATCH.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#REST_IN_LOG_CATCH.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#REST_IN_LOG_FAILURE.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#REST_IN_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#REST_IN_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#REST_IN_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#REST_IN_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#REST_IN_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#REST_IN_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#REST_IN_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#REST_IN_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#REST_IN_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#REST_IN_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#REST_IN_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#REST_IN_LOG_TIMEOUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#REST_IN_LOG_TIMEOUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#REST_IN_LOG_TIMEOUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#REST_IN_LOG_TIMEOUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#REST_IN_LOG_TIMEOUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#REST_IN_LOG_TIMEOUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#REST_OUT.compressionType">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#REST_OUT.validateMaster" override="none">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#REST_OUT_LOG_FAILURE.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#REST_OUT_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#REST_OUT_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#REST_OUT_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#REST_OUT_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#REST_OUT_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#REST_OUT_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#REST_OUT_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#REST_OUT_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#REST_OUT_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#REST_OUT_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#REST_OUT_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#RES_JSON_LOG_OUT1.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#RES_JSON_LOG_OUT1.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#RES_JSON_LOG_OUT1.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#RES_JSON_LOG_OUT1.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#RES_JSON_LOG_OUT1.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#RES_JSON_LOG_OUT1.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#RES_JSON_LOG_OUT2.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#RES_JSON_LOG_OUT2.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#RES_JSON_LOG_OUT2.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#RES_JSON_LOG_OUT2.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#RES_JSON_LOG_OUT2.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#RES_JSON_LOG_OUT2.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#ROUTER_REST_OUT.SSLCertificateLabel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#ROUTER_REST_OUT.SSLCipherSpec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#ROUTER_REST_OUT.SSLPeerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#ROUTER_REST_OUT.additionalInstances">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#ROUTER_REST_OUT.channelName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#ROUTER_REST_OUT.componentLevel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#ROUTER_REST_OUT.connection">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#ROUTER_REST_OUT.destinationQueueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#ROUTER_REST_OUT.listenerPortNumber">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#ROUTER_REST_OUT.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#ROUTER_REST_OUT.queueManagerHostname">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#ROUTER_REST_OUT.queueName" override="ROUTER_REST_OUT">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#ROUTER_REST_OUT.resetBrowseTimeout">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#ROUTER_REST_OUT.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#ROUTER_REST_OUT.securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#ROUTER_REST_OUT.serializationToken">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#ROUTER_REST_OUT.topicProperty">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#ROUTER_REST_OUT.useSSL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#ROUTER_REST_OUT.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#ROUTER_REST_OUT_LOG_CATCH.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#ROUTER_REST_OUT_LOG_CATCH.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#ROUTER_REST_OUT_LOG_CATCH.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#ROUTER_REST_OUT_LOG_CATCH.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#ROUTER_REST_OUT_LOG_CATCH.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#ROUTER_REST_OUT_LOG_CATCH.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#ROUTER_REST_OUT_LOG_FAILURE.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#ROUTER_REST_OUT_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#ROUTER_REST_OUT_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#ROUTER_REST_OUT_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#ROUTER_REST_OUT_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#ROUTER_REST_OUT_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#ROUTER_REST_OUT_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#ROUTER_REST_OUT_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#ROUTER_REST_OUT_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#ROUTER_REST_OUT_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#ROUTER_REST_OUT_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#ROUTER_REST_OUT_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#SET_ENV.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#SET_ENV.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#SET_ENV.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#SET_ENV_LOG_FAILURE.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#SET_ENV_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#SET_ENV_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#SET_ENV_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#SET_ENV_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#SET_ENV_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#SET_ENV_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#SET_ENV_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#SET_ENV_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#SET_ENV_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#SET_ENV_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#SET_ENV_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#SET_MAPPING_ID.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#SET_MAPPING_ID.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#SET_MAPPING_ID.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#SET_MSG_JSON.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#SET_MSG_JSON.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#SET_MSG_JSON.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#SET_REQUEST_TO_QUEUE.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#SET_REQUEST_TO_QUEUE.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#SET_REQUEST_TO_QUEUE.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#additionalInstances">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#commitCount">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#commitInterval">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#consumerPolicySet">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#consumerPolicySetBindings">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#coordinatedTransaction">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#maximumRateMsgsPerSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#monitoringProfile">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#notificationThresholdMsgsPerSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#processingTimeoutAction">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#processingTimeoutSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#providerPolicySet">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#providerPolicySetBindings">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#startInstancesWhenFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#startMode">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="ROUTER_REST_APP#wlmPolicy">
+    </ConfigurableProperty>
+  </CompiledMessageFlow>
+</Broker>

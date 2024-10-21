@@ -1,0 +1,213 @@
+CREATE COMPUTE MODULE ROUTER_REST_APP_SET_MSG_JSON
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputLocalEnvironment = InputLocalEnvironment;
+		SET OutputRoot = InputRoot;
+		
+		DECLARE URL CHARACTER CAST(InputRoot.HTTPInputHeader."X-Original-HTTP-Command" AS CHARACTER);
+		DECLARE SRC CHARACTER CAST(SUBSTRING(URL 
+			FROM POSITION('/' IN URL REPEAT 3) + 1 
+			FOR (POSITION('/' IN URL REPEAT 4) + 1) - (POSITION('/' IN URL REPEAT 3) + 1 + 1)
+		) AS CHARACTER);
+		DECLARE SERVICE CHARACTER CAST(SUBSTRING(URL 
+			FROM POSITION('/' IN URL REPEAT 4) + 1 
+			FOR (POSITION('HTTP/1.1' IN URL)-3)-POSITION('/' IN URL REPEAT 4) + 1
+		) AS CHARACTER);
+		DECLARE DT CHARACTER CAST((CAST((((CURRENT_TIMESTAMP - (TIMESTAMP '1970-01-01 00:00:00')) SECOND * 1000 )) AS INT) - (7 * 3600 * 1000)) AS CHARACTER);
+		DECLARE CORELLATIONID BLOB CAST(SUBSTRING(CAST(CURRENT_TIMESTAMP AS CHARACTER FORMAT 'MMddHHmmss') || '.' || SUBSTRING(InputRoot.JSON.Data.reff FROM LENGTH(InputRoot.JSON.Data.reff) - 5 FOR 6) || '                        ' FROM 1 FOR 24) AS BLOB CCSID 1208);
+		
+		
+		SET OutputLocalEnvironment.dlog.dir = 'O';
+		SET OutputLocalEnvironment.dlog.request_id = CORELLATIONID;
+		SET OutputLocalEnvironment.dlog.request_source = UPPER(SRC);
+		SET OutputLocalEnvironment.dlog.request_timestamp = DT;
+		SET OutputLocalEnvironment.dlog.request_url = URL;
+		SET OutputLocalEnvironment.dlog.code = SRC || '-' || SERVICE;
+
+		SET OutputLocalEnvironment.MQMD.MsgId = CORELLATIONID;
+		SET OutputLocalEnvironment.MQMD.CorrelId = CORELLATIONID;
+		SET OutputLocalEnvironment.request.data = InputRoot;
+		SET OutputLocalEnvironment.request.data.RequestIdentifier = InputLocalEnvironment.Destination.HTTP.RequestIdentifier;
+		
+		
+		RETURN TRUE;
+	END;
+END MODULE;
+
+CREATE COMPUTE MODULE ROUTER_REST_APP_SET_MAPPING_ID
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputLocalEnvironment = InputLocalEnvironment;
+		SET OutputRoot = InputRoot;
+		
+		SET OutputRoot.JSON.Data.mappingId = InputLocalEnvironment.dlog.code ;
+		SET OutputRoot.JSON.Data.requestHttp.Destination = InputLocalEnvironment.Destination;
+		SET OutputRoot.JSON.Data.requestHttp.messages = InputLocalEnvironment.request.data;
+
+		RETURN TRUE;
+	END;
+END MODULE;
+
+
+
+CREATE COMPUTE MODULE ROUTER_REST_APP_SET_REQUEST_TO_QUEUE
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot = InputRoot;
+		SET OutputLocalEnvironment = InputLocalEnvironment;
+		
+		SET OutputRoot.MQMD.MsgId = InputLocalEnvironment.MQMD.CorrelId;
+		SET OutputRoot.MQMD.CorrelId = InputLocalEnvironment.MQMD.CorrelId;
+		SET OutputRoot.MQMD.ReplyToQ = InputRoot.JSON.data.ReplyToQ;
+		SET OutputRoot.MQMD.ReplyToQMgr = InputRoot.JSON.data.ReplyToQMgr;
+		SET OutputLocalEnvironment.Destination.MQDestinationList.DestinationData.queueName = InputRoot.JSON.data.queueName;
+		
+		
+		DELETE FIELD OutputRoot.JSON;
+
+		SET OutputRoot.XMLNSC.data = InputRoot.JSON.data;
+		SET OutputRoot.XMLNSC.data.CorrelId = InputLocalEnvironment.MQMD.CorrelId;
+		SET OutputRoot.XMLNSC.data.destination = InputRoot.JSON.data.destination;
+		SET OutputRoot.XMLNSC.data.reqtimestamp = InputLocalEnvironment.dlog.request_timestamp;
+		SET OutputRoot.XMLNSC.data.mappingId = InputLocalEnvironment.dlog.code;
+		SET OutputRoot.XMLNSC.data.body.frontOriginal.group = 'rest-api';
+		SET OutputRoot.XMLNSC.data.body.frontOriginal.code = InputLocalEnvironment.dlog.code;
+		SET OutputRoot.XMLNSC.data.body.frontOriginal.data = InputLocalEnvironment.request.data;
+	
+
+		RETURN TRUE;
+	END;
+
+END MODULE;
+
+
+CREATE COMPUTE MODULE ROUTER_REST_APP_ERROR_JSON
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot = InputRoot;
+		SET OutputLocalEnvironment = InputLocalEnvironment;
+		SET OutputLocalEnvironment.dlog.dir = 'E';
+--		DELETE FIELD OutputRoot.JSON;
+		DELETE FIELD OutputRoot.JSON.Data.log;
+		DELETE FIELD OutputRoot.JSON.Data.requestHttp;
+		DELETE FIELD OutputRoot.JSON.Data.mappingId;
+		DELETE FIELD OutputRoot.JSON.Data.timestamp;
+		DELETE FIELD OutputRoot.JSON.Data.error;
+		DELETE FIELD OutputRoot.JSON.Data.errorDetail;
+		
+		DECLARE ERROR CHARACTER InputRoot.JSON.Data.error;
+		
+		IF CONTAINS(ERROR, 'Error in script') THEN
+			SET OutputRoot.JSON.Data.rsp = '997';
+			SET OutputRoot.JSON.Data.rspdesc = 'Bad Request';
+		ELSEIF CONTAINS(ERROR, 'Mapping') AND CONTAINS(ERROR, 'not found') THEN
+			SET OutputRoot.JSON.Data.rsp = '404';
+			SET OutputRoot.JSON.Data.rspdesc = 'Service not found';
+		ELSE
+			SET OutputRoot.JSON.Data.rsp = '997';
+			SET OutputRoot.JSON.Data.rspdesc = 'General Error';
+		END IF;
+		
+		SET OutputLocalEnvironment.error = OutputRoot.JSON.Data;
+		
+		RETURN TRUE;
+	END;
+END MODULE;
+
+
+CREATE COMPUTE MODULE ROUTER_REST_APP_BEFORE_HTTP_RESPONSE
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot.JSON.Data = InputLocalEnvironment.error;
+		RETURN TRUE;
+	END;
+END MODULE;
+
+CREATE COMPUTE MODULE ROUTER_REST_APP_BEFORE_RES_JSON
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot = InputRoot; 
+		SET OutputLocalEnvironment = InputLocalEnvironment;
+		
+		DELETE FIELD OutputRoot.JSON.Data.code;
+		DELETE FIELD OutputRoot.JSON.Data.response;
+		DELETE FIELD OutputRoot.JSON.Data.log;
+		
+		DECLARE DLOG ROW InputLocalEnvironment.request.original;
+		DECLARE URL CHARACTER CAST(InputRoot.HTTPInputHeader."X-Original-HTTP-Command" AS CHARACTER);
+		DECLARE SRC CHARACTER CAST(SUBSTRING(URL 
+			FROM POSITION('/' IN URL REPEAT 3) + 1 
+			FOR (POSITION('/' IN URL REPEAT 4) + 1) - (POSITION('/' IN URL REPEAT 3) + 1 + 1)
+		) AS CHARACTER);
+		
+		SET OutputLocalEnvironment.dlog.dir = 'I';
+		SET OutputLocalEnvironment.dlog.request_id = DLOG.MQMD.CorrelId;
+		SET OutputLocalEnvironment.dlog.request_source = UPPER(SRC);
+		SET OutputLocalEnvironment.dlog.request_url = URL;
+		SET OutputLocalEnvironment.request.original = InputRoot;
+		
+		PROPAGATE TO TERMINAL 'out1' DELETE NONE;
+		DELETE FIELD OutputRoot.JSON.Data.log;
+		RETURN TRUE;
+	END;
+END MODULE;
+
+CREATE COMPUTE MODULE ROUTER_REST_APP_SET_ENV
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		-- SET HTTP
+		DECLARE data ROW InputRoot.XMLNSC.data.request.data.body.frontOriginal.data;
+		SET OutputLocalEnvironment.Destination.HTTP.RequestIdentifier = CAST(data.RequestIdentifier AS BLOB);
+		SET OutputRoot.Properties =data.Properties;
+		SET OutputRoot.HTTPInputHeader = data.HTTPInputHeader;
+		
+		-- SET LOG JSON
+		DECLARE CorrelId CHARACTER InputRoot.XMLNSC.data.CorrelId;
+		DECLARE URL CHARACTER CAST(data.HTTPInputHeader."X-Original-HTTP-Command" AS CHARACTER);
+		DECLARE SRC CHARACTER CAST(SUBSTRING(URL 
+			FROM POSITION('/' IN URL REPEAT 3) + 1 
+			FOR (POSITION('/' IN URL REPEAT 4) + 1) - (POSITION('/' IN URL REPEAT 3) + 1 + 1)
+		) AS CHARACTER);
+		DECLARE SERVICE CHARACTER CAST(SUBSTRING(URL 
+			FROM POSITION('/' IN URL REPEAT 4) + 1 
+			FOR (POSITION('HTTP/1.1' IN URL)-3)-POSITION('/' IN URL REPEAT 4) + 1
+		) AS CHARACTER);
+		
+		SET OutputLocalEnvironment.dlog.dir = 'I';
+		SET OutputLocalEnvironment.dlog.request_id = CorrelId;
+		SET OutputLocalEnvironment.dlog.request_source = UPPER(SRC);
+		SET OutputLocalEnvironment.dlog.request_timestamp = InputRoot.XMLNSC.data.reqtimestamp;
+		SET OutputLocalEnvironment.dlog.request_url = URL;
+		SET OutputLocalEnvironment.dlog.code = SRC || '-' || SERVICE;
+		SET OutputLocalEnvironment.MQMD.MsgId = CorrelId;
+		SET OutputLocalEnvironment.MQMD.CorrelId = CorrelId;
+		
+		SET OutputRoot.XMLNSC.data = InputRoot.XMLNSC.data;
+
+		RETURN TRUE;
+	END;
+END MODULE;
+
+CREATE COMPUTE MODULE ROUTER_REST_APP_RESPONSE_TO_JSON
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot = InputRoot; 
+		SET OutputLocalEnvironment = InputLocalEnvironment;
+		SET OutputLocalEnvironment.data.properties = InputRoot.Properties;
+		SET OutputLocalEnvironment.data.htpp = InputRoot.Properties;
+		SET OutputRoot.JSON.Data = InputRoot.XMLNSC.data.body.response;
+		DELETE FIELD OutputRoot.XMLNSC;
+		PROPAGATE TO TERMINAL 'out1' DELETE NONE;
+		RETURN TRUE;
+	END;
+END MODULE;
+
+--CREATE COMPUTE MODULE ROUTER_REST_APP_BEFORE_REST_OUT
+--	CREATE FUNCTION Main() RETURNS BOOLEAN
+--	BEGIN
+--		SET OutputRoot = InputRoot; 
+--		SET OutputLocalEnvironment = InputLocalEnvironment;
+--		DELETE FIELD OutputRoot.JSON.Data.log;
+--		RETURN TRUE;
+--	END;
+--END MODULE;

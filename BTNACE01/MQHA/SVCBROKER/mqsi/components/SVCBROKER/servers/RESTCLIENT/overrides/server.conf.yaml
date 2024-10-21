@@ -1,0 +1,8 @@
+---
+ResourceManagers: 
+  ExecutionGroup: 
+    httpNodesUseEmbeddedListener: 'true'
+  HTTPConnector: 
+    ListenerPort: '9081'
+  JVM: 
+    jvmJavaOSStackSize: '1048576'

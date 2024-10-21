@@ -1,0 +1,212 @@
+<db-config>
+	<url>jdbc:db2://btnmdwdata:50000/mwconfig</url>
+	<driver-class>com.ibm.db2.jcc.DB2Driver</driver-class>
+	<username>db2inst1</username>
+	<password>wajFMo2HsNWsRQcLal8Y47jzNMHI+oAu8ywJwIfL9cA=</password>
+	<schema>mwconfig</schema>
+	<c3p0 id="jdbc:db2:">
+		<param id="minPoolSize">5</param>
+		<param id="maxPoolSize">50</param>
+		<param id="timeout">60</param>
+		<param id="idleConnectionTestPeriod">300</param>
+		<param id="maxIdleTime">300</param>
+		<param id="maxIdleTimeExcessConnections">180</param>
+		<param id="preferredTestQuery">select 1 from sysibm.sysdummy1</param>
+	</c3p0>
+	<config-pattern>
+		<!-- If path is not specify, will be included to config -->
+		<!-- If path is specify, only using <include> will be included to config -->
+		<path id="config/clients/client" />
+		<path id="config/codex">
+			<include>\[dsp-abcs.*\]</include>
+			<include>\[dsp-response\]</include>
+			<include>\[dsp\]</include>
+			<include>\[iso-8583-bif\]</include>
+			<include>\[iso-8583-eva\]</include>
+			<include>\[iso-8583-cms-instid\]</include>
+			<include>\[iso-8583-cms\]</include>
+			<include>\[iso-8583-itm-instid\]</include>
+			<include>\[iso-8583-itm\]</include>
+			<include>\[iso-8583-indomrt\]</include>
+			<include>\[iso-8583-kpos-instid\]</include>
+			<include>\[iso-8583-kpos\]</include>
+			<include>\[iso-8583-sms\]</include>
+			<include>\[iso-8583-sms-syariah\]</include>
+			<include>\[iso-8583-sms-instid\]</include>
+			<include>\[iso-8583-sms-vaid\]</include>
+			<include>\[iso-8583-itl\]</include>
+			<include>\[iso-8583-itm-billerid\]</include>
+			<include>\[iso-8583-cms-billerid\]</include>
+			<include>\[iso-8583-ppo\]</include>
+			<include>\[iso-8583-hsh\]</include>
+			<include>\[iso-8583-tokped\]</include>
+			<include>\[iso-8583-oac\]</include>
+		</path>
+		<path id="config/db">
+			<include>\[mwconfig\]</include>
+			<include>\[mwlog\]</include>
+		</path>
+		<path id="config/dbquery">
+			<include>\[get-request.*\]</include>
+			<include>\[itm.*\]</include>
+		</path>
+		<path id="config/dtree-map">
+			<include>\[.*\]\{.*\[bwswp\].*\}</include>
+			<include>\[.*\]\{.*\[ebpwc\].*\}</include>
+			<include>\[.*\]\{.*\[ebpwp\].*\}</include>
+			<include>\[.*\]\{.*\[ebbm\].*\}</include>
+			<include>\[.*\]\{.*\[ebbr\].*\}</include>
+			<include>\[.*\]\{.*\[itl\].*\}</include>
+			<include>\[.*\]\{.*\[ivr\].*\}</include>
+			<include>\[.*\]\{.*\[iwsc\].*\}</include>
+			<include>\[.*\]\{.*\[iwsp\].*\}</include>
+			<include>\[.*\]\{.*\[iwswp\].*\}</include>
+			<include>\[.*\]\{.*\[pay\].*\}</include>
+			<include>\[.*\]\{.*\[smsro\].*\}</include>
+			<include>\[.*\]\{.*\[ezzzz\].*\}</include>
+			<include>\[.*\]\{.*\[iwswc\].*\}</include>
+			<include>\[BDS-CODE\|.*\](\{.*\}|)</include>
+			<include>\[CHARGES\|eva\](\{.*\}|)</include>
+			<include>\[CMS-CODE\|.*\](\{.*\}|)</include>
+			<include>\[SMS-CODE\|.*\](\{.*\}|)</include>
+			<include>\[ITM-CODE\|.*\](\{.*\}|)</include>
+			<include>\[EVA-CODE\|\d{4}\](\{.*\}|)</include>
+			<include>\[EVA-CODE\|\d{4}.10\d{4}\](\{.*\}|)</include>
+			<include>\[EVA-CODE\|\d{4}.30\d{4}\](\{.*\}|)</include>
+			<!-- tamabahan oting -->
+			<include>\[CHARGES\|bds.*\](\{.*\}|)</include>
+			<include>\[CHARGES\|bds\](\{.*\}|)</include>
+			<include>\[CHARGES\|bds\|\d{4}\](\{.*\}|)</include>
+			<include>\[CHARGES\|cms.*\](\{.*\}|)</include>
+			<include>\[CHARGES\|ibk.*\](\{.*\}|)</include>
+			<include>\[CHARGES\|ibk\|10\d{4}\](\{.*\}|)</include>
+			<include>\[CHARGES\|itm.*\](\{.*\}|)</include>
+			<include>\[CHARGES\|itm\](\{.*\}|)</include>
+			<include>\[CHARGES\|mbk.*\](\{.*\}|)</include>
+			<include>\[CHARGES\|mbk\](\{.*\}|)</include>
+			<include>\[CHARGES\|mbk\|10\d{4}\](\{.*\}|)</include>
+			<include>\[CHARGES\|pos\](\{.*\}|)</include>
+			<include>\[CHARGES\|ppo.*\](\{.*\}|)</include>
+			<include>\[CHARGES\|sms.*\](\{.*\}|)</include>
+			<include>\[CHARGES\|sms\](\{.*\}|)</include>
+			<include>\[CHARGES\|sms\|10.*\](\{.*\}|)</include>
+			<include>\[CHARGES\|sms\|10\d{4}\](\{.*\}|)</include>
+			<include>\[CHARGES\|sms\|30.*\](\{.*\}|)</include>
+			<include>\[CHARGES\|wb\](\{.*\}|)</include>
+			<include>\[CMS-CODE\|\d{4}.10\d{4}\](\{.*\}|)</include>
+			<include>\[CMS-CODE\|\d{4}.30\d{4}\](\{.*\}|)</include>
+			<include>\[CMS-CODE\|\d{4}\](\{.*\}|)</include>
+			<include>\[CORE-SYARIAH-CODE\|\d{4}\](\{.*\}|)</include>
+			<include>\[IBK-CODE\|\d{4}.10\d{4}\](\{.*\}|)</include>
+			<include>\[IBK-CODE\|\d{4}\](\{.*\}|)</include>
+			<include>\[ITM-CODE\|\d{4}.10\d{4}\](\{.*\}|)</include>
+			<include>\[ITM-CODE\|\d{4}.30\d{4}\](\{.*\}|)</include>
+			<include>\[ITM-CODE\|\d{4}\](\{.*\}|)</include>
+			<include>\[MBK-CODE\|\d{4}.10\d{4}\](\{.*\}|)</include>
+			<include>\[MBK-CODE\|\d{4}\](\{.*\}|)</include>
+			<include>\[SMS-CODE\|\d{4}.10\d{4}\](\{.*\}|)</include>
+			<include>\[SMS-CODE\|\d{4}.30\d{4}\](\{.*\}|)</include>
+			<include>\[SMS-CODE\|\d{4}.\d{1}.\d{6}.*\](\{.*\}|)</include>
+			<include>\[SMS-CODE\|\d{4}\](\{.*\}|)</include>
+			<include>\[WB-CODE\|.*\](\{.*\}|)</include>	
+			<include>\[BIF-CODE\|.*\](\{.*\}|)</include>
+			<!-- tamabahin oting -->
+		</path>
+		<path id="config/host" />
+		<path id="config/mapping">
+			<include>\[.*\]\{.*\[slamd\].*\}</include>
+			<include>\[.*\]\{.*\[bwswp\].*\}</include>
+			<include>\[.*\]\{.*\[ebpwc\].*\}</include>
+			<include>\[.*\]\{.*\[ebbm\].*\}</include>
+			<include>\[.*\]\{.*\[ebbr\].*\}</include>
+			<include>\[.*\]\{.*\[ebpwp\].*\}</include>
+			<include>\[.*\]\{.*\[cvdpay\].*\}</include>
+			<include>\[.*\]\{.*\[iwsc\].*\}</include>
+			<include>\[.*\]\{.*\[iwswc\].*\}</include>
+			<include>\[.*\]\{.*\[iwsip\].*\}</include>
+			<include>\[.*\]\{.*\[iwsp\].*\}</include>
+			<include>\[.*\]\{.*\[iwsv\].*\}</include>
+			<include>\[.*\]\{.*\[iwswp\].*\}</include>
+			<include>\[.*\]\{.*\[ofiwi\].*\}</include>
+			<include>\[.*\]\{.*\[sgpwi\].*\}</include>
+			<include>\[.*\]\{.*\[slaip\].*\}</include>
+			<include>\[.*\]\{.*\[sgpwp\].*\}</include>
+			<include>\[.*\]\{.*\[zwswp\].*\}</include>
+			<include>\[dsp\](\{.*\}|)</include>
+      <include>\[core-reverse.core-syariah-itm\](\{.*\}|)</include>
+		</path>
+		<path id="config/param-map">
+			<include>\[ITM-VA-INST\|.*\]</include>
+			<include>\[ITM-VA-ONUS\|.*\]</include>
+			<include>\[SMS-VA-ONUS\|.*\]</include>
+			<include>\[CMS-VA-ONUS\|.*\]</include>
+			<include>\[BIFAST-VA-INST\|.*\]</include>
+			<include>\[acquire-group-bersama\|\d{11}\]</include>
+			<include>\[bds-PTYPE\|.*\]</include>
+			<include>\[bds-REK\|.*\]</include>
+			<include>\[bds-TTYPE\|.*\]</include>
+			<include>\[bds.AXISSYSTEMSDNBHD.*\|.*\]</include>
+			<include>\[bds\|.*\]</include>
+			<include>\[sms\|.*\]</include>
+			<include>\[biller.rc.toReverse\|.*\]</include>
+			<include>\[cms\|.*\]</include>
+			<include>\[coa\|.*\]</include>
+			<include>\[coa-eva\|.*\]</include>
+			<include>\[coa-pay\|.*\]</include> 
+			<include>\[coa-pay-ws\|.*\]</include>
+			<include>\[coa-pay-ws\|giro-Stifarm-Padang\]</include>
+			<include>\[core-bds\|.*\]</include>
+			<include>\[core.core-sms\|.*\]</include>
+			<include>\[core-response-ok\|AXISSYSTEMSDNBHD\..*\]</include>
+			<include>\[device_teller_map\|.*\]</include>
+			<include>\[dsp-scenario-req-codex\|AXISSYSTEMSDNBHD\]</include>
+			<include>\[dsp-scenario-resp-codex\|AXISSYSTEMSDNBHD\]</include>
+			<include>\[error-f2\|.*\]</include>
+			<include>\[error_map\|H2HERR.*\]</include>
+			<include>\[error_map\|H2HERRBPJSKES.*\]</include>
+			<include>\[eva-payment-code\|.*\]</include>
+			<include>\[error_map\|core-eva.*\]</include>
+			<include>\[error_map\|UNIVRIAU.*\]</include>
+			<include>\[error_map\|UNY.*\]</include>
+			<include>\[error_map\|core-itm.*\]</include>
+			<include>\[error_map\|Stifarm.*\]</include>
+			<include>\[error_map\|ub.*\]</include>
+			<include>\[error_map\|ugm.*\]</include>
+			<include>\[error_map\|um.*\]</include>
+			<include>\[error_map\|unpad.*\]</include>
+			<include>\[error_map\|unpam.*\]</include>
+			<include>\[error_map\|uns.*\]</include>
+			<include>\[error_map\|unsyiah.*\]</include>
+			<include>\[error_map\|ut.*\]</include>
+			<include>\[error_map_detail\|H2HERR.*\]</include>
+			<include>\[error_map_detail\|Stifarm.*\]</include>
+			<include>\[error_map\|dukcapil\|.*\]</include>
+			<include>\[error_map\|bi-core-incoming\|.*\]</include>
+			<include>\[indomrt\|.*\]</include>
+			<include>\[itl\|.*\]</include>
+			<include>\[itm\|.*\]</include>
+			<include>\[itm-payment-code\|.*\]</include>
+			<include>\[kpos\|.*\]</include>
+			<include>\[parser-type\|.*\]</include>
+			<include>\[payment-type-uin\|.*\]</include>
+			<include>\[payment-type-stifarm\|.*\]</include>
+			<include>\[time-check\|.*\]</include>
+			<include>\[FooterLine.*\|.*\]</include>
+			<include>\[cha-core-dest\|.*\]</include> 
+			<include>\[cha-core-id\|.*\]</include>
+			<include>\[tokped\|.*\]</include>
+			<include>\[bank-name\|.*\]</include>
+			<include>\[itm-REK\|.*\]</include>
+			<include>\[account-type\|\d{2}\]</include>
+		</path>
+		<path id="config/parser">
+			<include>\[iso\]</include>
+			<include>\[abcs-request\]</include>
+			<include>\[parser-1\]</include>
+			<include>\[payment-parser\]</include>
+		</path>
+		<path id="config/ports/port" />
+		<path id="config/routing" />
+		<path id="config/rpg-call" />
+	</config-pattern>
+</db-config>

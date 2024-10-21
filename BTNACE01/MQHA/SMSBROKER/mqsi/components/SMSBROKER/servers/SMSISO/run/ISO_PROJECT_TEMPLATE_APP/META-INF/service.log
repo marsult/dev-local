@@ -1,0 +1,65 @@
+
+==============================================
+
+!Wed Jan 19 23:30:53 ICT 2022
+
+Successfully added file ISO_PROJECT_TEMPLATE_APP\TEST_TCPIP.msgflow to BAR file.
+
+Successfully added file ISO_PROJECT_TEMPLATE_APP\TCPIP_TESTER_FLOW.msgflow to BAR file.
+
+Successfully added file ISO_PROJECT_TEMPLATE_APP\MASTER_ISO_FLOW.msgflow to BAR file.
+
+Successfully added file ISO_PROJECT_TEMPLATE_APP\MAN_ADVICE_FLOW.msgflow to BAR file.
+
+Successfully added file ISO_PROJECT_TEMPLATE_APP\LATE_REVERSE_HANDLER.msgflow to BAR file.
+
+Successfully added file ISO_PROJECT_TEMPLATE_APP\MAN_ADVICE_FLOW.esql to BAR file.
+
+Successfully added file ISO_PROJECT_TEMPLATE_APP\MASTER_ISO_FLOW.esql to BAR file.
+
+Successfully added file ISO_PROJECT_TEMPLATE_APP\TCPIP_TESTER_FLOW.esql to BAR file.
+
+Successfully added file ISO_PROJECT_TEMPLATE_APP\application.descriptor to BAR file.
+
+Successfully added file ISO_PROJECT_TEMPLATE_APP\application.descriptor to BAR file.
+
+Successfully added file ISO_PROJECT_TEMPLATE_APP\application.descriptor to BAR file.
+
+Successfully added file ISO_PROJECT_TEMPLATE_APP\application.descriptor to BAR file.
+
+Successfully added file ISO_PROJECT_TEMPLATE_APP\script\MWCONFIG.MAPPING.xml to BAR file.
+
+Successfully added file ISO_PROJECT_TEMPLATE_APP\script\MWCONFIG.MAPPING_GROUP.xml to BAR file.
+
+Successfully added file ISO_PROJECT_TEMPLATE_APP\script\MWCONFIG.MAPPING_GROUP_LINE.xml to BAR file.
+
+Successfully added file ISO_PROJECT_TEMPLATE_APP\script\MWLOG.DLOG_MD.xml to BAR file.
+
+Successfully added file ISO_PROJECT_TEMPLATE_APP\subflow\ISO_FLOW.esql to BAR file.
+
+Successfully added file ISO_PROJECT_TEMPLATE_APP\subflow\ISO_FLOW.esql to BAR file.
+
+Successfully added file ISO_PROJECT_TEMPLATE_APP\subflow\ISO_FLOW.esql to BAR file.
+
+Successfully added file ISO_PROJECT_TEMPLATE_APP\subflow\NETMAN_SUBFLOW.esql to BAR file.
+
+Successfully added file ISO_PROJECT_TEMPLATE_APP\subflow\NETMAN_SUBFLOW.subflow to BAR file.
+
+Successfully added file ISO_PROJECT_TEMPLATE_APP\subflow\RESP_PARSING_SUBFLOW.esql to BAR file.
+
+Successfully added file ISO_PROJECT_TEMPLATE_APP\subflow\RESP_PARSING_SUBFLOW.subflow to BAR file.
+
+Successfully added file ISO_PROJECT_TEMPLATE_APP\subflow\SAF_PROCESS.esql to BAR file.
+
+Successfully added file ISO_PROJECT_TEMPLATE_APP\subflow\SAF_PROCESS.subflow to BAR file.
+
+Successfully added file ISO_PROJECT_TEMPLATE_APP\subflow\TCPIP_ADAPTER.esql to BAR file.
+
+Successfully added file ISO_PROJECT_TEMPLATE_APP\subflow\TCPIP_ADAPTER.esql to BAR file.
+
+Successfully added file ISO_PROJECT_TEMPLATE_APP\subflow\TCPIP_ADAPTER.subflow to BAR file.
+
+Successfully added file ISO_PROJECT_TEMPLATE_APP\subflow\VARIABLE_LIB.esql to BAR file.
+
+Successfully added file SUBFLOW_LOGDB_LIB to BAR file.
+

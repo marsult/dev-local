@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Broker deployBarfile="/opt/mdw/bar/PAYBROKER/PAYREST1/LOG_DB_JSON_BAR.bar" deployTimestamp="2024-08-09 17:38:38">
+  <CompiledApplication>
+    <ConfigurableProperty uri="startMode">
+    </ConfigurableProperty>
+  </CompiledApplication>
+  <CompiledMessageFlow name="LOG_DB_JSON_FLOW" deployBarfile="/opt/mdw/bar/PAYBROKER/PAYREST1/LOG_DB_JSON_BAR.bar" deployTimestamp="2024-08-09 17:38:38">
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#DB_LOG_JSON.logType" override="log">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#DB_LOG_JSON_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#DB_LOG_JSON_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#DB_LOG_JSON_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#DB_LOG_JSON_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#DB_LOG_JSON_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#DB_LOG_JSON_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#LOG_DB_JSON_IN.SSLCertificateLabel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#LOG_DB_JSON_IN.SSLCipherSpec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#LOG_DB_JSON_IN.SSLPeerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#LOG_DB_JSON_IN.additionalInstances">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#LOG_DB_JSON_IN.channelName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#LOG_DB_JSON_IN.componentLevel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#LOG_DB_JSON_IN.connection">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#LOG_DB_JSON_IN.destinationQueueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#LOG_DB_JSON_IN.listenerPortNumber">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#LOG_DB_JSON_IN.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#LOG_DB_JSON_IN.queueManagerHostname">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#LOG_DB_JSON_IN.queueName" override="LOG_DB_JSON">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#LOG_DB_JSON_IN.resetBrowseTimeout">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#LOG_DB_JSON_IN.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#LOG_DB_JSON_IN.securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#LOG_DB_JSON_IN.serializationToken">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#LOG_DB_JSON_IN.topicProperty">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#LOG_DB_JSON_IN.useSSL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#LOG_DB_JSON_IN.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#LOG_DB_JSON_IN_LOG_CATCH.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#LOG_DB_JSON_IN_LOG_CATCH.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#LOG_DB_JSON_IN_LOG_CATCH.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#LOG_DB_JSON_IN_LOG_CATCH.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#LOG_DB_JSON_IN_LOG_CATCH.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#LOG_DB_JSON_IN_LOG_CATCH.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#LOG_DB_JSON_IN_LOG_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#LOG_DB_JSON_IN_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#LOG_DB_JSON_IN_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#LOG_DB_JSON_IN_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#LOG_DB_JSON_IN_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#LOG_DB_JSON_IN_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#LOG_DB_JSON_IN_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#LOG_DB_JSON_IN_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#LOG_DB_JSON_IN_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#LOG_DB_JSON_IN_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#LOG_DB_JSON_IN_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#LOG_DB_JSON_IN_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#SET_LOCALENV_HEADER.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#SET_LOCALENV_HEADER.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#SET_LOCALENV_HEADER.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#SET_LOCALENV_HEADER_LOG_FAILURE.level" override="Error">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#SET_LOCALENV_HEADER_LOG_FAILURE.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#SET_LOCALENV_HEADER_LOG_FAILURE.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#SET_LOCALENV_HEADER_LOG_FAILURE.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#SET_LOCALENV_HEADER_LOG_FAILURE.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#SET_LOCALENV_HEADER_LOG_FAILURE.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#SET_LOCALENV_HEADER_LOG_OUT.level" override="Debug">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#SET_LOCALENV_HEADER_LOG_OUT.type" override="All">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#SET_LOCALENV_HEADER_LOG_OUT.xpath1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#SET_LOCALENV_HEADER_LOG_OUT.xpath2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#SET_LOCALENV_HEADER_LOG_OUT.xpath3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#SET_LOCALENV_HEADER_LOG_OUT.xpath4">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#additionalInstances" override="10">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#commitCount">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#commitInterval">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#consumerPolicySet">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#consumerPolicySetBindings">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#coordinatedTransaction">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#maximumRateMsgsPerSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#monitoringProfile">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#notificationThresholdMsgsPerSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#processingTimeoutAction">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#processingTimeoutSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#providerPolicySet">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#providerPolicySetBindings">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#startInstancesWhenFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#startMode">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="LOG_DB_JSON_FLOW#wlmPolicy">
+    </ConfigurableProperty>
+  </CompiledMessageFlow>
+</Broker>

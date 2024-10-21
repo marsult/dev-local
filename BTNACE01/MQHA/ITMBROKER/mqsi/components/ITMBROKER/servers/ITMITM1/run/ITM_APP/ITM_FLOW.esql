@@ -1,0 +1,469 @@
+DECLARE ITM_SIGNON_CACHE SHARED ROW;
+
+CREATE COMPUTE MODULE ITM_FLOW_SET_ITM_ABCS_REPLY_TO_QUEUE
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		CALL CopyEntireMessage();
+
+		IF FIELDTYPE(InputRoot.XMLNSC.data.ReplyToQ) IS NULL THEN
+			SET OutputRoot.MQMD.ReplyToQ = 'ITM_CORE_REPLY';
+		ELSE
+			SET OutputRoot.MQMD.ReplyToQ = InputRoot.XMLNSC.data.ReplyToQ;
+		END IF;
+		SET OutputLocalEnvironment.Destination.MQDestinationList.DestinationData.queueName = InputRoot.XMLNSC.data.queueName;
+		SET OutputRoot.MQMD.ReplyToQMgr = null;
+		SET OutputRoot.XMLNSC.data.ReplyToQOri = InputRoot.MQMD.ReplyToQ;
+
+		RETURN TRUE;
+	END;
+
+	CREATE PROCEDURE CopyEntireMessage() BEGIN
+		SET OutputRoot = InputRoot;
+		SET OutputLocalEnvironment = InputLocalEnvironment;
+	END;
+END MODULE;
+
+CREATE COMPUTE MODULE ITM_FLOW_SET_ITM_CORE_REVERSAL_REPLY_TO_QUEUE
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		CALL CopyEntireMessage();
+
+		SET OutputRoot.MQMD.ReplyToQ = 'ITM_CORE_REVERSAL_REPLY';
+		SET OutputLocalEnvironment.Destination.MQDestinationList.DestinationData.queueName = InputRoot.XMLNSC.data.queueName;
+		SET OutputRoot.MQMD.ReplyToQMgr = null;
+
+		RETURN TRUE;
+	END;
+
+	CREATE PROCEDURE CopyEntireMessage() BEGIN
+		SET OutputRoot = InputRoot;
+		SET OutputLocalEnvironment = InputLocalEnvironment;
+	END;
+END MODULE;
+
+
+CREATE COMPUTE MODULE ITM_FLOW_SET_ISO_ABCS_MAPPING
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		CALL CopyEntireMessage();
+
+		SET OutputRoot.XMLNSC.data.type = 'outgoing-full';
+
+		RETURN TRUE;
+	END;
+
+	CREATE PROCEDURE CopyEntireMessage() BEGIN
+		SET OutputRoot = InputRoot;
+	END;
+END MODULE;
+
+
+CREATE COMPUTE MODULE ITM_FLOW_SET_SIGNON
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		CALL CopyEntireMessage();
+		SET OutputLocalEnvironment = InputLocalEnvironment;
+
+		SIGNON : BEGIN ATOMIC
+			--
+			-- set signon cache to local environment
+			SET OutputLocalEnvironment.ITM_SIGNON = ITM_SIGNON_CACHE;
+			--
+			-- set current connid to variable
+			DECLARE ci CHAR InputRoot.XMLNSC.data.connid;
+			--
+			-- check whether connid is exist in signon cache
+			DECLARE i INTEGER 1;
+			DECLARE isExist BOOLEAN FALSE;
+			CHECKEXIST : BEGIN
+				FOR sc AS OutputLocalEnvironment.ITM_SIGNON.CONNID[] DO
+					IF (sc = ci) THEN
+						SET isExist = TRUE;
+						LEAVE CHECKEXIST;
+					END IF;
+
+					SET i = i + 1;
+				END FOR ;
+			END;
+			--
+			-- delete signon cache which its port equal to current signon's port
+			DECLARE j INTEGER 1;
+			DECLARE currentPort CHAR SUBSTRING(ci AFTER '-');
+			SET currentPort = SUBSTRING(currentPort BEFORE '-');
+			FOR sc AS OutputLocalEnvironment.ITM_SIGNON.CONNID[] DO
+				DECLARE cachePort CHAR SUBSTRING(sc AFTER '-');
+				SET cachePort = SUBSTRING(cachePort BEFORE '-');
+				IF (currentPort = cachePort) THEN
+					DELETE FIELD OutputLocalEnvironment.ITM_SIGNON.CONNID[j];
+				END IF;
+
+				SET j = j + 1;
+			END FOR ;
+			--
+			-- add current signon to signon cache if not exist
+			IF NOT isExist THEN
+				CREATE LASTCHILD OF OutputLocalEnvironment.ITM_SIGNON NAME 'CONNID' VALUE ci;
+				SET ITM_SIGNON_CACHE = OutputLocalEnvironment.ITM_SIGNON;
+			END IF;
+			--
+			-- print signon cache
+			SET OutputLocalEnvironment.ITM_SIGNON_EXIST = isExist;
+		END SIGNON;
+
+		RETURN TRUE;
+	END;
+
+	CREATE PROCEDURE CopyEntireMessage() BEGIN
+		SET OutputRoot = InputRoot;
+	END;
+END MODULE;
+
+
+CREATE COMPUTE MODULE ITM_FLOW_SET_SIGNOFF
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		CALL CopyEntireMessage();
+
+		SIGNOFF : BEGIN ATOMIC
+			--
+			-- set signon cache to local environment
+			SET OutputLocalEnvironment.ITM_SIGNON = ITM_SIGNON_CACHE;
+			--
+			-- set current connid to variable
+			DECLARE ci CHAR InputRoot.XMLNSC.data.connid;
+			--
+			-- check whether connid is exist in signon cache
+			DECLARE i INTEGER 1;
+			DECLARE isExist BOOLEAN FALSE;
+			CHECKEXIST : BEGIN
+				FOR sc AS OutputLocalEnvironment.ITM_SIGNON.CONNID[] DO
+					IF (sc = ci) THEN
+						SET isExist = TRUE;
+						LEAVE CHECKEXIST;
+					END IF;
+
+					SET i = i + 1;
+				END FOR ;
+			END;
+			--
+			-- add current signon to signon cache if not exist
+			IF isExist THEN
+				DELETE FIELD OutputLocalEnvironment.ITM_SIGNON.CONNID[i];
+				-- CREATE LASTCHILD OF OutputLocalEnvironment.ITM_SIGNON NAME 'CONNID' VALUE ci;
+				SET ITM_SIGNON_CACHE = OutputLocalEnvironment.ITM_SIGNON;
+			END IF;
+			--
+			-- print signon cache
+			SET OutputLocalEnvironment.ITM_SIGNON_EXIST = isExist;
+		END SIGNOFF;
+
+		RETURN TRUE;
+	END;
+
+	CREATE PROCEDURE CopyEntireMessage() BEGIN
+		SET OutputRoot = InputRoot;
+	END;
+END MODULE;
+
+
+CREATE FILTER MODULE ALREADY_SIGNON_FILTER
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		DECLARE isExist BOOLEAN FALSE;
+
+		CHECK_SIGNON : BEGIN ATOMIC
+			--
+			-- set signon cache to local environment
+			SET LocalEnvironment.ITM_SIGNON = ITM_SIGNON_CACHE;
+			--
+			-- set current connid to variable
+			DECLARE ci CHAR Root.XMLNSC.data.connid;
+			--
+			-- check whether connid is exist in signon cache
+			DECLARE i INTEGER 1;
+			CHECKEXIST : BEGIN
+				FOR sc AS LocalEnvironment.ITM_SIGNON.CONNID[] DO
+					IF (sc = ci) THEN
+						SET isExist = TRUE;
+						LEAVE CHECKEXIST;
+					END IF;
+
+					SET i = i + 1;
+				END FOR ;
+			END;
+		END CHECK_SIGNON;
+
+		RETURN isExist;
+	END;
+END MODULE;
+
+
+CREATE COMPUTE MODULE SET_ISO_ERROR_NOT_SIGNON
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		CALL CopyEntireMessage();
+
+		SET OutputRoot.XMLNSC.data.nolog = 'true';
+
+		IF InputRoot.XMLNSC.data.body.messageType = '0200' THEN
+			SET OutputRoot.XMLNSC.data.body.messageType = '0210';
+		ELSEIF InputRoot.XMLNSC.data.body.messageType = '0400' THEN
+			SET OutputRoot.XMLNSC.data.body.messageType = '0410';
+		ELSEIF InputRoot.XMLNSC.data.body.messageType = '0401' THEN
+			SET OutputRoot.XMLNSC.data.body.messageType = '0411';
+		END IF;
+
+		SET OutputRoot.XMLNSC.data.body.responseCode = '93';
+
+		RETURN TRUE;
+	END;
+
+	CREATE PROCEDURE CopyEntireMessage() BEGIN
+		SET OutputRoot = InputRoot;
+	END;
+END MODULE;
+
+
+CREATE FILTER MODULE ITM_FLOW_RES_CORE_NOT_ERROR_FILTER
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		IF FIELDTYPE(Root.XMLNSC.data.body.responseCode) IS NOT NULL AND (Root.XMLNSC.data.body.responseCode <> '000' AND Root.XMLNSC.data.body.responseCode <> '00') THEN
+			RETURN FALSE;
+		ELSE
+			RETURN TRUE;
+		END IF;
+	END;
+END MODULE;
+
+
+CREATE FILTER MODULE ITM_FLOW_RES_CORE_FLOW_NOT_ERROR_FILTER
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		IF FIELDTYPE(Root.XMLNSC.data.body.error) IS NULL THEN
+			RETURN TRUE;
+		ELSE
+			RETURN FALSE;
+		END IF;
+	END;
+END MODULE;
+
+
+CREATE COMPUTE MODULE ITM_FLOW_SET_ISO_RES_ERROR
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		CALL CopyEntireMessage();
+
+		DELETE FIELD OutputRoot.XMLNSC.data;
+
+		SET OutputRoot.XMLNSC.data.CorrelId = InputRoot.XMLNSC.data.CorrelId;
+		SET OutputRoot.XMLNSC.data.sid = InputRoot.XMLNSC.data.sid;
+		SET OutputRoot.XMLNSC.data.connid = InputRoot.XMLNSC.data.connid;
+		SET OutputRoot.XMLNSC.data.timestamp = InputRoot.XMLNSC.data.timestamp;
+		SET OutputRoot.XMLNSC.data.reqtimestamp = InputRoot.XMLNSC.data.reqtimestamp;
+
+		IF FIELDTYPE(InputRoot.XMLNSC.data.request.data.source) IS NULL THEN
+			SET OutputRoot.XMLNSC.data.source = InputRoot.XMLNSC.data.source;
+		ELSE
+			SET OutputRoot.XMLNSC.data.source = InputRoot.XMLNSC.data.request.data.source;
+		END IF;
+
+		IF FIELDTYPE(InputRoot.XMLNSC.data.body.original.original) IS NULL THEN
+			SET OutputRoot.XMLNSC.data.body = InputRoot.XMLNSC.data.request.data.body.original;
+			SET OutputRoot.XMLNSC.data.code = SUBSTRING(InputRoot.XMLNSC.data.request.data.body.original.messageType FROM 1 FOR 2) || '10.' || InputRoot.XMLNSC.data.request.data.body.original.processingCode;
+		ELSE
+			SET OutputRoot.XMLNSC.data.body = InputRoot.XMLNSC.data.body.original.original;
+			SET OutputRoot.XMLNSC.data.code = SUBSTRING(InputRoot.XMLNSC.data.body.original.original.messageType FROM 1 FOR 2) || '10.' || InputRoot.XMLNSC.data.body.original.original.processingCode;
+		END IF;
+
+		IF FIELDTYPE(InputRoot.XMLNSC.data.error) IS NULL THEN
+			SET OutputRoot.XMLNSC.data.body.responseCode = '99';
+		ELSE
+			IF STARTSWITH(InputRoot.XMLNSC.data.error, 'Mapping ') AND ENDSWITH(InputRoot.XMLNSC.data.error, ' not found') THEN
+				SET OutputRoot.XMLNSC.data.body.responseCode = '92';
+			ELSE
+				SET OutputRoot.XMLNSC.data.body.responseCode = '99';
+			END IF;
+		END IF;
+
+		IF OutputRoot.XMLNSC.data.body.messageType = '0200' THEN
+			SET OutputRoot.XMLNSC.data.body.messageType = '0210';
+		ELSEIF OutputRoot.XMLNSC.data.body.messageType = '0400' THEN
+			SET OutputRoot.XMLNSC.data.body.messageType = '0410';
+		ELSEIF OutputRoot.XMLNSC.data.body.messageType = '0401' THEN
+			SET OutputRoot.XMLNSC.data.body.messageType = '0411';
+		END IF;
+
+		RETURN TRUE;
+	END;
+
+	CREATE PROCEDURE CopyEntireMessage() BEGIN
+		SET OutputRoot = InputRoot;
+	END;
+END MODULE;
+
+
+CREATE COMPUTE MODULE ITM_FLOW_SET_ISO_REQ_NOT_FOUND
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		CALL CopyEntireMessage();
+
+		IF FIELDTYPE(InputRoot.XMLNSC.data.original) IS NOT NULL THEN
+			SET OutputRoot.XMLNSC.data.body = InputRoot.XMLNSC.data.original;
+			DELETE FIELD OutputRoot.XMLNSC.data.original;
+		END IF;
+
+		IF InputRoot.XMLNSC.data.original.messageType = '0200' THEN
+			SET OutputRoot.XMLNSC.data.body.messageType = '0210';
+		ELSEIF InputRoot.XMLNSC.data.original.messageType = '0400' THEN
+			SET OutputRoot.XMLNSC.data.body.messageType = '0410';
+		ELSEIF InputRoot.XMLNSC.data.original.messageType = '0401' THEN
+			SET OutputRoot.XMLNSC.data.body.messageType = '0411';
+		END IF;
+
+		SET OutputRoot.XMLNSC.data.body.responseCode = '90';
+
+		RETURN TRUE;
+	END;
+
+	CREATE PROCEDURE CopyEntireMessage() BEGIN
+		SET OutputRoot = InputRoot;
+	END;
+END MODULE;
+
+
+CREATE FILTER MODULE ITM_FLOW_ERROR_MAPPING_FILTER
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		IF FIELDTYPE(Root.XMLNSC.data.error) IS NULL THEN
+			RETURN FALSE;
+		ELSE
+			IF CONTAINS(Root.XMLNSC.data.error, 'error:') THEN
+				RETURN TRUE;
+			ELSE
+				RETURN FALSE;
+			END IF;
+		END IF;
+	END;
+END MODULE;
+
+
+CREATE COMPUTE MODULE ITM_FLOW_SET_ISO_ERROR_MAPPING
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		CALL CopyEntireMessage();
+
+		IF InputRoot.XMLNSC.data.body.messageType = '0200' THEN
+			SET OutputRoot.XMLNSC.data.body.messageType = '0210';
+		ELSEIF InputRoot.XMLNSC.data.body.messageType = '0400' THEN
+			SET OutputRoot.XMLNSC.data.body.messageType = '0410';
+		ELSEIF InputRoot.XMLNSC.data.body.messageType = '0401' THEN
+			SET OutputRoot.XMLNSC.data.body.messageType = '0411';
+		END IF;
+
+		SET OutputRoot.XMLNSC.data.body.responseCode = SUBSTRING(InputRoot.XMLNSC.data.error AFTER 'error:' FOR 2);
+
+		RETURN TRUE;
+	END;
+
+	CREATE PROCEDURE CopyEntireMessage() BEGIN
+		SET OutputRoot = InputRoot;
+	END;
+END MODULE;
+
+
+
+CREATE COMPUTE MODULE ITM_FLOW_CHECK_DBLOG
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputLocalEnvironment = InputLocalEnvironment;
+		SET OutputRoot = InputRoot;
+		
+		IF FIELDTYPE(InputRoot.XMLNSC.data.request.data.ReplyToQOri) IS NOT NULL AND TRIM(InputRoot.XMLNSC.data.request.data.ReplyToQOri) <> '' THEN
+			SET OutputLocalEnvironment.ReplyToQ = InputRoot.XMLNSC.data.request.data.ReplyToQOri;
+		END IF;
+
+		IF InputRoot.XMLNSC.data.body.responseCode = '000' THEN
+			DECLARE mappingCode REFERENCE TO InputRoot.XMLNSC.data.request.data.mappingCode;
+			IF STARTSWITH(mappingCode, '0200.51') OR STARTSWITH(mappingCode, '0200.53') THEN
+				IF CONTAINS(mappingCode, '.001') THEN
+					PROPAGATE TO TERMINAL 'out1';
+					RETURN FALSE;
+				ELSE
+					RETURN TRUE;
+				END IF;
+			ELSE
+				RETURN TRUE;
+			END IF;
+		ELSE
+			RETURN TRUE;
+		END IF;
+	END;
+END MODULE;
+
+
+CREATE COMPUTE MODULE ITM_FLOW_CHECK_REVERSAL
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot = InputRoot;
+		DECLARE code REFERENCE TO InputRoot.XMLNSC.data.code;
+		IF STARTSWITH(code, '0400.51') OR STARTSWITH(code, '0400.53') THEN
+			IF CONTAINS(code, '.001') THEN
+				SET OutputRoot.XMLNSC.data.code = REPLACE(InputRoot.XMLNSC.data.code, '0400.5', '0200.5');
+				SET OutputRoot.XMLNSC.data.body.retrievalReferenceNumber = SUBSTRING(InputRoot.XMLNSC.data.body.originalDataElements FROM 5 FOR 12);
+				SET OutputRoot.XMLNSC.data.body.dateLocalTransaction = SUBSTRING(InputRoot.XMLNSC.data.body.originalDataElements FROM 17 FOR 4);
+				SET OutputRoot.XMLNSC.data.body.timeLocalTransaction = SUBSTRING(InputRoot.XMLNSC.data.body.originalDataElements FROM 21 FOR 6);
+				RETURN TRUE;
+			ELSE
+				PROPAGATE TO TERMINAL 'out1';
+				RETURN FALSE;
+			END IF;
+
+		ELSE
+			PROPAGATE TO TERMINAL 'out1';
+			RETURN FALSE;
+		END IF;
+	END;
+END MODULE;
+
+
+CREATE COMPUTE MODULE ITM_FLOW_RETURN
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot = InputRoot;
+		IF FIELDTYPE(InputLocalEnvironment.data) IS NULL THEN
+			SET OutputRoot.XMLNSC.data.code = REPLACE(InputRoot.XMLNSC.data.code, '0200.5', '0410.5');
+			SET OutputRoot.XMLNSC.data.body.messageType = '0410';
+			SET OutputRoot.XMLNSC.data.body.responseCode = '99';
+			SET OutputRoot.MQMD.ReplyToQ = 'ROUTER_OUT';
+			PROPAGATE TO TERMINAL 'out1';
+			RETURN FALSE;
+		ELSE
+			SET OutputRoot.XMLNSC.data.code = REPLACE(InputRoot.XMLNSC.data.code, '0200.5', '0400.5');
+			RETURN TRUE;
+		END IF;
+	END;
+END MODULE;
+
+
+CREATE COMPUTE MODULE ITM_FLOW_SET_REPLY_TO_Q
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot = InputRoot;
+
+		SET OutputRoot.MQMD.MsgId = InputRoot.MQMD.CorrelId;
+
+		IF FIELDTYPE(InputLocalEnvironment.ReplyToQ) IS NOT NULL THEN
+			SET OutputRoot.MQMD.ReplyToQ = InputLocalEnvironment.ReplyToQ;
+		ELSE
+			SET OutputRoot.MQMD.ReplyToQ = 'ROUTER_OUT';
+		END IF;
+
+		IF FIELDTYPE(InputRoot.XMLNSC.data.ReplyToQMgr) IS NOT NULL THEN
+			SET OutputRoot.MQMD.ReplyToQMgr = InputRoot.XMLNSC.data.ReplyToQMgr;
+		ELSE
+			SET OutputRoot.MQMD.ReplyToQMgr = null;
+		END IF;
+
+		RETURN TRUE;
+	END;
+END MODULE;

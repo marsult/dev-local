@@ -64,9 +64,7 @@ services:
       - ./BTNACE01/jplugin:/opt/mdw/jplugin
       - ./BTNACE01/bar:/opt/mdw/bar
       - ./BTNACE01/log:/var/mdw
-      - ./BTNACE01/config:/var/mqsi/config
-      - ./BTNACE01/components:/var/mqsi/components
-      - ./BTNACE01/shared-lookup-tables:/var/mqsi/shared-lookup-tables
+      - ./BTNACE01/mqsi:/var/mqsi
       - ./BTNACE01/MQHA:/MQHA
       - ./BTNACE01/odbc/db2cli.ini:/opt/IBM/ace-12.0.11.1/ie02/etc/db2cli.ini
       - ./BTNACE01/odbc/odbc.ini:/opt/IBM/ace-12.0.11.1/ie02/etc/odbc.ini

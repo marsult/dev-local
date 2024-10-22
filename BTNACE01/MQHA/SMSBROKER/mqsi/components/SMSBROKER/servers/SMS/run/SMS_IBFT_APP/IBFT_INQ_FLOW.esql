@@ -1,9 +1,0 @@
-CREATE COMPUTE MODULE IBFT_INQ_FLOW_SETORIGINAL
-	CREATE FUNCTION Main() RETURNS BOOLEAN
-	BEGIN
-		SET OutputRoot = InputRoot;
-		SET OutputLocalEnvironment = InputLocalEnvironment;
-		SET OutputRoot.XMLNSC.data.body.frontOriginal = InputLocalEnvironment.data;
-		RETURN TRUE;
-	END;
-END MODULE;

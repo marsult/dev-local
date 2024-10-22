@@ -16,6 +16,10 @@ echo "+:ALL:ALL" | sudo tee /etc/security/access.conf
 sudo rm -rf /run/nologin 
 sudo /usr/sbin/sshd
 
+mkdir -p /var/mqsi/common/errors
+mkdir -p /var/mqsi/common/log
+sudo chown -R admmdw:admmdw /var/mqsi
+
 if [ "$(yq '.init' ~/config.yaml)" = "true" ]; then
 	QInit() {
 		mkdir -m 775 -p "/MQHA/$(echo "$1" | tr -d '.')/data" > /dev/null 2>&1
@@ -79,51 +83,52 @@ if [ "$(yq '.init' ~/config.yaml)" = "true" ]; then
 	done
 
 	echo "$(sed 's/\(init:\) true/\1 false/' "$cfg")" > "$cfg"
-else 
-	cmd "addmqinf -s QueueManager -v Name=DUMBROKER.QM -v Directory=DUMBROKER\!QM -v Prefix=/var/mqm -v DataPath=/MQHA/DUMBROKERQM/data/DUMBROKER\!QM"
-	cmd "addmqinf -s QueueManager -v Name=ISOBROKER.QM -v Directory=ISOBROKER\!QM -v Prefix=/var/mqm -v DataPath=/MQHA/ISOBROKERQM/data/ISOBROKER\!QM"
-	cmd "addmqinf -s QueueManager -v Name=ITMBROKER.QM -v Directory=ITMBROKER\!QM -v Prefix=/var/mqm -v DataPath=/MQHA/ITMBROKERQM/data/ITMBROKER\!QM"
-	cmd "addmqinf -s QueueManager -v Name=PAYBROKER.QM -v Directory=PAYBROKER\!QM -v Prefix=/var/mqm -v DataPath=/MQHA/PAYBROKERQM/data/PAYBROKER\!QM"
-	cmd "addmqinf -s QueueManager -v Name=SMSBROKER.QM -v Directory=SMSBROKER\!QM -v Prefix=/var/mqm -v DataPath=/MQHA/SMSBROKERQM/data/SMSBROKER\!QM"
-	cmd "addmqinf -s QueueManager -v Name=SVCBROKER.QM -v Directory=SVCBROKER\!QM -v Prefix=/var/mqm -v DataPath=/MQHA/SVCBROKERQM/data/SVCBROKER\!QM"
-	cmd "addmqinf -s QueueManager -v Name=FNTBROKER.QM -v Directory=FNTBROKER\!QM -v Prefix=/var/mqm -v DataPath=/MQHA/FNTBROKERQM/data/FNTBROKER\!QM"
-
-
-	cmd "strmqm DUMBROKER.QM"
-	cmd "strmqm ISOBROKER.QM"
-	cmd "strmqm ITMBROKER.QM"
-	cmd "strmqm PAYBROKER.QM"
-	cmd "strmqm SMSBROKER.QM"
-	cmd "strmqm SVCBROKER.QM"
-	cmd "strmqm FNTBROKER.QM"
-
-	echo "START CHANNEL(ISO.ITM)" | runmqsc ISOBROKER.QM
-	echo "START CHANNEL(ISO.FNT)" | runmqsc ISOBROKER.QM
-	echo "START CHANNEL(ISO.SMS)" | runmqsc ISOBROKER.QM
-	echo "START CHANNEL(PAY.FNT)" | runmqsc PAYBROKER.QM
-	echo "START CHANNEL(SMS.ISO)" | runmqsc SMSBROKER.QM
-	echo "START CHANNEL(ITM.FNT)" | runmqsc ITMBROKER.QM
-	echo "START CHANNEL(ITM.PAY)" | runmqsc ITMBROKER.QM
-	echo "START CHANNEL(PAY.ITM)" | runmqsc PAYBROKER.QM
-	echo "START CHANNEL(FNT.ITM)" | runmqsc FNTBROKER.QM
-	echo "START CHANNEL(FNT.ISO)" | runmqsc FNTBROKER.QM
-	echo "START CHANNEL(FNT.PAY)" | runmqsc FNTBROKER.QM
-	echo "START CHANNEL(SMS.PAY)" | runmqsc FNTBROKER.QM
-
-	cmd "mqsiaddbrokerinstance DUMBROKER -e /MQHA/DUMBROKER"
-	cmd "mqsiaddbrokerinstance ISOBROKER -e /MQHA/ISOBROKER"
-	cmd "mqsiaddbrokerinstance ITMBROKER -e /MQHA/ITMBROKER"
-	cmd "mqsiaddbrokerinstance PAYBROKER -e /MQHA/PAYBROKER"
-	cmd "mqsiaddbrokerinstance SMSBROKER -e /MQHA/SMSBROKER"
-	cmd "mqsiaddbrokerinstance SVCBROKER -e /MQHA/SVCBROKER"
-	cmd "mqsiaddbrokerinstance FNTBROKER -e /MQHA/FNTBROKER"
-
-	cmd "mqsistart DUMBROKER"
-	cmd "mqsistart ISOBROKER"
-	cmd "mqsistart ITMBROKER"
-	cmd "mqsistart PAYBROKER"
-	cmd "mqsistart SMSBROKER"
-	cmd "mqsistart SVCBROKER"
-	cmd "mqsistart FNTBROKER"
 fi
 
+
+
+# cmd "addmqinf -s QueueManager -v Name=DUMBROKER.QM -v Directory=DUMBROKER\!QM -v Prefix=/var/mqm -v DataPath=/MQHA/DUMBROKERQM/data/DUMBROKER\!QM"
+# cmd "addmqinf -s QueueManager -v Name=ISOBROKER.QM -v Directory=ISOBROKER\!QM -v Prefix=/var/mqm -v DataPath=/MQHA/ISOBROKERQM/data/ISOBROKER\!QM"
+# cmd "addmqinf -s QueueManager -v Name=ITMBROKER.QM -v Directory=ITMBROKER\!QM -v Prefix=/var/mqm -v DataPath=/MQHA/ITMBROKERQM/data/ITMBROKER\!QM"
+# cmd "addmqinf -s QueueManager -v Name=PAYBROKER.QM -v Directory=PAYBROKER\!QM -v Prefix=/var/mqm -v DataPath=/MQHA/PAYBROKERQM/data/PAYBROKER\!QM"
+# cmd "addmqinf -s QueueManager -v Name=SMSBROKER.QM -v Directory=SMSBROKER\!QM -v Prefix=/var/mqm -v DataPath=/MQHA/SMSBROKERQM/data/SMSBROKER\!QM"
+# cmd "addmqinf -s QueueManager -v Name=SVCBROKER.QM -v Directory=SVCBROKER\!QM -v Prefix=/var/mqm -v DataPath=/MQHA/SVCBROKERQM/data/SVCBROKER\!QM"
+# cmd "addmqinf -s QueueManager -v Name=FNTBROKER.QM -v Directory=FNTBROKER\!QM -v Prefix=/var/mqm -v DataPath=/MQHA/FNTBROKERQM/data/FNTBROKER\!QM"
+
+
+# cmd "strmqm DUMBROKER.QM"
+# cmd "strmqm ISOBROKER.QM"
+# cmd "strmqm ITMBROKER.QM"
+# cmd "strmqm PAYBROKER.QM"
+# cmd "strmqm SMSBROKER.QM"
+# cmd "strmqm SVCBROKER.QM"
+# cmd "strmqm FNTBROKER.QM"
+
+# echo "START CHANNEL(ISO.ITM)" | runmqsc ISOBROKER.QM
+# echo "START CHANNEL(ISO.FNT)" | runmqsc ISOBROKER.QM
+# echo "START CHANNEL(ISO.SMS)" | runmqsc ISOBROKER.QM
+# echo "START CHANNEL(PAY.FNT)" | runmqsc PAYBROKER.QM
+# echo "START CHANNEL(SMS.ISO)" | runmqsc SMSBROKER.QM
+# echo "START CHANNEL(ITM.FNT)" | runmqsc ITMBROKER.QM
+# echo "START CHANNEL(ITM.PAY)" | runmqsc ITMBROKER.QM
+# echo "START CHANNEL(PAY.ITM)" | runmqsc PAYBROKER.QM
+# echo "START CHANNEL(FNT.ITM)" | runmqsc FNTBROKER.QM
+# echo "START CHANNEL(FNT.ISO)" | runmqsc FNTBROKER.QM
+# echo "START CHANNEL(FNT.PAY)" | runmqsc FNTBROKER.QM
+# echo "START CHANNEL(SMS.PAY)" | runmqsc FNTBROKER.QM
+
+# cmd "mqsiaddbrokerinstance DUMBROKER -e /MQHA/DUMBROKER"
+# cmd "mqsiaddbrokerinstance ISOBROKER -e /MQHA/ISOBROKER"
+# cmd "mqsiaddbrokerinstance ITMBROKER -e /MQHA/ITMBROKER"
+# cmd "mqsiaddbrokerinstance PAYBROKER -e /MQHA/PAYBROKER"
+# cmd "mqsiaddbrokerinstance SMSBROKER -e /MQHA/SMSBROKER"
+# cmd "mqsiaddbrokerinstance SVCBROKER -e /MQHA/SVCBROKER"
+# cmd "mqsiaddbrokerinstance FNTBROKER -e /MQHA/FNTBROKER"
+
+# cmd "mqsistart DUMBROKER"
+# cmd "mqsistart ISOBROKER"
+# cmd "mqsistart ITMBROKER"
+# cmd "mqsistart PAYBROKER"
+# cmd "mqsistart SMSBROKER"
+# cmd "mqsistart SVCBROKER"
+# cmd "mqsistart FNTBROKER"

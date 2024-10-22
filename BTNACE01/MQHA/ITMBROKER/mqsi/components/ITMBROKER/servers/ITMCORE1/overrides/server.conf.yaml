@@ -1,9 +1,0 @@
----
-Statistics: 
-  Resource: 
-    reportingOn: 'false'
-  Snapshot: 
-    publicationOn: 'inactive'
-ResourceManagers: 
-  JVM: 
-    jvmJavaOSStackSize: 1048576

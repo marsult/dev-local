@@ -7,7 +7,6 @@ init:
 		sleep 1; \
 	done
 	docker compose up -d BTNACE01
-	@docker cp ./BTNACE01/plugins/id.co.hanoman.tcpip_1.0.3 BTNACE01:/opt/IBM/ace-12.0.11.1/tools/plugins
 log :
 	docker compose logs -f --no-log-prefix BTNACE01
 down :

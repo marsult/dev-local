@@ -1,7 +1,0 @@
-AMQCO2004I: Formatter started at:12:08:33 PM WIB Saturday, August 10, 2024
-8/10/24 12:08:33.778  AMQUT0007I: The java.util.logging configuration is now set to /opt/mqm/amqp/config/amqptraceOff.properties.
-8/10/24 12:08:34.443  AMQXR0005I: Running com.ibm.mq.MQXRService.RunMQXRService version p920-L200709.
-AMQCO2005I: Formatter stopped at:12:08:34 PM WIB Saturday, August 10, 2024
-AMQCO2004I: Formatter started at:12:08:34 PM WIB Saturday, August 10, 2024
-8/10/24 12:08:34.836  AMQUT0007I: The java.util.logging configuration is now set to /MQHA/ISOBROKERQM/data/ISOBROKE.004/./amqp/amqptraceOff.properties.
-8/10/24 12:08:47.790  AMQXR0015I: AMQP Service started successfully (0 channels running, 0 channels stopped). PID(939).

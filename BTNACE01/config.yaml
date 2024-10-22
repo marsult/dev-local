@@ -1,4 +1,4 @@
-init: true
+init: false
 queue_manager:
   - name: DUMBROKER.QM
     port: 1234
@@ -17,34 +17,39 @@ server_ace:
     port: 4234
     executiongroup:
       - DUMMY
-  - name: ISOBROKER
-    port: 4534
-    executiongroup:
-      - ISOLOGDB
-      - SYARIAH
-      - KONVEN1
-  - name: ITMBROKER
-    port: 4464
-    executiongroup:
-      - ITMROUTER
-      - ITMITM1
-      - ITMCORE1
-      - ITMLOGDB
-  - name: SMSBROKER
-    port: 4434
-    executiongroup:
-      - SMS
-      - SMSROUTER
-      - SMSISO
-      - SMSMDW1
-      - SMSCORE1
-      - SMSLOGDB
-  - name: PAYBROKER
-    port: 4474
-    executiongroup:
-      - PAYREST1
-  - name: SVCBROKER
-    port: 4494
-    executiongroup:
-      - RESTROUTER
-      - SVCLOGDB
+  # - name: ISOBROKER
+  #   port: 4534
+  #   executiongroup:
+  #     - ISOLOGDB
+  #     - SYARIAH
+  #     - KONVEN1
+  # - name: ITMBROKER
+  #   port: 4464
+  #   executiongroup:
+  #     - ITMROUTER
+  #     - ITMITM1
+  #     - ITMCORE1
+  #     - ITMLOGDB
+  # - name: SMSBROKER
+  #   port: 4434
+  #   executiongroup:
+  #     - SMS
+  #     - SMSROUTER
+  #     - SMSISO
+  #     - SMSMDW1
+  #     - SMSCORE1
+  #     - SMSLOGDB
+  # - name: PAYBROKER
+  #   port: 4474
+  #   executiongroup:
+  #     - PAYREST1
+  #     - BILL_PAYMENT
+  #     - PAYWS1
+  #     - PAYREST1
+  #     - PAYCORE1
+  #     - PAYLOGDB
+  # - name: SVCBROKER
+  #   port: 4494
+  #   executiongroup:
+  #     - RESTROUTER
+  #     - SVCLOGDB

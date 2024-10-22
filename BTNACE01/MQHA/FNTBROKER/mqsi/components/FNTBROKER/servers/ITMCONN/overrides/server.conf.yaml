@@ -1,4 +1,0 @@
----
-ResourceManagers: 
-  JVM: 
-    jvmJavaOSStackSize: 1048576
